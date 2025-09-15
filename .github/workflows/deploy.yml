@@ -16,5 +16,7 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Generate documentation pages from papers.yml
+        run: python build_pages.py
       - name: Build and deploy
         run: mkdocs gh-deploy --force
