@@ -2,6 +2,11 @@
 
 ## Paper Collection
 
+### New
+
+- **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
+- **Nuclear Data Adjustment for Nonlinear Applications in the OECD/NEA WPNCS SG14 Benchmark -- A Bayesian Inverse UQ-based Approach for Data Assimilation** (2025) - [arXiv:2509.07790v1](https://arxiv.org/abs/2509.07790v1)
+
 ### Downscaling
 
 - **MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained Selective State-Space Modeling** (2024) - [arXiv:2408.06400](https://arxiv.org/abs/2408.06400)
@@ -26,3 +31,4 @@
 - **NowcastNet: Skilful nowcasting of extreme precipitation with NowcastNet** (2023) - [arXiv:2306.06079](https://arxiv.org/abs/2306.06079)
 - **Rainformer: Features Extraction Balanced Network for Radar-Based Precipitation Nowcasting** (2022) - [arXiv:2204.01926](https://arxiv.org/abs/2204.01926)
 - **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [arXiv:2003.12140](https://arxiv.org/abs/2003.12140)
+
