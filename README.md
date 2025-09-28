@@ -12,6 +12,14 @@
 - **SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators** (2025) - [arXiv:2509.12490v1](https://arxiv.org/abs/2509.12490v1)
 - **Do machine learning climate models work in changing climate dynamics?** (2025) - [arXiv:2509.12147v1](https://arxiv.org/abs/2509.12147v1)
 - **Data-Efficient Ensemble Weather Forecasting with Diffusion Models** (2025) - [arXiv:2509.11047v1](https://arxiv.org/abs/2509.11047v1)
+- **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
+- **Graph-based Neural Space Weather Forecasting** (2025) - [arXiv:2509.19605v1](https://arxiv.org/abs/2509.19605v1)
+- **Physics-Informed Field Inversion for Sparse Data Assimilation** (2025) - [arXiv:2509.19160v1](https://arxiv.org/abs/2509.19160v1)
+- **An update to ECMWF's machine-learned weather forecast model AIFS** (2025) - [arXiv:2509.18994v1](https://arxiv.org/abs/2509.18994v1)
+- **Training-Free Data Assimilation with GenCast** (2025) - [arXiv:2509.18811v1](https://arxiv.org/abs/2509.18811v1)
+- **Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models** (2025) - [arXiv:2509.17625v1](https://arxiv.org/abs/2509.17625v1)
+- **Disrespect Others, Respect the Climate? Applying Social Dynamics with Inequality to Forest Climate Models** (2025) - [arXiv:2509.17252v1](https://arxiv.org/abs/2509.17252v1)
+- **Numerical Reconstruction of Coefficients in Elliptic Equations Using Continuous Data Assimilation** (2025) - [arXiv:2509.16954v1](https://arxiv.org/abs/2509.16954v1)
 
 ### Downscaling
 

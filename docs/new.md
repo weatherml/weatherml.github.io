@@ -120,3 +120,123 @@
 
 ---
 
+### Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting
+
+**Authors:** Zinan Zheng, Yang Liu, Jia Li
+
+**Year:** 2025
+
+**Abstract:**
+> Graph neural networks have shown promising results in weather forecasting, which is critical for human activity such as agriculture planning and extreme weather preparation. However, most studies focus on finite and local areas for training, overlooking the influence of broader areas and limiting their ability to generalize effectively. Thus, in this work, we study global weather forecasting that is irregularly distributed and dynamically varying in practice, requiring the model to generalize to unobserved locations. To address such challenges, we propose a general Mesh Interpolation Graph Network (MIGN) that models the irregular weather station forecasting, consisting of two key designs: (1) learning spatially irregular data with regular mesh interpolation network to align the data; (2) leveraging parametric spherical harmonics location embedding to further enhance spatial generalization ability. Extensive experiments on an up-to-date observation dataset show that MIGN significantly outperforms existing data-driven models. Besides, we show that MIGN has spatial generalization ability, and is capable of generalizing to previous unseen stations.
+
+[**arXiv:2509.20911v1**](https://arxiv.org/abs/2509.20911v1)
+
+**Tags:** ``
+
+---
+
+### Graph-based Neural Space Weather Forecasting
+
+**Authors:** Daniel Holmberg, Ivan Zaitsev, Markku Alho, Ioanna Bouri, Fanni Franssila, Haewon Jeong, Minna Palmroth, Teemu Roos
+
+**Year:** 2025
+
+**Abstract:**
+> Accurate space weather forecasting is crucial for protecting our increasingly digital infrastructure. Hybrid-Vlasov models, like Vlasiator, offer physical realism beyond that of current operational systems, but are too computationally expensive for real-time use. We introduce a graph-based neural emulator trained on Vlasiator data to autoregressively predict near-Earth space conditions driven by an upstream solar wind. We show how to achieve both fast deterministic forecasts and, by using a generative model, produce ensembles to capture forecast uncertainty. This work demonstrates that machine learning offers a way to add uncertainty quantification capability to existing space weather prediction systems, and make hybrid-Vlasov simulation tractable for operational use.
+
+[**arXiv:2509.19605v1**](https://arxiv.org/abs/2509.19605v1)
+
+**Tags:** ``
+
+---
+
+### Physics-Informed Field Inversion for Sparse Data Assimilation
+
+**Authors:** Levent Ugur, Beckett Y. Zhou
+
+**Year:** 2025
+
+**Abstract:**
+> Data-driven methods keep increasing their popularity in engineering applications, given the developments in data analysis techniques. Some of these approaches, such as Field Inversion Machine Learning (FIML), suggest correcting low-fidelity models by leveraging available observations of the problem. However, the solely data-driven field inversion stage of the method generally requires dense observations that limit the usage of sparse data. In this study, we propose a physical loss term addition to the field inversion stage of the FIML technique similar to the physics-informed machine learning applications. This addition embeds the complex physics of the problem into the low-fidelity model, which allows for obtaining dense gradient information for every correction parameter and acts as an adaptive regularization term improving inversion accuracy. The proposed Physics-Informed Field Inversion approach is tested using three different examples and highlights that incorporating physical loss can enhance the reconstruction performance for limited data cases, such as sparse, truncated, and noisy observations. Additionally, this modification enables us to obtain accurate posterior correction parameter distribution with limited realizations, making it data-efficient. The increase in the computational cost caused by the physical loss calculation is at an acceptable level given the relaxed grid and numerical scheme requirements.
+
+[**arXiv:2509.19160v1**](https://arxiv.org/abs/2509.19160v1)
+
+**Tags:** ``
+
+---
+
+### An update to ECMWF's machine-learned weather forecast model AIFS
+
+**Authors:** Gabriel Moldovan, Ewan Pinnington, Ana Prieto Nemesio, Simon Lang, Zied Ben Bouallègue, Jesper Dramsch, Mihai Alexe, Mario Santa Cruz, Sara Hahner, Harrison Cook, Helen Theissen, Mariana Clare, Cathal O'Brien, Jan Polster, Linus Magnusson, Gert Mertes, Florian Pinault, Baudouin Raoult, Patricia de Rosnay, Richard Forbes, Matthew Chantry
+
+**Year:** 2025
+
+**Abstract:**
+> We present an update to ECMWF's machine-learned weather forecasting model AIFS Single with several key improvements. The model now incorporates physical consistency constraints through bounding layers, an updated training schedule, and an expanded set of variables. The physical constraints substantially improve precipitation forecasts and the new variables show a high level of skill. Upper-air headline scores also show improvement over the previous AIFS version. The AIFS has been fully operational at ECMWF since the 25th of February 2025.
+
+[**arXiv:2509.18994v1**](https://arxiv.org/abs/2509.18994v1)
+
+**Tags:** ``
+
+---
+
+### Training-Free Data Assimilation with GenCast
+
+**Authors:** Thomas Savary, François Rozet, Gilles Louppe
+
+**Year:** 2025
+
+**Abstract:**
+> Data assimilation is widely used in many disciplines such as meteorology, oceanography, and robotics to estimate the state of a dynamical system from noisy observations. In this work, we propose a lightweight and general method to perform data assimilation using diffusion models pre-trained for emulating dynamical systems. Our method builds on particle filters, a class of data assimilation algorithms, and does not require any further training. As a guiding example throughout this work, we illustrate our methodology on GenCast, a diffusion-based model that generates global ensemble weather forecasts.
+
+[**arXiv:2509.18811v1**](https://arxiv.org/abs/2509.18811v1)
+
+**Tags:** ``
+
+---
+
+### Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models
+
+**Authors:** Blas Kolic, Corrado Monti, Gianmarco De Francisci Morales, Marco Pangallo
+
+**Year:** 2025
+
+**Abstract:**
+> In this paper, we present the first systematic comparison of Data Assimilation (DA) and Likelihood-Based Inference (LBI) in the context of Agent-Based Models (ABMs). These models generate observable time series driven by evolving, partially-latent microstates. Latent states need to be estimated to align simulations with real-world data -- a task traditionally addressed by DA, especially in continuous and equation-based models such as those used in weather forecasting. However, the nature of ABMs poses challenges for standard DA methods. Solving such issues requires adaptation of previous DA techniques, or ad-hoc alternatives such as LBI. DA approximates the likelihood in a model-agnostic way, making it broadly applicable but potentially less precise. In contrast, LBI provides more accurate state estimation by directly leveraging the model's likelihood, but at the cost of requiring a hand-crafted, model-specific likelihood function, which may be complex or infeasible to derive. We compare the two methods on the Bounded-Confidence Model, a well-known opinion dynamics ABM, where agents are affected only by others holding sufficiently similar opinions. We find that LBI better recovers latent agent-level opinions, even under model mis-specification, leading to improved individual-level forecasts. At the aggregate level, however, both methods perform comparably, and DA remains competitive across levels of aggregation under certain parameter settings. Our findings suggest that DA is well-suited for aggregate predictions, while LBI is preferable for agent-level inference.
+
+[**arXiv:2509.17625v1**](https://arxiv.org/abs/2509.17625v1)
+
+**Tags:** ``
+
+---
+
+### Disrespect Others, Respect the Climate? Applying Social Dynamics with Inequality to Forest Climate Models
+
+**Authors:** Luke Wisniewski, Thomas Zdyrski, Feng Fu
+
+**Year:** 2025
+
+**Abstract:**
+> Understanding the role of human behavior in shaping environmental outcomes is crucial for addressing global challenges such as climate change. Environmental systems are influenced not only by natural factors like temperature, but also by human decisions regarding mitigation efforts, which are often based on forecasts or predictions about future environmental conditions. Over time, different outcomes can emerge, including scenarios where the environment deteriorates despite efforts to mitigate, or where successful mitigation leads to environmental resilience. Additionally, fluctuations in the level of human participation in mitigation can occur, reflecting shifts in collective behavior. In this study, we consider a variety of human mitigation decisions, in addition to the feedback loop that is created by changes in human behavior because of environmental changes. While these outcomes are based on simplified models, they offer important insights into the dynamics of human decision-making and the factors that influence effective action in the context of environmental sustainability. This study aims to examine key social dynamics influencing society's response to a worsening climate. While others conclude that homophily prompts greater warming unconditionally, this model finds that homophily can prevent catastrophic effects given a poor initial environmental state. Assuming that poor countries have the resources to do so, a consensus in that class group to defect from the strategy of the rich group (who are generally incentivized to continue ``business as usual'') can frequently prevent the vegetation proportion from converging to 0.
+
+[**arXiv:2509.17252v1**](https://arxiv.org/abs/2509.17252v1)
+
+**Tags:** ``
+
+---
+
+### Numerical Reconstruction of Coefficients in Elliptic Equations Using Continuous Data Assimilation
+
+**Authors:** Peiran Zhang
+
+**Year:** 2025
+
+**Abstract:**
+> We consider the numerical reconstruction of the spatially dependent conductivity coefficient and the source term in elliptic partial differential equations of in a two-dimensional convex polygonal domain, with the homogeneous Dirichlet boundary condition and given interior observation of the solution. Using data assimilation, some approximated gradients of our error functional are derived to update the reconstructed coefficients, and new $L^2$ error estimates for such minimization formulations are given for the spatially discretized reconstructions. Numerical examples are provided to show the effectiveness of the method and demonstrate the error estimates. The numerical results also show that the reconstruction is very robust for the error in certain inputted coefficients.
+
+[**arXiv:2509.16954v1**](https://arxiv.org/abs/2509.16954v1)
+
+**Tags:** ``
+
+---
+
