@@ -20,6 +20,12 @@
 - **Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models** (2025) - [arXiv:2509.17625v1](https://arxiv.org/abs/2509.17625v1)
 - **Disrespect Others, Respect the Climate? Applying Social Dynamics with Inequality to Forest Climate Models** (2025) - [arXiv:2509.17252v1](https://arxiv.org/abs/2509.17252v1)
 - **Numerical Reconstruction of Coefficients in Elliptic Equations Using Continuous Data Assimilation** (2025) - [arXiv:2509.16954v1](https://arxiv.org/abs/2509.16954v1)
+- **Integrating AI and Ensemble Forecasting: Explainable Materials Planning with Scorecards and Trend Insights for a Large-Scale Manufacturer** (2025) - [arXiv:2510.01006v1](https://arxiv.org/abs/2510.01006v1)
+- **Probability calibration for precipitation nowcasting** (2025) - [arXiv:2510.00594v1](https://arxiv.org/abs/2510.00594v1)
+- **On the joint observability of flow fields and particle properties from Lagrangian trajectories: evidence from neural data assimilation** (2025) - [arXiv:2510.00479v1](https://arxiv.org/abs/2510.00479v1)
+- **EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules** (2025) - [arXiv:2509.26258v1](https://arxiv.org/abs/2509.26258v1)
+- **Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting** (2025) - [arXiv:2509.25631v1](https://arxiv.org/abs/2509.25631v1)
+- **The Open-Source Photochem Code: A General Chemical and Climate Model for Interpreting (Exo)Planet Observations** (2025) - [arXiv:2509.25578v1](https://arxiv.org/abs/2509.25578v1)
 
 ### Downscaling
 

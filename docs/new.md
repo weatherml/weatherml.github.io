@@ -240,3 +240,93 @@
 
 ---
 
+### Integrating AI and Ensemble Forecasting: Explainable Materials Planning with Scorecards and Trend Insights for a Large-Scale Manufacturer
+
+**Authors:** Saravanan Venkatachalam
+
+**Year:** 2025
+
+**Abstract:**
+> This paper presents a practical architecture for after-sales demand forecasting and monitoring that unifies a revenue- and cluster-aware ensemble of statistical, machine-learning, and deep-learning models with a role-driven analytics layer for scorecards and trend diagnostics. The framework ingests exogenous signals (installed base, pricing, macro indicators, life cycle, seasonality) and treats COVID-19 as a distinct regime, producing country-part forecasts with calibrated intervals. A Pareto-aware segmentation forecasts high-revenue items individually and pools the long tail via clusters, while horizon-aware ensembling aligns weights with business-relevant losses (e.g., WMAPE). Beyond forecasts, a performance scorecard delivers decision-focused insights: accuracy within tolerance thresholds by revenue share and count, bias decomposition (over- vs under-forecast), geographic and product-family hotspots, and ranked root causes tied to high-impact part-country pairs. A trend module tracks trajectories of MAPE/WMAPE and bias across recent months, flags entities that are improving or deteriorating, detects change points aligned with known regimes, and attributes movements to lifecycle and seasonal factors. LLMs are embedded in the analytics layer to generate role-aware narratives and enforce reporting contracts. They standardize business definitions, automate quality checks and reconciliations, and translate quantitative results into concise, explainable summaries for planners and executives. The system exposes a reproducible workflow -- request specification, model execution, database-backed artifacts, and AI-generated narratives -- so planners can move from "How accurate are we now?" to "Where is accuracy heading and which levers should we pull?", closing the loop between forecasting, monitoring, and inventory decisions across more than 90 countries and about 6,000 parts.
+
+[**arXiv:2510.01006v1**](https://arxiv.org/abs/2510.01006v1)
+
+**Tags:** ``
+
+---
+
+### Probability calibration for precipitation nowcasting
+
+**Authors:** Lauri Kurki, Yaniel Cabrera, Samu Karanko
+
+**Year:** 2025
+
+**Abstract:**
+> Reliable precipitation nowcasting is critical for weather-sensitive decision-making, yet neural weather models (NWMs) can produce poorly calibrated probabilistic forecasts. Standard calibration metrics such as the expected calibration error (ECE) fail to capture miscalibration across precipitation thresholds. We introduce the expected thresholded calibration error (ETCE), a new metric that better captures miscalibration in ordered classes like precipitation amounts. We extend post-processing techniques from computer vision to the forecasting domain. Our results show that selective scaling with lead time conditioning reduces model miscalibration without reducing the forecast quality.
+
+[**arXiv:2510.00594v1**](https://arxiv.org/abs/2510.00594v1)
+
+**Tags:** ``
+
+---
+
+### On the joint observability of flow fields and particle properties from Lagrangian trajectories: evidence from neural data assimilation
+
+**Authors:** Ke Zhou, Samuel J. Grauer
+
+**Year:** 2025
+
+**Abstract:**
+> We numerically investigate the joint observability of flow states and unknown particle properties from Lagrangian particle tracking (LPT) data. LPT offers time-resolved, volumetric measurements of particle trajectories, but experimental tracks are spatially sparse, potentially noisy, and may be further complicated by inertial transport, raising the question of whether both Eulerian fields and particle characteristics can be reliably inferred. To address this, we develop a data assimilation framework that couples an Eulerian flow representation with Lagrangian particle models, enabling the simultaneous inference of carrier fields and particle properties under the governing equations of disperse multiphase flow. Using this approach, we establish empirical existence proofs of joint observability across three representative regimes. In a turbulent boundary layer with noisy tracer tracks (St to 0), flow states and true particle positions are jointly observable. In homogeneous isotropic turbulence seeded with inertial particles (St ~ 1-5), we demonstrate simultaneous recovery of flow states and particle diameters, showing the feasibility of implicit particle characterization. In a compressible, shock-dominated flow, we report the first joint reconstructions of velocity, pressure, density, and inertial particle properties (diameter and density), highlighting both the potential and certain limits of observability in supersonic regimes. Systematic sensitivity studies further reveal how seeding density, noise level, and Stokes number govern reconstruction accuracy, yielding practical guidelines for experimental design. Taken together, these results show that the scope of LPT could be broadened to multiphase and high-speed flows, in which tracer and measurement fidelity are limited.
+
+[**arXiv:2510.00479v1**](https://arxiv.org/abs/2510.00479v1)
+
+**Tags:** ``
+
+---
+
+### EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules
+
+**Authors:** Maybritt Schillinger, Maxim Samarin, Xinwei Shen, Reto Knutti, Nicolai Meinshausen
+
+**Year:** 2025
+
+**Abstract:**
+> The practical use of future climate projections from global circulation models (GCMs) is often limited by their coarse spatial resolution, requiring downscaling to generate high-resolution data. Regional climate models (RCMs) provide this refinement, but are computationally expensive. To address this issue, machine learning models can learn the downscaling function, mapping coarse GCM outputs to high-resolution fields. Among these, generative approaches aim to capture the full conditional distribution of RCM data given coarse-scale GCM data, which is characterized by large variability and thus challenging to model accurately. We introduce EnScale, a generative machine learning framework that emulates the full GCM-to-RCM map by training on multiple pairs of GCM and corresponding RCM data. It first adjusts large-scale mismatches between GCM and coarsened RCM data, followed by a super-resolution step to generate high-resolution fields. Both steps employ generative models optimized with the energy score, a proper scoring rule. Compared to state-of-the-art ML downscaling approaches, our setup reduces computational cost by about one order of magnitude. EnScale jointly emulates multiple variables -- temperature, precipitation, solar radiation, and wind -- spatially consistent over an area in Central Europe. In addition, we propose a variant EnScale-t that enables temporally consistent downscaling. We establish a comprehensive evaluation framework across various categories including calibration, spatial structure, extremes, and multivariate dependencies. Comparison with diverse benchmarks demonstrates EnScale's strong performance and computational efficiency. EnScale offers a promising approach for accurate and temporally consistent RCM emulation.
+
+[**arXiv:2509.26258v1**](https://arxiv.org/abs/2509.26258v1)
+
+**Tags:** ``
+
+---
+
+### Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting
+
+**Authors:** Jason Stock, Troy Arcomano, Rao Kotamarthi
+
+**Year:** 2025
+
+**Abstract:**
+> Diffusion models offer a physically grounded framework for probabilistic weather forecasting, but their typical reliance on slow, iterative solvers during inference makes them impractical for subseasonal-to-seasonal (S2S) applications where long lead-times and domain-driven calibration are essential. To address this, we introduce Swift, a single-step consistency model that, for the first time, enables autoregressive finetuning of a probability flow model with a continuous ranked probability score (CRPS) objective. This eliminates the need for multi-model ensembling or parameter perturbations. Results show that Swift produces skillful 6-hourly forecasts that remain stable for up to 75 days, running $39\times$ faster than state-of-the-art diffusion baselines while achieving forecast skill competitive with the numerical-based, operational IFS ENS. This marks a step toward efficient and reliable ensemble forecasting from medium-range to seasonal-scales.
+
+[**arXiv:2509.25631v1**](https://arxiv.org/abs/2509.25631v1)
+
+**Tags:** ``
+
+---
+
+### The Open-Source Photochem Code: A General Chemical and Climate Model for Interpreting (Exo)Planet Observations
+
+**Authors:** Nicholas F. Wogan, Natasha E. Batalha, Kevin Zahnle, Joshua Krissansen-Totton, David C. Catling, Eric T. Wolf, Tyler D. Robinson, Victoria Meadows, Giada Arney, Shawn Domagal-Goldman
+
+**Year:** 2025
+
+**Abstract:**
+> With the launch of the James Webb Space Telescope, we are firmly in the era of exoplanet atmosphere characterization. Understanding exoplanet spectra requires atmospheric chemical and climate models that span the diversity of planetary atmospheres. Here, we present a more general chemical and climate model of planetary atmospheres. Specifically, we introduce the open-source, one-dimensional photochemical and climate code Photochem, and benchmark the model against the observed compositions and climates of Venus, Earth, Mars, Jupiter and Titan with a single set of kinetics, thermodynamics and opacities. We also model the chemistry of the hot Jupiter exoplanet WASP-39b. All simulations are open-source and reproducible. To first order, Photochem broadly reproduces the gas-phase chemistry and pressure-temperature profiles of all six planets. The largest model-data discrepancies are found in Venus's sulfur chemistry, motivating future experimental work on sulfur kinetics and spacecraft missions to Venus. We also find that clouds and hazes are important for the energy balance of Venus, Earth, Mars and Titan, and that accurately predicting aerosols with Photochem is challenging. Finally, we benchmark Photochem against the popular VULCAN and HELIOS photochemistry and climate models, finding excellent agreement for the same inputs; we also find that Photochem simulates atmospheres 2 to 100 time more efficiently. These results show that Photochem provides a comparatively general description of atmospheric chemistry and physics that can be leveraged to study Solar System worlds or interpret telescope observations of exoplanets.
+
+[**arXiv:2509.25578v1**](https://arxiv.org/abs/2509.25578v1)
+
+**Tags:** ``
+
+---
+
