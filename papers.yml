@@ -665,3 +665,166 @@
     general description of atmospheric chemistry and physics that can be leveraged
     to study Solar System worlds or interpret telescope observations of exoplanets.
   tags: []
+- category: New
+  title: 'Beyond the Training Data: Confidence-Guided Mixing of Parameterizations
+    in a Hybrid AI-Climate Model'
+  authors: Helge Heuer, Tom Beucler, Mierk Schwabe, Julien Savre, Manuel Schlund,
+    Veronika Eyring
+  year: 2025
+  arxiv: 2510.08107v1
+  abstract: Persistent systematic errors in Earth system models (ESMs) arise from
+    difficulties in representing the full diversity of subgrid, multiscale atmospheric
+    convection and turbulence. Machine learning (ML) parameterizations trained on
+    short high-resolution simulations show strong potential to reduce these errors.
+    However, stable long-term atmospheric simulations with hybrid (physics + ML) ESMs
+    remain difficult, as neural networks (NNs) trained offline often destabilize online
+    runs. Training convection parameterizations directly on coarse-grained data is
+    challenging, notably because scales cannot be cleanly separated. This issue is
+    mitigated using data from superparameterized simulations, which provide clearer
+    scale separation. Yet, transferring a parameterization from one ESM to another
+    remains difficult due to distribution shifts that induce large inference errors.
+    Here, we present a proof-of-concept where a ClimSim-trained, physics-informed
+    NN convection parameterization is successfully transferred to ICON-A. The scheme
+    is (a) trained on adjusted ClimSim data with subtracted radiative tendencies,
+    and (b) integrated into ICON-A. The NN parameterization predicts its own error,
+    enabling mixing with a conventional convection scheme when confidence is low,
+    thus making the hybrid AI-physics model tunable with respect to observations and
+    reanalysis through mixing parameters. This improves process understanding by constraining
+    convective tendencies across column water vapor, lower-tropospheric stability,
+    and geographical conditions, yielding interpretable regime behavior. In AMIP-style
+    setups, several hybrid configurations outperform the default convection scheme
+    (e.g., improved precipitation statistics). With additive input noise during training,
+    both hybrid and pure-ML schemes lead to stable simulations and remain physically
+    consistent for at least 20 years.
+  tags: []
+- category: New
+  title: 'SimCast: Enhancing Precipitation Nowcasting with Short-to-Long Term Knowledge
+    Distillation'
+  authors: Yifang Yin, Shengkai Chen, Yiyao Li, Lu Wang, Ruibing Jin, Wei Cui, Shili
+    Xiang
+  year: 2025
+  arxiv: 2510.07953v1
+  abstract: Precipitation nowcasting predicts future radar sequences based on current
+    observations, which is a highly challenging task driven by the inherent complexity
+    of the Earth system. Accurate nowcasting is of utmost importance for addressing
+    various societal needs, including disaster management, agriculture, transportation,
+    and energy optimization. As a complementary to existing non-autoregressive nowcasting
+    approaches, we investigate the impact of prediction horizons on nowcasting models
+    and propose SimCast, a novel training pipeline featuring a short-to-long term
+    knowledge distillation technique coupled with a weighted MSE loss to prioritize
+    heavy rainfall regions. Improved nowcasting predictions can be obtained without
+    introducing additional overhead during inference. As SimCast generates deterministic
+    predictions, we further integrate it into a diffusion-based framework named CasCast,
+    leveraging the strengths from probabilistic models to overcome limitations such
+    as blurriness and distribution shift in deterministic outputs. Extensive experimental
+    results on three benchmark datasets validate the effectiveness of the proposed
+    framework, achieving mean CSI scores of 0.452 on SEVIR, 0.474 on HKO-7, and 0.361
+    on MeteoNet, which outperforms existing approaches by a significant margin.
+  tags: []
+- category: New
+  title: Control-Augmented Autoregressive Diffusion for Data Assimilation
+  authors: Prakhar Srivastava, Farrin Marouf Sofian, Francesco Immorlano, Kushagra
+    Pandey, Stephan Mandt
+  year: 2025
+  arxiv: 2510.06637v1
+  abstract: Despite recent advances in test-time scaling and finetuning of diffusion
+    models, guidance in Auto-Regressive Diffusion Models (ARDMs) remains underexplored.
+    We introduce an amortized framework that augments pretrained ARDMs with a lightweight
+    controller network, trained offline by previewing future ARDM rollouts and learning
+    stepwise controls that anticipate upcoming observations under a terminal cost
+    objective. We evaluate this framework in the context of data assimilation (DA)
+    for chaotic spatiotemporal partial differential equations (PDEs), a setting where
+    existing methods are often computationally prohibitive and prone to forecast drift
+    under sparse observations. Our approach reduces DA inference to a single forward
+    rollout with on-the-fly corrections, avoiding expensive adjoint computations and/or
+    optimizations during inference. We demonstrate that our method consistently outperforms
+    four state-of-the-art baselines in stability, accuracy, and physical fidelity
+    across two canonical PDEs and six observation regimes. We will release code and
+    checkpoints publicly.
+  tags: []
+- category: New
+  title: Road Surface Condition Detection with Machine Learning using New York State
+    Department of Transportation Camera Images and Weather Forecast Data
+  authors: Carly Sutter, Kara J. Sulia, Nick P. Bassill, Christopher D. Wirz, Christopher
+    D. Thorncroft, Jay C. Rothenberger, Vanessa Przybylo, Mariana G. Cains, Jacob
+    Radford, David Aaron Evans
+  year: 2025
+  arxiv: 2510.06440v1
+  abstract: 'The New York State Department of Transportation (NYSDOT) has a network
+    of roadside traffic cameras that are used by both the NYSDOT and the public to
+    observe road conditions. The NYSDOT evaluates road conditions by driving on roads
+    and observing live cameras, tasks which are labor-intensive but necessary for
+    making critical operational decisions during winter weather events. However, machine
+    learning models can provide additional support for the NYSDOT by automatically
+    classifying current road conditions across the state. In this study, convolutional
+    neural networks and random forests are trained on camera images and weather data
+    to predict road surface conditions. Models are trained on a hand-labeled dataset
+    of ~22,000 camera images, each classified by human labelers into one of six road
+    surface conditions: severe snow, snow, wet, dry, poor visibility, or obstructed.
+    Model generalizability is prioritized to meet the operational needs of the NYSDOT
+    decision makers, and the weather-related road surface condition model in this
+    study achieves an accuracy of 81.5% on completely unseen cameras.'
+  tags: []
+- category: New
+  title: Structurally informed data assimilation in two dimensions
+  authors: Tongtong Li, Anne Gelb, Yoonsang Lee
+  year: 2025
+  arxiv: 2510.06369v1
+  abstract: Accurate data assimilation (DA) for systems with piecewise-smooth or discontinuous
+    state variables remains a significant challenge, as conventional covariance-based
+    ensemble Kalman filter approaches often fail to effectively balance observations
+    and model information near sharp features. In this paper we develop a structurally
+    informed DA framework using ensemble transform Kalman filtering (ETKF). Our approach
+    introduces gradient-based weighting matrices constructed from finite difference
+    statistics of the forecast ensemble, thereby allowing the assimilation process
+    to dynamically adjust the influence of observations and prior estimates according
+    to local roughness. The design is intentionally flexible so that it can be suitably
+    refined for sparse data environments. Numerical experiments demonstrate that our
+    new structurally informed data assimilation framework consistently yields greater
+    accuracy when compared to more conventional approaches.
+  tags: []
+- category: New
+  title: Climate Model Tuning with Online Synchronization-Based Parameter Estimation
+  authors: Jordan Seneca, Suzanne Bintanja, Frank M. Selten
+  year: 2025
+  arxiv: 2510.06180v1
+  abstract: In climate science, the tuning of climate models is a computationally
+    intensive problem due to the combination of the high-dimensionality of the system
+    state and long integration times. Here we demonstrate the potential of a parameter
+    estimation algorithm which makes use of synchronization to tune a global atmospheric
+    model at modest computational costs. We first use it to directly optimize internal
+    model parameters. We then apply the algorithm to the weights of each member of
+    a supermodel ensemble to optimize the overall predictions. In both cases, the
+    algorithm is able to find parameters which result in reduced errors in the climatology
+    of the model. Finally, we introduce a novel approach which combines both methods
+    called adaptive supermodeling, where the internal parameters of the members of
+    a supermodel are tuned simultaneously with the model weights such that the supermodel
+    predictions are optimized. For a case designed to challenge the two previous methods,
+    adaptive supermodeling achieves a performance similar to a perfect model.
+  tags: []
+- category: New
+  title: Incorporating Multivariate Consistency in ML-Based Weather Forecasting with
+    Latent-space Constraints
+  authors: Hang Fan, Yi Xiao, Yongquan Qu, Fenghua Ling, Ben Fei, Lei Bai, Pierre
+    Gentine
+  year: 2025
+  arxiv: 2510.04006v1
+  abstract: Data-driven machine learning (ML) models have recently shown promise in
+    surpassing traditional physics-based approaches for weather forecasting, leading
+    to a so-called second revolution in weather forecasting. However, most ML-based
+    forecast models treat reanalysis as the truth and are trained under variable-specific
+    loss weighting, ignoring their physical coupling and spatial structure. Over long
+    time horizons, the forecasts become blurry and physically unrealistic under rollout
+    training. To address this, we reinterpret model training as a weak-constraint
+    four-dimensional variational data assimilation (WC-4DVar) problem, treating reanalysis
+    data as imperfect observations. This allows the loss function to incorporate reanalysis
+    error covariance and capture multivariate dependencies. In practice, we compute
+    the loss in a latent space learned by an autoencoder (AE), where the reanalysis
+    error covariance becomes approximately diagonal, thus avoiding the need to explicitly
+    model it in the high-dimensional model space. We show that rollout training with
+    latent-space constraints improves long-term forecast skill and better preserves
+    fine-scale structures and physical realism compared to training with model-space
+    loss. Finally, we extend this framework to accommodate heterogeneous data sources,
+    enabling the forecast model to be trained jointly on reanalysis and multi-source
+    observations within a unified theoretical formulation.
+  tags: []

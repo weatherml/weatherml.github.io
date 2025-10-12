@@ -26,6 +26,13 @@
 - **EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules** (2025) - [arXiv:2509.26258v1](https://arxiv.org/abs/2509.26258v1)
 - **Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting** (2025) - [arXiv:2509.25631v1](https://arxiv.org/abs/2509.25631v1)
 - **The Open-Source Photochem Code: A General Chemical and Climate Model for Interpreting (Exo)Planet Observations** (2025) - [arXiv:2509.25578v1](https://arxiv.org/abs/2509.25578v1)
+- **Beyond the Training Data: Confidence-Guided Mixing of Parameterizations in a Hybrid AI-Climate Model** (2025) - [arXiv:2510.08107v1](https://arxiv.org/abs/2510.08107v1)
+- **SimCast: Enhancing Precipitation Nowcasting with Short-to-Long Term Knowledge Distillation** (2025) - [arXiv:2510.07953v1](https://arxiv.org/abs/2510.07953v1)
+- **Control-Augmented Autoregressive Diffusion for Data Assimilation** (2025) - [arXiv:2510.06637v1](https://arxiv.org/abs/2510.06637v1)
+- **Road Surface Condition Detection with Machine Learning using New York State Department of Transportation Camera Images and Weather Forecast Data** (2025) - [arXiv:2510.06440v1](https://arxiv.org/abs/2510.06440v1)
+- **Structurally informed data assimilation in two dimensions** (2025) - [arXiv:2510.06369v1](https://arxiv.org/abs/2510.06369v1)
+- **Climate Model Tuning with Online Synchronization-Based Parameter Estimation** (2025) - [arXiv:2510.06180v1](https://arxiv.org/abs/2510.06180v1)
+- **Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints** (2025) - [arXiv:2510.04006v1](https://arxiv.org/abs/2510.04006v1)
 
 ### Downscaling
 
