@@ -33,6 +33,11 @@
 - **Structurally informed data assimilation in two dimensions** (2025) - [arXiv:2510.06369v1](https://arxiv.org/abs/2510.06369v1)
 - **Climate Model Tuning with Online Synchronization-Based Parameter Estimation** (2025) - [arXiv:2510.06180v1](https://arxiv.org/abs/2510.06180v1)
 - **Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints** (2025) - [arXiv:2510.04006v1](https://arxiv.org/abs/2510.04006v1)
+- **RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion** (2025) - [arXiv:2510.14962v1](https://arxiv.org/abs/2510.14962v1)
+- **Water wave reconstruction of full hydrodynamic models via data assimilation** (2025) - [arXiv:2510.14356v1](https://arxiv.org/abs/2510.14356v1)
+- **Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling** (2025) - [arXiv:2510.13722v1](https://arxiv.org/abs/2510.13722v1)
+- **Specification and Verification for Climate Modeling: Formalization Leading to Impactful Tooling** (2025) - [arXiv:2510.13425v1](https://arxiv.org/abs/2510.13425v1)
+- **Km-scale dynamical downscaling through conformalized latent diffusion models** (2025) - [arXiv:2510.13301v1](https://arxiv.org/abs/2510.13301v1)
 
 ### Downscaling
 

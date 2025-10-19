@@ -435,3 +435,78 @@
 
 ---
 
+### RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion
+
+**Authors:** Thao Nguyen, Jiaqi Ma, Fahad Shahbaz Khan, Souhaib Ben Taieb, Salman Khan
+
+**Year:** 2025
+
+**Abstract:**
+> Precipitation nowcasting, predicting future radar echo sequences from current observations, is a critical yet challenging task due to the inherently chaotic and tightly coupled spatio-temporal dynamics of the atmosphere. While recent advances in diffusion-based models attempt to capture both large-scale motion and fine-grained stochastic variability, they often suffer from scalability issues: latent-space approaches require a separately trained autoencoder, adding complexity and limiting generalization, while pixel-space approaches are computationally intensive and often omit attention mechanisms, reducing their ability to model long-range spatio-temporal dependencies. To address these limitations, we propose a Token-wise Attention integrated into not only the U-Net diffusion model but also the spatio-temporal encoder that dynamically captures multi-scale spatial interactions and temporal evolution. Unlike prior approaches, our method natively integrates attention into the architecture without incurring the high resource cost typical of pixel-space diffusion, thereby eliminating the need for separate latent modules. Our extensive experiments and visual evaluations across diverse datasets demonstrate that the proposed method significantly outperforms state-of-the-art approaches, yielding superior local fidelity, generalization, and robustness in complex precipitation forecasting scenarios.
+
+[**arXiv:2510.14962v1**](https://arxiv.org/abs/2510.14962v1)
+
+**Tags:** ``
+
+---
+
+### Water wave reconstruction of full hydrodynamic models via data assimilation
+
+**Authors:** Liwen Yan, Linyuan Che, Jing Li
+
+**Year:** 2025
+
+**Abstract:**
+> A strategy for reconstructing the water wave field using a data assimilation method is proposed in the present study. Special treatments are introduced to address the ensemble diversity and the discontinuous free surface with hydrodynamic constraints when implementing the EnKF approach. Additionally, the POD method is employed for dimensionality reduction, but from an ensemble point of view. The main purpose of this study is to achieve satisfactory consistency between the water waves computed by the numerical solver, particularly by the VOF method, and those observed in the laboratory wave flume within the test section of interest. To validate the proposed framework, three representative conditions are tested: regular waves, irregular waves, and plunging waves. The effects of observation noise, modal truncation, and other factors are also examined. From a practical perspective, this work provides a promising way to realize the coupling between experiments and numerical simulations, and establishes a prototype of a ``digital twin wave tank''.
+
+[**arXiv:2510.14356v1**](https://arxiv.org/abs/2510.14356v1)
+
+**Tags:** ``
+
+---
+
+### Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling
+
+**Authors:** Carlo Saccardi, Maximilian Pierzyna, Haitz Sáez de Ocáriz Borde, Simone Monaco, Cristian Meo, Pietro Liò, Rudolf Saathof, Geethu Joseph, Justin Dauwels
+
+**Year:** 2025
+
+**Abstract:**
+> Kilometer-scale weather data is crucial for real-world applications but remains computationally intensive to produce using traditional weather simulations. An emerging solution is to use deep learning models, which offer a faster alternative for climate downscaling. However, their reliability is still in question, as they are often evaluated using standard machine learning metrics rather than insights from atmospheric and weather physics. This paper benchmarks recent state-of-the-art deep learning models and introduces physics-inspired diagnostics to evaluate their performance and reliability, with a particular focus on geographic generalization and physical consistency. Our experiments show that, despite the seemingly strong performance of models such as CorrDiff, when trained on a limited set of European geographies (e.g., central Europe), they struggle to generalize to other regions such as Iberia, Morocco in the south, or Scandinavia in the north. They also fail to accurately capture second-order variables such as divergence and vorticity derived from predicted velocity fields. These deficiencies appear even in in-distribution geographies, indicating challenges in producing physically consistent predictions. We propose a simple initial solution: introducing a power spectral density loss function that empirically improves geographic generalization by encouraging the reconstruction of small-scale physical structures. The code for reproducing the experimental results can be found at https://github.com/CarloSaccardi/PSD-Downscaling
+
+[**arXiv:2510.13722v1**](https://arxiv.org/abs/2510.13722v1)
+
+**Tags:** ``
+
+---
+
+### Specification and Verification for Climate Modeling: Formalization Leading to Impactful Tooling
+
+**Authors:** Alper Altuntas, Allison H. Baker, John Baugh, Ganesh Gopalakrishnan, Stephen F. Siegel
+
+**Year:** 2025
+
+**Abstract:**
+> Earth System Models (ESMs) are critical for understanding past climates and projecting future scenarios. However, the complexity of these models, which include large code bases, a wide community of developers, and diverse computational platforms, poses significant challenges for software quality assurance. The increasing adoption of GPUs and heterogeneous architectures further complicates verification efforts. Traditional verification methods often rely on bitwise reproducibility, which is not always feasible, particularly under new compilers or hardware. Manual expert evaluation, on the other hand, is subjective and time-consuming. Formal methods offer a mathematically rigorous alternative, yet their application in ESM development has been limited due to the lack of climate model-specific representations and tools. Here, we advocate for the broader adoption of formal methods in climate modeling. In particular, we identify key aspects of ESMs that are well suited to formal specification and introduce abstraction approaches for a tailored framework. To demonstrate this approach, we present a case study using CIVL model checker to formally verify a bug fix in an ocean mixing parameterization scheme. Our goal is to develop accessible, domain-specific formal tools that enhance model confidence and support more efficient and reliable ESM development.
+
+[**arXiv:2510.13425v1**](https://arxiv.org/abs/2510.13425v1)
+
+**Tags:** ``
+
+---
+
+### Km-scale dynamical downscaling through conformalized latent diffusion models
+
+**Authors:** Alessandro Brusaferri, Andrea Ballarino
+
+**Year:** 2025
+
+**Abstract:**
+> Dynamical downscaling is crucial for deriving high-resolution meteorological fields from coarse-scale simulations, enabling detailed analysis for critical applications such as weather forecasting and renewable energy modeling. Generative Diffusion models (DMs) have recently emerged as powerful data-driven tools for this task, offering reconstruction fidelity and more scalable sampling supporting uncertainty quantification. However, DMs lack finite-sample guarantees against overconfident predictions, resulting in miscalibrated grid-point-level uncertainty estimates hindering their reliability in operational contexts. In this work, we tackle this issue by augmenting the downscaling pipeline with a conformal prediction framework. Specifically, the DM's samples are post-processed to derive conditional quantile estimates, incorporated into a conformalized quantile regression procedure targeting locally adaptive prediction intervals with finite-sample marginal validity. The proposed approach is evaluated on ERA5 reanalysis data over Italy, downscaled to a 2-km grid. Results demonstrate grid-point-level uncertainty estimates with markedly improved coverage and stable probabilistic scores relative to the DM baseline, highlighting the potential of conformalized generative models for more trustworthy probabilistic downscaling to high-resolution meteorological fields.
+
+[**arXiv:2510.13301v1**](https://arxiv.org/abs/2510.13301v1)
+
+**Tags:** ``
+
+---
+
