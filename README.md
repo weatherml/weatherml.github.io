@@ -38,6 +38,13 @@
 - **Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling** (2025) - [arXiv:2510.13722v1](https://arxiv.org/abs/2510.13722v1)
 - **Specification and Verification for Climate Modeling: Formalization Leading to Impactful Tooling** (2025) - [arXiv:2510.13425v1](https://arxiv.org/abs/2510.13425v1)
 - **Km-scale dynamical downscaling through conformalized latent diffusion models** (2025) - [arXiv:2510.13301v1](https://arxiv.org/abs/2510.13301v1)
+- **A Stochastic Parameterization of Non-Orographic Gravity Waves Induced Mixing for Mars Planetary Climate Model** (2025) - [arXiv:2510.20410v1](https://arxiv.org/abs/2510.20410v1)
+- **Continuous data assimilation applied to the Rayleigh-Benard problem for compressible fluid flows** (2025) - [arXiv:2510.20316v1](https://arxiv.org/abs/2510.20316v1)
+- **Sparse Local Implicit Image Function for sub-km Weather Downscaling** (2025) - [arXiv:2510.20228v1](https://arxiv.org/abs/2510.20228v1)
+- **IEnSF: Iterative Ensemble Score Filter for Reducing Error in Posterior Score Estimation in Nonlinear Data Assimilation** (2025) - [arXiv:2510.20159v1](https://arxiv.org/abs/2510.20159v1)
+- **Non-intrusive structural-preserving sequential data assimilation** (2025) - [arXiv:2510.19701v1](https://arxiv.org/abs/2510.19701v1)
+- **OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales** (2025) - [arXiv:2510.18707v1](https://arxiv.org/abs/2510.18707v1)
+- **Uncertainty-aware data assimilation through variational inference** (2025) - [arXiv:2510.17268v1](https://arxiv.org/abs/2510.17268v1)
 
 ### Downscaling
 

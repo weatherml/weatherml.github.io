@@ -510,3 +510,108 @@
 
 ---
 
+### A Stochastic Parameterization of Non-Orographic Gravity Waves Induced Mixing for Mars Planetary Climate Model
+
+**Authors:** Jiandong Liu, Ehouarn Millour, François Forget, François Lott, Jean-Yves Chaufray
+
+**Year:** 2025
+
+**Abstract:**
+> This paper presents a formalism of mixing induced by non-orographic gravity waves (GWs) to integrate with the stochastic GWs scheme in the Mars Planetary Climate Model. We derive the formalism of GWs and their mixing under the same assumptions, integrating the two schemes within a unified framework. Specifically, a surface-to-exosphere parameterization of GW-induced turbulence has been derived in terms of the eddy diffusion coefficient. Simulations show that the coefficient is on the order of 1E4 to 1E9 cm2 s-1 and a turbopause is at altitudes of 70 to 140 km, varying with seasons. The triggered mixing has minor effects on model temperatures, yet it substantially impacts upper atmospheric abundances. Simulations are consistent with observations from the Mars Climate Sounder and the Neutral Gas and Ion Mass Spectrometer. Mixing enhances the tracer transports in the middle and upper atmosphere, governing the dynamics of these regions. The scheme reveals how non-orographic GW-induced turbulence can regulate upper atmospheric processes, such as tracer escape.
+
+[**arXiv:2510.20410v1**](https://arxiv.org/abs/2510.20410v1)
+
+**Tags:** ``
+
+---
+
+### Continuous data assimilation applied to the Rayleigh-Benard problem for compressible fluid flows
+
+**Authors:** Eduard Feireisl, Wladimir Neves
+
+**Year:** 2025
+
+**Abstract:**
+> We apply a continuous data assimilation method to the Navier-Stokes-Fourier system governing the evolution of a compressible, rotating and thermally driven fluid. A rigorous proof of the tracking property is given in the asymptotic regime of low Mach and high Rossby and Froude numbers. Large data in the framework of weak solutions are considered.
+
+[**arXiv:2510.20316v1**](https://arxiv.org/abs/2510.20316v1)
+
+**Tags:** ``
+
+---
+
+### Sparse Local Implicit Image Function for sub-km Weather Downscaling
+
+**Authors:** Yago del Valle Inclan Redondo, Enrique Arriaga-Varela, Dmitry Lyamzin, Pablo Cervantes, Tiago Ramalho
+
+**Year:** 2025
+
+**Abstract:**
+> We introduce SpLIIF to generate implicit neural representations and enable arbitrary downscaling of weather variables. We train a model from sparse weather stations and topography over Japan and evaluate in- and out-of-distribution accuracy predicting temperature and wind, comparing it to both an interpolation baseline and CorrDiff. We find the model to be up to 50% better than both CorrDiff and the baseline at downscaling temperature, and around 10-20% better for wind.
+
+[**arXiv:2510.20228v1**](https://arxiv.org/abs/2510.20228v1)
+
+**Tags:** ``
+
+---
+
+### IEnSF: Iterative Ensemble Score Filter for Reducing Error in Posterior Score Estimation in Nonlinear Data Assimilation
+
+**Authors:** Zezhong Zhang, Feng Bao, Guannan Zhang
+
+**Year:** 2025
+
+**Abstract:**
+> The Ensemble Score Filter (EnSF) has emerged as a promising approach to leverage score-based diffusion models for solving high-dimensional and nonlinear data assimilation problems. While initial applications of EnSF to the Lorenz-96 model and the quasi-geostrophic system showed potential, the current method employs a heuristic weighted sum to combine the prior and the likelihood score functions. This introduces a structural error into the estimation of the posterior score function in the nonlinear setting. This work addresses this challenge by developing an iterative ensemble score filter (IEnSF) that applies an iterative algorithm as an outer loop around the reverse-time stochastic differential equation solver. When the state dynamics or the observation operator is nonlinear, the iterative algorithm can gradually reduce the posterior score estimation error by improving the accuracy of approximating the conditional expectation of the likelihood score function. The number of iterations required depends on the distance between the prior and posterior distributions and the nonlinearity of the observation operator. Numerical experiments demonstrate that the IEnSF algorithm substantially reduces the error in posterior score estimation in the nonlinear setting and thus improves the accuracy of tracking high-dimensional dynamical systems.
+
+[**arXiv:2510.20159v1**](https://arxiv.org/abs/2510.20159v1)
+
+**Tags:** ``
+
+---
+
+### Non-intrusive structural-preserving sequential data assimilation
+
+**Authors:** Lizuo Liu, Tongtong Li, Anne Gelb
+
+**Year:** 2025
+
+**Abstract:**
+> Data assimilation (DA) methods combine model predictions with observational data to improve state estimation in dynamical systems, inspiring their increasingly prominent role in geophysical and climate applications. Classical DA methods assume that the governing equations modeling the dynamics are known, which is unlikely for most real world applications. Machine learning (ML) provides a flexible alternative by learning surrogate models directly from data, but standard ML methods struggle in noisy and data-scarce environments, where meaningful extrapolation requires incorporating physical constraints. Recent advances in structure-preserving ML architectures, such as the development of the entropy-stable conservative flux form network (ESCFN), highlight the critical role of physical structure in improving learning stability and accuracy for unknown systems of conservation laws. Structural information has also been shown to improve DA performance. Gradient-based measures of spatial variability, in particular, can help refine ensemble updates in discontinuous systems. Motivated by both of these recent innovations, this investigation proposes a new non-intrusive, structure-preserving sequential data assimilation (NSSDA) framework that leverages structure at both the forecast and analysis stages. We use the ESCFN to construct a surrogate model to preserve physical laws during forecasting, and a structurally informed ensemble transform Kalman filter (SETKF) to embed local statistical structure into the assimilation step. Our method operates in a highly constrained environment, using only a single noisy trajectory for both training and assimilation. Numerical experiments where the unknown dynamics correspond respectively to the shallow water and Euler equations demonstrate significantly improved predictive accuracy.
+
+[**arXiv:2510.19701v1**](https://arxiv.org/abs/2510.19701v1)
+
+**Tags:** ``
+
+---
+
+### OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales
+
+**Authors:** Tung Nguyen, Tuan Pham, Troy Arcomano, Veerabhadra Kotamarthi, Ian Foster, Sandeep Madireddy, Aditya Grover
+
+**Year:** 2025
+
+**Abstract:**
+> Accurate weather forecasting across time scales is critical for anticipating and mitigating the impacts of climate change. Recent data-driven methods based on deep learning have achieved significant success in the medium range, but struggle at longer subseasonal-to-seasonal (S2S) horizons due to error accumulation in their autoregressive approach. In this work, we propose OmniCast, a scalable and skillful probabilistic model that unifies weather forecasting across timescales. OmniCast consists of two components: a VAE model that encodes raw weather data into a continuous, lower-dimensional latent space, and a diffusion-based transformer model that generates a sequence of future latent tokens given the initial conditioning tokens. During training, we mask random future tokens and train the transformer to estimate their distribution given conditioning and visible tokens using a per-token diffusion head. During inference, the transformer generates the full sequence of future tokens by iteratively unmasking random subsets of tokens. This joint sampling across space and time mitigates compounding errors from autoregressive approaches. The low-dimensional latent space enables modeling long sequences of future latent states, allowing the transformer to learn weather dynamics beyond initial conditions. OmniCast performs competitively with leading probabilistic methods at the medium-range timescale while being 10x to 20x faster, and achieves state-of-the-art performance at the subseasonal-to-seasonal scale across accuracy, physics-based, and probabilistic metrics. Furthermore, we demonstrate that OmniCast can generate stable rollouts up to 100 years ahead. Code and model checkpoints are available at https://github.com/tung-nd/omnicast.
+
+[**arXiv:2510.18707v1**](https://arxiv.org/abs/2510.18707v1)
+
+**Tags:** ``
+
+---
+
+### Uncertainty-aware data assimilation through variational inference
+
+**Authors:** Anthony Frion, David S Greenberg
+
+**Year:** 2025
+
+**Abstract:**
+> Data assimilation, consisting in the combination of a dynamical model with a set of noisy and incomplete observations in order to infer the state of a system over time, involves uncertainty in most settings. Building upon an existing deterministic machine learning approach, we propose a variational inference-based extension in which the predicted state follows a multivariate Gaussian distribution. Using the chaotic Lorenz-96 dynamics as a testing ground, we show that our new model enables to obtain nearly perfectly calibrated predictions, and can be integrated in a wider variational data assimilation pipeline in order to achieve greater benefit from increasing lengths of data assimilation windows. Our code is available at https://github.com/anthony-frion/Stochastic_CODA.
+
+[**arXiv:2510.17268v1**](https://arxiv.org/abs/2510.17268v1)
+
+**Tags:** ``
+
+---
+
