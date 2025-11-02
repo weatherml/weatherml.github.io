@@ -45,6 +45,13 @@
 - **Non-intrusive structural-preserving sequential data assimilation** (2025) - [arXiv:2510.19701v1](https://arxiv.org/abs/2510.19701v1)
 - **OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales** (2025) - [arXiv:2510.18707v1](https://arxiv.org/abs/2510.18707v1)
 - **Uncertainty-aware data assimilation through variational inference** (2025) - [arXiv:2510.17268v1](https://arxiv.org/abs/2510.17268v1)
+- **COBASE: A new copula-based shuffling method for ensemble weather forecast postprocessing** (2025) - [arXiv:2510.25610v1](https://arxiv.org/abs/2510.25610v1)
+- **Interpolated Discrepancy Data Assimilation for PDEs with Sparse Observations** (2025) - [arXiv:2510.24944v1](https://arxiv.org/abs/2510.24944v1)
+- **High-Quality and Large-Scale Image Downscaling for Modern Display Devices** (2025) - [arXiv:2510.24334v1](https://arxiv.org/abs/2510.24334v1)
+- **A PDE-Informed Latent Diffusion Model for 2-m Temperature Downscaling** (2025) - [arXiv:2510.23866v1](https://arxiv.org/abs/2510.23866v1)
+- **Revealing the Potential of Learnable Perturbation Ensemble Forecast Model for Tropical Cyclone Prediction** (2025) - [arXiv:2510.23794v1](https://arxiv.org/abs/2510.23794v1)
+- **LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation** (2025) - [arXiv:2510.22562v1](https://arxiv.org/abs/2510.22562v1)
+- **Structure Aware Image Downscaling** (2025) - [arXiv:2510.22551v1](https://arxiv.org/abs/2510.22551v1)
 
 ### Downscaling
 
