@@ -52,6 +52,13 @@
 - **Revealing the Potential of Learnable Perturbation Ensemble Forecast Model for Tropical Cyclone Prediction** (2025) - [arXiv:2510.23794v1](https://arxiv.org/abs/2510.23794v1)
 - **LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation** (2025) - [arXiv:2510.22562v1](https://arxiv.org/abs/2510.22562v1)
 - **Structure Aware Image Downscaling** (2025) - [arXiv:2510.22551v1](https://arxiv.org/abs/2510.22551v1)
+- **Nowcast3D: Reliable precipitation nowcasting via gray-box learning** (2025) - [arXiv:2511.04659v1](https://arxiv.org/abs/2511.04659v1)
+- **Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region** (2025) - [arXiv:2511.03770v1](https://arxiv.org/abs/2511.03770v1)
+- **A Probabilistic U-Net Approach to Downscaling Climate Simulations** (2025) - [arXiv:2511.03197v1](https://arxiv.org/abs/2511.03197v1)
+- **Intercomparison of a High-Resolution Regional Climate Model Ensemble for Catchment-Scale Water Cycle Processes under Human Influence** (2025) - [arXiv:2511.02799v1](https://arxiv.org/abs/2511.02799v1)
+- **Reinforcement learning based data assimilation for unknown state model** (2025) - [arXiv:2511.02286v1](https://arxiv.org/abs/2511.02286v1)
+- **Learned Adaptive Kernels for High-Fidelity Image Downscaling** (2025) - [arXiv:2511.01620v1](https://arxiv.org/abs/2511.01620v1)
+- **DAMBench: A Multi-Modal Benchmark for Deep Learning-based Atmospheric Data Assimilation** (2025) - [arXiv:2511.01468v1](https://arxiv.org/abs/2511.01468v1)
 
 ### Downscaling
 

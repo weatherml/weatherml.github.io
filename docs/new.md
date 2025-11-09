@@ -720,3 +720,108 @@
 
 ---
 
+### Nowcast3D: Reliable precipitation nowcasting via gray-box learning
+
+**Authors:** Huaguan Chen, Wei Han, Haofei Sun, Ning Lin, Xingtao Song, Yunfan Yang, Jie Tian, Yang Liu, Ji-Rong Wen, Xiaoye Zhang, Xueshun Shen, Hao Sun
+
+**Year:** 2025
+
+**Abstract:**
+> Extreme precipitation nowcasting demands high spatiotemporal fidelity and extended lead times, yet existing approaches remain limited. Numerical Weather Prediction (NWP) and its deep-learning emulations are too slow and coarse for rapidly evolving convection, while extrapolation and purely data-driven models suffer from error accumulation and excessive smoothing. Hybrid 2D radar-based methods discard crucial vertical information, preventing accurate reconstruction of height-dependent dynamics. We introduce a gray-box, fully three-dimensional nowcasting framework that directly processes volumetric radar reflectivity and couples physically constrained neural operators with datadriven learning. The model learns vertically varying 3D advection fields under a conservative advection operator, parameterizes spatially varying diffusion, and introduces a Brownian-motion--inspired stochastic term to represent unresolved motions. A residual branch captures small-scale convective initiation and microphysical variability, while a diffusion-based stochastic module estimates uncertainty. The framework achieves more accurate forecasts up to three-hour lead time across precipitation regimes and ranked first in 57\% of cases in a blind evaluation by 160 meteorologists. By restoring full 3D dynamics with physical consistency, it offers a scalable and robust pathway for skillful and reliable nowcasting of extreme precipitation.
+
+[**arXiv:2511.04659v1**](https://arxiv.org/abs/2511.04659v1)
+
+**Tags:** ``
+
+---
+
+### Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region
+
+**Authors:** Parthiban Loganathan, Elias Zea, Ricardo Vinuesa, Evelyn Otero
+
+**Year:** 2025
+
+**Abstract:**
+> Rapid changes and increasing climatic variability across the widely varied Koppen-Geiger regions of northern Europe generate significant needs for adaptation. Regional planning needs high-resolution projected temperatures. This work presents an integrative downscaling framework that incorporates Vision Transformer (ViT), Convolutional Long Short-Term Memory (ConvLSTM), and Geospatial Spatiotemporal Transformer with Attention and Imbalance-Aware Network (GeoStaNet) models. The framework is evaluated with a multicriteria decision system, Deep Learning-TOPSIS (DL-TOPSIS), for ten strategically chosen meteorological stations encompassing the temperate oceanic (Cfb), subpolar oceanic (Cfc), warm-summer continental (Dfb), and subarctic (Dfc) climate regions. Norwegian Earth System Model (NorESM2-LM) Coupled Model Intercomparison Project Phase 6 (CMIP6) outputs were bias-corrected during the 1951-2014 period and subsequently validated against earlier observations of day-to-day temperature metrics and diurnal range statistics. The ViT showed improved performance (Root Mean Squared Error (RMSE): 1.01 degrees C; R^2: 0.92), allowing for production of credible downscaled projections. Under the SSP5-8.5 scenario, the Dfc and Dfb climate zones are projected to warm by 4.8 degrees C and 3.9 degrees C, respectively, by 2100, with expansion in the diurnal temperature range by more than 1.5 degrees C. The Time of Emergence signal first appears in subarctic winter seasons (Dfc: approximately 2032), signifying an urgent need for adaptation measures. The presented framework offers station-based, high-resolution estimates of uncertainties and extremes, with direct uses for adaptation policy over high-latitude regions with fast environmental change.
+
+[**arXiv:2511.03770v1**](https://arxiv.org/abs/2511.03770v1)
+
+**Tags:** ``
+
+---
+
+### A Probabilistic U-Net Approach to Downscaling Climate Simulations
+
+**Authors:** Maryam Alipourhajiagha, Pierre-Louis Lemaire, Youssef Diouane, Julie Carreau
+
+**Year:** 2025
+
+**Abstract:**
+> Climate models are limited by heavy computational costs, often producing outputs at coarse spatial resolutions, while many climate change impact studies require finer scales. Statistical downscaling bridges this gap, and we adapt the probabilistic U-Net for this task, combining a deterministic U-Net backbone with a variational latent space to capture aleatoric uncertainty. We evaluate four training objectives, afCRPS and WMSE-MS-SSIM with three settings for downscaling precipitation and temperature from $16\times$ coarser resolution. Our main finding is that WMSE-MS-SSIM performs well for extremes under certain settings, whereas afCRPS better captures spatial variability across scales.
+
+[**arXiv:2511.03197v1**](https://arxiv.org/abs/2511.03197v1)
+
+**Tags:** ``
+
+---
+
+### Intercomparison of a High-Resolution Regional Climate Model Ensemble for Catchment-Scale Water Cycle Processes under Human Influence
+
+**Authors:** J. L. Roque, F. Da Silva Lopes, J. A. Giles, B. D. Gutknecht, B. Schalge, Y. Zhang, M. Ferro, P. Friederichs, K. Goergen, S. Poll, A. Valmassoi
+
+**Year:** 2025
+
+**Abstract:**
+> Understanding regional hydroclimatic variability and its drivers is essential for anticipating the impacts of climate change on water resources and sustainability. Yet, considerable uncertainty remains in the simulation of the coupled land atmosphere water and energy cycles, largely due to structural model limitations, simplified process representations, and insufficient spatial resolution. Within the framework of the Collaborative Research Center 1502 DETECT, this study presents a coordinated intercomparison of regional climate model simulations designed for water cycle process analysis over Europe. We analyze the performance of simulations using the ICON and TSMP1 model systems and covering the period from 1990 to 2020, comparing against reference datasets (E-OBS, GPCC, and GLEAM). We focus on 2 m air temperature, precipitation and evapotranspiration over four representative basins, the Ebro, Po, Rhine, and Tisa, within the EURO CORDEX domain.   Our analysis reveals systematic cold biases across all basins and seasons, with ICON generally outperforming TSMP1. Precipitation biases exhibit substantial spread, particularly in summer, reflecting the persistent challenge of accurately simulating precipitation. ICON tends to underestimate evapotranspiration, while TSMP1 performs better some seasons. Sensitivity experiments further indicate that the inclusion of irrigation improves simulation performance in the Po basin, which is intensively irrigated, and that higher-resolution sea surface temperature forcing data improves the overall precipitation representation. This baseline evaluation provides a first assessment of the DETECT multimodel ensemble and highlights key structural differences influencing model skill across hydroclimatic regimes.
+
+[**arXiv:2511.02799v1**](https://arxiv.org/abs/2511.02799v1)
+
+**Tags:** ``
+
+---
+
+### Reinforcement learning based data assimilation for unknown state model
+
+**Authors:** Ziyi Wang, Lijian Jiang
+
+**Year:** 2025
+
+**Abstract:**
+> Data assimilation (DA) has increasingly emerged as a critical tool for state estimation   across a wide range of applications. It is signiffcantly challenging when the governing equations of the underlying dynamics are unknown. To this end, various machine learning approaches have been employed to construct a surrogate state transition   model in a supervised learning framework, which relies on pre-computed training   datasets. However, it is often infeasible to obtain noise-free ground-truth state sequences in practice. To address this challenge, we propose a novel method that integrates reinforcement learning with ensemble-based Bayesian ffltering methods, enabling   the learning of surrogate state transition model for unknown dynamics directly from noisy observations, without using true state trajectories. Speciffcally, we treat the process for computing maximum likelihood estimation of surrogate model parameters   as a sequential decision-making problem, which can be formulated as a discretetime   Markov decision process (MDP). Under this formulation, learning the surrogate transition model is equivalent to ffnding an optimal policy of the MDP, which can be effectively addressed using reinforcement learning techniques. Once the model is trained offfine, state estimation can be performed in the online stage using ffltering methods based on the learned dynamics. The proposed framework accommodates a wide range of observation scenarios, including nonlinear and partially observed measurement   models. A few numerical examples demonstrate that the proposed method achieves superior accuracy and robustness in high-dimensional settings.
+
+[**arXiv:2511.02286v1**](https://arxiv.org/abs/2511.02286v1)
+
+**Tags:** ``
+
+---
+
+### Learned Adaptive Kernels for High-Fidelity Image Downscaling
+
+**Authors:** Piyush Narhari Pise, Sanjay Ghosh
+
+**Year:** 2025
+
+**Abstract:**
+> Image downscaling is a fundamental operation in image processing, crucial for adapting high-resolution content to various display and storage constraints. While classic methods often introduce blurring or aliasing, recent learning-based approaches offer improved adaptivity. However, achieving maximal fidelity against ground-truth low-resolution (LR) images, particularly by accounting for channel-specific characteristics, remains an open challenge. This paper introduces ADK-Net (Adaptive Downscaling Kernel Network), a novel deep convolutional neural network framework for high-fidelity supervised image downscaling. ADK-Net explicitly addresses channel interdependencies by learning to predict spatially-varying, adaptive resampling kernels independently for each pixel and uniquely for each color channel (RGB). The architecture employs a hierarchical design featuring a ResNet-based feature extractor and parallel channel-specific kernel generators, themselves composed of ResNet-based trunk and branch sub-modules, enabling fine-grained kernel prediction. Trained end-to-end using an L1 reconstruction loss against ground-truth LR data, ADK-Net effectively learns the target downscaling transformation. Extensive quantitative and qualitative experiments on standard benchmarks, including the RealSR dataset, demonstrate that ADK-Net establishes a new state-of-the-art in supervised image downscaling, yielding significant improvements in PSNR and SSIM metrics compared to existing learning-based and traditional methods.
+
+[**arXiv:2511.01620v1**](https://arxiv.org/abs/2511.01620v1)
+
+**Tags:** ``
+
+---
+
+### DAMBench: A Multi-Modal Benchmark for Deep Learning-based Atmospheric Data Assimilation
+
+**Authors:** Hao Wang, Zixuan Weng, Jindong Han, Wei Fan, Hao Liu
+
+**Year:** 2025
+
+**Abstract:**
+> Data Assimilation is a cornerstone of atmospheric system modeling, tasked with reconstructing system states by integrating sparse, noisy observations with prior estimation. While traditional approaches like variational and ensemble Kalman filtering have proven effective, recent advances in deep learning offer more scalable, efficient, and flexible alternatives better suited for complex, real-world data assimilation involving large-scale and multi-modal observations. However, existing deep learning-based DA research suffers from two critical limitations: (1) reliance on oversimplified scenarios with synthetically perturbed observations, and (2) the absence of standardized benchmarks for fair model comparison. To address these gaps, in this work, we introduce DAMBench, the first large-scale multi-modal benchmark designed to evaluate data-driven DA models under realistic atmospheric conditions. DAMBench integrates high-quality background states from state-of-the-art forecasting systems and real-world multi-modal observations (i.e., real-world weather stations and satellite imagery). All data are resampled to a common grid and temporally aligned to support systematic training, validation, and testing. We provide unified evaluation protocols and benchmark representative data assimilation approaches, including latent generative models and neural process frameworks. Additionally, we propose a lightweight multi-modal plugin to demonstrate how integrating realistic observations can enhance even simple baselines. Through comprehensive experiments, DAMBench establishes a rigorous foundation for future research, promoting reproducibility, fair comparison, and extensibility to real-world multi-modal scenarios. Our dataset and code are publicly available at https://github.com/figerhaowang/DAMBench.
+
+[**arXiv:2511.01468v1**](https://arxiv.org/abs/2511.01468v1)
+
+**Tags:** ``
+
+---
+
