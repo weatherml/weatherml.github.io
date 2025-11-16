@@ -59,6 +59,11 @@
 - **Reinforcement learning based data assimilation for unknown state model** (2025) - [arXiv:2511.02286v1](https://arxiv.org/abs/2511.02286v1)
 - **Learned Adaptive Kernels for High-Fidelity Image Downscaling** (2025) - [arXiv:2511.01620v1](https://arxiv.org/abs/2511.01620v1)
 - **DAMBench: A Multi-Modal Benchmark for Deep Learning-based Atmospheric Data Assimilation** (2025) - [arXiv:2511.01468v1](https://arxiv.org/abs/2511.01468v1)
+- **The Role of Deep Mesoscale Eddies in Ensemble Forecast Performance** (2025) - [arXiv:2511.09747v1](https://arxiv.org/abs/2511.09747v1)
+- **FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching** (2025) - [arXiv:2511.09731v1](https://arxiv.org/abs/2511.09731v1)
+- **Physics-based localization methodology for Data Assimilation by Ensemble Kalman Filter** (2025) - [arXiv:2511.08845v1](https://arxiv.org/abs/2511.08845v1)
+- **Recovering the Parameter $α$ in the Simplified Bardina Model through Continuous Data Assimilation** (2025) - [arXiv:2511.08421v1](https://arxiv.org/abs/2511.08421v1)
+- **Efficient Regional Storm Surge Surrogate Model Training Strategy Under Evolving Landscape and Climate Scenarios** (2025) - [arXiv:2511.07269v1](https://arxiv.org/abs/2511.07269v1)
 
 ### Downscaling
 

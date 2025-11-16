@@ -825,3 +825,78 @@
 
 ---
 
+### The Role of Deep Mesoscale Eddies in Ensemble Forecast Performance
+
+**Authors:** Justin Cooke, Kathleen Donohue, Clark D Rowley, Prasad G Thoppil, D Randolph Watts
+
+**Year:** 2025
+
+**Abstract:**
+> Present forecasting efforts rely on assimilation of observational data captured in the upper ocean (< 1000 m depth). These observations constrain the upper ocean and minimally influence the deep ocean. Nevertheless, development of the full water column circulation critically depends upon the dynamical interactions between upper and deep fields. Forecasts demonstrate that the initialization of the deep field is influential for the development and evolution of the surface in the forecast. Deep initial conditions that better agree with observations have lower upper ocean uncertainty as the forecast progresses. Here, best and worst ensemble members in two 92-day forecasts are identified and contrasted in order to determine how the deep ocean differs between these groups. The forecasts cover the duration of the Loop Current Eddy Thor separation event, which coincides with available deep observations in the Gulf. Model member performance is assessed by comparing surface variables against verifying analysis and satellite altimeter data during the forecast time-period. Deep cyclonic and anticyclonic features are reviewed, and compared against deep observations, indicating subtle differences in locations of deep eddies at relevant times. These results highlight both the importance of deep circulation in the dynamics of the Loop Current system and more broadly motivate efforts to assimilate deep observations to better constrain the deep initial fields and improve surface predictions.
+
+[**arXiv:2511.09747v1**](https://arxiv.org/abs/2511.09747v1)
+
+**Tags:** ``
+
+---
+
+### FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching
+
+**Authors:** Bernardo Perrone Ribeiro, Jana Faganeli Pucer
+
+**Year:** 2025
+
+**Abstract:**
+> Radar-based precipitation nowcasting, the task of forecasting short-term precipitation fields from previous radar images, is a critical problem for flood risk management and decision-making. While deep learning has substantially advanced this field, two challenges remain fundamental: the uncertainty of atmospheric dynamics and the efficient modeling of high-dimensional data. Diffusion models have shown strong promise by producing sharp, reliable forecasts, but their iterative sampling process is computationally prohibitive for time-critical applications. We introduce FlowCast, the first model to apply Conditional Flow Matching (CFM) to precipitation nowcasting. Unlike diffusion, CFM learns a direct noise-to-data mapping, enabling rapid, high-fidelity sample generation with drastically fewer function evaluations. Our experiments demonstrate that FlowCast establishes a new state-of-the-art in predictive accuracy. A direct comparison further reveals the CFM objective is both more accurate and significantly more efficient than a diffusion objective on the same architecture, maintaining high performance with significantly fewer sampling steps. This work positions CFM as a powerful and practical alternative for high-dimensional spatiotemporal forecasting.
+
+[**arXiv:2511.09731v1**](https://arxiv.org/abs/2511.09731v1)
+
+**Tags:** ``
+
+---
+
+### Physics-based localization methodology for Data Assimilation by Ensemble Kalman Filter
+
+**Authors:** Sarp Er, Marcello Meldi
+
+**Year:** 2025
+
+**Abstract:**
+> A physics-based methodology for the determination of the localization function for the Ensemble Kalman Filter (EnKF) is proposed. The spatial features of such function evolve dynamically over time according to the relevant instantaneous flow features of the ensemble members with the objective, to reduce the computational cost of the Data Assimilation (DA) procedure when applied with solvers for Computational Fluid Dynamics (CFD). The validation of the methodology has been carried out by the analysis of two test cases exhibiting different features. This permits to investigate different physical features, tailored for each test case, which affect the localization function. The flow over a two-dimensional square cylinder at $Re=150$ is the first case investigated. It has been shown that the proposed localization procedure leads to a more cost-effective DA process by reducing the size of the assimilated regions while keeping the same level of accuracy. The capabilities of the methodology are further demonstrated by the investigation of the turbulent flow around a three-dimensional circular cylinder for $Re=3900$. Again, the methodology exhibits an excellent trade off in terms of accuracy versus computational requirements.
+
+[**arXiv:2511.08845v1**](https://arxiv.org/abs/2511.08845v1)
+
+**Tags:** ``
+
+---
+
+### Recovering the Parameter $α$ in the Simplified Bardina Model through Continuous Data Assimilation
+
+**Authors:** Débora A. F. Albanez, Maicon José Benvenutti, Jing Tian
+
+**Year:** 2025
+
+**Abstract:**
+> In this study, we develop a continuous data assimilation algorithm to recover the parameter $α$ in the simplified Bardina model. Our method utilizes the observations of finitely many Fourier modes by using a nudging framework that involves recursive parameter updates. We provide a rigorous convergence analysis, showing that the approximated parameter approaches the true value under suitable conditions.
+
+[**arXiv:2511.08421v1**](https://arxiv.org/abs/2511.08421v1)
+
+**Tags:** ``
+
+---
+
+### Efficient Regional Storm Surge Surrogate Model Training Strategy Under Evolving Landscape and Climate Scenarios
+
+**Authors:** Ziyue Liu, Mohammad Ahmadi Gharehtoragh, Brenna Kari Losch, David R. Johnson
+
+**Year:** 2025
+
+**Abstract:**
+> Coastal communities can be exposed to risk from catastrophic storm-induced coastal hazards, causing major global losses each year. Recent advances in computational power have enabled the integration of machine learning (ML) into coastal hazard modeling, particularly for storm surge prediction. Given the potential variation in future climate and landscape conditions, efficient predictive models that can incorporate multiple future scenarios are needed. Existing studies built a framework for training ML models using storm surge simulation data under different potential future climate and landscape scenarios. However, storm surge simulation data under designed future scenarios require computationally expensive numerical simulations of synthetic storm suites over extensive geospatial grids. As the number of designed scenarios increases, the computational cost associated with both numerical simulation and ML training increases rapidly. This study introduces a cost-effective reduction strategy that incorporates new scenario data while minimizing computational burden. The approach reduces training data across three dimensions: (1) grid points, (2) input features, and (3) storm suite size. Reducing the storm suite size is especially effective in cutting simulation costs. Model performance was evaluated using different ML algorithms, showing consistent effectiveness. When trained on 5,000 of 80,000 grid points, 10 of 12 features, and 40 of 90 storms, the model achieved an R=0.93, comparable to that of models trained on the full dataset, with substantially lower computational expense.
+
+[**arXiv:2511.07269v1**](https://arxiv.org/abs/2511.07269v1)
+
+**Tags:** ``
+
+---
+
