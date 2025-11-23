@@ -64,6 +64,11 @@
 - **Physics-based localization methodology for Data Assimilation by Ensemble Kalman Filter** (2025) - [arXiv:2511.08845v1](https://arxiv.org/abs/2511.08845v1)
 - **Recovering the Parameter $α$ in the Simplified Bardina Model through Continuous Data Assimilation** (2025) - [arXiv:2511.08421v1](https://arxiv.org/abs/2511.08421v1)
 - **Efficient Regional Storm Surge Surrogate Model Training Strategy Under Evolving Landscape and Climate Scenarios** (2025) - [arXiv:2511.07269v1](https://arxiv.org/abs/2511.07269v1)
+- **Multi-layer Stack Ensembles for Time Series Forecasting** (2025) - [arXiv:2511.15350v1](https://arxiv.org/abs/2511.15350v1)
+- **Towards Streaming Prediction of Oscillatory Flows: A Data Assimilation and Machine Learning Approach** (2025) - [arXiv:2511.15758v1](https://arxiv.org/abs/2511.15758v1)
+- **Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts** (2025) - [arXiv:2511.14218v1](https://arxiv.org/abs/2511.14218v1)
+- **Weather Maps as Tokens: Transformers for Renewable Energy Forecasting** (2025) - [arXiv:2511.13935v2](https://arxiv.org/abs/2511.13935v2)
+- **Exploring Ultra Rapid Data Assimilation Based on Ensemble Transform Kalman Filter with the Lorenz 96 Model** (2025) - [arXiv:2511.12620v1](https://arxiv.org/abs/2511.12620v1)
 
 ### Downscaling
 

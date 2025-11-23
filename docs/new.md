@@ -900,3 +900,78 @@
 
 ---
 
+### Multi-layer Stack Ensembles for Time Series Forecasting
+
+**Authors:** Nathanael Bosch, Oleksandr Shchur, Nick Erickson, Michael Bohlke-Schneider, Caner Türkmen
+
+**Year:** 2025
+
+**Abstract:**
+> Ensembling is a powerful technique for improving the accuracy of machine learning models, with methods like stacking achieving strong results in tabular tasks. In time series forecasting, however, ensemble methods remain underutilized, with simple linear combinations still considered state-of-the-art. In this paper, we systematically explore ensembling strategies for time series forecasting. We evaluate 33 ensemble models -- both existing and novel -- across 50 real-world datasets. Our results show that stacking consistently improves accuracy, though no single stacker performs best across all tasks. To address this, we propose a multi-layer stacking framework for time series forecasting, an approach that combines the strengths of different stacker models. We demonstrate that this method consistently provides superior accuracy across diverse forecasting scenarios. Our findings highlight the potential of stacking-based methods to improve AutoML systems for time series forecasting.
+
+[**arXiv:2511.15350v1**](https://arxiv.org/abs/2511.15350v1)
+
+**Tags:** ``
+
+---
+
+### Towards Streaming Prediction of Oscillatory Flows: A Data Assimilation and Machine Learning Approach
+
+**Authors:** Miguel M. Valero, Marcello Meldi
+
+**Year:** 2025
+
+**Abstract:**
+> Data-driven methods have demonstrated strong predictive capabilities in fluid mechanics, yet most current applications still focus on simplified configurations, often characterised by statistical stationarity or limited temporal variability. This work proposes a methodology that combines Data Assimilation (DA) and Machine Learning (ML) to predict flow configurations that exhibit cyclic behaviour over time. Starting from limited, sparse high-fidelity measurements and a low-fidelity numerical model, the DA approach performs data fusion to obtain complete and accurate flow state estimations in time. This complete dataset is used to train multiple ML tools, which are applied across different phases of the flow cycle to augment the model's predictions when high-fidelity data might not be available for the DA application. The methodology is applied to the analysis of an oscillating cylinder in a laminar regime using a sliding-window approach, in which separate models are trained for specific flow conditions to ensure each model specialises in flow dynamics representative of a phase of the oscillation period. This phase-resolved learning enables the efficient capture of transient features that would be challenging for a single global model. The results highlight the potential of this method to study complex flow configurations with oscillatory features in which neither the flow nor the cycle is known a priori, in particular by exploiting real-time training and updates, as is commonly done in digital twins, which require continuous model correction and adaptation.
+
+[**arXiv:2511.15758v1**](https://arxiv.org/abs/2511.15758v1)
+
+**Tags:** ``
+
+---
+
+### Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts
+
+**Authors:** Xinlei Xiong, Wenbo Hu, Shuxun Zhou, Kaifeng Bi, Lingxi Xie, Ying Liu, Richang Hong, Qi Tian
+
+**Year:** 2025
+
+**Abstract:**
+> Weather forecasting is fundamentally challenged by the chaotic nature of the atmosphere, necessitating probabilistic approaches to quantify uncertainty. While traditional ensemble prediction (EPS) addresses this through computationally intensive simulations, recent advances in Bayesian Deep Learning (BDL) offer a promising but often disconnected alternative. We bridge these paradigms through a unified hybrid Bayesian Deep Learning framework for ensemble weather forecasting that explicitly decomposes predictive uncertainty into epistemic and aleatoric components, learned via variational inference and a physics-informed stochastic perturbation scheme modeling flow-dependent atmospheric dynamics, respectively. We further establish a unified theoretical framework that rigorously connects BDL and EPS, providing formal theorems that decompose total predictive uncertainty into epistemic and aleatoric components under the hybrid BDL framework. We validate our framework on the large-scale 40-year ERA5 reanalysis dataset (1979-2019) with 0.25° spatial resolution. Experimental results show that our method not only improves forecast accuracy and yields better-calibrated uncertainty quantification but also achieves superior computational efficiency compared to state-of-the-art probabilistic diffusion models. We commit to making our code open-source upon acceptance of this paper.
+
+[**arXiv:2511.14218v1**](https://arxiv.org/abs/2511.14218v1)
+
+**Tags:** ``
+
+---
+
+### Weather Maps as Tokens: Transformers for Renewable Energy Forecasting
+
+**Authors:** Federico Battini
+
+**Year:** 2025
+
+**Abstract:**
+> Accurate renewable energy forecasting is essential to reduce dependence on fossil fuels and enabling grid decarbonization. However, current approaches fail to effectively integrate the rich spatial context of weather patterns with their temporal evolution. This work introduces a novel approach that treats weather maps as tokens in transformer sequences to predict renewable energy. Hourly weather maps are encoded as spatial tokens using a lightweight convolutional neural network, and then processed by a transformer to capture temporal dynamics across a 45-hour forecast horizon. Despite disadvantages in input initialization, evaluation against ENTSO-E operational forecasts shows a reduction in RMSE of about 60% and 20% for wind and solar respectively. A live dashboard showing daily forecasts is available at: https://www.sardiniaforecast.ifabfoundation.it.
+
+[**arXiv:2511.13935v2**](https://arxiv.org/abs/2511.13935v2)
+
+**Tags:** ``
+
+---
+
+### Exploring Ultra Rapid Data Assimilation Based on Ensemble Transform Kalman Filter with the Lorenz 96 Model
+
+**Authors:** Fumitoshi Kawasaki, Atsushi Okazaki, Kenta Kurosawa, Shunji Kotsuki
+
+**Year:** 2025
+
+**Abstract:**
+> To explore the effectiveness of ultra-rapid data assimilation (URDA) for numerical weather prediction (NWP), this study investigates the properties of URDA in nonlinear models and proposes technical treatments to enhance its performance. URDA rapidly updates preemptive forecasts derived from observations without integrating a dynamical model each time additional observations become available. First, we analytically demonstrate that the preemptive forecast obtained by URDA in nonlinear models is approximately equivalent to the forecast integrated from the analysis. Furthermore, numerical experiments are conducted with the 40-variable Lorenz 96 model. The results show that URDA in nonlinear models tends to exhibit deterioration of forecast accuracy and collapse of ensemble spread when preemptive forecasts are repeatedly updated or when the forecasts are extended over longer periods. Furthermore, the roles of inflation and localization, both essential technical treatments in NWP, are examined in the context of URDA. It is shown that although inflation and localization are essential to URDA, conventional inflation techniques are not suitable for it. Therefore, this study proposes new technical treatments for URDA, namely relaxation to baseline perturbations (RTBP) and relaxation to baseline forecast (RTBF). Applying RTBP and RTBF mitigates the difficulties associated with URDA and yields preemptive forecasts with higher accuracy than the baseline forecast. Consequently, URDA, particularly when combined with RTBP and RTBF, would stand as a step toward practical application in NWP.
+
+[**arXiv:2511.12620v1**](https://arxiv.org/abs/2511.12620v1)
+
+**Tags:** ``
+
+---
+
