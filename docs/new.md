@@ -975,3 +975,18 @@
 
 ---
 
+### Causal Feature Selection for Weather-Driven Residential Load Forecasting
+
+**Authors:** Elise Zhang, François Mirallès, Stéphane Dellacherie, Di Wu, Benoit Boulet
+
+**Year:** 2025
+
+**Abstract:**
+> Weather is a dominant external driver of residential electricity demand, but adding many meteorological covariates can inflate model complexity and may even impair accuracy. Selecting appropriate exogenous features is non-trivial and calls for a principled selection framework, given the direct operational implications for day-to-day planning and reliability. This work investigates whether causal feature selection can retain the most informative weather drivers while improving parsimony and robustness for short-term load forecasting. We present a case study on Southern Ontario with two open-source datasets: (i) IESO hourly electricity consumption by Forward Sortation Areas; (ii) ERA5 weather reanalysis data. We compare different feature selection regimes (no feature selection, non-causal selection, PCMCI-causal selection) on city-level forecasting with three different time series forecasting models: GRU, TCN, PatchTST. In the feature analysis, non-causal selection prioritizes radiation and moisture variables that show correlational dependence, whereas PCMCI-causal selection emphasizes more direct thermal drivers and prunes the indirect covariates. We detail the evaluation pipeline and report diagnostics on prediction accuracy and extreme-weather robustness, positioning causal feature selection as a practical complement to modern forecasters when integrating weather into residential load forecasting.
+
+[**arXiv:2511.20508v1**](https://arxiv.org/abs/2511.20508v1)
+
+**Tags:** ``
+
+---
+

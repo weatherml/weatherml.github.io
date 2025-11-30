@@ -69,6 +69,7 @@
 - **Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts** (2025) - [arXiv:2511.14218v1](https://arxiv.org/abs/2511.14218v1)
 - **Weather Maps as Tokens: Transformers for Renewable Energy Forecasting** (2025) - [arXiv:2511.13935v2](https://arxiv.org/abs/2511.13935v2)
 - **Exploring Ultra Rapid Data Assimilation Based on Ensemble Transform Kalman Filter with the Lorenz 96 Model** (2025) - [arXiv:2511.12620v1](https://arxiv.org/abs/2511.12620v1)
+- **Causal Feature Selection for Weather-Driven Residential Load Forecasting** (2025) - [arXiv:2511.20508v1](https://arxiv.org/abs/2511.20508v1)
 
 ### Downscaling
 
