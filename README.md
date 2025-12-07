@@ -70,6 +70,14 @@
 - **Weather Maps as Tokens: Transformers for Renewable Energy Forecasting** (2025) - [arXiv:2511.13935v2](https://arxiv.org/abs/2511.13935v2)
 - **Exploring Ultra Rapid Data Assimilation Based on Ensemble Transform Kalman Filter with the Lorenz 96 Model** (2025) - [arXiv:2511.12620v1](https://arxiv.org/abs/2511.12620v1)
 - **Causal Feature Selection for Weather-Driven Residential Load Forecasting** (2025) - [arXiv:2511.20508v1](https://arxiv.org/abs/2511.20508v1)
+- **Cyclical Temporal Encoding and Hybrid Deep Ensembles for Multistep Energy Forecasting** (2025) - [arXiv:2512.03656v1](https://arxiv.org/abs/2512.03656v1)
+- **The promising potential of vision language models for the generation of textual weather forecasts** (2025) - [arXiv:2512.03623v1](https://arxiv.org/abs/2512.03623v1)
+- **Observation-driven correction of numerical weather prediction for marine winds** (2025) - [arXiv:2512.03606v1](https://arxiv.org/abs/2512.03606v1)
+- **EcoCast: A Spatio-Temporal Model for Continual Biodiversity and Climate Risk Forecasting** (2025) - [arXiv:2512.02260v1](https://arxiv.org/abs/2512.02260v1)
+- **Are we misdiagnosing ensemble forecast reliability? On the insufficiency of Spread-Error and rank-based reliability metrics** (2025) - [arXiv:2512.02160v1](https://arxiv.org/abs/2512.02160v1)
+- **On Global Applicability and Location Transferability of Generative Deep Learning Models for Precipitation Downscaling** (2025) - [arXiv:2512.01400v1](https://arxiv.org/abs/2512.01400v1)
+- **Data assimilation and discrepancy modeling with shallow recurrent decoders** (2025) - [arXiv:2512.01170v1](https://arxiv.org/abs/2512.01170v1)
+- **PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting** (2025) - [arXiv:2512.01062v1](https://arxiv.org/abs/2512.01062v1)
 
 ### Downscaling
 

@@ -990,3 +990,123 @@
 
 ---
 
+### Cyclical Temporal Encoding and Hybrid Deep Ensembles for Multistep Energy Forecasting
+
+**Authors:** Salim Khazem, Houssam Kanso
+
+**Year:** 2025
+
+**Abstract:**
+> Accurate electricity consumption forecasting is essential for demand management and smart grid operations. This paper introduces a unified deep learning framework that integrates cyclical temporal encoding with hybrid LSTM-CNN architectures to enhance multistep energy forecasting. We systematically transform calendar-based attributes using sine cosine encodings to preserve periodic structure and evaluate their predictive relevance through correlation analysis. To exploit both long-term seasonal effects and short-term local patterns, we employ an ensemble model composed of an LSTM, a CNN, and a meta-learner of MLP regressors specialized for each forecast horizon. Using a one year national consumption dataset, we conduct an extensive experimental study including ablation analyses with and without cyclical encodings and calendar features and comparisons with established baselines from the literature. Results demonstrate consistent improvements across all seven forecast horizons, with our hybrid model achieving lower RMSE and MAE than individual architectures and prior methods. These findings confirm the benefit of combining cyclical temporal representations with complementary deep learning structures. To our knowledge, this is the first work to jointly evaluate temporal encodings, calendar-based features, and hybrid ensemble architectures within a unified short-term energy forecasting framework.
+
+[**arXiv:2512.03656v1**](https://arxiv.org/abs/2512.03656v1)
+
+**Tags:** ``
+
+---
+
+### The promising potential of vision language models for the generation of textual weather forecasts
+
+**Authors:** Edward C. C. Steele, Dinesh Mane, Emilio Monti, Luis Orus, Rebecca Chantrill-Cheyette, Matthew Couch, Kirstine I. Dale, Simon Eaton, Govindarajan Rangarajan, Amir Majlesi, Steven Ramsdale, Michael Sharpe, Craig Smith, Jonathan Smith, Rebecca Yates, Holly Ellis, Charles Ewen
+
+**Year:** 2025
+
+**Abstract:**
+> Despite the promising capability of multimodal foundation models, their application to the generation of meteorological products and services remains nascent. To accelerate aspiration and adoption, we explore the novel use of a vision language model for writing the iconic Shipping Forecast text directly from video-encoded gridded weather data. These early results demonstrate promising scalable technological opportunities for enhancing production efficiency and service innovation within the weather enterprise and beyond.
+
+[**arXiv:2512.03623v1**](https://arxiv.org/abs/2512.03623v1)
+
+**Tags:** ``
+
+---
+
+### Observation-driven correction of numerical weather prediction for marine winds
+
+**Authors:** Matteo Peduto, Qidong Yang, Jonathan Giezendanner, Devis Tuia, Sherrie Wang
+
+**Year:** 2025
+
+**Abstract:**
+> Accurate marine wind forecasts are essential for safe navigation, ship routing, and energy operations, yet they remain challenging because observations over the ocean are sparse, heterogeneous, and temporally variable. We reformulate wind forecasting as observation-informed correction of a global numerical weather prediction (NWP) model. Rather than forecasting winds directly, we learn local correction patterns by assimilating the latest in-situ observations to adjust the Global Forecast System (GFS) output. We propose a transformer-based deep learning architecture that (i) handles irregular and time-varying observation sets through masking and set-based attention mechanisms, (ii) conditions predictions on recent observation-forecast pairs via cross-attention, and (iii) employs cyclical time embeddings and coordinate-aware location representations to enable single-pass inference at arbitrary spatial coordinates. We evaluate our model over the Atlantic Ocean using observations from the International Comprehensive Ocean-Atmosphere Data Set (ICOADS) as reference. The model reduces GFS 10-meter wind RMSE at all lead times up to 48 hours, achieving 45% improvement at 1-hour lead time and 13% improvement at 48-hour lead time. Spatial analyses reveal the most persistent improvements along coastlines and shipping routes, where observations are most abundant. The tokenized architecture naturally accommodates heterogeneous observing platforms (ships, buoys, tide gauges, and coastal stations) and produces both site-specific predictions and basin-scale gridded products in a single forward pass. These results demonstrate a practical, low-latency post-processing approach that complements NWP by learning to correct systematic forecast errors.
+
+[**arXiv:2512.03606v1**](https://arxiv.org/abs/2512.03606v1)
+
+**Tags:** ``
+
+---
+
+### EcoCast: A Spatio-Temporal Model for Continual Biodiversity and Climate Risk Forecasting
+
+**Authors:** Hammed A. Akande, Abdulrauf A. Gidado
+
+**Year:** 2025
+
+**Abstract:**
+> Increasing climate change and habitat loss are driving unprecedented shifts in species distributions. Conservation professionals urgently need timely, high-resolution predictions of biodiversity risks, especially in ecologically diverse regions like Africa. We propose EcoCast, a spatio-temporal model designed for continual biodiversity and climate risk forecasting. Utilizing multisource satellite imagery, climate data, and citizen science occurrence records, EcoCast predicts near-term (monthly to seasonal) shifts in species distributions through sequence-based transformers that model spatio-temporal environmental dependencies. The architecture is designed with support for continual learning to enable future operational deployment with new data streams. Our pilot study in Africa shows promising improvements in forecasting distributions of selected bird species compared to a Random Forest baseline, highlighting EcoCast's potential to inform targeted conservation policies. By demonstrating an end-to-end pipeline from multi-modal data ingestion to operational forecasting, EcoCast bridges the gap between cutting-edge machine learning and biodiversity management, ultimately guiding data-driven strategies for climate resilience and ecosystem conservation throughout Africa.
+
+[**arXiv:2512.02260v1**](https://arxiv.org/abs/2512.02260v1)
+
+**Tags:** ``
+
+---
+
+### Are we misdiagnosing ensemble forecast reliability? On the insufficiency of Spread-Error and rank-based reliability metrics
+
+**Authors:** Arlan Dirkson, Mark Buehner
+
+**Year:** 2025
+
+**Abstract:**
+> It has been documented that Spread-Error equality and a flat rank histogram are necessary but insufficient for demonstrating ensemble forecast reliability. Nevertheless, these metrics are heavily relied upon, both in the literature and at operational numerical weather prediction centers. In this study, we demonstrate theoretically why the Spread-Error relationship is necessary but insufficient for diagnosing reliability up to second order, even when mean bias is absent or accounted for. Assuming joint normality between ensemble members and the reference truth, we further show with idealized experiments that the same covariance structure responsible for this insufficiency also produces false diagnoses of reliability with the rank histogram and the reliability component of the continuous rank probability score. Under this structure and when the ensemble mean is meaningfully different from climatology, the truth lies among the least (most) extreme members when climatological variance is excessive (deficient) in each member. Importantly, this behavior is also shown to be plausible in operational ensemble weather forecasts. Combining these results with calibration principles from statistical postprocessing leads us to conclude that both perfect dispersion and underdispersion are ill-defined. When diagnostics are misinterpreted as indicating the latter, improper tuning can lead to further deterioration of forecast quality, even while improving Spread-Error and rank histogram behavior. To address these issues, we propose a new reliability diagnostic based on three easily computed statistics, motivated by the structure of the joint distribution of ensemble members and the reference truth up to second order. The diagnostic separates contributions to unreliability originating from climatology and predictability, enabling a more precise and robust characterization of ensemble behavior.
+
+[**arXiv:2512.02160v1**](https://arxiv.org/abs/2512.02160v1)
+
+**Tags:** ``
+
+---
+
+### On Global Applicability and Location Transferability of Generative Deep Learning Models for Precipitation Downscaling
+
+**Authors:** Paula Harder, Christian Lessig, Matthew Chantry, Francis Pelletier, David Rolnick
+
+**Year:** 2025
+
+**Abstract:**
+> Deep learning offers promising capabilities for the statistical downscaling of climate and weather forecasts, with generative approaches showing particular success in capturing fine-scale precipitation patterns. However, most existing models are region-specific, and their ability to generalize to unseen geographic areas remains largely unexplored. In this study, we evaluate the generalization performance of generative downscaling models across diverse regions. Using a global framework, we employ ERA5 reanalysis data as predictors and IMERG precipitation estimates at $0.1^\circ$ resolution as targets. A hierarchical location-based data split enables a systematic assessment of model performance across 15 regions around the world.
+
+[**arXiv:2512.01400v1**](https://arxiv.org/abs/2512.01400v1)
+
+**Tags:** ``
+
+---
+
+### Data assimilation and discrepancy modeling with shallow recurrent decoders
+
+**Authors:** Yuxuan Bao, J. Nathan Kutz
+
+**Year:** 2025
+
+**Abstract:**
+> The requirements of modern sensing are rapidly evolving, driven by increasing demands for data efficiency, real-time processing, and deployment under limited sensing coverage. Complex physical systems are often characterized through the integration of a limited number of point sensors in combination with scientific computations which approximate the dominant, full-state dynamics. Simulation models, however, inevitably neglect small-scale or hidden processes, are sensitive to perturbations, or oversimplify parameter correlations, leading to reconstructions that often diverge from the reality measured by sensors. This creates a critical need for data assimilation, the process of integrating observational data with predictive simulation models to produce coherent and accurate estimates of the full state of complex physical systems. We propose a machine learning framework for Data Assimilation with a SHallow REcurrent Decoder (DA-SHRED) which bridges the simulation-to-real (SIM2REAL) gap between computational modeling and experimental sensor data. For real-world physics systems modeling high-dimensional spatiotemporal fields, where the full state cannot be directly observed and must be inferred from sparse sensor measurements, we leverage the latent space learned from a reduced simulation model via SHRED, and update these latent variables using real sensor data to accurately reconstruct the full system state. Furthermore, our algorithm incorporates a sparse identification of nonlinear dynamics based regression model in the latent space to identify functionals corresponding to missing dynamics in the simulation model. We demonstrate that DA-SHRED successfully closes the SIM2REAL gap and additionally recovers missing dynamics in highly complex systems, demonstrating that the combination of efficient temporal encoding and physics-informed correction enables robust data assimilation.
+
+[**arXiv:2512.01170v1**](https://arxiv.org/abs/2512.01170v1)
+
+**Tags:** ``
+
+---
+
+### PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting
+
+**Authors:** Seokhyun Chin, Junghwan Park, Woojin Cho
+
+**Year:** 2025
+
+**Abstract:**
+> Precipitation nowcasting, key for early warning of disasters, currently relies on computationally expensive and restrictive methods that limit access to many countries. To overcome this challenge, we propose precipitation nowcasting using satellite imagery with physics constraints for improved accuracy and physical consistency. We use a novel physics-informed dual neural operator (PIANO) structure to enforce the fundamental equation of advection-diffusion during training to predict satellite imagery using a PINN loss. Then, we use a generative model to convert satellite images to radar images, which are used for precipitation nowcasting. Compared to baseline models, our proposed model shows a notable improvement in moderate (4mm/h) precipitation event prediction alongside short-term heavy (8mm/h) precipitation event prediction. It also demonstrates low seasonal variability in predictions, indicating robustness for generalization. This study suggests the potential of the PIANO and serves as a good baseline for physics-informed precipitation nowcasting.
+
+[**arXiv:2512.01062v1**](https://arxiv.org/abs/2512.01062v1)
+
+**Tags:** ``
+
+---
+
