@@ -78,6 +78,8 @@
 - **On Global Applicability and Location Transferability of Generative Deep Learning Models for Precipitation Downscaling** (2025) - [arXiv:2512.01400v1](https://arxiv.org/abs/2512.01400v1)
 - **Data assimilation and discrepancy modeling with shallow recurrent decoders** (2025) - [arXiv:2512.01170v1](https://arxiv.org/abs/2512.01170v1)
 - **PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting** (2025) - [arXiv:2512.01062v1](https://arxiv.org/abs/2512.01062v1)
+- **Predicting CME Arrivals with Heliospheric Imagers from L5: A Data Assimilation Approach** (2025) - [arXiv:2512.09738v1](https://arxiv.org/abs/2512.09738v1)
+- **Bridging CORDEX and CMIP6: Machine Learning Downscaling for Wind and Solar Energy Droughts in Central Europe** (2025) - [arXiv:2512.07429v1](https://arxiv.org/abs/2512.07429v1)
 
 ### Downscaling
 
