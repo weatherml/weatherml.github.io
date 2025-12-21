@@ -80,6 +80,13 @@
 - **PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting** (2025) - [arXiv:2512.01062v1](https://arxiv.org/abs/2512.01062v1)
 - **Predicting CME Arrivals with Heliospheric Imagers from L5: A Data Assimilation Approach** (2025) - [arXiv:2512.09738v1](https://arxiv.org/abs/2512.09738v1)
 - **Bridging CORDEX and CMIP6: Machine Learning Downscaling for Wind and Solar Energy Droughts in Central Europe** (2025) - [arXiv:2512.07429v1](https://arxiv.org/abs/2512.07429v1)
+- **Latent-space variational data assimilation in two-dimensional turbulence** (2025) - [arXiv:2512.15470v1](https://arxiv.org/abs/2512.15470v1)
+- **Continuous data assimilation for 2D stochastic Navier-Stokes equations** (2025) - [arXiv:2512.15184v1](https://arxiv.org/abs/2512.15184v1)
+- **Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System ClimaX-LETKF** (2025) - [arXiv:2512.14444v1](https://arxiv.org/abs/2512.14444v1)
+- **Evaluating Weather Forecasts from a Decision Maker's Perspective** (2025) - [arXiv:2512.14779v1](https://arxiv.org/abs/2512.14779v1)
+- **Quantum Machine Learning for Climate Modelling** (2025) - [arXiv:2512.14208v1](https://arxiv.org/abs/2512.14208v1)
+- **An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales** (2025) - [arXiv:2512.13987v1](https://arxiv.org/abs/2512.13987v1)
+- **Time-aware UNet and super-resolution deep residual networks for spatial downscaling** (2025) - [arXiv:2512.13753v1](https://arxiv.org/abs/2512.13753v1)
 
 ### Downscaling
 

@@ -1140,3 +1140,108 @@
 
 ---
 
+### Latent-space variational data assimilation in two-dimensional turbulence
+
+**Authors:** Andrew Cleary, Qi Wang, Tamer A. Zaki
+
+**Year:** 2025
+
+**Abstract:**
+> Starting from limited measurements of a turbulent flow, data assimilation (DA) attempts to estimate all the spatio-temporal scales of motion. Success is dependent on whether the system is observable from the measurements, or how much of the initial turbulent field is encoded in the available measurements. Adjoint-variational DA minimises the discrepancy between the true and estimated measurements by optimising the initial velocity or vorticity field (the `state space'). Here we propose to instead optimise in a lower-dimensional latent space which is learned by implicit rank minimising autoencoders. Assimilating in latent space, rather than state space, redefines the observability of the measurements and identifies the physically meaningful perturbation directions which matter most for accurate prediction of the flow evolution. When observing coarse-grained measurements of two-dimensional Kolmogorov flow at moderate Reynolds numbers, the proposed latent-space DA approach estimates the full turbulent state with a relative error improvement of two orders of magnitude over the standard state-space DA approach. The small scales of the estimated turbulent field are predicted more faithfully with latent-space DA, greatly reducing erroneous small-scale velocities typically introduced by state-space DA. These findings demonstrate that the observability of the system from available data can be greatly improved when turbulent measurements are assimilated in the right space, or coordinates.
+
+[**arXiv:2512.15470v1**](https://arxiv.org/abs/2512.15470v1)
+
+**Tags:** ``
+
+---
+
+### Continuous data assimilation for 2D stochastic Navier-Stokes equations
+
+**Authors:** Hakima Bessaih, Benedetta Ferrario, Oussama Landoulsi, Margherita Zanella
+
+**Year:** 2025
+
+**Abstract:**
+> Continuous data assimilation methods, such as the nudging algorithm introduced by Azouani, Olson, and Titi (AOT) [2], are known to be highly effective in deterministic settings for asymptotically synchronizing approximate solutions with observed dynamics. In this work, we extend this framework to a stochastic regime by considering the two-dimensional incompressible Navier-Stokes equations subject to either additive or multiplicative noise. We establish sufficient conditions on the nudging parameter and the spatial observation scale that guarantee convergence of the nudged solution to the true stochastic flow.   In the case of multiplicative noise, convergence holds in expectation, with exponential or polynomial rates depending on the growth of the noise covariance. For additive noise, we obtain the exponential convergence both in expectation and pathwise. These results yield a stochastic generalization of the AOT theory, demonstrating how the interplay between random forcing, viscous dissipation and feedback control governs synchronization in stochastic fluid systems.
+
+[**arXiv:2512.15184v1**](https://arxiv.org/abs/2512.15184v1)
+
+**Tags:** ``
+
+---
+
+### Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System ClimaX-LETKF
+
+**Authors:** Akira Takeshima, Kenta Shiraishi, Atsushi Okazaki, Tadashi Tsuyuki, Shunji Kotsuki
+
+**Year:** 2025
+
+**Abstract:**
+> While machine learning-based weather prediction (MLWP) has achieved significant advancements, research on assimilating real observations or ensemble forecasts within MLWP models remains limited. We introduce ClimaX-LETKF, the first purely data-driven ML-based ensemble weather forecasting system. It operates stably over multiple years, independently of numerical weather prediction (NWP) models, by assimilating the NCEP ADP Global Upper Air and Surface Weather Observations. The system demonstrates greater stability and accuracy with relaxation to prior perturbation (RTPP) than with relaxation to prior spread (RTPS), while NWP models tend to be more stable with RTPS. RTPP replaces an analysis perturbation with a weighted blend of analysis and background perturbations, whereas RTPS simply rescales the analysis perturbation. Our experiments reveal that MLWP models are less capable of restoring the atmospheric field to its attractor than NWP models. This work provides valuable insights for enhancing MLWP ensemble forecasting systems and represents a substantial step toward their practical applications.
+
+[**arXiv:2512.14444v1**](https://arxiv.org/abs/2512.14444v1)
+
+**Tags:** ``
+
+---
+
+### Evaluating Weather Forecasts from a Decision Maker's Perspective
+
+**Authors:** Kornelius Raeth, Nicole Ludwig
+
+**Year:** 2025
+
+**Abstract:**
+> Standard weather forecast evaluations focus on the forecaster's perspective and on a statistical assessment comparing forecasts and observations. In practice, however, forecasts are used to make decisions, so it seems natural to take the decision-maker's perspective and quantify the value of a forecast by its ability to improve decision-making. Decision calibration provides a novel framework for evaluating forecast performance at the decision level rather than the forecast level. We evaluate decision calibration to compare Machine Learning and classical numerical weather prediction models on various weather-dependent decision tasks. We find that model performance at the forecast level does not reliably translate to performance in downstream decision-making: some performance differences only become apparent at the decision level, and model rankings can change among different decision tasks. Our results confirm that typical forecast evaluations are insufficient for selecting the optimal forecast model for a specific decision task.
+
+[**arXiv:2512.14779v1**](https://arxiv.org/abs/2512.14779v1)
+
+**Tags:** ``
+
+---
+
+### Quantum Machine Learning for Climate Modelling
+
+**Authors:** Mierk Schwabe, Lorenzo Pastori, Valentina Sarandrea, Veronika Eyring
+
+**Year:** 2025
+
+**Abstract:**
+> Quantum machine learning (QML) is making rapid progress, and QML-based models hold the promise of quantum advantages such as potentially higher expressivity and generalizability than their classical counterparts. Here, we present work on using a quantum neural net (QNN) to develop a parameterization of cloud cover for an Earth system model (ESM). ESMs are needed for predicting and projecting climate change, and can be improved in hybrid models incorporating both traditional physics-based components as well as machine learning (ML) models. We show that a QNN can predict cloud cover with a performance similar to a classical NN with the same number of free parameters and significantly better than the traditional scheme. We also analyse the learning capability of the QNN in comparison to the classical NN and show that, at least for our example, QNNs learn more consistent relationships than classical NNs.
+
+[**arXiv:2512.14208v1**](https://arxiv.org/abs/2512.14208v1)
+
+**Tags:** ``
+
+---
+
+### An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales
+
+**Authors:** Bryn Ward-Leikis, Neelesh Rampal, Yun Sing Koh, Peter B. Gibson, Hong-Yang Liu, Vassili Kitsios, Tristan Meyers, Jeff Adie, Yang Juntao, Steven C. Sherwood
+
+**Year:** 2025
+
+**Abstract:**
+> Machine learning (ML) offers a computationally efficient approach for generating large ensembles of high-resolution climate projections, but deterministic ML methods often smooth fine-scale structures and underestimate extremes. While stochastic generative models show promise for predicting fine-scale weather and extremes, few studies have compared their performance under present-day and future climates. This study compares a previously developed conditional Generative Adversarial Network (cGAN) with an intensity constraint against different configurations of diffusion models for downscaling daily precipitation from a regional climate model (RCM) over Aotearoa New Zealand. Model skill is comprehensively assessed across spatial structure, distributional metrics, means, extremes, and their respective climate change signals. Both generative approaches outperform the deterministic baseline across most metrics and exhibit similar overall skill. Diffusion models better predict the fine-scale spatial structure of precipitation and the length of dry spells, but underestimate climate change signals for extreme precipitation compared to the ground truth RCMs. In contrast, cGANs achieve comparable skill for most metrics while better predicting the overall precipitation distribution and climate change responses for extremes at a fraction of the computational cost. These results demonstrate that while diffusion models can readily generate predictions with greater visual "realism", they do not necessarily better preserve climate change responses compared to cGANs with intensity constraints. At present, incorporating constraints into diffusion models remains challenging compared to cGANs, but may represent an opportunity to further improve skill for predicting climate change responses.
+
+[**arXiv:2512.13987v1**](https://arxiv.org/abs/2512.13987v1)
+
+**Tags:** ``
+
+---
+
+### Time-aware UNet and super-resolution deep residual networks for spatial downscaling
+
+**Authors:** Mika Sipilä, Sabrina Maggio, Sandra De Iaco, Klaus Nordhausen, Monica Palma, Sara Taskinen
+
+**Year:** 2025
+
+**Abstract:**
+> Satellite data of atmospheric pollutants are often available only at coarse spatial resolution, limiting their applicability in local-scale environmental analysis and decision-making. Spatial downscaling methods aim to transform the coarse satellite data into high-resolution fields. In this work, two widely used deep learning architectures, the super-resolution deep residual network (SRDRN) and the encoder-decoder-based UNet, are considered for spatial downscaling of tropospheric ozone. Both methods are extended with a lightweight temporal module, which encodes observation time using either sinusoidal or radial basis function (RBF) encoding, and fuses the temporal features with the spatial representations in the networks. The proposed time-aware extensions are evaluated against their baseline counterparts in a case study on ozone downscaling over Italy. The results suggest that, while only slightly increasing computational complexity, the temporal modules significantly improve downscaling performance and convergence speed.
+
+[**arXiv:2512.13753v1**](https://arxiv.org/abs/2512.13753v1)
+
+**Tags:** ``
+
+---
+
