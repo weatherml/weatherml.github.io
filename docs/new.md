@@ -1245,3 +1245,48 @@
 
 ---
 
+### STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting
+
+**Authors:** Shi Quan Foo, Chi-Ho Wong, Zhihan Gao, Dit-Yan Yeung, Ka-Hing Wong, Wai-Kin Wong
+
+**Year:** 2025
+
+**Abstract:**
+> Precipitation nowcasting is a critical spatio-temporal prediction task for society to prevent severe damage owing to extreme weather events. Despite the advances in this field, the complex and stochastic nature of this task still poses challenges to existing approaches. Specifically, deterministic models tend to produce blurry predictions while generative models often struggle with poor accuracy. In this paper, we present a simple yet effective model architecture termed STLDM, a diffusion-based model that learns the latent representation from end to end alongside both the Variational Autoencoder and the conditioning network. STLDM decomposes this task into two stages: a deterministic forecasting stage handled by the conditioning network, and an enhancement stage performed by the latent diffusion model. Experimental results on multiple radar datasets demonstrate that STLDM achieves superior performance compared to the state of the art, while also improving inference efficiency. The code is available in https://github.com/sqfoo/stldm_official.
+
+[**arXiv:2512.21118v1**](https://arxiv.org/abs/2512.21118v1)
+
+**Tags:** ``
+
+---
+
+### Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model
+
+**Authors:** Paul J. Christiansen, Daniel Ohl de Mello, Cedric Brügmann, Steffen Hien, Felix Herbort, Martin Kiffner, Lorenzo Pastori, Veronika Eyring, Mierk Schwabe
+
+**Year:** 2025
+
+**Abstract:**
+> In this work, we propose a hybrid quantum-inspired heuristic for automatically tuning the Lorenz-96 model -- a simple proxy to describe atmospheric dynamics, yet exhibiting chaotic behavior. Building on the history matching framework by Lguensat et al. (2023), we fully automate the tuning process with a new convergence criterion and propose replacing classical Gaussian process emulators with quantum counterparts. We benchmark three quantum kernel architectures, distinguished by their quantum feature map circuits. A dimensionality argument implies, in principle, an increased expressivity of the quantum kernels over their classical competitors. For each kernel type, we perform an extensive hyperparameter optimization of our tuning algorithm. We confirm the validity of a quantum-inspired approach based on statevector simulation by numerically demonstrating the superiority of two studied quantum kernels over the canonical classical RBF kernel. Finally, we discuss the pathway towards real quantum hardware, mainly driven by a transition to shot-based simulations and evaluating quantum kernels via randomized measurements, which can mitigate the effect of gate errors. The very low qubit requirements and moderate circuit depths, together with a minimal number of trainable circuit parameters, make our method particularly NISQ-friendly.
+
+[**arXiv:2512.20437v1**](https://arxiv.org/abs/2512.20437v1)
+
+**Tags:** ``
+
+---
+
+### The Ensemble Schr{ö}dinger Bridge filter for Nonlinear Data Assimilation
+
+**Authors:** Feng Bao, Hui Sun
+
+**Year:** 2025
+
+**Abstract:**
+> This work puts forward a novel nonlinear optimal filter namely the Ensemble Schr{ö}dinger Bridge nonlinear filter. The proposed filter finds marriage of the standard prediction procedure and the diffusion generative modeling for the analysis procedure to realize one filtering step. The designed approach finds no structural model error, and it is derivative free, training free and highly parallizable. Experimental results show that the designed algorithm performs well given highly nonlinear dynamics in (mildly) high dimension up to 40 or above under a chaotic environment. It also shows better performance than classical methods such as the ensemble Kalman filter and the Particle filter in numerous tests given different level of nonlinearity. Future work will focus on extending the proposed approach to practical meteorological applications and establishing a rigorous convergence analysis.
+
+[**arXiv:2512.18928v1**](https://arxiv.org/abs/2512.18928v1)
+
+**Tags:** ``
+
+---
+

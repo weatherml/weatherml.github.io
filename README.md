@@ -87,6 +87,9 @@
 - **Quantum Machine Learning for Climate Modelling** (2025) - [arXiv:2512.14208v1](https://arxiv.org/abs/2512.14208v1)
 - **An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales** (2025) - [arXiv:2512.13987v1](https://arxiv.org/abs/2512.13987v1)
 - **Time-aware UNet and super-resolution deep residual networks for spatial downscaling** (2025) - [arXiv:2512.13753v1](https://arxiv.org/abs/2512.13753v1)
+- **STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting** (2025) - [arXiv:2512.21118v1](https://arxiv.org/abs/2512.21118v1)
+- **Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model** (2025) - [arXiv:2512.20437v1](https://arxiv.org/abs/2512.20437v1)
+- **The Ensemble Schr{ö}dinger Bridge filter for Nonlinear Data Assimilation** (2025) - [arXiv:2512.18928v1](https://arxiv.org/abs/2512.18928v1)
 
 ### Downscaling
 
