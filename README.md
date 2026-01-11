@@ -4,6 +4,7 @@
 
 ### New
 
+- **Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning** (2026) - [arXiv:2601.04268v1](https://arxiv.org/abs/2601.04268v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 - **Nuclear Data Adjustment for Nonlinear Applications in the OECD/NEA WPNCS SG14 Benchmark -- A Bayesian Inverse UQ-based Approach for Data Assimilation** (2025) - [arXiv:2509.07790v1](https://arxiv.org/abs/2509.07790v1)
 - **FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration** (2025) - [arXiv:2509.14775v1](https://arxiv.org/abs/2509.14775v1)
