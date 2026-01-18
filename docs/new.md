@@ -15,6 +15,81 @@
 
 ---
 
+### Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting
+
+**Authors:** Tianye Li, Qi Liu, Hao Li, Lei Chen, Wencong Cheng, Fei Zheng, Xiangao Xia, Ya Wang, Gang Huang, Weiwei Wang, Xuan Tong, Ziqing Zu, Yi Fang, Shenming Fu, Jiang Jiang, Haochen Li, Mingxing Li, Jiangjiang Xia
+
+**Year:** 2026
+
+**Abstract:**
+> Accurate global medium-range weather forecasting is fundamental to Earth system science. Most existing Transformer-based forecasting models adopt vision-centric architectures that neglect the Earth's spherical geometry and zonal periodicity. In addition, conventional autoregressive training is computationally expensive and limits forecast horizons due to error accumulation. To address these challenges, we propose the Shifted Earth Transformer (Searth Transformer), a physics-informed architecture that incorporates zonal periodicity and meridional boundaries into window-based self-attention for physically consistent global information exchange. We further introduce a Relay Autoregressive (RAR) fine-tuning strategy that enables learning long-range atmospheric evolution under constrained memory and computational budgets. Based on these methods, we develop YanTian, a global medium-range weather forecasting model. YanTian achieves higher accuracy than the high-resolution forecast of the European Centre for Medium-Range Weather Forecasts and performs competitively with state-of-the-art AI models at one-degree resolution, while requiring roughly 200 times lower computational cost than standard autoregressive fine-tuning. Furthermore, YanTian attains a longer skillful forecast lead time for Z500 (10.3 days) than HRES (9 days). Beyond weather forecasting, this work establishes a robust algorithmic foundation for predictive modeling of complex global-scale geophysical circulation systems, offering new pathways for Earth system science.
+
+[**arXiv:2601.09467v1**](https://arxiv.org/abs/2601.09467v1)
+
+**Tags:** ``
+
+---
+
+### Detail Loss in Super-Resolution Models Based on the Laplacian Pyramid and Repeated Upscaling and Downscaling Process
+
+**Authors:** Sangjun Han, Youngmi Hur
+
+**Year:** 2026
+
+**Abstract:**
+> With advances in artificial intelligence, image processing has gained significant interest. Image super-resolution is a vital technology closely related to real-world applications, as it enhances the quality of existing images. Since enhancing fine details is crucial for the super-resolution task, pixels that contribute to high-frequency information should be emphasized. This paper proposes two methods to enhance high-frequency details in super-resolution images: a Laplacian pyramid-based detail loss and a repeated upscaling and downscaling process. Total loss with our detail loss guides a model by separately generating and controlling super-resolution and detail images. This approach allows the model to focus more effectively on high-frequency components, resulting in improved super-resolution images. Additionally, repeated upscaling and downscaling amplify the effectiveness of the detail loss by extracting diverse information from multiple low-resolution features. We conduct two types of experiments. First, we design a CNN-based model incorporating our methods. This model achieves state-of-the-art results, surpassing all currently available CNN-based and even some attention-based models. Second, we apply our methods to existing attention-based models on a small scale. In all our experiments, attention-based models adding our detail loss show improvements compared to the originals. These results demonstrate our approaches effectively enhance super-resolution images across different model structures.
+
+[**arXiv:2601.09410v1**](https://arxiv.org/abs/2601.09410v1)
+
+**Tags:** ``
+
+---
+
+### Efficient Parameter Calibration of Numerical Weather Prediction Models via Evolutionary Sequential Transfer Optimization
+
+**Authors:** Heping Fang, Peng Yang
+
+**Year:** 2026
+
+**Abstract:**
+> The configuration of physical parameterization schemes in Numerical Weather Prediction (NWP) models plays a critical role in determining the accuracy of the forecast. However, existing parameter calibration methods typically treat each calibration task as an isolated optimization problem. This approach suffers from prohibitive computational costs and necessitates performing iterative searches from scratch for each task, leading to low efficiency in sequential calibration scenarios. To address this issue, we propose the SEquential Evolutionary Transfer Optimization (SEETO) algorithm driven by the representations of the meteorological state. First, to accurately measure the physical similarity between calibration tasks, a meteorological state representation extractor is introduced to map high-dimensional meteorological fields into latent representations. Second, given the similarity in the latent space, a bi-level adaptive knowledge transfer mechanism is designed. At the solution level, superior populations from similar historical tasks are reused to achieve a "warm start" for optimization. At the model level, an ensemble surrogate model based on source task data is constructed to assist the search, employing an adaptive weighting mechanism to dynamically balance the contributions of source domain knowledge and target domain data. Extensive experiments across 10 distinct calibration tasks, which span varying source-target similarities, highlight SEETO's superior efficiency. Under a strict budget of 20 expensive evaluations, SEETO achieves a 6% average improvement in Hypervolume (HV) over two state-of-the-art baselines. Notably, to match SEETO's performance at this stage, the comparison algorithms would require an average of 64% and 28% additional evaluations, respectively. This presents a new paradigm for the efficient and accurate automated calibration of NWP model parameters.
+
+[**arXiv:2601.08663v1**](https://arxiv.org/abs/2601.08663v1)
+
+**Tags:** ``
+
+---
+
+### Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data Driven Meteorological Prediction
+
+**Authors:** Shreyas Rajeev, Karthik Mudenahalli Ashoka, Amit Mallappa Tiparaddi
+
+**Year:** 2026
+
+**Abstract:**
+> Accurately forecasting long-term atmospheric variables remains a defining challenge in meteorological science due to the chaotic nature of atmospheric systems. Temperature data represents a complex superposition of deterministic cyclical climate forces and stochastic, short-term fluctuations. While planetary mechanics drive predictable seasonal periodicities, rapid meteorological changes such as thermal variations, pressure anomalies, and humidity shifts introduce nonlinear volatilities that defy simple extrapolation. Historically, the Seasonal Autoregressive Integrated Moving Average (SARIMA) model has been the standard for modeling historical weather data, prized for capturing linear seasonal trends. However, SARIMA operates under strict assumptions of stationarity, failing to capture abrupt, nonlinear transitions. This leads to systematic residual errors, manifesting as the under-prediction of sudden spikes or the over-smoothing of declines. Conversely, Deep Learning paradigms, specifically Long Short-Term Memory (LSTM) networks, demonstrate exceptional efficacy in handling intricate time-series data. By utilizing memory gates, LSTMs learn complex nonlinear dependencies. Yet, LSTMs face instability in open-loop forecasting; without ground truth feedback, minor deviations compound recursively, causing divergence. To resolve these limitations, we propose a Hybrid SARIMA-LSTM architecture. This framework employs a residual-learning strategy to decompose temperature into a predictable climate component and a nonlinear weather component. The SARIMA unit models the robust, long-term seasonal trend, while the LSTM is trained exclusively on the residuals the nonlinear errors SARIMA fails to capture. By fusing statistical stability with neural plasticity, this hybrid approach minimizes error propagation and enhances long-horizon accuracy.
+
+[**arXiv:2601.07951v1**](https://arxiv.org/abs/2601.07951v1)
+
+**Tags:** ``
+
+---
+
+### A Relaxed Direct-insertion Downscaling Method For Discrete-in-time Data Assimilation
+
+**Authors:** Emine Celik, Eric Olson
+
+**Year:** 2026
+
+**Abstract:**
+> This paper improves the spectrally-filtered direct-insertion downscaling method for discrete-in-time data assimilation by introducing a relaxation parameter that overcomes a constraint on the observation frequency. Numerical simulations demonstrate that taking the relaxation parameter proportional to the time between observations allows one to vary the observation frequency over a wide range while maintaining convergence of the approximating solution to the reference solution. Under the same assumptions we analytically prove that taking the observation frequency to infinity results in the continuous-in-time nudging method.
+
+[**arXiv:2601.07025v1**](https://arxiv.org/abs/2601.07025v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff

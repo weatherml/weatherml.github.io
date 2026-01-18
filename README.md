@@ -5,6 +5,11 @@
 ### New
 
 - **Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning** (2026) - [arXiv:2601.04268v1](https://arxiv.org/abs/2601.04268v1)
+- **Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting** (2026) - [arXiv:2601.09467v1](https://arxiv.org/abs/2601.09467v1)
+- **Detail Loss in Super-Resolution Models Based on the Laplacian Pyramid and Repeated Upscaling and Downscaling Process** (2026) - [arXiv:2601.09410v1](https://arxiv.org/abs/2601.09410v1)
+- **Efficient Parameter Calibration of Numerical Weather Prediction Models via Evolutionary Sequential Transfer Optimization** (2026) - [arXiv:2601.08663v1](https://arxiv.org/abs/2601.08663v1)
+- **Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data Driven Meteorological Prediction** (2026) - [arXiv:2601.07951v1](https://arxiv.org/abs/2601.07951v1)
+- **A Relaxed Direct-insertion Downscaling Method For Discrete-in-time Data Assimilation** (2026) - [arXiv:2601.07025v1](https://arxiv.org/abs/2601.07025v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 - **Nuclear Data Adjustment for Nonlinear Applications in the OECD/NEA WPNCS SG14 Benchmark -- A Bayesian Inverse UQ-based Approach for Data Assimilation** (2025) - [arXiv:2509.07790v1](https://arxiv.org/abs/2509.07790v1)
 - **FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration** (2025) - [arXiv:2509.14775v1](https://arxiv.org/abs/2509.14775v1)
