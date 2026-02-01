@@ -90,6 +90,111 @@
 
 ---
 
+### Zero-Shot Statistical Downscaling via Diffusion Posterior Sampling
+
+**Authors:** Ruian Tie, Wenbo Xiong, Zhengyu Shi, Xinyu Su, Chenyu jiang, Libo Wu, Hao Li
+
+**Year:** 2026
+
+**Abstract:**
+> Conventional supervised climate downscaling struggles to generalize to Global Climate Models (GCMs) due to the lack of paired training data and inherent domain gaps relative to reanalysis. Meanwhile, current zero-shot methods suffer from physical inconsistencies and vanishing gradient issues under large scaling factors. We propose Zero-Shot Statistical Downscaling (ZSSD), a zero-shot framework that performs statistical downscaling without paired data during training. ZSSD leverages a Physics-Consistent Climate Prior learned from reanalysis data, conditioned on geophysical boundaries and temporal information to enforce physical validity. Furthermore, to enable robust inference across varying GCMs, we introduce Unified Coordinate Guidance. This strategy addresses the vanishing gradient problem in vanilla DPS and ensures consistency with large-scale fields. Results show that ZSSD significantly outperforms existing zero-shot baselines in 99th percentile errors and successfully reconstructs complex weather events, such as tropical cyclones, across heterogeneous GCMs.
+
+[**arXiv:2601.21760v1**](https://arxiv.org/abs/2601.21760v1)
+
+**Tags:** ``
+
+---
+
+### SENDAI: A Hierarchical Sparse-measurement, EfficieNt Data AssImilation Framework
+
+**Authors:** Xingyue Zhang, Yuxuan Bao, Mars Liyao Gao, J. Nathan Kutz
+
+**Year:** 2026
+
+**Abstract:**
+> Bridging the gap between data-rich training regimes and observation-sparse deployment conditions remains a central challenge in spatiotemporal field reconstruction, particularly when target domains exhibit distributional shifts, heterogeneous structure, and multi-scale dynamics absent from available training data. We present SENDAI, a hierarchical Sparse-measurement, EfficieNt Data AssImilation Framework that reconstructs full spatial states from hyper sparse sensor observations by combining simulation-derived priors with learned discrepancy corrections. We demonstrate the performance on satellite remote sensing, reconstructing MODIS (Moderate Resolution Imaging Spectroradiometer) derived vegetation index fields across six globally distributed sites. Using seasonal periods as a proxy for domain shift, the framework consistently outperforms established baselines that require substantially denser observations -- SENDAI achieves a maximum SSIM improvement of 185% over traditional baselines and a 36% improvement over recent high-frequency-based methods. These gains are particularly pronounced for landscapes with sharp boundaries and sub-seasonal dynamics; more importantly, the framework effectively preserves diagnostically relevant structures -- such as field topologies, land cover discontinuities, and spatial gradients. By yielding corrections that are more structurally and spectrally separable, the reconstructed fields are better suited for downstream inference of indirectly observed variables. The results therefore highlight a lightweight and operationally viable framework for sparse-measurement reconstruction that is applicable to physically grounded inference, resource-limited deployment, and real-time monitor and control.
+
+[**arXiv:2601.21664v1**](https://arxiv.org/abs/2601.21664v1)
+
+**Tags:** ``
+
+---
+
+### Learning to Advect: A Neural Semi-Lagrangian Architecture for Weather Forecasting
+
+**Authors:** Carlos A. Pereira, Stéphane Gaudreault, Valentin Dallerit, Christopher Subich, Shoyon Panday, Siqi Wei, Sasa Zhang, Siddharth Rout, Eldad Haber, Raymond J. Spiteri, David Millard, Emilia Diaconescu
+
+**Year:** 2026
+
+**Abstract:**
+> Recent machine-learning approaches to weather forecasting often employ a monolithic architecture, where distinct physical mechanisms (advection, transport), diffusion-like mixing, thermodynamic processes, and forcing are represented implicitly within a single large network. This representation is particularly problematic for advection, where long-range transport must be treated with expensive global interaction mechanisms or through deep, stacked convolutional layers. To mitigate this, we present PARADIS, a physics-inspired global weather prediction model that imposes inductive biases on network behavior through a functional decomposition into advection, diffusion, and reaction blocks acting on latent variables. We implement advection through a Neural Semi-Lagrangian operator that performs trajectory-based transport via differentiable interpolation on the sphere, enabling end-to-end learning of both the latent modes to be transported and their characteristic trajectories. Diffusion-like processes are modeled through depthwise-separable spatial mixing, while local source terms and vertical interactions are modeled via pointwise channel interactions, enabling operator-level physical structure. PARADIS provides state-of-the-art forecast skill at a fraction of the training cost. On ERA5-based benchmarks, the 1 degree PARADIS model, with a total training cost of less than a GPU month, meets or exceeds the performance of 0.25 degree traditional and machine-learning baselines, including the ECMWF HRES forecast and DeepMind's GraphCast.
+
+[**arXiv:2601.21151v1**](https://arxiv.org/abs/2601.21151v1)
+
+**Tags:** ``
+
+---
+
+### StormDiT: A generative AI model bridges the 2-6 hour 'gray zone' in precipitation nowcasting
+
+**Authors:** Haofei Sun, Yunfan Yang, Wei Han, Wei Huang, Huaguan Chen, Zhiqiu Gao, Zeting Li, Zhaoyang Huo, Zeyi Niu
+
+**Year:** 2026
+
+**Abstract:**
+> Accurate short-term warnings for extreme precipitation are critical for global disaster mitigation but are hindered by a persistent predictability barrier at the 2-6 hour horizon -- the "nowcasting gray zone." In this window, traditional observation-based extrapolation fails due to error accumulation, while numerical weather prediction is computationally too slow to resolve storm-scale dynamics. Recent generative AI approaches attempt to bridge this gap by decomposing precipitation into separate deterministic advection and stochastic diffusion components. However, this decomposition can sever fundamental causal links between entangled atmospheric processes, such as the dynamic initiation of convection triggered by boundary advection. Here we present StormDiT, a unified generative model that treats weather evolution as a holistic spatiotemporal problem, learning the coupled physics of the gray zone without human-imposed structural priors. Trained on a massive dataset of 7,720 precipitation events from China, our model achieves a breakthrough in long-horizon stability. On a heavy-rainfall test set, it maintains skillful prediction for strong convection ($\ge$ 35 dBZ) with a Critical Success Index (CSI) near 0.2 across the full 6-hour forecast at 6-minute resolution. Crucially, the model exhibits superior probabilistic calibration, accurately quantifying operational risks. On the public SEVIR benchmark, our unified paradigm more than doubles the state-of-the-art 1-hour performance for heavy rain and establishes the first robust baseline for 3-hour forecasting. Furthermore, interpretability analysis reveals that the model attends to non-local physical precursors, such as outflow boundaries, explicitly validating its emergent understanding of convective organization.
+
+[**arXiv:2601.20342v1**](https://arxiv.org/abs/2601.20342v1)
+
+**Tags:** ``
+
+---
+
+### Cheap2Rich: A Multi-Fidelity Framework for Data Assimilation and System Identification of Multiscale Physics -- Rotating Detonation Engines
+
+**Authors:** Yuxuan Bao, Jan Zajac, Megan Powers, Venkat Raman, J. Nathan Kutz
+
+**Year:** 2026
+
+**Abstract:**
+> Bridging the sim2real gap between computationally inexpensive models and complex physical systems remains a central challenge in machine learning applications to engineering problems, particularly in multi-scale settings where reduced-order models typically capture only dominant dynamics. In this work, we present Cheap2Rich, a multi-scale data assimilation framework that reconstructs high-fidelity state spaces from sparse sensor histories by combining a fast low-fidelity prior with learned, interpretable discrepancy corrections. We demonstrate the performance on rotating detonation engines (RDEs), a challenging class of systems that couple detonation-front propagation with injector-driven unsteadiness, mixing, and stiff chemistry across disparate scales. Our approach successfully reconstructs high-fidelity RDE states from sparse measurements while isolating physically meaningful discrepancy dynamics associated with injector-driven effects. The results highlight a general multi-fidelity framework for data assimilation and system identification in complex multi-scale systems, enabling rapid design exploration and real-time monitoring and control while providing interpretable discrepancy dynamics. Code for this project is is available at: github.com/kro0l1k/Cheap2Rich.
+
+[**arXiv:2601.20295v1**](https://arxiv.org/abs/2601.20295v1)
+
+**Tags:** ``
+
+---
+
+### Evolving beyond collapse: An adaptive particle batch smoother for cryospheric data assimilation
+
+**Authors:** Kristoffer Aalstad, Esteban Alonso-González, Norbert Pirk, Sebastian Westermann, Clarissa Willmes, Ruitang Yang
+
+**Year:** 2026
+
+**Abstract:**
+> We present a new adaptive particle-based data assimilation scheme for cryospheric applications that leverages promising developments in importance sampling. The proposed approach seeks to combine some of the advantages of two widely used classes of schemes: particle methods and iterative ensemble Kalman methods. Specifically, it extends the PBS that is commonly used in cryospheric data assimilation, with the AMIS algorithm. This adaptive formulation transforms the PBS into an iterative scheme with improved resilience against ensemble collapse and the ability to implement early-stopping strategies. As such, computational cost is automatically adapted to the complexity of the problem at hand, even down to the grid-cell and water year level in distributed multiyear simulations. In homage to the schemes that it builds on, we coin this new algorithm the Adaptive Particle Batch Smoother (AdaPBS) and we test it across a range of scenarios. First, we conducted an intercomparison of some of the most commonly used cryospheric data assimilation algorithms using MCMC simulation as a costly gold-standard benchmark in a simplified temperature index model assimilating snow depth observations. We further evaluated AdaPBS by assimilating snow depth observations from the ESMSnowMIP project at 6 different sites spanning 3 continents, using an ensemble of simulations generated with the more complex FSM2. Our results demonstrate that AdaPBS is a robust and reliable tool, outperforming or at least matching the performance of other commonly used algorithms and successfully handling complex cases with dense observational datasets. All experiments were carried out using the open-source MuSA toolbox, which now includes AdaPBS and MCMC among the growing list of available cryospheric data assimilation methods.
+
+[**arXiv:2601.20049v1**](https://arxiv.org/abs/2601.20049v1)
+
+**Tags:** ``
+
+---
+
+### Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting
+
+**Authors:** Jean Kossaifi, Nikola Kovachki, Morteza Mardani, Daniel Leibovici, Suman Ravuri, Ira Shokar, Edoardo Calvello, Mohammad Shoaib Abbas, Peter Harrington, Ashay Subramaniam, Noah Brenowitz, Boris Bonev, Wonmin Byeon, Karsten Kreis, Dale Durran, Arash Vahdat, Mike Pritchard, Jan Kautz
+
+**Year:** 2026
+
+**Abstract:**
+> The recent revolution in data-driven methods for weather forecasting has lead to a fragmented landscape of complex, bespoke architectures and training strategies, obscuring the fundamental drivers of forecast accuracy. Here, we demonstrate that state-of-the-art probabilistic skill requires neither intricate architectural constraints nor specialized training heuristics. We introduce a scalable framework for learning multi-scale atmospheric dynamics by combining a directly downsampled latent space with a history-conditioned local projector that resolves high-resolution physics. We find that our framework design is robust to the choice of probabilistic estimator, seamlessly supporting stochastic interpolants, diffusion models, and CRPS-based ensemble training. Validated against the Integrated Forecasting System and the deep learning probabilistic model GenCast, our framework achieves statistically significant improvements on most of the variables. These results suggest scaling a general-purpose model is sufficient for state-of-the-art medium-range prediction, eliminating the need for tailored training recipes and proving effective across the full spectrum of probabilistic frameworks.
+
+[**arXiv:2601.18111v1**](https://arxiv.org/abs/2601.18111v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
