@@ -195,6 +195,81 @@
 
 ---
 
+### Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon
+
+**Authors:** Rajat Masiwal, Colin Aitken, Adam Marchakitus, Mayank Gupta, Katherine Kowal, Hamid A. Pahlavan, Tyler Yang, Y. Qiang Sun, Michael Kremer, Amir Jina, William R. Boos, Pedram Hassanzadeh
+
+**Year:** 2026
+
+**Abstract:**
+> Artificial intelligence weather prediction (AIWP) models now often outperform traditional physics-based models on common metrics while requiring orders-of-magnitude less computing resources and time. Open-access AIWP models thus hold promise as transformational tools for helping low- and middle-income populations make decisions in the face of high-impact weather shocks. Yet, current approaches to evaluating AIWP models focus mainly on aggregated meteorological metrics without considering local stakeholders' needs in decision-oriented, operational frameworks. Here, we introduce such a framework that connects meteorology, AI, and social sciences. As an example, we apply it to the 150-year-old problem of Indian monsoon forecasting, focusing on benefits to rain-fed agriculture, which is highly susceptible to climate change. AIWP models skillfully predict an agriculturally relevant onset index at regional scales weeks in advance when evaluated out-of-sample using deterministic and probabilistic metrics. This framework informed a government-led effort in 2025 to send 38 million Indian farmers AI-based monsoon onset forecasts, which captured an unusual weeks-long pause in monsoon progression. This decision-oriented benchmarking framework provides a key component of a blueprint for harnessing the power of AIWP models to help large vulnerable populations adapt to weather shocks in the face of climate variability and change.
+
+[**arXiv:2602.03767v1**](https://arxiv.org/abs/2602.03767v1)
+
+**Tags:** ``
+
+---
+
+### Downscaling land surface temperature data using edge detection and block-diagonal Gaussian process regression
+
+**Authors:** Sanjit Dandapanthula, Margaret Johnson, Madeleine Pascolini-Campbell, Glynn Hulley, Mikael Kuusela
+
+**Year:** 2026
+
+**Abstract:**
+> Accurate and high-resolution estimation of land surface temperature (LST) is crucial in estimating evapotranspiration, a measure of plant water use and a central quantity in agricultural applications. In this work, we develop a novel statistical method for downscaling LST data obtained from NASA's ECOSTRESS mission, using high-resolution data from the Landsat 8 mission as a proxy for modeling agricultural field structure. Using the Landsat data, we identify the boundaries of agricultural fields through edge detection techniques, allowing us to capture the inherent block structure present in the spatial domain. We propose a block-diagonal Gaussian process (BDGP) model that captures the spatial structure of the agricultural fields, leverages independence of LST across fields for computational tractability, and accounts for the change of support present in ECOSTRESS observations. We use the resulting BDGP model to perform Gaussian process regression and obtain high-resolution estimates of LST from ECOSTRESS data, along with uncertainty quantification. Our results demonstrate the practicality of the proposed method in producing reliable high-resolution LST estimates, with potential applications in agriculture, urban planning, and climate studies.
+
+[**arXiv:2602.02813v1**](https://arxiv.org/abs/2602.02813v1)
+
+**Tags:** ``
+
+---
+
+### On a system of equations arising in meteorology: Well-posedness and data assimilation
+
+**Authors:** Eduard Feireisl, Piotr Gwiazda, Agnieszka Świerczewska-Gwiazda
+
+**Year:** 2026
+
+**Abstract:**
+> Data assimilation plays a crucial role in modern weather prediction, providing a systematic way to incorporate observational data into complex dynamical models. The paper addresses continuous data assimilation for a model arising as a singular limit of the three-dimensional compressible Navier-Stokes-Fourier system with rotation driven by temperature gradient. The limit system preserves the essential physical mechanisms of the original model, while exhibiting a reduced, effectively two-and-a-half-dimensional structure. This simplified framework allows for a rigorous analytical study of the data assimilation process while maintaining a direct physical connection to the full compressible model. We establish well posedness of global-in-time solutions and a compact trajectory attractor, followed by the stability and convergence results for the nudging scheme applied to the limiting system. Finally, we demonstrate how these results can be combined with a relative entropy argument to extend the assimilation framework to the full three-dimensional compressible setting, thereby establishing a rigorous connection between the reduced and physically complete models.
+
+[**arXiv:2602.02328v1**](https://arxiv.org/abs/2602.02328v1)
+
+**Tags:** ``
+
+---
+
+### WADEPre: A Wavelet-based Decomposition Model for Extreme Precipitation Nowcasting with Multi-Scale Learning
+
+**Authors:** Baitian Liu, Haiping Zhang, Huiling Yuan, Dongjing Wang, Ying Li, Feng Chen, Hao Wu
+
+**Year:** 2026
+
+**Abstract:**
+> The heavy-tailed nature of precipitation intensity impedes precise precipitation nowcasting. Standard models that optimize pixel-wise losses are prone to regression-to-the-mean bias, which blurs extreme values. Existing Fourier-based methods also lack the spatial localization needed to resolve transient convective cells. To overcome these intrinsic limitations, we propose WADEPre, a wavelet-based decomposition model for extreme precipitation that transitions the modeling into the wavelet domain. By leveraging the Discrete Wavelet Transform for explicit decomposition, WADEPre employs a dual-branch architecture: an Approximation Network to model stable, low-frequency advection, isolating deterministic trends from statistical bias, and a spatially localized Detail Network to capture high-frequency stochastic convection, resolving transient singularities and preserving sharp boundaries. A subsequent Refiner module then dynamically reconstructs these decoupled multi-scale components into the final high-fidelity forecast. To address optimization instability, we introduce a multi-scale curriculum learning strategy that progressively shifts supervision from coarse scales to fine-grained details. Extensive experiments on the SEVIR and Shanghai Radar datasets demonstrate that WADEPre achieves state-of-the-art performance, yielding significant improvements in capturing extreme thresholds and maintaining structural fidelity. Our code is available at https://github.com/sonderlau/WADEPre.
+
+[**arXiv:2602.02096v1**](https://arxiv.org/abs/2602.02096v1)
+
+**Tags:** ``
+
+---
+
+### EMFormer: Efficient Multi-Scale Transformer for Accumulative Context Weather Forecasting
+
+**Authors:** Hao Chen, Tao Han, Jie Zhang, Song Guo, Fenghua Ling, Lei Bai
+
+**Year:** 2026
+
+**Abstract:**
+> Long-term weather forecasting is critical for socioeconomic planning and disaster preparedness. While recent approaches employ finetuning to extend prediction horizons, they remain constrained by the issues of catastrophic forgetting, error accumulation, and high training overhead. To address these limitations, we present a novel pipeline across pretraining, finetuning and forecasting to enhance long-context modeling while reducing computational overhead. First, we introduce an Efficient Multi-scale Transformer (EMFormer) to extract multi-scale features through a single convolution in both training and inference. Based on the new architecture, we further employ an accumulative context finetuning to improve temporal consistency without degrading short-term accuracy. Additionally, we propose a composite loss that dynamically balances different terms via a sinusoidal weighting, thereby adaptively guiding the optimization trajectory throughout pretraining and finetuning. Experiments show that our approach achieves strong performance in weather forecasting and extreme event prediction, substantially improving long-term forecast accuracy. Moreover, EMFormer demonstrates strong generalization on vision benchmarks (ImageNet-1K and ADE20K) while delivering a 5.69x speedup over conventional multi-scale modules.
+
+[**arXiv:2602.01194v1**](https://arxiv.org/abs/2602.01194v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
