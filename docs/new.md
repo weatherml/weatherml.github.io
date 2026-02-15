@@ -270,6 +270,66 @@
 
 ---
 
+### Universal Diffusion-Based Probabilistic Downscaling
+
+**Authors:** Roberto Molinaro, Niall Siegenheim, Henry Martin, Mark Frey, Niels Poulsen, Philipp Seitz, Marvin Vincent Gabler
+
+**Year:** 2026
+
+**Abstract:**
+> We introduce a universal diffusion-based downscaling framework that lifts deterministic low-resolution weather forecasts into probabilistic high-resolution predictions without any model-specific fine-tuning. A single conditional diffusion model is trained on paired coarse-resolution inputs (~25 km resolution) and high-resolution regional reanalysis targets (~5 km resolution), and is applied in a fully zero-shot manner to deterministic forecasts from heterogeneous upstream weather models. Focusing on near-surface variables, we evaluate probabilistic forecasts against independent in situ station observations over lead times up to 90 h. Across a diverse set of AI-based and numerical weather prediction (NWP) systems, the ensemble mean of the downscaled forecasts consistently improves upon each model's own raw deterministic forecast, and substantially larger gains are observed in probabilistic skill as measured by CRPS. These results demonstrate that diffusion-based downscaling provides a scalable, model-agnostic probabilistic interface for enhancing spatial resolution and uncertainty representation in operational weather forecasting pipelines.
+
+[**arXiv:2602.11893v1**](https://arxiv.org/abs/2602.11893v1)
+
+**Tags:** ``
+
+---
+
+### PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts
+
+**Authors:** Lianjun Wu, Shengchen Zhu, Yuxuan Liu, Liuyu Kai, Xiaoduan Feng, Duomin Wang, Wenshuo Liu, Jingxuan Zhang, Kelvin Li, Bin Wang
+
+**Year:** 2026
+
+**Abstract:**
+> Latent diffusion models (LDMs) suffer from limited diffusability in high-resolution (<=0.25°) ensemble weather forecasting, where diffusability characterizes how easily a latent data distribution can be modeled by a diffusion process. Unlike natural image fields, meteorological fields lack task-agnostic foundation models and explicit semantic structures, making VFM-based regularization inapplicable. Moreover, existing frequency-based approaches impose identical spectral regularization across channels under a homogeneity assumption, which leads to uneven regularization strength under the inter-variable spectral heterogeneity in multivariate meteorological data. To address these challenges, we propose a 3D Masked AutoEncoder (3D-MAE) that encodes weather-state evolution features as an additional conditioning for the diffusion model, together with a Variable-Aware Masked Frequency Modeling (VA-MFM) strategy that adaptively selects thresholds based on the spectral energy distribution of each variable. Together, we propose PuYun-LDM, which enhances latent diffusability and achieves superior performance to ENS at short lead times while remaining comparable to ENS at longer horizons. PuYun-LDM generates a 15-day global forecast with a 6-hour temporal resolution in five minutes on a single NVIDIA H200 GPU, while ensemble forecasts can be efficiently produced in parallel.
+
+[**arXiv:2602.11807v1**](https://arxiv.org/abs/2602.11807v1)
+
+**Tags:** ``
+
+---
+
+### Regularized Ensemble Forecasting for Learning Weights from Historical and Current Forecasts
+
+**Authors:** Han Su, Xiaojia Guo, Xiaoke Zhang
+
+**Year:** 2026
+
+**Abstract:**
+> Combining forecasts from multiple experts often yields more accurate results than relying on a single expert. In this paper, we introduce a novel regularized ensemble method that extends the traditional linear opinion pool by leveraging both current forecasts and historical performances to set the weights. Unlike existing approaches that rely only on either the current forecasts or past accuracy, our method accounts for both sources simultaneously. It learns weights by minimizing the variance of the combined forecast (or its transformed version) while incorporating a regularization term informed by historical performances. We also show that this approach has a Bayesian interpretation. Different distributional assumptions within this Bayesian framework yield different functional forms for the variance component and the regularization term, adapting the method to various scenarios. In empirical studies on Walmart sales and macroeconomic forecasting, our ensemble outperforms leading benchmark models both when experts' full forecasting histories are available and when experts enter and exit over time, resulting in incomplete historical records. Throughout, we provide illustrative examples that show how the optimal weights are determined and, based on the empirical results, we discuss where the framework's strengths lie and when experts' past versus current forecasts are more informative.
+
+[**arXiv:2602.11379v1**](https://arxiv.org/abs/2602.11379v1)
+
+**Tags:** ``
+
+---
+
+### Data assimilation via model reference adaptation for linear and nonlinear dynamical systems
+
+**Authors:** Benedikt Kaltenbach, Christian Aarset, Tram Thi Ngoc Nguyen
+
+**Year:** 2026
+
+**Abstract:**
+> We address data assimilation for linear and nonlinear dynamical systems via the so-called \emph{model reference adaptive system}. Continuing our theoretical developments in \cite{Tram_Kaltenbacher_2021}, we deliver the first practical implementation of this approach for online parameter identification with time series data. Our semi-implicit scheme couples a modified state equation with a parameter evolution law that is driven by model-data residuals. We demonstrate four benchmark problems of increasing complexity: the Darcy flow, the Fisher-KPP equation, a nonlinear potential equation and finally, an Allen-Cahn type equation. Across all cases, explicit model reference adaptive system construction, verified assumptions and numerically stable reconstructions underline our proposed method as a reliable, versatile tool for data assimilation and real-time inversion.
+
+[**arXiv:2602.10920v1**](https://arxiv.org/abs/2602.10920v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
