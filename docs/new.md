@@ -330,6 +330,51 @@
 
 ---
 
+### Exploring Novel Data Storage Approaches for Large-Scale Numerical Weather Prediction
+
+**Authors:** Nicolau Manubens Gil
+
+**Year:** 2026
+
+**Abstract:**
+> Driven by scientific and industry ambition, HPC and AI applications such as operational Numerical Weather Prediction (NWP) require processing and storing ever-increasing data volumes as fast as possible. Whilst POSIX distributed file systems and NVMe SSDs are currently a common HPC storage configuration providing I/O to applications, new storage solutions have proliferated or gained traction over the last decade with potential to address performance limitations POSIX file systems manifest at scale for certain I/O workloads.   This work has primarily aimed to assess the suitability and performance of two object storage systems -namely DAOS and Ceph- for the ECMWF's operational NWP as well as for HPC and AI applications in general. New software-level adapters have been developed which enable the ECMWF's NWP to leverage these systems, and extensive I/O benchmarking has been conducted on a few computer systems, comparing the performance delivered by the evaluated object stores to that of equivalent Lustre file system deployments on the same hardware. Challenges of porting to object storage and its benefits with respect to the traditional POSIX I/O approach have been discussed and, where possible, domain-agnostic performance analysis has been conducted, leading to insight also of relevance to I/O practitioners and the broader HPC community.   DAOS and Ceph have both demonstrated excellent performance, but DAOS stood out relative to Ceph and Lustre, providing superior scalability and flexibility for applications to perform I/O at scale as desired. This sets a promising outlook for DAOS and object storage, which might see greater adoption at HPC centres in the years to come, although not necessarily implying a shift away from POSIX-like I/O.
+
+[**arXiv:2602.17610v1**](https://arxiv.org/abs/2602.17610v1)
+
+**Tags:** ``
+
+---
+
+### Preconditioned Adjoint Data Assimilation for Two-Dimensional Decaying Isotropic Turbulence
+
+**Authors:** Hongyi Ke, Zejian You, Qi Wang
+
+**Year:** 2026
+
+**Abstract:**
+> Adjoint-based data assimilation for turbulent Navier-Stokes flows is fundamentally limited by the behavior of the adjoint dynamics: in backward time, adjoint fields exhibit exponential growth and become increasingly dominated by small-scale structures, severely degrading reconstruction of the initial condition from sparse measurements. We demonstrate that the relative weighting of spectral components in the adjoint formulation can be systematically controlled by redefining the inner product under which the adjoint operator is defined. The inverse problem is formulated as a constrained minimization in which a cost functional measures the mismatch between model predictions and observations, and the adjoint equations provide the gradient with respect to the initial velocity field. Redefining the forward-adjoint duality through a Fourier-space weighting kernel preconditions the optimization and is mathematically equivalent to changing the representation of the control variable or, alternatively, introducing a smoothing operation on the governing dynamics. Specific kernel choices correspond to fractional integration or diffusion operators applied to the initial condition. Among these, exponential kernels provide effective regularization by suppressing high-wavenumber contributions while preserving large-scale coherence, leading to improved reconstruction across scales. A statistical analysis of an ensemble of adjoint fields from different turbulent realizations reveals scale-dependent backward growth rates, explaining the instability of the standard formulation and clarifying the mechanism by which the proposed preconditioning attenuates incoherent small-scale amplification.
+
+[**arXiv:2602.14016v1**](https://arxiv.org/abs/2602.14016v1)
+
+**Tags:** ``
+
+---
+
+### Distillation and Interpretability of Ensemble Forecasts of ENSO Phase using Entropic Learning
+
+**Authors:** Michael Groom, Davide Bassetti, Illia Horenko, Terence J. O'Kane
+
+**Year:** 2026
+
+**Abstract:**
+> This paper introduces a distillation framework for an ensemble of entropy-optimal Sparse Probabilistic Approximation (eSPA) models, trained exclusively on satellite-era observational and reanalysis data to predict ENSO phase up to 24 months in advance. While eSPA ensembles yield state-of-the-art forecast skill, they are harder to interpret than individual eSPA models. We show how to compress the ensemble into a compact set of "distilled" models by aggregating the structure of only those ensemble members that make correct predictions. This process yields a single, diagnostically tractable model for each forecast lead time that preserves forecast performance while also enabling diagnostics that are impractical to implement on the full ensemble.   An analysis of the regime persistence of the distilled model "superclusters", as well as cross-lead clustering consistency, shows that the discretised system accurately captures the spatiotemporal dynamics of ENSO. By considering the effective dimension of the feature importance vectors, the complexity of the input space required for correct ENSO phase prediction is shown to peak when forecasts must cross the boreal spring predictability barrier. Spatial importance maps derived from the feature importance vectors are introduced to identify where predictive information resides in each field and are shown to include known physical precursors at certain lead times. Case studies of key events are also presented, showing how fields reconstructed from distilled model centroids trace the evolution from extratropical and inter-basin precursors to the mature ENSO state. Overall, the distillation framework enables a rigorous investigation of long-range ENSO predictability that complements real-time data-driven operational forecasts.
+
+[**arXiv:2602.16857v1**](https://arxiv.org/abs/2602.16857v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
