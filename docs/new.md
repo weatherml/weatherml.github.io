@@ -375,6 +375,81 @@
 
 ---
 
+### Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation
+
+**Authors:** Ismaël Zighed, Andrea Nóvoa, Luca Magri, Taraneh Sayadi
+
+**Year:** 2026
+
+**Abstract:**
+> We propose an efficient retraining strategy for a parameterized Reduced Order Model (ROM) that attains accuracy comparable to full retraining while requiring only a fraction of the computational time and relying solely on sparse observations of the full system. The architecture employs an encode-process-decode structure: a Variational Autoencoder (VAE) to perform dimensionality reduction, and a transformer network to evolve the latent states and model the dynamics. The ROM is parameterized by an external control variable, the Reynolds number in the Navier-Stokes setting, with the transformer exploiting attention mechanisms to capture both temporal dependencies and parameter effects. The probabilistic VAE enables stochastic sampling of trajectory ensembles, providing predictive means and uncertainty quantification through the first two moments. After initial training on a limited set of dynamical regimes, the model is adapted to out-of-sample parameter regions using only sparse data. Its probabilistic formulation naturally supports ensemble generation, which we employ within an ensemble Kalman filtering framework to assimilate data and reconstruct full-state trajectories from minimal observations. We further show that, for the dynamical system considered, the dominant source of error in out-of-sample forecasts stems from distortions of the latent manifold rather than changes in the latent dynamics. Consequently, retraining can be limited to the autoencoder, allowing for a lightweight, computationally efficient, real-time adaptation procedure with very sparse fine-tuning data.
+
+[**arXiv:2602.23188v1**](https://arxiv.org/abs/2602.23188v1)
+
+**Tags:** ``
+
+---
+
+### PICASO 4.0: Clouds and Photochemistry in Climate Models of Brown Dwarfs and Exoplanets
+
+**Authors:** James Mang, Natasha E. Batalha, Caroline V. Morley, Nicholas F. Wogan, Sagnick Mukherjee, Channon Visscher, Mark S. Marley, Jonathan J. Fortney, Katy L. Chubb, Peter Gao, Isaac Malsky
+
+**Year:** 2026
+
+**Abstract:**
+> We present a major update to the open-source atmospheric modeling package \texttt{PICASO}, designed for simulating the thermal structure and spectra of hydrogen-rich atmospheres of brown dwarfs and exoplanets. This release, \texttt{PICASO 4.0}, expands upon the existing radiative-convective equilibrium model framework by incorporating several new capabilities. Key additions include the integration of \texttt{Virga} for self-consistent cloud modeling, new flexible treatments for rainout and cold trapping of volatile species, and support for photochemistry. We also introduce a parameterized energy injection scheme to simulate additional external or internal heating processes. These features are motivated by lessons from recent JWST observations that reveal the prevalence of non-equilibrium chemistry and clouds. We benchmark the new functionalities against previously published results in the literature, including the Sonora Diamondback grid, energy injected atmospheres, patchy cloud models, and other photochemical models of WASP-39b. \texttt{PICASO} continues to be actively developed as an open-source package aimed at enabling reproducible, community-driven atmospheric modeling of all substellar objects.
+
+[**arXiv:2602.22468v1**](https://arxiv.org/abs/2602.22468v1)
+
+**Tags:** ``
+
+---
+
+### Continuous Data Assimilation for Semilinear Parabolic Equations: A General Approach by Evolution Equations
+
+**Authors:** Gianmarco Del Sarto, Matthias Hieber, Filippo Palma, Tarek Zöchling
+
+**Year:** 2026
+
+**Abstract:**
+> This article develops a general framework for continuous deterministic data assimilation for semilinear parabolic equations by means of evolution equations. Introducing a nudged model driven by partial observations, the global well-posedness of the reference and the approximating systems is established under natural assumptions. In addition, it is shown that the approximating solution converges exponentially to the solution of the reference system, provided the observational resolution and the nudging parameter are suitably chosen. The approach allows us to consider many systems, such as the Allen-Cahn, Cahn-Hilliard, Sellers-type energy balance, and bidomain systems, for the first time.
+
+[**arXiv:2602.20769v1**](https://arxiv.org/abs/2602.20769v1)
+
+**Tags:** ``
+
+---
+
+### LEVDA: Latent Ensemble Variational Data Assimilation via Differentiable Dynamics
+
+**Authors:** Phillip Si, Peng Chen
+
+**Year:** 2026
+
+**Abstract:**
+> Long-range geophysical forecasts are fundamentally limited by chaotic dynamics and numerical errors. While data assimilation can mitigate these issues, classical variational smoothers require computationally expensive tangent-linear and adjoint models. Conversely, recent efficient latent filtering methods often enforce weak trajectory-level constraints and assume fixed observation grids. To bridge this gap, we propose Latent Ensemble Variational Data Assimilation (LEVDA), an ensemble-space variational smoother that operates in the low-dimensional latent space of a pretrained differentiable neural dynamics surrogate. By performing four-dimensional ensemble-variational (4DEnVar) optimization within an ensemble subspace, LEVDA jointly assimilates states and unknown parameters without the need for adjoint code or auxiliary observation-to-latent encoders. Leveraging the fully differentiable, continuous-in-time-and-space nature of the surrogate, LEVDA naturally accommodates highly irregular sampling at arbitrary spatiotemporal locations. Across three challenging geophysical benchmarks, LEVDA matches or outperforms state-of-the-art latent filtering baselines under severe observational sparsity while providing more reliable uncertainty quantification. Simultaneously, it achieves substantially improved assimilation accuracy and computational efficiency compared to full-state 4DEnVar.
+
+[**arXiv:2602.19406v1**](https://arxiv.org/abs/2602.19406v1)
+
+**Tags:** ``
+
+---
+
+### On Using Medium-Range Ensemble Forecasts for Storm Transposition of Synoptic-Scale Systems in Probable Maximum Precipitation Estimation
+
+**Authors:** Mathieu Mure-Ravaud
+
+**Year:** 2026
+
+**Abstract:**
+> Most methods for estimating probable maximum precipitation (PMP) -- the greatest depth of precipitation that is physically possible over a given area and duration -- rely on storm transposition (ST), the process of transporting a storm, either historically observed or simulated, from its original location to a target basin. Existing ST approaches, whether classical or physically based, involve assumptions and manipulations that can introduce inconsistencies, leaving the physical validity of the transposed storm uncertain. In this study, the internal variability leveraging (IVL) approach is used to transpose an atmospheric river cluster that affected the U.S. West Coast during 20-29 October 2021. Steering the storm toward the target basin and determining its transposition region are achieved by considering an ensemble of plausible storm evolutions and trajectories obtained from archived ECMWF medium-range forecasts. The Willamette River and Nass River watersheds, located approximately 6 deg N, 2 deg W and 16 deg N, 8 deg W, respectively, from the area most affected by the observed precipitation, were selected as target basins. For each basin, the IVL realization yielding the largest 24-h basin-average precipitation depth was identified, and the initial and boundary condition shifting method was subsequently applied to further enhance its impact, producing 24-h precipitation depths of 119 mm for the Willamette and 98 mm for the Nass.
+
+[**arXiv:2602.19233v1**](https://arxiv.org/abs/2602.19233v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
