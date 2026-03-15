@@ -41,6 +41,8 @@
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
 - **Ensemble Forecasting of Power Quality Parameters** (2026) - [arXiv:2603.02706v1](https://arxiv.org/abs/2603.02706v1)
 - **Turbulence generation and data assimilation in wall-bounded flows with a latent diffusion model** (2026) - [arXiv:2603.02143v2](https://arxiv.org/abs/2603.02143v2)
+- **Convergence Analysis of a Fully Discrete Observer For Data Assimilation of the Barotropic Euler Equations** (2026) - [arXiv:2603.10962v2](https://arxiv.org/abs/2603.10962v2)
+- **A finite element continuous data assimilation framework for a Navier--Stokes--Cahn--Hilliard system** (2026) - [arXiv:2603.08765v1](https://arxiv.org/abs/2603.08765v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 - **Nuclear Data Adjustment for Nonlinear Applications in the OECD/NEA WPNCS SG14 Benchmark -- A Bayesian Inverse UQ-based Approach for Data Assimilation** (2025) - [arXiv:2509.07790v1](https://arxiv.org/abs/2509.07790v1)
 - **FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration** (2025) - [arXiv:2509.14775v1](https://arxiv.org/abs/2509.14775v1)

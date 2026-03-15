@@ -555,6 +555,36 @@
 
 ---
 
+### Convergence Analysis of a Fully Discrete Observer For Data Assimilation of the Barotropic Euler Equations
+
+**Authors:** Aidan Chaumet, Jan Giesselmann
+
+**Year:** 2026
+
+**Abstract:**
+> We study the convergence of a discrete Luenberger observer for the barotropic Euler equations in one dimension, for measurements of the velocity only. We use a mixed finite element method in space and implicit Euler integration in time. We use a modified relative energy technique to show an error bound comparing the discrete observer to the original system's solution. The bound is the sum of three parts: an exponentially decaying part, proportional to the difference in initial value, a part proportional to the grid sizes in space and time and a part that is proportional to the size of the measurement errors as well as the nudging parameter. The proportionality constants of the second and third parts are independent of time and grid sizes. To the best of our knowledge, this provides the first error estimate for a discrete observer for a quasilinear hyperbolic system, and implies uniform-in-time accuracy of the discrete observer for long-time simulations.
+
+[**arXiv:2603.10962v2**](https://arxiv.org/abs/2603.10962v2)
+
+**Tags:** ``
+
+---
+
+### A finite element continuous data assimilation framework for a Navier--Stokes--Cahn--Hilliard system
+
+**Authors:** Tianyu Sun
+
+**Year:** 2026
+
+**Abstract:**
+> This paper studies a coupled two-dimensional Navier--Stokes--Cahn--Hilliard phase-field model augmented by a transported auxiliary field, and develops a continuous data assimilation (CDA) framework for recovering its trajectories from coarse-in-space observations.   We formulate a nudging-based CDA system for the coupled NSCH--auxiliary-field model, in which coarse measurements are incorporated through a general linear observation operator. The observation mechanism is described abstractly by an interpolant satisfying an $H^{2}$-type approximation property, which is compatible with coarse spatial observations obtained from mesh coarsening and reconstruction.   At the continuous level, we record two structural properties of the model: a formal energy law for the reference system and an evolution law for the phase mean in the assimilated dynamics. At the discrete level, we introduce a capped fully discrete finite element splitting scheme using continuous quadratic elements for the phase, chemical potential, velocity, and auxiliary field, together with continuous linear elements for the pressure. For this scheme, we prove one-step well-posedness and establish a stepwise a priori estimate for the capped method.   Numerical experiments illustrate the practical behavior of the proposed CDA approach. They demonstrate recovery from strongly mismatched initial conditions and show how synchronization depends on the observation resolution, boundary forcing, and feedback strength. A coarse-indistinguishability experiment further shows that identical coarse initial information may correspond to distinct fine-scale evolutions, while the assimilated dynamics select the trajectory determined by the supplied time-dependent observations.
+
+[**arXiv:2603.08765v1**](https://arxiv.org/abs/2603.08765v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
