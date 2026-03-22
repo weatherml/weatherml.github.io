@@ -585,6 +585,96 @@
 
 ---
 
+### Adaptive Nonlinear Data Assimilation through P-Spline Triangular Measure Transport
+
+**Authors:** Berent Å. S. Lunde, Maximilian Ramgraber
+
+**Year:** 2026
+
+**Abstract:**
+> Non-Gaussian statistics are a challenge for data assimilation. Linear methods oversimplify the problem, yet fully nonlinear methods are often too expensive to use in practice. The best solution usually lies between these extremes. Triangular measure transport offers a flexible framework for nonlinear data assimilation. Its success, however, depends on how the map is parametrized. Too much flexibility leads to overfitting; too little misses important structure. To address this balance, we develop an adaptation algorithm that selects a parsimonious parametrization automatically. Our method uses P-spline basis functions and an information criterion as a continuous measure of model complexity. This formulation enables gradient descent and allows efficient, fine-scale adaptation in high-dimensional settings. The resulting algorithm requires no hyperparameter tuning. It adjusts the transport map to the appropriate level of complexity based on the system statistics and ensemble size. We demonstrate its performance in nonlinear, non-Gaussian problems, including a high-dimensional distributed groundwater model.
+
+[**arXiv:2603.19058v1**](https://arxiv.org/abs/2603.19058v1)
+
+**Tags:** ``
+
+---
+
+### Enhancing the Parameterization of Reservoir Properties for Data Assimilation Using Deep VAE-GAN
+
+**Authors:** Marcio Augusto Sampaio, Paulo Henrique Ranazzi, Martin Julian Blunt
+
+**Year:** 2026
+
+**Abstract:**
+> Currently, the methods called Iterative Ensemble Smoothers, especially the method called Ensemble Smoother with Multiple Data Assimilation (ESMDA) can be considered state-of-the-art for history matching in petroleum reservoir simulation. However, this approach has two important limitations: the use of an ensemble with finite size to represent the distributions and the Gaussian assumption in parameter and data uncertainties. This latter is particularly important because many reservoir properties have non-Gaussian distributions. Parameterization involves mapping non-Gaussian parameters to a Gaussian field before the update and then mapping them back to the original domain to forward the ensemble through the reservoir simulator. A promising approach to perform parameterization is through deep learning models. Recent studies have shown that Generative Adversarial Networks (GAN) performed poorly concerning data assimilation, but generated more geologically plausible realizations of the reservoir, while the Variational Autoencoder (VAE) performed better than the GAN in data assimilation, but generated less geologically realistic models. This work is innovative in combining the strengths of both to implement a deep learning model called Variational Autoencoder Generative Adversarial Network (VAE-GAN) integrated with ESMDA. The methodology was applied in two case studies, one case being categorical and the other with continuous values of permeability. Our findings demonstrate that by applying the VAE-GAN model we can obtain high quality reservoir descriptions (just like GANs) and a good history matching on the production curves (just like VAEs) simultaneously.
+
+[**arXiv:2603.18766v1**](https://arxiv.org/abs/2603.18766v1)
+
+**Tags:** ``
+
+---
+
+### Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction
+
+**Authors:** Daniel Witt, Thomas Bendall, Jemma Shipton
+
+**Year:** 2026
+
+**Abstract:**
+> The accurate and efficient representation of atmospheric dynamics remains a central challenge in numerical weather prediction. A particular difficulty arises from the strong anisotropy of the atmosphere, in which horizontal and vertical motions occur on very different length scales, motivating numerical discretisations that can reflect this structure. In this study, we introduce a compatible finite element discretisation of the compressible Boussinesq and compressible Euler equations in which the horizontal and vertical polynomial orders are treated independently.   The split-order discretisation is constructed using a tensor-product framework that preserves the discrete de Rham complex and associated mimetic properties. Its wave-propagation characteristics are examined through a discrete dispersion analysis that extends previous analyses to configurations with differing horizontal and vertical polynomial orders. The results show that increasing horizontal order improves the representation of gravity waves at low and intermediate wavenumbers, while increasing vertical order can degrade dispersion accuracy near the grid scale and introduce spectral gaps.   A series of idealised numerical experiments, including gravity-wave propagation, advective transport, mountain-wave flow, and a global baroclinic-wave test, is used to assess the scheme's accuracy and convergence properties. These experiments demonstrate that increasing the polynomial order in the dominant direction of motion improves convergence, and that increasing the horizontal order yields the greatest gain in accuracy under typical atmospheric conditions. The results indicate that split-order compatible finite element discretisations provide a viable alternative for controlling accuracy and numerical behaviour in atmospheric dynamical cores.
+
+[**arXiv:2603.16571v1**](https://arxiv.org/abs/2603.16571v1)
+
+**Tags:** ``
+
+---
+
+### FuXiWeather2: Learning accurate atmospheric state estimation for operational global weather forecasting
+
+**Authors:** Xiaoze Xu, Xiuyu Sun, Songling Zhu, Xiaohui Zhong, Yuanqing Huang, Zijian Zhu, Jun Liu, Hao Li
+
+**Year:** 2026
+
+**Abstract:**
+> Numerical weather prediction has long been constrained by the computational bottlenecks inherent in data assimilation and numerical modeling. While machine learning has accelerated forecasting, existing models largely serve as "emulators of reanalysis products," thereby retaining their systematic biases and operational latencies. Here, we present FuXiWeather2, a unified end-to-end neural framework for assimilation and forecasting. We align training objectives directly with a combination of real-world observations and reanalysis data, enabling the framework to effectively rectify inherent errors within reanalysis products. To address the distribution shift between NWP-derived background inputs during training and self-generated backgrounds during deployment, we introduce a recursive unrolling training method to enhance the precision and stability of analysis generation. Furthermore, our model is trained on a hybrid dataset of raw and simulated observations to mitigate the impact of observational distribution inconsistency. FuXiWeather2 generates high-resolution ($0.25^{\circ}$) global analysis fields and 10-day forecasts within minutes. The analysis fields surpass the NCEP-GFS across most variables and demonstrate superior accuracy over both ERA5 and the ECMWF-HRES system in lower-tropospheric and surface variables. These high-quality analysis fields drive deterministic forecasts that exceed the skill of the HRES system in 91\% of evaluated metrics. Additionally, its outstanding performance in typhoon track prediction underscores its practical value for rapid response to extreme weather events. The FuXiWeather2 analysis dataset is available at https://doi.org/10.5281/zenodo.18872728.
+
+[**arXiv:2603.15358v1**](https://arxiv.org/abs/2603.15358v1)
+
+**Tags:** ``
+
+---
+
+### AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting
+
+**Authors:** Jing Wu, Yang Liu, Lin Zhang, Junbo Zeng, Jiabin Wang, Zi Ye, Guowen Li, Shilei Cao, Jiashun Cheng, Fang Wang, Meng Jin, Yerong Feng, Hong Cheng, Yutong Lu, Haohuan Fu, Juepeng Zheng
+
+**Year:** 2026
+
+**Abstract:**
+> Accurate weather forecasting is more than grid-wise regression: it must preserve coherent synoptic structures and physical consistency of meteorological fields, especially under autoregressive rollouts where small one-step errors can amplify into structural bias. Existing physics-priors approaches typically impose global, once-for-all constraints via architectures, regularization, or NWP coupling, offering limited state-adaptive and sample-specific controllability at deployment. To bridge this gap, we propose Agent-Guided Cross-modal Decoding (AGCD), a plug-and-play decoding-time prior-injection paradigm that derives state-conditioned physics-priors from the current multivariate atmosphere and injects them into forecasters in a controllable and reusable way. Specifically, We design a multi-agent meteorological narration pipeline to generate state-conditioned physics-priors, utilizing MLLMs to extract various meteorological elements effectively. To effectively apply the priors, AGCD further introduce cross-modal region interaction decoding that performs region-aware multi-scale tokenization and efficient physics-priors injection to refine visual features without changing the backbone interface. Experiments on WeatherBench demonstrate consistent gains for 6-hour forecasting across two resolutions (5.625 degree and 1.40625 degree) and diverse backbones (generic and weather-specialized), including strictly causal 48-hour autoregressive rollouts that reduce early-stage error accumulation and improve long-horizon stability.
+
+[**arXiv:2603.15260v1**](https://arxiv.org/abs/2603.15260v1)
+
+**Tags:** ``
+
+---
+
+### A Score Filter Enhanced Data Assimilation Framework for Data-Driven Dynamical Systems
+
+**Authors:** Jingqiao Tang, Ryan Bausback, Feng Bao, Guannan Zhang, Phuoc-Toan Huynh
+
+**Year:** 2026
+
+**Abstract:**
+> We introduce a score-filter-enhanced data assimilation framework designed to reduce predictive uncertainty in machine learning (ML) models for data-driven dynamical system forecasting. Machine learning serves as an efficient numerical model for predicting dynamical systems. However, even with sufficient data, model uncertainty remains and accumulates over time, causing the long-term performance of ML models to deteriorate. To overcome this difficulty, we integrate data assimilation techniques into the training process to iteratively refine the model predictions by incorporating observational information. Specifically, we apply the Ensemble Score Filter (EnSF), a generative AI-based training-free diffusion model approach, for solving the data assimilation problem in high-dimensional nonlinear complex systems. This leads to a hybrid data assimilation-training framework that combines ML with EnSF to improve long-term predictive performance. We shall demonstrate that EnSF-enhanced ML can effectively reduce predictive uncertainty in ML-based Lorenz-96 system prediction and the Korteweg-De Vries (KdV) equation prediction.
+
+[**arXiv:2603.14863v1**](https://arxiv.org/abs/2603.14863v1)
+
+**Tags:** ``
+
+---
+
 ### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
 **Authors:** Hungjui Yu, Lander Ver Hoef, Kristen L. Rasmussen, Imme Ebert-Uphoff
