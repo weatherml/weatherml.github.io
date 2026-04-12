@@ -55,6 +55,8 @@
 - **Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data** (2026) - [arXiv:2603.29200v2](https://arxiv.org/abs/2603.29200v2)
 - **Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling** (2026) - [arXiv:2603.28173v1](https://arxiv.org/abs/2603.28173v1)
 - **Self-Organizing Score-based Data Assimilation** (2026) - [arXiv:2603.28048v2](https://arxiv.org/abs/2603.28048v2)
+- **Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting** (2026) - [arXiv:2604.07928v1](https://arxiv.org/abs/2604.07928v1)
+- **El Nino Prediction Based on Weather Forecast and Geographical Time-series Data** (2026) - [arXiv:2604.04998v1](https://arxiv.org/abs/2604.04998v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 - **Nuclear Data Adjustment for Nonlinear Applications in the OECD/NEA WPNCS SG14 Benchmark -- A Bayesian Inverse UQ-based Approach for Data Assimilation** (2025) - [arXiv:2509.07790v1](https://arxiv.org/abs/2509.07790v1)
 - **FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration** (2025) - [arXiv:2509.14775v1](https://arxiv.org/abs/2509.14775v1)
