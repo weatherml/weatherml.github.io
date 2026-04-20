@@ -13,7 +13,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
 <div class="grid cards" markdown>
 
--   __Capturing Aleatoric Uncertainty in Climate Models__
+-   #### Capturing Aleatoric Uncertainty in Climate Models
 
     ---
 
@@ -23,7 +23,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     [:material-file-document: 2604.15067](https://arxiv.org/abs/2604.15067v1) · [:material-content-copy: BibTeX](bibtex/2604.15067.bib){ .bibtex-link }
 
--   __Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting__
+-   #### Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting
 
     ---
 
@@ -35,7 +35,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     <span class="md-tag">transformer</span>
 
--   __El Nino Prediction Based on Weather Forecast and Geographical Time-series Data__
+-   #### El Nino Prediction Based on Weather Forecast and Geographical Time-series Data
 
     ---
 
@@ -47,7 +47,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     <span class="md-tag">CNN</span> <span class="md-tag">recurrent</span>
 
--   __Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching__
+-   #### Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching
 
     ---
 
@@ -59,7 +59,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models__
+-   #### Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models
 
     ---
 
@@ -69,7 +69,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     [:material-file-document: 2604.00082](https://arxiv.org/abs/2604.00082v1) · [:fontawesome-brands-github:](https://github.com/mitre/deep-obs) · [:material-content-copy: BibTeX](bibtex/2604.00082.bib){ .bibtex-link }
 
--   __30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling__
+-   #### 30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling
 
     ---
 
@@ -79,7 +79,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     [:material-file-document: 2603.29478](https://arxiv.org/abs/2603.29478v1) · [:material-content-copy: BibTeX](bibtex/2603.29478.bib){ .bibtex-link }
 
--   __Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data__
+-   #### Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data
 
     ---
 
@@ -89,7 +89,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     [:material-file-document: 2603.29200](https://arxiv.org/abs/2603.29200v2) · [:material-content-copy: BibTeX](bibtex/2603.29200.bib){ .bibtex-link }
 
--   __Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling__
+-   #### Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling
 
     ---
 
@@ -101,7 +101,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     <span class="md-tag">transformer</span>
 
--   __Self-Organizing Score-based Data Assimilation__
+-   #### Self-Organizing Score-based Data Assimilation
 
     ---
 
@@ -113,7 +113,7 @@ A curated collection of papers on deep learning and machine learning applied to 
 
     <span class="md-tag">diffusion</span>
 
--   __Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction__
+-   #### Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction
 
     ---
 

@@ -31,9 +31,9 @@ def generate_bibtex(paper):
 
 
 def generate_paper_card(paper):
-    """Generate a card list item for a paper."""
+    """Generate a card list item with h4 heading for search indexing."""
     lines = []
-    lines.append(f"-   __{ paper['title'] }__\n")
+    lines.append(f"-   #### {paper['title']}\n")
     lines.append(f"\n")
     lines.append(f"    ---\n")
     lines.append(f"\n")
@@ -63,7 +63,7 @@ def generate_paper_card(paper):
     lines.append(f"\n")
     lines.append(f"\n")
 
-    # Tags as styled pills
+    # Tags
     tags = paper.get('tags', [])
     display_tags = [t for t in tags if '.' not in t]
     if display_tags:
@@ -110,7 +110,7 @@ def generate_stats(papers):
 
 
 def generate_recent_papers(papers, n=10):
-    """Generate markdown for the most recent papers as cards."""
+    """Generate markdown for the most recent papers."""
     sorted_papers = sorted(papers, key=lambda p: (p['year'], p['arxiv']), reverse=True)
     recent = sorted_papers[:n]
 

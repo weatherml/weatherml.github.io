@@ -9,7 +9,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __El Nino Prediction Based on Weather Forecast and Geographical Time-series Data__
+-   #### El Nino Prediction Based on Weather Forecast and Geographical Time-series Data
 
     ---
 
@@ -21,7 +21,7 @@ hide:
 
     <span class="md-tag">CNN</span> <span class="md-tag">recurrent</span>
 
--   __Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching__
+-   #### Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching
 
     ---
 
@@ -33,7 +33,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data__
+-   #### Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data
 
     ---
 
@@ -43,7 +43,7 @@ hide:
 
     [:material-file-document: 2603.29200](https://arxiv.org/abs/2603.29200v2) · [:material-content-copy: BibTeX](bibtex/2603.29200.bib){ .bibtex-link }
 
--   __Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling__
+-   #### Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling
 
     ---
 
@@ -55,7 +55,7 @@ hide:
 
     <span class="md-tag">transformer</span>
 
--   __FuXiWeather2: Learning accurate atmospheric state estimation for operational global weather forecasting__
+-   #### FuXiWeather2: Learning accurate atmospheric state estimation for operational global weather forecasting
 
     ---
 
@@ -65,7 +65,7 @@ hide:
 
     [:material-file-document: 2603.15358](https://arxiv.org/abs/2603.15358v1) · [:material-content-copy: BibTeX](bibtex/2603.15358.bib){ .bibtex-link }
 
--   __AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting__
+-   #### AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting
 
     ---
 
@@ -75,7 +75,7 @@ hide:
 
     [:material-file-document: 2603.15260](https://arxiv.org/abs/2603.15260v1) · [:material-content-copy: BibTeX](bibtex/2603.15260.bib){ .bibtex-link }
 
--   __On Using Medium-Range Ensemble Forecasts for Storm Transposition of Synoptic-Scale Systems in Probable Maximum Precipitation Estimation__
+-   #### On Using Medium-Range Ensemble Forecasts for Storm Transposition of Synoptic-Scale Systems in Probable Maximum Precipitation Estimation
 
     ---
 
@@ -85,7 +85,7 @@ hide:
 
     [:material-file-document: 2602.19233](https://arxiv.org/abs/2602.19233v1) · [:material-content-copy: BibTeX](bibtex/2602.19233.bib){ .bibtex-link }
 
--   __Universal Diffusion-Based Probabilistic Downscaling__
+-   #### Universal Diffusion-Based Probabilistic Downscaling
 
     ---
 
@@ -97,7 +97,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __Learning to Advect: A Neural Semi-Lagrangian Architecture for Weather Forecasting__
+-   #### Learning to Advect: A Neural Semi-Lagrangian Architecture for Weather Forecasting
 
     ---
 
@@ -107,7 +107,7 @@ hide:
 
     [:material-file-document: 2601.21151](https://arxiv.org/abs/2601.21151v1) · [:material-content-copy: BibTeX](bibtex/2601.21151.bib){ .bibtex-link }
 
--   __Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting__
+-   #### Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting
 
     ---
 
@@ -119,7 +119,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting__
+-   #### Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting
 
     ---
 
@@ -131,7 +131,7 @@ hide:
 
     <span class="md-tag">transformer</span> <span class="md-tag">physics-informed</span>
 
--   __Efficient Parameter Calibration of Numerical Weather Prediction Models via Evolutionary Sequential Transfer Optimization__
+-   #### Efficient Parameter Calibration of Numerical Weather Prediction Models via Evolutionary Sequential Transfer Optimization
 
     ---
 
@@ -141,7 +141,7 @@ hide:
 
     [:material-file-document: 2601.08663](https://arxiv.org/abs/2601.08663v1) · [:material-content-copy: BibTeX](bibtex/2601.08663.bib){ .bibtex-link }
 
--   __Evaluating Weather Forecasts from a Decision Maker's Perspective__
+-   #### Evaluating Weather Forecasts from a Decision Maker's Perspective
 
     ---
 
@@ -151,7 +151,7 @@ hide:
 
     [:material-file-document: 2512.14779](https://arxiv.org/abs/2512.14779v1) · [:material-content-copy: BibTeX](bibtex/2512.14779.bib){ .bibtex-link }
 
--   __Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System ClimaX-LETKF__
+-   #### Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System ClimaX-LETKF
 
     ---
 
@@ -161,7 +161,7 @@ hide:
 
     [:material-file-document: 2512.14444](https://arxiv.org/abs/2512.14444v1) · [:material-content-copy: BibTeX](bibtex/2512.14444.bib){ .bibtex-link }
 
--   __Observation-driven correction of numerical weather prediction for marine winds__
+-   #### Observation-driven correction of numerical weather prediction for marine winds
 
     ---
 
@@ -173,7 +173,7 @@ hide:
 
     <span class="md-tag">transformer</span>
 
--   __COBASE: A new copula-based shuffling method for ensemble weather forecast postprocessing__
+-   #### COBASE: A new copula-based shuffling method for ensemble weather forecast postprocessing
 
     ---
 
@@ -183,7 +183,7 @@ hide:
 
     [:material-file-document: 2510.25610](https://arxiv.org/abs/2510.25610v1) · [:material-content-copy: BibTeX](bibtex/2510.25610.bib){ .bibtex-link }
 
--   __Revealing the Potential of Learnable Perturbation Ensemble Forecast Model for Tropical Cyclone Prediction__
+-   #### Revealing the Potential of Learnable Perturbation Ensemble Forecast Model for Tropical Cyclone Prediction
 
     ---
 
@@ -193,7 +193,7 @@ hide:
 
     [:material-file-document: 2510.23794](https://arxiv.org/abs/2510.23794v1) · [:material-content-copy: BibTeX](bibtex/2510.23794.bib){ .bibtex-link }
 
--   __Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting__
+-   #### Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting
 
     ---
 
@@ -205,7 +205,7 @@ hide:
 
     <span class="md-tag">GNN</span>
 
--   __An update to ECMWF's machine-learned weather forecast model AIFS__
+-   #### An update to ECMWF's machine-learned weather forecast model AIFS
 
     ---
 
@@ -215,7 +215,7 @@ hide:
 
     [:material-file-document: 2509.18994](https://arxiv.org/abs/2509.18994v1) · [:material-content-copy: BibTeX](bibtex/2509.18994.bib){ .bibtex-link }
 
--   __Training-Free Data Assimilation with GenCast__
+-   #### Training-Free Data Assimilation with GenCast
 
     ---
 
@@ -227,7 +227,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">foundation-model</span>
 
--   __GraphCast: Learning skillful medium-range global weather forecasting__
+-   #### GraphCast: Learning skillful medium-range global weather forecasting
 
     ---
 
@@ -237,7 +237,7 @@ hide:
 
     [:material-file-document: 2212.12794](https://arxiv.org/abs/2212.12794v2) · [:fontawesome-brands-github:](https://github.com/deepmind/graphcast) · [:material-content-copy: BibTeX](bibtex/2212.12794.bib){ .bibtex-link }
 
--   __Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast__
+-   #### Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast
 
     ---
 
@@ -249,7 +249,7 @@ hide:
 
     <span class="md-tag">transformer</span>
 
--   __FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators__
+-   #### FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators
 
     ---
 
@@ -267,7 +267,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting__
+-   #### MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting
 
     ---
 
@@ -279,7 +279,7 @@ hide:
 
     <span class="md-tag">CNN</span> <span class="md-tag">physics-informed</span>
 
--   __WADEPre: A Wavelet-based Decomposition Model for Extreme Precipitation Nowcasting with Multi-Scale Learning__
+-   #### WADEPre: A Wavelet-based Decomposition Model for Extreme Precipitation Nowcasting with Multi-Scale Learning
 
     ---
 
@@ -289,7 +289,7 @@ hide:
 
     [:material-file-document: 2602.02096](https://arxiv.org/abs/2602.02096v1) · [:fontawesome-brands-github:](https://github.com/sonderlau/WADEPre) · [:material-content-copy: BibTeX](bibtex/2602.02096.bib){ .bibtex-link }
 
--   __StormDiT: A generative AI model bridges the 2-6 hour 'gray zone' in precipitation nowcasting__
+-   #### StormDiT: A generative AI model bridges the 2-6 hour 'gray zone' in precipitation nowcasting
 
     ---
 
@@ -301,7 +301,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting__
+-   #### STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting
 
     ---
 
@@ -313,7 +313,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">variational</span>
 
--   __PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting__
+-   #### PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting
 
     ---
 
@@ -325,7 +325,7 @@ hide:
 
     <span class="md-tag">physics-informed</span> <span class="md-tag">operator-learning</span>
 
--   __FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching__
+-   #### FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching
 
     ---
 
@@ -337,7 +337,7 @@ hide:
 
     <span class="md-tag">diffusion</span>
 
--   __Nowcast3D: Reliable precipitation nowcasting via gray-box learning__
+-   #### Nowcast3D: Reliable precipitation nowcasting via gray-box learning
 
     ---
 
@@ -349,7 +349,7 @@ hide:
 
     <span class="md-tag">operator-learning</span>
 
--   __RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion__
+-   #### RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion
 
     ---
 
@@ -361,7 +361,7 @@ hide:
 
     <span class="md-tag">transformer</span> <span class="md-tag">diffusion</span> <span class="md-tag">CNN</span>
 
--   __SimCast: Enhancing Precipitation Nowcasting with Short-to-Long Term Knowledge Distillation__
+-   #### SimCast: Enhancing Precipitation Nowcasting with Short-to-Long Term Knowledge Distillation
 
     ---
 
@@ -373,7 +373,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __Probability calibration for precipitation nowcasting__
+-   #### Probability calibration for precipitation nowcasting
 
     ---
 
@@ -385,7 +385,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __Skilful Precipitation Nowcasting Using NowcastNet__
+-   #### Skilful Precipitation Nowcasting Using NowcastNet
 
     ---
 
@@ -397,7 +397,7 @@ hide:
 
     <span class="md-tag">physics-informed</span>
 
--   __MetNet: A Neural Weather Model for Precipitation Forecasting__
+-   #### MetNet: A Neural Weather Model for Precipitation Forecasting
 
     ---
 
@@ -415,7 +415,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting__
+-   #### Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting
 
     ---
 
@@ -427,7 +427,7 @@ hide:
 
     <span class="md-tag">transformer</span>
 
--   __30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling__
+-   #### 30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling
 
     ---
 
@@ -437,7 +437,7 @@ hide:
 
     [:material-file-document: 2603.29478](https://arxiv.org/abs/2603.29478v1) · [:material-content-copy: BibTeX](bibtex/2603.29478.bib){ .bibtex-link }
 
--   __Downscaling land surface temperature data using edge detection and block-diagonal Gaussian process regression__
+-   #### Downscaling land surface temperature data using edge detection and block-diagonal Gaussian process regression
 
     ---
 
@@ -449,7 +449,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __Zero-Shot Statistical Downscaling via Diffusion Posterior Sampling__
+-   #### Zero-Shot Statistical Downscaling via Diffusion Posterior Sampling
 
     ---
 
@@ -459,7 +459,7 @@ hide:
 
     [:material-file-document: 2601.21760](https://arxiv.org/abs/2601.21760v1) · [:material-content-copy: BibTeX](bibtex/2601.21760.bib){ .bibtex-link }
 
--   __Time-aware UNet and super-resolution deep residual networks for spatial downscaling__
+-   #### Time-aware UNet and super-resolution deep residual networks for spatial downscaling
 
     ---
 
@@ -471,7 +471,7 @@ hide:
 
     <span class="md-tag">CNN</span>
 
--   __On Global Applicability and Location Transferability of Generative Deep Learning Models for Precipitation Downscaling__
+-   #### On Global Applicability and Location Transferability of Generative Deep Learning Models for Precipitation Downscaling
 
     ---
 
@@ -481,7 +481,7 @@ hide:
 
     [:material-file-document: 2512.01400](https://arxiv.org/abs/2512.01400v1) · [:material-content-copy: BibTeX](bibtex/2512.01400.bib){ .bibtex-link }
 
--   __A PDE-Informed Latent Diffusion Model for 2-m Temperature Downscaling__
+-   #### A PDE-Informed Latent Diffusion Model for 2-m Temperature Downscaling
 
     ---
 
@@ -493,7 +493,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">CNN</span>
 
--   __Sparse Local Implicit Image Function for sub-km Weather Downscaling__
+-   #### Sparse Local Implicit Image Function for sub-km Weather Downscaling
 
     ---
 
@@ -503,7 +503,7 @@ hide:
 
     [:material-file-document: 2510.20228](https://arxiv.org/abs/2510.20228v1) · [:material-content-copy: BibTeX](bibtex/2510.20228.bib){ .bibtex-link }
 
--   __Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling__
+-   #### Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling
 
     ---
 
@@ -513,7 +513,7 @@ hide:
 
     [:material-file-document: 2510.13722](https://arxiv.org/abs/2510.13722v1) · [:fontawesome-brands-github:](https://github.com/CarloSaccardi/PSD-Downscaling) · [:material-content-copy: BibTeX](bibtex/2510.13722.bib){ .bibtex-link }
 
--   __Km-scale dynamical downscaling through conformalized latent diffusion models__
+-   #### Km-scale dynamical downscaling through conformalized latent diffusion models
 
     ---
 
@@ -525,7 +525,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling__
+-   #### MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling
 
     ---
 
@@ -543,7 +543,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models__
+-   #### Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models
 
     ---
 
@@ -553,7 +553,7 @@ hide:
 
     [:material-file-document: 2604.00082](https://arxiv.org/abs/2604.00082v1) · [:fontawesome-brands-github:](https://github.com/mitre/deep-obs) · [:material-content-copy: BibTeX](bibtex/2604.00082.bib){ .bibtex-link }
 
--   __Self-Organizing Score-based Data Assimilation__
+-   #### Self-Organizing Score-based Data Assimilation
 
     ---
 
@@ -565,7 +565,7 @@ hide:
 
     <span class="md-tag">diffusion</span>
 
--   __Convergence Analysis of a Fully Discrete Observer For Data Assimilation of the Barotropic Euler Equations__
+-   #### Convergence Analysis of a Fully Discrete Observer For Data Assimilation of the Barotropic Euler Equations
 
     ---
 
@@ -575,7 +575,7 @@ hide:
 
     [:material-file-document: 2603.10962](https://arxiv.org/abs/2603.10962v2) · [:material-content-copy: BibTeX](bibtex/2603.10962.bib){ .bibtex-link }
 
--   __Accurate and Efficient Hybrid-Ensemble Atmospheric Data Assimilation in Latent Space with Uncertainty Quantification__
+-   #### Accurate and Efficient Hybrid-Ensemble Atmospheric Data Assimilation in Latent Space with Uncertainty Quantification
 
     ---
 
@@ -587,7 +587,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation__
+-   #### Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation
 
     ---
 
@@ -599,7 +599,7 @@ hide:
 
     <span class="md-tag">transformer</span> <span class="md-tag">variational</span> <span class="md-tag">probabilistic</span>
 
--   __LEVDA: Latent Ensemble Variational Data Assimilation via Differentiable Dynamics__
+-   #### LEVDA: Latent Ensemble Variational Data Assimilation via Differentiable Dynamics
 
     ---
 
@@ -611,7 +611,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __Preconditioned Adjoint Data Assimilation for Two-Dimensional Decaying Isotropic Turbulence__
+-   #### Preconditioned Adjoint Data Assimilation for Two-Dimensional Decaying Isotropic Turbulence
 
     ---
 
@@ -621,7 +621,7 @@ hide:
 
     [:material-file-document: 2602.14016](https://arxiv.org/abs/2602.14016v1) · [:material-content-copy: BibTeX](bibtex/2602.14016.bib){ .bibtex-link }
 
--   __On a system of equations arising in meteorology: Well-posedness and data assimilation__
+-   #### On a system of equations arising in meteorology: Well-posedness and data assimilation
 
     ---
 
@@ -631,7 +631,7 @@ hide:
 
     [:material-file-document: 2602.02328](https://arxiv.org/abs/2602.02328v1) · [:material-content-copy: BibTeX](bibtex/2602.02328.bib){ .bibtex-link }
 
--   __SENDAI: A Hierarchical Sparse-measurement, EfficieNt Data AssImilation Framework__
+-   #### SENDAI: A Hierarchical Sparse-measurement, EfficieNt Data AssImilation Framework
 
     ---
 
@@ -641,7 +641,7 @@ hide:
 
     [:material-file-document: 2601.21664](https://arxiv.org/abs/2601.21664v1) · [:material-content-copy: BibTeX](bibtex/2601.21664.bib){ .bibtex-link }
 
--   __Cheap2Rich: A Multi-Fidelity Framework for Data Assimilation and System Identification of Multiscale Physics -- Rotating Detonation Engines__
+-   #### Cheap2Rich: A Multi-Fidelity Framework for Data Assimilation and System Identification of Multiscale Physics -- Rotating Detonation Engines
 
     ---
 
@@ -651,7 +651,7 @@ hide:
 
     [:material-file-document: 2601.20295](https://arxiv.org/abs/2601.20295v1) · [:material-content-copy: BibTeX](bibtex/2601.20295.bib){ .bibtex-link }
 
--   __The Ensemble Schr{ö}dinger Bridge filter for Nonlinear Data Assimilation__
+-   #### The Ensemble Schr{ö}dinger Bridge filter for Nonlinear Data Assimilation
 
     ---
 
@@ -661,7 +661,7 @@ hide:
 
     [:material-file-document: 2512.18928](https://arxiv.org/abs/2512.18928v1) · [:material-content-copy: BibTeX](bibtex/2512.18928.bib){ .bibtex-link }
 
--   __Continuous data assimilation for 2D stochastic Navier-Stokes equations__
+-   #### Continuous data assimilation for 2D stochastic Navier-Stokes equations
 
     ---
 
@@ -671,7 +671,7 @@ hide:
 
     [:material-file-document: 2512.15184](https://arxiv.org/abs/2512.15184v1) · [:material-content-copy: BibTeX](bibtex/2512.15184.bib){ .bibtex-link }
 
--   __Predicting CME Arrivals with Heliospheric Imagers from L5: A Data Assimilation Approach__
+-   #### Predicting CME Arrivals with Heliospheric Imagers from L5: A Data Assimilation Approach
 
     ---
 
@@ -681,7 +681,7 @@ hide:
 
     [:material-file-document: 2512.09738](https://arxiv.org/abs/2512.09738v1) · [:material-content-copy: BibTeX](bibtex/2512.09738.bib){ .bibtex-link }
 
--   __Data assimilation and discrepancy modeling with shallow recurrent decoders__
+-   #### Data assimilation and discrepancy modeling with shallow recurrent decoders
 
     ---
 
@@ -693,7 +693,7 @@ hide:
 
     <span class="md-tag">physics-informed</span>
 
--   __Towards Streaming Prediction of Oscillatory Flows: A Data Assimilation and Machine Learning Approach__
+-   #### Towards Streaming Prediction of Oscillatory Flows: A Data Assimilation and Machine Learning Approach
 
     ---
 
@@ -703,7 +703,7 @@ hide:
 
     [:material-file-document: 2511.15758](https://arxiv.org/abs/2511.15758v1) · [:material-content-copy: BibTeX](bibtex/2511.15758.bib){ .bibtex-link }
 
--   __Exploring Ultra Rapid Data Assimilation Based on Ensemble Transform Kalman Filter with the Lorenz 96 Model__
+-   #### Exploring Ultra Rapid Data Assimilation Based on Ensemble Transform Kalman Filter with the Lorenz 96 Model
 
     ---
 
@@ -713,7 +713,7 @@ hide:
 
     [:material-file-document: 2511.12620](https://arxiv.org/abs/2511.12620v1) · [:material-content-copy: BibTeX](bibtex/2511.12620.bib){ .bibtex-link }
 
--   __DAMBench: A Multi-Modal Benchmark for Deep Learning-based Atmospheric Data Assimilation__
+-   #### DAMBench: A Multi-Modal Benchmark for Deep Learning-based Atmospheric Data Assimilation
 
     ---
 
@@ -723,7 +723,7 @@ hide:
 
     [:material-file-document: 2511.01468](https://arxiv.org/abs/2511.01468v1) · [:fontawesome-brands-github:](https://github.com/figerhaowang/DAMBench) · [:material-content-copy: BibTeX](bibtex/2511.01468.bib){ .bibtex-link }
 
--   __Interpolated Discrepancy Data Assimilation for PDEs with Sparse Observations__
+-   #### Interpolated Discrepancy Data Assimilation for PDEs with Sparse Observations
 
     ---
 
@@ -733,7 +733,7 @@ hide:
 
     [:material-file-document: 2510.24944](https://arxiv.org/abs/2510.24944v1) · [:material-content-copy: BibTeX](bibtex/2510.24944.bib){ .bibtex-link }
 
--   __LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation__
+-   #### LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation
 
     ---
 
@@ -745,7 +745,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">variational</span> <span class="md-tag">probabilistic</span>
 
--   __Continuous data assimilation applied to the Rayleigh-Benard problem for compressible fluid flows__
+-   #### Continuous data assimilation applied to the Rayleigh-Benard problem for compressible fluid flows
 
     ---
 
@@ -755,7 +755,7 @@ hide:
 
     [:material-file-document: 2510.20316](https://arxiv.org/abs/2510.20316v1) · [:material-content-copy: BibTeX](bibtex/2510.20316.bib){ .bibtex-link }
 
--   __Non-intrusive structural-preserving sequential data assimilation__
+-   #### Non-intrusive structural-preserving sequential data assimilation
 
     ---
 
@@ -765,7 +765,7 @@ hide:
 
     [:material-file-document: 2510.19701](https://arxiv.org/abs/2510.19701v1) · [:material-content-copy: BibTeX](bibtex/2510.19701.bib){ .bibtex-link }
 
--   __Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints__
+-   #### Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints
 
     ---
 
@@ -777,7 +777,7 @@ hide:
 
     <span class="md-tag">physics-informed</span>
 
--   __On the joint observability of flow fields and particle properties from Lagrangian trajectories: evidence from neural data assimilation__
+-   #### On the joint observability of flow fields and particle properties from Lagrangian trajectories: evidence from neural data assimilation
 
     ---
 
@@ -787,7 +787,7 @@ hide:
 
     [:material-file-document: 2510.00479](https://arxiv.org/abs/2510.00479v1) · [:material-content-copy: BibTeX](bibtex/2510.00479.bib){ .bibtex-link }
 
--   __Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models__
+-   #### Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models
 
     ---
 
@@ -797,7 +797,7 @@ hide:
 
     [:material-file-document: 2509.17625](https://arxiv.org/abs/2509.17625v1) · [:material-content-copy: BibTeX](bibtex/2509.17625.bib){ .bibtex-link }
 
--   __Lagrangian-Eulerian Multiscale Data Assimilation in Physical Domain based on Conditional Gaussian Nonlinear System__
+-   #### Lagrangian-Eulerian Multiscale Data Assimilation in Physical Domain based on Conditional Gaussian Nonlinear System
 
     ---
 
@@ -807,7 +807,7 @@ hide:
 
     [:material-file-document: 2509.14586](https://arxiv.org/abs/2509.14586v1) · [:material-content-copy: BibTeX](bibtex/2509.14586.bib){ .bibtex-link }
 
--   __FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation__
+-   #### FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation
 
     ---
 
@@ -823,7 +823,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __Distillation and Interpretability of Ensemble Forecasts of ENSO Phase using Entropic Learning__
+-   #### Distillation and Interpretability of Ensemble Forecasts of ENSO Phase using Entropic Learning
 
     ---
 
@@ -835,7 +835,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts__
+-   #### PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts
 
     ---
 
@@ -847,7 +847,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">foundation-model</span>
 
--   __Are we misdiagnosing ensemble forecast reliability? On the insufficiency of Spread-Error and rank-based reliability metrics__
+-   #### Are we misdiagnosing ensemble forecast reliability? On the insufficiency of Spread-Error and rank-based reliability metrics
 
     ---
 
@@ -857,7 +857,7 @@ hide:
 
     [:material-file-document: 2512.02160](https://arxiv.org/abs/2512.02160v1) · [:material-content-copy: BibTeX](bibtex/2512.02160.bib){ .bibtex-link }
 
--   __Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts__
+-   #### Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts
 
     ---
 
@@ -869,7 +869,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">physics-informed</span> <span class="md-tag">variational</span> <span class="md-tag">probabilistic</span>
 
--   __The Role of Deep Mesoscale Eddies in Ensemble Forecast Performance__
+-   #### The Role of Deep Mesoscale Eddies in Ensemble Forecast Performance
 
     ---
 
@@ -879,7 +879,7 @@ hide:
 
     [:material-file-document: 2511.09747](https://arxiv.org/abs/2511.09747v1) · [:material-content-copy: BibTeX](bibtex/2511.09747.bib){ .bibtex-link }
 
--   __Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting__
+-   #### Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting
 
     ---
 
@@ -891,7 +891,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __Data-Efficient Ensemble Weather Forecasting with Diffusion Models__
+-   #### Data-Efficient Ensemble Weather Forecasting with Diffusion Models
 
     ---
 
@@ -903,7 +903,7 @@ hide:
 
     <span class="md-tag">diffusion</span>
 
--   __GenCast: Diffusion-based ensemble forecasting for medium-range weather__
+-   #### GenCast: Diffusion-based ensemble forecasting for medium-range weather
 
     ---
 
@@ -915,7 +915,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation__
+-   #### SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation
 
     ---
 
@@ -933,7 +933,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __Capturing Aleatoric Uncertainty in Climate Models__
+-   #### Capturing Aleatoric Uncertainty in Climate Models
 
     ---
 
@@ -943,7 +943,7 @@ hide:
 
     [:material-file-document: 2604.15067](https://arxiv.org/abs/2604.15067v1) · [:material-content-copy: BibTeX](bibtex/2604.15067.bib){ .bibtex-link }
 
--   __Climate Downscaling with Stochastic Interpolants (CDSI)__
+-   #### Climate Downscaling with Stochastic Interpolants (CDSI)
 
     ---
 
@@ -955,7 +955,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __The Effect of Planetary Rotation Period on Clouds in a Global Climate Model with a Bin Microphysics Scheme__
+-   #### The Effect of Planetary Rotation Period on Clouds in a Global Climate Model with a Bin Microphysics Scheme
 
     ---
 
@@ -965,7 +965,7 @@ hide:
 
     [:material-file-document: 2603.03767](https://arxiv.org/abs/2603.03767v1) · [:material-content-copy: BibTeX](bibtex/2603.03767.bib){ .bibtex-link }
 
--   __Near-surface Extreme Wind Events and Their Responses to Climate Forcings in a Hierarchy of Global Climate Models__
+-   #### Near-surface Extreme Wind Events and Their Responses to Climate Forcings in a Hierarchy of Global Climate Models
 
     ---
 
@@ -975,7 +975,7 @@ hide:
 
     [:material-file-document: 2603.03483](https://arxiv.org/abs/2603.03483v1) · [:material-content-copy: BibTeX](bibtex/2603.03483.bib){ .bibtex-link }
 
--   __PICASO 4.0: Clouds and Photochemistry in Climate Models of Brown Dwarfs and Exoplanets__
+-   #### PICASO 4.0: Clouds and Photochemistry in Climate Models of Brown Dwarfs and Exoplanets
 
     ---
 
@@ -985,7 +985,7 @@ hide:
 
     [:material-file-document: 2602.22468](https://arxiv.org/abs/2602.22468v1) · [:material-content-copy: BibTeX](bibtex/2602.22468.bib){ .bibtex-link }
 
--   __Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon__
+-   #### Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon
 
     ---
 
@@ -997,7 +997,7 @@ hide:
 
     <span class="md-tag">physics-informed</span> <span class="md-tag">probabilistic</span>
 
--   __Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning__
+-   #### Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning
 
     ---
 
@@ -1009,7 +1009,7 @@ hide:
 
     <span class="md-tag">reinforcement-learning</span>
 
--   __Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model__
+-   #### Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model
 
     ---
 
@@ -1021,7 +1021,7 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __Quantum Machine Learning for Climate Modelling__
+-   #### Quantum Machine Learning for Climate Modelling
 
     ---
 
@@ -1033,7 +1033,7 @@ hide:
 
     <span class="md-tag">physics-informed</span>
 
--   __An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales__
+-   #### An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales
 
     ---
 
@@ -1045,7 +1045,7 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">GAN</span>
 
--   __Bridging CORDEX and CMIP6: Machine Learning Downscaling for Wind and Solar Energy Droughts in Central Europe__
+-   #### Bridging CORDEX and CMIP6: Machine Learning Downscaling for Wind and Solar Energy Droughts in Central Europe
 
     ---
 
@@ -1055,7 +1055,7 @@ hide:
 
     [:material-file-document: 2512.07429](https://arxiv.org/abs/2512.07429v1) · [:material-content-copy: BibTeX](bibtex/2512.07429.bib){ .bibtex-link }
 
--   __EcoCast: A Spatio-Temporal Model for Continual Biodiversity and Climate Risk Forecasting__
+-   #### EcoCast: A Spatio-Temporal Model for Continual Biodiversity and Climate Risk Forecasting
 
     ---
 
@@ -1067,7 +1067,7 @@ hide:
 
     <span class="md-tag">transformer</span>
 
--   __Efficient Regional Storm Surge Surrogate Model Training Strategy Under Evolving Landscape and Climate Scenarios__
+-   #### Efficient Regional Storm Surge Surrogate Model Training Strategy Under Evolving Landscape and Climate Scenarios
 
     ---
 
@@ -1077,7 +1077,7 @@ hide:
 
     [:material-file-document: 2511.07269](https://arxiv.org/abs/2511.07269v1) · [:material-content-copy: BibTeX](bibtex/2511.07269.bib){ .bibtex-link }
 
--   __Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region__
+-   #### Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region
 
     ---
 
@@ -1089,7 +1089,7 @@ hide:
 
     <span class="md-tag">transformer</span> <span class="md-tag">recurrent</span>
 
--   __A Probabilistic U-Net Approach to Downscaling Climate Simulations__
+-   #### A Probabilistic U-Net Approach to Downscaling Climate Simulations
 
     ---
 
@@ -1101,7 +1101,7 @@ hide:
 
     <span class="md-tag">CNN</span> <span class="md-tag">probabilistic</span>
 
--   __Intercomparison of a High-Resolution Regional Climate Model Ensemble for Catchment-Scale Water Cycle Processes under Human Influence__
+-   #### Intercomparison of a High-Resolution Regional Climate Model Ensemble for Catchment-Scale Water Cycle Processes under Human Influence
 
     ---
 
@@ -1111,7 +1111,7 @@ hide:
 
     [:material-file-document: 2511.02799](https://arxiv.org/abs/2511.02799v1) · [:material-content-copy: BibTeX](bibtex/2511.02799.bib){ .bibtex-link }
 
--   __A Stochastic Parameterization of Non-Orographic Gravity Waves Induced Mixing for Mars Planetary Climate Model__
+-   #### A Stochastic Parameterization of Non-Orographic Gravity Waves Induced Mixing for Mars Planetary Climate Model
 
     ---
 
@@ -1121,7 +1121,7 @@ hide:
 
     [:material-file-document: 2510.20410](https://arxiv.org/abs/2510.20410v1) · [:material-content-copy: BibTeX](bibtex/2510.20410.bib){ .bibtex-link }
 
--   __OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales__
+-   #### OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales
 
     ---
 
@@ -1133,7 +1133,7 @@ hide:
 
     <span class="md-tag">transformer</span> <span class="md-tag">diffusion</span> <span class="md-tag">physics-informed</span> <span class="md-tag">variational</span> <span class="md-tag">probabilistic</span>
 
--   __Specification and Verification for Climate Modeling: Formalization Leading to Impactful Tooling__
+-   #### Specification and Verification for Climate Modeling: Formalization Leading to Impactful Tooling
 
     ---
 
@@ -1143,7 +1143,7 @@ hide:
 
     [:material-file-document: 2510.13425](https://arxiv.org/abs/2510.13425v1) · [:material-content-copy: BibTeX](bibtex/2510.13425.bib){ .bibtex-link }
 
--   __Beyond the Training Data: Confidence-Guided Mixing of Parameterizations in a Hybrid AI-Climate Model__
+-   #### Beyond the Training Data: Confidence-Guided Mixing of Parameterizations in a Hybrid AI-Climate Model
 
     ---
 
@@ -1155,7 +1155,7 @@ hide:
 
     <span class="md-tag">physics-informed</span>
 
--   __Climate Model Tuning with Online Synchronization-Based Parameter Estimation__
+-   #### Climate Model Tuning with Online Synchronization-Based Parameter Estimation
 
     ---
 
@@ -1165,7 +1165,7 @@ hide:
 
     [:material-file-document: 2510.06180](https://arxiv.org/abs/2510.06180v1) · [:material-content-copy: BibTeX](bibtex/2510.06180.bib){ .bibtex-link }
 
--   __EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules__
+-   #### EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules
 
     ---
 
@@ -1175,7 +1175,7 @@ hide:
 
     [:material-file-document: 2509.26258](https://arxiv.org/abs/2509.26258v1) · [:material-content-copy: BibTeX](bibtex/2509.26258.bib){ .bibtex-link }
 
--   __The Open-Source Photochem Code: A General Chemical and Climate Model for Interpreting (Exo)Planet Observations__
+-   #### The Open-Source Photochem Code: A General Chemical and Climate Model for Interpreting (Exo)Planet Observations
 
     ---
 
@@ -1185,7 +1185,7 @@ hide:
 
     [:material-file-document: 2509.25578](https://arxiv.org/abs/2509.25578v1) · [:material-content-copy: BibTeX](bibtex/2509.25578.bib){ .bibtex-link }
 
--   __Disrespect Others, Respect the Climate? Applying Social Dynamics with Inequality to Forest Climate Models__
+-   #### Disrespect Others, Respect the Climate? Applying Social Dynamics with Inequality to Forest Climate Models
 
     ---
 
@@ -1195,7 +1195,7 @@ hide:
 
     [:material-file-document: 2509.17252](https://arxiv.org/abs/2509.17252v1) · [:material-content-copy: BibTeX](bibtex/2509.17252.bib){ .bibtex-link }
 
--   __SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators__
+-   #### SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators
 
     ---
 
@@ -1205,7 +1205,7 @@ hide:
 
     [:material-file-document: 2509.12490](https://arxiv.org/abs/2509.12490v1) · [:material-content-copy: BibTeX](bibtex/2509.12490.bib){ .bibtex-link }
 
--   __Do machine learning climate models work in changing climate dynamics?__
+-   #### Do machine learning climate models work in changing climate dynamics?
 
     ---
 
@@ -1215,7 +1215,7 @@ hide:
 
     [:material-file-document: 2509.12147](https://arxiv.org/abs/2509.12147v1) · [:material-content-copy: BibTeX](bibtex/2509.12147.bib){ .bibtex-link }
 
--   __Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms__
+-   #### Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms
 
     ---
 
@@ -1233,7 +1233,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration__
+-   #### FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration
 
     ---
 
@@ -1251,7 +1251,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   __Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction__
+-   #### Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction
 
     ---
 
@@ -1261,7 +1261,7 @@ hide:
 
     [:material-file-document: 2603.16571](https://arxiv.org/abs/2603.16571v1) · [:material-content-copy: BibTeX](bibtex/2603.16571.bib){ .bibtex-link }
 
--   __Exploring Novel Data Storage Approaches for Large-Scale Numerical Weather Prediction__
+-   #### Exploring Novel Data Storage Approaches for Large-Scale Numerical Weather Prediction
 
     ---
 
@@ -1271,7 +1271,7 @@ hide:
 
     [:material-file-document: 2602.17610](https://arxiv.org/abs/2602.17610v1) · [:material-content-copy: BibTeX](bibtex/2602.17610.bib){ .bibtex-link }
 
--   __EMFormer: Efficient Multi-Scale Transformer for Accumulative Context Weather Forecasting__
+-   #### EMFormer: Efficient Multi-Scale Transformer for Accumulative Context Weather Forecasting
 
     ---
 
@@ -1283,7 +1283,7 @@ hide:
 
     <span class="md-tag">transformer</span>
 
--   __Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data Driven Meteorological Prediction__
+-   #### Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data Driven Meteorological Prediction
 
     ---
 
@@ -1295,7 +1295,7 @@ hide:
 
     <span class="md-tag">recurrent</span>
 
--   __The promising potential of vision language models for the generation of textual weather forecasts__
+-   #### The promising potential of vision language models for the generation of textual weather forecasts
 
     ---
 
@@ -1307,7 +1307,7 @@ hide:
 
     <span class="md-tag">foundation-model</span>
 
--   __Causal Feature Selection for Weather-Driven Residential Load Forecasting__
+-   #### Causal Feature Selection for Weather-Driven Residential Load Forecasting
 
     ---
 
@@ -1317,7 +1317,7 @@ hide:
 
     [:material-file-document: 2511.20508](https://arxiv.org/abs/2511.20508v1) · [:material-content-copy: BibTeX](bibtex/2511.20508.bib){ .bibtex-link }
 
--   __Weather Maps as Tokens: Transformers for Renewable Energy Forecasting__
+-   #### Weather Maps as Tokens: Transformers for Renewable Energy Forecasting
 
     ---
 
@@ -1329,7 +1329,7 @@ hide:
 
     <span class="md-tag">transformer</span> <span class="md-tag">CNN</span>
 
--   __Road Surface Condition Detection with Machine Learning using New York State Department of Transportation Camera Images and Weather Forecast Data__
+-   #### Road Surface Condition Detection with Machine Learning using New York State Department of Transportation Camera Images and Weather Forecast Data
 
     ---
 
@@ -1341,7 +1341,7 @@ hide:
 
     <span class="md-tag">CNN</span>
 
--   __Graph-based Neural Space Weather Forecasting__
+-   #### Graph-based Neural Space Weather Forecasting
 
     ---
 
