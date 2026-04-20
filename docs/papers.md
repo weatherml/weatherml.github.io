@@ -227,29 +227,27 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">foundation-model</span>
 
--   __Pangu-Weather: Accurate medium-range global weather forecasting with 3D neural networks__
-
-    ---
-
-    *Kaifeng Bi, Lingxi Xie, Hengheng Zhang, Xin Chen, Xiaotao Gu, and Qi Tian* · 2023
-
-    We present Pangu-Weather, a deep learning model for medium-range global weather forecasting. Pangu-Weather is based on a 3D U-Net architecture that processes weather data on a spherical grid. We show...
-
-    [:material-file-document: 2301.03748](https://arxiv.org/abs/2301.03748) · [:material-content-copy: BibTeX](bibtex/2301.03748.bib){ .bibtex-link }
-
-    <span class="md-tag">3D U-Net</span>
-
 -   __GraphCast: Learning skillful medium-range global weather forecasting__
 
     ---
 
-    *Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, Meire Fortunato, Ferran Alet et al.* · 2023
+    *Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, Meire Fortunato, Ferran Alet et al.* · 2022
 
-    We describe GraphCast, a machine learning-based method for medium-range weather forecasting. It predicts hundreds of weather variables for the next 10 days at 0.25 degree resolution globally....
+    Global medium-range weather forecasting is critical to decision-making across many social and economic domains. Traditional numerical weather prediction uses increased compute resources to improve...
 
-    [:material-file-document: 2212.12794](https://arxiv.org/abs/2212.12794) · [:material-content-copy: BibTeX](bibtex/2212.12794.bib){ .bibtex-link }
+    [:material-file-document: 2212.12794](https://arxiv.org/abs/2212.12794v2) · [:fontawesome-brands-github:](https://github.com/deepmind/graphcast) · [:material-content-copy: BibTeX](bibtex/2212.12794.bib){ .bibtex-link }
 
-    <span class="md-tag">GNN</span>
+-   __Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast__
+
+    ---
+
+    *Kaifeng Bi, Lingxi Xie, Hengheng Zhang, Xin Chen, Xiaotao Gu, Qi Tian* · 2022
+
+    In this paper, we present Pangu-Weather, a deep learning based system for fast and accurate global weather forecast. For this purpose, we establish a data-driven environment by downloading $43$ years...
+
+    [:material-file-document: 2211.02556](https://arxiv.org/abs/2211.02556v1) · [:material-content-copy: BibTeX](bibtex/2211.02556.bib){ .bibtex-link }
+
+    <span class="md-tag">transformer</span>
 
 -   __FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators__
 
@@ -257,15 +255,15 @@ hide:
 
     *Jaideep Pathak, Shashank Subramanian, Peter Harrington, Sanjeev Raja, Ashesh Chattopadhyay et al.* · 2022
 
-    FourCastNet, short for Fourier Forecasting Neural Network, is a global data-driven weather forecasting model that provides accurate short to medium-range global predictions at 0.25◦ resolution....
+    FourCastNet, short for Fourier Forecasting Neural Network, is a global data-driven weather forecasting model that provides accurate short to medium-range global predictions at $0.25^{\circ}$...
 
-    [:material-file-document: 2202.11214](https://arxiv.org/abs/2202.11214) · [:material-content-copy: BibTeX](bibtex/2202.11214.bib){ .bibtex-link }
+    [:material-file-document: 2202.11214](https://arxiv.org/abs/2202.11214v1) · [:material-content-copy: BibTeX](bibtex/2202.11214.bib){ .bibtex-link }
 
-    <span class="md-tag">Transformer</span> <span class="md-tag">Fourier Neural Operator</span>
+    <span class="md-tag">operator-learning</span> <span class="md-tag">probabilistic</span>
 
 </div>
 
-## Nowcasting (13)
+## Nowcasting (12)
 
 <div class="grid cards" markdown>
 
@@ -387,41 +385,29 @@ hide:
 
     <span class="md-tag">probabilistic</span>
 
--   __NowcastNet: Skilful nowcasting of extreme precipitation with NowcastNet__
+-   __Skilful Precipitation Nowcasting Using NowcastNet__
 
     ---
 
-    *Zhihan Gao, Lei Chen, and Li-Ping Wang* · 2023
+    *Ajitabh Kumar* · 2023
 
-    We present NowcastNet, a deep learning model for nowcasting extreme precipitation. NowcastNet is based on a U-Net architecture with a novel attention mechanism that allows the model to focus on the...
+    Designing early warning system for precipitation requires accurate short-term forecasting system. Climate change has led to an increase in frequency of extreme weather events, and hence such systems...
 
-    [:material-file-document: 2306.06079](https://arxiv.org/abs/2306.06079) · [:material-content-copy: BibTeX](bibtex/2306.06079.bib){ .bibtex-link }
+    [:material-file-document: 2311.17961](https://arxiv.org/abs/2311.17961v2) · [:material-content-copy: BibTeX](bibtex/2311.17961.bib){ .bibtex-link }
 
-    <span class="md-tag">U-Net</span> <span class="md-tag">Attention</span>
-
--   __Rainformer: Features Extraction Balanced Network for Radar-Based Precipitation Nowcasting__
-
-    ---
-
-    *Chuan-Fu Wu, Wei-Sheng Chen, and Yu-Chiang F. Wang* · 2022
-
-    We propose Rainformer, a deep learning model for radar-based precipitation nowcasting. Rainformer is based on a Transformer architecture that is designed to capture the complex spatiotemporal...
-
-    [:material-file-document: 2204.01926](https://arxiv.org/abs/2204.01926) · [:material-content-copy: BibTeX](bibtex/2204.01926.bib){ .bibtex-link }
-
-    <span class="md-tag">Transformer</span>
+    <span class="md-tag">physics-informed</span>
 
 -   __MetNet: A Neural Weather Model for Precipitation Forecasting__
 
     ---
 
-    *Casimir C. Kaae, Soheil Esmaeilzadeh, Peter R. Gibson, David Hall, Ankitesh Gupta, Shreya Agrawal et al.* · 2020
+    *Casper Kaae Sønderby, Lasse Espeholt, Jonathan Heek, Mostafa Dehghani, Avital Oliver, Tim Salimans et al.* · 2020
 
-    We present MetNet, a neural network that forecasts precipitation up to 8 hours into the future. The model takes a 1024 km x 1024 km area of radar and satellite data as input and predicts future...
+    Weather forecasting is a long standing scientific challenge with direct social and economic impact. The task is suitable for deep neural networks due to vast amounts of continuously collected data...
 
-    [:material-file-document: 2003.12140](https://arxiv.org/abs/2003.12140) · [:material-content-copy: BibTeX](bibtex/2003.12140.bib){ .bibtex-link }
+    [:material-file-document: 2003.12140](https://arxiv.org/abs/2003.12140v2) · [:material-content-copy: BibTeX](bibtex/2003.12140.bib){ .bibtex-link }
 
-    <span class="md-tag">CNN</span> <span class="md-tag">Self-attention</span>
+    <span class="md-tag">transformer</span> <span class="md-tag">probabilistic</span>
 
 </div>
 
@@ -539,17 +525,17 @@ hide:
 
     <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
--   __MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained Selective State-Space Modeling__
+-   __MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling__
 
     ---
 
-    *Zhong-Wei Li, Wen-Hao Zhang, Jing-Yi Xu, Chen-Xiang Wang* · 2024
+    *Zili Liu, Hao Chen, Lei Bai, Wenyuan Li, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi* · 2024
 
-    Downscaling is the process of increasing the resolution of a weather forecast. We present MambaDS, a deep learning model for downscaling near-surface meteorological fields. MambaDS uses a selective...
+    In an era of frequent extreme weather and global warming, obtaining precise, fine-grained near-surface weather forecasts is increasingly essential for human activities. Downscaling (DS), a crucial...
 
-    [:material-file-document: 2408.06400](https://arxiv.org/abs/2408.06400) · [:material-content-copy: BibTeX](bibtex/2408.06400.bib){ .bibtex-link }
+    [:material-file-document: 2408.10854](https://arxiv.org/abs/2408.10854v1) · [:material-content-copy: BibTeX](bibtex/2408.10854.bib){ .bibtex-link }
 
-    <span class="md-tag">State-space model</span> <span class="md-tag">Mamba</span>
+    <span class="md-tag">transformer</span> <span class="md-tag">CNN</span>
 
 </div>
 
@@ -825,13 +811,11 @@ hide:
 
     ---
 
-    *Hao-Yang Chen, Xuan-Yi Li, Xiang-Rui Wang, Chen-Yu Liu, Lei-Lei Yin* · 2023
+    *Yi Xiao, Lei Bai, Wei Xue, Kang Chen, Tao Han, Wanli Ouyang* · 2023
 
-    Data assimilation is the process of incorporating observations into a numerical model to improve its initial conditions. We present FengWu-4DVar, a data-driven weather forecasting model that is...
+    Weather forecasting is a crucial yet highly challenging task. With the maturity of Artificial Intelligence (AI), the emergence of data-driven weather forecasting models has opened up a new paradigm...
 
-    [:material-file-document: 2312.12455](https://arxiv.org/abs/2312.12455) · [:material-content-copy: BibTeX](bibtex/2312.12455.bib){ .bibtex-link }
-
-    <span class="md-tag">4D-Var</span> <span class="md-tag">Deep Learning</span>
+    [:material-file-document: 2312.12455](https://arxiv.org/abs/2312.12455v2) · [:material-content-copy: BibTeX](bibtex/2312.12455.bib){ .bibtex-link }
 
 </div>
 
@@ -923,25 +907,25 @@ hide:
 
     ---
 
-    *J. A. Weyn, J. D. Herman, and D. J. Gagne II* · 2024
+    *Ilan Price, Alvaro Sanchez-Gonzalez, Ferran Alet, Tom R. Andersson, Andrew El-Kadi, Dominic Masters et al.* · 2023
 
-    We introduce GenCast, a generative machine learning model for creating medium-range ensemble weather forecasts. GenCast uses a diffusion model to generate a diverse set of possible future weather...
+    Weather forecasts are fundamentally uncertain, so predicting the range of probable weather scenarios is crucial for important decisions, from warning the public about hazardous weather, to planning...
 
-    [:material-file-document: 2409.05975](https://arxiv.org/abs/2409.05975) · [:material-content-copy: BibTeX](bibtex/2409.05975.bib){ .bibtex-link }
+    [:material-file-document: 2312.15796](https://arxiv.org/abs/2312.15796v2) · [:material-content-copy: BibTeX](bibtex/2312.15796.bib){ .bibtex-link }
 
-    <span class="md-tag">Diffusion Model</span> <span class="md-tag">Generative Model</span>
+    <span class="md-tag">probabilistic</span>
 
 -   __SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation__
 
     ---
 
-    *Yuan-Hao Lee, Chih-Yao Ma* · 2023
+    *Yuan Hu, Lei Chen, Zhibin Wang, Hao Li* · 2022
 
-    Ensemble forecasting is a crucial technique for quantifying uncertainty in weather prediction. We propose SwinVRNN, a data-driven ensemble forecasting model that learns to generate diverse and...
+    Data-driven approaches for medium-range weather forecasting are recently shown extraordinarily promising for ensemble forecasting for their fast inference speed compared to traditional numerical...
 
-    [:material-file-document: 2212.02968](https://arxiv.org/abs/2212.02968) · [:material-content-copy: BibTeX](bibtex/2212.02968.bib){ .bibtex-link }
+    [:material-file-document: 2205.13158](https://arxiv.org/abs/2205.13158v1) · [:material-content-copy: BibTeX](bibtex/2205.13158.bib){ .bibtex-link }
 
-    <span class="md-tag">Transformer</span> <span class="md-tag">VRNN</span>
+    <span class="md-tag">transformer</span> <span class="md-tag">recurrent</span>
 
 </div>
 

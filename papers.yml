@@ -5,171 +5,123 @@
     Chattopadhyay, Morteza Mardani, Thorsten Kurth, David Hall, Zongyi Li, Kamyar
     Azizzadenesheli, Pedram Hassanzadeh, Karthik Kashinath, Animashree Anandkumar
   year: 2022
-  arxiv: '2202.11214'
+  arxiv: 2202.11214v1
   abstract: FourCastNet, short for Fourier Forecasting Neural Network, is a global
     data-driven weather forecasting model that provides accurate short to medium-range
-    global predictions at 0.25◦ resolution. FourCastNet accurately forecasts high-resolution,
-    fast-timescale variables such as the surface wind speed, precipitation, and atmospheric
-    water vapor. It has important implications for planning wind energy resources,
-    predicting extreme weather events such as tropical cyclones, extra-tropical cyclones,
-    and atmospheric rivers. FourCastNet matches the forecasting accuracy of the ECMWF
-    Integrated Forecasting System (IFS), a state-of-the-art Numerical Weather Prediction
-    (NWP) model, at short lead times for large-scale variables, while outperforming
-    IFS for variables with complex fine-scale structure, including precipitation.
-    FourCastNet generates a week-long forecast in less than 2 seconds, orders of magnitude
-    faster than IFS. The speed of FourCastNet enables the creation of rapid and inexpensive
-    large-ensemble forecasts with thousands of ensemble-members for improving probabilistic
-    forecasting. We discuss how data-driven deep learning models such as FourCastNet
-    are a valuable addition to the meteorology toolkit to aid and augment NWP models.
+    global predictions at $0.25^{\circ}$ resolution. FourCastNet accurately forecasts
+    high-resolution, fast-timescale variables such as the surface wind speed, precipitation,
+    and atmospheric water vapor. It has important implications for planning wind energy
+    resources, predicting extreme weather events such as tropical cyclones, extra-tropical
+    cyclones, and atmospheric rivers. FourCastNet matches the forecasting accuracy
+    of the ECMWF Integrated Forecasting System (IFS), a state-of-the-art Numerical
+    Weather Prediction (NWP) model, at short lead times for large-scale variables,
+    while outperforming IFS for variables with complex fine-scale structure, including
+    precipitation. FourCastNet generates a week-long forecast in less than 2 seconds,
+    orders of magnitude faster than IFS. The speed of FourCastNet enables the creation
+    of rapid and inexpensive large-ensemble forecasts with thousands of ensemble-members
+    for improving probabilistic forecasting. We discuss how data-driven deep learning
+    models such as FourCastNet are a valuable addition to the meteorology toolkit
+    to aid and augment NWP models.
   tags:
-  - Transformer
-  - Fourier Neural Operator
+  - operator-learning
+  - probabilistic
+  - physics.ao-ph
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
 - category: Nowcasting
   title: 'MetNet: A Neural Weather Model for Precipitation Forecasting'
-  authors: Casimir C. Kaae, Soheil Esmaeilzadeh, Peter R. Gibson, David Hall, Ankitesh
-    Gupta, Shreya Agrawal, Norman M. Meade, Carla E. Bromberg
+  authors: Casper Kaae Sønderby, Lasse Espeholt, Jonathan Heek, Mostafa Dehghani,
+    Avital Oliver, Tim Salimans, Shreya Agrawal, Jason Hickey, Nal Kalchbrenner
   year: 2020
-  arxiv: '2003.12140'
-  abstract: We present MetNet, a neural network that forecasts precipitation up to
-    8 hours into the future. The model takes a 1024 km x 1024 km area of radar and
-    satellite data as input and predicts future precipitation at a resolution of 1
-    km. MetNet is based on a deep convolutional neural network with self-attention
-    mechanism to capture spatial context and temporal dependencies. We show that MetNet
-    outperforms traditional physics-based models in terms of accuracy and skill, especially
-    for short-term forecasts. MetNet is also significantly faster, generating a forecast
-    in seconds compared to hours for traditional models.
+  arxiv: 2003.12140v2
+  abstract: Weather forecasting is a long standing scientific challenge with direct
+    social and economic impact. The task is suitable for deep neural networks due
+    to vast amounts of continuously collected data and a rich spatial and temporal
+    structure that presents long range dependencies. We introduce MetNet, a neural
+    network that forecasts precipitation up to 8 hours into the future at the high
+    spatial resolution of 1 km$^2$ and at the temporal resolution of 2 minutes with
+    a latency in the order of seconds. MetNet takes as input radar and satellite data
+    and forecast lead time and produces a probabilistic precipitation map. The architecture
+    uses axial self-attention to aggregate the global context from a large input patch
+    corresponding to a million square kilometers. We evaluate the performance of MetNet
+    at various precipitation thresholds and find that MetNet outperforms Numerical
+    Weather Prediction at forecasts of up to 7 to 8 hours on the scale of the continental
+    United States.
   tags:
-  - CNN
-  - Self-attention
-- category: Ensembles
-  title: 'SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution
-    Perturbation'
-  authors: Yuan-Hao Lee, Chih-Yao Ma
-  year: 2023
-  arxiv: '2212.02968'
-  abstract: Ensemble forecasting is a crucial technique for quantifying uncertainty
-    in weather prediction. We propose SwinVRNN, a data-driven ensemble forecasting
-    model that learns to generate diverse and realistic weather scenarios. SwinVRNN
-    combines a Swin Transformer with a Variational Recurrent Neural Network (VRNN)
-    to model the spatiotemporal evolution of the atmosphere. The model is trained
-    to perturb the initial conditions of a forecast based on a learned distribution,
-    resulting in a diverse set of ensemble members. We show that SwinVRNN can generate
-    ensembles that are more skillful and reliable than those produced by traditional
-    methods.
-  tags:
-  - Transformer
-  - VRNN
+  - transformer
+  - probabilistic
+  - cs.LG
+  - physics.ao-ph
+  - stat.ML
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+  - stat.ML
 - category: Data Assimilation
   title: 'FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D
     Variational Assimilation'
-  authors: Hao-Yang Chen, Xuan-Yi Li, Xiang-Rui Wang, Chen-Yu Liu, Lei-Lei Yin
+  authors: Yi Xiao, Lei Bai, Wei Xue, Kang Chen, Tao Han, Wanli Ouyang
   year: 2023
-  arxiv: '2312.12455'
-  abstract: Data assimilation is the process of incorporating observations into a
-    numerical model to improve its initial conditions. We present FengWu-4DVar, a
-    data-driven weather forecasting model that is coupled with a 4D variational assimilation
-    system. FengWu-4DVar uses a deep neural network to learn the model error and then
-    uses this information to correct the forecast. We show that FengWu-4DVar can significantly
-    improve the accuracy of weather forecasts, especially for long-range predictions.
-    The model is also able to assimilate a wide range of observations, including satellite
-    data, radar data, and ground-based measurements.
+  arxiv: 2312.12455v2
+  abstract: Weather forecasting is a crucial yet highly challenging task. With the
+    maturity of Artificial Intelligence (AI), the emergence of data-driven weather
+    forecasting models has opened up a new paradigm for the development of weather
+    forecasting systems. Despite the significant successes that have been achieved
+    (e.g., surpassing advanced traditional physical models for global medium-range
+    forecasting), existing data-driven weather forecasting models still rely on the
+    analysis fields generated by the traditional assimilation and forecasting system,
+    which hampers the significance of data-driven weather forecasting models regarding
+    both computational cost and forecasting accuracy. In this work, we explore the
+    possibility of coupling the data-driven weather forecasting model with data assimilation
+    by integrating the global AI weather forecasting model, FengWu, with one of the
+    most popular assimilation algorithms, Four-Dimensional Variational (4DVar) assimilation,
+    and develop an AI-based cyclic weather forecasting system, FengWu-4DVar. FengWu-4DVar
+    can incorporate observational data into the data-driven weather forecasting model
+    and consider the temporal evolution of atmospheric dynamics to obtain accurate
+    analysis fields for making predictions in a cycling manner without the help of
+    physical models. Owning to the auto-differentiation ability of deep learning models,
+    FengWu-4DVar eliminates the need of developing the cumbersome adjoint model, which
+    is usually required in the traditional implementation of the 4DVar algorithm.
+    Experiments on the simulated observational dataset demonstrate that FengWu-4DVar
+    is capable of generating reasonable analysis fields for making accurate and efficient
+    iterative predictions.
   tags:
-  - 4D-Var
-  - Deep Learning
-- category: Downscaling
-  title: 'MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained
-    Selective State-Space Modeling'
-  authors: Zhong-Wei Li, Wen-Hao Zhang, Jing-Yi Xu, Chen-Xiang Wang
-  year: 2024
-  arxiv: '2408.06400'
-  abstract: Downscaling is the process of increasing the resolution of a weather forecast.
-    We present MambaDS, a deep learning model for downscaling near-surface meteorological
-    fields. MambaDS uses a selective state-space model to capture the complex relationships
-    between large-scale atmospheric circulation and local weather conditions. The
-    model is constrained by high-resolution topography data to ensure that the downscaled
-    fields are physically consistent. We show that MambaDS can produce high-resolution
-    forecasts that are more accurate than those produced by traditional statistical
-    downscaling methods.
-  tags:
-  - State-space model
-  - Mamba
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
 - category: Global Models
   title: 'GraphCast: Learning skillful medium-range global weather forecasting'
   authors: Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger,
     Meire Fortunato, Ferran Alet, Suman Ravuri, Timo Ewalds, Zach Eaton-Rosen, Weihua
-    Hu, et al.
-  year: 2023
-  arxiv: '2212.12794'
-  abstract: We describe GraphCast, a machine learning-based method for medium-range
-    weather forecasting. It predicts hundreds of weather variables for the next 10
-    days at 0.25 degree resolution globally. GraphCast's predictions are more accurate
-    than the most accurate operational deterministic system, HRES, on 90% of 1380
-    verification targets, and its forecasts can be produced in under one minute. GraphCast
-    is a significant milestone in machine learning for weather forecasting and a testament
-    to the power of deep learning for modeling complex dynamical systems.
-  tags:
-  - GNN
-- category: Nowcasting
-  title: 'NowcastNet: Skilful nowcasting of extreme precipitation with NowcastNet'
-  authors: Zhihan Gao, Lei Chen, and Li-Ping Wang
-  year: 2023
-  arxiv: '2306.06079'
-  abstract: We present NowcastNet, a deep learning model for nowcasting extreme precipitation.
-    NowcastNet is based on a U-Net architecture with a novel attention mechanism that
-    allows the model to focus on the most relevant features for predicting heavy rainfall.
-    We show that NowcastNet can produce skillful forecasts of extreme precipitation
-    up to 2 hours in advance, outperforming both traditional and other deep learning-based
-    nowcasting methods. NowcastNet has the potential to improve our ability to issue
-    timely warnings for flash floods and other hazards associated with extreme rainfall.
-  tags:
-  - U-Net
-  - Attention
-- category: Ensembles
-  title: 'GenCast: Diffusion-based ensemble forecasting for medium-range weather'
-  authors: J. A. Weyn, J. D. Herman, and D. J. Gagne II
-  year: 2024
-  arxiv: '2409.05975'
-  abstract: We introduce GenCast, a generative machine learning model for creating
-    medium-range ensemble weather forecasts. GenCast uses a diffusion model to generate
-    a diverse set of possible future weather states, providing a measure of forecast
-    uncertainty. We show that GenCast can produce reliable and sharp ensemble forecasts
-    that are competitive with state-of-the-art operational ensemble systems. GenCast
-    represents a new paradigm for ensemble forecasting that has the potential to improve
-    our ability to predict high-impact weather events.
-  tags:
-  - Diffusion Model
-  - Generative Model
-- category: Global Models
-  title: 'Pangu-Weather: Accurate medium-range global weather forecasting with 3D
-    neural networks'
-  authors: Kaifeng Bi, Lingxi Xie, Hengheng Zhang, Xin Chen, Xiaotao Gu, and Qi Tian
-  year: 2023
-  arxiv: '2301.03748'
-  abstract: We present Pangu-Weather, a deep learning model for medium-range global
-    weather forecasting. Pangu-Weather is based on a 3D U-Net architecture that processes
-    weather data on a spherical grid. We show that Pangu-Weather can produce forecasts
-    that are more accurate than those from the operational IFS model, especially for
-    temperature and geopotential height. Pangu-Weather is also significantly faster
-    than IFS, producing a 10-day forecast in just a few minutes. Pangu-Weather is
-    a powerful new tool for weather forecasting that has the potential to improve
-    our ability to predict a wide range of weather phenomena.
-  tags:
-  - 3D U-Net
-- category: Nowcasting
-  title: 'Rainformer: Features Extraction Balanced Network for Radar-Based Precipitation
-    Nowcasting'
-  authors: Chuan-Fu Wu, Wei-Sheng Chen, and Yu-Chiang F. Wang
+    Hu, Alexander Merose, Stephan Hoyer, George Holland, Oriol Vinyals, Jacklynn Stott,
+    Alexander Pritzel, Shakir Mohamed, Peter Battaglia
   year: 2022
-  arxiv: '2204.01926'
-  abstract: We propose Rainformer, a deep learning model for radar-based precipitation
-    nowcasting. Rainformer is based on a Transformer architecture that is designed
-    to capture the complex spatiotemporal patterns of rainfall. We show that Rainformer
-    can produce more accurate and reliable nowcasts than other deep learning models,
-    especially for intense and convective rainfall events. Rainformer has the potential
-    to improve our ability to issue warnings for flash floods and other hazards associated
-    with heavy rainfall.
+  arxiv: 2212.12794v2
+  abstract: Global medium-range weather forecasting is critical to decision-making
+    across many social and economic domains. Traditional numerical weather prediction
+    uses increased compute resources to improve forecast accuracy, but cannot directly
+    use historical weather data to improve the underlying model. We introduce a machine
+    learning-based method called "GraphCast", which can be trained directly from reanalysis
+    data. It predicts hundreds of weather variables, over 10 days at 0.25 degree resolution
+    globally, in under one minute. We show that GraphCast significantly outperforms
+    the most accurate operational deterministic systems on 90% of 1380 verification
+    targets, and its forecasts support better severe event prediction, including tropical
+    cyclones, atmospheric rivers, and extreme temperatures. GraphCast is a key advance
+    in accurate and efficient weather forecasting, and helps realize the promise of
+    machine learning for modeling complex dynamical systems.
   tags:
-  - Transformer
+  - cs.LG
+  - physics.ao-ph
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+  github: https://github.com/deepmind/graphcast
 - category: Climate Modeling
   title: Using machine learning to downscale coarse-resolution environmental variables
     for understanding the spatial frequency of convective storms
@@ -2913,3 +2865,168 @@
     spatial scales, providing a statistical basis for quantifying internal climate
     variability as aleatoric uncertainty.
   tags: []
+- category: Ensembles
+  title: 'SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution
+    Perturbation'
+  authors: Yuan Hu, Lei Chen, Zhibin Wang, Hao Li
+  year: 2022
+  arxiv: 2205.13158v1
+  abstract: Data-driven approaches for medium-range weather forecasting are recently
+    shown extraordinarily promising for ensemble forecasting for their fast inference
+    speed compared to traditional numerical weather prediction (NWP) models, but their
+    forecast accuracy can hardly match the state-of-the-art operational ECMWF Integrated
+    Forecasting System (IFS) model. Previous data-driven attempts achieve ensemble
+    forecast using some simple perturbation methods, like initial condition perturbation
+    and Monte Carlo dropout. However, they mostly suffer unsatisfactory ensemble performance,
+    which is arguably attributed to the sub-optimal ways of applying perturbation.
+    We propose a Swin Transformer-based Variational Recurrent Neural Network (SwinVRNN),
+    which is a stochastic weather forecasting model combining a SwinRNN predictor
+    with a perturbation module. SwinRNN is designed as a Swin Transformer-based recurrent
+    neural network, which predicts future states deterministically. Furthermore, to
+    model the stochasticity in prediction, we design a perturbation module following
+    the Variational Auto-Encoder paradigm to learn multivariate Gaussian distributions
+    of a time-variant stochastic latent variable from data. Ensemble forecasting can
+    be easily achieved by perturbing the model features leveraging noise sampled from
+    the learned distribution. We also compare four categories of perturbation methods
+    for ensemble forecasting, i.e. fixed distribution perturbation, learned distribution
+    perturbation, MC dropout, and multi model ensemble. Comparisons on WeatherBench
+    dataset show the learned distribution perturbation method using our SwinVRNN model
+    achieves superior forecast accuracy and reasonable ensemble spread due to joint
+    optimization of the two targets. More notably, SwinVRNN surpasses operational
+    IFS on surface variables of 2-m temperature and 6-hourly total precipitation at
+    all lead times up to five days.
+  tags:
+  - transformer
+  - recurrent
+  - cs.CV
+  arxiv_categories:
+  - cs.CV
+- category: Downscaling
+  title: 'MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained
+    Selective State Space Modeling'
+  authors: Zili Liu, Hao Chen, Lei Bai, Wenyuan Li, Wanli Ouyang, Zhengxia Zou, Zhenwei
+    Shi
+  year: 2024
+  arxiv: 2408.10854v1
+  abstract: In an era of frequent extreme weather and global warming, obtaining precise,
+    fine-grained near-surface weather forecasts is increasingly essential for human
+    activities. Downscaling (DS), a crucial task in meteorological forecasting, enables
+    the reconstruction of high-resolution meteorological states for target regions
+    from global-scale forecast results. Previous downscaling methods, inspired by
+    CNN and Transformer-based super-resolution models, lacked tailored designs for
+    meteorology and encountered structural limitations. Notably, they failed to efficiently
+    integrate topography, a crucial prior in the downscaling process. In this paper,
+    we address these limitations by pioneering the selective state space model into
+    the meteorological field downscaling and propose a novel model called MambaDS.
+    This model enhances the utilization of multivariable correlations and topography
+    information, unique challenges in the downscaling process while retaining the
+    advantages of Mamba in long-range dependency modeling and linear computational
+    complexity. Through extensive experiments in both China mainland and the continental
+    United States (CONUS), we validated that our proposed MambaDS achieves state-of-the-art
+    results in three different types of meteorological field downscaling settings.
+    We will release the code subsequently.
+  tags:
+  - transformer
+  - CNN
+  - physics.ao-ph
+  - cs.AI
+  - cs.CV
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.CV
+- category: Ensembles
+  title: 'GenCast: Diffusion-based ensemble forecasting for medium-range weather'
+  authors: Ilan Price, Alvaro Sanchez-Gonzalez, Ferran Alet, Tom R. Andersson, Andrew
+    El-Kadi, Dominic Masters, Timo Ewalds, Jacklynn Stott, Shakir Mohamed, Peter Battaglia,
+    Remi Lam, Matthew Willson
+  year: 2023
+  arxiv: 2312.15796v2
+  abstract: Weather forecasts are fundamentally uncertain, so predicting the range
+    of probable weather scenarios is crucial for important decisions, from warning
+    the public about hazardous weather, to planning renewable energy use. Here, we
+    introduce GenCast, a probabilistic weather model with greater skill and speed
+    than the top operational medium-range weather forecast in the world, the European
+    Centre for Medium-Range Forecasts (ECMWF)'s ensemble forecast, ENS. Unlike traditional
+    approaches, which are based on numerical weather prediction (NWP), GenCast is
+    a machine learning weather prediction (MLWP) method, trained on decades of reanalysis
+    data. GenCast generates an ensemble of stochastic 15-day global forecasts, at
+    12-hour steps and 0.25 degree latitude-longitude resolution, for over 80 surface
+    and atmospheric variables, in 8 minutes. It has greater skill than ENS on 97.4%
+    of 1320 targets we evaluated, and better predicts extreme weather, tropical cyclones,
+    and wind power production. This work helps open the next chapter in operational
+    weather forecasting, where critical weather-dependent decisions are made with
+    greater accuracy and efficiency.
+  tags:
+  - probabilistic
+  - cs.LG
+  - physics.ao-ph
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+- category: Global Models
+  title: 'Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather
+    Forecast'
+  authors: Kaifeng Bi, Lingxi Xie, Hengheng Zhang, Xin Chen, Xiaotao Gu, Qi Tian
+  year: 2022
+  arxiv: 2211.02556v1
+  abstract: 'In this paper, we present Pangu-Weather, a deep learning based system
+    for fast and accurate global weather forecast. For this purpose, we establish
+    a data-driven environment by downloading $43$ years of hourly global weather data
+    from the 5th generation of ECMWF reanalysis (ERA5) data and train a few deep neural
+    networks with about $256$ million parameters in total. The spatial resolution
+    of forecast is $0.25^\circ\times0.25^\circ$, comparable to the ECMWF Integrated
+    Forecast Systems (IFS). More importantly, for the first time, an AI-based method
+    outperforms state-of-the-art numerical weather prediction (NWP) methods in terms
+    of accuracy (latitude-weighted RMSE and ACC) of all factors (e.g., geopotential,
+    specific humidity, wind speed, temperature, etc.) and in all time ranges (from
+    one hour to one week). There are two key strategies to improve the prediction
+    accuracy: (i) designing a 3D Earth Specific Transformer (3DEST) architecture that
+    formulates the height (pressure level) information into cubic data, and (ii) applying
+    a hierarchical temporal aggregation algorithm to alleviate cumulative forecast
+    errors. In deterministic forecast, Pangu-Weather shows great advantages for short
+    to medium-range forecast (i.e., forecast time ranges from one hour to one week).
+    Pangu-Weather supports a wide range of downstream forecast scenarios, including
+    extreme weather forecast (e.g., tropical cyclone tracking) and large-member ensemble
+    forecast in real-time. Pangu-Weather not only ends the debate on whether AI-based
+    methods can surpass conventional NWP methods, but also reveals novel directions
+    for improving deep learning weather forecast systems.'
+  tags:
+  - transformer
+  - physics.ao-ph
+  - cs.AI
+  - cs.CV
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.CV
+  - cs.LG
+- category: Nowcasting
+  title: Skilful Precipitation Nowcasting Using NowcastNet
+  authors: Ajitabh Kumar
+  year: 2023
+  arxiv: 2311.17961v2
+  abstract: Designing early warning system for precipitation requires accurate short-term
+    forecasting system. Climate change has led to an increase in frequency of extreme
+    weather events, and hence such systems can prevent disasters and loss of life.
+    Managing such events remain a challenge for both public and private institutions.
+    Precipitation nowcasting can help relevant institutions to better prepare for
+    such events as they impact agriculture, transport, public health and safety, etc.
+    Physics-based numerical weather prediction (NWP) is unable to perform well for
+    nowcasting because of large computational turn-around time. Deep-learning based
+    models on the other hand are able to give predictions within seconds. We use recently
+    proposed NowcastNet, a physics-conditioned deep generative network, to forecast
+    precipitation for different regions of Europe using satellite images. Both spatial
+    and temporal transfer learning is done by forecasting for the unseen regions and
+    year. Model makes realistic predictions and is able to outperform baseline for
+    such a prediction task.
+  tags:
+  - physics-informed
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG

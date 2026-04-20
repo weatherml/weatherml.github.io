@@ -5,18 +5,6 @@ hide:
 
 # Tags
 
-## 3D U-Net (1)
-
-- **Pangu-Weather: Accurate medium-range global weather forecasting with 3D neural networks** (2023) - [Global Models](global_models.md) - [arXiv:2301.03748](https://arxiv.org/abs/2301.03748)
-
-## 4D-Var (1)
-
-- **FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation** (2023) - [Data Assimilation](data_assimilation.md) - [arXiv:2312.12455](https://arxiv.org/abs/2312.12455)
-
-## Attention (1)
-
-- **NowcastNet: Skilful nowcasting of extreme precipitation with NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2306.06079](https://arxiv.org/abs/2306.06079)
-
 ## CNN (10)
 
 - **El Nino Prediction Based on Weather Forecast and Geographical Time-series Data** (2026) - [Global Models](global_models.md) - [arXiv:2604.04998v1](https://arxiv.org/abs/2604.04998v1)
@@ -28,58 +16,15 @@ hide:
 - **RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion** (2025) - [Nowcasting](nowcasting.md) - [arXiv:2510.14962v1](https://arxiv.org/abs/2510.14962v1)
 - **Road Surface Condition Detection with Machine Learning using New York State Department of Transportation Camera Images and Weather Forecast Data** (2025) - [Other](other.md) - [arXiv:2510.06440v1](https://arxiv.org/abs/2510.06440v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
-- **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [Nowcasting](nowcasting.md) - [arXiv:2003.12140](https://arxiv.org/abs/2003.12140)
-
-## Deep Learning (1)
-
-- **FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation** (2023) - [Data Assimilation](data_assimilation.md) - [arXiv:2312.12455](https://arxiv.org/abs/2312.12455)
-
-## Diffusion Model (1)
-
-- **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2024) - [Ensembles](ensembles.md) - [arXiv:2409.05975](https://arxiv.org/abs/2409.05975)
-
-## Fourier Neural Operator (1)
-
-- **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214](https://arxiv.org/abs/2202.11214)
+- **MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling** (2024) - [Downscaling](downscaling.md) - [arXiv:2408.10854v1](https://arxiv.org/abs/2408.10854v1)
 
 ## GAN (1)
 
 - **An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2512.13987v1](https://arxiv.org/abs/2512.13987v1)
 
-## GNN (2)
+## GNN (1)
 
 - **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [Global Models](global_models.md) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
-- **GraphCast: Learning skillful medium-range global weather forecasting** (2023) - [Global Models](global_models.md) - [arXiv:2212.12794](https://arxiv.org/abs/2212.12794)
-
-## Generative Model (1)
-
-- **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2024) - [Ensembles](ensembles.md) - [arXiv:2409.05975](https://arxiv.org/abs/2409.05975)
-
-## Mamba (1)
-
-- **MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained Selective State-Space Modeling** (2024) - [Downscaling](downscaling.md) - [arXiv:2408.06400](https://arxiv.org/abs/2408.06400)
-
-## Self-attention (1)
-
-- **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [Nowcasting](nowcasting.md) - [arXiv:2003.12140](https://arxiv.org/abs/2003.12140)
-
-## State-space model (1)
-
-- **MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained Selective State-Space Modeling** (2024) - [Downscaling](downscaling.md) - [arXiv:2408.06400](https://arxiv.org/abs/2408.06400)
-
-## Transformer (3)
-
-- **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2023) - [Ensembles](ensembles.md) - [arXiv:2212.02968](https://arxiv.org/abs/2212.02968)
-- **Rainformer: Features Extraction Balanced Network for Radar-Based Precipitation Nowcasting** (2022) - [Nowcasting](nowcasting.md) - [arXiv:2204.01926](https://arxiv.org/abs/2204.01926)
-- **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214](https://arxiv.org/abs/2202.11214)
-
-## U-Net (1)
-
-- **NowcastNet: Skilful nowcasting of extreme precipitation with NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2306.06079](https://arxiv.org/abs/2306.06079)
-
-## VRNN (1)
-
-- **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2023) - [Ensembles](ensembles.md) - [arXiv:2212.02968](https://arxiv.org/abs/2212.02968)
 
 ## diffusion (18)
 
@@ -108,12 +53,13 @@ hide:
 - **The promising potential of vision language models for the generation of textual weather forecasts** (2025) - [Other](other.md) - [arXiv:2512.03623v1](https://arxiv.org/abs/2512.03623v1)
 - **Training-Free Data Assimilation with GenCast** (2025) - [Global Models](global_models.md) - [arXiv:2509.18811v1](https://arxiv.org/abs/2509.18811v1)
 
-## operator-learning (2)
+## operator-learning (3)
 
 - **PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting** (2025) - [Nowcasting](nowcasting.md) - [arXiv:2512.01062v1](https://arxiv.org/abs/2512.01062v1)
 - **Nowcast3D: Reliable precipitation nowcasting via gray-box learning** (2025) - [Nowcasting](nowcasting.md) - [arXiv:2511.04659v1](https://arxiv.org/abs/2511.04659v1)
+- **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (10)
+## physics-informed (11)
 
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
 - **Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2602.03767v1](https://arxiv.org/abs/2602.03767v1)
@@ -125,8 +71,9 @@ hide:
 - **OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2510.18707v1](https://arxiv.org/abs/2510.18707v1)
 - **Beyond the Training Data: Confidence-Guided Mixing of Parameterizations in a Hybrid AI-Climate Model** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2510.08107v1](https://arxiv.org/abs/2510.08107v1)
 - **Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints** (2025) - [Data Assimilation](data_assimilation.md) - [arXiv:2510.04006v1](https://arxiv.org/abs/2510.04006v1)
+- **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (21)
+## probabilistic (24)
 
 - **Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching** (2026) - [Global Models](global_models.md) - [arXiv:2604.00897v1](https://arxiv.org/abs/2604.00897v1)
 - **Accurate and Efficient Hybrid-Ensemble Atmospheric Data Assimilation in Latent Space with Uncertainty Quantification** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2603.04395v1](https://arxiv.org/abs/2603.04395v1)
@@ -149,18 +96,22 @@ hide:
 - **Probability calibration for precipitation nowcasting** (2025) - [Nowcasting](nowcasting.md) - [arXiv:2510.00594v1](https://arxiv.org/abs/2510.00594v1)
 - **Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting** (2025) - [Ensembles](ensembles.md) - [arXiv:2509.25631v1](https://arxiv.org/abs/2509.25631v1)
 - **Graph-based Neural Space Weather Forecasting** (2025) - [Other](other.md) - [arXiv:2509.19605v1](https://arxiv.org/abs/2509.19605v1)
+- **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2023) - [Ensembles](ensembles.md) - [arXiv:2312.15796v2](https://arxiv.org/abs/2312.15796v2)
+- **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
+- **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [Nowcasting](nowcasting.md) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
-## recurrent (3)
+## recurrent (4)
 
 - **El Nino Prediction Based on Weather Forecast and Geographical Time-series Data** (2026) - [Global Models](global_models.md) - [arXiv:2604.04998v1](https://arxiv.org/abs/2604.04998v1)
 - **Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data Driven Meteorological Prediction** (2026) - [Other](other.md) - [arXiv:2601.07951v1](https://arxiv.org/abs/2601.07951v1)
 - **Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2511.03770v1](https://arxiv.org/abs/2511.03770v1)
+- **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [Ensembles](ensembles.md) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 
 ## reinforcement-learning (1)
 
 - **Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2601.04268v1](https://arxiv.org/abs/2601.04268v1)
 
-## transformer (11)
+## transformer (15)
 
 - **Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting** (2026) - [Downscaling](downscaling.md) - [arXiv:2604.07928v1](https://arxiv.org/abs/2604.07928v1)
 - **Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling** (2026) - [Global Models](global_models.md) - [arXiv:2603.28173v1](https://arxiv.org/abs/2603.28173v1)
@@ -173,6 +124,10 @@ hide:
 - **Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2511.03770v1](https://arxiv.org/abs/2511.03770v1)
 - **OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2510.18707v1](https://arxiv.org/abs/2510.18707v1)
 - **RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion** (2025) - [Nowcasting](nowcasting.md) - [arXiv:2510.14962v1](https://arxiv.org/abs/2510.14962v1)
+- **MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling** (2024) - [Downscaling](downscaling.md) - [arXiv:2408.10854v1](https://arxiv.org/abs/2408.10854v1)
+- **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [Global Models](global_models.md) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
+- **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [Ensembles](ensembles.md) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
+- **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [Nowcasting](nowcasting.md) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
 ## variational (5)
 
