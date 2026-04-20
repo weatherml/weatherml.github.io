@@ -12,6 +12,24 @@ CATEGORY_ORDER = [
 ]
 
 
+def generate_bibtex(paper):
+    """Generate a BibTeX entry for a paper."""
+    arxiv_id = re.sub(r'v\d+$', '', paper['arxiv'])
+    # Create a cite key from first author last name + year
+    first_author = paper['authors'].split(',')[0].strip()
+    last_name = first_author.split()[-1].lower()
+    cite_key = f"{last_name}{paper['year']}"
+
+    bib = f"@article{{{cite_key},\n"
+    bib += f"  title = {{{paper['title']}}},\n"
+    bib += f"  author = {{{paper['authors']}}},\n"
+    bib += f"  year = {{{paper['year']}}},\n"
+    bib += f"  eprint = {{{arxiv_id}}},\n"
+    bib += f"  archivePrefix = {{arXiv}},\n"
+    bib += f"}}\n"
+    return bib
+
+
 def generate_paper_card(paper):
     """Generate a card list item for a paper."""
     lines = []
@@ -41,14 +59,16 @@ def generate_paper_card(paper):
     lines.append(f"    [:material-file-document: {arxiv_display}](https://arxiv.org/abs/{paper['arxiv']})")
     if paper.get('github'):
         lines.append(f" · [:fontawesome-brands-github:]({paper['github']})")
+    lines.append(f" · [:material-content-copy: BibTeX](bibtex/{arxiv_display}.bib){{ .bibtex-link }}")
     lines.append(f"\n")
     lines.append(f"\n")
 
-    # Tags
+    # Tags as styled pills
     tags = paper.get('tags', [])
     display_tags = [t for t in tags if '.' not in t]
     if display_tags:
-        lines.append(f"    {' '.join(f'`{tag}`' for tag in display_tags)}\n")
+        tag_spans = ' '.join(f'<span class="md-tag">{tag}</span>' for tag in display_tags)
+        lines.append(f"    {tag_spans}\n")
         lines.append(f"\n")
 
     return ''.join(lines)
@@ -118,23 +138,36 @@ def build_pages():
     if not os.path.exists('docs'):
         os.makedirs('docs')
 
+    # Generate individual BibTeX files
+    bibtex_dir = os.path.join('docs', 'bibtex')
+    os.makedirs(bibtex_dir, exist_ok=True)
+
+    all_bibtex = []
+    for paper in papers:
+        bib = generate_bibtex(paper)
+        all_bibtex.append(bib)
+        arxiv_id = re.sub(r'v\d+$', '', paper['arxiv'])
+        with open(os.path.join(bibtex_dir, f"{arxiv_id}.bib"), 'w') as f:
+            f.write(bib)
+
+    # Full BibTeX file
+    with open(os.path.join('docs', 'all_papers.bib'), 'w') as f:
+        f.write('\n'.join(all_bibtex))
+
     # Generate index page with statistics
     with open('docs/index.md', 'w') as f:
         f.write("---\nhide:\n  - navigation\n---\n\n")
         f.write("# Deep Learning in Weather\n\n")
         f.write("A curated collection of papers on deep learning and machine learning ")
         f.write("applied to weather forecasting, climate modeling, and atmospheric science.\n\n")
-        f.write("Papers are **automatically discovered** from arXiv and **categorized** ")
-        f.write("using keyword analysis of titles and abstracts.\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n")
-        f.write(generate_stats(papers))
         f.write(generate_recent_papers(papers))
 
     # Generate single papers page with all categories as sections
     nav = [{'Home': 'index.md'}]
 
     with open('docs/papers.md', 'w') as f:
-        f.write("---\nhide:\n  - navigation\n---\n\n")
+        f.write("---\nhide:\n  - navigation\n---\n\n<style>.md-content h1 { display: none; }</style>\n\n")
 
         # Ordered categories
         for category in CATEGORY_ORDER:
@@ -170,7 +203,6 @@ def build_pages():
         with open('docs/tags.md', 'w') as f:
             f.write("---\nhide:\n  - navigation\n---\n\n")
             f.write("# Tags\n\n")
-            f.write("Browse papers by methodology and topic tags.\n\n")
             for tag in sorted(all_tags.keys()):
                 tag_papers = all_tags[tag]
                 f.write(f"## {tag} ({len(tag_papers)})\n\n")
@@ -191,7 +223,6 @@ def build_pages():
             nav_lines.append(f"  - {label}: {value}\n")
 
     # Replace everything from "nav:" to the end (nav is always last section)
-    import re
     content = re.sub(r'^nav:.*', ''.join(nav_lines).rstrip(), content, flags=re.DOTALL | re.MULTILINE)
 
     with open('mkdocs.yml', 'w') as f:

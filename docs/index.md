@@ -5,7 +5,7 @@ hide:
 
 # Deep Learning in Weather
 
-A collection of papers on deep learning applied to weather forecasting, climate modeling, and atmospheric science.
+A curated collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
 *Last updated: 2026-04-20*
 
@@ -21,7 +21,7 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     Internal climate variability arises from the climate system's inherently chaotic dynamics. Quantifying it is essential for climate science, as it enables risk-based decision-making and differentiates...
 
-    [:material-file-document: 2604.15067](https://arxiv.org/abs/2604.15067v1)
+    [:material-file-document: 2604.15067](https://arxiv.org/abs/2604.15067v1) · [:material-content-copy: BibTeX](bibtex/2604.15067.bib){ .bibtex-link }
 
 -   __Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting__
 
@@ -31,9 +31,9 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     While AI-based numerical weather prediction (NWP) enables rapid forecasting, generating high-resolution outputs remains computationally demanding due to limited multi-scale adaptability and...
 
-    [:material-file-document: 2604.07928](https://arxiv.org/abs/2604.07928v1) · [:fontawesome-brands-github:](https://github.com/binbin2xs/weather-GS)
+    [:material-file-document: 2604.07928](https://arxiv.org/abs/2604.07928v1) · [:fontawesome-brands-github:](https://github.com/binbin2xs/weather-GS) · [:material-content-copy: BibTeX](bibtex/2604.07928.bib){ .bibtex-link }
 
-    `transformer`
+    <span class="md-tag">transformer</span>
 
 -   __El Nino Prediction Based on Weather Forecast and Geographical Time-series Data__
 
@@ -43,9 +43,9 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     This paper proposes a novel framework for enhancing the prediction accuracy and lead time of El Niño events, crucial for mitigating their global climatic, economic, and societal impacts. Traditional...
 
-    [:material-file-document: 2604.04998](https://arxiv.org/abs/2604.04998v1)
+    [:material-file-document: 2604.04998](https://arxiv.org/abs/2604.04998v1) · [:material-content-copy: BibTeX](bibtex/2604.04998.bib){ .bibtex-link }
 
-    `CNN` `recurrent`
+    <span class="md-tag">CNN</span> <span class="md-tag">recurrent</span>
 
 -   __Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching__
 
@@ -55,9 +55,9 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     Machine learning-based weather forecasting models now surpass state-of-the-art numerical weather prediction systems, but training and operating these models at high spatial resolution remains...
 
-    [:material-file-document: 2604.00897](https://arxiv.org/abs/2604.00897v1)
+    [:material-file-document: 2604.00897](https://arxiv.org/abs/2604.00897v1) · [:material-content-copy: BibTeX](bibtex/2604.00897.bib){ .bibtex-link }
 
-    `diffusion` `probabilistic`
+    <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
 -   __Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models__
 
@@ -67,7 +67,7 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     Satellite observation operators play an essential role in atmospheric data assimilation by translating model state variables into observation space. Previous work has shown that deep-learned...
 
-    [:material-file-document: 2604.00082](https://arxiv.org/abs/2604.00082v1) · [:fontawesome-brands-github:](https://github.com/mitre/deep-obs)
+    [:material-file-document: 2604.00082](https://arxiv.org/abs/2604.00082v1) · [:fontawesome-brands-github:](https://github.com/mitre/deep-obs) · [:material-content-copy: BibTeX](bibtex/2604.00082.bib){ .bibtex-link }
 
 -   __30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling__
 
@@ -77,7 +77,7 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     Land surface temperature (LST) is a critical parameter for characterizing surface energy balance and hydrothermal processes. While Landsat provides invaluable LST observations at medium spatial...
 
-    [:material-file-document: 2603.29478](https://arxiv.org/abs/2603.29478v1)
+    [:material-file-document: 2603.29478](https://arxiv.org/abs/2603.29478v1) · [:material-content-copy: BibTeX](bibtex/2603.29478.bib){ .bibtex-link }
 
 -   __Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data__
 
@@ -87,7 +87,7 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     Deep learning-based tropical cyclone (TC) forecasting methods have demonstrated significant potential and application advantages, as they feature much lower computational cost and faster operation...
 
-    [:material-file-document: 2603.29200](https://arxiv.org/abs/2603.29200v2)
+    [:material-file-document: 2603.29200](https://arxiv.org/abs/2603.29200v2) · [:material-content-copy: BibTeX](bibtex/2603.29200.bib){ .bibtex-link }
 
 -   __Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling__
 
@@ -97,9 +97,9 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     Data-driven weather models have advanced global medium-range forecasting, yet high-resolution regional prediction remains challenging due to unresolved multiscale interactions between large-scale...
 
-    [:material-file-document: 2603.28173](https://arxiv.org/abs/2603.28173v1)
+    [:material-file-document: 2603.28173](https://arxiv.org/abs/2603.28173v1) · [:material-content-copy: BibTeX](bibtex/2603.28173.bib){ .bibtex-link }
 
-    `transformer`
+    <span class="md-tag">transformer</span>
 
 -   __Self-Organizing Score-based Data Assimilation__
 
@@ -109,9 +109,9 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     A state-space model is a statistical framework for inferring latent states from observed time-series data. However, inference with nonlinear and high-dimensional state-space models remains...
 
-    [:material-file-document: 2603.28048](https://arxiv.org/abs/2603.28048v2)
+    [:material-file-document: 2603.28048](https://arxiv.org/abs/2603.28048v2) · [:material-content-copy: BibTeX](bibtex/2603.28048.bib){ .bibtex-link }
 
-    `diffusion`
+    <span class="md-tag">diffusion</span>
 
 -   __Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction__
 
@@ -121,7 +121,7 @@ A collection of papers on deep learning applied to weather forecasting, climate 
 
     The accurate and efficient representation of atmospheric dynamics remains a central challenge in numerical weather prediction. A particular difficulty arises from the strong anisotropy of the...
 
-    [:material-file-document: 2603.16571](https://arxiv.org/abs/2603.16571v1)
+    [:material-file-document: 2603.16571](https://arxiv.org/abs/2603.16571v1) · [:material-content-copy: BibTeX](bibtex/2603.16571.bib){ .bibtex-link }
 
 </div>
 

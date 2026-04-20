@@ -5,8 +5,6 @@ hide:
 
 # Tags
 
-Browse papers by methodology and topic tags.
-
 ## 3D U-Net (1)
 
 - **Pangu-Weather: Accurate medium-range global weather forecasting with 3D neural networks** (2023) - [Global Models](global_models.md) - [arXiv:2301.03748](https://arxiv.org/abs/2301.03748)
