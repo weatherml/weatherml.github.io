@@ -1,67 +1,235 @@
 import yaml
+import re
 from collections import defaultdict
 import os
+from datetime import datetime
 
-def generate_paper_markdown(paper):
-    md = f"### {paper['title']}\n\n"
-    md += f"**Authors:** {paper['authors']}\n\n"
-    md += f"**Year:** {paper['year']}\n\n"
-    md += f"**Abstract:**\n"
-    md += f"> {paper['abstract']}\n\n"
-    md += f"[**arXiv:{paper['arxiv']}**](https://arxiv.org/abs/{paper['arxiv']})\n\n"
-    if 'tags' in paper:
-        md += f"**Tags:** `{'`, `'.join(paper['tags'])}`\n\n"
-    md += "---\n\n"
+# Category display order (categories not listed here appear at the end)
+CATEGORY_ORDER = [
+    'Global Models', 'Nowcasting', 'Downscaling',
+    'Data Assimilation', 'Ensembles', 'Climate Modeling',
+    'Extreme Weather', 'Other',
+]
+
+
+def generate_paper_card(paper):
+    """Generate a card list item for a paper."""
+    lines = []
+    lines.append(f"-   __{ paper['title'] }__\n")
+    lines.append(f"\n")
+    lines.append(f"    ---\n")
+    lines.append(f"\n")
+
+    # Authors (truncate if too many)
+    authors = paper['authors']
+    if len(authors) > 100:
+        authors = authors[:100].rsplit(',', 1)[0] + ' et al.'
+    lines.append(f"    *{authors}* · {paper['year']}\n")
+    lines.append(f"\n")
+
+    # Short abstract snippet
+    abstract = paper.get('abstract', '').replace('\n', ' ')
+    if abstract:
+        snippet = abstract[:200]
+        if len(abstract) > 200:
+            snippet = snippet.rsplit(' ', 1)[0] + '...'
+        lines.append(f"    {snippet}\n")
+        lines.append(f"\n")
+
+    # Links
+    arxiv_display = re.sub(r'v\d+$', '', paper['arxiv'])
+    lines.append(f"    [:material-file-document: {arxiv_display}](https://arxiv.org/abs/{paper['arxiv']})")
+    if paper.get('github'):
+        lines.append(f" · [:fontawesome-brands-github:]({paper['github']})")
+    lines.append(f"\n")
+    lines.append(f"\n")
+
+    # Tags
+    tags = paper.get('tags', [])
+    display_tags = [t for t in tags if '.' not in t]
+    if display_tags:
+        lines.append(f"    {' '.join(f'`{tag}`' for tag in display_tags)}\n")
+        lines.append(f"\n")
+
+    return ''.join(lines)
+
+
+def generate_stats(papers):
+    """Generate statistics markdown for the index page."""
+    papers_by_category = defaultdict(list)
+    papers_by_year = defaultdict(int)
+    all_tags = defaultdict(int)
+
+    for paper in papers:
+        papers_by_category[paper['category']].append(paper)
+        papers_by_year[paper['year']] += 1
+        for tag in paper.get('tags', []):
+            if '.' not in tag:  # Skip arxiv categories
+                all_tags[tag] += 1
+
+    total = len(papers)
+
+    md = "## Paper Statistics\n\n"
+    md += '<div class="grid cards" markdown>\n\n'
+    md += f"-   :material-file-document-multiple: **{total}**\n\n"
+    md += f"    Total Papers\n\n"
+    md += f"-   :material-folder-multiple: **{len(papers_by_category)}**\n\n"
+    md += f"    Categories\n\n"
+
+    years = sorted(papers_by_year.keys())
+    if years:
+        md += f"-   :material-calendar-range: **{years[0]}\u2013{years[-1]}**\n\n"
+        md += f"    Year Range\n\n"
+
+    md += f"-   :material-tag-multiple: **{len(all_tags)}**\n\n"
+    md += f"    Unique Tags\n\n"
+    md += "</div>\n\n"
+
+
     return md
 
-def build_pages():
-    with open('papers.yml', 'r') as f:
-        papers = yaml.safe_load(f)
 
-    # Sort papers by year, descending
-    papers.sort(key=lambda p: p['year'], reverse=True)
+def generate_recent_papers(papers, n=10):
+    """Generate markdown for the most recent papers as cards."""
+    sorted_papers = sorted(papers, key=lambda p: (p['year'], p['arxiv']), reverse=True)
+    recent = sorted_papers[:n]
+
+    md = "## Recent Additions\n\n"
+    md += '<div class="grid cards" markdown>\n\n'
+    for paper in recent:
+        md += generate_paper_card(paper)
+    md += '</div>\n\n'
+
+    return md
+
+
+def build_pages():
+    """Build all documentation pages from papers.yml."""
+    with open('papers.yml', 'r') as f:
+        papers = yaml.safe_load(f) or []
+
+    # Sort papers by year descending, then by arxiv ID descending
+    papers.sort(key=lambda p: (p['year'], p.get('arxiv', '')), reverse=True)
 
     papers_by_category = defaultdict(list)
     for paper in papers:
         papers_by_category[paper['category']].append(paper)
 
-    # Create category pages
-    nav = [{'Home': 'index.md'}]
     if not os.path.exists('docs'):
         os.makedirs('docs')
 
-    for category, cat_papers in papers_by_category.items():
-        cat_slug = category.lower().replace(' ', '_')
-        nav_entry = {category: f"{cat_slug}.md"}
-        nav.append(nav_entry)
+    # Generate index page with statistics
+    with open('docs/index.md', 'w') as f:
+        f.write("---\nhide:\n  - navigation\n---\n\n")
+        f.write("# Deep Learning in Weather\n\n")
+        f.write("A curated collection of papers on deep learning and machine learning ")
+        f.write("applied to weather forecasting, climate modeling, and atmospheric science.\n\n")
+        f.write("Papers are **automatically discovered** from arXiv and **categorized** ")
+        f.write("using keyword analysis of titles and abstracts.\n\n")
+        f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n")
+        f.write(generate_stats(papers))
+        f.write(generate_recent_papers(papers))
 
-        with open(f"docs/{cat_slug}.md", 'w') as f:
-            f.write(f"# {category}\n\n")
-            for paper in cat_papers:
-                f.write(generate_paper_markdown(paper))
+    # Generate single papers page with all categories as sections
+    nav = [{'Home': 'index.md'}]
 
-    # Update mkdocs.yml
+    with open('docs/papers.md', 'w') as f:
+        f.write("---\nhide:\n  - navigation\n---\n\n")
+
+        # Ordered categories
+        for category in CATEGORY_ORDER:
+            if category in papers_by_category:
+                cat_papers = papers_by_category[category]
+                f.write(f"## {category} ({len(cat_papers)})\n\n")
+                f.write('<div class="grid cards" markdown>\n\n')
+                for paper in cat_papers:
+                    f.write(generate_paper_card(paper))
+                f.write('</div>\n\n')
+
+        # Any remaining categories
+        for category in sorted(papers_by_category.keys()):
+            if category not in CATEGORY_ORDER:
+                cat_papers = papers_by_category[category]
+                f.write(f"## {category} ({len(cat_papers)})\n\n")
+                f.write('<div class="grid cards" markdown>\n\n')
+                for paper in cat_papers:
+                    f.write(generate_paper_card(paper))
+                f.write('</div>\n\n')
+
+    nav.append({'Papers': 'papers.md'})
+
+    # Generate tags page
+    all_tags = defaultdict(list)
+    for paper in papers:
+        for tag in paper.get('tags', []):
+            if '.' not in tag:  # Skip arxiv categories
+                all_tags[tag].append(paper)
+
+    if all_tags:
+        nav.append({'Tags': 'tags.md'})
+        with open('docs/tags.md', 'w') as f:
+            f.write("---\nhide:\n  - navigation\n---\n\n")
+            f.write("# Tags\n\n")
+            f.write("Browse papers by methodology and topic tags.\n\n")
+            for tag in sorted(all_tags.keys()):
+                tag_papers = all_tags[tag]
+                f.write(f"## {tag} ({len(tag_papers)})\n\n")
+                for paper in tag_papers:
+                    f.write(f"- **{paper['title']}** ({paper['year']}) ")
+                    f.write(f"- [{paper['category']}]({paper['category'].lower().replace(' ', '_')}.md) ")
+                    f.write(f"- [arXiv:{paper['arxiv']}](https://arxiv.org/abs/{paper['arxiv']})\n")
+                f.write("\n")
+
+    # Update mkdocs.yml navigation (text-based to preserve !!python/name tags)
     with open('mkdocs.yml', 'r') as f:
-        mkdocs_config = yaml.safe_load(f)
+        content = f.read()
 
-    mkdocs_config['nav'] = nav
+    # Build nav YAML lines
+    nav_lines = ["nav:\n"]
+    for entry in nav:
+        for label, value in entry.items():
+            nav_lines.append(f"  - {label}: {value}\n")
+
+    # Replace everything from "nav:" to the end (nav is always last section)
+    import re
+    content = re.sub(r'^nav:.*', ''.join(nav_lines).rstrip(), content, flags=re.DOTALL | re.MULTILINE)
 
     with open('mkdocs.yml', 'w') as f:
-        yaml.dump(mkdocs_config, f, default_flow_style=False, sort_keys=False)
+        f.write(content)
 
     # Update README.md
     with open('README.md', 'r') as f:
-        readme_content = f.read().split('<!-- PAPERS_START -->')[0]
+        readme_content = f.read()
+
+    if '<!-- PAPERS_START -->' in readme_content:
+        readme_content = readme_content.split('<!-- PAPERS_START -->')[0]
+    else:
+        readme_content = readme_content.rstrip() + '\n\n'
 
     with open('README.md', 'w') as f:
         f.write(readme_content)
         f.write('<!-- PAPERS_START -->\n\n')
-        f.write("## Paper Collection\n\n")
-        for category, cat_papers in papers_by_category.items():
-            f.write(f"### {category}\n\n")
-            for paper in cat_papers:
-                f.write(f"- **{paper['title']}** ({paper['year']}) - [arXiv:{paper['arxiv']}](https://arxiv.org/abs/{paper['arxiv']})\n")
-            f.write('\n')
+        f.write(f"## Paper Collection ({len(papers)} papers)\n\n")
+        for category in CATEGORY_ORDER:
+            if category in papers_by_category:
+                cat_papers = papers_by_category[category]
+                f.write(f"### {category} ({len(cat_papers)})\n\n")
+                for paper in cat_papers:
+                    f.write(f"- **{paper['title']}** ({paper['year']}) - "
+                            f"[arXiv:{paper['arxiv']}](https://arxiv.org/abs/{paper['arxiv']})\n")
+                f.write('\n')
+
+        for category in sorted(papers_by_category.keys()):
+            if category not in CATEGORY_ORDER:
+                cat_papers = papers_by_category[category]
+                f.write(f"### {category} ({len(cat_papers)})\n\n")
+                for paper in cat_papers:
+                    f.write(f"- **{paper['title']}** ({paper['year']}) - "
+                            f"[arXiv:{paper['arxiv']}](https://arxiv.org/abs/{paper['arxiv']})\n")
+                f.write('\n')
+
+    print(f"Built pages for {len(papers)} papers across {len(papers_by_category)} categories.")
+
 
 if __name__ == '__main__':
     build_pages()
