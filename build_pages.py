@@ -45,13 +45,18 @@ def generate_paper_card(paper):
     lines.append(f"    *{authors}* · {paper['year']}\n")
     lines.append(f"\n")
 
-    # Short abstract snippet
+    # Abstract - truncated with expand button
     abstract = paper.get('abstract', '').replace('\n', ' ')
     if abstract:
+        arxiv_id = re.sub(r'v\d+$', '', paper['arxiv'])
         snippet = abstract[:200]
         if len(abstract) > 200:
             snippet = snippet.rsplit(' ', 1)[0] + '...'
-        lines.append(f"    {snippet}\n")
+        lines.append(f'    <span class="abstract-snippet" id="snip-{arxiv_id}">{snippet}</span>')
+        lines.append(f'<span class="abstract-full" id="full-{arxiv_id}" hidden>{abstract}</span>')
+        if len(abstract) > 200:
+            lines.append(f' <span class="abstract-toggle" data-id="{arxiv_id}">more</span>')
+        lines.append(f"\n")
         lines.append(f"\n")
 
     # Links

@@ -15,6 +15,16 @@
   letter-spacing: 0.01em;
 }
 
+/* Cards fill equal height in grid rows */
+.grid.cards > ul > li {
+  align-self: stretch;
+}
+
+/* Expanded card spans full row */
+.grid.cards > ul > li.card-expanded {
+  grid-column: 1 / -1;
+}
+
 /* Style h4 inside cards to match the bold title look */
 .grid.cards h4 {
   font-size: 1em;
@@ -24,4 +34,16 @@
 /* Hide permalink on card headings */
 .grid.cards h4 .headerlink {
   display: none;
+}
+
+.abstract-toggle {
+  font-size: 0.75em;
+  cursor: pointer;
+  color: var(--md-default-fg-color--light);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.abstract-toggle:hover {
+  opacity: 1;
 }
