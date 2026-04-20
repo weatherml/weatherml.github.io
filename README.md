@@ -1,4 +1,34 @@
-# weatherml.github.io<!-- PAPERS_START -->
+[weatherml.github.io](https://weatherml.github.io)
+
+A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
+
+
+## What this repo does
+Papers automatically discovered weekly from arXiv
+ and categorized into: Global Models, Nowcasting, Downscaling, Data Assimilation, Ensembles, Climate Modeling, Extreme Weather.
+
+## Made with
+[Zensical](https://github.com/zensical/zensical)
+## Development
+
+```bash
+uv sync
+uv run python build_pages.py
+uv run zensical serve
+```
+
+## Adding papers manually
+
+Edit `papers.yml` and run `uv run python build_pages.py`.
+
+## Re-categorizing papers
+
+```bash
+uv run python categorize_papers.py
+uv run python build_pages.py
+```
+
+<!-- PAPERS_START -->
 
 ## Paper Collection (118 papers)
 
