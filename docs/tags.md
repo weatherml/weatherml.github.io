@@ -1,9 +1,8 @@
 ---
 hide:
   - navigation
+title: Tags
 ---
-
-# Tags
 
 ## CNN (10)
 

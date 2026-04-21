@@ -161,9 +161,8 @@ def build_pages():
 
     # Generate index page with statistics
     with open('docs/index.md', 'w') as f:
-        f.write("---\nhide:\n  - navigation\n---\n\n")
-        f.write("# Deep Learning in Weather\n\n")
-        f.write("A curated collection of papers on deep learning and machine learning ")
+        f.write("---\nhide:\n  - navigation\ntitle: Deep Learning in Weather\n---\n\n")
+        f.write("A collection of papers on deep learning and machine learning ")
         f.write("applied to weather forecasting, climate modeling, and atmospheric science.\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n")
         f.write(generate_recent_papers(papers))
@@ -172,7 +171,7 @@ def build_pages():
     nav = [{'Home': 'index.md'}]
 
     with open('docs/papers.md', 'w') as f:
-        f.write("---\nhide:\n  - navigation\n---\n\n<style>.md-content h1 { display: none; }</style>\n\n")
+        f.write("---\nhide:\n  - navigation\n---\n\n")
 
         # Ordered categories
         for category in CATEGORY_ORDER:
@@ -206,8 +205,7 @@ def build_pages():
     if all_tags:
         nav.append({'Tags': 'tags.md'})
         with open('docs/tags.md', 'w') as f:
-            f.write("---\nhide:\n  - navigation\n---\n\n")
-            f.write("# Tags\n\n")
+            f.write("---\nhide:\n  - navigation\ntitle: Tags\n---\n\n")
             for tag in sorted(all_tags.keys()):
                 tag_papers = all_tags[tag]
                 f.write(f"## {tag} ({len(tag_papers)})\n\n")

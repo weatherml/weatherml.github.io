@@ -3,8 +3,6 @@ hide:
   - navigation
 ---
 
-<style>.md-content h1 { display: none; }</style>
-
 ## Global Models (23)
 
 <div class="grid cards" markdown>
