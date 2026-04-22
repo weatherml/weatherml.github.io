@@ -6,11 +6,23 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-04-21*
+*Last updated: 2026-04-22*
 
 ## Recent Additions
 
 <div class="grid cards" markdown>
+
+-   #### M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention
+
+    ---
+
+    *Sanjeev Panta, Rhett M Morvant, Xu Yuan, Li Chen, Nian-Feng Tzeng* · 2026
+
+    <span class="abstract-snippet" id="snip-2604.15377">Accurate and timely rainfall nowcasting is crucial for disaster mitigation and water resource management. Despite recent advances in deep learning, precipitation prediction remains challenging due to...</span><span class="abstract-full" id="full-2604.15377" hidden>Accurate and timely rainfall nowcasting is crucial for disaster mitigation and water resource management. Despite recent advances in deep learning, precipitation prediction remains challenging due to limitations in effectively leveraging diverse multimedia data sources. We introduce M3R, a Meteorology-informed MultiModal attention-based architecture for direct Rainfall prediction that synergistically combines visual NEXRAD radar imagery with numerical Personal Weather Station (PWS) measurements, using a comprehensive pipeline for temporal alignment of heterogeneous meteorological data. With specialized multimodal attention mechanisms, M3R novelly leverages weather station time series as queries to selectively attend to spatial radar features, enabling focused extraction of precipitation signatures. Experimental results for three spatial areas of 100 km * 100 km centered at NEXRAD radar stations demonstrate that M3R outperforms existing approaches, achieving substantial improvements in accuracy, efficiency, and precipitation detection capabilities. Our work establishes new benchmarks for multimedia-based precipitation nowcasting and provides practical tools for operational weather prediction systems. The source code is available at https://github.com/Sanjeev97/M3Rain</span> <span class="abstract-toggle" data-id="2604.15377">more</span>
+
+    [:material-file-document: 2604.15377](https://arxiv.org/abs/2604.15377v1) · [:fontawesome-brands-github:](https://github.com/Sanjeev97/M3Rain) · [:material-content-copy: BibTeX](bibtex/2604.15377.bib){ .bibtex-link }
+
+    <span class="md-tag">transformer</span>
 
 -   #### Capturing Aleatoric Uncertainty in Climate Models
 
@@ -111,16 +123,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2603.28048](https://arxiv.org/abs/2603.28048v2) · [:material-content-copy: BibTeX](bibtex/2603.28048.bib){ .bibtex-link }
 
     <span class="md-tag">diffusion</span>
-
--   #### Splitting horizontal and vertical polynomial order in a compatible finite element discretisation for numerical weather prediction
-
-    ---
-
-    *Daniel Witt, Thomas Bendall, Jemma Shipton* · 2026
-
-    <span class="abstract-snippet" id="snip-2603.16571">The accurate and efficient representation of atmospheric dynamics remains a central challenge in numerical weather prediction. A particular difficulty arises from the strong anisotropy of the...</span><span class="abstract-full" id="full-2603.16571" hidden>The accurate and efficient representation of atmospheric dynamics remains a central challenge in numerical weather prediction. A particular difficulty arises from the strong anisotropy of the atmosphere, in which horizontal and vertical motions occur on very different length scales, motivating numerical discretisations that can reflect this structure. In this study, we introduce a compatible finite element discretisation of the compressible Boussinesq and compressible Euler equations in which the horizontal and vertical polynomial orders are treated independently.   The split-order discretisation is constructed using a tensor-product framework that preserves the discrete de Rham complex and associated mimetic properties. Its wave-propagation characteristics are examined through a discrete dispersion analysis that extends previous analyses to configurations with differing horizontal and vertical polynomial orders. The results show that increasing horizontal order improves the representation of gravity waves at low and intermediate wavenumbers, while increasing vertical order can degrade dispersion accuracy near the grid scale and introduce spectral gaps.   A series of idealised numerical experiments, including gravity-wave propagation, advective transport, mountain-wave flow, and a global baroclinic-wave test, is used to assess the scheme's accuracy and convergence properties. These experiments demonstrate that increasing the polynomial order in the dominant direction of motion improves convergence, and that increasing the horizontal order yields the greatest gain in accuracy under typical atmospheric conditions. The results indicate that split-order compatible finite element discretisations provide a viable alternative for controlling accuracy and numerical behaviour in atmospheric dynamical cores.</span> <span class="abstract-toggle" data-id="2603.16571">more</span>
-
-    [:material-file-document: 2603.16571](https://arxiv.org/abs/2603.16571v1) · [:material-content-copy: BibTeX](bibtex/2603.16571.bib){ .bibtex-link }
 
 </div>
 

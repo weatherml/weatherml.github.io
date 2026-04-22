@@ -110,8 +110,9 @@ title: Tags
 
 - **Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2601.04268v1](https://arxiv.org/abs/2601.04268v1)
 
-## transformer (15)
+## transformer (16)
 
+- **M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2604.15377v1](https://arxiv.org/abs/2604.15377v1)
 - **Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting** (2026) - [Downscaling](downscaling.md) - [arXiv:2604.07928v1](https://arxiv.org/abs/2604.07928v1)
 - **Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling** (2026) - [Global Models](global_models.md) - [arXiv:2603.28173v1](https://arxiv.org/abs/2603.28173v1)
 - **Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2602.23188v1](https://arxiv.org/abs/2602.23188v1)
