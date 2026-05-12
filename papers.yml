@@ -3062,3 +3062,38 @@
   - cs.CV
   - cs.MM
   github: https://github.com/Sanjeev97/M3Rain
+- category: Nowcasting
+  title: 'PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows'
+  authors: Yufeng Zhu, Chunlei Shi, Yongchao Feng, Dan Niu
+  year: 2026
+  arxiv: 2605.10046v1
+  abstract: Precipitation nowcasting aims to forecast short-term radar echo sequences
+    for extreme weather warning, where both prediction fidelity and inference efficiency
+    are critical for real-world deployment. However, diffusion-based models, despite
+    their strong generative capability, suffer from slow inference due to multi-step
+    sampling trajectories, limiting their practical usability. Conditional Flow Matching
+    (CFM) improves efficiency via straightened trajectories, but relies on latent
+    space compression, which inevitably discards high-frequency physical details and
+    degrades fine-grained prediction quality. To address these limitations, we propose
+    PixelFlowCast, a two-stage probabilistic forecasting framework that achieves both
+    high-efficiency and high-fidelity prediction without latent compression. Specifically,
+    in the first stage, a deterministic model first produces coarse forecasts to capture
+    global evolution trends. In the subsequent stage, the proposed KANCondNet extracts
+    deep spatiotemporal evolution features to provide accurate conditional guidance.
+    Based on this, a latent-free, few-step Pixel Mean Flows (PMF) predictor employs
+    an $x$-prediction mechanism to generate high-quality predictions, effectively
+    preserving fine-grained structures while maintaining fast inference. Experiments
+    on the publicly available SEVIR dataset demonstrate that PixelFlowCast outperforms
+    existing mainstream methods in both prediction accuracy and inference efficiency,
+    particularly for long sequence forecasting, highlighting its strong potential
+    for real-world operational deployment.
+  tags:
+  - diffusion
+  - probabilistic
+  - cs.CV
+  - cs.LG
+  - cs.MA
+  arxiv_categories:
+  - cs.CV
+  - cs.LG
+  - cs.MA

@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (119 papers)
+## Paper Collection (120 papers)
 
 ### Global Models (23)
 
@@ -58,8 +58,9 @@ uv run python build_pages.py
 - **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-### Nowcasting (13)
+### Nowcasting (14)
 
+- **PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows** (2026) - [arXiv:2605.10046v1](https://arxiv.org/abs/2605.10046v1)
 - **M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention** (2026) - [arXiv:2604.15377v1](https://arxiv.org/abs/2604.15377v1)
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
 - **WADEPre: A Wavelet-based Decomposition Model for Extreme Precipitation Nowcasting with Multi-Scale Learning** (2026) - [arXiv:2602.02096v1](https://arxiv.org/abs/2602.02096v1)

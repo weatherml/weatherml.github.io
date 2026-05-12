@@ -25,8 +25,9 @@ title: Tags
 
 - **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [Global Models](global_models.md) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
 
-## diffusion (18)
+## diffusion (19)
 
+- **PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.10046v1](https://arxiv.org/abs/2605.10046v1)
 - **Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching** (2026) - [Global Models](global_models.md) - [arXiv:2604.00897v1](https://arxiv.org/abs/2604.00897v1)
 - **Self-Organizing Score-based Data Assimilation** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2603.28048v2](https://arxiv.org/abs/2603.28048v2)
 - **Universal Diffusion-Based Probabilistic Downscaling** (2026) - [Global Models](global_models.md) - [arXiv:2602.11893v1](https://arxiv.org/abs/2602.11893v1)
@@ -72,8 +73,9 @@ title: Tags
 - **Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints** (2025) - [Data Assimilation](data_assimilation.md) - [arXiv:2510.04006v1](https://arxiv.org/abs/2510.04006v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (24)
+## probabilistic (25)
 
+- **PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.10046v1](https://arxiv.org/abs/2605.10046v1)
 - **Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching** (2026) - [Global Models](global_models.md) - [arXiv:2604.00897v1](https://arxiv.org/abs/2604.00897v1)
 - **Accurate and Efficient Hybrid-Ensemble Atmospheric Data Assimilation in Latent Space with Uncertainty Quantification** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2603.04395v1](https://arxiv.org/abs/2603.04395v1)
 - **Climate Downscaling with Stochastic Interpolants (CDSI)** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2603.03838v1](https://arxiv.org/abs/2603.03838v1)

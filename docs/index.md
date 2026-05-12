@@ -6,11 +6,23 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-05-10*
+*Last updated: 2026-05-12*
 
 ## Recent Additions
 
 <div class="grid cards" markdown>
+
+-   #### PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows
+
+    ---
+
+    *Yufeng Zhu, Chunlei Shi, Yongchao Feng, Dan Niu* · 2026
+
+    <span class="abstract-snippet" id="snip-2605.10046">Precipitation nowcasting aims to forecast short-term radar echo sequences for extreme weather warning, where both prediction fidelity and inference efficiency are critical for real-world deployment....</span><span class="abstract-full" id="full-2605.10046" hidden>Precipitation nowcasting aims to forecast short-term radar echo sequences for extreme weather warning, where both prediction fidelity and inference efficiency are critical for real-world deployment. However, diffusion-based models, despite their strong generative capability, suffer from slow inference due to multi-step sampling trajectories, limiting their practical usability. Conditional Flow Matching (CFM) improves efficiency via straightened trajectories, but relies on latent space compression, which inevitably discards high-frequency physical details and degrades fine-grained prediction quality. To address these limitations, we propose PixelFlowCast, a two-stage probabilistic forecasting framework that achieves both high-efficiency and high-fidelity prediction without latent compression. Specifically, in the first stage, a deterministic model first produces coarse forecasts to capture global evolution trends. In the subsequent stage, the proposed KANCondNet extracts deep spatiotemporal evolution features to provide accurate conditional guidance. Based on this, a latent-free, few-step Pixel Mean Flows (PMF) predictor employs an $x$-prediction mechanism to generate high-quality predictions, effectively preserving fine-grained structures while maintaining fast inference. Experiments on the publicly available SEVIR dataset demonstrate that PixelFlowCast outperforms existing mainstream methods in both prediction accuracy and inference efficiency, particularly for long sequence forecasting, highlighting its strong potential for real-world operational deployment.</span> <span class="abstract-toggle" data-id="2605.10046">more</span>
+
+    [:material-file-document: 2605.10046](https://arxiv.org/abs/2605.10046v1) · [:material-content-copy: BibTeX](bibtex/2605.10046.bib){ .bibtex-link }
+
+    <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
 -   #### M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention
 
@@ -111,18 +123,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2603.28173](https://arxiv.org/abs/2603.28173v1) · [:material-content-copy: BibTeX](bibtex/2603.28173.bib){ .bibtex-link }
 
     <span class="md-tag">transformer</span>
-
--   #### Self-Organizing Score-based Data Assimilation
-
-    ---
-
-    *Yuma Yamaoka, Seiichi Uchida, Shoji Toyota* · 2026
-
-    <span class="abstract-snippet" id="snip-2603.28048">A state-space model is a statistical framework for inferring latent states from observed time-series data. However, inference with nonlinear and high-dimensional state-space models remains...</span><span class="abstract-full" id="full-2603.28048" hidden>A state-space model is a statistical framework for inferring latent states from observed time-series data. However, inference with nonlinear and high-dimensional state-space models remains challenging. To this end, an approach based on diffusion models-a powerful class of deep generative models-has been developed, known as Score-based Data Assimilation (SDA). However, SDA cannot be directly applied when the latent-state transition depends on unknown parameters that must be inferred jointly with the latent states. To overcome this limitation, we propose a framework that enables SDA to handle latent states with unknown parameters. A key feature of the proposed method is the incorporation of the self-organization technique, which has been used in classical state-space modeling for the joint estimation of latent states and parameters. By integrating this classical technique into modern SDA, our method enables joint inference of latent states and unknown parameters while maintaining the high training efficiency of SDA. The effectiveness of the proposed approach is validated through numerical experiments on dynamical systems arising in neuroscience and atmospheric science. In addition, its scalability is demonstrated using a high-dimensional Kolmogorov flow, with the data dimension on the order of several hundred thousand.</span> <span class="abstract-toggle" data-id="2603.28048">more</span>
-
-    [:material-file-document: 2603.28048](https://arxiv.org/abs/2603.28048v2) · [:material-content-copy: BibTeX](bibtex/2603.28048.bib){ .bibtex-link }
-
-    <span class="md-tag">diffusion</span>
 
 </div>
 

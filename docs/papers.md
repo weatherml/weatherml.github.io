@@ -261,9 +261,21 @@ hide:
 
 </div>
 
-## Nowcasting (13)
+## Nowcasting (14)
 
 <div class="grid cards" markdown>
+
+-   #### PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows
+
+    ---
+
+    *Yufeng Zhu, Chunlei Shi, Yongchao Feng, Dan Niu* · 2026
+
+    <span class="abstract-snippet" id="snip-2605.10046">Precipitation nowcasting aims to forecast short-term radar echo sequences for extreme weather warning, where both prediction fidelity and inference efficiency are critical for real-world deployment....</span><span class="abstract-full" id="full-2605.10046" hidden>Precipitation nowcasting aims to forecast short-term radar echo sequences for extreme weather warning, where both prediction fidelity and inference efficiency are critical for real-world deployment. However, diffusion-based models, despite their strong generative capability, suffer from slow inference due to multi-step sampling trajectories, limiting their practical usability. Conditional Flow Matching (CFM) improves efficiency via straightened trajectories, but relies on latent space compression, which inevitably discards high-frequency physical details and degrades fine-grained prediction quality. To address these limitations, we propose PixelFlowCast, a two-stage probabilistic forecasting framework that achieves both high-efficiency and high-fidelity prediction without latent compression. Specifically, in the first stage, a deterministic model first produces coarse forecasts to capture global evolution trends. In the subsequent stage, the proposed KANCondNet extracts deep spatiotemporal evolution features to provide accurate conditional guidance. Based on this, a latent-free, few-step Pixel Mean Flows (PMF) predictor employs an $x$-prediction mechanism to generate high-quality predictions, effectively preserving fine-grained structures while maintaining fast inference. Experiments on the publicly available SEVIR dataset demonstrate that PixelFlowCast outperforms existing mainstream methods in both prediction accuracy and inference efficiency, particularly for long sequence forecasting, highlighting its strong potential for real-world operational deployment.</span> <span class="abstract-toggle" data-id="2605.10046">more</span>
+
+    [:material-file-document: 2605.10046](https://arxiv.org/abs/2605.10046v1) · [:material-content-copy: BibTeX](bibtex/2605.10046.bib){ .bibtex-link }
+
+    <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
 -   #### M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention
 
