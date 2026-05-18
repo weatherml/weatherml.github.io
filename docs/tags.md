@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (10)
+## CNN (11)
 
+- **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
 - **El Nino Prediction Based on Weather Forecast and Geographical Time-series Data** (2026) - [Global Models](global_models.md) - [arXiv:2604.04998v1](https://arxiv.org/abs/2604.04998v1)
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
 - **Time-aware UNet and super-resolution deep residual networks for spatial downscaling** (2025) - [Downscaling](downscaling.md) - [arXiv:2512.13753v1](https://arxiv.org/abs/2512.13753v1)
@@ -25,8 +26,9 @@ title: Tags
 
 - **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [Global Models](global_models.md) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
 
-## diffusion (19)
+## diffusion (20)
 
+- **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
 - **PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.10046v1](https://arxiv.org/abs/2605.10046v1)
 - **Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching** (2026) - [Global Models](global_models.md) - [arXiv:2604.00897v1](https://arxiv.org/abs/2604.00897v1)
 - **Self-Organizing Score-based Data Assimilation** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2603.28048v2](https://arxiv.org/abs/2603.28048v2)
@@ -59,8 +61,9 @@ title: Tags
 - **Nowcast3D: Reliable precipitation nowcasting via gray-box learning** (2025) - [Nowcasting](nowcasting.md) - [arXiv:2511.04659v1](https://arxiv.org/abs/2511.04659v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (11)
+## physics-informed (12)
 
+- **Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies** (2026) - [Downscaling](downscaling.md) - [arXiv:2605.11531v1](https://arxiv.org/abs/2605.11531v1)
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
 - **Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2602.03767v1](https://arxiv.org/abs/2602.03767v1)
 - **Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting** (2026) - [Global Models](global_models.md) - [arXiv:2601.09467v1](https://arxiv.org/abs/2601.09467v1)
@@ -73,8 +76,9 @@ title: Tags
 - **Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints** (2025) - [Data Assimilation](data_assimilation.md) - [arXiv:2510.04006v1](https://arxiv.org/abs/2510.04006v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (25)
+## probabilistic (26)
 
+- **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
 - **PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.10046v1](https://arxiv.org/abs/2605.10046v1)
 - **Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching** (2026) - [Global Models](global_models.md) - [arXiv:2604.00897v1](https://arxiv.org/abs/2604.00897v1)
 - **Accurate and Efficient Hybrid-Ensemble Atmospheric Data Assimilation in Latent Space with Uncertainty Quantification** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2603.04395v1](https://arxiv.org/abs/2603.04395v1)
@@ -112,8 +116,10 @@ title: Tags
 
 - **Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2601.04268v1](https://arxiv.org/abs/2601.04268v1)
 
-## transformer (16)
+## transformer (18)
 
+- **MambaRain: Multi-Scale Mamba-Attention Framework for 0-3 Hour Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14606v1](https://arxiv.org/abs/2605.14606v1)
+- **Stable Attention Response for Reliable Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.13181v1](https://arxiv.org/abs/2605.13181v1)
 - **M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2604.15377v1](https://arxiv.org/abs/2604.15377v1)
 - **Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting** (2026) - [Downscaling](downscaling.md) - [arXiv:2604.07928v1](https://arxiv.org/abs/2604.07928v1)
 - **Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling** (2026) - [Global Models](global_models.md) - [arXiv:2603.28173v1](https://arxiv.org/abs/2603.28173v1)

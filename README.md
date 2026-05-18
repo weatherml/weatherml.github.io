@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (120 papers)
+## Paper Collection (126 papers)
 
 ### Global Models (23)
 
@@ -58,8 +58,13 @@ uv run python build_pages.py
 - **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-### Nowcasting (14)
+### Nowcasting (19)
 
+- **MambaRain: Multi-Scale Mamba-Attention Framework for 0-3 Hour Precipitation Nowcasting** (2026) - [arXiv:2605.14606v1](https://arxiv.org/abs/2605.14606v1)
+- **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
+- **ForcingDAS: Unified and Robust Data Assimilation via Diffusion Forcing** (2026) - [arXiv:2605.14285v1](https://arxiv.org/abs/2605.14285v1)
+- **McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting** (2026) - [arXiv:2605.13197v1](https://arxiv.org/abs/2605.13197v1)
+- **Stable Attention Response for Reliable Precipitation Nowcasting** (2026) - [arXiv:2605.13181v1](https://arxiv.org/abs/2605.13181v1)
 - **PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows** (2026) - [arXiv:2605.10046v1](https://arxiv.org/abs/2605.10046v1)
 - **M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention** (2026) - [arXiv:2604.15377v1](https://arxiv.org/abs/2604.15377v1)
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
@@ -75,8 +80,9 @@ uv run python build_pages.py
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 - **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
-### Downscaling (11)
+### Downscaling (12)
 
+- **Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies** (2026) - [arXiv:2605.11531v1](https://arxiv.org/abs/2605.11531v1)
 - **Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting** (2026) - [arXiv:2604.07928v1](https://arxiv.org/abs/2604.07928v1)
 - **30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling** (2026) - [arXiv:2603.29478v1](https://arxiv.org/abs/2603.29478v1)
 - **Downscaling land surface temperature data using edge detection and block-diagonal Gaussian process regression** (2026) - [arXiv:2602.02813v1](https://arxiv.org/abs/2602.02813v1)
