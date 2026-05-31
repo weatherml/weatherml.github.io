@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (11)
+## CNN (12)
 
+- **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.30122v1](https://arxiv.org/abs/2605.30122v1)
 - **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
 - **El Nino Prediction Based on Weather Forecast and Geographical Time-series Data** (2026) - [Global Models](global_models.md) - [arXiv:2604.04998v1](https://arxiv.org/abs/2604.04998v1)
 - **MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2603.04461v1](https://arxiv.org/abs/2603.04461v1)
