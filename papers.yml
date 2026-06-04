@@ -3326,3 +3326,132 @@
   - cs.LG
   - cs.AI
   github: https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting
+- category: Nowcasting
+  title: 'Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for
+    Precipitation Nowcasting'
+  authors: Yunlong Zhou, Chen Zhao, Danyang Peng, Fanfan Ji, Xiao-Tong Yuan
+  year: 2026
+  arxiv: 2606.02661v1
+  abstract: 'Accurate precipitation nowcasting is vital for disaster mitigation, but
+    deep learning methods face a key trade-off: regression models produce over-smoothed,
+    spectrally decaying predictions that blur convective details and violate turbulence
+    power laws; diffusion models generate realistic yet unanchored hallucinations
+    lacking physical grounding. We propose Spectral-Decoupled Iterative Refinement
+    (SDIR), a deterministic framework that reformulates nowcasting as progressive
+    frequency-decoupled refinement. SDIR first extracts a stable low-frequency synoptic
+    skeleton, then iteratively refines high-frequency textures under physical constraints,
+    eliminating both blurring and hallucinations. It features a dual-path design:
+    the Synoptic Frequency-Guided Former (SFG-Former) with Scale-Adaptive Transformers
+    for global structure, and the Fourier Residual Refiner (FR-Refiner) with Scale-Conditioned
+    Fourier Neural Operators for fine residuals. A Physically Consistent Power Spectral
+    Density (PCPSD) loss with dynamic masking enforces a turbulence-consistent spectral
+    distribution. Experiments on three benchmarks show SDIR significantly outperforms
+    SOTA methods in spatial accuracy while achieving spectral fidelity competitive
+    with diffusion-based methods, enabling reliable high-resolution operational nowcasting.
+    Code link: https://github.com/RuntimeWarning/SDIR.'
+  tags:
+  - transformer
+  - diffusion
+  - operator-learning
+  - eess.IV
+  - cs.AI
+  - cs.LG
+  arxiv_categories:
+  - eess.IV
+  - cs.AI
+  - cs.LG
+  github: https://github.com/RuntimeWarning/SDIR
+- category: Nowcasting
+  title: Probabilistic Precipitation Nowcasting with Rectified Flow Transformers
+  authors: Johannes Schusterbauer, Jannik Wiese, Nick Stracke, Timy Phan, Björn Ommer
+  year: 2026
+  arxiv: 2605.31204v1
+  abstract: 'Accurate weather forecasts are essential across various domains and are
+    safety-critical in extreme weather conditions. Compared to simulation-based forecasting,
+    data-driven approaches show greater efficiency, enabling short-term, high-resolution
+    nowcasting. In particular, diffusion models proved effective in weather nowcasting
+    due to their strong probabilistic foundation. However, existing methods rely on
+    deterministic compression to reduce the complexity of high-dimensional weather
+    data, limiting their ability to capture uncertainty in the decoding process. In
+    this work, we introduce $\textbf{FREUD}$, a $\textbf{Fr}$ame-wise $\textbf{E}$ncoder
+    and $\textbf{U}$nited $\textbf{D}$ecoder model based on rectified flow transformers
+    for efficient compression of spatio-temporal weather data. Frame-wise encoding
+    enables continuous forecast updates, while the unified video decoder ensures temporal
+    consistency. Our uncertainty-preserving first stage allows us to capture aleatoric
+    uncertainty via ensembling, which is particularly beneficial for extreme weather
+    events with high decoding variability. We achieve state-of-the-art performance
+    in precipitation nowcasting with a compact latent-space rectified flow transformer
+    on the SEVIR benchmark and show further performance gains by model and test-time
+    scaling. Code available here: https://github.com/CompVis/weather-rf'
+  tags:
+  - transformer
+  - diffusion
+  - probabilistic
+  - cs.CV
+  arxiv_categories:
+  - cs.CV
+  github: https://github.com/CompVis/weather-rf
+- category: Extreme Weather
+  title: Forecasting threshold exceedance of atmospheric variables at a specific location
+  authors: Roberta Baggio, Jean-François Muzy
+  year: 2026
+  arxiv: 2605.31079v1
+  abstract: 'This study compares two methodological approaches for predicting, at
+    a given site, threshold exceedances of atmospheric variables such as temperature
+    and wind speed: (i) direct probabilistic methods, which treat exceedance as a
+    binary classification problem, and (ii) full distribution probabilistic methods,
+    which model the complete conditional probability law of the target variable. Using
+    theoretical analysis and numerical simulations on a toy model, alongside real-world
+    data from the MeteoNet dataset (2016--2018) for southeastern France, we demonstrate
+    that the full distribution approach consistently outperforms the direct method
+    for rare, extreme events. This advantage arises because the full distribution
+    approach effectively learns the parameters of the conditional distribution from
+    moderate and mild intensity events, thereby achieving better calibration and discrimination
+    in the tails. We find that the specific parametric shape of the chosen distribution
+    plays a secondary role compared to accurately capturing predictable shifts in
+    its bulk properties (i.e., mean and variance). This empirical indistinguishability
+    is also informative about the physical mechanics driving atmospheric extremes,
+    suggesting that extreme exceedances are primarily driven by significant conditional
+    displacements of the entire distribution rather than by unpredictable, fat-tailed
+    anomalies within a static climatology. Our results are validated for both strong
+    surface wind speeds and intense hourly rainfall, with performance evaluated using
+    proper scoring rules (Brier score, logarithmic score) and deterministic skill
+    scores (Peirce Skill Score, CSI, HSS). These findings highlight the critical importance
+    of modeling the full probability distribution for rare-event forecasting and provide
+    practical guidance for improving extreme weather prediction in operational meteorology.'
+  tags:
+  - probabilistic
+  - physics.ao-ph
+  - physics.data-an
+  - stat.ML
+  arxiv_categories:
+  - physics.ao-ph
+  - physics.data-an
+  - stat.ML
+- category: Nowcasting
+  title: 'Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression'
+  authors: Gijs van Nieuwkoop, Siamak Mehrkanoon
+  year: 2026
+  arxiv: 2605.30122v2
+  abstract: Deep-learning precipitation nowcasting models are often optimized using
+    pointwise losses such as mean squared error or mean absolute error, which can
+    lead to overly smooth forecasts and poor representation of heavy rainfall. This
+    study investigates whether the predictive performance of an established deterministic
+    nowcasting architecture can be improved by reformulating training as a multi-quantile
+    regression problem. Using SmaAt-UNet as a core model, we compare MSE, MAE, and
+    multi-quantile pinball-loss training on radar precipitation nowcasting over the
+    Netherlands. The results show that multi-quantile training improves the central
+    deterministic forecast, decreasing test-set MSE by 8.6\% compared to a model trained
+    using MSE, while also producing upper-quantile outputs that are useful for risk-sensitive
+    prediction of heavy precipitation. These findings suggest that quantile regression
+    provides a simple alternative to standard pointwise losses without requiring a
+    new architecture or generative sampling procedure. The implementation of our models
+    and training setup is available on \href{https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting}{GitHub}.
+  tags:
+  - CNN
+  - cs.LG
+  - cs.AI
+  arxiv_categories:
+  - cs.LG
+  - cs.AI
+  github: https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting

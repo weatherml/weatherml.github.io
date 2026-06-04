@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (127 papers)
+## Paper Collection (131 papers)
 
 ### Global Models (23)
 
@@ -58,8 +58,11 @@ uv run python build_pages.py
 - **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-### Nowcasting (20)
+### Nowcasting (23)
 
+- **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
+- **Probabilistic Precipitation Nowcasting with Rectified Flow Transformers** (2026) - [arXiv:2605.31204v1](https://arxiv.org/abs/2605.31204v1)
+- **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [arXiv:2605.30122v2](https://arxiv.org/abs/2605.30122v2)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [arXiv:2605.30122v1](https://arxiv.org/abs/2605.30122v1)
 - **MambaRain: Multi-Scale Mamba-Attention Framework for 0-3 Hour Precipitation Nowcasting** (2026) - [arXiv:2605.14606v1](https://arxiv.org/abs/2605.14606v1)
 - **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
@@ -167,8 +170,9 @@ uv run python build_pages.py
 - **Do machine learning climate models work in changing climate dynamics?** (2025) - [arXiv:2509.12147v1](https://arxiv.org/abs/2509.12147v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 
-### Extreme Weather (1)
+### Extreme Weather (2)
 
+- **Forecasting threshold exceedance of atmospheric variables at a specific location** (2026) - [arXiv:2605.31079v1](https://arxiv.org/abs/2605.31079v1)
 - **FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration** (2025) - [arXiv:2509.14775v1](https://arxiv.org/abs/2509.14775v1)
 
 ### Other (9)
