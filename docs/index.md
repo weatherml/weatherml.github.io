@@ -6,7 +6,7 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-06-04*
+*Last updated: 2026-06-08*
 
 ## Recent Additions
 
