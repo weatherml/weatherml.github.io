@@ -261,9 +261,33 @@ hide:
 
 </div>
 
-## Nowcasting (23)
+## Nowcasting (25)
 
 <div class="grid cards" markdown>
+
+-   #### Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall
+
+    ---
+
+    *Gijs van Nieuwkoop, Siamak Mehrkanoon* · 2026
+
+    <span class="abstract-snippet" id="snip-2606.09959">Precipitation nowcasting is increasingly being approached with deep learning models that learn directly from recent radar observations. Although such models can efficiently capture short-term...</span><span class="abstract-full" id="full-2606.09959" hidden>Precipitation nowcasting is increasingly being approached with deep learning models that learn directly from recent radar observations. Although such models can efficiently capture short-term precipitation motion, they often lack broader contextual information about the meteorological conditions under which rainfall develops. This paper investigates whether lightweight temporal context can improve radar-based nowcasting, particularly for high-intensity rainfall. We propose the Time-Aware Small-Attention U-Net (TA-SmaAt-UNet), which extends the core SmaAt-UNet model with temporal conditioning layers that use cyclical encodings of time-of-day and time-of-year to modulate intermediate feature representations. Experiments on KNMI radar precipitation data show that temporal conditioning is most beneficial for rare, high-intensity precipitation events, while also improving the representation of seasonal variability and predicted rainfall-intensity distributions. A layer conductance analysis further indicates that the added temporal conditioning layers are actively used by the model despite their small parameter cost. These findings suggest that simple, physically motivated temporal context can improve the realism and reliability of deep learning-based precipitation nowcasts. The implementation of our models and training setup is available on \href{https://github.com/gijsvn/TA-SmaAt-UNet}{GitHub}.</span> <span class="abstract-toggle" data-id="2606.09959">more</span>
+
+    [:material-file-document: 2606.09959](https://arxiv.org/abs/2606.09959v1) · [:fontawesome-brands-github:](https://github.com/gijsvn/TA-SmaAt-UNet) · [:material-content-copy: BibTeX](bibtex/2606.09959.bib){ .bibtex-link }
+
+    <span class="md-tag">CNN</span>
+
+-   #### Learning to Solve Generative ODEs Beyond the Linear Span
+
+    ---
+
+    *Sihyeon Kim, Seunghun Lee, Vikas Singh, Hyunwoo J. Kim* · 2026
+
+    <span class="abstract-snippet" id="snip-2606.08672">Diffusion and flow generative models sample by integrating a learned ODE, but high quality still requires many sequential model evaluations. Solver learning reduces this cost by adapting scalar...</span><span class="abstract-full" id="full-2606.08672" hidden>Diffusion and flow generative models sample by integrating a learned ODE, but high quality still requires many sequential model evaluations. Solver learning reduces this cost by adapting scalar coefficients, timesteps, or both, while keeping the backbone model fixed. In this work, we identify a structural bottleneck in this update family: each step remains span-limited. Since the scalar-coefficient update lies in the span of buffered velocity evaluations, it can fit only the in-span component while leaving any out-of-span residual unreachable by scalar recombination alone. We propose SpanLift, a lightweight neural solver that augments scalar-coefficient updates with a spatial residual operator. SpanLift keeps a fixed base solver as an in-span prior and learns a spatial residual operator over the state and velocity buffer. The operator is trained by endpoint teacher matching, preserves the pretrained backbone, and adds no model NFEs. Empirically, the learned correction transfers across base solvers and is predominantly out-of-span. Across pixel-space diffusion, latent flow matching, and precipitation nowcasting, SpanLift achieves state-of-the-art few-step sampling. With only 3 NFE, it improves CIFAR-10 FID from 8.16 to 5.69 and ImageNet FID from 17.37 to 11.83.</span> <span class="abstract-toggle" data-id="2606.08672">more</span>
+
+    [:material-file-document: 2606.08672](https://arxiv.org/abs/2606.08672v1) · [:material-content-copy: BibTeX](bibtex/2606.08672.bib){ .bibtex-link }
+
+    <span class="md-tag">diffusion</span>
 
 -   #### Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting
 
@@ -537,9 +561,19 @@ hide:
 
 </div>
 
-## Downscaling (12)
+## Downscaling (13)
 
 <div class="grid cards" markdown>
+
+-   #### Temporal Coverage over Density: Parsimonious Training-Set Design for ML Climate Downscaling
+
+    ---
+
+    *Karandeep Singh, Stefan Rahimi, Chad W. Thackeray, Stephen Cropper, Alex Hall* · 2026
+
+    <span class="abstract-snippet" id="snip-2606.07898">High-resolution regional climate simulations provide critical information for climate impacts assessments but remain computationally expensive, motivating the development of machine-learning...</span><span class="abstract-full" id="full-2606.07898" hidden>High-resolution regional climate simulations provide critical information for climate impacts assessments but remain computationally expensive, motivating the development of machine-learning downscalers and emulators. A key challenge is determining how limited high-resolution simulations should be distributed across a changing climate trajectory to capture both forced climate response and internal variability. Using the CESM2 Large Ensemble over the western United States, we compare three training-year selection strategies under fixed data budgets: a contiguous block of historical years, years drawn from both the beginning and end of the simulation period, and years distributed throughout the full climate trajectory. Including both historical and future years consistently outperforms training on historical years alone, demonstrating the importance of exposing downscaling models to climate states outside the historical record and highlighting limitations of stationarity assumptions common in statistical downscaling. Training on years distributed throughout the full climate trajectory performs best overall, indicating that broad sampling of internal variability provides additional information beyond exposure to the forced climate response alone. Models trained on temporally distributed subsets more successfully reproduce variability in unseen ensemble members while retaining strong performance across a wide range of climate diagnostics. Even when trained on only one-tenth of the available high-resolution years, temporally distributed models remain highly competitive with full-data training. These results suggest that, under fixed computational budgets, broad sampling of climate states is more valuable than temporal continuity when allocating scarce high-resolution simulations. The findings provide practical guidance for regional climate downscaling and large-ensemble projection workflows.</span> <span class="abstract-toggle" data-id="2606.07898">more</span>
+
+    [:material-file-document: 2606.07898](https://arxiv.org/abs/2606.07898v1) · [:material-content-copy: BibTeX](bibtex/2606.07898.bib){ .bibtex-link }
 
 -   #### Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies
 

@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (131 papers)
+## Paper Collection (134 papers)
 
 ### Global Models (23)
 
@@ -58,8 +58,10 @@ uv run python build_pages.py
 - **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-### Nowcasting (23)
+### Nowcasting (25)
 
+- **Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall** (2026) - [arXiv:2606.09959v1](https://arxiv.org/abs/2606.09959v1)
+- **Learning to Solve Generative ODEs Beyond the Linear Span** (2026) - [arXiv:2606.08672v1](https://arxiv.org/abs/2606.08672v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
 - **Probabilistic Precipitation Nowcasting with Rectified Flow Transformers** (2026) - [arXiv:2605.31204v1](https://arxiv.org/abs/2605.31204v1)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [arXiv:2605.30122v2](https://arxiv.org/abs/2605.30122v2)
@@ -84,8 +86,9 @@ uv run python build_pages.py
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 - **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
-### Downscaling (12)
+### Downscaling (13)
 
+- **Temporal Coverage over Density: Parsimonious Training-Set Design for ML Climate Downscaling** (2026) - [arXiv:2606.07898v1](https://arxiv.org/abs/2606.07898v1)
 - **Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies** (2026) - [arXiv:2605.11531v1](https://arxiv.org/abs/2605.11531v1)
 - **Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting** (2026) - [arXiv:2604.07928v1](https://arxiv.org/abs/2604.07928v1)
 - **30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling** (2026) - [arXiv:2603.29478v1](https://arxiv.org/abs/2603.29478v1)

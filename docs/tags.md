@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (13)
+## CNN (14)
 
+- **Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.09959v1](https://arxiv.org/abs/2606.09959v1)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.30122v2](https://arxiv.org/abs/2605.30122v2)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.30122v1](https://arxiv.org/abs/2605.30122v1)
 - **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
@@ -28,8 +29,9 @@ title: Tags
 
 - **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [Global Models](global_models.md) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
 
-## diffusion (22)
+## diffusion (23)
 
+- **Learning to Solve Generative ODEs Beyond the Linear Span** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.08672v1](https://arxiv.org/abs/2606.08672v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
 - **Probabilistic Precipitation Nowcasting with Rectified Flow Transformers** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.31204v1](https://arxiv.org/abs/2605.31204v1)
 - **VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14597v1](https://arxiv.org/abs/2605.14597v1)
