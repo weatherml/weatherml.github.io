@@ -3551,3 +3551,62 @@
   arxiv_categories:
   - cs.LG
   - cs.CE
+- category: Nowcasting
+  title: Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting
+    with Graph Neural Networks
+  authors: Ophélia Miralles, Máté Mile, Christoffer Artturi, Thomas Nipen, Ivar Seierstad
+  year: 2026
+  arxiv: 2606.18436v2
+  abstract: Sparse point observations are increasingly available for precipitation
+    nowcasting, but it is unclear how much they improve dense radar-field forecasts.
+    We partially address this question with a multimodal graph neural network nowcasting
+    system over the Nordic radar domain. The model predicts rain rate every five minutes
+    up to two hours ahead and is trained with different combinations of radar history,
+    MEPS numerical weather prediction, Netatmo surface observations, MSG satellite
+    channels, stochastic noise, and CRPS-based ensemble losses. The study is designed
+    as an ablation of operationally relevant information sources and training objectives.
+    We compare radar-only, NWP-informed, station-informed, satellite-informed, noise-augmented,
+    and CRPS-based configurations using complementary diagnostics on the radar grid,
+    at station locations, for rain onset, and through oracle, displacement, and amplitude
+    scores. The results show that each source improves a different part of the forecast
+    problem. MEPS stabilises radar-only extrapolation, Netatmo observations improve
+    local station and onset diagnostics, and satellite predictors reduce some station-level
+    biases but may activate rain too early when used deterministically. CRPS-based
+    configurations provide the most consistent radar-grid gains, while the combined
+    satellite and CRPS setup gives the best overall oracle/DAS score. These results
+    do not support the conclusion that point observations are uninformative for nowcasting,
+    but they show that local observational skill and spatially coherent radar-field
+    skill are distinct targets. The practical implication is that sparse observations
+    can provide useful local constraints, but their benefit for radar-like fields
+    depends on the training loss, uncertainty representation, and how observation
+    support is encoded in the model.
+  tags:
+  - GNN
+  - stat.ML
+  - cs.LG
+  arxiv_categories:
+  - stat.ML
+  - cs.LG
+- category: Nowcasting
+  title: 'When the Past Matters: FlashBack Memory for Precipitation Nowcasting'
+  authors: Yuhao Du, Boxiao Huang, Chengrong Wu, Jiankai Zhang
+  year: 2026
+  arxiv: 2606.16342v1
+  abstract: Accurate precipitation nowcasting is crucial for disaster mitigation and
+    socio-economic planning, yet existing methods often struggle with false alarms,
+    missed events, and long range dependency modeling at high spatiotemporal resolution.
+    To address these challenges, we propose FlashBack Memory (FB), a module that dynamically
+    retrieves key historical states and integrates them via an adaptive fusion gate,
+    enhancing the spatiotemporal representation capability of recurrent-based models.
+    We incorporate FB into PredRNN, PredRNNpp, MIM, MotionRNN, and PredRNN-V2, and
+    evaluate on CIKM2017, Shanghai2020, and SEVIR datasets. Experimental results demonstrate
+    that FB significantly improves MSE, MAE, SSIM, and CSI metrics, particularly for
+    high-intensity rainfall and long-sequence predictions, while reducing false alarms
+    and missed events and enhancing temporal consistency and spatial localization.
+    The proposed method provides a general and efficient memory enhancement mechanism,
+    improving the overall performance of recurrent-based precipitation nowcasting
+    models.
+  tags:
+  - cs.CV
+  arxiv_categories:
+  - cs.CV

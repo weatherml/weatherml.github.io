@@ -261,9 +261,31 @@ hide:
 
 </div>
 
-## Nowcasting (25)
+## Nowcasting (27)
 
 <div class="grid cards" markdown>
+
+-   #### Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural Networks
+
+    ---
+
+    *Ophélia Miralles, Máté Mile, Christoffer Artturi, Thomas Nipen, Ivar Seierstad* · 2026
+
+    <span class="abstract-snippet" id="snip-2606.18436">Sparse point observations are increasingly available for precipitation nowcasting, but it is unclear how much they improve dense radar-field forecasts. We partially address this question with a...</span><span class="abstract-full" id="full-2606.18436" hidden>Sparse point observations are increasingly available for precipitation nowcasting, but it is unclear how much they improve dense radar-field forecasts. We partially address this question with a multimodal graph neural network nowcasting system over the Nordic radar domain. The model predicts rain rate every five minutes up to two hours ahead and is trained with different combinations of radar history, MEPS numerical weather prediction, Netatmo surface observations, MSG satellite channels, stochastic noise, and CRPS-based ensemble losses. The study is designed as an ablation of operationally relevant information sources and training objectives. We compare radar-only, NWP-informed, station-informed, satellite-informed, noise-augmented, and CRPS-based configurations using complementary diagnostics on the radar grid, at station locations, for rain onset, and through oracle, displacement, and amplitude scores. The results show that each source improves a different part of the forecast problem. MEPS stabilises radar-only extrapolation, Netatmo observations improve local station and onset diagnostics, and satellite predictors reduce some station-level biases but may activate rain too early when used deterministically. CRPS-based configurations provide the most consistent radar-grid gains, while the combined satellite and CRPS setup gives the best overall oracle/DAS score. These results do not support the conclusion that point observations are uninformative for nowcasting, but they show that local observational skill and spatially coherent radar-field skill are distinct targets. The practical implication is that sparse observations can provide useful local constraints, but their benefit for radar-like fields depends on the training loss, uncertainty representation, and how observation support is encoded in the model.</span> <span class="abstract-toggle" data-id="2606.18436">more</span>
+
+    [:material-file-document: 2606.18436](https://arxiv.org/abs/2606.18436v2) · [:material-content-copy: BibTeX](bibtex/2606.18436.bib){ .bibtex-link }
+
+    <span class="md-tag">GNN</span>
+
+-   #### When the Past Matters: FlashBack Memory for Precipitation Nowcasting
+
+    ---
+
+    *Yuhao Du, Boxiao Huang, Chengrong Wu, Jiankai Zhang* · 2026
+
+    <span class="abstract-snippet" id="snip-2606.16342">Accurate precipitation nowcasting is crucial for disaster mitigation and socio-economic planning, yet existing methods often struggle with false alarms, missed events, and long range dependency...</span><span class="abstract-full" id="full-2606.16342" hidden>Accurate precipitation nowcasting is crucial for disaster mitigation and socio-economic planning, yet existing methods often struggle with false alarms, missed events, and long range dependency modeling at high spatiotemporal resolution. To address these challenges, we propose FlashBack Memory (FB), a module that dynamically retrieves key historical states and integrates them via an adaptive fusion gate, enhancing the spatiotemporal representation capability of recurrent-based models. We incorporate FB into PredRNN, PredRNNpp, MIM, MotionRNN, and PredRNN-V2, and evaluate on CIKM2017, Shanghai2020, and SEVIR datasets. Experimental results demonstrate that FB significantly improves MSE, MAE, SSIM, and CSI metrics, particularly for high-intensity rainfall and long-sequence predictions, while reducing false alarms and missed events and enhancing temporal consistency and spatial localization. The proposed method provides a general and efficient memory enhancement mechanism, improving the overall performance of recurrent-based precipitation nowcasting models.</span> <span class="abstract-toggle" data-id="2606.16342">more</span>
+
+    [:material-file-document: 2606.16342](https://arxiv.org/abs/2606.16342v1) · [:material-content-copy: BibTeX](bibtex/2606.16342.bib){ .bibtex-link }
 
 -   #### Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall
 

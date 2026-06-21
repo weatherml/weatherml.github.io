@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (134 papers)
+## Paper Collection (136 papers)
 
 ### Global Models (23)
 
@@ -58,8 +58,10 @@ uv run python build_pages.py
 - **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-### Nowcasting (25)
+### Nowcasting (27)
 
+- **Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural Networks** (2026) - [arXiv:2606.18436v2](https://arxiv.org/abs/2606.18436v2)
+- **When the Past Matters: FlashBack Memory for Precipitation Nowcasting** (2026) - [arXiv:2606.16342v1](https://arxiv.org/abs/2606.16342v1)
 - **Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall** (2026) - [arXiv:2606.09959v1](https://arxiv.org/abs/2606.09959v1)
 - **Learning to Solve Generative ODEs Beyond the Linear Span** (2026) - [arXiv:2606.08672v1](https://arxiv.org/abs/2606.08672v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)

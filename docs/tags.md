@@ -25,8 +25,9 @@ title: Tags
 
 - **An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2512.13987v1](https://arxiv.org/abs/2512.13987v1)
 
-## GNN (1)
+## GNN (2)
 
+- **Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural Networks** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.18436v2](https://arxiv.org/abs/2606.18436v2)
 - **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [Global Models](global_models.md) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
 
 ## diffusion (23)
