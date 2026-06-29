@@ -1,0 +1,964 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://weatherml.github.io/tags/">
+      
+      
+        <link rel="prev" href="../papers/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="zensical-0.0.46">
+    
+    
+      
+        <title>Tags - Deep Learning in Weather</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.19d3147f.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cnn-14" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Deep Learning in Weather" class="md-header__button md-logo" aria-label="Deep Learning in Weather" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.74 5.47c2.36 1.03 3.61 3.56 3.18 5.99A6 6 0 0 1 18 16v.17a3 3 0 0 1 1-.17 3 3 0 0 1 3 3 3 3 0 0 1-3 3H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h.27C5 12.45 4.6 10.24 5.5 8.26a5.49 5.49 0 0 1 7.24-2.79m-.81 1.83c-1.77-.8-3.84.01-4.62 1.77-.46 1.02-.38 2.15.1 3.06A5.99 5.99 0 0 1 12 10c.7 0 1.38.12 2 .34a3.51 3.51 0 0 0-2.07-3.04m1.62-3.66c-.55-.24-1.1-.41-1.67-.52l2.49-1.3.9 2.89a7.7 7.7 0 0 0-1.72-1.07m-7.46.8c-.49.35-.92.75-1.29 1.19l.11-2.81 2.96.68c-.62.21-1.22.53-1.78.94M18 9.71c-.09-.59-.22-1.16-.41-1.71l2.38 1.5-2.05 2.23c.11-.65.13-1.33.08-2.02M3.04 11.3c.07.6.2 1.17.39 1.7l-2.37-1.5L3.1 9.28c-.1.65-.13 1.33-.06 2.02M19 18h-3v-2a4 4 0 0 0-4-4 4 4 0 0 0-4 4H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13a1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Deep Learning in Weather
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tags
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/weatherml/weatherml.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    weatherml/weatherml.github.io
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../papers/" class="md-tabs__link">
+        
+  
+  Papers
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="././" class="md-tabs__link">
+        
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Deep Learning in Weather" class="md-nav__button md-logo" aria-label="Deep Learning in Weather" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.74 5.47c2.36 1.03 3.61 3.56 3.18 5.99A6 6 0 0 1 18 16v.17a3 3 0 0 1 1-.17 3 3 0 0 1 3 3 3 3 0 0 1-3 3H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h.27C5 12.45 4.6 10.24 5.5 8.26a5.49 5.49 0 0 1 7.24-2.79m-.81 1.83c-1.77-.8-3.84.01-4.62 1.77-.46 1.02-.38 2.15.1 3.06A5.99 5.99 0 0 1 12 10c.7 0 1.38.12 2 .34a3.51 3.51 0 0 0-2.07-3.04m1.62-3.66c-.55-.24-1.1-.41-1.67-.52l2.49-1.3.9 2.89a7.7 7.7 0 0 0-1.72-1.07m-7.46.8c-.49.35-.92.75-1.29 1.19l.11-2.81 2.96.68c-.62.21-1.22.53-1.78.94M18 9.71c-.09-.59-.22-1.16-.41-1.71l2.38 1.5-2.05 2.23c.11-.65.13-1.33.08-2.02M3.04 11.3c.07.6.2 1.17.39 1.7l-2.37-1.5L3.1 9.28c-.1.65-.13 1.33-.06 2.02M19 18h-3v-2a4 4 0 0 0-4-4 4 4 0 0 0-4 4H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13a1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+
+    </a>
+    Deep Learning in Weather
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/weatherml/weatherml.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    weatherml/weatherml.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Papers
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tags
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tags
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cnn-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        CNN (14)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gan-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        GAN (1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnn-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        GNN (2)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diffusion-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        diffusion (23)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundation-model-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        foundation-model (3)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-learning-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        operator-learning (4)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physics-informed-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        physics-informed (12)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilistic-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        probabilistic (28)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recurrent-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        recurrent (4)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinforcement-learning-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        reinforcement-learning (1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformer-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        transformer (20)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variational-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        variational (5)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cnn-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        CNN (14)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gan-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        GAN (1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnn-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        GNN (2)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diffusion-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        diffusion (23)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundation-model-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        foundation-model (3)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-learning-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        operator-learning (4)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physics-informed-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        physics-informed (12)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilistic-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        probabilistic (28)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recurrent-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        recurrent (4)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinforcement-learning-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        reinforcement-learning (1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformer-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        transformer (20)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variational-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        variational (5)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+  <h1 id="__skip">Tags</h1>
+
+<h2 id="cnn-14">CNN (14)<a class="headerlink" href="#cnn-14" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2606.09959v1">arXiv:2606.09959v1</a></li>
+<li><strong>Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.30122v2">arXiv:2605.30122v2</a></li>
+<li><strong>Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.30122v1">arXiv:2605.30122v1</a></li>
+<li><strong>VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.14597v1">arXiv:2605.14597v1</a></li>
+<li><strong>El Nino Prediction Based on Weather Forecast and Geographical Time-series Data</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2604.04998v1">arXiv:2604.04998v1</a></li>
+<li><strong>MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2603.04461v1">arXiv:2603.04461v1</a></li>
+<li><strong>Time-aware UNet and super-resolution deep residual networks for spatial downscaling</strong> (2025) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2512.13753v1">arXiv:2512.13753v1</a></li>
+<li><strong>Weather Maps as Tokens: Transformers for Renewable Energy Forecasting</strong> (2025) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2511.13935v2">arXiv:2511.13935v2</a></li>
+<li><strong>A Probabilistic U-Net Approach to Downscaling Climate Simulations</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2511.03197v1">arXiv:2511.03197v1</a></li>
+<li><strong>A PDE-Informed Latent Diffusion Model for 2-m Temperature Downscaling</strong> (2025) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2510.23866v1">arXiv:2510.23866v1</a></li>
+<li><strong>RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2510.14962v1">arXiv:2510.14962v1</a></li>
+<li><strong>Road Surface Condition Detection with Machine Learning using New York State Department of Transportation Camera Images and Weather Forecast Data</strong> (2025) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2510.06440v1">arXiv:2510.06440v1</a></li>
+<li><strong>Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2509.08802v1">arXiv:2509.08802v1</a></li>
+<li><strong>MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling</strong> (2024) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2408.10854v1">arXiv:2408.10854v1</a></li>
+</ul>
+<h2 id="gan-1">GAN (1)<a class="headerlink" href="#gan-1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2512.13987v1">arXiv:2512.13987v1</a></li>
+</ul>
+<h2 id="gnn-2">GNN (2)<a class="headerlink" href="#gnn-2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural Networks</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2606.18436v2">arXiv:2606.18436v2</a></li>
+<li><strong>Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting</strong> (2025) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2509.20911v1">arXiv:2509.20911v1</a></li>
+</ul>
+<h2 id="diffusion-23">diffusion (23)<a class="headerlink" href="#diffusion-23" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Learning to Solve Generative ODEs Beyond the Linear Span</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2606.08672v1">arXiv:2606.08672v1</a></li>
+<li><strong>Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2606.02661v1">arXiv:2606.02661v1</a></li>
+<li><strong>Probabilistic Precipitation Nowcasting with Rectified Flow Transformers</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.31204v1">arXiv:2605.31204v1</a></li>
+<li><strong>VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.14597v1">arXiv:2605.14597v1</a></li>
+<li><strong>PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.10046v1">arXiv:2605.10046v1</a></li>
+<li><strong>Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2604.00897v1">arXiv:2604.00897v1</a></li>
+<li><strong>Self-Organizing Score-based Data Assimilation</strong> (2026) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2603.28048v2">arXiv:2603.28048v2</a></li>
+<li><strong>Universal Diffusion-Based Probabilistic Downscaling</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2602.11893v1">arXiv:2602.11893v1</a></li>
+<li><strong>PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts</strong> (2026) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2602.11807v1">arXiv:2602.11807v1</a></li>
+<li><strong>Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2601.18111v1">arXiv:2601.18111v1</a></li>
+<li><strong>STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2512.21118v1">arXiv:2512.21118v1</a></li>
+<li><strong>An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2512.13987v1">arXiv:2512.13987v1</a></li>
+<li><strong>Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2511.14218v1">arXiv:2511.14218v1</a></li>
+<li><strong>FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2511.09731v1">arXiv:2511.09731v1</a></li>
+<li><strong>A PDE-Informed Latent Diffusion Model for 2-m Temperature Downscaling</strong> (2025) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2510.23866v1">arXiv:2510.23866v1</a></li>
+<li><strong>LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation</strong> (2025) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2510.22562v1">arXiv:2510.22562v1</a></li>
+<li><strong>OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2510.18707v1">arXiv:2510.18707v1</a></li>
+<li><strong>RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2510.14962v1">arXiv:2510.14962v1</a></li>
+<li><strong>Km-scale dynamical downscaling through conformalized latent diffusion models</strong> (2025) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2510.13301v1">arXiv:2510.13301v1</a></li>
+<li><strong>Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2509.25631v1">arXiv:2509.25631v1</a></li>
+<li><strong>Training-Free Data Assimilation with GenCast</strong> (2025) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2509.18811v1">arXiv:2509.18811v1</a></li>
+<li><strong>FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration</strong> (2025) - <a href="../extreme_weather/">Extreme Weather</a> - <a href="https://arxiv.org/abs/2509.14775v1">arXiv:2509.14775v1</a></li>
+<li><strong>Data-Efficient Ensemble Weather Forecasting with Diffusion Models</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2509.11047v1">arXiv:2509.11047v1</a></li>
+</ul>
+<h2 id="foundation-model-3">foundation-model (3)<a class="headerlink" href="#foundation-model-3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts</strong> (2026) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2602.11807v1">arXiv:2602.11807v1</a></li>
+<li><strong>The promising potential of vision language models for the generation of textual weather forecasts</strong> (2025) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2512.03623v1">arXiv:2512.03623v1</a></li>
+<li><strong>Training-Free Data Assimilation with GenCast</strong> (2025) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2509.18811v1">arXiv:2509.18811v1</a></li>
+</ul>
+<h2 id="operator-learning-4">operator-learning (4)<a class="headerlink" href="#operator-learning-4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2606.02661v1">arXiv:2606.02661v1</a></li>
+<li><strong>PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2512.01062v1">arXiv:2512.01062v1</a></li>
+<li><strong>Nowcast3D: Reliable precipitation nowcasting via gray-box learning</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2511.04659v1">arXiv:2511.04659v1</a></li>
+<li><strong>FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators</strong> (2022) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2202.11214v1">arXiv:2202.11214v1</a></li>
+</ul>
+<h2 id="physics-informed-12">physics-informed (12)<a class="headerlink" href="#physics-informed-12" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies</strong> (2026) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2605.11531v1">arXiv:2605.11531v1</a></li>
+<li><strong>MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural Network for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2603.04461v1">arXiv:2603.04461v1</a></li>
+<li><strong>Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon</strong> (2026) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2602.03767v1">arXiv:2602.03767v1</a></li>
+<li><strong>Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2601.09467v1">arXiv:2601.09467v1</a></li>
+<li><strong>Quantum Machine Learning for Climate Modelling</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2512.14208v1">arXiv:2512.14208v1</a></li>
+<li><strong>Data assimilation and discrepancy modeling with shallow recurrent decoders</strong> (2025) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2512.01170v1">arXiv:2512.01170v1</a></li>
+<li><strong>PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2512.01062v1">arXiv:2512.01062v1</a></li>
+<li><strong>Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2511.14218v1">arXiv:2511.14218v1</a></li>
+<li><strong>OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2510.18707v1">arXiv:2510.18707v1</a></li>
+<li><strong>Beyond the Training Data: Confidence-Guided Mixing of Parameterizations in a Hybrid AI-Climate Model</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2510.08107v1">arXiv:2510.08107v1</a></li>
+<li><strong>Incorporating Multivariate Consistency in ML-Based Weather Forecasting with Latent-space Constraints</strong> (2025) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2510.04006v1">arXiv:2510.04006v1</a></li>
+<li><strong>Skilful Precipitation Nowcasting Using NowcastNet</strong> (2023) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2311.17961v2">arXiv:2311.17961v2</a></li>
+</ul>
+<h2 id="probabilistic-28">probabilistic (28)<a class="headerlink" href="#probabilistic-28" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Probabilistic Precipitation Nowcasting with Rectified Flow Transformers</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.31204v1">arXiv:2605.31204v1</a></li>
+<li><strong>Forecasting threshold exceedance of atmospheric variables at a specific location</strong> (2026) - <a href="../extreme_weather/">Extreme Weather</a> - <a href="https://arxiv.org/abs/2605.31079v1">arXiv:2605.31079v1</a></li>
+<li><strong>VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.14597v1">arXiv:2605.14597v1</a></li>
+<li><strong>PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.10046v1">arXiv:2605.10046v1</a></li>
+<li><strong>Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2604.00897v1">arXiv:2604.00897v1</a></li>
+<li><strong>Accurate and Efficient Hybrid-Ensemble Atmospheric Data Assimilation in Latent Space with Uncertainty Quantification</strong> (2026) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2603.04395v1">arXiv:2603.04395v1</a></li>
+<li><strong>Climate Downscaling with Stochastic Interpolants (CDSI)</strong> (2026) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2603.03838v1">arXiv:2603.03838v1</a></li>
+<li><strong>Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation</strong> (2026) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2602.23188v1">arXiv:2602.23188v1</a></li>
+<li><strong>LEVDA: Latent Ensemble Variational Data Assimilation via Differentiable Dynamics</strong> (2026) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2602.19406v1">arXiv:2602.19406v1</a></li>
+<li><strong>Distillation and Interpretability of Ensemble Forecasts of ENSO Phase using Entropic Learning</strong> (2026) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2602.16857v1">arXiv:2602.16857v1</a></li>
+<li><strong>Universal Diffusion-Based Probabilistic Downscaling</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2602.11893v1">arXiv:2602.11893v1</a></li>
+<li><strong>Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon</strong> (2026) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2602.03767v1">arXiv:2602.03767v1</a></li>
+<li><strong>Downscaling land surface temperature data using edge detection and block-diagonal Gaussian process regression</strong> (2026) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2602.02813v1">arXiv:2602.02813v1</a></li>
+<li><strong>StormDiT: A generative AI model bridges the 2-6 hour 'gray zone' in precipitation nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2601.20342v1">arXiv:2601.20342v1</a></li>
+<li><strong>Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2601.18111v1">arXiv:2601.18111v1</a></li>
+<li><strong>Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2512.20437v1">arXiv:2512.20437v1</a></li>
+<li><strong>Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2511.14218v1">arXiv:2511.14218v1</a></li>
+<li><strong>A Probabilistic U-Net Approach to Downscaling Climate Simulations</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2511.03197v1">arXiv:2511.03197v1</a></li>
+<li><strong>LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation</strong> (2025) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2510.22562v1">arXiv:2510.22562v1</a></li>
+<li><strong>OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2510.18707v1">arXiv:2510.18707v1</a></li>
+<li><strong>Km-scale dynamical downscaling through conformalized latent diffusion models</strong> (2025) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2510.13301v1">arXiv:2510.13301v1</a></li>
+<li><strong>SimCast: Enhancing Precipitation Nowcasting with Short-to-Long Term Knowledge Distillation</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2510.07953v1">arXiv:2510.07953v1</a></li>
+<li><strong>Probability calibration for precipitation nowcasting</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2510.00594v1">arXiv:2510.00594v1</a></li>
+<li><strong>Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2509.25631v1">arXiv:2509.25631v1</a></li>
+<li><strong>Graph-based Neural Space Weather Forecasting</strong> (2025) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2509.19605v1">arXiv:2509.19605v1</a></li>
+<li><strong>GenCast: Diffusion-based ensemble forecasting for medium-range weather</strong> (2023) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2312.15796v2">arXiv:2312.15796v2</a></li>
+<li><strong>FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators</strong> (2022) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2202.11214v1">arXiv:2202.11214v1</a></li>
+<li><strong>MetNet: A Neural Weather Model for Precipitation Forecasting</strong> (2020) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2003.12140v2">arXiv:2003.12140v2</a></li>
+</ul>
+<h2 id="recurrent-4">recurrent (4)<a class="headerlink" href="#recurrent-4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>El Nino Prediction Based on Weather Forecast and Geographical Time-series Data</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2604.04998v1">arXiv:2604.04998v1</a></li>
+<li><strong>Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data Driven Meteorological Prediction</strong> (2026) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2601.07951v1">arXiv:2601.07951v1</a></li>
+<li><strong>Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2511.03770v1">arXiv:2511.03770v1</a></li>
+<li><strong>SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation</strong> (2022) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2205.13158v1">arXiv:2205.13158v1</a></li>
+</ul>
+<h2 id="reinforcement-learning-1">reinforcement-learning (1)<a class="headerlink" href="#reinforcement-learning-1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning</strong> (2026) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2601.04268v1">arXiv:2601.04268v1</a></li>
+</ul>
+<h2 id="transformer-20">transformer (20)<a class="headerlink" href="#transformer-20" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2606.02661v1">arXiv:2606.02661v1</a></li>
+<li><strong>Probabilistic Precipitation Nowcasting with Rectified Flow Transformers</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.31204v1">arXiv:2605.31204v1</a></li>
+<li><strong>MambaRain: Multi-Scale Mamba-Attention Framework for 0-3 Hour Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.14606v1">arXiv:2605.14606v1</a></li>
+<li><strong>Stable Attention Response for Reliable Precipitation Nowcasting</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2605.13181v1">arXiv:2605.13181v1</a></li>
+<li><strong>M3R: Localized Rainfall Nowcasting with Meteorology-Informed MultiModal Attention</strong> (2026) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2604.15377v1">arXiv:2604.15377v1</a></li>
+<li><strong>Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting</strong> (2026) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2604.07928v1">arXiv:2604.07928v1</a></li>
+<li><strong>Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2603.28173v1">arXiv:2603.28173v1</a></li>
+<li><strong>Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation</strong> (2026) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2602.23188v1">arXiv:2602.23188v1</a></li>
+<li><strong>EMFormer: Efficient Multi-Scale Transformer for Accumulative Context Weather Forecasting</strong> (2026) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2602.01194v1">arXiv:2602.01194v1</a></li>
+<li><strong>Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting</strong> (2026) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2601.09467v1">arXiv:2601.09467v1</a></li>
+<li><strong>Observation-driven correction of numerical weather prediction for marine winds</strong> (2025) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2512.03606v1">arXiv:2512.03606v1</a></li>
+<li><strong>EcoCast: A Spatio-Temporal Model for Continual Biodiversity and Climate Risk Forecasting</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2512.02260v1">arXiv:2512.02260v1</a></li>
+<li><strong>Weather Maps as Tokens: Transformers for Renewable Energy Forecasting</strong> (2025) - <a href="../other/">Other</a> - <a href="https://arxiv.org/abs/2511.13935v2">arXiv:2511.13935v2</a></li>
+<li><strong>Deep Learning-Driven Downscaling for Climate Risk Assessment of Projected Temperature Extremes in the Nordic Region</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2511.03770v1">arXiv:2511.03770v1</a></li>
+<li><strong>OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2510.18707v1">arXiv:2510.18707v1</a></li>
+<li><strong>RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2510.14962v1">arXiv:2510.14962v1</a></li>
+<li><strong>MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling</strong> (2024) - <a href="../downscaling/">Downscaling</a> - <a href="https://arxiv.org/abs/2408.10854v1">arXiv:2408.10854v1</a></li>
+<li><strong>Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast</strong> (2022) - <a href="../global_models/">Global Models</a> - <a href="https://arxiv.org/abs/2211.02556v1">arXiv:2211.02556v1</a></li>
+<li><strong>SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation</strong> (2022) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2205.13158v1">arXiv:2205.13158v1</a></li>
+<li><strong>MetNet: A Neural Weather Model for Precipitation Forecasting</strong> (2020) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2003.12140v2">arXiv:2003.12140v2</a></li>
+</ul>
+<h2 id="variational-5">variational (5)<a class="headerlink" href="#variational-5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Efficient Real-Time Adaptation of ROMs for Unsteady Flows Using Data Assimilation</strong> (2026) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2602.23188v1">arXiv:2602.23188v1</a></li>
+<li><strong>STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting</strong> (2025) - <a href="../nowcasting/">Nowcasting</a> - <a href="https://arxiv.org/abs/2512.21118v1">arXiv:2512.21118v1</a></li>
+<li><strong>Bridging the Gap Between Bayesian Deep Learning and Ensemble Weather Forecasts</strong> (2025) - <a href="../ensembles/">Ensembles</a> - <a href="https://arxiv.org/abs/2511.14218v1">arXiv:2511.14218v1</a></li>
+<li><strong>LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation</strong> (2025) - <a href="../data_assimilation/">Data Assimilation</a> - <a href="https://arxiv.org/abs/2510.22562v1">arXiv:2510.22562v1</a></li>
+<li><strong>OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales</strong> (2025) - <a href="../climate_modeling/">Climate Modeling</a> - <a href="https://arxiv.org/abs/2510.18707v1">arXiv:2510.18707v1</a></li>
+</ul>
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","content.tabs.link","navigation.indexes","navigation.top","navigation.tabs","navigation.instant","navigation.instant.prefetch","search.highlight","search.share","search.suggest","toc.follow"],"search":"../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ee611ef6.min.js"></script>
+      
+        <script src="../javascripts/bibtex.js"></script>
+      
+    
+  </body>
+</html>

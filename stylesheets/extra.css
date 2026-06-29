@@ -1,0 +1,63 @@
+.md-nav--secondary > .md-nav__title {
+  display: none;
+}
+
+h1#__skip {
+  display: none;
+}
+
+.md-content__inner {
+  margin-top: -1rem !important;
+  padding-top: 0 !important;
+}
+
+.md-content__inner::before {
+  display: none;
+}
+
+
+.md-tag {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin: 0.1em 0.15em;
+  font-size: 0.65em;
+  font-weight: 400;
+  border-radius: 0.25em;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  letter-spacing: 0.01em;
+}
+
+/* Cards fill equal height in grid rows */
+.grid.cards > ul > li {
+  align-self: stretch;
+}
+
+/* Expanded card spans full row */
+.grid.cards > ul > li.card-expanded {
+  grid-column: 1 / -1;
+}
+
+/* Style h4 inside cards to match the bold title look */
+.grid.cards h4 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Hide permalink on card headings */
+.grid.cards h4 .headerlink {
+  display: none;
+}
+
+.abstract-toggle {
+  font-size: 0.75em;
+  cursor: pointer;
+  color: var(--md-default-fg-color--light);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.abstract-toggle:hover {
+  opacity: 1;
+}
