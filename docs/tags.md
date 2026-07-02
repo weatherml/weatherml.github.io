@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (14)
+## CNN (15)
 
+- **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](downscaling.md) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.09959v1](https://arxiv.org/abs/2606.09959v1)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.30122v2](https://arxiv.org/abs/2605.30122v2)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.30122v1](https://arxiv.org/abs/2605.30122v1)
@@ -21,17 +22,20 @@ title: Tags
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 - **MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling** (2024) - [Downscaling](downscaling.md) - [arXiv:2408.10854v1](https://arxiv.org/abs/2408.10854v1)
 
-## GAN (1)
+## GAN (2)
 
+- **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](downscaling.md) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales** (2025) - [Climate Modeling](climate_modeling.md) - [arXiv:2512.13987v1](https://arxiv.org/abs/2512.13987v1)
 
-## GNN (2)
+## GNN (3)
 
+- **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](downscaling.md) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural Networks** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.18436v2](https://arxiv.org/abs/2606.18436v2)
 - **Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting** (2025) - [Global Models](global_models.md) - [arXiv:2509.20911v1](https://arxiv.org/abs/2509.20911v1)
 
-## diffusion (23)
+## diffusion (24)
 
+- **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](downscaling.md) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Learning to Solve Generative ODEs Beyond the Linear Span** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.08672v1](https://arxiv.org/abs/2606.08672v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
 - **Probabilistic Precipitation Nowcasting with Rectified Flow Transformers** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.31204v1](https://arxiv.org/abs/2605.31204v1)
@@ -126,8 +130,9 @@ title: Tags
 
 - **Making Tunable Parameters State-Dependent in Weather and Climate Models with Reinforcement Learning** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2601.04268v1](https://arxiv.org/abs/2601.04268v1)
 
-## transformer (20)
+## transformer (21)
 
+- **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](downscaling.md) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
 - **Probabilistic Precipitation Nowcasting with Rectified Flow Transformers** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.31204v1](https://arxiv.org/abs/2605.31204v1)
 - **MambaRain: Multi-Scale Mamba-Attention Framework for 0-3 Hour Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.14606v1](https://arxiv.org/abs/2605.14606v1)

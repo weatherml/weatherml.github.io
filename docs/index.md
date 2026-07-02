@@ -6,11 +6,23 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-06-29*
+*Last updated: 2026-07-02*
 
 ## Recent Additions
 
 <div class="grid cards" markdown>
+
+-   #### CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview
+
+    ---
+
+    *Neelesh Rampal, José González-Abad, Henry Addison, Jorge Baño-Medina, Maria Laura Bettolli et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2606.29172">Machine learning (ML) has emerged as a cost-effective approach to complement dynamical downscaling for producing high-resolution regional climate projections. However, the absence of standardised...</span><span class="abstract-full" id="full-2606.29172" hidden>Machine learning (ML) has emerged as a cost-effective approach to complement dynamical downscaling for producing high-resolution regional climate projections. However, the absence of standardised training and evaluation protocols, applied consistently across multiple domains, continues to hinder meaningful model intercomparison. We introduce CORDEX-ML-Bench, a benchmark aligned with CORDEX, which constitutes the first phase of a community initiative to advance data-driven downscaling toward operational readiness, and complement future dynamical downscaling efforts under CMIP7. The framework targets downscaled daily maximum temperature and precipitation to ~10 km resolution (20x increase) across three pilot regions; European Alps, New Zealand, and Southern Africa. Using a perfect-model experimental design, we evaluate 40 ML configurations developed independently, spanning traditional ML, convolutional U-Nets, vision transformers, graph neural networks, and generative models based on diffusion, flow matching, and generative adversarial networks. Models are trained under two experimental periods, an empirical-statistical downscaling pseudo-reality (historical period only) and Emulator (historical and future periods) -and are evaluated against a core set of metrics developed specifically for assessing downscaling skill. Generative models consistently outperform deterministic approaches for precipitation, better capturing fine-scale variability and extremes. For temperature, the generative advantage narrows and deterministic architectures remain competitive. Models trained solely on the historical period systematically underestimate future climate-change signals while those additionally trained on a future period perform better. These findings raise concerns about historically trained models widely used in an operational setting, underscoring the need for rigorous extrapolation testing.</span> <span class="abstract-toggle" data-id="2606.29172">more</span>
+
+    [:material-file-document: 2606.29172](https://arxiv.org/abs/2606.29172v1) · [:material-content-copy: BibTeX](bibtex/2606.29172.bib){ .bibtex-link }
+
+    <span class="md-tag">transformer</span> <span class="md-tag">diffusion</span> <span class="md-tag">GAN</span> <span class="md-tag">CNN</span> <span class="md-tag">GNN</span>
 
 -   #### Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural Networks
 
@@ -113,18 +125,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     <span class="abstract-snippet" id="snip-2605.30122">Deep-learning precipitation nowcasting models are often optimized using pointwise losses such as mean squared error or mean absolute error, which can lead to overly smooth forecasts and poor...</span><span class="abstract-full" id="full-2605.30122" hidden>Deep-learning precipitation nowcasting models are often optimized using pointwise losses such as mean squared error or mean absolute error, which can lead to overly smooth forecasts and poor representation of heavy rainfall. This study investigates whether the predictive performance of an established deterministic nowcasting architecture can be improved by reformulating training as a multi-quantile regression problem. Using SmaAt-UNet as a core model, we compare MSE, MAE, and multi-quantile pinball-loss training on radar precipitation nowcasting over the Netherlands. The results show that multi-quantile training improves the central deterministic forecast, decreasing test-set MSE by 8.6\% compared to a model trained using MSE, while also producing upper-quantile outputs that are useful for risk-sensitive prediction of heavy precipitation. These findings suggest that quantile regression provides a simple alternative to standard pointwise losses without requiring a new architecture or generative sampling procedure. The implementation of our models and training setup is available on \href{https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting}{GitHub}.</span> <span class="abstract-toggle" data-id="2605.30122">more</span>
 
     [:material-file-document: 2605.30122](https://arxiv.org/abs/2605.30122v2) · [:fontawesome-brands-github:](https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting) · [:material-content-copy: BibTeX](bibtex/2605.30122.bib){ .bibtex-link }
-
-    <span class="md-tag">CNN</span>
-
--   #### Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression
-
-    ---
-
-    *Gijs van Nieuwkoop, Siamak Mehrkanoon* · 2026
-
-    <span class="abstract-snippet" id="snip-2605.30122">Deep-learning precipitation nowcasting models are often optimized using pointwise losses such as mean squared error or mean absolute error, which can lead to overly smooth forecasts and poor...</span><span class="abstract-full" id="full-2605.30122" hidden>Deep-learning precipitation nowcasting models are often optimized using pointwise losses such as mean squared error or mean absolute error, which can lead to overly smooth forecasts and poor representation of heavy rainfall. This study investigates whether the predictive performance of an established deterministic nowcasting architecture can be improved by reformulating training as a multi-quantile regression problem. Using SmaAt-UNet as a core model, we compare MSE, MAE, and multi-quantile pinball-loss training on radar precipitation nowcasting over the Netherlands. The results show that multi-quantile training improves the central deterministic forecast, decreasing test-set MSE by 8.6\% compared to a model trained using MSE, while also producing upper-quantile outputs that are useful for risk-sensitive prediction of heavy precipitation. These findings suggest that quantile regression provides a simple alternative to standard pointwise losses without requiring a new architecture or generative sampling procedure. The implementation of our models and training setup is available on \href{https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting}{GitHub}.</span> <span class="abstract-toggle" data-id="2605.30122">more</span>
-
-    [:material-file-document: 2605.30122](https://arxiv.org/abs/2605.30122v1) · [:fontawesome-brands-github:](https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting) · [:material-content-copy: BibTeX](bibtex/2605.30122.bib){ .bibtex-link }
 
     <span class="md-tag">CNN</span>
 
