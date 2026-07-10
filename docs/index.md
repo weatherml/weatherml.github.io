@@ -6,11 +6,33 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-07-05*
+*Last updated: 2026-07-10*
 
 ## Recent Additions
 
 <div class="grid cards" markdown>
+
+-   #### Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift
+
+    ---
+
+    *Shuochen Wang, Nishant Yadav, Auroop R. Ganguly* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.05645">Deep-learning-based climate downscaling aims to learn relationships from historical low-resolution (LR) and high-resolution (HR) climate data to generate HR climate projections. However, this setting...</span><span class="abstract-full" id="full-2607.05645" hidden>Deep-learning-based climate downscaling aims to learn relationships from historical low-resolution (LR) and high-resolution (HR) climate data to generate HR climate projections. However, this setting faces a temporal out-of-distribution (OOD) challenge: models trained on historical data are commonly applied to future projections whose distributions may differ substantially from the training period. This study investigates temporal OOD shift for daily temperature downscaling over the Continental United States using paired LR-HR model simulations. We propose a temporal domain-adaptive downscaling framework that combines supervised HR reconstruction on historical data with domain alignment between historical and future climate distributions. Experiments across future validation periods show that the proposed domain-adaptive model consistently outperforms statistical and deep-learning-based bias-correction methods, with the largest gains occurring when the temporal distribution shift is strongest. Spatial analyses indicate stronger improvements over high-elevation and topographically complex regions, along with higher spatiotemporal correlation with the HR target. The extreme analysis shows that domain adaptation also reduces upper-tail temperature bias relative to the non-adaptive model. These results demonstrate that temporal domain adaptation can improve the robustness of HR climate projections under non-stationary climate conditions.</span> <span class="abstract-toggle" data-id="2607.05645">more</span>
+
+    [:material-file-document: 2607.05645](https://arxiv.org/abs/2607.05645v1) · [:material-content-copy: BibTeX](bibtex/2607.05645.bib){ .bibtex-link }
+
+-   #### Exploring Convolutional Neural Processes for Weather Downscaling
+
+    ---
+
+    *Francisco Passos* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.04190">Global reanalysis products such as ERA5-Land provide spatially complete weather fields but at resolutions too coarse for local applications, particularly in mountainous regions where temperature can...</span><span class="abstract-full" id="full-2607.04190" hidden>Global reanalysis products such as ERA5-Land provide spatially complete weather fields but at resolutions too coarse for local applications, particularly in mountainous regions where temperature can vary by several degrees over short distances. This project investigates Convolutional Conditional Neural Processes (ConvCNPs) for statistical downscaling of daily maximum temperature from the ~11km resolution ERA5-Land grid to ~1km resolution over Switzerland, building upon the architecture of Vaughan et al. (2022) and adapting it to the topographically complex Swiss domain with high-resolution elevation features from the swisstopo DHM25. The best model, trained on ten years of data (2014-2023) with five-fold temporal cross-validation, achieves a mean absolute error of 1.31 Celsius and a CRPS-based skill score of 0.524 relative to bilinear interpolation, reducing the expected prediction error by more than half. An ablation study reveals that the elevation MLP is the indispensable component - without it, the model diverges entirely - while explicit seasonal features and Topographic Position Index provide secondary benefits. Under sparse on-grid input the model degrades gracefully, maintaining positive skill down to approximately 10% of the input grid; however, zero-shot deployment on off-grid station observations does not achieve positive skill at any density tested. All configurations exhibit severely overconfident uncertainty estimates, a structural limitation of the Gaussian likelihood training objective. These results demonstrate that ConvCNPs are a viable and effective approach to climate downscaling in complex terrain, and identify uncertainty calibration and native support for non-gridded input as the key challenges for operational deployment.</span> <span class="abstract-toggle" data-id="2607.04190">more</span>
+
+    [:material-file-document: 2607.04190](https://arxiv.org/abs/2607.04190v1) · [:material-content-copy: BibTeX](bibtex/2607.04190.bib){ .bibtex-link }
+
+    <span class="md-tag">CNN</span>
 
 -   #### CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview
 
@@ -103,30 +125,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2605.31204](https://arxiv.org/abs/2605.31204v1) · [:fontawesome-brands-github:](https://github.com/CompVis/weather-rf) · [:material-content-copy: BibTeX](bibtex/2605.31204.bib){ .bibtex-link }
 
     <span class="md-tag">transformer</span> <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
-
--   #### Forecasting threshold exceedance of atmospheric variables at a specific location
-
-    ---
-
-    *Roberta Baggio, Jean-François Muzy* · 2026
-
-    <span class="abstract-snippet" id="snip-2605.31079">This study compares two methodological approaches for predicting, at a given site, threshold exceedances of atmospheric variables such as temperature and wind speed: (i) direct probabilistic methods,...</span><span class="abstract-full" id="full-2605.31079" hidden>This study compares two methodological approaches for predicting, at a given site, threshold exceedances of atmospheric variables such as temperature and wind speed: (i) direct probabilistic methods, which treat exceedance as a binary classification problem, and (ii) full distribution probabilistic methods, which model the complete conditional probability law of the target variable. Using theoretical analysis and numerical simulations on a toy model, alongside real-world data from the MeteoNet dataset (2016--2018) for southeastern France, we demonstrate that the full distribution approach consistently outperforms the direct method for rare, extreme events. This advantage arises because the full distribution approach effectively learns the parameters of the conditional distribution from moderate and mild intensity events, thereby achieving better calibration and discrimination in the tails. We find that the specific parametric shape of the chosen distribution plays a secondary role compared to accurately capturing predictable shifts in its bulk properties (i.e., mean and variance). This empirical indistinguishability is also informative about the physical mechanics driving atmospheric extremes, suggesting that extreme exceedances are primarily driven by significant conditional displacements of the entire distribution rather than by unpredictable, fat-tailed anomalies within a static climatology. Our results are validated for both strong surface wind speeds and intense hourly rainfall, with performance evaluated using proper scoring rules (Brier score, logarithmic score) and deterministic skill scores (Peirce Skill Score, CSI, HSS). These findings highlight the critical importance of modeling the full probability distribution for rare-event forecasting and provide practical guidance for improving extreme weather prediction in operational meteorology.</span> <span class="abstract-toggle" data-id="2605.31079">more</span>
-
-    [:material-file-document: 2605.31079](https://arxiv.org/abs/2605.31079v1) · [:material-content-copy: BibTeX](bibtex/2605.31079.bib){ .bibtex-link }
-
-    <span class="md-tag">probabilistic</span>
-
--   #### Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression
-
-    ---
-
-    *Gijs van Nieuwkoop, Siamak Mehrkanoon* · 2026
-
-    <span class="abstract-snippet" id="snip-2605.30122">Deep-learning precipitation nowcasting models are often optimized using pointwise losses such as mean squared error or mean absolute error, which can lead to overly smooth forecasts and poor...</span><span class="abstract-full" id="full-2605.30122" hidden>Deep-learning precipitation nowcasting models are often optimized using pointwise losses such as mean squared error or mean absolute error, which can lead to overly smooth forecasts and poor representation of heavy rainfall. This study investigates whether the predictive performance of an established deterministic nowcasting architecture can be improved by reformulating training as a multi-quantile regression problem. Using SmaAt-UNet as a core model, we compare MSE, MAE, and multi-quantile pinball-loss training on radar precipitation nowcasting over the Netherlands. The results show that multi-quantile training improves the central deterministic forecast, decreasing test-set MSE by 8.6\% compared to a model trained using MSE, while also producing upper-quantile outputs that are useful for risk-sensitive prediction of heavy precipitation. These findings suggest that quantile regression provides a simple alternative to standard pointwise losses without requiring a new architecture or generative sampling procedure. The implementation of our models and training setup is available on \href{https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting}{GitHub}.</span> <span class="abstract-toggle" data-id="2605.30122">more</span>
-
-    [:material-file-document: 2605.30122](https://arxiv.org/abs/2605.30122v2) · [:fontawesome-brands-github:](https://github.com/gijsvn/Multi-Quantile-Precipitation-Nowcasting) · [:material-content-copy: BibTeX](bibtex/2605.30122.bib){ .bibtex-link }
-
-    <span class="md-tag">CNN</span>
 
 </div>
 

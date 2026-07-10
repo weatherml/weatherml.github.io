@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (137 papers)
+## Paper Collection (139 papers)
 
 ### Global Models (23)
 
@@ -88,8 +88,10 @@ uv run python build_pages.py
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 - **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
-### Downscaling (14)
+### Downscaling (16)
 
+- **Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift** (2026) - [arXiv:2607.05645v1](https://arxiv.org/abs/2607.05645v1)
+- **Exploring Convolutional Neural Processes for Weather Downscaling** (2026) - [arXiv:2607.04190v1](https://arxiv.org/abs/2607.04190v1)
 - **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Temporal Coverage over Density: Parsimonious Training-Set Design for ML Climate Downscaling** (2026) - [arXiv:2606.07898v1](https://arxiv.org/abs/2606.07898v1)
 - **Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies** (2026) - [arXiv:2605.11531v1](https://arxiv.org/abs/2605.11531v1)

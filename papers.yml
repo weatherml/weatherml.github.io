@@ -3656,3 +3656,64 @@
   - physics.ao-ph
   arxiv_categories:
   - physics.ao-ph
+- category: Downscaling
+  title: Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift
+  authors: Shuochen Wang, Nishant Yadav, Auroop R. Ganguly
+  year: 2026
+  arxiv: 2607.05645v1
+  abstract: 'Deep-learning-based climate downscaling aims to learn relationships from
+    historical low-resolution (LR) and high-resolution (HR) climate data to generate
+    HR climate projections. However, this setting faces a temporal out-of-distribution
+    (OOD) challenge: models trained on historical data are commonly applied to future
+    projections whose distributions may differ substantially from the training period.
+    This study investigates temporal OOD shift for daily temperature downscaling over
+    the Continental United States using paired LR-HR model simulations. We propose
+    a temporal domain-adaptive downscaling framework that combines supervised HR reconstruction
+    on historical data with domain alignment between historical and future climate
+    distributions. Experiments across future validation periods show that the proposed
+    domain-adaptive model consistently outperforms statistical and deep-learning-based
+    bias-correction methods, with the largest gains occurring when the temporal distribution
+    shift is strongest. Spatial analyses indicate stronger improvements over high-elevation
+    and topographically complex regions, along with higher spatiotemporal correlation
+    with the HR target. The extreme analysis shows that domain adaptation also reduces
+    upper-tail temperature bias relative to the non-adaptive model. These results
+    demonstrate that temporal domain adaptation can improve the robustness of HR climate
+    projections under non-stationary climate conditions.'
+  tags:
+  - cs.LG
+  - physics.ao-ph
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+- category: Downscaling
+  title: Exploring Convolutional Neural Processes for Weather Downscaling
+  authors: Francisco Passos
+  year: 2026
+  arxiv: 2607.04190v1
+  abstract: Global reanalysis products such as ERA5-Land provide spatially complete
+    weather fields but at resolutions too coarse for local applications, particularly
+    in mountainous regions where temperature can vary by several degrees over short
+    distances. This project investigates Convolutional Conditional Neural Processes
+    (ConvCNPs) for statistical downscaling of daily maximum temperature from the ~11km
+    resolution ERA5-Land grid to ~1km resolution over Switzerland, building upon the
+    architecture of Vaughan et al. (2022) and adapting it to the topographically complex
+    Swiss domain with high-resolution elevation features from the swisstopo DHM25.
+    The best model, trained on ten years of data (2014-2023) with five-fold temporal
+    cross-validation, achieves a mean absolute error of 1.31 Celsius and a CRPS-based
+    skill score of 0.524 relative to bilinear interpolation, reducing the expected
+    prediction error by more than half. An ablation study reveals that the elevation
+    MLP is the indispensable component - without it, the model diverges entirely -
+    while explicit seasonal features and Topographic Position Index provide secondary
+    benefits. Under sparse on-grid input the model degrades gracefully, maintaining
+    positive skill down to approximately 10% of the input grid; however, zero-shot
+    deployment on off-grid station observations does not achieve positive skill at
+    any density tested. All configurations exhibit severely overconfident uncertainty
+    estimates, a structural limitation of the Gaussian likelihood training objective.
+    These results demonstrate that ConvCNPs are a viable and effective approach to
+    climate downscaling in complex terrain, and identify uncertainty calibration and
+    native support for non-gridded input as the key challenges for operational deployment.
+  tags:
+  - CNN
+  - cs.LG
+  arxiv_categories:
+  - cs.LG

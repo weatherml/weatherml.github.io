@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (15)
+## CNN (16)
 
+- **Exploring Convolutional Neural Processes for Weather Downscaling** (2026) - [Downscaling](downscaling.md) - [arXiv:2607.04190v1](https://arxiv.org/abs/2607.04190v1)
 - **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](downscaling.md) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.09959v1](https://arxiv.org/abs/2606.09959v1)
 - **Beyond MSE: Improving Precipitation Nowcasting with Multi-Quantile Regression** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2605.30122v2](https://arxiv.org/abs/2605.30122v2)
