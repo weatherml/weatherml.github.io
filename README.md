@@ -30,7 +30,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (139 papers)
+## Paper Collection (140 papers)
 
 ### Global Models (23)
 
@@ -178,8 +178,9 @@ uv run python build_pages.py
 - **Do machine learning climate models work in changing climate dynamics?** (2025) - [arXiv:2509.12147v1](https://arxiv.org/abs/2509.12147v1)
 - **Using machine learning to downscale coarse-resolution environmental variables for understanding the spatial frequency of convective storms** (2025) - [arXiv:2509.08802v1](https://arxiv.org/abs/2509.08802v1)
 
-### Extreme Weather (2)
+### Extreme Weather (3)
 
+- **TSSM: Triaxial State Space Model for Global Station Weather Forecasting with Temporal-Variable-Historical Modeling** (2026) - [arXiv:2607.13101v1](https://arxiv.org/abs/2607.13101v1)
 - **Forecasting threshold exceedance of atmospheric variables at a specific location** (2026) - [arXiv:2605.31079v1](https://arxiv.org/abs/2605.31079v1)
 - **FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Integration** (2025) - [arXiv:2509.14775v1](https://arxiv.org/abs/2509.14775v1)
 

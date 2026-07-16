@@ -6,11 +6,21 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-07-12*
+*Last updated: 2026-07-16*
 
 ## Recent Additions
 
 <div class="grid cards" markdown>
+
+-   #### TSSM: Triaxial State Space Model for Global Station Weather Forecasting with Temporal-Variable-Historical Modeling
+
+    ---
+
+    *Songru Yang, Zili Liu, Tao Han, Ben Fei, Fenghua Ling, Lei Bai, Chang Liu, Xiangyang Ji et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.13101">Global Station Weather Forecasting (GSWF) is pivotal for localized and extreme weather prediction over key regions. Despite efforts to exploit look-back windows, existing methods show limited...</span><span class="abstract-full" id="full-2607.13101" hidden>Global Station Weather Forecasting (GSWF) is pivotal for localized and extreme weather prediction over key regions. Despite efforts to exploit look-back windows, existing methods show limited accuracy gains and struggle with extreme events and error accumulation. These limitations stem from overreliance on short-term patterns, which are insufficient to capture chaotic weather dynamics, especially under partial observations. To address this problem, we propose a novel Triaxial State Space Model (TSSM) with a history-enhanced Temporal-VariableHistorical paradigm, which incorporates period-aligned historical weather data to compensate for long-term, large-scale periodic, and full-window weather patterns beyond the temporal lookback window. Specifically, TSSM stacks historical samples into period-aligned batches, where forecasting is causally supported by historical and current observations. Temporal, variable, and historical scanning are designed to capture axial temporal dependencies, variable correlations, and historical evolution. This structure is hierarchically shared to model seasonal to extreme events while alleviating misalignment across historical patterns. TSSM achieves SOTA performance on Weather-5K, the largest station weather dataset to date, with 10% and 61% gains in accuracy and extreme event metrics, and obtains 95% best or second-best results on human-involved datasets. Its advantages are more pronounced in long-horizon and iterative forecasting, reaching a 37.5% gain at 240h and up to 103.5% under a 48h times 5 iterative setting. Moreover, TSSM retains > 90% performance under up to 80% missing observations, compared with < 43% for baselines, demonstrating robustness and practical potential for reliable GSWF in global in-situ observation networks.</span> <span class="abstract-toggle" data-id="2607.13101">more</span>
+
+    [:material-file-document: 2607.13101](https://arxiv.org/abs/2607.13101v1) · [:material-content-copy: BibTeX](bibtex/2607.13101.bib){ .bibtex-link }
 
 -   #### Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift
 
@@ -113,18 +123,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2606.02661](https://arxiv.org/abs/2606.02661v1) · [:fontawesome-brands-github:](https://github.com/RuntimeWarning/SDIR) · [:material-content-copy: BibTeX](bibtex/2606.02661.bib){ .bibtex-link }
 
     <span class="md-tag">transformer</span> <span class="md-tag">diffusion</span> <span class="md-tag">operator-learning</span>
-
--   #### Probabilistic Precipitation Nowcasting with Rectified Flow Transformers
-
-    ---
-
-    *Johannes Schusterbauer, Jannik Wiese, Nick Stracke, Timy Phan, Björn Ommer* · 2026
-
-    <span class="abstract-snippet" id="snip-2605.31204">Accurate weather forecasts are essential across various domains and are safety-critical in extreme weather conditions. Compared to simulation-based forecasting, data-driven approaches show greater...</span><span class="abstract-full" id="full-2605.31204" hidden>Accurate weather forecasts are essential across various domains and are safety-critical in extreme weather conditions. Compared to simulation-based forecasting, data-driven approaches show greater efficiency, enabling short-term, high-resolution nowcasting. In particular, diffusion models proved effective in weather nowcasting due to their strong probabilistic foundation. However, existing methods rely on deterministic compression to reduce the complexity of high-dimensional weather data, limiting their ability to capture uncertainty in the decoding process. In this work, we introduce $\textbf{FREUD}$, a $\textbf{Fr}$ame-wise $\textbf{E}$ncoder and $\textbf{U}$nited $\textbf{D}$ecoder model based on rectified flow transformers for efficient compression of spatio-temporal weather data. Frame-wise encoding enables continuous forecast updates, while the unified video decoder ensures temporal consistency. Our uncertainty-preserving first stage allows us to capture aleatoric uncertainty via ensembling, which is particularly beneficial for extreme weather events with high decoding variability. We achieve state-of-the-art performance in precipitation nowcasting with a compact latent-space rectified flow transformer on the SEVIR benchmark and show further performance gains by model and test-time scaling. Code available here: https://github.com/CompVis/weather-rf</span> <span class="abstract-toggle" data-id="2605.31204">more</span>
-
-    [:material-file-document: 2605.31204](https://arxiv.org/abs/2605.31204v1) · [:fontawesome-brands-github:](https://github.com/CompVis/weather-rf) · [:material-content-copy: BibTeX](bibtex/2605.31204.bib){ .bibtex-link }
-
-    <span class="md-tag">transformer</span> <span class="md-tag">diffusion</span> <span class="md-tag">probabilistic</span>
 
 </div>
 
