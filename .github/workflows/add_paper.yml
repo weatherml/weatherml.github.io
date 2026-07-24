@@ -1,0 +1,45 @@
+name: Add Paper from Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add:
+    # Only issues opened by repo owner/collaborators, labeled add-paper
+    # or titled "Add paper: ..."
+    if: >
+      (contains(github.event.issue.labels.*.name, 'add-paper') ||
+       startsWith(github.event.issue.title, 'Add paper')) &&
+      contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Add paper to papers.yml
+        env:
+          ISSUE_TEXT: "${{ github.event.issue.title }} ${{ github.event.issue.body }}"
+        run: uv run python add_paper.py "$ISSUE_TEXT" --star | tee "$RUNNER_TEMP/result.txt"
+      - name: Rebuild pages
+        run: uv run python build_pages.py
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git diff --staged --quiet || git commit -m "Add paper from issue #${{ github.event.issue.number }}"
+          git push
+      - name: Build and deploy site
+        run: |
+          uv run zensical build
+          uvx ghp-import -n -p -f site/
+      - name: Comment and close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "$(cat "$RUNNER_TEMP/result.txt")"
+          gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}

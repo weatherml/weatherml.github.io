@@ -33,7 +33,8 @@ def generate_bibtex(paper):
 def generate_paper_card(paper):
     """Generate a card list item with h4 heading for search indexing."""
     lines = []
-    lines.append(f"-   #### {paper['title']}\n")
+    star = ':material-star: ' if paper.get('starred') else ''
+    lines.append(f"-   #### {star}{paper['title']}\n")
     lines.append(f"\n")
     lines.append(f"    ---\n")
     lines.append(f"\n")
@@ -114,6 +115,23 @@ def generate_stats(papers):
     return md
 
 
+def generate_starred_papers(papers):
+    """Generate markdown for starred (hand-picked) papers."""
+    starred = [p for p in papers if p.get('starred')]
+    if not starred:
+        return ""
+
+    starred.sort(key=lambda p: (p['year'], p['arxiv']), reverse=True)
+
+    md = "## Starred Papers\n\n"
+    md += '<div class="grid cards" markdown>\n\n'
+    for paper in starred:
+        md += generate_paper_card(paper)
+    md += '</div>\n\n'
+
+    return md
+
+
 def generate_recent_papers(papers, n=10):
     """Generate markdown for the most recent papers."""
     sorted_papers = sorted(papers, key=lambda p: (p['year'], p['arxiv']), reverse=True)
@@ -165,6 +183,7 @@ def build_pages():
         f.write("A collection of papers on deep learning and machine learning ")
         f.write("applied to weather forecasting, climate modeling, and atmospheric science.\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n")
+        f.write(generate_starred_papers(papers))
         f.write(generate_recent_papers(papers))
 
     # Generate single papers page with all categories as sections

@@ -1,3 +1,4 @@
+import argparse
 import arxiv
 import yaml
 from datetime import datetime, timedelta
@@ -74,20 +75,42 @@ CATEGORIES = {
     },
 }
 
-# Search keywords for arXiv queries
-SEARCH_KEYWORDS = [
-    'weather forecasting deep learning',
-    'climate model machine learning',
-    'precipitation nowcasting',
-    'neural weather prediction',
-    'data assimilation machine learning',
-    'ensemble weather forecasting',
-    'climate downscaling',
-    'numerical weather prediction deep learning',
-    'extreme weather prediction',
-    'atmospheric prediction neural',
-    'weather model transformer',
-    'storm prediction deep learning',
+# arXiv API queries. Kept deliberately broad — relevance filtering happens
+# in Python via is_weather_related() and is_ml_related(), so a paper only
+# needs to land in one of these sweeps, not match an exact phrase.
+SEARCH_QUERIES = [
+    # Everything in (or cross-listed to) atmospheric/oceanic physics
+    'cat:physics.ao-ph',
+    # ML-venue papers with a weather/climate word in the title that were
+    # not cross-listed to physics.ao-ph
+    '(cat:cs.LG OR cat:cs.AI OR cat:cs.CV OR cat:stat.ML OR cat:eess.IV OR cat:eess.SP)'
+    ' AND (ti:weather OR ti:climate OR ti:atmospheric OR ti:precipitation'
+    ' OR ti:nowcasting OR ti:cyclone OR ti:hurricane OR ti:typhoon'
+    ' OR ti:meteorological OR ti:rainfall OR ti:"data assimilation"'
+    ' OR ti:reanalysis OR ti:downscaling)',
+]
+
+# Papers whose weather angle is incidental (e.g. perception in rain for
+# self-driving cars) — excluded even if they match the weather terms
+EXCLUDE_TERMS = [
+    'autonomous driving', 'autonomous vehicle', 'self-driving',
+    'driving scene', 'driver assistance',
+]
+
+# Terms that indicate a paper uses ML/AI methods (needed because the
+# cat:physics.ao-ph sweep also returns pure physics/NWP papers)
+ML_TERMS = [
+    'machine learning', 'machine-learn', 'ml-based', 'ml-driven', ' ml ',
+    'ml model', 'deep learning', 'neural network',
+    'neural operator', 'data-driven', 'data driven', 'artificial intelligence',
+    ' ai ', 'ai-based', 'ai-driven', 'ai weather', 'ai model', 'transformer',
+    'attention mechanism', 'self-attention', 'diffusion model', 'generative model',
+    'foundation model', 'graph neural', 'convolutional', 'u-net', 'unet',
+    'autoencoder', ' gan ', 'adversarial network', 'lstm', 'recurrent neural',
+    'reinforcement learning', 'self-supervised', 'supervised learning',
+    'pretrain', 'pre-train', 'fine-tun', 'emulator', 'surrogate model',
+    'end-to-end learn', 'learned model', 'gaussian process', 'random forest',
+    'gradient boosting', 'deep generative', 'flow matching', 'score-based',
 ]
 
 # Terms that indicate a paper is about weather/climate/atmosphere
@@ -127,7 +150,15 @@ METHOD_TAGS = {
 def is_weather_related(title, abstract):
     """Check if a paper is related to weather/climate/atmospheric science."""
     text = f"{title} {abstract}".lower()
+    if any(term in text for term in EXCLUDE_TERMS):
+        return False
     return any(term in text for term in WEATHER_TERMS)
+
+
+def is_ml_related(title, abstract):
+    """Check if a paper uses ML/AI methods."""
+    text = f" {title} {abstract} ".lower()
+    return any(term in text for term in ML_TERMS)
 
 
 def categorize_paper(title, abstract):
@@ -167,90 +198,113 @@ def extract_tags(title, abstract, arxiv_categories=None):
     return tags
 
 
-def find_new_papers(lookback_days=14):
+def make_paper_entry(result):
+    """Build a papers.yml entry from an arxiv.Result."""
+    title = result.title
+    abstract = result.summary.replace('\n', ' ')
+
+    arxiv_cats = [result.primary_category] + [
+        c for c in result.categories if c != result.primary_category
+    ]
+
+    # Extract GitHub URL from abstract or comments
+    github_url = None
+    comments = result.comment or ''
+    for text in [abstract, comments]:
+        match = GITHUB_URL_PATTERN.search(text)
+        if match:
+            github_url = match.group(0).rstrip('.')
+            break
+
+    paper = {
+        'category': categorize_paper(title, abstract),
+        'title': title,
+        'authors': ', '.join(author.name for author in result.authors),
+        'year': result.published.year,
+        'arxiv': result.entry_id.split('/')[-1],
+        'abstract': abstract,
+        'tags': extract_tags(title, abstract, arxiv_cats),
+        'arxiv_categories': arxiv_cats,
+    }
+    if github_url:
+        paper['github'] = github_url
+    return paper
+
+
+def save_papers(papers):
+    with open('papers.yml', 'w') as f:
+        yaml.dump(papers, f, default_flow_style=False, sort_keys=False,
+                  allow_unicode=True)
+
+
+def base_arxiv_id(arxiv_id):
+    """Strip the version suffix from an arXiv ID."""
+    return re.sub(r'v\d+$', '', arxiv_id)
+
+
+def find_new_papers(lookback_days=14, max_results=300, dry_run=False):
     """Find new papers from arXiv and add them to papers.yml."""
     with open('papers.yml', 'r') as f:
         existing_papers = yaml.safe_load(f) or []
 
-    existing_arxiv_ids = {p['arxiv'] for p in existing_papers}
-
-    # Build search query - search both title and abstract
-    queries = []
-    for kw in SEARCH_KEYWORDS:
-        queries.append(f'ti:"{kw}"')
-        queries.append(f'abs:"{kw}"')
-    search_query = " OR ".join(queries)
+    existing_arxiv_ids = {base_arxiv_id(p['arxiv']) for p in existing_papers}
 
     client = arxiv.Client(
-        page_size=50,
+        page_size=100,
         delay_seconds=5.0,
         num_retries=5,
-    )
-    search = arxiv.Search(
-        query=search_query,
-        max_results=200,
-        sort_by=arxiv.SortCriterion.SubmittedDate,
     )
 
     cutoff = datetime.now().astimezone() - timedelta(days=lookback_days)
     new_papers = []
+    seen_this_run = set()
     skipped = 0
 
-    for result in client.results(search):
-        arxiv_id = result.entry_id.split('/')[-1]
+    for query in SEARCH_QUERIES:
+        search = arxiv.Search(
+            query=query,
+            max_results=max_results,
+            sort_by=arxiv.SortCriterion.SubmittedDate,
+        )
 
-        if result.published < cutoff:
-            continue
-        if arxiv_id in existing_arxiv_ids:
-            continue
+        for result in client.results(search):
+            arxiv_id = base_arxiv_id(result.entry_id.split('/')[-1])
 
-        title = result.title
-        abstract = result.summary.replace('\n', ' ')
+            if result.published < cutoff:
+                continue
+            if arxiv_id in existing_arxiv_ids or arxiv_id in seen_this_run:
+                continue
 
-        # Filter out non-weather papers
-        if not is_weather_related(title, abstract):
-            skipped += 1
-            continue
+            title = result.title
+            abstract = result.summary.replace('\n', ' ')
 
-        arxiv_cats = [result.primary_category] + [
-            c for c in result.categories if c != result.primary_category
-        ]
+            # Filter out non-weather and non-ML papers
+            if not (is_weather_related(title, abstract)
+                    and is_ml_related(title, abstract)):
+                skipped += 1
+                continue
 
-        category = categorize_paper(title, abstract)
-        tags = extract_tags(title, abstract, arxiv_cats)
-
-        # Extract GitHub URL from abstract or comments
-        github_url = None
-        comments = result.comment or ''
-        for text in [abstract, comments]:
-            match = GITHUB_URL_PATTERN.search(text)
-            if match:
-                github_url = match.group(0).rstrip('.')
-                break
-
-        paper = {
-            'category': category,
-            'title': title,
-            'authors': ', '.join(author.name for author in result.authors),
-            'year': result.published.year,
-            'arxiv': arxiv_id,
-            'abstract': abstract,
-            'tags': tags,
-            'arxiv_categories': arxiv_cats,
-        }
-        if github_url:
-            paper['github'] = github_url
-        new_papers.append(paper)
+            seen_this_run.add(arxiv_id)
+            new_papers.append(make_paper_entry(result))
 
     if new_papers:
-        print(f"Found {len(new_papers)} new papers ({skipped} skipped as non-weather-related).")
-        all_papers = existing_papers + new_papers
-        with open('papers.yml', 'w') as f:
-            yaml.dump(all_papers, f, default_flow_style=False, sort_keys=False,
-                      allow_unicode=True)
+        print(f"Found {len(new_papers)} new papers ({skipped} skipped as not relevant).")
+        for p in new_papers:
+            print(f"  [{p['category']}] {p['arxiv']}: {p['title'][:80]}")
+        if not dry_run:
+            save_papers(existing_papers + new_papers)
     else:
-        print(f"No new papers found ({skipped} skipped as non-weather-related).")
+        print(f"No new papers found ({skipped} skipped as not relevant).")
+    if dry_run:
+        print("Dry run: papers.yml not modified.")
 
 
 if __name__ == '__main__':
-    find_new_papers()
+    parser = argparse.ArgumentParser(description='Find new weather-ML papers on arXiv.')
+    parser.add_argument('--lookback-days', type=int, default=14)
+    parser.add_argument('--max-results', type=int, default=300,
+                        help='max results fetched per search query')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='print findings without modifying papers.yml')
+    args = parser.parse_args()
+    find_new_papers(args.lookback_days, args.max_results, args.dry_run)
