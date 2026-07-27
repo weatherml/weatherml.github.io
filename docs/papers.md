@@ -3,9 +3,19 @@ hide:
   - navigation
 ---
 
-## Global Models (264)
+## Global Models (265)
 
 <div class="grid cards" markdown>
+
+-   #### MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation
+
+    ---
+
+    *Yongming Wang, Xuguang Wang* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.21917">Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation...</span><span class="abstract-full" id="full-2607.21917" hidden>Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation (DA). However, few studies have explored ML-based surrogate background ensembles for estimating background-error covariances (BECs). This study develops a convection-allowing emulator, MAPCast, trained on historical convection-allowing simulations from the Model for Prediction Across Scales (MPAS), and evaluates its ability to estimate BECs, paving the way toward multiscale DA. The evaluation uses 10 retrospective convective cases at 15- and 60-min forecast lead times corresponding to subhourly and hourly DA. MAPCast reproduces MPAS forecasts with good fidelity, including realistic storm coverage, temporal evolution, and similar spatial and spectral characteristics of state variables. Discrepancies are primarily confined to small spatial scales near sharp gradients and convective-scale features and variables. For BEC statistics, MAPCast captures ensemble spread magnitude and spatial distribution for most variables, although larger errors occur for storm-related fields that are vertical velocity and reflectivity. Correlation structures are reproduced most faithfully at mesoscale and above, followed by at convective scales, whereas cross-variable correlations are less accurately represented than univariate correlations, indicating that multivariate coupling remains the principal limitation. MAPCast shows weaker replication of full-scale versus decomposed large and small-scale correlations. BEC estimates derived from 15-min forecasts consistently outperform those from 60-min forecasts, suggesting that shorter lead times better preserve flow-dependent error structures.</span> <span class="abstract-toggle" data-id="2607.21917">more</span>
+
+    [:material-file-document: 2607.21917](https://arxiv.org/abs/2607.21917v1) · [:material-content-copy: BibTeX](bibtex/2607.21917.bib){ .bibtex-link }
 
 -   #### Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction
 
@@ -6273,9 +6283,21 @@ hide:
 
 </div>
 
-## Climate Modeling (296)
+## Climate Modeling (297)
 
 <div class="grid cards" markdown>
+
+-   #### Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts
+
+    ---
+
+    *Abdoul R. Zeba, William D. Collins, Ankur Mahesh, Boris Bonev, Karthik Kashinath, Thorsten Kurth et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.21954">We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual...</span><span class="abstract-full" id="full-2607.21954" hidden>We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual TCs from the fluctuations in their tracks from the shortest paths between the initiation and termination of each cyclone. We reproduce the same anomalous diffusion power laws connecting spatial position and time using HENS. In addition, we show that the variance in the position of a single TC across HENS since initiation follows a scaling law with time that, in some cases, corresponds to ballistic motion of the TC through the background atmospheric flow. This determination was enabled by the exceptional statistics determined from thousands of plausible yet counterfactual recreations of 34 individual TCs. HENS consists of 7424 15-day hindcasts initiated from observed atmospheric conditions each day from June 1, 2023 to August 31, 2023 using the ECMWF ERA5 meteorological reanalysis. The hindcasts were generated using NVIDIA's Spherical Fourier Neural Operator (SFNO) machine-learning-based weather and climate emulator. We identify tropical cyclones in HENS using a variant of the Tempest Extremes detection and tracking frameworks for TCs with adjustments to the disposable parameters to minimize the numbers of false positives and negatives relative to the International Best Track Archive for Climate Stewardship (IBTrACS) records for TCs observed in summer 2023. We conclude with the implications of our findings for the predictability of TC tracks and landfall locations on lead times of days to weeks.</span> <span class="abstract-toggle" data-id="2607.21954">more</span>
+
+    [:material-file-document: 2607.21954](https://arxiv.org/abs/2607.21954v1) · [:material-content-copy: BibTeX](bibtex/2607.21954.bib){ .bibtex-link }
+
+    <span class="md-tag">operator-learning</span>
 
 -   #### Flexible generation of daily Earth system model projections across radiative forcing scenarios
 

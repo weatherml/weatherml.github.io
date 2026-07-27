@@ -6,7 +6,7 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-07-26*
+*Last updated: 2026-07-27*
 
 ## Starred Papers
 
@@ -73,6 +73,28 @@ A collection of papers on deep learning and machine learning applied to weather 
 ## Recent Additions
 
 <div class="grid cards" markdown>
+
+-   #### Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts
+
+    ---
+
+    *Abdoul R. Zeba, William D. Collins, Ankur Mahesh, Boris Bonev, Karthik Kashinath, Thorsten Kurth et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.21954">We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual...</span><span class="abstract-full" id="full-2607.21954" hidden>We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual TCs from the fluctuations in their tracks from the shortest paths between the initiation and termination of each cyclone. We reproduce the same anomalous diffusion power laws connecting spatial position and time using HENS. In addition, we show that the variance in the position of a single TC across HENS since initiation follows a scaling law with time that, in some cases, corresponds to ballistic motion of the TC through the background atmospheric flow. This determination was enabled by the exceptional statistics determined from thousands of plausible yet counterfactual recreations of 34 individual TCs. HENS consists of 7424 15-day hindcasts initiated from observed atmospheric conditions each day from June 1, 2023 to August 31, 2023 using the ECMWF ERA5 meteorological reanalysis. The hindcasts were generated using NVIDIA's Spherical Fourier Neural Operator (SFNO) machine-learning-based weather and climate emulator. We identify tropical cyclones in HENS using a variant of the Tempest Extremes detection and tracking frameworks for TCs with adjustments to the disposable parameters to minimize the numbers of false positives and negatives relative to the International Best Track Archive for Climate Stewardship (IBTrACS) records for TCs observed in summer 2023. We conclude with the implications of our findings for the predictability of TC tracks and landfall locations on lead times of days to weeks.</span> <span class="abstract-toggle" data-id="2607.21954">more</span>
+
+    [:material-file-document: 2607.21954](https://arxiv.org/abs/2607.21954v1) · [:material-content-copy: BibTeX](bibtex/2607.21954.bib){ .bibtex-link }
+
+    <span class="md-tag">operator-learning</span>
+
+-   #### MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation
+
+    ---
+
+    *Yongming Wang, Xuguang Wang* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.21917">Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation...</span><span class="abstract-full" id="full-2607.21917" hidden>Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation (DA). However, few studies have explored ML-based surrogate background ensembles for estimating background-error covariances (BECs). This study develops a convection-allowing emulator, MAPCast, trained on historical convection-allowing simulations from the Model for Prediction Across Scales (MPAS), and evaluates its ability to estimate BECs, paving the way toward multiscale DA. The evaluation uses 10 retrospective convective cases at 15- and 60-min forecast lead times corresponding to subhourly and hourly DA. MAPCast reproduces MPAS forecasts with good fidelity, including realistic storm coverage, temporal evolution, and similar spatial and spectral characteristics of state variables. Discrepancies are primarily confined to small spatial scales near sharp gradients and convective-scale features and variables. For BEC statistics, MAPCast captures ensemble spread magnitude and spatial distribution for most variables, although larger errors occur for storm-related fields that are vertical velocity and reflectivity. Correlation structures are reproduced most faithfully at mesoscale and above, followed by at convective scales, whereas cross-variable correlations are less accurately represented than univariate correlations, indicating that multivariate coupling remains the principal limitation. MAPCast shows weaker replication of full-scale versus decomposed large and small-scale correlations. BEC estimates derived from 15-min forecasts consistently outperform those from 60-min forecasts, suggesting that shorter lead times better preserve flow-dependent error structures.</span> <span class="abstract-toggle" data-id="2607.21917">more</span>
+
+    [:material-file-document: 2607.21917](https://arxiv.org/abs/2607.21917v1) · [:material-content-copy: BibTeX](bibtex/2607.21917.bib){ .bibtex-link }
 
 -   #### Flexible generation of daily Earth system model projections across radiative forcing scenarios
 
@@ -167,28 +189,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2607.18877](https://arxiv.org/abs/2607.18877v1) · [:material-content-copy: BibTeX](bibtex/2607.18877.bib){ .bibtex-link }
 
     <span class="md-tag">physics-informed</span>
-
--   #### Hard conservation correctors can hide a degrading model when training autoregressive emulators
-
-    ---
-
-    *William E. Chapman, John Schreck, Yingkai Sha* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.18416">AI weather and climate emulators increasingly incorporate physical principles into their formulation. One approach is to apply hard correctors that modify network outputs so that global mass, water,...</span><span class="abstract-full" id="full-2607.18416" hidden>AI weather and climate emulators increasingly incorporate physical principles into their formulation. One approach is to apply hard correctors that modify network outputs so that global mass, water, or energy budgets close. Prior work introduced such training-time correctors in the CREDIT framework and reported reduced precipitation bias and improved stability. Motivated by those results, we fine-tuned a global atmosphere emulator with a water-budget corrector, using the corrected prediction in the supervised loss and evaluating through post-correction budget closure. By that measure, training appeared successful. Every delivered field closed the moisture budget to machine precision. However, raw precipitation developed a growing global low bias over 18 training epochs, while the required correction increased from about 2% to roughly 24%. The cause is a scale degeneracy. A uniform change in raw precipitation amplitude is offset by a compensating change in the correction factor, leaving the corrected field, and therefore the supervised loss, unchanged. This invariance removes the restoring force on raw precipitation amplitude, allowing other training pressures to drive drift. Two changes recovered stable behavior. We supervised the pre-correction prediction and penalized its raw budget imbalance, while the hard correction remained in place for the delivered field. The required correction returned to less than 1% within the next epoch. A controlled 2x2 ablation showed that the runaway occurred only when corrected-output supervision was combined with no imbalance penalty. Exact post-correction closure therefore says little about whether the raw model has learned the budget. When a corrector removes information from the loss, the raw fields and the applied correction need to be tracked.</span> <span class="abstract-toggle" data-id="2607.18416">more</span>
-
-    [:material-file-document: 2607.18416](https://arxiv.org/abs/2607.18416v1) · [:material-content-copy: BibTeX](bibtex/2607.18416.bib){ .bibtex-link }
-
--   #### Fourier Geometric Wind Power Forecasting with Numerical Weather Prediction
-
-    ---
-
-    *Shiyuan Piao, Fan Zehui, Yang Liu, Hong Cheng, Juepeng Zheng, Jie Zhou, Fugee Tsung* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.17095">Accurate short-term wind power forecasting is essential for grid stability and operational planning, yet remains challenging due to the complex interactions between atmospheric conditions and turbine...</span><span class="abstract-full" id="full-2607.17095" hidden>Accurate short-term wind power forecasting is essential for grid stability and operational planning, yet remains challenging due to the complex interactions between atmospheric conditions and turbine dynamics. However, existing methods fail to effectively incorporate weather forecasting with wind turbine data (i.e., SCADA), leading to suboptimal solutions. To address this, we introduce a multimodal framework that integrates historical point-based SCADA data with grid-based Numerical Weather Prediction (NWP) forecasts, which is challenging due to heterogeneous input and the complex physical wind-turbine interactions. Our approach first explicitly decomposes inputs into scalar and vector features to better capture both site-specific and geometric dependencies and then incorporates a geometric encoder to extract rotation-invariant features from wind vectors. We further leverages a Fourier Neural Operator (FNO) architecture, which performs global convolutions in the frequency domain to efficiently model long-range spatiotemporal relationships. Extensive experiments on three real-world wind farms, with weather forecasting data, demonstrate that our model consistently outperforms state-of-the-art baselines, highlighting the effectiveness of its physically-informed design. The core implementation of our method is publicly available at: https://github.com/shawn-sypiao/GWPF.</span> <span class="abstract-toggle" data-id="2607.17095">more</span>
-
-    [:material-file-document: 2607.17095](https://arxiv.org/abs/2607.17095v1) · [:fontawesome-brands-github:](https://github.com/shawn-sypiao/GWPF) · [:material-content-copy: BibTeX](bibtex/2607.17095.bib){ .bibtex-link }
-
-    <span class="md-tag">operator-learning</span>
 
 </div>
 

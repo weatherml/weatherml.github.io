@@ -50,10 +50,11 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (1427 papers)
+## Paper Collection (1429 papers)
 
-### Global Models (264)
+### Global Models (265)
 
+- **MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation** (2026) - [arXiv:2607.21917v1](https://arxiv.org/abs/2607.21917v1)
 - **Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction** (2026) - [arXiv:2607.21080v1](https://arxiv.org/abs/2607.21080v1)
 - **Spatial Generalization Tests for Machine Learning-based Weather Models to Assess Physical Consistency** (2026) - [arXiv:2607.20716v1](https://arxiv.org/abs/2607.20716v1)
 - **Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions** (2026) - [arXiv:2607.19370v1](https://arxiv.org/abs/2607.19370v1)
@@ -620,8 +621,9 @@ uv run python build_pages.py
 - **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2023) - [arXiv:2312.15796v2](https://arxiv.org/abs/2312.15796v2)
 - **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 
-### Climate Modeling (296)
+### Climate Modeling (297)
 
+- **Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts** (2026) - [arXiv:2607.21954v1](https://arxiv.org/abs/2607.21954v1)
 - **Flexible generation of daily Earth system model projections across radiative forcing scenarios** (2026) - [arXiv:2607.21382v1](https://arxiv.org/abs/2607.21382v1)
 - **Learning Climate Variability from Scarce Data with Diffusion Models: A Test Case for ENSO** (2026) - [arXiv:2606.27094v1](https://arxiv.org/abs/2606.27094v1)
 - **Sampling sea state using a diffusion model** (2026) - [arXiv:2606.26389v1](https://arxiv.org/abs/2606.26389v1)

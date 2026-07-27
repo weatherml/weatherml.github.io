@@ -501,8 +501,9 @@ title: Tags
 - **RL-DAUNCE: Reinforcement Learning-Driven Data Assimilation with Uncertainty-Aware Constrained Ensembles** (2025) - [Data Assimilation](data_assimilation.md) - [arXiv:2505.05452v1](https://arxiv.org/abs/2505.05452v1)
 - **Kolmogorov Modes and Linear Response of Jump-Diffusion Models** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2411.14769v2](https://arxiv.org/abs/2411.14769v2)
 
-## operator-learning (34)
+## operator-learning (35)
 
+- **Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2607.21954v1](https://arxiv.org/abs/2607.21954v1)
 - **Fourier Geometric Wind Power Forecasting with Numerical Weather Prediction** (2026) - [Other](other.md) - [arXiv:2607.17095v1](https://arxiv.org/abs/2607.17095v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
 - **Monthly Diffusion v0.9: A Latent Diffusion Model for the First AI-MIP** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2604.13481v1](https://arxiv.org/abs/2604.13481v1)
