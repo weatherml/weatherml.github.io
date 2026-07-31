@@ -6,7 +6,7 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-07-27*
+*Last updated: 2026-07-31*
 
 ## Starred Papers
 
@@ -74,6 +74,86 @@ A collection of papers on deep learning and machine learning applied to weather 
 
 <div class="grid cards" markdown>
 
+-   #### Memory compression and physical state augmentation favor different AMOC prediction tasks
+
+    ---
+
+    *Mauricio Herrera-Marín* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.28468">The Atlantic Meridional Overturning Circulation is monitored and emulated through reduced indices, but such projections discard thermohaline structure and may require either explicit physical state...</span><span class="abstract-full" id="full-2607.28468" hidden>The Atlantic Meridional Overturning Circulation is monitored and emulated through reduced indices, but such projections discard thermohaline structure and may require either explicit physical state or memory of the observed index. We compare these strategies in 30 branch-consistent CMIP6 trajectories from eight model families using leave-one-family-out validation. Salinity, temperature and density information improves direct 20-year forecasts, whereas compact scalar memory is top-ranked at every recursive horizon and yields the lowest case-averaged Brier score. A matched ablation confirms that feedback from memory improves long-horizon prediction. Physical state and recent trends also predict future ocean-state changes beyond the emissions pathway, most robustly at five years. NorESM under SSP5--8.5 identifies a forcing-dependent limit of scalar compression, while MIROC shows negative long-horizon transfer. A resolvent analysis explains why stable memory components do not guarantee stability of the complete learned model. Physical augmentation and memory compression therefore serve different AMOC prediction tasks.</span> <span class="abstract-toggle" data-id="2607.28468">more</span>
+
+    [:material-file-document: 2607.28468](https://arxiv.org/abs/2607.28468v1) · [:material-content-copy: BibTeX](bibtex/2607.28468.bib){ .bibtex-link }
+
+-   #### Weather Emulators at the Frontier of Heat Extremes Predictability
+
+    ---
+
+    *Cas Decancq, Thomas Mortier, Jessica Keune, Diego G. Miralles* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.28220">Atmospheric predictability declines rapidly beyond the next ten days, such that forecasts at longer lead times primarily convey large-scale trends rather than specific states. Yet in a warming world,...</span><span class="abstract-full" id="full-2607.28220" hidden>Atmospheric predictability declines rapidly beyond the next ten days, such that forecasts at longer lead times primarily convey large-scale trends rather than specific states. Yet in a warming world, improving early warnings of extreme heat is an increasingly critical challenge. Here we evaluate six state-of-the-art deep learning weather emulators - Pangu-Weather, FuXi, ArchesWeather, AIFS, GraphCast and Aurora - alongside leading dynamical systems and statistical baselines in forecasting global near-surface temperature and extreme heat at lead times of 10-15 days. We find that several emulators rival or even surpass physics-based forecasts in deterministic temperature skill, but do so at the cost of reduced spectral fidelity, in a process widely known as blurring. While all models show some degree of predictive skill for extreme heat, most emulators under-represent peak intensities, and IFS recall is greater than that of any of the emulators. These results highlight both the emerging potential of AI to enhance extended range temperature prediction, and the remaining challenges in delivering reliable, actionable early warnings in a changing climate.</span> <span class="abstract-toggle" data-id="2607.28220">more</span>
+
+    [:material-file-document: 2607.28220](https://arxiv.org/abs/2607.28220v1) · [:material-content-copy: BibTeX](bibtex/2607.28220.bib){ .bibtex-link }
+
+    <span class="md-tag">physics-informed</span>
+
+-   #### Meteosat Third Generation imagery improves CNN-based SSI retrieval
+
+    ---
+
+    *Gordei Pribõtkin, Piia Post, Velle Toll* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.28093">Accurate Surface Solar Irradiance (SSI) estimation is increasingly important for photovoltaic energy monitoring and forecasting. The recently introduced Meteosat Third Generation (MTG) satellite...</span><span class="abstract-full" id="full-2607.28093" hidden>Accurate Surface Solar Irradiance (SSI) estimation is increasingly important for photovoltaic energy monitoring and forecasting. The recently introduced Meteosat Third Generation (MTG) satellite constellation provides imaging data with higher spatial resolution compared to the Meteosat Second Generation (MSG) satellite constellation, but its benefits for machine-learning-based SSI retrieval have not been well established. In this work, we introduce a multi-imager and multi-resolution convolutional neural network architecture for 10-minute SSI retrieval over Northern Europe (Estonia) using MSG/SEVIRI and MTG/FCI satellite imagery together with solar-geometry and clear-sky irradiance features. Model performance is evaluated against ground-based pyranometer measurements from eight Estonian meteorological stations using site-based cross-validation and multiple training seeds. Model performance is also compared with the SARAH-3 physics-based satellite SSI product. The hybrid SEVIRI-FCI model significantly outperformed the SEVIRI-only model under overcast and cloudy conditions, reducing RMSE by 8.2 W m$^{-2}$ and 5.7 W m$^{-2}$, respectively. However, under partly cloudy or clear skies, no statistically significant difference in RMSE was observed between the SEVIRI-FCI hybrid and the SEVIRI-only models. Compared with physics-based SARAH-3, the hybrid model yielded skill scores of 35 % under overcast conditions, 21 % under cloudy conditions, and 20 % overall. Furthermore, both models underperformed SARAH-3 in clear-sky conditions. These results show that higher-resolution MTG/FCI imagery improves CNN-based SSI retrieval when clouds dominate irradiance variability, but also indicate that higher spatial resolution alone is insufficient to address clear-sky limitations in machine-learning-based SSI retrieval.</span> <span class="abstract-toggle" data-id="2607.28093">more</span>
+
+    [:material-file-document: 2607.28093](https://arxiv.org/abs/2607.28093v1) · [:material-content-copy: BibTeX](bibtex/2607.28093.bib){ .bibtex-link }
+
+    <span class="md-tag">CNN</span> <span class="md-tag">physics-informed</span>
+
+-   #### Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities
+
+    ---
+
+    *Tanmay Ghosh, Shaurabh Anand, Rakesh Gomaji Nannewar, Nithin Nagaraj* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.26581">Convolutional long short-term memory networks (ConvLSTMs) are widely used for precipitation forecasting, but most evidence for their performance comes from dense, high-frequency radar sequences. This...</span><span class="abstract-full" id="full-2607.26581" hidden>Convolutional long short-term memory networks (ConvLSTMs) are widely used for precipitation forecasting, but most evidence for their performance comes from dense, high-frequency radar sequences. This study tests whether convolutional recurrence improves one-day-ahead rainfall-field prediction on small daily reanalysis grids. Indian Monsoon Data Assimilation and Analysis (IMDAA) fields for June-September 1998-2020 were analysed for Bengaluru, Delhi, Kolkata and Mumbai. Ten naive, statistical, tree-based and neural approaches were compared using atmospheric-only and rainfall-history-plus-atmospheric inputs. Performance was assessed for complete fields, domain-mean rainfall, spatial anomalies and high-rainfall days.   ConvLSTM did not consistently outperform simpler alternatives. FC-LSTM produced the numerically lowest domain-mean rainfall error in Bengaluru, Kolkata and Mumbai, whereas persistence performed best in Delhi. ConvLSTM produced the numerically lowest spatial-anomaly error only in Mumbai, where rainfall fields showed greater short-term spatial continuity and rainfall-history inputs improved all three neural architectures. The difference between ConvLSTM and FC-LSTM was nevertheless small. Neural models underestimated rainfall magnitude and predicted too few threshold exceedances on high-rainfall days, while persistence achieved the highest detection performance in every city. Post-hoc analyses showed that the selected models were most sensitive to the latest input day, with broader recent-lag sensitivity in Mumbai. These findings show that gridded inputs alone do not justify ConvLSTM and that architecture choice should follow strong benchmarking across average, spatial and high-rainfall performance.</span> <span class="abstract-toggle" data-id="2607.26581">more</span>
+
+    [:material-file-document: 2607.26581](https://arxiv.org/abs/2607.26581v1) · [:material-content-copy: BibTeX](bibtex/2607.26581.bib){ .bibtex-link }
+
+    <span class="md-tag">recurrent</span>
+
+-   #### From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations
+
+    ---
+
+    *Yuan-Heng Wang, Hoshin V. Gupta* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.26492">The Mass-Conserving Perceptron (MCP) establishes a modeling paradigm in which conceptual hydrologic models can be reformulated as physically constrained, conceptually interpretable neural networks....</span><span class="abstract-full" id="full-2607.26492" hidden>The Mass-Conserving Perceptron (MCP) establishes a modeling paradigm in which conceptual hydrologic models can be reformulated as physically constrained, conceptually interpretable neural networks. Here, we develop a snow-water MCP network framework and evaluate it across 513 CAMELS-US basins. We first recast a coupled two-state SOIL-MCP and SNOWMCP conceptual model as a mass-conserving neural network and show that the hydrologic-model and neural-network formulations achieve comparable predictive performance. We then examine cross-node state-information sharing within two-state HYDROMCP architectures and evaluate broader single-layer networks constructed from three types of interpretable MCP units with one to five states. Across CONUS, the median KGEss increases from 0.82 for one-state networks to 0.89 for two-state networks and 0.90 for five-state networks, suggesting diminishing aggregate gains beyond two states. Basin-specific MCP and LSTM selection yields the same median KGEss of 0.90, while the selected MCP networks use fewer parameters on average. Complementary AIC- and KGE-based selection identifies compact, basin-specific directed-graph representations that balance predictive accuracy and model complexity. These analyses provide an empirical basis for identifying the numbers, types, and interactions of states needed for hydrologic representation. Future studies should test joint training against multiple hydrologic responses, such as streamflow, snow water equivalent, and groundwater storage.</span> <span class="abstract-toggle" data-id="2607.26492">more</span>
+
+    [:material-file-document: 2607.26492](https://arxiv.org/abs/2607.26492v1) · [:material-content-copy: BibTeX](bibtex/2607.26492.bib){ .bibtex-link }
+
+    <span class="md-tag">recurrent</span>
+
+-   #### From Heat Stress to Perception: Interpretable Data-Driven Models of Human Thermal Sensation
+
+    ---
+
+    *Abed Hammoud, Xinjie Huang, Qinqin Kong, Marialena Nikolopoulou, Elie Bou-Zeid* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.25850">Heat stress indices are designed to quantify physiological thermal stress, but their relevance for inferring the thermal perception of individuals remains unclear. In this study, we show that thermal...</span><span class="abstract-full" id="full-2607.25850" hidden>Heat stress indices are designed to quantify physiological thermal stress, but their relevance for inferring the thermal perception of individuals remains unclear. In this study, we show that thermal stress and thermal sensation often diverge, as evidenced by distinct global sensitivity patterns with respect to environmental drivers. Using thermal sensation vote survey data, we demonstrate that the dominant sensitivities of stress-based metrics do not align with those governing reported human thermal sensation. Given the multitude of globally-applicable thermal stress indices and the lack of comparable general thermal sensation metrics, we develop two complementary data-driven modeling frameworks for thermal sensation. First, we construct polynomial chaos expansion (PCE) surrogates to represent thermal sensation as a function of meteorological variables, enabling efficient variance-based sensitivity analysis and explicit identification of influential inputs and interactions. Second, we develop multilayer perceptron (MLP) classifiers that capture the nonlinear and subjective nature of thermal perception, while achieving high predictive accuracy. The PCE models provide physically interpretable sensitivities that can explain the drivers of thermal sensation, while the MLPs offer flexible predictive capability suited to complex environments. We apply both modeling approaches at city- and continent-scales, revealing systematic differences in sensitivity structure and performance across climates. In particular, we find that the sensitivity of TSV-based models to the variability of meteorological conditions across geoclimatic zone encodes distinct dependencies on temperature, radiation, humidity, and wind that vary geographically, and are generally different from those of heat stress indices.</span> <span class="abstract-toggle" data-id="2607.25850">more</span>
+
+    [:material-file-document: 2607.25850](https://arxiv.org/abs/2607.25850v1) · [:material-content-copy: BibTeX](bibtex/2607.25850.bib){ .bibtex-link }
+
+-   #### A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates
+
+    ---
+
+    *Muhammad Akbar Khan, Fahim Raees, Ubaida Fatima* · 2026
+
+    <span class="abstract-snippet" id="snip-2607.25668">Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where...</span><span class="abstract-full" id="full-2607.25668" hidden>Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where summer temperatures routinely exceed 45 C. We present a two-stage computational framework for thermal ranking of five low-cost indigenous wall materials: mud brick, clay-straw adobe, lime-stabilised bamboo panel, fired clay brick, and lime-mud composite. First, a validated Crank-Nicolson finite difference method (FDM) solves the one-dimensional transient heat equation with Robin boundary conditions under diurnal solar and outdoor air-temperature forcing, generating 1500 periodic-day solutions across a nine-dimensional parameter space by Latin Hypercube sampling. Second, a Physics-Informed Neural Operator (PINO) with a Fourier Neural Operator (FNO) backbone learns the parameter-to-solution operator mu -> T(x,t), enforcing both data fidelity and PDE consistency. The trained PINO attains a relative L2 field error of 5.14e-4 and a 0.201 K mean absolute error on the peak inner surface temperature, preserving the FDM material ranking exactly; PINO trained on 150 FDM samples matches a data-only FNO trained on twice as many, so the physics loss is most valuable when data are scarce. The periodic-day formulation also yields the ISO 13786 time lag and decrement factor, reproduced to within 0.99 h and 0.010. At nominal hot-dry summer conditions, clay-straw adobe achieves the best cost-performance index among widely available materials. A climate sweep, confirmed by FDM spot checks, reveals a regime boundary: under sub-ambient outdoor conditions the ranking inverts to conductive fired clay brick, delineating heat-exclusion and heat-rejection regimes. The framework supports evidence-based material selection for post-flood reconstruction in hot-dry regions.</span> <span class="abstract-toggle" data-id="2607.25668">more</span>
+
+    [:material-file-document: 2607.25668](https://arxiv.org/abs/2607.25668v1) · [:material-content-copy: BibTeX](bibtex/2607.25668.bib){ .bibtex-link }
+
+    <span class="md-tag">physics-informed</span> <span class="md-tag">operator-learning</span>
+
 -   #### Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts
 
     ---
@@ -107,88 +187,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2607.21382](https://arxiv.org/abs/2607.21382v1) · [:material-content-copy: BibTeX](bibtex/2607.21382.bib){ .bibtex-link }
 
     <span class="md-tag">probabilistic</span>
-
--   #### Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction
-
-    ---
-
-    *Yun-Ye Cai, Hsuan-Tien Lin* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.21080">Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although the...</span><span class="abstract-full" id="full-2607.21080" hidden>Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although the autoregressive pipeline is highly scalable and flexible, its prediction errors grow rapidly over long forecasting horizons. In this work, we study this error growth phenomenon from both theoretical and empirical perspectives. Our analysis reveals that the growth is driven by a feedback loop between output errors and input distribution shifts. Specifically, the autoregressive process amplifies small initial output errors, which progressively corrupt subsequent input distributions, echoing the butterfly effect in atmospheric science and ultimately deteriorating forecasting accuracy over longer horizons. Furthermore, we show that this distributional shift originates at the earliest stage of inference, with out-of-distribution signatures detectable as early as the first autoregressive step. To mitigate this issue, we propose \textbf{Self-Output Fine-Tuning (SOFT)}, a plug-and-play strategy that leverages the model's own one-step predictions to calibrate the biased input distribution encountered at the first step. Extensive experiments demonstrate that, despite its simplicity, SOFT achieves state-of-the-art performance on long-horizon forecasting tasks and substantially reduces both prediction errors and distributional discrepancy. The success of SOFT highlights the importance of reexamining the fundamental pipeline of deep learning weather prediction, representing a critical pipeline advance for atmospheric science.</span> <span class="abstract-toggle" data-id="2607.21080">more</span>
-
-    [:material-file-document: 2607.21080](https://arxiv.org/abs/2607.21080v1) · [:material-content-copy: BibTeX](bibtex/2607.21080.bib){ .bibtex-link }
-
--   #### Toward Mechanistic Interpretability of an AI Foundation Model Fine-Tuned for Atmospheric Chemistry
-
-    ---
-
-    *Jason Y. Hu, Ivan Higuera-Mendieta, Patrick Obin Sturm, Makoto M. Kelp* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.20778">Weather forecasting foundation models (FMs) are increasingly fine-tuned to predict air quality, offering fast global pollution forecasts at lower computational cost than conventional chemical...</span><span class="abstract-full" id="full-2607.20778" hidden>Weather forecasting foundation models (FMs) are increasingly fine-tuned to predict air quality, offering fast global pollution forecasts at lower computational cost than conventional chemical transport models. These FMs are typically trained on reanalysis data and generate forecasts through autoregressive rollout. They do not explicitly represent governing physical or chemical processes. Therefore, high forecast skill does not reveal whether a model has learned physical mechanisms or exploits statistical regularities in its training data. Here, we present the first study of what a FM fine-tuned for atmospheric chemistry has learned by examining Microsoft's Aurora model. We impose controlled chemical perturbations on its forecasts and test them against known photochemical relationships. We then examine the internal representations that generate these forecasts. We find that Aurora captures a first-order ozone response to reactive nitrogen but does not enforce the chemical constraints that a process-based model encodes. It generates chemically inconsistent combinations of related species and relaxes localized emission features such as wildfire plumes toward background. Internally, its representations remain largely organized around the meteorology inherited during pretraining, with little structure specific to chemistry. Using sparse autoencoders, we identify internal components that causally control the chemical forecast but do not map cleanly onto individual atmospheric processes. This work provides a framework for testing whether AI forecasting systems learn atmospheric chemistry from reanalysis data. As these models are increasingly positioned to inform environmental policy decisions, we argue that composition forecasts should also be judged by their internal mechanisms rather than by benchmark skill alone.</span> <span class="abstract-toggle" data-id="2607.20778">more</span>
-
-    [:material-file-document: 2607.20778](https://arxiv.org/abs/2607.20778v1) · [:material-content-copy: BibTeX](bibtex/2607.20778.bib){ .bibtex-link }
-
-    <span class="md-tag">foundation-model</span>
-
--   #### Spatial Generalization Tests for Machine Learning-based Weather Models to Assess Physical Consistency
-
-    ---
-
-    *Maren Höver, Milan Klöwer, Christian Schroeder de Witt, Hannah M. Christensen* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.20716">Machine learning-based weather prediction is revolutionizing weather forecasting by learning from weather data in present-day climate. However, generalization to other climates remains a major...</span><span class="abstract-full" id="full-2607.20716" hidden>Machine learning-based weather prediction is revolutionizing weather forecasting by learning from weather data in present-day climate. However, generalization to other climates remains a major challenge. With melting sea ice, land-use change, and increasing ocean temperatures, boundary conditions are changing. Therefore, generalization in time depends on generalization in space. Here, we present three test cases to evaluate whether machine learning-based weather and climate models generalize in space and apply them to GraphCast and NeuralGCM. We reverse or rotate the planet in longitude or latitude under the model's coordinate system and adapt all boundary conditions and forcings accordingly. Physics-based general circulation models simulate a rotated/reversed planet with only rounding errors, but GraphCast and NeuralGCM fail these tests. The analyses furthermore revealed unphysical variable mappings based on correlation rather than causation. We argue that machine learning-based climate models should be designed to pass generalization tests to prevent overfitting on present-day regional climate.</span> <span class="abstract-toggle" data-id="2607.20716">more</span>
-
-    [:material-file-document: 2607.20716](https://arxiv.org/abs/2607.20716v1) · [:material-content-copy: BibTeX](bibtex/2607.20716.bib){ .bibtex-link }
-
-    <span class="md-tag">physics-informed</span>
-
--   #### Geospatial Diffusion-based Evolution Synthesis (GeoDES) for Storm-Centered Weather Augmentation
-
-    ---
-
-    *Sonia Cromp, Satya Sai Srinath Namburi GNVV, Youran Wang, Grace Kisslinger, Frederic Sala et al.* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.19522">While machine learning-based weather models hold significant promise, they struggle to predict the detailed structure of large-scale weather systems such as cyclonic storms. Regional models are...</span><span class="abstract-full" id="full-2607.19522" hidden>While machine learning-based weather models hold significant promise, they struggle to predict the detailed structure of large-scale weather systems such as cyclonic storms. Regional models are constrained by limited historical records within fixed geographic boundaries, while global models are computationally expensive and often operate at resolutions too coarse to capture fine-grained storm dynamics. To bridge this gap, we introduce the Geospatial Diffusion-based Evolution Synthesis (GeoDES) model, a custom image-to-video diffusion model. By focusing generation strictly on the evolving storm structure, GeoDES synthesizes physically consistent, high-fidelity weather events suitable for stress-testing forecast models and expanding meteorological datasets. Evaluations demonstrate that GeoDES outperforms prior methods on key metrics, achieving $52\%$ lower Peak Vorticity Error and $8\%$ higher Anomaly Correlation Coefficient than the next strongest methods on the North Atlantic test set.</span> <span class="abstract-toggle" data-id="2607.19522">more</span>
-
-    [:material-file-document: 2607.19522](https://arxiv.org/abs/2607.19522v1) · [:material-content-copy: BibTeX](bibtex/2607.19522.bib){ .bibtex-link }
-
-    <span class="md-tag">diffusion</span>
-
--   #### Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions
-
-    ---
-
-    *Manmeet Singh, Saptarishi Dhanuka, Naveen Sudharsan, Houman Owhadi, Krista M. Soderlund et al.* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.19370">Foundation models for planetary atmospheres promise fast, lightweight surrogates of expensive general circulation models (GCMs) for mission planning and scientific inquiry. Here we present...</span><span class="abstract-full" id="full-2607.19370" hidden>Foundation models for planetary atmospheres promise fast, lightweight surrogates of expensive general circulation models (GCMs) for mission planning and scientific inquiry. Here we present Aircast-Mars, a deep-learning weather prediction system for Mars trained on the Ensemble Mars Atmosphere Reanalysis System (EMARS) v1.0. We regrid temperature, zonal wind, and meridional wind fields across 28 vertical levels onto a hierarchical equal-area isolatitude pixelization (HEALPix) mesh at Nside = 64 (~110 km resolution) and train a HEALPix-aware 2D U-Net inspired by the DLESyM architecture to predict the next hourly atmospheric state. The model employs custom inter-face padding that respects the topology of the 12-face HEALPix sphere and modern ConvNeXt residual blocks with capped Gaussian Error Linear Unit (GELU) activations. While containing 4.3 million trainable parameters, a compact size compared to terrestrial weather foundation models, the network achieves a best validation Mean Squared Error (MSE) of 1.58e-5 in normalized units. Recursive autoregressive rollouts remain stable and physically coherent for 25 hours (one Martian sol), with Root Mean Square Error (RMSE) growing monotonically from ~0.004 at t + 1 h to ~0.031 at t + 25 h without divergence. Compared to a baseline 3D U-Net, the HEALPix-aware architecture reduces validation loss by more than an order of magnitude while using fewer parameters. The model generates a one-hour forecast in approximately 0.5 seconds on a single GPU, offering several orders-of-magnitude speedup over traditional numerical GCMs. These results demonstrate that parsimonious, geometry-respecting neural architectures can capture synoptic-scale Martian atmospheric dynamics and provide a foundation for planetary-scale weather forecasting.</span> <span class="abstract-toggle" data-id="2607.19370">more</span>
-
-    [:material-file-document: 2607.19370](https://arxiv.org/abs/2607.19370v1) · [:material-content-copy: BibTeX](bibtex/2607.19370.bib){ .bibtex-link }
-
-    <span class="md-tag">CNN</span> <span class="md-tag">foundation-model</span>
-
--   #### On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules
-
-    ---
-
-    *Simon Lang, Martin Leutbecher, Sam Hatfield* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.19161">Probabilistic forecast models can be machine-learned from data using loss functions based on scoring rules such as the Continuous Ranked Probability Score (CRPS). This note summarises a preliminary...</span><span class="abstract-full" id="full-2607.19161" hidden>Probabilistic forecast models can be machine-learned from data using loss functions based on scoring rules such as the Continuous Ranked Probability Score (CRPS). This note summarises a preliminary study comparing versions of AIFS-CRPS, a global weather forecast model, trained with different univariate and multivariate scoring rules that aim to explicitly represent scale-awareness in the loss function. In the first part, we compare the (almost) fair CRPS, a fair global energy score, and a graph energy score based on node neighbourhoods. Across standard verification metrics, forecast skill is broadly similar. In the extratropics we find only small differences, while in the tropics the graph energy score setup performs somewhat better and the global energy score shows some degradation. These results suggest that multivariate scores are a viable alternative to CRPS-based training for global machine-learned weather forecasting. In the second part of the study, we analyse how different scoring rules and scale-aware loss constraints shape the spectra of forecast fields. It is apparent that any form of explicit scale-awareness improves realism. Here, the largest differences are likely associated with different effective weights per scale.</span> <span class="abstract-toggle" data-id="2607.19161">more</span>
-
-    [:material-file-document: 2607.19161](https://arxiv.org/abs/2607.19161v1) · [:material-content-copy: BibTeX](bibtex/2607.19161.bib){ .bibtex-link }
-
-    <span class="md-tag">probabilistic</span>
-
--   #### Physics-Informed Super-Resolution of Atmospheric Data
-
-    ---
-
-    *Chang Xu, Gencer Sumbul, Hugo Porta, Manon Béchaz, Sebastian Schemm, Devis Tuia* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.18877">In the context of global warming, extreme events have become more frequent and intense, making their trustworthy detection and forecasting more important than ever. Yet, atmospheric observations lack...</span><span class="abstract-full" id="full-2607.18877" hidden>In the context of global warming, extreme events have become more frequent and intense, making their trustworthy detection and forecasting more important than ever. Yet, atmospheric observations lack sufficient spatial resolution, motivating atmospheric data downscaling as a way to reconstruct high-resolution data from coarse observations. This task is now being formulated as a super-resolution (SR) problem with machine learning methods featuring high efficiency. Nevertheless, it remains unclear whether the super-resolved atmospheric data still satisfies fundamental physics governing the Earth system, raising concerns about their trustworthiness in climate-related applications. In this work, we address this challenge by constraining SR models to respect hydrostatic primitive equations that represent multivariate atmospheric physics. First, we propose a Physics-Informed Super-Resolution (PISR) method involving multi-scale physics-informed objectives based on primitive equations. PISR favors the SR outputs to respect these equations and therefore naturally encodes inter-variable relationships. In addition, we propose a metric called Normalized Physical Consistency (NPC) derived from said primitive equations to measure the physical consistency of super-resolved data. Experiments on ERA5, CERRA, and COSMO demonstrate that PISR enhances the reconstruction fidelity by improving physical consistency, SR accuracy, and downstream detection of extreme events, as demonstrated by case studies in heatwaves and extreme winds.</span> <span class="abstract-toggle" data-id="2607.18877">more</span>
-
-    [:material-file-document: 2607.18877](https://arxiv.org/abs/2607.18877v1) · [:material-content-copy: BibTeX](bibtex/2607.18877.bib){ .bibtex-link }
-
-    <span class="md-tag">physics-informed</span>
 
 </div>
 

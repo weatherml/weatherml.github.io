@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (160)
+## CNN (161)
 
+- **Meteosat Third Generation imagery improves CNN-based SSI retrieval** (2026) - [Other](other.md) - [arXiv:2607.28093v1](https://arxiv.org/abs/2607.28093v1)
 - **Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions** (2026) - [Global Models](global_models.md) - [arXiv:2607.19370v1](https://arxiv.org/abs/2607.19370v1)
 - **Physics-Based Deep Spatiotemporal Hyperlocal Radar Nowcasting with a Multi-Variable U-Net for High-Resolution Precipitation Forecasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2607.16080v1](https://arxiv.org/abs/2607.16080v1)
 - **Enhancing the Forecasting Capability of Multi-Model Blending Algorithms for Extreme Precipitation via Joint Use of Station and Gridded Observations** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2607.04862v1](https://arxiv.org/abs/2607.04862v1)
@@ -501,8 +502,9 @@ title: Tags
 - **RL-DAUNCE: Reinforcement Learning-Driven Data Assimilation with Uncertainty-Aware Constrained Ensembles** (2025) - [Data Assimilation](data_assimilation.md) - [arXiv:2505.05452v1](https://arxiv.org/abs/2505.05452v1)
 - **Kolmogorov Modes and Linear Response of Jump-Diffusion Models** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2411.14769v2](https://arxiv.org/abs/2411.14769v2)
 
-## operator-learning (35)
+## operator-learning (36)
 
+- **A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates** (2026) - [Other](other.md) - [arXiv:2607.25668v1](https://arxiv.org/abs/2607.25668v1)
 - **Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2607.21954v1](https://arxiv.org/abs/2607.21954v1)
 - **Fourier Geometric Wind Power Forecasting with Numerical Weather Prediction** (2026) - [Other](other.md) - [arXiv:2607.17095v1](https://arxiv.org/abs/2607.17095v1)
 - **Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2606.02661v1](https://arxiv.org/abs/2606.02661v1)
@@ -539,8 +541,11 @@ title: Tags
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (158)
+## physics-informed (161)
 
+- **Weather Emulators at the Frontier of Heat Extremes Predictability** (2026) - [Global Models](global_models.md) - [arXiv:2607.28220v1](https://arxiv.org/abs/2607.28220v1)
+- **Meteosat Third Generation imagery improves CNN-based SSI retrieval** (2026) - [Other](other.md) - [arXiv:2607.28093v1](https://arxiv.org/abs/2607.28093v1)
+- **A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates** (2026) - [Other](other.md) - [arXiv:2607.25668v1](https://arxiv.org/abs/2607.25668v1)
 - **Spatial Generalization Tests for Machine Learning-based Weather Models to Assess Physical Consistency** (2026) - [Global Models](global_models.md) - [arXiv:2607.20716v1](https://arxiv.org/abs/2607.20716v1)
 - **Physics-Informed Super-Resolution of Atmospheric Data** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2607.18877v1](https://arxiv.org/abs/2607.18877v1)
 - **Physics-Informed Feature Engineering 1D-CNN for Multilayer Cloud Detection from Geostationary Satellites** (2026) - [Other](other.md) - [arXiv:2607.16270v1](https://arxiv.org/abs/2607.16270v1)
@@ -952,8 +957,10 @@ title: Tags
 - **AQ-PINNs: Attention-Enhanced Quantum Physics-Informed Neural Networks for Carbon-Efficient Climate Modeling** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2409.01626v1](https://arxiv.org/abs/2409.01626v1)
 - **Quantum Computing for Climate Resilience and Sustainability Challenges** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2407.16296v1](https://arxiv.org/abs/2407.16296v1)
 
-## recurrent (78)
+## recurrent (80)
 
+- **Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2607.26581v1](https://arxiv.org/abs/2607.26581v1)
+- **From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations** (2026) - [Other](other.md) - [arXiv:2607.26492v1](https://arxiv.org/abs/2607.26492v1)
 - **Exploratory Analysis of Deep Learning Models for Forecasting Meteorological Parameters in the Agricultural Sector** (2026) - [Other](other.md) - [arXiv:2607.10208v1](https://arxiv.org/abs/2607.10208v1)
 - **GlacierCastAI: Predicting Glacier Retreat from Multi-Modal Satellite Imagery and Climate Signals** (2026) - [Other](other.md) - [arXiv:2607.04117v1](https://arxiv.org/abs/2607.04117v1)
 - **Deep Learning for Soil Moisture Estimation: Fusing Satellite Data with Optimally-Lagged Meteorological Features** (2026) - [Other](other.md) - [arXiv:2606.21475v1](https://arxiv.org/abs/2606.21475v1)

@@ -50,10 +50,11 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (1429 papers)
+## Paper Collection (1436 papers)
 
-### Global Models (265)
+### Global Models (266)
 
+- **Weather Emulators at the Frontier of Heat Extremes Predictability** (2026) - [arXiv:2607.28220v1](https://arxiv.org/abs/2607.28220v1)
 - **MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation** (2026) - [arXiv:2607.21917v1](https://arxiv.org/abs/2607.21917v1)
 - **Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction** (2026) - [arXiv:2607.21080v1](https://arxiv.org/abs/2607.21080v1)
 - **Spatial Generalization Tests for Machine Learning-based Weather Models to Assess Physical Consistency** (2026) - [arXiv:2607.20716v1](https://arxiv.org/abs/2607.20716v1)
@@ -453,8 +454,9 @@ uv run python build_pages.py
 - **MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling** (2024) - [arXiv:2408.10854v1](https://arxiv.org/abs/2408.10854v1)
 - **Evaluating the transferability potential of deep learning models for climate downscaling** (2024) - [arXiv:2407.12517v1](https://arxiv.org/abs/2407.12517v1)
 
-### Data Assimilation (89)
+### Data Assimilation (90)
 
+- **Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities** (2026) - [arXiv:2607.26581v1](https://arxiv.org/abs/2607.26581v1)
 - **Sparse Sensor Placement for Reducing Forecast Errors in Ensemble Kalman Filtering** (2026) - [arXiv:2606.27267v1](https://arxiv.org/abs/2606.27267v1)
 - **ARCO-Mars: A Unified Cloud-Optimized Archive of Mars Atmosphere Reanalysis** (2026) - [arXiv:2606.21701v1](https://arxiv.org/abs/2606.21701v1)
 - **Using Distributional Regression Networks to Retrieve Cloud Properties from Solar Satellite Channels for Data Assimilation** (2026) - [arXiv:2606.21294v1](https://arxiv.org/abs/2606.21294v1)
@@ -1006,8 +1008,13 @@ uv run python build_pages.py
 - **Ensemble quantile-based deep learning framework for streamflow and flood prediction in Australian catchments** (2024) - [arXiv:2407.15882v2](https://arxiv.org/abs/2407.15882v2)
 - **Modeling Spatial Extremal Dependence of Precipitation Using Distributional Neural Networks** (2024) - [arXiv:2407.08668v3](https://arxiv.org/abs/2407.08668v3)
 
-### Other (496)
+### Other (501)
 
+- **Memory compression and physical state augmentation favor different AMOC prediction tasks** (2026) - [arXiv:2607.28468v1](https://arxiv.org/abs/2607.28468v1)
+- **Meteosat Third Generation imagery improves CNN-based SSI retrieval** (2026) - [arXiv:2607.28093v1](https://arxiv.org/abs/2607.28093v1)
+- **From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations** (2026) - [arXiv:2607.26492v1](https://arxiv.org/abs/2607.26492v1)
+- **From Heat Stress to Perception: Interpretable Data-Driven Models of Human Thermal Sensation** (2026) - [arXiv:2607.25850v1](https://arxiv.org/abs/2607.25850v1)
+- **A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates** (2026) - [arXiv:2607.25668v1](https://arxiv.org/abs/2607.25668v1)
 - **Toward Mechanistic Interpretability of an AI Foundation Model Fine-Tuned for Atmospheric Chemistry** (2026) - [arXiv:2607.20778v1](https://arxiv.org/abs/2607.20778v1)
 - **Geospatial Diffusion-based Evolution Synthesis (GeoDES) for Storm-Centered Weather Augmentation** (2026) - [arXiv:2607.19522v1](https://arxiv.org/abs/2607.19522v1)
 - **Fourier Geometric Wind Power Forecasting with Numerical Weather Prediction** (2026) - [arXiv:2607.17095v1](https://arxiv.org/abs/2607.17095v1)
