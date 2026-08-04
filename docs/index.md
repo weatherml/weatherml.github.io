@@ -6,7 +6,7 @@ title: Deep Learning in Weather
 
 A collection of papers on deep learning and machine learning applied to weather forecasting, climate modeling, and atmospheric science.
 
-*Last updated: 2026-08-02*
+*Last updated: 2026-08-04*
 
 ## Starred Papers
 
@@ -74,6 +74,74 @@ A collection of papers on deep learning and machine learning applied to weather 
 
 <div class="grid cards" markdown>
 
+-   #### Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability
+
+    ---
+
+    *Henri Funk, Cornelia Gruber, Göran Kauermann, Helmut Küchenhoff, Magdalena Mittermeier* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.01864">Predicting drought risk is essential for anticipating impacts on water resources, agriculture, ecosystems, and climate adaptation planning. Yet drought forecasts remain uncertain because variability...</span><span class="abstract-full" id="full-2608.01864" hidden>Predicting drought risk is essential for anticipating impacts on water resources, agriculture, ecosystems, and climate adaptation planning. Yet drought forecasts remain uncertain because variability can substantially alter regional precipitation and evaporative demand. Treating this variability as unstructured noise ignores the fact that internal variability has spatial, seasonal, and temporal structure and thus contains information that can be used to improve drought forecasting. We propose a deep-learning-based forecasting framework for European drought prediction and extend it with an uncertainty-aware drought bound that explicitly incorporates internal forecast variability from a large climate model ensemble. This bound represents a physically plausible lower-tail trajectory of future drought conditions and marks how severe drought could plausibly become under an unfavourable realisation of internal variability, giving adaptation planning a conservative, risk-averse reference. We compare the proposed bound with a lower bound derived from reanalysis data only and show that our proposed ensemble-informed bound is better calibrated across most regions and seasons. This is specifically true during anomalously dry conditions, when historical reanalysis alone underestimates lower-tail drought risk. Our results show that internal variability should be treated as a forecast quantity in its own right. More broadly, large ensembles provide a practical way to transfer physically plausible climate variability into machine-learning drought forecasts, yielding risk-aware bounds that are more informative for drought assessment under shifting climate conditions.</span> <span class="abstract-toggle" data-id="2608.01864">more</span>
+
+    [:material-file-document: 2608.01864](https://arxiv.org/abs/2608.01864v1) · [:material-content-copy: BibTeX](bibtex/2608.01864.bib){ .bibtex-link }
+
+    <span class="md-tag">probabilistic</span>
+
+-   #### FESOM2-JAX v1.0: a differentiable shadow of the ocean-sea-ice model FESOM2, cast onto GPUs
+
+    ---
+
+    *Nikolay V. Koldunov, Sergey Danilov, Suvarchal Cheedela, Dmitry Sidorenko, Sebastian Beyer et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.01546">We present FESOM2-JAX, a Python re-implementation of the Finite-volumE Sea ice-Ocean Model (FESOM2) in JAX. The model retains the unstructured-mesh, cell-vertex finite-volume formulation of the...</span><span class="abstract-full" id="full-2608.01546" hidden>We present FESOM2-JAX, a Python re-implementation of the Finite-volumE Sea ice-Ocean Model (FESOM2) in JAX. The model retains the unstructured-mesh, cell-vertex finite-volume formulation of the original, runs unchanged from a laptop CPU to 256 GPUs, and is end-to-end differentiable. FESOM2-JAX is a code shadow of the Fortran model: a projection onto the Python ecosystem, translated with large language models and verified kernel by kernel against the original. It is built to lower the barrier to experimentation, from new numerics and parameterizations to gradient-based calibration and hybrid physics-machine-learning components, while remaining close enough to the original so that what is developed in the shadow can be transferred back. In a 1958-2019 hindcast at 1$^{\circ}$ equivalent resolution with identical physics and forcing, the mean states of the JAX and Fortran versions differ from each other by two orders of magnitude less than either differs from observations, and the two runs agree for six decades in global temperature, salinity, heat content, and sea ice. The complete 1$^{\circ}$ configuration fits on a single GPU, a node of four GH200 superchips integrates $\sim$113 simulated years per wall-clock day, and meshes of up to 7.4 million surface vertices ($\sim$5 km) scale to 128 GPUs. What limits the model is communication rather than arithmetic. What the shadow adds to the original is the gradient: a single reverse-mode pass through the full time loop returns the sensitivity of a model diagnostic to a parameter at every mesh vertex, verified against finite differences. To our knowledge, FESOM2-JAX is the first global ocean-sea-ice model of CMIP-class complexity written natively in a differentiable framework, and the first on an unstructured mesh.</span> <span class="abstract-toggle" data-id="2608.01546">more</span>
+
+    [:material-file-document: 2608.01546](https://arxiv.org/abs/2608.01546v1) · [:material-content-copy: BibTeX](bibtex/2608.01546.bib){ .bibtex-link }
+
+-   #### Climate-Dyna Deep Hedging for XVAs: Model-Based Reinforcement Learning, Residual Climate HVA, and Hedge-Instrument Discovery
+
+    ---
+
+    *Xiaozhen Wang, Francois Buet-Golfouse* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.01208">For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot...</span><span class="abstract-full" id="full-2608.01208" hidden>For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot be inferred from a stand-alone stress loss. We obtain this residual by comparing paired climate-on and baseline worlds and reoptimizing the overlay for each hedge universe, which also turns hedge-instrument discovery into a valuation problem: an instrument is useful to the extent that it lowers the optimized residual cost. The linear-Gaussian case has an exact finite-horizon Riccati solution; Climate-Dyna starts from that hedge and learns the remaining nonlinear correction from paired world-model rollouts, with an independent gate deciding whether to deploy the update. In a public-data-calibrated semi-synthetic EU ETS study, crediting the inherited hedge lowers the mean climate charge from 1.517 to 0.906, and the learned overlay lowers it to 0.831 against a 0.821 exact floor; residual Dyna cuts regret by 93% relative to replay with one quarter as many trajectories, while adaptation from only 25 target transitions retains 60.7% of the exact-assisted gain.</span> <span class="abstract-toggle" data-id="2608.01208">more</span>
+
+    [:material-file-document: 2608.01208](https://arxiv.org/abs/2608.01208v1) · [:material-content-copy: BibTeX](bibtex/2608.01208.bib){ .bibtex-link }
+
+    <span class="md-tag">reinforcement-learning</span>
+
+-   #### A Sequence-to-Sequence ConvLSTM Approach for Leaf Area Index Forecasting over the South-Central United States
+
+    ---
+
+    *Zhixing Ruan, Lixin Lu* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.00879">Leaf Area Index (LAI) is a fundamental biophysical variable governing land-atmosphere interactions; however, LAI forecasting at high spatial resolution remains an unsolved challenge. While recent...</span><span class="abstract-full" id="full-2608.00879" hidden>Leaf Area Index (LAI) is a fundamental biophysical variable governing land-atmosphere interactions; however, LAI forecasting at high spatial resolution remains an unsolved challenge. While recent machine learning approaches have demonstrated LAI estimation at point or regional scales, none provides a gridded, meteorology-driven prognostic forecast suitable for subseasonal land surface and climate modeling applications. Here we present a sequence-to-sequence Convolutional LSTM (ConvLSTM) framework that generates daily 1-km LAI forecasts up to 30 days ahead, driven by historical LAI sequences and daily meteorological forcing including temperature and precipitation. Trained and evaluated over the South-Central United States -- a region of strong climate gradients and diverse vegetation -- the model achieves a domain-averaged RMSE of 0.36 at a 30-day lead time, more than a third lower than the persistence baseline. Forecast skill remains robust across seasons, geographic distributions, and plant functional types, including forests, grasslands, shrublands, and croplands. To our knowledge, this is the first demonstration of skillful LAI forecasting at a 30-day horizon at 1-km resolution.</span> <span class="abstract-toggle" data-id="2608.00879">more</span>
+
+    [:material-file-document: 2608.00879](https://arxiv.org/abs/2608.00879v1) · [:material-content-copy: BibTeX](bibtex/2608.00879.bib){ .bibtex-link }
+
+    <span class="md-tag">recurrent</span>
+
+-   #### A Machine Learning-based Non-precipitating Clouds Estimation for THz Dual-Frequency Radar
+
+    ---
+
+    *Kazuhiko Tamesue, Zheng Wen, Shotaro Yamaguchi, Hiroyuki Kasai, Wataru Kameyama, Toshio Sato et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.00653">Accurate measurement of non-precipitable clouds is important for early prediction of heavy rainfall disasters caused by extreme weather events. However, microwave cloud radar cannot observe the early...</span><span class="abstract-full" id="full-2608.00653" hidden>Accurate measurement of non-precipitable clouds is important for early prediction of heavy rainfall disasters caused by extreme weather events. However, microwave cloud radar cannot observe the early stages of cloud development from non-precipitation clouds (cumulus) to cumulonimbus. In this paper, we propose a terahertz dual-frequency cloud radar using 150 GHz and 95 GHz bands to detect cloud particles in cumulus smaller than 10 μm. Using a dataset generated by the ITU-R radio propagation model, we estimate the liquid water content of non-precipitation clouds and water vapor content in atmospheric gases, respectively, by using a machine learning-based approach. The effectiveness of using the dual wavelength ratio as an explanatory variable is examined.</span> <span class="abstract-toggle" data-id="2608.00653">more</span>
+
+    [:material-file-document: 2608.00653](https://arxiv.org/abs/2608.00653v1) · [:material-content-copy: BibTeX](bibtex/2608.00653.bib){ .bibtex-link }
+
+-   #### Generative Models for Modeling and Synthesizing MIMO Channels in Adverse Weather Conditions
+
+    ---
+
+    *Vignesh Nandakumar, Faraz Barati, Brian L. Evans* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.00156">The push for broader coverage in future cellular networks depends on reliable service, yet this is increasingly harder to do as we encounter more instances of extreme weather conditions. In extreme...</span><span class="abstract-full" id="full-2608.00156" hidden>The push for broader coverage in future cellular networks depends on reliable service, yet this is increasingly harder to do as we encounter more instances of extreme weather conditions. In extreme weather conditions, we have difficulty evaluating coverage due to limited access to channel measurements. In this paper, we generate channel state information (CSI) in low and moderate weather conditions to synthesize realistic MIMO CSI under adverse weather conditions. Our primary contributions are to (1) synthesize MIMO channel datasets incorporating three weather types, each with three intensity levels, representative of practical 5G/6G scenarios; (2) train a diffusion model conditioned on weather using channel samples obtained through conventional pilot-based estimation under low and moderate weather intensities, and subsequently use it to generate channel realizations for severe weather conditions; and (3) evaluate the downlink Bit Error Rate (BER) and Outage Probability measures using the generated channels. The results show that diffusion-based generative models provide a scalable, data-driven alternative for channel modeling in harsh environments and can generalize to severe weather conditions using only low- and moderate-intensity training data.</span> <span class="abstract-toggle" data-id="2608.00156">more</span>
+
+    [:material-file-document: 2608.00156](https://arxiv.org/abs/2608.00156v1) · [:material-content-copy: BibTeX](bibtex/2608.00156.bib){ .bibtex-link }
+
+    <span class="md-tag">diffusion</span>
+
 -   #### Memory compression and physical state augmentation favor different AMOC prediction tasks
 
     ---
@@ -119,74 +187,6 @@ A collection of papers on deep learning and machine learning applied to weather 
     [:material-file-document: 2607.26581](https://arxiv.org/abs/2607.26581v1) · [:material-content-copy: BibTeX](bibtex/2607.26581.bib){ .bibtex-link }
 
     <span class="md-tag">recurrent</span>
-
--   #### From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations
-
-    ---
-
-    *Yuan-Heng Wang, Hoshin V. Gupta* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.26492">The Mass-Conserving Perceptron (MCP) establishes a modeling paradigm in which conceptual hydrologic models can be reformulated as physically constrained, conceptually interpretable neural networks....</span><span class="abstract-full" id="full-2607.26492" hidden>The Mass-Conserving Perceptron (MCP) establishes a modeling paradigm in which conceptual hydrologic models can be reformulated as physically constrained, conceptually interpretable neural networks. Here, we develop a snow-water MCP network framework and evaluate it across 513 CAMELS-US basins. We first recast a coupled two-state SOIL-MCP and SNOWMCP conceptual model as a mass-conserving neural network and show that the hydrologic-model and neural-network formulations achieve comparable predictive performance. We then examine cross-node state-information sharing within two-state HYDROMCP architectures and evaluate broader single-layer networks constructed from three types of interpretable MCP units with one to five states. Across CONUS, the median KGEss increases from 0.82 for one-state networks to 0.89 for two-state networks and 0.90 for five-state networks, suggesting diminishing aggregate gains beyond two states. Basin-specific MCP and LSTM selection yields the same median KGEss of 0.90, while the selected MCP networks use fewer parameters on average. Complementary AIC- and KGE-based selection identifies compact, basin-specific directed-graph representations that balance predictive accuracy and model complexity. These analyses provide an empirical basis for identifying the numbers, types, and interactions of states needed for hydrologic representation. Future studies should test joint training against multiple hydrologic responses, such as streamflow, snow water equivalent, and groundwater storage.</span> <span class="abstract-toggle" data-id="2607.26492">more</span>
-
-    [:material-file-document: 2607.26492](https://arxiv.org/abs/2607.26492v1) · [:material-content-copy: BibTeX](bibtex/2607.26492.bib){ .bibtex-link }
-
-    <span class="md-tag">recurrent</span>
-
--   #### From Heat Stress to Perception: Interpretable Data-Driven Models of Human Thermal Sensation
-
-    ---
-
-    *Abed Hammoud, Xinjie Huang, Qinqin Kong, Marialena Nikolopoulou, Elie Bou-Zeid* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.25850">Heat stress indices are designed to quantify physiological thermal stress, but their relevance for inferring the thermal perception of individuals remains unclear. In this study, we show that thermal...</span><span class="abstract-full" id="full-2607.25850" hidden>Heat stress indices are designed to quantify physiological thermal stress, but their relevance for inferring the thermal perception of individuals remains unclear. In this study, we show that thermal stress and thermal sensation often diverge, as evidenced by distinct global sensitivity patterns with respect to environmental drivers. Using thermal sensation vote survey data, we demonstrate that the dominant sensitivities of stress-based metrics do not align with those governing reported human thermal sensation. Given the multitude of globally-applicable thermal stress indices and the lack of comparable general thermal sensation metrics, we develop two complementary data-driven modeling frameworks for thermal sensation. First, we construct polynomial chaos expansion (PCE) surrogates to represent thermal sensation as a function of meteorological variables, enabling efficient variance-based sensitivity analysis and explicit identification of influential inputs and interactions. Second, we develop multilayer perceptron (MLP) classifiers that capture the nonlinear and subjective nature of thermal perception, while achieving high predictive accuracy. The PCE models provide physically interpretable sensitivities that can explain the drivers of thermal sensation, while the MLPs offer flexible predictive capability suited to complex environments. We apply both modeling approaches at city- and continent-scales, revealing systematic differences in sensitivity structure and performance across climates. In particular, we find that the sensitivity of TSV-based models to the variability of meteorological conditions across geoclimatic zone encodes distinct dependencies on temperature, radiation, humidity, and wind that vary geographically, and are generally different from those of heat stress indices.</span> <span class="abstract-toggle" data-id="2607.25850">more</span>
-
-    [:material-file-document: 2607.25850](https://arxiv.org/abs/2607.25850v1) · [:material-content-copy: BibTeX](bibtex/2607.25850.bib){ .bibtex-link }
-
--   #### A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates
-
-    ---
-
-    *Muhammad Akbar Khan, Fahim Raees, Ubaida Fatima* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.25668">Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where...</span><span class="abstract-full" id="full-2607.25668" hidden>Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where summer temperatures routinely exceed 45 C. We present a two-stage computational framework for thermal ranking of five low-cost indigenous wall materials: mud brick, clay-straw adobe, lime-stabilised bamboo panel, fired clay brick, and lime-mud composite. First, a validated Crank-Nicolson finite difference method (FDM) solves the one-dimensional transient heat equation with Robin boundary conditions under diurnal solar and outdoor air-temperature forcing, generating 1500 periodic-day solutions across a nine-dimensional parameter space by Latin Hypercube sampling. Second, a Physics-Informed Neural Operator (PINO) with a Fourier Neural Operator (FNO) backbone learns the parameter-to-solution operator mu -> T(x,t), enforcing both data fidelity and PDE consistency. The trained PINO attains a relative L2 field error of 5.14e-4 and a 0.201 K mean absolute error on the peak inner surface temperature, preserving the FDM material ranking exactly; PINO trained on 150 FDM samples matches a data-only FNO trained on twice as many, so the physics loss is most valuable when data are scarce. The periodic-day formulation also yields the ISO 13786 time lag and decrement factor, reproduced to within 0.99 h and 0.010. At nominal hot-dry summer conditions, clay-straw adobe achieves the best cost-performance index among widely available materials. A climate sweep, confirmed by FDM spot checks, reveals a regime boundary: under sub-ambient outdoor conditions the ranking inverts to conductive fired clay brick, delineating heat-exclusion and heat-rejection regimes. The framework supports evidence-based material selection for post-flood reconstruction in hot-dry regions.</span> <span class="abstract-toggle" data-id="2607.25668">more</span>
-
-    [:material-file-document: 2607.25668](https://arxiv.org/abs/2607.25668v1) · [:material-content-copy: BibTeX](bibtex/2607.25668.bib){ .bibtex-link }
-
-    <span class="md-tag">physics-informed</span> <span class="md-tag">operator-learning</span>
-
--   #### Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts
-
-    ---
-
-    *Abdoul R. Zeba, William D. Collins, Ankur Mahesh, Boris Bonev, Karthik Kashinath, Thorsten Kurth et al.* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.21954">We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual...</span><span class="abstract-full" id="full-2607.21954" hidden>We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual TCs from the fluctuations in their tracks from the shortest paths between the initiation and termination of each cyclone. We reproduce the same anomalous diffusion power laws connecting spatial position and time using HENS. In addition, we show that the variance in the position of a single TC across HENS since initiation follows a scaling law with time that, in some cases, corresponds to ballistic motion of the TC through the background atmospheric flow. This determination was enabled by the exceptional statistics determined from thousands of plausible yet counterfactual recreations of 34 individual TCs. HENS consists of 7424 15-day hindcasts initiated from observed atmospheric conditions each day from June 1, 2023 to August 31, 2023 using the ECMWF ERA5 meteorological reanalysis. The hindcasts were generated using NVIDIA's Spherical Fourier Neural Operator (SFNO) machine-learning-based weather and climate emulator. We identify tropical cyclones in HENS using a variant of the Tempest Extremes detection and tracking frameworks for TCs with adjustments to the disposable parameters to minimize the numbers of false positives and negatives relative to the International Best Track Archive for Climate Stewardship (IBTrACS) records for TCs observed in summer 2023. We conclude with the implications of our findings for the predictability of TC tracks and landfall locations on lead times of days to weeks.</span> <span class="abstract-toggle" data-id="2607.21954">more</span>
-
-    [:material-file-document: 2607.21954](https://arxiv.org/abs/2607.21954v1) · [:material-content-copy: BibTeX](bibtex/2607.21954.bib){ .bibtex-link }
-
-    <span class="md-tag">operator-learning</span>
-
--   #### MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation
-
-    ---
-
-    *Yongming Wang, Xuguang Wang* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.21917">Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation...</span><span class="abstract-full" id="full-2607.21917" hidden>Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation (DA). However, few studies have explored ML-based surrogate background ensembles for estimating background-error covariances (BECs). This study develops a convection-allowing emulator, MAPCast, trained on historical convection-allowing simulations from the Model for Prediction Across Scales (MPAS), and evaluates its ability to estimate BECs, paving the way toward multiscale DA. The evaluation uses 10 retrospective convective cases at 15- and 60-min forecast lead times corresponding to subhourly and hourly DA. MAPCast reproduces MPAS forecasts with good fidelity, including realistic storm coverage, temporal evolution, and similar spatial and spectral characteristics of state variables. Discrepancies are primarily confined to small spatial scales near sharp gradients and convective-scale features and variables. For BEC statistics, MAPCast captures ensemble spread magnitude and spatial distribution for most variables, although larger errors occur for storm-related fields that are vertical velocity and reflectivity. Correlation structures are reproduced most faithfully at mesoscale and above, followed by at convective scales, whereas cross-variable correlations are less accurately represented than univariate correlations, indicating that multivariate coupling remains the principal limitation. MAPCast shows weaker replication of full-scale versus decomposed large and small-scale correlations. BEC estimates derived from 15-min forecasts consistently outperform those from 60-min forecasts, suggesting that shorter lead times better preserve flow-dependent error structures.</span> <span class="abstract-toggle" data-id="2607.21917">more</span>
-
-    [:material-file-document: 2607.21917](https://arxiv.org/abs/2607.21917v1) · [:material-content-copy: BibTeX](bibtex/2607.21917.bib){ .bibtex-link }
-
--   #### Flexible generation of daily Earth system model projections across radiative forcing scenarios
-
-    ---
-
-    *Yu Huang, Sebastian Bathiany, Shangshang Yang, Philipp Hess, Michael Aich, Niklas Boers* · 2026
-
-    <span class="abstract-snippet" id="snip-2607.21382">Earth system model (ESM) projections of the climate system's response to anthropogenic forcing are central to assess the impacts of climate change and inform adaptation and mitigation policies....</span><span class="abstract-full" id="full-2607.21382" hidden>Earth system model (ESM) projections of the climate system's response to anthropogenic forcing are central to assess the impacts of climate change and inform adaptation and mitigation policies. However, given their high computational cost, projections are only made for a limited set of standardized forcing scenarios with limited temporal extent, such as the Shared Socioeconomic Pathways (SSPs), the spatiotemporal resolution remains too low for direct impact assessments, and uncertainties cannot be comprehensively quantified. Recent data-driven models offer efficient and accurate high-resolution simulations for weather prediction, but cannot extrapolate to future greenhouse gas concentrations because they cannot capture the responses to unprecedented forcing, limiting their value for climate change projections. Here, we combine response theory with a tailored generative machine learning framework to address this challenge. Our approach extracts the physical forced response to radiative forcing from monthly low-resolution ESM fields, and uses this response to guide a generative model to infer consistent daily global high-resolution temperature and precipitation projections. Our probabilistic approach generalizes across ESMs and provides long-term, bias-corrected responses to radiative forcing at high spatiotemporal resolution. It efficiently generates large ensembles needed for uncertainty quantification, effectively fills the gaps between existing SSPs, and readily extends climate projections to 2300 and beyond. Our framework hence complements ESM projections by providing efficient, stable, and high spatiotemporal resolution long-term climate projection ensembles across emission scenarios, enabling detailed impact assessment and exploration of long-term climate commitment.</span> <span class="abstract-toggle" data-id="2607.21382">more</span>
-
-    [:material-file-document: 2607.21382](https://arxiv.org/abs/2607.21382v1) · [:material-content-copy: BibTeX](bibtex/2607.21382.bib){ .bibtex-link }
-
-    <span class="md-tag">probabilistic</span>
 
 </div>
 

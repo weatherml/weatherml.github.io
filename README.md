@@ -50,7 +50,7 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (1436 papers)
+## Paper Collection (1442 papers)
 
 ### Global Models (266)
 
@@ -623,8 +623,10 @@ uv run python build_pages.py
 - **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2023) - [arXiv:2312.15796v2](https://arxiv.org/abs/2312.15796v2)
 - **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 
-### Climate Modeling (297)
+### Climate Modeling (299)
 
+- **Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability** (2026) - [arXiv:2608.01864v1](https://arxiv.org/abs/2608.01864v1)
+- **A Sequence-to-Sequence ConvLSTM Approach for Leaf Area Index Forecasting over the South-Central United States** (2026) - [arXiv:2608.00879v1](https://arxiv.org/abs/2608.00879v1)
 - **Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts** (2026) - [arXiv:2607.21954v1](https://arxiv.org/abs/2607.21954v1)
 - **Flexible generation of daily Earth system model projections across radiative forcing scenarios** (2026) - [arXiv:2607.21382v1](https://arxiv.org/abs/2607.21382v1)
 - **Learning Climate Variability from Scarce Data with Diffusion Models: A Test Case for ENSO** (2026) - [arXiv:2606.27094v1](https://arxiv.org/abs/2606.27094v1)
@@ -923,8 +925,10 @@ uv run python build_pages.py
 - **Neural Compression of Atmospheric States** (2024) - [arXiv:2407.11666v2](https://arxiv.org/abs/2407.11666v2)
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 
-### Extreme Weather (82)
+### Extreme Weather (84)
 
+- **A Machine Learning-based Non-precipitating Clouds Estimation for THz Dual-Frequency Radar** (2026) - [arXiv:2608.00653v1](https://arxiv.org/abs/2608.00653v1)
+- **Generative Models for Modeling and Synthesizing MIMO Channels in Adverse Weather Conditions** (2026) - [arXiv:2608.00156v1](https://arxiv.org/abs/2608.00156v1)
 - **Physics-Informed Super-Resolution of Atmospheric Data** (2026) - [arXiv:2607.18877v1](https://arxiv.org/abs/2607.18877v1)
 - **TSSM: Triaxial State Space Model for Global Station Weather Forecasting with Temporal-Variable-Historical Modeling** (2026) - [arXiv:2607.13101v1](https://arxiv.org/abs/2607.13101v1)
 - **Tracing the space-time causal origins of Earth system extremes** (2026) - [arXiv:2607.10033v1](https://arxiv.org/abs/2607.10033v1)
@@ -1008,8 +1012,10 @@ uv run python build_pages.py
 - **Ensemble quantile-based deep learning framework for streamflow and flood prediction in Australian catchments** (2024) - [arXiv:2407.15882v2](https://arxiv.org/abs/2407.15882v2)
 - **Modeling Spatial Extremal Dependence of Precipitation Using Distributional Neural Networks** (2024) - [arXiv:2407.08668v3](https://arxiv.org/abs/2407.08668v3)
 
-### Other (501)
+### Other (503)
 
+- **FESOM2-JAX v1.0: a differentiable shadow of the ocean-sea-ice model FESOM2, cast onto GPUs** (2026) - [arXiv:2608.01546v1](https://arxiv.org/abs/2608.01546v1)
+- **Climate-Dyna Deep Hedging for XVAs: Model-Based Reinforcement Learning, Residual Climate HVA, and Hedge-Instrument Discovery** (2026) - [arXiv:2608.01208v1](https://arxiv.org/abs/2608.01208v1)
 - **Memory compression and physical state augmentation favor different AMOC prediction tasks** (2026) - [arXiv:2607.28468v1](https://arxiv.org/abs/2607.28468v1)
 - **Meteosat Third Generation imagery improves CNN-based SSI retrieval** (2026) - [arXiv:2607.28093v1](https://arxiv.org/abs/2607.28093v1)
 - **From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations** (2026) - [arXiv:2607.26492v1](https://arxiv.org/abs/2607.26492v1)

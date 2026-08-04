@@ -6307,9 +6307,33 @@ hide:
 
 </div>
 
-## Climate Modeling (297)
+## Climate Modeling (299)
 
 <div class="grid cards" markdown>
+
+-   #### Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability
+
+    ---
+
+    *Henri Funk, Cornelia Gruber, Göran Kauermann, Helmut Küchenhoff, Magdalena Mittermeier* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.01864">Predicting drought risk is essential for anticipating impacts on water resources, agriculture, ecosystems, and climate adaptation planning. Yet drought forecasts remain uncertain because variability...</span><span class="abstract-full" id="full-2608.01864" hidden>Predicting drought risk is essential for anticipating impacts on water resources, agriculture, ecosystems, and climate adaptation planning. Yet drought forecasts remain uncertain because variability can substantially alter regional precipitation and evaporative demand. Treating this variability as unstructured noise ignores the fact that internal variability has spatial, seasonal, and temporal structure and thus contains information that can be used to improve drought forecasting. We propose a deep-learning-based forecasting framework for European drought prediction and extend it with an uncertainty-aware drought bound that explicitly incorporates internal forecast variability from a large climate model ensemble. This bound represents a physically plausible lower-tail trajectory of future drought conditions and marks how severe drought could plausibly become under an unfavourable realisation of internal variability, giving adaptation planning a conservative, risk-averse reference. We compare the proposed bound with a lower bound derived from reanalysis data only and show that our proposed ensemble-informed bound is better calibrated across most regions and seasons. This is specifically true during anomalously dry conditions, when historical reanalysis alone underestimates lower-tail drought risk. Our results show that internal variability should be treated as a forecast quantity in its own right. More broadly, large ensembles provide a practical way to transfer physically plausible climate variability into machine-learning drought forecasts, yielding risk-aware bounds that are more informative for drought assessment under shifting climate conditions.</span> <span class="abstract-toggle" data-id="2608.01864">more</span>
+
+    [:material-file-document: 2608.01864](https://arxiv.org/abs/2608.01864v1) · [:material-content-copy: BibTeX](bibtex/2608.01864.bib){ .bibtex-link }
+
+    <span class="md-tag">probabilistic</span>
+
+-   #### A Sequence-to-Sequence ConvLSTM Approach for Leaf Area Index Forecasting over the South-Central United States
+
+    ---
+
+    *Zhixing Ruan, Lixin Lu* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.00879">Leaf Area Index (LAI) is a fundamental biophysical variable governing land-atmosphere interactions; however, LAI forecasting at high spatial resolution remains an unsolved challenge. While recent...</span><span class="abstract-full" id="full-2608.00879" hidden>Leaf Area Index (LAI) is a fundamental biophysical variable governing land-atmosphere interactions; however, LAI forecasting at high spatial resolution remains an unsolved challenge. While recent machine learning approaches have demonstrated LAI estimation at point or regional scales, none provides a gridded, meteorology-driven prognostic forecast suitable for subseasonal land surface and climate modeling applications. Here we present a sequence-to-sequence Convolutional LSTM (ConvLSTM) framework that generates daily 1-km LAI forecasts up to 30 days ahead, driven by historical LAI sequences and daily meteorological forcing including temperature and precipitation. Trained and evaluated over the South-Central United States -- a region of strong climate gradients and diverse vegetation -- the model achieves a domain-averaged RMSE of 0.36 at a 30-day lead time, more than a third lower than the persistence baseline. Forecast skill remains robust across seasons, geographic distributions, and plant functional types, including forests, grasslands, shrublands, and croplands. To our knowledge, this is the first demonstration of skillful LAI forecasting at a 30-day horizon at 1-km resolution.</span> <span class="abstract-toggle" data-id="2608.00879">more</span>
+
+    [:material-file-document: 2608.00879](https://arxiv.org/abs/2608.00879v1) · [:material-content-copy: BibTeX](bibtex/2608.00879.bib){ .bibtex-link }
+
+    <span class="md-tag">recurrent</span>
 
 -   #### Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts
 
@@ -9609,9 +9633,31 @@ hide:
 
 </div>
 
-## Extreme Weather (82)
+## Extreme Weather (84)
 
 <div class="grid cards" markdown>
+
+-   #### A Machine Learning-based Non-precipitating Clouds Estimation for THz Dual-Frequency Radar
+
+    ---
+
+    *Kazuhiko Tamesue, Zheng Wen, Shotaro Yamaguchi, Hiroyuki Kasai, Wataru Kameyama, Toshio Sato et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.00653">Accurate measurement of non-precipitable clouds is important for early prediction of heavy rainfall disasters caused by extreme weather events. However, microwave cloud radar cannot observe the early...</span><span class="abstract-full" id="full-2608.00653" hidden>Accurate measurement of non-precipitable clouds is important for early prediction of heavy rainfall disasters caused by extreme weather events. However, microwave cloud radar cannot observe the early stages of cloud development from non-precipitation clouds (cumulus) to cumulonimbus. In this paper, we propose a terahertz dual-frequency cloud radar using 150 GHz and 95 GHz bands to detect cloud particles in cumulus smaller than 10 μm. Using a dataset generated by the ITU-R radio propagation model, we estimate the liquid water content of non-precipitation clouds and water vapor content in atmospheric gases, respectively, by using a machine learning-based approach. The effectiveness of using the dual wavelength ratio as an explanatory variable is examined.</span> <span class="abstract-toggle" data-id="2608.00653">more</span>
+
+    [:material-file-document: 2608.00653](https://arxiv.org/abs/2608.00653v1) · [:material-content-copy: BibTeX](bibtex/2608.00653.bib){ .bibtex-link }
+
+-   #### Generative Models for Modeling and Synthesizing MIMO Channels in Adverse Weather Conditions
+
+    ---
+
+    *Vignesh Nandakumar, Faraz Barati, Brian L. Evans* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.00156">The push for broader coverage in future cellular networks depends on reliable service, yet this is increasingly harder to do as we encounter more instances of extreme weather conditions. In extreme...</span><span class="abstract-full" id="full-2608.00156" hidden>The push for broader coverage in future cellular networks depends on reliable service, yet this is increasingly harder to do as we encounter more instances of extreme weather conditions. In extreme weather conditions, we have difficulty evaluating coverage due to limited access to channel measurements. In this paper, we generate channel state information (CSI) in low and moderate weather conditions to synthesize realistic MIMO CSI under adverse weather conditions. Our primary contributions are to (1) synthesize MIMO channel datasets incorporating three weather types, each with three intensity levels, representative of practical 5G/6G scenarios; (2) train a diffusion model conditioned on weather using channel samples obtained through conventional pilot-based estimation under low and moderate weather intensities, and subsequently use it to generate channel realizations for severe weather conditions; and (3) evaluate the downlink Bit Error Rate (BER) and Outage Probability measures using the generated channels. The results show that diffusion-based generative models provide a scalable, data-driven alternative for channel modeling in harsh environments and can generalize to severe weather conditions using only low- and moderate-intensity training data.</span> <span class="abstract-toggle" data-id="2608.00156">more</span>
+
+    [:material-file-document: 2608.00156](https://arxiv.org/abs/2608.00156v1) · [:material-content-copy: BibTeX](bibtex/2608.00156.bib){ .bibtex-link }
+
+    <span class="md-tag">diffusion</span>
 
 -   #### Physics-Informed Super-Resolution of Atmospheric Data
 
@@ -10545,9 +10591,31 @@ hide:
 
 </div>
 
-## Other (501)
+## Other (503)
 
 <div class="grid cards" markdown>
+
+-   #### FESOM2-JAX v1.0: a differentiable shadow of the ocean-sea-ice model FESOM2, cast onto GPUs
+
+    ---
+
+    *Nikolay V. Koldunov, Sergey Danilov, Suvarchal Cheedela, Dmitry Sidorenko, Sebastian Beyer et al.* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.01546">We present FESOM2-JAX, a Python re-implementation of the Finite-volumE Sea ice-Ocean Model (FESOM2) in JAX. The model retains the unstructured-mesh, cell-vertex finite-volume formulation of the...</span><span class="abstract-full" id="full-2608.01546" hidden>We present FESOM2-JAX, a Python re-implementation of the Finite-volumE Sea ice-Ocean Model (FESOM2) in JAX. The model retains the unstructured-mesh, cell-vertex finite-volume formulation of the original, runs unchanged from a laptop CPU to 256 GPUs, and is end-to-end differentiable. FESOM2-JAX is a code shadow of the Fortran model: a projection onto the Python ecosystem, translated with large language models and verified kernel by kernel against the original. It is built to lower the barrier to experimentation, from new numerics and parameterizations to gradient-based calibration and hybrid physics-machine-learning components, while remaining close enough to the original so that what is developed in the shadow can be transferred back. In a 1958-2019 hindcast at 1$^{\circ}$ equivalent resolution with identical physics and forcing, the mean states of the JAX and Fortran versions differ from each other by two orders of magnitude less than either differs from observations, and the two runs agree for six decades in global temperature, salinity, heat content, and sea ice. The complete 1$^{\circ}$ configuration fits on a single GPU, a node of four GH200 superchips integrates $\sim$113 simulated years per wall-clock day, and meshes of up to 7.4 million surface vertices ($\sim$5 km) scale to 128 GPUs. What limits the model is communication rather than arithmetic. What the shadow adds to the original is the gradient: a single reverse-mode pass through the full time loop returns the sensitivity of a model diagnostic to a parameter at every mesh vertex, verified against finite differences. To our knowledge, FESOM2-JAX is the first global ocean-sea-ice model of CMIP-class complexity written natively in a differentiable framework, and the first on an unstructured mesh.</span> <span class="abstract-toggle" data-id="2608.01546">more</span>
+
+    [:material-file-document: 2608.01546](https://arxiv.org/abs/2608.01546v1) · [:material-content-copy: BibTeX](bibtex/2608.01546.bib){ .bibtex-link }
+
+-   #### Climate-Dyna Deep Hedging for XVAs: Model-Based Reinforcement Learning, Residual Climate HVA, and Hedge-Instrument Discovery
+
+    ---
+
+    *Xiaozhen Wang, Francois Buet-Golfouse* · 2026
+
+    <span class="abstract-snippet" id="snip-2608.01208">For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot...</span><span class="abstract-full" id="full-2608.01208" hidden>For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot be inferred from a stand-alone stress loss. We obtain this residual by comparing paired climate-on and baseline worlds and reoptimizing the overlay for each hedge universe, which also turns hedge-instrument discovery into a valuation problem: an instrument is useful to the extent that it lowers the optimized residual cost. The linear-Gaussian case has an exact finite-horizon Riccati solution; Climate-Dyna starts from that hedge and learns the remaining nonlinear correction from paired world-model rollouts, with an independent gate deciding whether to deploy the update. In a public-data-calibrated semi-synthetic EU ETS study, crediting the inherited hedge lowers the mean climate charge from 1.517 to 0.906, and the learned overlay lowers it to 0.831 against a 0.821 exact floor; residual Dyna cuts regret by 93% relative to replay with one quarter as many trajectories, while adaptation from only 25 target transitions retains 60.7% of the exact-assisted gain.</span> <span class="abstract-toggle" data-id="2608.01208">more</span>
+
+    [:material-file-document: 2608.01208](https://arxiv.org/abs/2608.01208v1) · [:material-content-copy: BibTeX](bibtex/2608.01208.bib){ .bibtex-link }
+
+    <span class="md-tag">reinforcement-learning</span>
 
 -   #### Memory compression and physical state augmentation favor different AMOC prediction tasks
 

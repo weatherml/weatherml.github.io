@@ -247,8 +247,9 @@ title: Tags
 - **Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics** (2024) - [Global Models](global_models.md) - [arXiv:2407.14129v3](https://arxiv.org/abs/2407.14129v3)
 - **Graph Neural Networks and Spatial Information Learning for Post-Processing Ensemble Weather Forecasts** (2024) - [Ensembles](ensembles.md) - [arXiv:2407.11050v1](https://arxiv.org/abs/2407.11050v1)
 
-## diffusion (153)
+## diffusion (154)
 
+- **Generative Models for Modeling and Synthesizing MIMO Channels in Adverse Weather Conditions** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.00156v1](https://arxiv.org/abs/2608.00156v1)
 - **Geospatial Diffusion-based Evolution Synthesis (GeoDES) for Storm-Centered Weather Augmentation** (2026) - [Other](other.md) - [arXiv:2607.19522v1](https://arxiv.org/abs/2607.19522v1)
 - **Apeliotes: A Diffusion-Based Modeling Framework for km-scale Multi-Level Atmospheric Fields** (2026) - [Global Models](global_models.md) - [arXiv:2607.17037v1](https://arxiv.org/abs/2607.17037v1)
 - **Less Tokens, Better Forecasts: Sparse Residual Routing for Efficient Weather Prediction** (2026) - [Global Models](global_models.md) - [arXiv:2607.02829v1](https://arxiv.org/abs/2607.02829v1)
@@ -705,8 +706,9 @@ title: Tags
 - **A Physics-Informed Machine Learning Approach utilizing Multiband Satellite Data for Solar Irradiance Estimation** (2024) - [Other](other.md) - [arXiv:2407.04283v1](https://arxiv.org/abs/2407.04283v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (234)
+## probabilistic (235)
 
+- **Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2608.01864v1](https://arxiv.org/abs/2608.01864v1)
 - **Flexible generation of daily Earth system model projections across radiative forcing scenarios** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2607.21382v1](https://arxiv.org/abs/2607.21382v1)
 - **On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules** (2026) - [Global Models](global_models.md) - [arXiv:2607.19161v1](https://arxiv.org/abs/2607.19161v1)
 - **Improved Global Ocean Heat Content Estimation by Modeling Vertical Spatio-Temporal Dependence** (2026) - [Other](other.md) - [arXiv:2607.11832v1](https://arxiv.org/abs/2607.11832v1)
@@ -957,8 +959,9 @@ title: Tags
 - **AQ-PINNs: Attention-Enhanced Quantum Physics-Informed Neural Networks for Carbon-Efficient Climate Modeling** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2409.01626v1](https://arxiv.org/abs/2409.01626v1)
 - **Quantum Computing for Climate Resilience and Sustainability Challenges** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2407.16296v1](https://arxiv.org/abs/2407.16296v1)
 
-## recurrent (80)
+## recurrent (81)
 
+- **A Sequence-to-Sequence ConvLSTM Approach for Leaf Area Index Forecasting over the South-Central United States** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2608.00879v1](https://arxiv.org/abs/2608.00879v1)
 - **Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2607.26581v1](https://arxiv.org/abs/2607.26581v1)
 - **From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations** (2026) - [Other](other.md) - [arXiv:2607.26492v1](https://arxiv.org/abs/2607.26492v1)
 - **Exploratory Analysis of Deep Learning Models for Forecasting Meteorological Parameters in the Agricultural Sector** (2026) - [Other](other.md) - [arXiv:2607.10208v1](https://arxiv.org/abs/2607.10208v1)
@@ -1040,8 +1043,9 @@ title: Tags
 - **A Deep Learning Approach for Modeling and Hindcasting Lake Michigan Ice Cover** (2024) - [Other](other.md) - [arXiv:2407.04937v1](https://arxiv.org/abs/2407.04937v1)
 - **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [Ensembles](ensembles.md) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 
-## reinforcement-learning (29)
+## reinforcement-learning (30)
 
+- **Climate-Dyna Deep Hedging for XVAs: Model-Based Reinforcement Learning, Residual Climate HVA, and Hedge-Instrument Discovery** (2026) - [Other](other.md) - [arXiv:2608.01208v1](https://arxiv.org/abs/2608.01208v1)
 - **Wind-Aware Reinforcement Learning Control of a Small Quadrotor Using Learned Onboard Wind Estimation in Simulated Atmospheric Turbulence** (2026) - [Other](other.md) - [arXiv:2607.01528v1](https://arxiv.org/abs/2607.01528v1)
 - **Deep Reinforcement Learning for Spacecraft Attitude Control During Atmospheric Re-Entry** (2026) - [Other](other.md) - [arXiv:2606.31291v1](https://arxiv.org/abs/2606.31291v1)
 - **Artificial Intelligence for Climate Adaptation: Reinforcement Learning for Climate Change-Resilient Transport** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2603.06278v1](https://arxiv.org/abs/2603.06278v1)
