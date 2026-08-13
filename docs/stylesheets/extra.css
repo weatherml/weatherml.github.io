@@ -32,6 +32,9 @@ h1#__skip {
 /* Cards fill equal height in grid rows */
 .grid.cards > ul > li {
   align-self: stretch;
+  /* Skip layout/paint of offscreen cards so long pages render fast */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 200px;
 }
 
 /* Expanded card spans full row */
