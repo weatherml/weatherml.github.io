@@ -44202,3 +44202,678 @@
   arxiv_categories:
   - eess.SP
   - cs.LG
+- category: Global Models
+  title: Earth observation embeddings are effective sub-grid descriptors for probabilistic
+    weather downscaling
+  authors: Pedro Sousa, Will Tebbutt, Sadiq Jaffer, Robin Young, Anil Madhavapeddy,
+    Richard E. Turner
+  year: 2026
+  arxiv: 2608.12271v1
+  abstract: Global weather reanalyses and forecasts resolve the evolving atmospheric
+    state on coarse grids, but site-specific applications require predictions at arbitrary
+    locations where near-surface conditions also depend on unresolved terrain and
+    land-surface properties. Existing probabilistic downscalers address this gap using
+    hand-crafted topographic descriptors. We ask instead whether Earth observation
+    foundation models can provide transferable sub-grid surface representations for
+    probabilistic weather downscaling.   We augment a convolutional conditional neural
+    process that downscales coarse ERA5 reanalysis fields at ~25 km resolution with
+    a learned local surface descriptor, obtained by compressing a patch of TESSERA
+    embeddings at 10 m resolution. Although these embeddings summarise surface conditions
+    over annual timescales, they improve downscaling of instantaneous 2 m temperature
+    and 10 m wind speed by encoding persistent surface properties that capture a location's
+    departure from the coarse-grid atmospheric state. Across five climatically diverse
+    regions, the embedding improves point and probabilistic skill at stations held
+    out in both space and time, overall improving CRPS skill by 11.5% for 2 m temperature
+    and 6.2% for 10 m wind speed. We further analyse how its contribution differs
+    by variable, finding that topography explains more of temperature's sub-grid structure,
+    while TESSERA provides additional surface information for wind speed.   These
+    improvements persist when the coarse input is changed from ERA5 to forecasts from
+    the Aurora AI forecasting model, and when predicting at newly deployed stations
+    with no regional history. To our knowledge, this is the first evidence that long-timescale
+    Earth-observation embeddings can support short-timescale weather downscaling where
+    sub-grid departures are systematically structured by persistent surface properties.
+  tags:
+  - foundation-model
+  - probabilistic
+  - cs.LG
+  - physics.ao-ph
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+- category: Climate Modeling
+  title: 'DLESyM-Ocean: A Deep Learning Probabilistic Global Model for Simulating
+    Present-Day Upper Ocean and Sea Ice'
+  authors: Zachary I Espinosa, Nathaniel Cresswell-Clay, William Yik, Cecilia M. Bitz,
+    Edward Blanchard-Wrigglesworth, Peter Harrington, David Pruitt, Michael S. Pritchard,
+    Dale R. Durran
+  year: 2026
+  arxiv: 2608.11545v1
+  abstract: While AI has shown remarkable promise in atmospheric and meteorological
+    forecasting, accurately simulating other components of the Earth system with AI
+    remains an active frontier. We present DLESyM-Ocean, a Deep Learning Earth System
+    Model that simulates global present-day sea ice and upper ocean conditions. Unlike
+    conventional probabilistic models optimized via diffusion objectives or losses
+    such as continuous-ranked probability score, DLESyM-Ocean is trained using a patch
+    energy score loss. When driven by atmospheric forcing, DLESyM-Ocean produces a
+    well-calibrated, spatially coherent, and skillful ensemble of sea ice and upper
+    ocean conditions with minimal bias relative to reanalysis products. DLESyM-Ocean
+    is stable when autoregressively run for multi-year simulations and produces a
+    climatology and variability with minimal bias compared with reanalysis. We evaluate
+    case studies including a recent sea ice extreme, a severe marine heatwave, the
+    2023 El Niño transition, and the 2023 spike in global mean temperature. In all
+    of these case studies, DLESyM-Ocean produces realistic surface and subsurface
+    trajectories and ample ensemble diversity in response to common atmospheric forcing,
+    suggestive of learned autoregressive ocean dynamics. When coupled with other Earth
+    system components, such as the atmosphere, the computational efficiency of DLESyM-Ocean
+    makes it a promising tool for subseasonal to seasonal forecasting.
+  tags:
+  - probabilistic
+  - physics.ao-ph
+  arxiv_categories:
+  - physics.ao-ph
+- category: Other
+  title: Observational Evidence Revises Presumed Large Ozone Worsening from Nitrogen
+    Oxides Cuts
+  authors: Xiang Weng, Xiao Lu, Jiawei Li, Grant Forster, Jessica Chapman, Beckie
+    George, Yunbo Lu, Guowen He, Haofan Wang, Jingcheng Lai, Peer Nowack
+  year: 2026
+  arxiv: 2608.10399v1
+  abstract: Many air quality models indicate that rapid reductions in nitrogen oxides
+    (NOx), without comparable controls on volatile organic compounds, have worsened
+    summertime ozone pollution in urban China, producing a short-term strong ozone
+    penalty. Other models, however, simulate the opposite response, suggesting that
+    cutting down NOx has already helped mitigate ozone pollution. This contradiction
+    obscures understanding of atmospheric chemistry and weakens guidance on control
+    policy design. Here, we reconcile this disagreement and reveal the underestimated
+    benefits of NOx emission reductions using a machine learning framework integrated
+    with an observational constraint. We first constrain ozone responses under a 30%
+    NOx reduction, comparable to the magnitude of NOx emission declines across major
+    Chinese city clusters between 2015 and 2023. The constrained results indicate
+    that ozone decreases prevail across urban China, with only small increases mainly
+    in July 2015. This challenges the widespread ozone worsening that many models
+    predict. We then extend the constraint across 10-60% NOx reductions, establishing
+    its use for rapid ozone sensitivity diagnosis without exhaustive scenario modeling.
+    This diagnosis shows that sustained NOx control increasingly favored ozone mitigation
+    during 2015-2023, benefiting a growing share of China's population. These results
+    underscore that continued NOx reductions can deliver larger ozone mitigation benefits
+    than many models suggest.
+  tags:
+  - physics.ao-ph
+  arxiv_categories:
+  - physics.ao-ph
+- category: Other
+  title: Stochastic Emulation of a Fully Coupled Preindustrial E3SMv3 Simulation
+  authors: Elynn Wu, James P. C. Duncan, Troy Arcomano, Jeremy McGibbon, Oliver Watt-Meyer,
+    Christopher S. Bretherton, Naser Mahfouz, Claudia Tebaldi, Luke Van Roekel, Andrew
+    Roberts, Wuyin Lin, Finn Rebassoo, Jean-Christophe Golaz, Peter M. Caldwell
+  year: 2026
+  arxiv: 2608.10277v1
+  abstract: We present a stochastic coupled emulator of E3SM version 3, built on the
+    SamudrACE framework, which couples an atmosphere emulator (ACE2) with a full-depth
+    ocean emulator (Samudra). We replace the deterministic atmosphere emulator with
+    its stochastic counterpart, ACE2S, and fine-tune the coupled system with a probabilistic
+    objective, so that the atmosphere acts as a source of internal variability for
+    the ocean. Trained on 105 years of a pre-industrial control simulation and evaluated
+    on an independent 400 years, the emulator reproduces E3SMv3's mean climate state
+    with biases much smaller than existing model-to-observation differences. Relative
+    to a deterministic baseline, stochastic training maintains internal variability
+    across timescales, most notably in the ENSO power spectrum, eddy-rich SST anomalies,
+    and sea ice variability in the marginal ice zone. The emulator captures daily
+    precipitation accurately up to the 99.99th percentile, but underestimates the
+    rarest tropical extremes. These results show that stochastic coupled emulators
+    can reproduce long-timescale variability with high fidelity, while extrapolation
+    to unseen extremes remains a key challenge.
+  tags:
+  - probabilistic
+  - physics.ao-ph
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Extreme Weather
+  title: Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values
+    in Tropical Cyclone Best-Track Data
+  authors: Swastik Agrawal, Nishkal Hundia, Ziyue Liu, Michelle Bensi
+  year: 2026
+  arxiv: 2608.09683v1
+  abstract: Probabilistic coastal hazard assessments require accurate characterization
+    of tropical cyclone (TC) parameters, yet datasets often contain missing records
+    for the radius of maximum winds (Rmax), a key variable in Joint Probability Method
+    analyses. This study evaluates data-driven approaches for Rmax imputation, including
+    one-dimensional Convolutional Neural Networks (1DCNNs), Long Short-Term Memory
+    (LSTM) networks, and conventional machine learning models. We examine physics-informed
+    input augmentation, temporal modeling, and transfer learning using synthetic RAFT
+    and STORM datasets for pre-training and observational IBTrACS data for fine-tuning.
+    Including the radius of 34-knot winds (R34) substantially improves performance
+    across all model types. Temporal models achieve higher average correlations than
+    non-temporal models despite using approximately an order of magnitude fewer samples,
+    indicating better preservation of relative Rmax variability across storms. This
+    advantage is more pronounced when R34 is unavailable, suggesting temporal information
+    can partially compensate for missing storm-size predictors. Transfer learning
+    does not improve performance, likely because synthetic datasets have lower and
+    less variable Rmax distributions than IBTrACS. These findings demonstrate the
+    potential of temporal deep learning for reconstructing incomplete TC records and
+    highlight the importance of physics-informed inputs, observational data availability,
+    and distributional consistency in coastal hazard assessment.
+  tags:
+  - CNN
+  - physics-informed
+  - recurrent
+  - probabilistic
+  - cs.LG
+  - physics.ao-ph
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+- category: Ensembles
+  title: Do AI Forecast Ensembles Sample the Correct Conditional Distribution?
+  authors: Lucas J. Howard, Elizabeth A. Barnes
+  year: 2026
+  arxiv: 2608.08954v1
+  abstract: 'Ensemble forecasting aims to sample the conditional distribution of outcomes;
+    whether AI forecast ensembles do this correctly in a joint sense remains largely
+    untested. We train a diffusion model for probabilistic subseasonal coastal sea
+    level forecasts at eight US East Coast tide gauge stations, with sea level derived
+    from reanalysis, and find that marginal and joint forecast quality decouple: positive
+    skill at every station and lead time marginally, while joint spatial structure
+    is worse than climatological draws. A shuffle-based permutation decomposition
+    reveals this failure is invisible to the energy score but detected by the variogram
+    score. Lorenz-96 experiments across 0.7-170 equivalent years show the gap persists
+    regardless of training volume and is reproduced by a linear baseline, indicating
+    structural inadequacy of the learned distribution. A dynamical ensemble does not
+    replicate the failure while a deterministic emulator does, suggesting it is specific
+    to learned emulators rather than ensemble forecasting generally.'
+  tags:
+  - diffusion
+  - probabilistic
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+  - stat.AP
+  - stat.ML
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+  - stat.AP
+  - stat.ML
+- category: Downscaling
+  title: Deep Learning-Based Statistical Downscaling of Sea Surface Temperature Using
+    a Residual Corrective Neural Network
+  authors: Onkar Jadhav, Tim French, Ivica Janekovic, Nicole L. Jones, Matthew Rayson
+  year: 2026
+  arxiv: 2608.10022v1
+  abstract: The large-scale oceanic and atmospheric forecasts provided by global climate
+    models typically lack sufficient resolution to accurately capture the response
+    of the coastal ocean to atmospheric forcing and coastal circulation that drive
+    fine-scale SST variability. Dynamical downscaling is computationally prohibitive,
+    when applied to extensive coastlines, predictive ensembles, or long time periods.
+    Therefore, this work presents a statistical downscaling of sea surface temperature
+    (SST) from the seasonal coupled ocean-atmosphere forecast system (ACCESS-S2) using
+    machine learning techniques. This study proposes a novel deep learning framework
+    that uses a U-Net to generate an initial high-resolution SST estimate, which is
+    subsequently refined using a residual corrective approach. The target SST fields
+    are derived from the Regional Ocean Modeling System (ROMS). This two step approach
+    called Residual Corrective Neural Network (RCNN) progressively refines initial
+    U-Net predictions by incorporating dynamically scaled residuals at each step,
+    enabling accurate capture of broad patterns and fine-grained features such as
+    eddies and fronts. We also introduce a custom loss-assisted RCNN variant to improve
+    performance during extreme events, which may be absent from training data due
+    to climate-driven shifts in SST extremes. The framework efficiently downscales
+    SST along the west coast of Australia. A 2011 marine heatwave case study shows
+    that the RCNN improves ACCESS-S2 SST predictions by increasing horizontal resolution
+    from 25 km to 2 km, enabling identification of fine-scale anomalies unresolved
+    in the ACCESS-S2 dataset. This balance between computational efficiency and accuracy
+    supports applications in coastal impact assessment and marine ecosystem studies.
+  tags:
+  - CNN
+  - physics.ao-ph
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Other
+  title: 'Evaluating Explainable AI Methods for Geoscientific Regression: Insights
+    from Applications and the Lorenz-63 System'
+  authors: Ieuan Higgs, Todd Jones, Kieran Hunt, Anna-Louise Ellis
+  year: 2026
+  arxiv: 2608.07406v1
+  abstract: As artificial intelligence (AI) systems transition from research prototypes
+    to operational tools in Earth system science and forecasting, establishing trust
+    in their predictions becomes increasingly important. Although model inputs and
+    outputs are observable, the internal decision-making of modern AI models remains
+    complex and hard to interpret, earning them the label ``black boxes.'' Explainable
+    artificial intelligence (XAI) offers techniques to provide insight into these
+    processes. However, most XAI methods were developed for classification tasks,
+    raising questions about their suitability for the regression problems that dominate
+    geoscientific applications. We review XAI approaches through this lens, organising
+    them into a structured framework and examining both their theoretical foundations
+    and practical behaviour. To ground this discussion, we apply a selection of methods
+    to a machine learning emulator of the Lorenz 1963 system, an archetypal chaotic
+    model that provides a tractable, physically meaningful setting for exposing the
+    limitations and failure modes of general-purpose XAI in regression contexts. We
+    then survey how these and related methods have been applied across a variety of
+    Earth system sciences. We further situate XAI within the model development lifecycle,
+    linking methodological choices to the needs of different stakeholder groups across
+    operational Earth system science. We close by identifying gaps in existing methodologies
+    and outlining a forward-looking research agenda, with practical recommendations
+    for the responsible, effective use of XAI in regression applications of geoscientific
+    modelling and forecasting.
+  tags:
+  - physics.ao-ph
+  arxiv_categories:
+  - physics.ao-ph
+- category: Ensembles
+  title: 'FarSky: Task-Aware Latent-Space Coupling for Generative Intra-Hour Solar
+    Forecasting'
+  authors: Yann Fabel, Bijan Nouri, Milon Miah, Niklas Blum, Luis F. Zarzalejo, Julia
+    Kowalski, Robert Pitz-Paal
+  year: 2026
+  arxiv: 2608.11254v1
+  abstract: Accurate solar irradiance forecasting is essential for the reliable integration
+    of photovoltaic power into modern electricity grids. All-sky imagers (ASI) provide
+    high-resolution observations of clouds, making them well suited for intra-hour
+    forecasting. Recent deep learning approaches have substantially improved forecast
+    accuracy but are often limited by deterministic predictions and a reduced capability
+    to anticipate ramp events. This work proposes FarSky, a generative forecasting
+    framework that leverages latent-space coupling to learn task-aware representations
+    of sky images. A multi-task autoencoder first learns a shared latent representation
+    for image reconstruction and irradiance estimation. A latent diffusion model then
+    generates future latent states conditioned on recent observations, from which
+    irradiance forecasts are directly decoded. Probabilistic forecasts are inherently
+    obtained through stochastic sampling. The framework is developed using a multi-year
+    ASI dataset acquired at the Plataforma Solar de Almería, Spain, and evaluated
+    on two independent test datasets against persistence, state-of-the-art end-to-end,
+    and generative forecasting approaches. FarSky achieves the best overall deterministic
+    and probabilistic forecasting performance, improving forecast skill by up to 11
+    percentage points. Furthermore, it substantially improves ramp event detection
+    over existing methods, achieving F1-scores above 60%. These results demonstrate
+    the potential of combining generative models with task-aware latent-space coupling
+    for solar forecasting.
+  tags:
+  - diffusion
+  - probabilistic
+  - cs.LG
+  - physics.ao-ph
+  - stat.AP
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+  - stat.AP
+- category: Global Models
+  title: 'Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI
+    Foundation Model for Precipitation Forecasting'
+  authors: Simon Pfreundschuh, Christian D. Kummerow, Johannes Schmude, Sujit Roy,
+    Rahul Ramachandran, Tsengdar Lee, Valentine Anantharaj, Katherine H. Breen
+  year: 2026
+  arxiv: 2608.03959v1
+  abstract: Accurate precipitation forecasting remains one of the most challenging
+    problems in weather prediction. While recent AI weather prediction (AIWP) systems
+    have achieved substantial improvements in medium-range forecasting skill, precipitation
+    often remains a secondary target and is commonly learned from reanalysis datasets
+    that contain considerable uncertainty. In this work, we investigate two complementary
+    strategies for improving AI-based precipitation forecasts. Building on the Prithvi-WxC
+    foundation model, we develop Prithvi-Precip, a global precipitation forecasting
+    system, and examine (1) the impact of training targets derived from satellite-based
+    precipitation estimates rather than reanalysis fields and (2) the direct assimilation
+    of satellite observations into the forecasting model.   We systematically evaluate
+    key design choices for finetuning the Prithvi-WxC AI foundation model for precipitation
+    forecasting. We find that autoregressive rollout training produces substantially
+    more accurate forecasts than direct conditioning on forecast lead time. Using
+    independent radar-based precipitation estimates for evaluation, we show that training
+    on satellite-derived precipitation targets yields improved forecast accuracy relative
+    to training on MERRA-2 precipitation fields. Furthermore, direct ingestion of
+    satellite observations provides additional improvements at short lead times, with
+    the largest gains occurring in tropical and subtropical regions.   Together, these
+    advances enable Prithvi-Precip to substantially improve upon directly comparable
+    precipitation forecasts from the Goddard Earth Observing System. Our results highlight
+    the potential of improved precipitation targets and the direct integration of
+    satellite observations as promising pathways for advancing medium-range AI precipitation
+    forecasting.
+  tags:
+  - foundation-model
+  - physics.ao-ph
+  arxiv_categories:
+  - physics.ao-ph
+- category: Global Models
+  title: Do AI weather models miss extremes?
+  authors: Marvin Vincent Gabler, Roberto Molinaro, Niall Siegenheim, Henry Martin,
+    Mark Frey, Niels Poulsen, Philipp Seitz, Olivier Lam
+  year: 2026
+  arxiv: 2608.09972v1
+  abstract: 'First-generation AI weather models are often reported to underperform
+    at extremes, mostly in reanalysis-based evaluations of deterministic regression
+    systems. We verify eleven physical and AI forecast systems against European synoptic,
+    solar, and rain-gauge stations over ten months for 10 m wind, 2 m temperature,
+    hourly shortwave accumulation, and hourly precipitation, scoring mean absolute
+    error (MAE) against ECMWF IFS in ERA5 1991-2020 climatological regimes. Among
+    these systems, AI models do not show a uniform relative-skill deficit in the tails.
+    Jua EPT-2.1 Europa leads all-conditions wind (+8.4%), while Jua EPT-2 HRRR leads
+    temperature overall (+12.1%) and in the heat regime (+19.6 +/- 2.2%). EPT-2.1
+    Europa and DWD ICON Global lead at gale-force wind. Jua EPT-2.1 Helios leads solar
+    overall (+10.2 +/- 1.7%), in overcast conditions (+16.4 +/- 3.4%), and in the
+    clear-sky tail (+24.8 +/- 5.4%). For precipitation, three Jua models gain 14-15%
+    at moderate intensity and 9-11% at P75-P95; EPT-2 Reasoning remains ahead above
+    P95 (+1.7 +/- 0.5%). Failures are model-specific: ECMWF AIFS loses 4.9 +/- 2.0%
+    in the heat tail, while NOAA GFS loses 22.8 +/- 2.0% there. Every model, including
+    numerical weather prediction systems, shows a shared conditional bias toward the
+    centre of the observed distribution, with an inter-model spread several times
+    smaller than the shared signal. Missing relative skill at extremes is therefore
+    not a property of AI weather models as a class, but of particular AI and physical
+    models.'
+  tags:
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+- category: Nowcasting
+  title: 'Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven
+    Nowcasting Framework for Colombian Agriculture'
+  authors: Hernan J. Silva-Sosa
+  year: 2026
+  arxiv: 2608.09846v1
+  abstract: This paper presents a methodological framework for real-time climate risk
+    assessment using data-driven nowcasting techniques to enhance supply chain resilience
+    in Colombian agricultural contexts. Climate variability in Colombia, characterized
+    by irregular rainfall, temperature fluctuations, and recurrent extreme events,
+    has a direct impact on agricultural production and logistics, particularly for
+    time sensitive crops. The proposed approach integrates short term climate forecasting
+    based on historical meteorological observations with supply chain risk modeling
+    to establish a conceptual early warning system architecture. A prototype implementation
+    developed in a controlled computational environment demonstrates the feasibility
+    of the framework using historical meteorological and agricultural time series
+    derived from official statistics and reanalysis products, without reliance on
+    satellite imagery or computer vision components. The methodology addresses the
+    integration of climate nowcasting with supply chain decision making through explicit
+    risk mapping, threshold-based categorization, and stakeholder-oriented risk signals.
+    Results from synthetic and historical data experiments indicate that short term
+    precipitation nowcasts can be translated into actionable risk indicators for agricultural
+    supply chains, supporting anticipatory decisions related to inventory, sourcing,
+    and transport.
+  tags:
+  - cs.LG
+  arxiv_categories:
+  - cs.LG
+- category: Global Models
+  title: 'VeinCast: Physics-Guided Dynamic Field Graphs with Graph-Conditioned Fusion
+    for Global Medium-Range Weather Forecasting'
+  authors: Zhisheng Chen, Jinhan Li, Yuxuan Li, Yuan Gao, Hao Wu, Zheng Lu, Jinlong
+    Du, Kun Wang, Bo An
+  year: 2026
+  arxiv: 2608.09286v1
+  abstract: Global medium-range weather forecasting requires modeling structured yet
+    state-dependent interactions among heterogeneous atmospheric fields. Existing
+    data-driven models largely learn these interactions implicitly, whereas equation-level
+    physical constraints may inherit approximation and model-form biases. We present
+    VeinCast, a physics-guided dynamic field graph and graph-conditioned fusion framework
+    that jointly forecasts 69 surface and upper-air fields. Within each local window,
+    its Physics-Guided Dynamic Field Graph combines predefined atmospheric relations
+    with state-dependent Top-K residual edges and adapts Earth-window attention using
+    the resulting graph context. Graph-Conditioned Latent Fusion further employs graph
+    context and source-node centrality to guide field-to-latent aggregation, while
+    bounded feedback preserves field-specific information. On the $1.5^\circ$ ERA5
+    benchmark, VeinCast demonstrates competitive forecasting performance across all
+    69 meteorological fields at lead times of up to 14 days, compared with representative
+    global weather forecasting models including FuXi, Pangu-Weather, GraphCast, FengWu,
+    and ARROW. Ablations confirm that the two modules provide complementary gains,
+    demonstrating the effectiveness of relational-level physical guidance for data-driven
+    weather forecasting.
+  tags:
+  - cs.LG
+  - cs.AI
+  arxiv_categories:
+  - cs.LG
+  - cs.AI
+- category: Nowcasting
+  title: 'FreCast: Refining Radar Echo Intensity via Phase-Preserving Amplitude Residual
+    Diffusion for Precipitation Nowcasting'
+  authors: Heping Fang, Zihuai Yin, Kaicheng Mao, Peiguang Zhang, Peng Yang
+  year: 2026
+  arxiv: 2608.08436v1
+  abstract: Precipitation nowcasting predicts the spatiotemporal evolution of future
+    radar echoes from historical radar echo sequences, thereby estimating the occurrence,
+    development, and movement of precipitation over the near term. In recent years,
+    deep learning has become an important approach to precipitation nowcasting. Although
+    state-of-the-art models can generally capture the overall spatial distribution
+    of future precipitation, their predictions still exhibit substantial biases in
+    radar echo intensity at individual locations. This observation motivates a more
+    targeted strategy for reducing forecast errors. Instead of regenerating an entire
+    radar echo sequence without spatial constraints, the predicted precipitation structure
+    can be used to guide the refinement of echo intensities at individual locations.
+    This structure-guided refinement directly targets echo intensity biases. Accordingly,
+    we propose FreCast, a two-stage framework for radar echo prediction. The first
+    stage generates an initial forecast of future radar echoes. The second stage uses
+    the spatial structure of the initial forecast as a constraint to further correct
+    intensity biases at individual locations in the first-stage prediction. Experiments
+    on three datasets demonstrate that FreCast achieves consistent improvements across
+    forecast skill metrics. Qualitative results further show that FreCast better preserves
+    rainband continuity and intense precipitation structures at longer lead times.
+  tags:
+  - cs.CV
+  arxiv_categories:
+  - cs.CV
+- category: Extreme Weather
+  title: Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery
+    and Atmospheric Fields
+  authors: Meheru Zannat, Sk. Md. Masudul Ahsan
+  year: 2026
+  arxiv: 2608.08354v1
+  abstract: Tropical cyclones are growing more destructive in a changing climate,
+    and efficient forecasting of their structure and track has become a necessity.
+    Deep generative models promise an alternative to computationally expensive numerical
+    weather prediction (NWP), yet current systems produce either satellite imagery
+    or atmospheric fields, never both; they need many sampling steps, putting them
+    out of reach of modest hardware; and their storm tracks come from regression heads
+    with no physical link to the generated atmosphere. This work presents a single-pass
+    model that jointly forecasts GRIDSAT-B1 infrared imagery and four ERA5 atmospheric
+    fields (U-wind, V-wind, air temperature, and surface pressure) out to nine hours.
+    A five-channel variational autoencoder compresses each 5 x 256 x 256 frame to
+    a 4 x 64 x 64 latent, and a conditional rectified-flow UNet with a factorized
+    temporal-attention module predicts the next three frames from three past frames,
+    their best-track coordinates, and timestamps. The model is then reward-fine-tuned
+    (DRaFT) against a differentiable track error derived from the predicted winds
+    through a steering-flow calculation. On held-out 2022 storms the model reaches
+    16.35 dB PSNR and 0.759 SSIM, ahead of a reproduced cascaded-diffusion baseline
+    at every lead time (+0.84 dB at +9 h) while sampling ~30x faster (56 ms vs. 1673
+    ms). Track error at +9 h is 62.4 km, 15% below the baseline, and a reward fine-tuning
+    study demonstrates a further 8-11% track-error reduction across sampler budgets.
+  tags:
+  - CNN
+  - variational
+  - cs.CV
+  arxiv_categories:
+  - cs.CV
+- category: Other
+  title: Degradation-Aware Prompt Learning with Cross-Modal Compensation for Adverse
+    Weather Removal
+  authors: Wanshu Fan, Yunzhe Zhang, Yue Shen, Liyan Wang, Jing Qin, Kin-Man Lam,
+    Cong Wang, Jinshan Pan
+  year: 2026
+  arxiv: 2608.06939v2
+  abstract: Adverse weather causes diverse and complex image degradations, severely
+    compromising the reliability of computer vision systems. Existing all-in-one restoration
+    models attempt to address multiple degradation types within a unified framework,
+    but often lack explicit spatial and semantic modeling of degradation characteristics,
+    limiting their adaptability to diverse weather conditions. To address this limitation,
+    we propose a Degradation-Aware Cross-Modal Prompt Compensation Network (DCMPC-Net)
+    that leverages cross-modal degradation cues from a pretrained vision-language
+    model to condition restoration features within a unified backbone. Specifically,
+    our DCMPC-Net mainly consists of the Cross-Modal Prompt Generator (CMPG), Prompt-Guided
+    Attention Alignment Module (PGAAM), and Dual Feature Compensation Module (DFCM).
+    The CMPG integrates textual embeddings with visual features to produce degradation-aware
+    prompts that encode degradation-related semantic and contextual cues. These prompts
+    are injected into the decoder via a PGAAM, which adaptively aligns semantic information
+    with degraded regions to facilitate context-aware restoration. To further enhance
+    structural fidelity, DFCM is introduced that disentangles degradation artifacts
+    from scene structures, thereby improving the reconstruction of fine textures and
+    detailed content. By integrating cross-modal semantic guidance with spatial alignment
+    and structural enhancement, DCMPC-Net achieves robust and perceptually consistent
+    restoration across diverse weather conditions. Extensive experiments show that
+    DCMPC-Net outperforms state-of-the-art methods in both task-specific and unified
+    settings, achieving superior accuracy and visual fidelity.
+  tags:
+  - cs.CV
+  arxiv_categories:
+  - cs.CV
+  github: https://github.com/fanamber831/DCMPC-Net
+- category: Global Models
+  title: Timestep-Conditioned Transformers for Global Weather Forecasting
+  authors: Sam Levang, Fran Bartolic, Ty Dickinson, Chase Dwelle, Paulius Rauba, Viktor
+    Cikojevic
+  year: 2026
+  arxiv: 2608.06241v1
+  abstract: 'Existing machine-learning weather forecasting models rely on predetermined
+    and fixed autoregressive timesteps. The choice of model timestep involves a fundamental
+    trade-off: shorter timesteps (e.g. 1 to 6 hours) finely resolve atmospheric dynamics
+    within the diurnal cycle but increase error accumulation for a given forecast
+    horizon, while longer timesteps (e.g. 24 hours) reduce error accumulation but
+    limit the usability of short-range forecasts where sub-daily predictability is
+    high. In this work, we present GEM-3, a probabilistic global weather model that
+    addresses this trade-off through explicit multi-timestep inference. With a single
+    set of trained weights, the model timestep can be configured at inference time
+    to balance predictability and usability across a broad forecast horizon. Additionally,
+    we find that mixed-timestep training consistently improves rollout stability relative
+    to timestep-specialist models. Under the hood, GEM-3 is a lightweight neighborhood-attention
+    transformer with ~134M parameters on an equirectangular grid with a number of
+    architectural advancements beyond its predecessor GEM-2. The result is a practical
+    forecasting system that couples near-SOTA medium-range probabilistic skill, stable
+    extended-range rollouts, efficient training and inference, and decision-relevant
+    diagnostics.'
+  tags:
+  - transformer
+  - probabilistic
+  - cs.LG
+  - cs.OS
+  arxiv_categories:
+  - cs.LG
+  - cs.OS
+- category: Nowcasting
+  title: 'Dense-Cast: A lightweight ensemble of deep learning architectures for precipitation
+    nowcasting'
+  authors: Gourav Jyoti Kalita, Hidam Kumarjit Singh
+  year: 2026
+  arxiv: 2608.06082v1
+  abstract: Proper short-term forecasting of precipitation is crucial in disaster
+    management and preparedness. Nonetheless, the variability and nonlinearity of
+    precipitation make short-term forecasting challenging for meteorologists. Moreover,
+    capturing temporal dependencies in spatiotemporal data is a challenge in precipitation
+    nowcasting. In this article, we introduce a lightweight deep learning model for
+    half-hourly precipitation nowcasting. This model has been designed by incorporating
+    the DenseNet architecture, residual connections, and transformer encoders for
+    effective precipitation nowcasting with reduced model parameters. The North-Eastern
+    region of India has been selected as the area of interest for our study. The region
+    receives the highest precipitation during the months of June-September due to
+    the monsoon season. The proposed model takes the previous five time-steps of half-hourly
+    precipitation as inputs and predicts the precipitation in the next two half-hours.
+    The GPM IMERG precipitation dataset with a 30-minute cadence has been used in
+    this study for training and testing the model. The proposed architecture achieves
+    best MAE of 0.235 millimetres, RMSE of 0.735 millimetres, and KGE score of 0.816
+    at an interval of 30 minutes.
+  tags:
+  - transformer
+  - cs.CV
+  arxiv_categories:
+  - cs.CV
+- category: Other
+  title: 'Temporal Bridges for Spatial Resolution: Enhancing Climate Data Super-Resolution
+    with Bidirectional Alignment'
+  authors: Yichen Zhang, Yixiong Xiao, Congxi Xiao, Jingbo Zhou
+  year: 2026
+  arxiv: 2608.05981v1
+  abstract: High-resolution climate data is crucial for meteorological predictions
+    and for informing decision support across diverse domains. However, the acquisition
+    of such high-resolution climate information is often prohibitively costly, necessitating
+    the development of data-driven meteorological prediction models. These models
+    aim to generate fine-grained climate data from low-resolution inputs, a process
+    termed climate data super-resolution (SR). Nevertheless, recent advancements in
+    deep learning for climate data SR have primarily focused on leveraging single-frame
+    spatial information, largely neglecting the temporal correlations between different
+    time frames that could enhance SR outcomes. Furthermore, climate data are inherently
+    stochastic and noisy, rendering widely used temporal alignment methods, such as
+    optical flow models, ineffective in this context. Consequently, the development
+    of a framework tailored for climate data SR that effectively captures implicit
+    temporal correlations remains an unresolved challenge. To this end, we propose
+    a novel Temporal-Enhanced framework with bidirectional temporal alignment. In
+    essence, our framework establishes a temporal bridge to enhance spatial resolution
+    in climate data SR through bidirectional alignment, leading to improved SR performance.
+    Within this framework, Paired Latent Mapping achieves spatial alignment and noise
+    reduction by unifying latent spaces. Then a Bidirectional Temporal Alignment captures
+    temporal correlations by training forward and backward networks on consecutive
+    latent frames. Temporal Enhanced Super-resolution then optimizes the entire framework
+    for climate data SR. Experiments on large-scale real-world datasets demonstrated
+    the superior performance of our framework.
+  tags:
+  - cs.AI
+  - cs.LG
+  arxiv_categories:
+  - cs.AI
+  - cs.LG
+- category: Global Models
+  title: 'MarsCast: Transfer Learning of AI Weather Foundation Models to Planetary
+    Atmospheres'
+  authors: M. L. Carroll, J. Li, S. D. Guzewich, G. Villanueva, J. A. Caraballo-Vega,
+    M. J. Frost
+  year: 2026
+  arxiv: 2608.05054v1
+  abstract: We investigate the transferability of Earth weather foundation models
+    to planetary atmospheres by adapting the GraphCast graph neural weather forecasting
+    model to Mars. While GraphCast achieves state-of-the-art performance for terrestrial
+    forecasting, its applicability to non-Earth environments remains unexplored. Using
+    the Mars Climate Database (MCD), which provides global atmospheric fields across
+    vertical altitude levels (similar to Earth pressure levels), we evaluate zero-shot
+    and fine-tuned GraphCast predictions of Martian temperature and wind fields. Zero-shot
+    forecasts produce a surprisingly accurate depiction of current conditions but
+    fail to reproduce diurnal variability and rapidly decay toward climatological
+    mean states. To address this limitation, we fine-tune GraphCast using MCD variables
+    and top-of-atmosphere solar radiation forcing while holding humidity constant.
+    Fine-tuning enables rapid learning of Martian thermal variability. Within as few
+    as 10 training epochs, the model begins to capture the diurnal cycle and forecasts
+    up to 10 days reproduce seasonal and vertical temperature structure. Prediction
+    quality improves with training sample size and exhibits sensitivity to seasonal
+    initialization. These results demonstrate that Earth-trained AI weather models
+    can be adapted to simulate Martian atmospheric dynamics, providing a pathway toward
+    rapid planetary weather prediction to support mission operations, dust storm risk
+    mitigation, and future human exploration.
+  tags:
+  - GNN
+  - foundation-model
+  - astro-ph.EP
+  - cs.AI
+  - cs.CV
+  - cs.LG
+  arxiv_categories:
+  - astro-ph.EP
+  - cs.AI
+  - cs.CV
+  - cs.LG
+- category: Downscaling
+  title: Transferable Dual-Stream Representations for Mesoscale-Preserving Sea Surface
+    Temperature Downscaling
+  authors: Parth Doshi, Priyanka Aravindan, Vaishnav Vaidheeswaran, Md Mahbub Alam,
+    Gabriel Spadon
+  year: 2026
+  arxiv: 2608.04230v1
+  abstract: Deep learning models for scientific spatio-temporal downscaling often
+    minimize reconstruction error while failing to preserve physically meaningful
+    multi-scale structure. For sea surface temperature prediction, this can yield
+    outputs that are numerically plausible yet overly smooth, missing mesoscale variability
+    critical to regional ocean dynamics. Existing methods often focus on pixel-wise
+    objectives or single-context conditioning, which limits their ability to preserve
+    spectral fidelity and generalize across regions. To address this, we propose EddyFlow,
+    a representation learning framework for kilometer-scale sea surface temperature
+    downscaling that balances predictive accuracy, scale-dependent structure, and
+    regional generalization. EddyFlow is trained on the Gulf of St.~Lawrence and evaluated
+    in zero-shot and few-shot settings on the Bay of Fundy and the Gulf of Mexico.
+    EddyFlow demonstrates that physics-informed representation learning reduces zero-shot
+    RMSE by 21%, achieves up to 85.6% skill relative to persistence on unseen domains,
+    and maintains near-ideal spectral fidelity with a PSD ratio of $\approx 1.00$.
+  tags:
+  - physics-informed
+  - cs.LG
+  - cs.CV
+  arxiv_categories:
+  - cs.LG
+  - cs.CV

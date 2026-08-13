@@ -4,8 +4,11 @@ hide:
 title: Tags
 ---
 
-## CNN (161)
+## CNN (164)
 
+- **Deep Learning-Based Statistical Downscaling of Sea Surface Temperature Using a Residual Corrective Neural Network** (2026) - [Downscaling](downscaling.md) - [arXiv:2608.10022v1](https://arxiv.org/abs/2608.10022v1)
+- **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
+- **Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.08354v1](https://arxiv.org/abs/2608.08354v1)
 - **Meteosat Third Generation imagery improves CNN-based SSI retrieval** (2026) - [Other](other.md) - [arXiv:2607.28093v1](https://arxiv.org/abs/2607.28093v1)
 - **Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions** (2026) - [Global Models](global_models.md) - [arXiv:2607.19370v1](https://arxiv.org/abs/2607.19370v1)
 - **Physics-Based Deep Spatiotemporal Hyperlocal Radar Nowcasting with a Multi-Variable U-Net for High-Resolution Precipitation Forecasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2607.16080v1](https://arxiv.org/abs/2607.16080v1)
@@ -197,8 +200,9 @@ title: Tags
 - **Using Generative Models to Produce Realistic Populations of the United Kingdom Windstorms** (2024) - [Other](other.md) - [arXiv:2409.10696v1](https://arxiv.org/abs/2409.10696v1)
 - **Super Resolution for Renewable Energy Resource Data With Wind From Reanalysis Data and Application to Ukraine** (2024) - [Global Models](global_models.md) - [arXiv:2407.19086v2](https://arxiv.org/abs/2407.19086v2)
 
-## GNN (47)
+## GNN (48)
 
+- **MarsCast: Transfer Learning of AI Weather Foundation Models to Planetary Atmospheres** (2026) - [Global Models](global_models.md) - [arXiv:2608.05054v1](https://arxiv.org/abs/2608.05054v1)
 - **OCELOT: Direct Atmospheric Forecasting from Heterogeneous Earth Observations Using a Graph-Transformer Hybrid Model** (2026) - [Other](other.md) - [arXiv:2607.14196v1](https://arxiv.org/abs/2607.14196v1)
 - **OmniPMNet: Bridging discrete and gridded PM10 forecasts via omni-query neural processes** (2026) - [Other](other.md) - [arXiv:2607.11896v1](https://arxiv.org/abs/2607.11896v1)
 - **Spatial Support Matters: Geometry-Aware Graph Fusion for Rainfall Field Reconstruction** (2026) - [Other](other.md) - [arXiv:2607.01621v1](https://arxiv.org/abs/2607.01621v1)
@@ -247,8 +251,10 @@ title: Tags
 - **Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics** (2024) - [Global Models](global_models.md) - [arXiv:2407.14129v3](https://arxiv.org/abs/2407.14129v3)
 - **Graph Neural Networks and Spatial Information Learning for Post-Processing Ensemble Weather Forecasts** (2024) - [Ensembles](ensembles.md) - [arXiv:2407.11050v1](https://arxiv.org/abs/2407.11050v1)
 
-## diffusion (154)
+## diffusion (156)
 
+- **FarSky: Task-Aware Latent-Space Coupling for Generative Intra-Hour Solar Forecasting** (2026) - [Ensembles](ensembles.md) - [arXiv:2608.11254v1](https://arxiv.org/abs/2608.11254v1)
+- **Do AI Forecast Ensembles Sample the Correct Conditional Distribution?** (2026) - [Ensembles](ensembles.md) - [arXiv:2608.08954v1](https://arxiv.org/abs/2608.08954v1)
 - **Generative Models for Modeling and Synthesizing MIMO Channels in Adverse Weather Conditions** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.00156v1](https://arxiv.org/abs/2608.00156v1)
 - **Geospatial Diffusion-based Evolution Synthesis (GeoDES) for Storm-Centered Weather Augmentation** (2026) - [Other](other.md) - [arXiv:2607.19522v1](https://arxiv.org/abs/2607.19522v1)
 - **Apeliotes: A Diffusion-Based Modeling Framework for km-scale Multi-Level Atmospheric Fields** (2026) - [Global Models](global_models.md) - [arXiv:2607.17037v1](https://arxiv.org/abs/2607.17037v1)
@@ -404,8 +410,11 @@ title: Tags
 - **Machine learning emulation of precipitation from km-scale UK regional climate simulations using a diffusion model** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2407.14158v3](https://arxiv.org/abs/2407.14158v3)
 - **Improving ensemble extreme precipitation forecasts using generative artificial intelligence** (2024) - [Ensembles](ensembles.md) - [arXiv:2407.04882v1](https://arxiv.org/abs/2407.04882v1)
 
-## foundation-model (90)
+## foundation-model (93)
 
+- **Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling** (2026) - [Global Models](global_models.md) - [arXiv:2608.12271v1](https://arxiv.org/abs/2608.12271v1)
+- **MarsCast: Transfer Learning of AI Weather Foundation Models to Planetary Atmospheres** (2026) - [Global Models](global_models.md) - [arXiv:2608.05054v1](https://arxiv.org/abs/2608.05054v1)
+- **Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting** (2026) - [Global Models](global_models.md) - [arXiv:2608.03959v1](https://arxiv.org/abs/2608.03959v1)
 - **Toward Mechanistic Interpretability of an AI Foundation Model Fine-Tuned for Atmospheric Chemistry** (2026) - [Other](other.md) - [arXiv:2607.20778v1](https://arxiv.org/abs/2607.20778v1)
 - **Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions** (2026) - [Global Models](global_models.md) - [arXiv:2607.19370v1](https://arxiv.org/abs/2607.19370v1)
 - **Apeliotes: A Diffusion-Based Modeling Framework for km-scale Multi-Level Atmospheric Fields** (2026) - [Global Models](global_models.md) - [arXiv:2607.17037v1](https://arxiv.org/abs/2607.17037v1)
@@ -542,8 +551,10 @@ title: Tags
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](global_models.md) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (161)
+## physics-informed (163)
 
+- **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
+- **Transferable Dual-Stream Representations for Mesoscale-Preserving Sea Surface Temperature Downscaling** (2026) - [Downscaling](downscaling.md) - [arXiv:2608.04230v1](https://arxiv.org/abs/2608.04230v1)
 - **Weather Emulators at the Frontier of Heat Extremes Predictability** (2026) - [Global Models](global_models.md) - [arXiv:2607.28220v1](https://arxiv.org/abs/2607.28220v1)
 - **Meteosat Third Generation imagery improves CNN-based SSI retrieval** (2026) - [Other](other.md) - [arXiv:2607.28093v1](https://arxiv.org/abs/2607.28093v1)
 - **A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates** (2026) - [Other](other.md) - [arXiv:2607.25668v1](https://arxiv.org/abs/2607.25668v1)
@@ -706,8 +717,15 @@ title: Tags
 - **A Physics-Informed Machine Learning Approach utilizing Multiband Satellite Data for Solar Irradiance Estimation** (2024) - [Other](other.md) - [arXiv:2407.04283v1](https://arxiv.org/abs/2407.04283v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](nowcasting.md) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (235)
+## probabilistic (242)
 
+- **Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling** (2026) - [Global Models](global_models.md) - [arXiv:2608.12271v1](https://arxiv.org/abs/2608.12271v1)
+- **DLESyM-Ocean: A Deep Learning Probabilistic Global Model for Simulating Present-Day Upper Ocean and Sea Ice** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2608.11545v1](https://arxiv.org/abs/2608.11545v1)
+- **FarSky: Task-Aware Latent-Space Coupling for Generative Intra-Hour Solar Forecasting** (2026) - [Ensembles](ensembles.md) - [arXiv:2608.11254v1](https://arxiv.org/abs/2608.11254v1)
+- **Stochastic Emulation of a Fully Coupled Preindustrial E3SMv3 Simulation** (2026) - [Other](other.md) - [arXiv:2608.10277v1](https://arxiv.org/abs/2608.10277v1)
+- **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
+- **Do AI Forecast Ensembles Sample the Correct Conditional Distribution?** (2026) - [Ensembles](ensembles.md) - [arXiv:2608.08954v1](https://arxiv.org/abs/2608.08954v1)
+- **Timestep-Conditioned Transformers for Global Weather Forecasting** (2026) - [Global Models](global_models.md) - [arXiv:2608.06241v1](https://arxiv.org/abs/2608.06241v1)
 - **Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2608.01864v1](https://arxiv.org/abs/2608.01864v1)
 - **Flexible generation of daily Earth system model projections across radiative forcing scenarios** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2607.21382v1](https://arxiv.org/abs/2607.21382v1)
 - **On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules** (2026) - [Global Models](global_models.md) - [arXiv:2607.19161v1](https://arxiv.org/abs/2607.19161v1)
@@ -959,8 +977,9 @@ title: Tags
 - **AQ-PINNs: Attention-Enhanced Quantum Physics-Informed Neural Networks for Carbon-Efficient Climate Modeling** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2409.01626v1](https://arxiv.org/abs/2409.01626v1)
 - **Quantum Computing for Climate Resilience and Sustainability Challenges** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2407.16296v1](https://arxiv.org/abs/2407.16296v1)
 
-## recurrent (81)
+## recurrent (82)
 
+- **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
 - **A Sequence-to-Sequence ConvLSTM Approach for Leaf Area Index Forecasting over the South-Central United States** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2608.00879v1](https://arxiv.org/abs/2608.00879v1)
 - **Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities** (2026) - [Data Assimilation](data_assimilation.md) - [arXiv:2607.26581v1](https://arxiv.org/abs/2607.26581v1)
 - **From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations** (2026) - [Other](other.md) - [arXiv:2607.26492v1](https://arxiv.org/abs/2607.26492v1)
@@ -1076,8 +1095,10 @@ title: Tags
 - **RAIN: Reinforcement Algorithms for Improving Numerical Weather and Climate Models** (2024) - [Climate Modeling](climate_modeling.md) - [arXiv:2408.16118v3](https://arxiv.org/abs/2408.16118v3)
 - **Navigating the Smog: A Cooperative Multi-Agent RL for Accurate Air Pollution Mapping through Data Assimilation** (2024) - [Data Assimilation](data_assimilation.md) - [arXiv:2407.12539v1](https://arxiv.org/abs/2407.12539v1)
 
-## transformer (192)
+## transformer (194)
 
+- **Timestep-Conditioned Transformers for Global Weather Forecasting** (2026) - [Global Models](global_models.md) - [arXiv:2608.06241v1](https://arxiv.org/abs/2608.06241v1)
+- **Dense-Cast: A lightweight ensemble of deep learning architectures for precipitation nowcasting** (2026) - [Nowcasting](nowcasting.md) - [arXiv:2608.06082v1](https://arxiv.org/abs/2608.06082v1)
 - **OCELOT: Direct Atmospheric Forecasting from Heterogeneous Earth Observations Using a Graph-Transformer Hybrid Model** (2026) - [Other](other.md) - [arXiv:2607.14196v1](https://arxiv.org/abs/2607.14196v1)
 - **Air Quality Downscaling with Station-Guided Pseudo-Supervision** (2026) - [Other](other.md) - [arXiv:2607.05292v1](https://arxiv.org/abs/2607.05292v1)
 - **GlacierCastAI: Predicting Glacier Retreat from Multi-Modal Satellite Imagery and Climate Signals** (2026) - [Other](other.md) - [arXiv:2607.04117v1](https://arxiv.org/abs/2607.04117v1)
@@ -1271,8 +1292,9 @@ title: Tags
 - **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [Ensembles](ensembles.md) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 - **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [Nowcasting](nowcasting.md) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
-## variational (22)
+## variational (23)
 
+- **Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields** (2026) - [Extreme Weather](extreme_weather.md) - [arXiv:2608.08354v1](https://arxiv.org/abs/2608.08354v1)
 - **Stochastic weather generators for high-frequency wind vector time series** (2026) - [Other](other.md) - [arXiv:2606.09941v1](https://arxiv.org/abs/2606.09941v1)
 - **Probabilistic bias adjustment of seasonal forecasts using generative machine learning: A case study of Arctic sea ice predictions** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2605.29172v1](https://arxiv.org/abs/2605.29172v1)
 - **Assessment of cloud and associated radiation fields from a GAN stochastic cloud subcolumn generator** (2026) - [Climate Modeling](climate_modeling.md) - [arXiv:2605.11968v2](https://arxiv.org/abs/2605.11968v2)
