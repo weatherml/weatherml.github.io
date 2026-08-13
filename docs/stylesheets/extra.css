@@ -53,6 +53,88 @@ h1#__skip {
   display: none;
 }
 
+/* Flat year toggles: strip the admonition box/icon, keep the caret */
+.md-typeset details.year {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0;
+}
+
+.md-typeset details.year > summary {
+  background: transparent;
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+  padding-left: 0.2rem;
+}
+
+.md-typeset details.year > summary::before {
+  display: none; /* admonition icon */
+}
+
+/* Category jump bar */
+.cat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0 1.2rem;
+}
+
+.cat-chip {
+  padding: 0.25em 0.7em;
+  font-size: 0.7rem;
+  border-radius: 1em;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+}
+
+.cat-chip:hover {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+}
+
+.cat-chip-count {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85em;
+}
+
+/* Filter box */
+#paper-filter {
+  width: 100%;
+  padding: 0.5em 0.8em;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.3em;
+}
+
+#paper-filter:focus {
+  outline: none;
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Mute card metadata so titles carry the visual weight */
+.paper-meta {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85em;
+}
+
+.paper-links {
+  font-size: 0.85em;
+}
+
+/* Starred papers get an accent edge */
+.grid.cards > ul > li:has(.star-marker) {
+  border-left: 0.15rem solid var(--md-accent-fg-color);
+}
+
+.star-marker svg {
+  fill: var(--md-accent-fg-color);
+}
+
 .abstract-toggle {
   font-size: 0.75em;
   cursor: pointer;

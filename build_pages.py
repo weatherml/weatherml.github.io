@@ -13,6 +13,11 @@ CATEGORY_ORDER = [
 ]
 
 
+def slugify(text):
+    """Slugify a heading/tag for use as a stable URL anchor."""
+    return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
+
+
 def generate_bibtex(paper):
     """Generate a BibTeX entry for a paper."""
     arxiv_id = re.sub(r'v\d+$', '', paper['arxiv'])
@@ -34,7 +39,7 @@ def generate_bibtex(paper):
 def generate_paper_card(paper):
     """Generate a card list item with h4 heading for search indexing."""
     lines = []
-    star = ':material-star: ' if paper.get('starred') else ''
+    star = '<span class="star-marker">:material-star:</span> ' if paper.get('starred') else ''
     lines.append(f"-   #### {star}{paper['title']}\n")
     lines.append(f"\n")
     lines.append(f"    ---\n")
@@ -44,18 +49,18 @@ def generate_paper_card(paper):
     authors = paper['authors']
     if len(authors) > 100:
         authors = authors[:100].rsplit(',', 1)[0] + ' et al.'
-    lines.append(f"    *{authors}* · {paper['year']}\n")
+    lines.append(f'    <span class="paper-meta"><em>{authors}</em> · {paper["year"]}</span>\n')
     lines.append(f"\n")
 
-    # Abstract - truncated with expand button
+    # Abstract - truncated with expand button (excluded from the search index)
     abstract = paper.get('abstract', '').replace('\n', ' ')
     if abstract:
         arxiv_id = re.sub(r'v\d+$', '', paper['arxiv'])
         snippet = abstract[:200]
         if len(abstract) > 200:
             snippet = snippet.rsplit(' ', 1)[0] + '...'
-        lines.append(f'    <span class="abstract-snippet" id="snip-{arxiv_id}">{snippet}</span>')
-        lines.append(f'<span class="abstract-full" id="full-{arxiv_id}" hidden>{abstract}</span>')
+        lines.append(f'    <span class="abstract-snippet" id="snip-{arxiv_id}" data-search-exclude>{snippet}</span>')
+        lines.append(f'<span class="abstract-full" id="full-{arxiv_id}" data-search-exclude hidden>{abstract}</span>')
         if len(abstract) > 200:
             lines.append(f' <span class="abstract-toggle" data-id="{arxiv_id}">more</span>')
         lines.append(f"\n")
@@ -63,18 +68,22 @@ def generate_paper_card(paper):
 
     # Links
     arxiv_display = re.sub(r'v\d+$', '', paper['arxiv'])
-    lines.append(f"    [:material-file-document: {arxiv_display}](https://arxiv.org/abs/{paper['arxiv']})")
+    lines.append(f'    <span class="paper-links">')
+    lines.append(f"[:material-file-document: {arxiv_display}](https://arxiv.org/abs/{paper['arxiv']})")
     if paper.get('github'):
         lines.append(f" · [:fontawesome-brands-github:]({paper['github']})")
     lines.append(f" · [:material-content-copy: BibTeX](bibtex/{arxiv_display}.bib){{ .bibtex-link }}")
-    lines.append(f"\n")
+    lines.append(f'</span>\n')
     lines.append(f"\n")
 
-    # Tags
+    # Tags (linked to their section on the Tags page)
     tags = paper.get('tags', [])
     display_tags = [t for t in tags if '.' not in t]
     if display_tags:
-        tag_spans = ' '.join(f'<span class="md-tag">{tag}</span>' for tag in display_tags)
+        tag_spans = ' '.join(
+            f'<a class="md-tag" href="/tags/#{slugify(tag)}">{tag}</a>'
+            for tag in display_tags
+        )
         lines.append(f"    {tag_spans}\n")
         lines.append(f"\n")
 
@@ -83,15 +92,16 @@ def generate_paper_card(paper):
 
 def write_category_section(f, category, cat_papers):
     """Write a category section with papers grouped into collapsible year blocks."""
-    f.write(f"## {category} ({len(cat_papers)})\n\n")
+    f.write(f"## {category} ({len(cat_papers)}) {{ #{slugify(category)} }}\n\n")
 
     papers_by_year = defaultdict(list)
     for paper in cat_papers:
         papers_by_year[paper['year']].append(paper)
 
-    for year in sorted(papers_by_year.keys(), reverse=True):
+    for i, year in enumerate(sorted(papers_by_year.keys(), reverse=True)):
         year_papers = papers_by_year[year]
-        f.write(f'??? note "{year} ({len(year_papers)})"\n\n')
+        marker = '???+' if i == 0 else '???'  # newest year starts open
+        f.write(f'{marker} year "{year} ({len(year_papers)})"\n\n')
         f.write('    <div class="grid cards" markdown>\n\n')
         for paper in year_papers:
             f.write(textwrap.indent(generate_paper_card(paper), '    '))
@@ -207,8 +217,23 @@ def build_pages():
     # Generate single papers page with all categories as sections
     nav = [{'Home': 'index.md'}]
 
+    ordered_categories = [c for c in CATEGORY_ORDER if c in papers_by_category]
+    ordered_categories += [c for c in sorted(papers_by_category.keys())
+                           if c not in CATEGORY_ORDER]
+
     with open('docs/papers.md', 'w') as f:
         f.write("---\nhide:\n  - navigation\n---\n\n")
+
+        # Filter box and category jump bar
+        f.write('<input id="paper-filter" type="search" '
+                'placeholder="Filter by title, author or tag&hellip;" '
+                'autocomplete="off" data-search-exclude>\n\n')
+        chips = '\n'.join(
+            f'  <a class="cat-chip" href="#{slugify(c)}">{c} '
+            f'<span class="cat-chip-count">{len(papers_by_category[c])}</span></a>'
+            for c in ordered_categories
+        )
+        f.write(f'<nav class="cat-chips" data-search-exclude>\n{chips}\n</nav>\n\n')
 
         # Ordered categories
         for category in CATEGORY_ORDER:
@@ -235,10 +260,10 @@ def build_pages():
             f.write("---\nhide:\n  - navigation\ntitle: Tags\n---\n\n")
             for tag in sorted(all_tags.keys()):
                 tag_papers = all_tags[tag]
-                f.write(f"## {tag} ({len(tag_papers)})\n\n")
+                f.write(f"## {tag} ({len(tag_papers)}) {{ #{slugify(tag)} }}\n\n")
                 for paper in tag_papers:
                     f.write(f"- **{paper['title']}** ({paper['year']}) ")
-                    f.write(f"- [{paper['category']}]({paper['category'].lower().replace(' ', '_')}.md) ")
+                    f.write(f"- [{paper['category']}](papers.md#{slugify(paper['category'])}) ")
                     f.write(f"- [arXiv:{paper['arxiv']}](https://arxiv.org/abs/{paper['arxiv']})\n")
                 f.write("\n")
 
