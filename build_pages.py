@@ -1,5 +1,6 @@
 import yaml
 import re
+import textwrap
 from collections import defaultdict
 import os
 from datetime import datetime
@@ -78,6 +79,23 @@ def generate_paper_card(paper):
         lines.append(f"\n")
 
     return ''.join(lines)
+
+
+def write_category_section(f, category, cat_papers):
+    """Write a category section with papers grouped into collapsible year blocks."""
+    f.write(f"## {category} ({len(cat_papers)})\n\n")
+
+    papers_by_year = defaultdict(list)
+    for paper in cat_papers:
+        papers_by_year[paper['year']].append(paper)
+
+    for year in sorted(papers_by_year.keys(), reverse=True):
+        year_papers = papers_by_year[year]
+        f.write(f'??? note "{year} ({len(year_papers)})"\n\n')
+        f.write('    <div class="grid cards" markdown>\n\n')
+        for paper in year_papers:
+            f.write(textwrap.indent(generate_paper_card(paper), '    '))
+        f.write('    </div>\n\n')
 
 
 def generate_stats(papers):
@@ -195,22 +213,12 @@ def build_pages():
         # Ordered categories
         for category in CATEGORY_ORDER:
             if category in papers_by_category:
-                cat_papers = papers_by_category[category]
-                f.write(f"## {category} ({len(cat_papers)})\n\n")
-                f.write('<div class="grid cards" markdown>\n\n')
-                for paper in cat_papers:
-                    f.write(generate_paper_card(paper))
-                f.write('</div>\n\n')
+                write_category_section(f, category, papers_by_category[category])
 
         # Any remaining categories
         for category in sorted(papers_by_category.keys()):
             if category not in CATEGORY_ORDER:
-                cat_papers = papers_by_category[category]
-                f.write(f"## {category} ({len(cat_papers)})\n\n")
-                f.write('<div class="grid cards" markdown>\n\n')
-                for paper in cat_papers:
-                    f.write(generate_paper_card(paper))
-                f.write('</div>\n\n')
+                write_category_section(f, category, papers_by_category[category])
 
     nav.append({'Papers': 'papers.md'})
 
