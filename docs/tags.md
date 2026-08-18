@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (164) { #cnn }
+## CNN (165) { #cnn }
 
+- **High-resolution Calibrated Probabilistic Hourly Precipitation from a Deterministic Forecast** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.12685v1](https://arxiv.org/abs/2608.12685v1)
 - **Deep Learning-Based Statistical Downscaling of Sea Surface Temperature Using a Residual Corrective Neural Network** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.10022v1](https://arxiv.org/abs/2608.10022v1)
 - **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [Extreme Weather](papers.md#extreme-weather) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
 - **Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields** (2026) - [Extreme Weather](papers.md#extreme-weather) - [arXiv:2608.08354v1](https://arxiv.org/abs/2608.08354v1)
@@ -200,8 +201,9 @@ title: Tags
 - **Using Generative Models to Produce Realistic Populations of the United Kingdom Windstorms** (2024) - [Other](papers.md#other) - [arXiv:2409.10696v1](https://arxiv.org/abs/2409.10696v1)
 - **Super Resolution for Renewable Energy Resource Data With Wind From Reanalysis Data and Application to Ukraine** (2024) - [Global Models](papers.md#global-models) - [arXiv:2407.19086v2](https://arxiv.org/abs/2407.19086v2)
 
-## GNN (48) { #gnn }
+## GNN (49) { #gnn }
 
+- **Decadal wave reconstruction in the Mediterranean Sea with graph neural networks** (2026) - [Other](papers.md#other) - [arXiv:2608.16449v1](https://arxiv.org/abs/2608.16449v1)
 - **MarsCast: Transfer Learning of AI Weather Foundation Models to Planetary Atmospheres** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.05054v1](https://arxiv.org/abs/2608.05054v1)
 - **OCELOT: Direct Atmospheric Forecasting from Heterogeneous Earth Observations Using a Graph-Transformer Hybrid Model** (2026) - [Other](papers.md#other) - [arXiv:2607.14196v1](https://arxiv.org/abs/2607.14196v1)
 - **OmniPMNet: Bridging discrete and gridded PM10 forecasts via omni-query neural processes** (2026) - [Other](papers.md#other) - [arXiv:2607.11896v1](https://arxiv.org/abs/2607.11896v1)
@@ -551,8 +553,9 @@ title: Tags
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](papers.md#global-models) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (163) { #physics-informed }
+## physics-informed (164) { #physics-informed }
 
+- **Developing an Offshore Machine Learning Surface Layer Scheme** (2026) - [Other](papers.md#other) - [arXiv:2608.14935v1](https://arxiv.org/abs/2608.14935v1)
 - **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [Extreme Weather](papers.md#extreme-weather) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
 - **Transferable Dual-Stream Representations for Mesoscale-Preserving Sea Surface Temperature Downscaling** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.04230v1](https://arxiv.org/abs/2608.04230v1)
 - **Weather Emulators at the Frontier of Heat Extremes Predictability** (2026) - [Global Models](papers.md#global-models) - [arXiv:2607.28220v1](https://arxiv.org/abs/2607.28220v1)
@@ -717,8 +720,9 @@ title: Tags
 - **A Physics-Informed Machine Learning Approach utilizing Multiband Satellite Data for Solar Irradiance Estimation** (2024) - [Other](papers.md#other) - [arXiv:2407.04283v1](https://arxiv.org/abs/2407.04283v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](papers.md#nowcasting) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (242) { #probabilistic }
+## probabilistic (243) { #probabilistic }
 
+- **High-resolution Calibrated Probabilistic Hourly Precipitation from a Deterministic Forecast** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.12685v1](https://arxiv.org/abs/2608.12685v1)
 - **Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.12271v1](https://arxiv.org/abs/2608.12271v1)
 - **DLESyM-Ocean: A Deep Learning Probabilistic Global Model for Simulating Present-Day Upper Ocean and Sea Ice** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2608.11545v1](https://arxiv.org/abs/2608.11545v1)
 - **FarSky: Task-Aware Latent-Space Coupling for Generative Intra-Hour Solar Forecasting** (2026) - [Ensembles](papers.md#ensembles) - [arXiv:2608.11254v1](https://arxiv.org/abs/2608.11254v1)
