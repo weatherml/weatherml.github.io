@@ -50,10 +50,16 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (1471 papers)
+## Paper Collection (1500 papers)
 
-### Global Models (273)
+### Global Models (279)
 
+- **Bridging short- and medium-range weather forecasting with machine learning** (2026) - [arXiv:2608.26822v1](https://arxiv.org/abs/2608.26822v1)
+- **Missing the Butterfly and Predicting the Past: Features or Bugs of Accurate AI Weather Models?** (2026) - [arXiv:2608.25835v1](https://arxiv.org/abs/2608.25835v1)
+- **AFDBench: A Reasoning-First AI Scientist for NationalWeather Service Forecast Discussions** (2026) - [arXiv:2608.24954v1](https://arxiv.org/abs/2608.24954v1)
+- **AICON: An operational global machine learning weather forecasting model** (2026) - [arXiv:2608.24651v1](https://arxiv.org/abs/2608.24651v1)
+- **Extremes on Rewind: Generating 1,000-Member Ensembles Initialized at a Final Condition** (2026) - [arXiv:2608.19008v1](https://arxiv.org/abs/2608.19008v1)
+- **How Do AI Climate Models Respond to Warming Across Climate Zones?** (2026) - [arXiv:2608.17986v1](https://arxiv.org/abs/2608.17986v1)
 - **High-resolution Calibrated Probabilistic Hourly Precipitation from a Deterministic Forecast** (2026) - [arXiv:2608.12685v1](https://arxiv.org/abs/2608.12685v1)
 - **Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling** (2026) - [arXiv:2608.12271v1](https://arxiv.org/abs/2608.12271v1)
 - **Do AI weather models miss extremes?** (2026) - [arXiv:2608.09972v1](https://arxiv.org/abs/2608.09972v1)
@@ -328,8 +334,9 @@ uv run python build_pages.py
 - **Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast** (2022) - [arXiv:2211.02556v1](https://arxiv.org/abs/2211.02556v1)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-### Nowcasting (93)
+### Nowcasting (94)
 
+- **GOES-East full-disk AI nowcasting of cloud evolution in observation space** (2026) - [arXiv:2608.20540v1](https://arxiv.org/abs/2608.20540v1)
 - **Meteorology-driven Causal Nowcasting of Fugitive Landfill Emissions Enables Proactive Public Health Response** (2026) - [arXiv:2608.14254v1](https://arxiv.org/abs/2608.14254v1)
 - **Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven Nowcasting Framework for Colombian Agriculture** (2026) - [arXiv:2608.09846v1](https://arxiv.org/abs/2608.09846v1)
 - **FreCast: Refining Radar Echo Intensity via Phase-Preserving Amplitude Residual Diffusion for Precipitation Nowcasting** (2026) - [arXiv:2608.08436v1](https://arxiv.org/abs/2608.08436v1)
@@ -424,8 +431,9 @@ uv run python build_pages.py
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 - **MetNet: A Neural Weather Model for Precipitation Forecasting** (2020) - [arXiv:2003.12140v2](https://arxiv.org/abs/2003.12140v2)
 
-### Downscaling (40)
+### Downscaling (41)
 
+- **Precipitation Downscaling Using Foundation Model-Conditioned Diffusion** (2026) - [arXiv:2608.25858v1](https://arxiv.org/abs/2608.25858v1)
 - **Deep Learning-Based Statistical Downscaling of Sea Surface Temperature Using a Residual Corrective Neural Network** (2026) - [arXiv:2608.10022v1](https://arxiv.org/abs/2608.10022v1)
 - **Transferable Dual-Stream Representations for Mesoscale-Preserving Sea Surface Temperature Downscaling** (2026) - [arXiv:2608.04230v1](https://arxiv.org/abs/2608.04230v1)
 - **Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift** (2026) - [arXiv:2607.05645v1](https://arxiv.org/abs/2607.05645v1)
@@ -467,8 +475,11 @@ uv run python build_pages.py
 - **MambaDS: Near-Surface Meteorological Field Downscaling with Topography Constrained Selective State Space Modeling** (2024) - [arXiv:2408.10854v1](https://arxiv.org/abs/2408.10854v1)
 - **Evaluating the transferability potential of deep learning models for climate downscaling** (2024) - [arXiv:2407.12517v1](https://arxiv.org/abs/2407.12517v1)
 
-### Data Assimilation (91)
+### Data Assimilation (94)
 
+- **A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems** (2026) - [arXiv:2608.22454v1](https://arxiv.org/abs/2608.22454v1)
+- **Advanced Linear Algebra with Applications - Part I (Numerical linear algebra for PDEs, machine learning, and data assimilation)** (2026) - [arXiv:2608.21234v1](https://arxiv.org/abs/2608.21234v1)
+- **Coupled multiscale paleoclimate reconstruction with four-dimensional variational data assimilation** (2026) - [arXiv:2608.19469v1](https://arxiv.org/abs/2608.19469v1)
 - **Generative data assimilation highlights fronts as key regulators of ocean energy cascade** (2026) - [arXiv:2608.14955v1](https://arxiv.org/abs/2608.14955v1)
 - **Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities** (2026) - [arXiv:2607.26581v1](https://arxiv.org/abs/2607.26581v1)
 - **Sparse Sensor Placement for Reducing Forecast Errors in Ensemble Kalman Filtering** (2026) - [arXiv:2606.27267v1](https://arxiv.org/abs/2606.27267v1)
@@ -639,8 +650,12 @@ uv run python build_pages.py
 - **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2023) - [arXiv:2312.15796v2](https://arxiv.org/abs/2312.15796v2)
 - **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 
-### Climate Modeling (301)
+### Climate Modeling (305)
 
+- **SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations** (2026) - [arXiv:2608.26594v1](https://arxiv.org/abs/2608.26594v1)
+- **UHI-Bench: Benchmarking Dual-Source Urban Heat Island Modeling Across Cities in Diverse Climate Regimes** (2026) - [arXiv:2608.23857v1](https://arxiv.org/abs/2608.23857v1)
+- **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections** (2026) - [arXiv:2608.21998v1](https://arxiv.org/abs/2608.21998v1)
+- **Interpretable AI predicts a 2026 summer dry anomaly in central China** (2026) - [arXiv:2608.19163v2](https://arxiv.org/abs/2608.19163v2)
 - **Paleoclimate Boundary Conditions as an Out-of-Sample Test for the Forced Response of Ocean Climate Emulators** (2026) - [arXiv:2608.13494v1](https://arxiv.org/abs/2608.13494v1)
 - **DLESyM-Ocean: A Deep Learning Probabilistic Global Model for Simulating Present-Day Upper Ocean and Sea Ice** (2026) - [arXiv:2608.11545v1](https://arxiv.org/abs/2608.11545v1)
 - **Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability** (2026) - [arXiv:2608.01864v1](https://arxiv.org/abs/2608.01864v1)
@@ -943,8 +958,10 @@ uv run python build_pages.py
 - **Neural Compression of Atmospheric States** (2024) - [arXiv:2407.11666v2](https://arxiv.org/abs/2407.11666v2)
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 
-### Extreme Weather (87)
+### Extreme Weather (89)
 
+- **Frequency-aware forecasting for short-term typhoon gust prediction** (2026) - [arXiv:2608.25604v1](https://arxiv.org/abs/2608.25604v1)
+- **Tianmu-TC: Physics-constraints Generative Artificial Intelligence for Global Tropical Cyclone Forecasting** (2026) - [arXiv:2608.18500v1](https://arxiv.org/abs/2608.18500v1)
 - **Machine learning correction of satellite precipitation is governed by mechanism purity, not algorithmic complexity: a proof-of-concept study in Hunan, China, with pre-registered cross-regional validation** (2026) - [arXiv:2608.12988v1](https://arxiv.org/abs/2608.12988v1)
 - **Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data** (2026) - [arXiv:2608.09683v1](https://arxiv.org/abs/2608.09683v1)
 - **Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields** (2026) - [arXiv:2608.08354v1](https://arxiv.org/abs/2608.08354v1)
@@ -1033,8 +1050,20 @@ uv run python build_pages.py
 - **Ensemble quantile-based deep learning framework for streamflow and flood prediction in Australian catchments** (2024) - [arXiv:2407.15882v2](https://arxiv.org/abs/2407.15882v2)
 - **Modeling Spatial Extremal Dependence of Precipitation Using Distributional Neural Networks** (2024) - [arXiv:2407.08668v3](https://arxiv.org/abs/2407.08668v3)
 
-### Other (511)
+### Other (523)
 
+- **When Does Forecast-Error Energy Grow Logistically in Geophysical Turbulence?** (2026) - [arXiv:2608.26492v1](https://arxiv.org/abs/2608.26492v1)
+- **Tropospheric temperature and humidity profile retrieval from Meteosat Flexible Combined Imager based on deep learning** (2026) - [arXiv:2608.25700v1](https://arxiv.org/abs/2608.25700v1)
+- **Energy Yield and Lifetime Climate Classification via Machine Learning for Optimizing Photovoltaic Module Design and Materials** (2026) - [arXiv:2608.25448v1](https://arxiv.org/abs/2608.25448v1)
+- **Deep Learning Super Resolution for Satellite Cloud Mask Downscaling** (2026) - [arXiv:2608.24715v1](https://arxiv.org/abs/2608.24715v1)
+- **Predictability of El Niño from Delayed Observations** (2026) - [arXiv:2608.24428v1](https://arxiv.org/abs/2608.24428v1)
+- **Tracing the Unlabeled Storm: Cross-Variable Transfer in a Lagrangian Atmospheric JEPA Framework** (2026) - [arXiv:2608.22358v1](https://arxiv.org/abs/2608.22358v1)
+- **Quantifying AI data center nitrogen oxide (NO$_x$) emissions from space** (2026) - [arXiv:2608.22153v1](https://arxiv.org/abs/2608.22153v1)
+- **A Graph Neural Network Framework for Characterizing Rainfall Variability Regimes across India** (2026) - [arXiv:2608.20947v1](https://arxiv.org/abs/2608.20947v1)
+- **An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction** (2026) - [arXiv:2608.20320v1](https://arxiv.org/abs/2608.20320v1)
+- **The impact of feature engineering and an optimisation framework for ocean colour machine learning** (2026) - [arXiv:2608.19899v1](https://arxiv.org/abs/2608.19899v1)
+- **Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections** (2026) - [arXiv:2608.18690v1](https://arxiv.org/abs/2608.18690v1)
+- **Rapid Debris-Volume Estimation from Post-Hurricane Aerial Imagery** (2026) - [arXiv:2608.17165v1](https://arxiv.org/abs/2608.17165v1)
 - **Decadal wave reconstruction in the Mediterranean Sea with graph neural networks** (2026) - [arXiv:2608.16449v1](https://arxiv.org/abs/2608.16449v1)
 - **Rainfall Sensing via Mobile Communication Signals** (2026) - [arXiv:2608.16088v1](https://arxiv.org/abs/2608.16088v1)
 - **Developing an Offshore Machine Learning Surface Layer Scheme** (2026) - [arXiv:2608.14935v1](https://arxiv.org/abs/2608.14935v1)
