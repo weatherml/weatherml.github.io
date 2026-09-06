@@ -174,8 +174,9 @@ title: Tags
 - **DUNE: A Machine Learning Deep UNet++ based Ensemble Approach to Monthly, Seasonal and Annual Climate Forecasting** (2024) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2408.06262v1](https://arxiv.org/abs/2408.06262v1)
 - **Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics** (2024) - [Global Models](papers.md#global-models) - [arXiv:2407.14129v3](https://arxiv.org/abs/2407.14129v3)
 
-## GAN (26) { #gan }
+## GAN (27) { #gan }
 
+- **GenONet: A Generative operator Network for High-Resolution Precipitation Nowcasting** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2609.00544v1](https://arxiv.org/abs/2609.00544v1)
 - **CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2606.29172v1](https://arxiv.org/abs/2606.29172v1)
 - **Event-Aware Loss Design for Forecasting of Convective Precipitation and Lightning** (2026) - [Extreme Weather](papers.md#extreme-weather) - [arXiv:2606.25937v1](https://arxiv.org/abs/2606.25937v1)
 - **Visibility nowcasting in South Korea: a machine learning approach to class imbalance and distribution shift** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2605.21507v1](https://arxiv.org/abs/2605.21507v1)
@@ -257,8 +258,12 @@ title: Tags
 - **Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics** (2024) - [Global Models](papers.md#global-models) - [arXiv:2407.14129v3](https://arxiv.org/abs/2407.14129v3)
 - **Graph Neural Networks and Spatial Information Learning for Post-Processing Ensemble Weather Forecasts** (2024) - [Ensembles](papers.md#ensembles) - [arXiv:2407.11050v1](https://arxiv.org/abs/2407.11050v1)
 
-## diffusion (159) { #diffusion }
+## diffusion (163) { #diffusion }
 
+- **From Nowcasting to Forecasting: Adapting a Reanalysis-Trained** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2609.03763v1](https://arxiv.org/abs/2609.03763v1)
+- **Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles** (2026) - [Extreme Weather](papers.md#extreme-weather) - [arXiv:2609.02034v1](https://arxiv.org/abs/2609.02034v1)
+- **Diffusion Distillation for Efficient Weather Ensembles** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.27728v1](https://arxiv.org/abs/2608.27728v1)
+- **Climate Physics Dynamic Matching** (2026) - [Other](papers.md#other) - [arXiv:2608.26907v1](https://arxiv.org/abs/2608.26907v1)
 - **SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2608.26594v1](https://arxiv.org/abs/2608.26594v1)
 - **Precipitation Downscaling Using Foundation Model-Conditioned Diffusion** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.25858v1](https://arxiv.org/abs/2608.25858v1)
 - **A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems** (2026) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2608.22454v1](https://arxiv.org/abs/2608.22454v1)
@@ -419,8 +424,10 @@ title: Tags
 - **Machine learning emulation of precipitation from km-scale UK regional climate simulations using a diffusion model** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2407.14158v3](https://arxiv.org/abs/2407.14158v3)
 - **Improving ensemble extreme precipitation forecasts using generative artificial intelligence** (2024) - [Ensembles](papers.md#ensembles) - [arXiv:2407.04882v1](https://arxiv.org/abs/2407.04882v1)
 
-## foundation-model (97) { #foundation-model }
+## foundation-model (99) { #foundation-model }
 
+- **TC-Next: Zero-Shot Multimodal Cyclone Forecasting** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.02085v1](https://arxiv.org/abs/2609.02085v1)
+- **A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data** (2026) - [Other](papers.md#other) - [arXiv:2609.01514v1](https://arxiv.org/abs/2609.01514v1)
 - **Precipitation Downscaling Using Foundation Model-Conditioned Diffusion** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.25858v1](https://arxiv.org/abs/2608.25858v1)
 - **UHI-Bench: Benchmarking Dual-Source Urban Heat Island Modeling Across Cities in Diverse Climate Regimes** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2608.23857v1](https://arxiv.org/abs/2608.23857v1)
 - **Extremes on Rewind: Generating 1,000-Member Ensembles Initialized at a Final Condition** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.19008v1](https://arxiv.org/abs/2608.19008v1)
@@ -525,8 +532,9 @@ title: Tags
 - **RL-DAUNCE: Reinforcement Learning-Driven Data Assimilation with Uncertainty-Aware Constrained Ensembles** (2025) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2505.05452v1](https://arxiv.org/abs/2505.05452v1)
 - **Kolmogorov Modes and Linear Response of Jump-Diffusion Models** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2411.14769v2](https://arxiv.org/abs/2411.14769v2)
 
-## operator-learning (36) { #operator-learning }
+## operator-learning (37) { #operator-learning }
 
+- **GenONet: A Generative operator Network for High-Resolution Precipitation Nowcasting** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2609.00544v1](https://arxiv.org/abs/2609.00544v1)
 - **A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates** (2026) - [Other](papers.md#other) - [arXiv:2607.25668v1](https://arxiv.org/abs/2607.25668v1)
 - **Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2607.21954v1](https://arxiv.org/abs/2607.21954v1)
 - **Fourier Geometric Wind Power Forecasting with Numerical Weather Prediction** (2026) - [Other](papers.md#other) - [arXiv:2607.17095v1](https://arxiv.org/abs/2607.17095v1)
@@ -564,8 +572,14 @@ title: Tags
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](papers.md#global-models) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (168) { #physics-informed }
+## physics-informed (174) { #physics-informed }
 
+- **WeatherNext 3: Increasing resolution and performance of global weather models with raw observations** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.03582v1](https://arxiv.org/abs/2609.03582v1)
+- **Improving precipitation forecasts in an AI weather model using observational data** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.03210v1](https://arxiv.org/abs/2609.03210v1)
+- **GenONet: A Generative operator Network for High-Resolution Precipitation Nowcasting** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2609.00544v1](https://arxiv.org/abs/2609.00544v1)
+- **Python-Fortran Hybrid Programming to Fuse AI and Physical Models: Examples of AI-LDA in climate and weather models (Hf2pMDA_v1.0)** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.29532v1](https://arxiv.org/abs/2608.29532v1)
+- **Application of the latent twins approach for clear sky retrieval from IASI observations** (2026) - [Other](papers.md#other) - [arXiv:2608.27692v1](https://arxiv.org/abs/2608.27692v1)
+- **Climate Physics Dynamic Matching** (2026) - [Other](papers.md#other) - [arXiv:2608.26907v1](https://arxiv.org/abs/2608.26907v1)
 - **When Does Forecast-Error Energy Grow Logistically in Geophysical Turbulence?** (2026) - [Other](papers.md#other) - [arXiv:2608.26492v1](https://arxiv.org/abs/2608.26492v1)
 - **Missing the Butterfly and Predicting the Past: Features or Bugs of Accurate AI Weather Models?** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.25835v1](https://arxiv.org/abs/2608.25835v1)
 - **Tropospheric temperature and humidity profile retrieval from Meteosat Flexible Combined Imager based on deep learning** (2026) - [Other](papers.md#other) - [arXiv:2608.25700v1](https://arxiv.org/abs/2608.25700v1)
@@ -735,8 +749,10 @@ title: Tags
 - **A Physics-Informed Machine Learning Approach utilizing Multiband Satellite Data for Solar Irradiance Estimation** (2024) - [Other](papers.md#other) - [arXiv:2407.04283v1](https://arxiv.org/abs/2407.04283v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](papers.md#nowcasting) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (246) { #probabilistic }
+## probabilistic (248) { #probabilistic }
 
+- **WeatherNext 3: Increasing resolution and performance of global weather models with raw observations** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.03582v1](https://arxiv.org/abs/2609.03582v1)
+- **Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.30795v1](https://arxiv.org/abs/2608.30795v1)
 - **SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2608.26594v1](https://arxiv.org/abs/2608.26594v1)
 - **Precipitation Downscaling Using Foundation Model-Conditioned Diffusion** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.25858v1](https://arxiv.org/abs/2608.25858v1)
 - **Tracing the Unlabeled Storm: Cross-Variable Transfer in a Lagrangian Atmospheric JEPA Framework** (2026) - [Other](papers.md#other) - [arXiv:2608.22358v1](https://arxiv.org/abs/2608.22358v1)
@@ -1119,8 +1135,11 @@ title: Tags
 - **RAIN: Reinforcement Algorithms for Improving Numerical Weather and Climate Models** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2408.16118v3](https://arxiv.org/abs/2408.16118v3)
 - **Navigating the Smog: A Cooperative Multi-Agent RL for Accurate Air Pollution Mapping through Data Assimilation** (2024) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2407.12539v1](https://arxiv.org/abs/2407.12539v1)
 
-## transformer (196) { #transformer }
+## transformer (199) { #transformer }
 
+- **Improving precipitation forecasts in an AI weather model using observational data** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.03210v1](https://arxiv.org/abs/2609.03210v1)
+- **Efficient All-in-One Weather Restoration using Spectral Harmonization** (2026) - [Other](papers.md#other) - [arXiv:2609.02839v1](https://arxiv.org/abs/2609.02839v1)
+- **Uncertainty-Guided Adverse Weather Restoration via Gated Transformer Network** (2026) - [Other](papers.md#other) - [arXiv:2609.02434v1](https://arxiv.org/abs/2609.02434v1)
 - **Precipitation Downscaling Using Foundation Model-Conditioned Diffusion** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2608.25858v1](https://arxiv.org/abs/2608.25858v1)
 - **AICON: An operational global machine learning weather forecasting model** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.24651v1](https://arxiv.org/abs/2608.24651v1)
 - **Timestep-Conditioned Transformers for Global Weather Forecasting** (2026) - [Global Models](papers.md#global-models) - [arXiv:2608.06241v1](https://arxiv.org/abs/2608.06241v1)

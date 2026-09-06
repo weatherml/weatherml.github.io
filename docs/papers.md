@@ -6,21 +6,81 @@ hide:
 <input id="paper-filter" type="search" placeholder="Filter by title, author or tag&hellip;" autocomplete="off" data-search-exclude>
 
 <nav class="cat-chips" data-search-exclude>
-  <a class="cat-chip" href="#global-models">Global Models <span class="cat-chip-count">279</span></a>
-  <a class="cat-chip" href="#nowcasting">Nowcasting <span class="cat-chip-count">94</span></a>
-  <a class="cat-chip" href="#downscaling">Downscaling <span class="cat-chip-count">41</span></a>
-  <a class="cat-chip" href="#data-assimilation">Data Assimilation <span class="cat-chip-count">94</span></a>
+  <a class="cat-chip" href="#global-models">Global Models <span class="cat-chip-count">284</span></a>
+  <a class="cat-chip" href="#nowcasting">Nowcasting <span class="cat-chip-count">96</span></a>
+  <a class="cat-chip" href="#downscaling">Downscaling <span class="cat-chip-count">42</span></a>
+  <a class="cat-chip" href="#data-assimilation">Data Assimilation <span class="cat-chip-count">95</span></a>
   <a class="cat-chip" href="#ensembles">Ensembles <span class="cat-chip-count">75</span></a>
-  <a class="cat-chip" href="#climate-modeling">Climate Modeling <span class="cat-chip-count">305</span></a>
-  <a class="cat-chip" href="#extreme-weather">Extreme Weather <span class="cat-chip-count">89</span></a>
-  <a class="cat-chip" href="#other">Other <span class="cat-chip-count">523</span></a>
+  <a class="cat-chip" href="#climate-modeling">Climate Modeling <span class="cat-chip-count">307</span></a>
+  <a class="cat-chip" href="#extreme-weather">Extreme Weather <span class="cat-chip-count">90</span></a>
+  <a class="cat-chip" href="#other">Other <span class="cat-chip-count">530</span></a>
 </nav>
 
-## Global Models (279) { #global-models }
+## Global Models (284) { #global-models }
 
-???+ year "2026 (115)"
+???+ year "2026 (120)"
 
     <div class="grid cards" markdown>
+
+    -   #### WeatherNext 3: Increasing resolution and performance of global weather models with raw observations
+
+        ---
+
+        <span class="paper-meta"><em>Stephan Rasp, Boris Babenko, Dominic Masters, Andrew El-Kadi, Samier Merchant, Guy Shalev et al.</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.03582" data-search-exclude>State-of-the-art AI weather models have shown impressive medium-range forecast skill and computational efficiency, but suffer two key shortcomings: their forecasts have lower spatial and temporal...</span><span class="abstract-full" id="full-2609.03582" data-search-exclude hidden>State-of-the-art AI weather models have shown impressive medium-range forecast skill and computational efficiency, but suffer two key shortcomings: their forecasts have lower spatial and temporal resolution than the best physics-based models and they are exclusively initialized with and trained on analysis data. As a result, they cannot directly make use of observations, and any biases in the analysis are inherited by the forecast. WeatherNext 3 addresses these shortcomings and establishes a new state-of-the-art for probabilistic medium-range forecasting skill. First, WeatherNext 3 generates new forecasts every hour (rather than every 6 hours like traditional global models) by ingesting low-latency geostationary satellite data. Second, WeatherNext 3's temporal and spatial resolution are on par with physics-based global models, with hourly time steps and 0.1 degree resolution for single-level variables, including solar radiation and cloud cover. Third, WeatherNext 3 moves beyond traditional analysis variables by learning to predict satellite-derived precipitation estimates, as well as tropical cyclone and station observations. Modelling sparse station data allows WeatherNext 3 to make 2m temperature and dewpoint predictions at any location and time, conditioned on local geographical features, with substantially lower error than competing global models, even when evaluated against unseen stations. Together, WeatherNext 3's capabilities move operational AI-based weather forecasting beyond emulating the traditionally distinct stages of data assimilation, forecasting and post-processing, which helps to further push the frontier of performance and granularity for global weather prediction.</span> <span class="abstract-toggle" data-id="2609.03582">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.03582](https://arxiv.org/abs/2609.03582v1) · [:material-content-copy: BibTeX](bibtex/2609.03582.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#physics-informed">physics-informed</a> <a class="md-tag" href="/tags/#probabilistic">probabilistic</a>
+
+    -   #### Improving precipitation forecasts in an AI weather model using observational data
+
+        ---
+
+        <span class="paper-meta"><em>Julian F. Schmitt, Bertrand Delorme, Robert C. King, Yashica Patodia, Tapio Schneider et al.</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.03210" data-search-exclude>Artificial intelligence weather prediction (AIWP) systems now surpass state-of-the-art physical models for medium-range weather forecasting. Current global AIWP models are trained almost exclusively...</span><span class="abstract-full" id="full-2609.03210" data-search-exclude hidden>Artificial intelligence weather prediction (AIWP) systems now surpass state-of-the-art physical models for medium-range weather forecasting. Current global AIWP models are trained almost exclusively using one reanalysis dataset, ERA5, but it has known biases, particularly for precipitation. Here we fine-tune a graph-transformer architecture with IMERG precipitation data at 0.25° resolution. The resulting model improves medium-range continuous ranked probability scores by up to 19%, while also demonstrating superior skill for tropical storms and drizzle events. Our model exceeds the Brier skill score of state-of-the-art operational models on extreme rainfall prediction by 57% globally; however, a physics-based operational model remains more reliable for the heaviest precipitation events. Our results demonstrate that incorporating observations-based precipitation data directly into training can substantially improve precipitation forecasts.</span> <span class="abstract-toggle" data-id="2609.03210">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.03210](https://arxiv.org/abs/2609.03210v1) · [:material-content-copy: BibTeX](bibtex/2609.03210.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#transformer">transformer</a> <a class="md-tag" href="/tags/#physics-informed">physics-informed</a>
+
+    -   #### TC-Next: Zero-Shot Multimodal Cyclone Forecasting
+
+        ---
+
+        <span class="paper-meta"><em>Zhe Wang, Sijie Chen, Yiming Luo, Daehyun Kim, Chien-Yi Chang</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.02085" data-search-exclude>We present TropicalCycloneNext (TC-Next), a multimodal deep learning model that forecasts tropical cyclone track and intensity at $6$-$24$ h leads by leveraging a foundation model's forecast fields...</span><span class="abstract-full" id="full-2609.02085" data-search-exclude hidden>We present TropicalCycloneNext (TC-Next), a multimodal deep learning model that forecasts tropical cyclone track and intensity at $6$-$24$ h leads by leveraging a foundation model's forecast fields of atmospheric kinematic and thermodynamic fields and GridSat infrared satellite imagery. Trained only on GraphCast forecasts over the Western Pacific (WP), yet reliant only on generic atmospheric variables, TC-Next on GraphCast lowers track error by $15$-$44\%$ and intensity error by a factor of $3$-$6$ relative to a conventional, rule-based tracker, TempestExtremes; applied without retraining to the forecast fields of Pangu-Weather and IFS HRES, it stays ahead of TempestExtremes on both. Applied zero-shot to the generic weather fields of WeatherNext Cyclones on the 2025 WP season, TC-Next attains lower intensity error at every lead time, and lower or comparable track error, compared to that model's specialized direct tracker in a deterministic comparison. Our ablation studies show that our multimodal model is able to utilize the additional modality to improve performance in tracking errors at every lead time and in intensity prediction at longer lead times.</span> <span class="abstract-toggle" data-id="2609.02085">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.02085](https://arxiv.org/abs/2609.02085v1) · [:material-content-copy: BibTeX](bibtex/2609.02085.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#foundation-model">foundation-model</a>
+
+    -   #### Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions
+
+        ---
+
+        <span class="paper-meta"><em>Rodrigo Almeida, Noelia Otero, Jost Arndt, Simon Baur, Wojciech Samek, Jackie Ma</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2608.30795" data-search-exclude>End-to-end weather forecasting systems produce skillful global gridded and station forecasts directly from raw Earth observations, replacing the numerical weather prediction pipeline, including data...</span><span class="abstract-full" id="full-2608.30795" data-search-exclude hidden>End-to-end weather forecasting systems produce skillful global gridded and station forecasts directly from raw Earth observations, replacing the numerical weather prediction pipeline, including data assimilation, at a fraction of its cost. These systems are deterministic and issue no uncertainty. Here we render the Aardvark Weather model probabilistic by attaching one stochastic mechanism to each component: learned, input-dependent noise at the observation encoder, capturing aleatoric uncertainty inherited from the observing system, and Monte Carlo dropout in the processor, capturing epistemic uncertainty in the learned dynamics. The resulting nested ensemble attributes forecast spread to the two sources through a law-of-total-variance decomposition, cross-checked by withholding observation streams. Probabilistic finetuning significantly improves the mean forecast, by 4.2% on average across variables and lead times. The ensemble is calibrated against ERA5 through the medium range (spread-skill ratio 0.98), keeps station RMSE within 2.4% of the deterministic model while beating it in CRPS at every lead time, and trails the operational ECMWF ensemble. The encoder branch behaves as observation-driven uncertainty. Component-attributed uncertainty makes end-to-end forecasts more transparent, a step toward observation-driven digital twins of the atmosphere.</span> <span class="abstract-toggle" data-id="2608.30795">more</span>
+
+        <span class="paper-links">[:material-file-document: 2608.30795](https://arxiv.org/abs/2608.30795v1) · [:material-content-copy: BibTeX](bibtex/2608.30795.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#probabilistic">probabilistic</a>
+
+    -   #### Diffusion Distillation for Efficient Weather Ensembles
+
+        ---
+
+        <span class="paper-meta"><em>Yiming Yang, Valentin Brekke, James Briant, Serge Guillas</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2608.27728" data-search-exclude>Diffusion models generate skillful weather ensembles but require costly iterative sampling. We introduce a supervised energy-distance distillation method that compresses a multi-step diffusion...</span><span class="abstract-full" id="full-2608.27728" data-search-exclude hidden>Diffusion models generate skillful weather ensembles but require costly iterative sampling. We introduce a supervised energy-distance distillation method that compresses a multi-step diffusion teacher into a single-step student by aligning student forecasts with teacher samples and ground-truth observations. Experiments on global forecasting and typhoon-track prediction show that our student outperforms existing distillation methods and preserves skill for extreme events. It matches or surpasses the teacher across key metrics using only one neural function evaluation per autoregressive step.</span> <span class="abstract-toggle" data-id="2608.27728">more</span>
+
+        <span class="paper-links">[:material-file-document: 2608.27728](https://arxiv.org/abs/2608.27728v1) · [:material-content-copy: BibTeX](bibtex/2608.27728.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#diffusion">diffusion</a>
 
     -   #### Bridging short- and medium-range weather forecasting with machine learning
 
@@ -3158,11 +3218,35 @@ hide:
 
     </div>
 
-## Nowcasting (94) { #nowcasting }
+## Nowcasting (96) { #nowcasting }
 
-???+ year "2026 (37)"
+???+ year "2026 (39)"
 
     <div class="grid cards" markdown>
+
+    -   #### From Nowcasting to Forecasting: Adapting a Reanalysis-Trained
+
+        ---
+
+        <span class="paper-meta"><em>Mikko Partio, Leila Hieta, Ossi Laine</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.03763" data-search-exclude>Accurate cloud-cover forecasts are important for temperature prediction, radiation forecasting, and solar-power operations. Short-range forecasting methods can preserve observed cloud placement...</span><span class="abstract-full" id="full-2609.03763" data-search-exclude hidden>Accurate cloud-cover forecasts are important for temperature prediction, radiation forecasting, and solar-power operations. Short-range forecasting methods can preserve observed cloud placement during the first forecast hours, but their skill decreases when cloud fields evolve through formation, dissipation and deformation. Longer lead times require accounting for atmospheric evolution, but operational numerical weather prediction (NWP) forecasts may not accurately represent the satellite-observed cloud state at initialization. We develop CloudCast v2, a machine-learning model for 12-hour cloud-cover forecasting from observation-based initial conditions. The model is first trained on the Copernicus European Regional Reanalysis (Ridal2024) to learn cloud-evolution dynamics, and is then adapted to satellite-derived cloud fields using conditional flow matching (Lipman2023), a generative method that transforms noise into cloud-cover forecasts conditioned on the observed initial cloud fields and NWP inputs. CloudCast v2 reduces mean absolute error by 10% relative to its predecessor, CloudCast v1 (Partio2025), over the 1-12 h range. It also overtakes CloudCast v1 in fractions skill score, a neighborhood-based measure of spatial agreement, after approximately 3-6 h, depending on the cloudiness category. These results show that observation-initialized machine-learning forecasts can extend beyond the usual 1-3-hour nowcasting range while retaining spatial detail from satellite cloud fields.</span> <span class="abstract-toggle" data-id="2609.03763">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.03763](https://arxiv.org/abs/2609.03763v1) · [:material-content-copy: BibTeX](bibtex/2609.03763.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#diffusion">diffusion</a>
+
+    -   #### GenONet: A Generative operator Network for High-Resolution Precipitation Nowcasting
+
+        ---
+
+        <span class="paper-meta"><em>Mohammad Kian Golkar, Luciano Alves de Oliveira, Mohammad Khanjani</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.00544" data-search-exclude>High-resolution precipitation nowcasting is critical for reducing the impacts of severe weather but remains difficult because of rapid storm evolution. Deep learning models have shown great promise...</span><span class="abstract-full" id="full-2609.00544" data-search-exclude hidden>High-resolution precipitation nowcasting is critical for reducing the impacts of severe weather but remains difficult because of rapid storm evolution. Deep learning models have shown great promise for this task, but their predictive skill often deteriorates over longer forecast horizons. This leads to increasingly blurry forecasts that fail to capture the complex, non-linear evolution of storm systems. In order to address these limitations, we introduce Spatio-Temporal U-DeepONet (GenONet), a novel architecture for long-range precipitation forecasting up to 3 hours, specifically designed to produce sharp and physically consistent results. GenONet's architecture pioneers the use of a Deep Operator Network (DeepONet) as a generator within a Generative Adversarial Network (GAN) framework for this task. The DeepONet learns the continuous-time dynamics of precipitation, ensuring stability over long forecast horizons. Adversial training against a spatio-temporal discriminator compels the model to produce sharp, coherent forecasts, while a physics-informed loss regularizer, derived from the Moisture Conservation Equation, improves physical plausibility in our ablation setting. Quantitative evaluations show that our model achieves consistently higher scores on most of the metrics, especially for highintensity events and at longer lead times. Qualitatively, GenONet produces structurally coherent forecasts that maintain their integrity, whereas baseline models degrade into indistinct patterns. Finally, an ablation study confirms the benefit of this physics-informed loss, highlighting the strength of combining operator learning with adversarial training.</span> <span class="abstract-toggle" data-id="2609.00544">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.00544](https://arxiv.org/abs/2609.00544v1) · [:material-content-copy: BibTeX](bibtex/2609.00544.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#gan">GAN</a> <a class="md-tag" href="/tags/#physics-informed">physics-informed</a> <a class="md-tag" href="/tags/#operator-learning">operator-learning</a>
 
     -   #### GOES-East full-disk AI nowcasting of cloud evolution in observation space
 
@@ -4272,11 +4356,23 @@ hide:
 
     </div>
 
-## Downscaling (41) { #downscaling }
+## Downscaling (42) { #downscaling }
 
-???+ year "2026 (18)"
+???+ year "2026 (19)"
 
     <div class="grid cards" markdown>
+
+    -   #### Python-Fortran Hybrid Programming to Fuse AI and Physical Models: Examples of AI-LDA in climate and weather models (Hf2pMDA_v1.0)
+
+        ---
+
+        <span class="paper-meta"><em>Xianrui Zhu, Zikuan Lin, Shaoqing Zhang, Zebin Lu, Songhua Wu, Xiangyun Hou, Zhisheng Xiao et al.</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2608.29532" data-search-exclude>AI provides an unprecedented opportunity for advancing physics numerical modeling including data assimilation, which is a highly efficient and critically-important tool for advancing our...</span><span class="abstract-full" id="full-2608.29532" data-search-exclude hidden>AI provides an unprecedented opportunity for advancing physics numerical modeling including data assimilation, which is a highly efficient and critically-important tool for advancing our understanding on Earth system and its applications. At the same time, deep incorporation of AI and physical modeling can make great driving to advance AI by injecting it rich physics from long time physics-based modeling development. However, since such physics models are conventionally coded in Fortran and AI algorithms usually are conveniently designed in Python, difficulties exist to directly incorporate AI algorithms into physics models, vice versa. Here, based on the F2PY protocol, we have developed a procedure that implements an infrastructure which conveniently conducts Hf2pMDA to form a program entity so that AI algorithms and physical models can invoke mutually. As examples, within Hf2pMDA, a climate coupled data assimilation (CDA) system is naturally upgraded to a strongly CDA (SCDA) system, and a 1 km high-resolution weather DA system is conveniently implemented within a multi-layer downscaling model that has multiscale DA in different nesting layers. In the climate SCDA system, a coupled general circulation model (CGCM) and a multiscale filtering algorithm is integrated by a Python main controller (PMC) that calls Fortran CGCM components and Weakly-CDA modules as well as a data-trained SCDA algorithm by latent space autoencoder in Python. In the high-resolution weather DA system, the downscaled model consisting of traditional Fortran DA modules in all mother domains and Python AE DA algorithm in the central child domain is integrated by a PMC that organizes these components. With convenient realization of deep incorporation of any AI algorithm and physics model, the Hf2pMDA has a great potential to make progress on both AI and scientific modeling.</span> <span class="abstract-toggle" data-id="2608.29532">more</span>
+
+        <span class="paper-links">[:material-file-document: 2608.29532](https://arxiv.org/abs/2608.29532v1) · [:material-content-copy: BibTeX](bibtex/2608.29532.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#physics-informed">physics-informed</a>
 
     -   #### Precipitation Downscaling Using Foundation Model-Conditioned Diffusion
 
@@ -4760,11 +4856,21 @@ hide:
 
     </div>
 
-## Data Assimilation (94) { #data-assimilation }
+## Data Assimilation (95) { #data-assimilation }
 
-???+ year "2026 (29)"
+???+ year "2026 (30)"
 
     <div class="grid cards" markdown>
+
+    -   #### Distilling deep optical flow stereo methods to retrieve dense three-dimensional wind fields
+
+        ---
+
+        <span class="paper-meta"><em>Thomas J. Vandal, Dong L. Wu, James L. Carr, Derek J. Posselt, Elise Penn, Tristan Ballard et al.</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.03100" data-search-exclude>Geostationary atmospheric motion vectors (AMVs) provide the dense horizontal wind vectors (u,v) and heights ingested into data assimilation systems. Traditional AMVs track features using window-based...</span><span class="abstract-full" id="full-2609.03100" data-search-exclude hidden>Geostationary atmospheric motion vectors (AMVs) provide the dense horizontal wind vectors (u,v) and heights ingested into data assimilation systems. Traditional AMVs track features using window-based cross-correlation and estimate heights via infrared brightness temperatures paired with numerical weather prediction (NWP) background states, creating a circular dependency that yields inaccurate heights, high computational cost, and sparse retrievals. Stereo winds from GEO-GEO and GEO-LEO geometrically resolve heights from parallax shifts across different poses, eliminating NWP dependence and improving accuracy, but they remain computationally heavy with limited coverage. In this work, we replace window-based tracking in stereo matching with deep optical flow for efficient, improved retrieval. Fine-tuning balances a self-supervised geometric residual loss with supervised radiosonde reconstruction. To eliminate multi-satellite overlap requirements, we distill the stereo teacher into a single-satellite student model. Chi-square and height uncertainties from the teacher are emulated by the student for quality assurance. The student generates winds across full-disk GEO imagery globally. Validation compares stereo and student models against radiosondes, operational AMVs, ERA5 reanalysis, and EarthCARE cloud profiles. Results through triple collocation show that stereo winds improve performance beyond operational AMVs for water vapor bands (6.2, 6.9, and 7.3 μm), wit degradation in the long-wave infrared (11.2 μm) band.</span> <span class="abstract-toggle" data-id="2609.03100">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.03100](https://arxiv.org/abs/2609.03100v1) · [:material-content-copy: BibTeX](bibtex/2609.03100.bib){ .bibtex-link }</span>
 
     -   #### A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems
 
@@ -6730,11 +6836,31 @@ hide:
 
     </div>
 
-## Climate Modeling (305) { #climate-modeling }
+## Climate Modeling (307) { #climate-modeling }
 
-???+ year "2026 (84)"
+???+ year "2026 (86)"
 
     <div class="grid cards" markdown>
+
+    -   #### Radiative and Dynamical Controls on the Land-Ocean Warming Contrast in Climate Models
+
+        ---
+
+        <span class="paper-meta"><em>Paolo Giani, Arlene M. Fiore, Raffaele Ferrari, Paul A. O'Gorman, Vincent T. Cooper, Noelle E. Selin</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.03658" data-search-exclude>Surface air over land warms substantially more than over the ocean under greenhouse forcing, a phenomenon known as the land-ocean warming contrast. Current explanations for this contrast are commonly...</span><span class="abstract-full" id="full-2609.03658" data-search-exclude hidden>Surface air over land warms substantially more than over the ocean under greenhouse forcing, a phenomenon known as the land-ocean warming contrast. Current explanations for this contrast are commonly expressed either in terms of energetic constraints, from top-of-atmosphere and surface energy balance, or dynamical constraints, from large-scale atmospheric dynamics. We show that these perspectives are complementary when viewed through the lens of atmospheric moist static energy (MSE) transport, and that connecting them yields new insight into the controls of the warming contrast and the spread in climate models. We use this framework to construct an interpretable emulator that reproduces the land-ocean warming response across 22 models from the latest Coupled Model Intercomparison Project (CMIP6). We find that the strength of the land-ocean warming contrast emerges from the interplay between a model-dependent radiative baseline and a robust dynamical restoring mechanism that favors greater warming over land. This interplay leads to two broad model regimes that align with climate sensitivity. In low-climate-sensitivity models, more stabilizing radiative feedbacks over the ocean directly favor greater land warming. In high-climate-sensitivity models, radiative feedbacks alone would instead favor greater ocean warming, but a strong MSE-transport feedback (approximately 0.2 PW/K) more than compensates for this tendency. The intermodel spread in the land-ocean warming contrast is closely related to the ratio of radiative feedbacks over land and ocean, highlighting a broader connection between climate sensitivity and the land-ocean warming contrast.</span> <span class="abstract-toggle" data-id="2609.03658">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.03658](https://arxiv.org/abs/2609.03658v1) · [:material-content-copy: BibTeX](bibtex/2609.03658.bib){ .bibtex-link }</span>
+
+    -   #### A Checklist to assess the energy and carbon impacts of ML/AI applications in Earth System Modeling
+
+        ---
+
+        <span class="paper-meta"><em>Filippo Dainelli, Amirpasha Mozaffari, Marina Castaño, Aina Gaya i Àvila, Lluís Palma Garcia et al.</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.00847" data-search-exclude>As machine learning and artificial intelligence find their way into nearly every aspect of climate, weather, and Earth system modeling, it is worth pausing to consider what our design decisions imply...</span><span class="abstract-full" id="full-2609.00847" data-search-exclude hidden>As machine learning and artificial intelligence find their way into nearly every aspect of climate, weather, and Earth system modeling, it is worth pausing to consider what our design decisions imply for the science and for the computational resources we consume. A growing body of literature addresses the ethical and sustainable development of ML/AI, yet translating these principles into day-to-day research practice remains a challenge as most of best practices are dispersed across multiple studies and commentaries. Here, we distill these discussions into a practical checklist that ML/AI and Earth system science practitioners can use to assess and reduce the environmental footprint of their own applications, organised around the successive stages of the model development pipeline. We complement the checklist with a selection of metrics drawn from the literature for estimating the energy consumption and carbon footprint of a project. For each question, we point to concrete examples and actionable suggestions from recent literature, aiming to bridge the gap between aspirational principles and the decisions researchers face at every stage of the development cycle.</span> <span class="abstract-toggle" data-id="2609.00847">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.00847](https://arxiv.org/abs/2609.00847v1) · [:material-content-copy: BibTeX](bibtex/2609.00847.bib){ .bibtex-link }</span>
 
     -   #### SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations
 
@@ -10136,11 +10262,23 @@ hide:
 
     </div>
 
-## Extreme Weather (89) { #extreme-weather }
+## Extreme Weather (90) { #extreme-weather }
 
-???+ year "2026 (35)"
+???+ year "2026 (36)"
 
     <div class="grid cards" markdown>
+
+    -   #### Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles
+
+        ---
+
+        <span class="paper-meta"><em>Yingkai Sha, Talea L. Mayo, Ethan D. Gutmann, Lulin Xue, Andrew Newman</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.02034" data-search-exclude>This study presents an AI-based dynamical downscaling system for Tropical Cyclones (TCs). The system incorporates an AI-based limited-area model that downscales 3-hourly low-resolution boundary...</span><span class="abstract-full" id="full-2609.02034" data-search-exclude hidden>This study presents an AI-based dynamical downscaling system for Tropical Cyclones (TCs). The system incorporates an AI-based limited-area model that downscales 3-hourly low-resolution boundary forcings into hourly high-resolution fields autoregressively, and a diffusion model that converts the outputs into ensembles of hazard-relevant variables. The system is trained on the regridded CONUS404 data with ERA5 forcings, and is evaluated on 20 TCs in 2020--2024. Verification shows stable downscaling performance across Atlantic hurricane seasons, with energy spectra closely matching the CONUS404 reference. The system is also verified to produce skillful TC-relevant weather extremes, largely improved over a deterministic AI baseline. The system performs well with forcing data from other models (GDAS/FNL) and can produce detailed eyewall, rainband, and landfall structures in TC case studies. The study provides a good example of how AI-based dynamical downscaling systems can be designed to resolve small-scale extreme weather events.</span> <span class="abstract-toggle" data-id="2609.02034">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.02034](https://arxiv.org/abs/2609.02034v1) · [:material-content-copy: BibTeX](bibtex/2609.02034.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#diffusion">diffusion</a>
 
     -   #### Frequency-aware forecasting for short-term typhoon gust prediction
 
@@ -11162,11 +11300,91 @@ hide:
 
     </div>
 
-## Other (523) { #other }
+## Other (530) { #other }
 
-???+ year "2026 (181)"
+???+ year "2026 (188)"
 
     <div class="grid cards" markdown>
+
+    -   #### Efficient All-in-One Weather Restoration using Spectral Harmonization
+
+        ---
+
+        <span class="paper-meta"><em>Paula Garrido-Mellado, Daniel Feijoo, Yuning Cui, Alvaro Garcia, Marcos V. Conde</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.02839" data-search-exclude>Adverse weather conditions such as rain, haze, and snow significantly degrade image quality, posing challenges for both human perception and physical AI. Existing restoration methods require large...</span><span class="abstract-full" id="full-2609.02839" data-search-exclude hidden>Adverse weather conditions such as rain, haze, and snow significantly degrade image quality, posing challenges for both human perception and physical AI. Existing restoration methods require large computational budgets, struggling to process high-resolution images and handle different degradations. In this paper, we present Frequency Reconstruction via Spectral Harmonization, a novel lightweight all-in-one restoration method that explicitly decomposes feature representations into high- and low-frequency components at each scale of a hierarchical encoder-decoder architecture. By combining spectral decomposition with spatial processing through Fourier-based skip connections, FReSH-IR captures complementary frequency information without sacrificing spatial detail. Our approach achieves similar restoration quality with 80% fewer parameters and operations than transformer-based models. Extensive experiments demonstrate that our method offers a great efficiency-performance trade-off, highlighting its practical applications in constrained-resource systems.</span> <span class="abstract-toggle" data-id="2609.02839">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.02839](https://arxiv.org/abs/2609.02839v1) · [:material-content-copy: BibTeX](bibtex/2609.02839.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#transformer">transformer</a>
+
+    -   #### Uncertainty-Guided Adverse Weather Restoration via Gated Transformer Network
+
+        ---
+
+        <span class="paper-meta"><em>Zheke Jin, Yuning Cui, Tianle Jin, Alois Knoll, Hu Cao</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.02434" data-search-exclude>Restoring images degraded by adverse weather remains challenging due to spatially heterogeneous degradations. Many existing weather-specific restoration models rely on weather-agnostic global...</span><span class="abstract-full" id="full-2609.02434" data-search-exclude hidden>Restoring images degraded by adverse weather remains challenging due to spatially heterogeneous degradations. Many existing weather-specific restoration models rely on weather-agnostic global aggregation, naive cross-scale fusion, and deterministic objectives, which struggle to handle heterogeneous degradations in all-in-one adverse-weather settings. To address these limitations, we propose an Uncertainty-guided Adverse-weather Restoration Network (UAR-Net), a weather-specific AiO framework that integrates a gated transformer with balanced multi-scale skip connections. Specifically, we employ Gated Dual-scale Transformer Blocks (GDTB) to jointly model selective global interactions and multi-scale local structures, a progressive Balanced Multi-scale Skip Connection (BMSC) for balanced multi-scale feature integration, and an Uncertainty-Aware Refinement Head (URH) that performs artifact removal, detail enhancement, and predictive uncertainty estimation. The model is supervised by a Brightness-Aware Energy Loss (BAE-Loss) to encourage accurate reconstruction with well-calibrated uncertainty. Extensive experiments demonstrate that our method achieves state-of-the-art performance across multiple adverse-weather benchmarks. The codes will open source upon acceptance.</span> <span class="abstract-toggle" data-id="2609.02434">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.02434](https://arxiv.org/abs/2609.02434v1) · [:material-content-copy: BibTeX](bibtex/2609.02434.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#transformer">transformer</a>
+
+    -   #### A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data
+
+        ---
+
+        <span class="paper-meta"><em>Andres F. Monsalve, Hernan A. Moreno, Christian D. Kummerow</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.01514" data-search-exclude>Historically, retrieving rainfall data from satellite imagery has been the domain of space agencies. However, in recent years, the development of cheaper, more compact satellites (SmallSats) capable...</span><span class="abstract-full" id="full-2609.01514" data-search-exclude hidden>Historically, retrieving rainfall data from satellite imagery has been the domain of space agencies. However, in recent years, the development of cheaper, more compact satellites (SmallSats) capable of detecting rainfall proxies has led to a significant increase in private-sector initiatives for satellite launch and surface precipitation products. This rapid growth has yet to be matched by data validation efforts. Consequently, the need for a robust tool to detect anomalies in near-real-time data before it is disseminated to the public has become critical. In this paper, we present the development of an anomaly-detection system to identify artifacts in global satellite-based rainfall products. The developed framework leverages pre-trained computer vision models and incorporates scarce human-labeled data to detect specific anomalies. Our proposed anomaly detection strategy is tested on data from the Special Sensor Microwave Imager (SSMI) and the Special Sensor Microwave Imager/Sounder (SSMIS). Results demonstrate the efficacy of our approach at separating regular orbits from artifact-containing orbits for each satellite, with performance comparable to state-of-the-art in-place methods. Additionally, the framework offers explainability and the capacity for iterative refinement following false-positive or false-negative classifications.</span> <span class="abstract-toggle" data-id="2609.01514">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.01514](https://arxiv.org/abs/2609.01514v1) · [:material-content-copy: BibTeX](bibtex/2609.01514.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#foundation-model">foundation-model</a>
+
+    -   #### Accelerating Chemical Kinetics for Exoplanet Atmospheres using Neural Networks
+
+        ---
+
+        <span class="paper-meta"><em>Isaac Malsky, Xi Zhang, Tiffany Kataria, Matthew Graham, Ziyu Huang, Boris Bonev, Shang-Min Tsai et al.</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.00428" data-search-exclude>Observations increasingly reveal the coupled radiative, chemical, and dynamical processes that shape exoplanet atmospheres. Interpreting these atmospheres requires models that can capture this...</span><span class="abstract-full" id="full-2609.00428" data-search-exclude hidden>Observations increasingly reveal the coupled radiative, chemical, and dynamical processes that shape exoplanet atmospheres. Interpreting these atmospheres requires models that can capture this complexity. However, multidimensional models remain fundamentally limited by computational cost, and answering key questions requires simulating the governing physical mechanisms at speeds classical methods cannot achieve. As a result, models often rely on simplifying approximations, such as equilibrium chemistry, even when those assumptions miss important effects. There is a pressing need for fast and accurate chemical kinetics solvers to model planetary atmospheres. Here we present a machine learning local-box chemical kinetics solver for exoplanet atmospheres using a residual flow-map architecture. We demonstrate that this surrogate model is several orders of magnitude faster than a classical solver, achieving microsecond-scale inference while retaining percent-level accuracy. The surrogate model covers a parameter space that spans $T=300$-$3000$ K, $P=10^{-6}$-$10^{4}$ bar, $Δt=10^{-3}$-$10^{8}$ s, and compositions ranging from $10^{-2}$ to $10^{3}$ times solar in both C/O ratio and metallicity. Our model outperforms several commonly used machine learning architectures and performs robustly under the extreme stiffness characteristic of atmospheric chemistry. The machine learning framework presented here is a flexible and efficient approach to emulating state-to-state flow-map problems that commonly arise in numerical simulations.</span> <span class="abstract-toggle" data-id="2609.00428">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.00428](https://arxiv.org/abs/2609.00428v1) · [:material-content-copy: BibTeX](bibtex/2609.00428.bib){ .bibtex-link }</span>
+
+    -   #### How well is surface ocean carbon represented in observations and ocean models?
+
+        ---
+
+        <span class="paper-meta"><em>Viviana Acquaviva, Romina Wild, Alessandro Laio, Amanda R. Fay, Thea H. Heimdal, Galen A. McKinley</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2609.00133" data-search-exclude>We introduce a general framework for quantifying the information content and representation quality of complex geophysical datasets based on the intrinsic dimension and differentiable information...</span><span class="abstract-full" id="full-2609.00133" data-search-exclude hidden>We introduce a general framework for quantifying the information content and representation quality of complex geophysical datasets based on the intrinsic dimension and differentiable information imbalance of data manifolds. We use it to derive and compare optimal representations of surface ocean carbon in the SOCAT database of observations and in global ocean biogeochemistry models (GOBMs) and to assess the robustness of the information we can extract from existing data. We find that within the most widely used feature set, the complexity of the data space of SOCAT observations is not fully captured by GOBMs, but the ranking and relative importance of variables learned through GOBMs are substantially correct. We observe that the learned representation of ocean carbon is less accurate in some regions, including the Southern Ocean, but doesn't appear to have evolved significantly over the last two decades. Finally, we show how the optimal representations can be used to improve the skill of distance-based machine learning models and demonstrate it for ocean carbon, and we propose two new metrics to compare models and observations that can be used to build more accurate weighted ensembles of estimates.</span> <span class="abstract-toggle" data-id="2609.00133">more</span>
+
+        <span class="paper-links">[:material-file-document: 2609.00133](https://arxiv.org/abs/2609.00133v1) · [:material-content-copy: BibTeX](bibtex/2609.00133.bib){ .bibtex-link }</span>
+
+    -   #### Application of the latent twins approach for clear sky retrieval from IASI observations
+
+        ---
+
+        <span class="paper-meta"><em>Michele Martinazzo, Cristina Sgattoni, Marco Menarini, Chiara Zugarini, Tiziano Maestri, Luca Sgheri</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2608.27692" data-search-exclude>In recent years, data-driven approaches emerged as alternatives to traditional physics-based retrievals, taking advantage of machine learning techniques such as learnable pseudoinverse, random...</span><span class="abstract-full" id="full-2608.27692" data-search-exclude hidden>In recent years, data-driven approaches emerged as alternatives to traditional physics-based retrievals, taking advantage of machine learning techniques such as learnable pseudoinverse, random forests, or deep learning architectures. Classical data-driven models generalize poorly to out-of-sample regimes, as they optimize over finite datasets without incorporating underlying physical laws. This often requires large models and extensive data to achieve reliability. Physics-Informed Neural Networks address this by embedding physical constraints into the learning process, enabling improved extrapolation. However, they requires substantial computational cost due to the need to solve governing equations at each training step. In this work, we introduce a novel deep learning architecture, based on latent twin approach, that balances model complexity, dataset size, and training cost, while providing a quantitative measure of data quality. This architecture is applied to IASI spectra, with the goal to assess the robustness of this method for retrieving atmospheric profiles, including temperature, water vapor, ozone, surface emissivity, and surface temperature, in real-world clear-sky conditions. The algorithm is first applied on synthetic radiances derived from the NWP SAF database using the fast radiative transfer code sigma-IASI/F2N. After validating the architecture on synthetic data, the algorithm is applied to IASI Level 1C observations, along with their corresponding Level 2 products which serve as reference to evaluate the reconstruction accuracy of the autoencoder-based retrieval. The retrieval performances are discussed along with possible strategies to provide an error analysis for the reconstructed thermodynamical profiles.</span> <span class="abstract-toggle" data-id="2608.27692">more</span>
+
+        <span class="paper-links">[:material-file-document: 2608.27692](https://arxiv.org/abs/2608.27692v1) · [:material-content-copy: BibTeX](bibtex/2608.27692.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#physics-informed">physics-informed</a>
+
+    -   #### Climate Physics Dynamic Matching
+
+        ---
+
+        <span class="paper-meta"><em>Gurjeet Sangra Singh, Frantzeska Lavda, Alexandros Kalousis</em> · 2026</span>
+
+        <span class="abstract-snippet" id="snip-2608.26907" data-search-exclude>Deep generative models such as flow matching and diffusion models have shown potential for learning complex dynamical systems, but typically act as black boxes that neglect underlying physical...</span><span class="abstract-full" id="full-2608.26907" data-search-exclude hidden>Deep generative models such as flow matching and diffusion models have shown potential for learning complex dynamical systems, but typically act as black boxes that neglect underlying physical structure, while physics-based models governed by partial differential equations are often incomplete due to missing source terms, or uncertain parametrisations. We present Climate Physics Dynamic Matching (ClimPhyDM), a variational simulation-free dynamics informed framework for weather forecasting that combines an advection-type physics prior with data-driven components in a variational framework. % to capture the stochasticity and multi-modality of unresolved atmospheric dynamics. On the ERA5 benchmark at hourly (42-hour) and monthly (5-month) resolutions, ClimPhyDM outperforms ClimODE, and GB-DM, keeping the lower error at extended horizon, indicating improved temporal stability and resistance to error accumulation, while its simulation-free paradigm also enables training on a single modest 12 GB consumer GPU.</span> <span class="abstract-toggle" data-id="2608.26907">more</span>
+
+        <span class="paper-links">[:material-file-document: 2608.26907](https://arxiv.org/abs/2608.26907v1) · [:material-content-copy: BibTeX](bibtex/2608.26907.bib){ .bibtex-link }</span>
+
+        <a class="md-tag" href="/tags/#diffusion">diffusion</a> <a class="md-tag" href="/tags/#physics-informed">physics-informed</a>
 
     -   #### When Does Forecast-Error Energy Grow Logistically in Geophysical Turbulence?
 
