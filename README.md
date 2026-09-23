@@ -50,10 +50,12 @@ uv run python build_pages.py
 
 <!-- PAPERS_START -->
 
-## Paper Collection (1543 papers)
+## Paper Collection (1553 papers)
 
-### Global Models (291)
+### Global Models (293)
 
+- **West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation** (2026) - [arXiv:2609.25512v1](https://arxiv.org/abs/2609.25512v1)
+- **FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting** (2026) - [arXiv:2609.25505v1](https://arxiv.org/abs/2609.25505v1)
 - **Spatial Aggregation of ROC and Precision-Recall Curves** (2026) - [arXiv:2609.19517v1](https://arxiv.org/abs/2609.19517v1)
 - **Butterfly Effect and the Kinetic Energy Cascade in Probabilistic Machine Learning Weather Prediction Models** (2026) - [arXiv:2609.18489v1](https://arxiv.org/abs/2609.18489v1)
 - **Every Fixed Metric Has a Blind Spot: A Learned Atmospheric Critic for Scoring Forecast Realism** (2026) - [arXiv:2609.18381v1](https://arxiv.org/abs/2609.18381v1)
@@ -591,8 +593,9 @@ uv run python build_pages.py
 - **Navigating the Smog: A Cooperative Multi-Agent RL for Accurate Air Pollution Mapping through Data Assimilation** (2024) - [arXiv:2407.12539v1](https://arxiv.org/abs/2407.12539v1)
 - **FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation** (2023) - [arXiv:2312.12455v2](https://arxiv.org/abs/2312.12455v2)
 
-### Ensembles (78)
+### Ensembles (79)
 
+- **A dataset of one-dimensional idealized probabilistic fields** (2026) - [arXiv:2609.25720v1](https://arxiv.org/abs/2609.25720v1)
 - **Predictability-Guided Multiscale Probabilistic Forecasting of Wind Direction under Extreme Shear** (2026) - [arXiv:2609.16707v1](https://arxiv.org/abs/2609.16707v1)
 - **A Self-Diagnosing Structural Error-Aware Parameter Estimation Method for Earth System Models** (2026) - [arXiv:2609.16210v1](https://arxiv.org/abs/2609.16210v1)
 - **Statistical versus machine learning-based spatial interpolation of post-processed ensemble weather forecasts** (2026) - [arXiv:2609.07512v1](https://arxiv.org/abs/2609.07512v1)
@@ -672,8 +675,12 @@ uv run python build_pages.py
 - **GenCast: Diffusion-based ensemble forecasting for medium-range weather** (2023) - [arXiv:2312.15796v2](https://arxiv.org/abs/2312.15796v2)
 - **SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation** (2022) - [arXiv:2205.13158v1](https://arxiv.org/abs/2205.13158v1)
 
-### Climate Modeling (309)
+### Climate Modeling (313)
 
+- **Analysis of trade-offs in urban heat mitigation using a Bayesian Optimization framework for an urban canopy layer model** (2026) - [arXiv:2609.25953v1](https://arxiv.org/abs/2609.25953v1)
+- **Learning Prognostic Variables for AI Convective Parameterizations via Symbolic Distillation** (2026) - [arXiv:2609.24882v1](https://arxiv.org/abs/2609.24882v1)
+- **Climate Variability Modulates the Impact of Price Spikes on Food Insecurity** (2026) - [arXiv:2609.24394v1](https://arxiv.org/abs/2609.24394v1)
+- **ClimTip-GML: A global bias-corrected and downscaled dataset for assessing impacts of climate tipping events** (2026) - [arXiv:2609.23149v1](https://arxiv.org/abs/2609.23149v1)
 - **A Physics--ML Multi-Fidelity Strategy for Earth System Model Parameter Optimization: A QG Proof-of-Concept** (2026) - [arXiv:2609.13275v1](https://arxiv.org/abs/2609.13275v1)
 - **GCMagicc v1: a fast generative emulator for multivariate climate-impact ensembles** (2026) - [arXiv:2609.08383v1](https://arxiv.org/abs/2609.08383v1)
 - **Radiative and Dynamical Controls on the Land-Ocean Warming Contrast in Climate Models** (2026) - [arXiv:2609.03658v1](https://arxiv.org/abs/2609.03658v1)
@@ -1078,8 +1085,11 @@ uv run python build_pages.py
 - **Ensemble quantile-based deep learning framework for streamflow and flood prediction in Australian catchments** (2024) - [arXiv:2407.15882v2](https://arxiv.org/abs/2407.15882v2)
 - **Modeling Spatial Extremal Dependence of Precipitation Using Distributional Neural Networks** (2024) - [arXiv:2407.08668v3](https://arxiv.org/abs/2407.08668v3)
 
-### Other (538)
+### Other (541)
 
+- **Inference of Unknown Dynamical Components Using Next Generation Reservoir Computing: From Chaotic Systems to Climate Data** (2026) - [arXiv:2609.24754v1](https://arxiv.org/abs/2609.24754v1)
+- **From Regional to Global: Transfer Learning for Atmospheric Transport Emulators** (2026) - [arXiv:2609.23838v1](https://arxiv.org/abs/2609.23838v1)
+- **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (2026) - [arXiv:2609.22574v1](https://arxiv.org/abs/2609.22574v1)
 - **A more predictable Madden-Julian Oscillation index derived from Koopman spectral analysis** (2026) - [arXiv:2609.19435v1](https://arxiv.org/abs/2609.19435v1)
 - **4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling** (2026) - [arXiv:2609.12815v1](https://arxiv.org/abs/2609.12815v1)
 - **Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework** (2026) - [arXiv:2609.12254v1](https://arxiv.org/abs/2609.12254v1)

@@ -4,8 +4,9 @@ hide:
 title: Tags
 ---
 
-## CNN (169) { #cnn }
+## CNN (170) { #cnn }
 
+- **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (2026) - [Other](papers.md#other) - [arXiv:2609.22574v1](https://arxiv.org/abs/2609.22574v1)
 - **Physics-Informed Hemodynamic Modeling for Data-Free Prediction and Sparse-Data Assimilation** (2026) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2609.19290v1](https://arxiv.org/abs/2609.19290v1)
 - **Neptune: An AI model for Global Ocean Subseasonal Prediction** (2026) - [Other](papers.md#other) - [arXiv:2609.08606v1](https://arxiv.org/abs/2609.08606v1)
 - **SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2608.26594v1](https://arxiv.org/abs/2608.26594v1)
@@ -261,8 +262,9 @@ title: Tags
 - **Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics** (2024) - [Global Models](papers.md#global-models) - [arXiv:2407.14129v3](https://arxiv.org/abs/2407.14129v3)
 - **Graph Neural Networks and Spatial Information Learning for Post-Processing Ensemble Weather Forecasts** (2024) - [Ensembles](papers.md#ensembles) - [arXiv:2407.11050v1](https://arxiv.org/abs/2407.11050v1)
 
-## diffusion (165) { #diffusion }
+## diffusion (166) { #diffusion }
 
+- **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (2026) - [Other](papers.md#other) - [arXiv:2609.22574v1](https://arxiv.org/abs/2609.22574v1)
 - **Stress-Testing Dynamical and Generative Downscaling Using Subseasonal Extreme Precipitation Forecasts** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.11696v1](https://arxiv.org/abs/2609.11696v1)
 - **Steering Diffusion Priors with Sparse Observations for High-Resolution Temperature Downscaling** (2026) - [Downscaling](papers.md#downscaling) - [arXiv:2609.09247v1](https://arxiv.org/abs/2609.09247v1)
 - **From Nowcasting to Forecasting: Adapting a Reanalysis-Trained** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2609.03763v1](https://arxiv.org/abs/2609.03763v1)
@@ -580,8 +582,9 @@ title: Tags
 - **On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2407.05224v2](https://arxiv.org/abs/2407.05224v2)
 - **FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators** (2022) - [Global Models](papers.md#global-models) - [arXiv:2202.11214v1](https://arxiv.org/abs/2202.11214v1)
 
-## physics-informed (177) { #physics-informed }
+## physics-informed (178) { #physics-informed }
 
+- **A dataset of one-dimensional idealized probabilistic fields** (2026) - [Ensembles](papers.md#ensembles) - [arXiv:2609.25720v1](https://arxiv.org/abs/2609.25720v1)
 - **Physics-Informed Hemodynamic Modeling for Data-Free Prediction and Sparse-Data Assimilation** (2026) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2609.19290v1](https://arxiv.org/abs/2609.19290v1)
 - **Butterfly Effect and the Kinetic Energy Cascade in Probabilistic Machine Learning Weather Prediction Models** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.18489v1](https://arxiv.org/abs/2609.18489v1)
 - **Neptune: An AI model for Global Ocean Subseasonal Prediction** (2026) - [Other](papers.md#other) - [arXiv:2609.08606v1](https://arxiv.org/abs/2609.08606v1)
@@ -760,8 +763,11 @@ title: Tags
 - **A Physics-Informed Machine Learning Approach utilizing Multiband Satellite Data for Solar Irradiance Estimation** (2024) - [Other](papers.md#other) - [arXiv:2407.04283v1](https://arxiv.org/abs/2407.04283v1)
 - **Skilful Precipitation Nowcasting Using NowcastNet** (2023) - [Nowcasting](papers.md#nowcasting) - [arXiv:2311.17961v2](https://arxiv.org/abs/2311.17961v2)
 
-## probabilistic (254) { #probabilistic }
+## probabilistic (257) { #probabilistic }
 
+- **Analysis of trade-offs in urban heat mitigation using a Bayesian Optimization framework for an urban canopy layer model** (2026) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2609.25953v1](https://arxiv.org/abs/2609.25953v1)
+- **A dataset of one-dimensional idealized probabilistic fields** (2026) - [Ensembles](papers.md#ensembles) - [arXiv:2609.25720v1](https://arxiv.org/abs/2609.25720v1)
+- **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (2026) - [Other](papers.md#other) - [arXiv:2609.22574v1](https://arxiv.org/abs/2609.22574v1)
 - **Butterfly Effect and the Kinetic Energy Cascade in Probabilistic Machine Learning Weather Prediction Models** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.18489v1](https://arxiv.org/abs/2609.18489v1)
 - **IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy** (2026) - [Nowcasting](papers.md#nowcasting) - [arXiv:2609.17175v1](https://arxiv.org/abs/2609.17175v1)
 - **Predictability-Guided Multiscale Probabilistic Forecasting of Wind Direction under Extreme Shear** (2026) - [Ensembles](papers.md#ensembles) - [arXiv:2609.16707v1](https://arxiv.org/abs/2609.16707v1)
@@ -1153,8 +1159,9 @@ title: Tags
 - **RAIN: Reinforcement Algorithms for Improving Numerical Weather and Climate Models** (2024) - [Climate Modeling](papers.md#climate-modeling) - [arXiv:2408.16118v3](https://arxiv.org/abs/2408.16118v3)
 - **Navigating the Smog: A Cooperative Multi-Agent RL for Accurate Air Pollution Mapping through Data Assimilation** (2024) - [Data Assimilation](papers.md#data-assimilation) - [arXiv:2407.12539v1](https://arxiv.org/abs/2407.12539v1)
 
-## transformer (203) { #transformer }
+## transformer (204) { #transformer }
 
+- **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (2026) - [Other](papers.md#other) - [arXiv:2609.22574v1](https://arxiv.org/abs/2609.22574v1)
 - **Aries: A Proprietary Medium-Range Weather Prediction Model for the Energy Industry** (2026) - [Global Models](papers.md#global-models) - [arXiv:2609.13292v1](https://arxiv.org/abs/2609.13292v1)
 - **4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling** (2026) - [Other](papers.md#other) - [arXiv:2609.12815v1](https://arxiv.org/abs/2609.12815v1)
 - **Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework** (2026) - [Other](papers.md#other) - [arXiv:2609.12254v1](https://arxiv.org/abs/2609.12254v1)
