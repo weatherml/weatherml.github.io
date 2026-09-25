@@ -1,4 +1,4 @@
-# [weatherml.github.io](https://weatherml.github.io)
+# [weatherml](https://weatherml.github.io)
 
 Papers on AI for weather forecasting, climate modelling and atmospheric
 science, updated weekly from arXiv.
