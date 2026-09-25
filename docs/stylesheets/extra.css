@@ -40,10 +40,16 @@ h1#__skip {
   grid-column: 1 / -1;
 }
 
-/* Style h4 inside cards to match the bold title look */
+/* Style h4 inside cards to match the bold title look; titles longer than
+   three lines are cut with an ellipsis */
 .grid.cards h4 {
   font-size: 1em;
   margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }
 
 /* No ¶ permalink on paper cards. The anchors themselves stay, since the

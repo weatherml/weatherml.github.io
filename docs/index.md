@@ -13,17 +13,18 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
 
 <div class="grid cards topics" markdown>
 
--   [Global Models](papers/global-models/index.md) <span class="topic-count">291</span>
+-   [Global Models](papers/global-models/index.md) <span class="topic-count">347</span>
+-   [Regional Models](papers/regional-models/index.md) <span class="topic-count">60</span>
 -   [Nowcasting](papers/nowcasting/index.md) <span class="topic-count">97</span>
--   [Downscaling](papers/downscaling/index.md) <span class="topic-count">43</span>
--   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">95</span>
--   [Ensembles](papers/ensembles/index.md) <span class="topic-count">79</span>
--   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">309</span>
--   [Extreme Weather](papers/extreme-weather/index.md) <span class="topic-count">89</span>
--   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">57</span>
--   [Air Quality & Composition](papers/air-quality-composition/index.md) <span class="topic-count">62</span>
--   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">71</span>
--   [Other](papers/other/index.md) <span class="topic-count">275</span>
+-   [Downscaling](papers/downscaling/index.md) <span class="topic-count">95</span>
+-   [Post-processing](papers/post-processing/index.md) <span class="topic-count">25</span>
+-   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">74</span>
+-   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">289</span>
+-   [Hydrology](papers/hydrology/index.md) <span class="topic-count">37</span>
+-   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">83</span>
+-   [Air Quality & Composition](papers/air-quality-composition/index.md) <span class="topic-count">71</span>
+-   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">98</span>
+-   [Other](papers/other/index.md) <span class="topic-count">192</span>
 
 </div>
 

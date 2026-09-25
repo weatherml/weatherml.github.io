@@ -8,23 +8,23 @@ hide:
 
 # Global Models
 
-<p class="page-meta" markdown="span">291 papers · page 1 of 10 · <a href="../../bib/global-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">347 papers · page 1 of 12 · <a href="../../bib/global-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
 
--   #### West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation { #2609.25512 }
+-   #### A dataset of one-dimensional idealized probabilistic fields { #2609.25720 }
 
-    *Nazak Rouzegari, Vesta Afzali Gorooh, Agniv Sengupta, Phu Nguyen, Kuo-Lin Hsu, Amir AghaKouchak et al.* · Sep 2026
+    *Gregor Skok, Romain Pic* · Sep 2026
     { .paper-meta }
 
-    <span class="abstract-snippet" id="snip-2609.25512">We introduce a stretched-grid artificial intelligence (AI) weather forecasting model with 2-km resolution over the western United States and part of the Northeast Pacific and approximately 31-km...</span><span class="abstract-full" id="full-2609.25512" hidden>We introduce a stretched-grid artificial intelligence (AI) weather forecasting model with 2-km resolution over the western United States and part of the Northeast Pacific and approximately 31-km resolution elsewhere globally. Forecasting over the western U.S. is challenging because complex topography and atmospheric rivers (ARs) strongly influence orographic precipitation. West-WRF AI 2-km builds on a global model pretrained with a 40-year European Centre for Medium-Range Weather Forecasts Reanalysis v5 (ERA5) dataset and is fine-tuned with the Center for Western Weather and Water Extremes (CW3E) 2-km regional reanalysis to produce autoregressive 6-hourly forecasts of precipitation and integrated vapor transport (IVT). Forecasts are evaluated over winters 2020-2023 using gridded precipitation observations, rain gauges, and AR Reconnaissance dropsondes and are benchmarked against coarser-resolution AI forecasts and regional and global numerical weather prediction (NWP) systems. West-WRF AI 2-km reproduces observed precipitation-intensity distributions, retains fine-scale spectral variability, and produces sharper narrow coastal precipitation bands and localized, terrain-sensitive extremes. Its broader-scale performance remains comparable to coarser-resolution configurations while preserving large-scale skill despite higher resolution. Dropsonde verification shows lower errors and improved categorical skill at the most extreme IVT threshold. Overall, West-WRF AI 2-km provides its greatest value for localized precipitation extremes and intense AR-related moisture transport.</span> <span class="abstract-toggle" data-id="2609.25512">more</span>
+    <span class="abstract-snippet" id="snip-2609.25720">Verification of probabilistic weather forecasts remains a crucial aspect of numerical weather prediction, as new AI-based models become more widely used alongside the more traditional physics-based...</span><span class="abstract-full" id="full-2609.25720" hidden>Verification of probabilistic weather forecasts remains a crucial aspect of numerical weather prediction, as new AI-based models become more widely used alongside the more traditional physics-based ensemble forecasting systems that continue to be developed and improved. We present a first-of-its-kind idealized probabilistic dataset composed of one-dimensional cases aimed at analyzing the behavior and properties of verification methods for probabilistic forecasts and comparing their behavior. It covers a wide range of probabilistic cases, such as constant, localized events, gradients, fronts, noisy, bimodal, and limiting cases. Moreover, the code associated with the dataset provides great flexibility for customizing the experiments it covers. The dataset represents the first building block of the more extensive comparison dataset of the Bridging The Gap project, which aims to facilitate the development and comparison of spatial verification methods for probabilistic forecasts.</span> <span class="abstract-toggle" data-id="2609.25720">more</span>
 
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.25512v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.25512v1) · [:material-content-copy: BibTeX](../../bibtex/2609.25512.bib){ .bibtex-link }
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.25720v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.25720v1) · [:material-content-copy: BibTeX](../../bibtex/2609.25720.bib){ .bibtex-link }
     { .paper-links }
 
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a>
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
     { .paper-tags }
 
 -   #### FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting { #2609.25505 }
@@ -102,17 +102,17 @@ hide:
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
     { .paper-tags }
 
--   #### Stress-Testing Dynamical and Generative Downscaling Using Subseasonal Extreme Precipitation Forecasts { #2609.11696 }
+-   #### WIND-Bench: A Benchmark Dataset for In-Situ Near-Surface Wind Speed Observations Across the Conterminous United States { #2609.12228 }
 
-    *Mauricio Lima, Marika Koukoula, Romain Pilon, Monika Feldmann, Erwan Koch, Daniela I. V. Domeisen et al.* · Sep 2026
+    *Kyla Bazlen, Grant Buster, Brandon Benton, Lauren North, Ansley Baring, David D. Turner et al.* · Sep 2026
     { .paper-meta }
 
-    <span class="abstract-snippet" id="snip-2609.11696">Coarse spatial resolution limits the ability of subseasonal prediction models to resolve extreme precipitation. Downscaling with either dynamical or deep generative models can overcome this issue,...</span><span class="abstract-full" id="full-2609.11696" hidden>Coarse spatial resolution limits the ability of subseasonal prediction models to resolve extreme precipitation. Downscaling with either dynamical or deep generative models can overcome this issue, but the comparative performance of these models for extremes across different atmospheric regimes remains poorly understood. In this work, we evaluate the Weather Research and Forecasting (WRF) model against a diffusion-based generative model by downscaling two physically distinct, extreme precipitation events up to lead times of 3 weeks. For a fair comparison with WRF, which can downscale boundary conditions from different driving models without model-specific training, the diffusion model is trained in an unpaired fashion. Both approaches improve upon the raw European Centre for Medium-Range Weather Forecasts forecasts, in comparison to fused rain gauge-radar observations in Switzerland (CombiPrecip), but exhibit regime-dependent strengths. WRF achieves the highest probabilistic skill for a multicell, non-stationary event. Conversely, the diffusion model is more consistent across different performance metrics for the two events, outperforming WRF in a more stationary supercell event. These results demonstrate that explicit dynamical modeling can add value for specific precipitation events for subseasonal lead times, and that generative downscaling adds value more broadly in different situations.</span> <span class="abstract-toggle" data-id="2609.11696">more</span>
+    <span class="abstract-snippet" id="snip-2609.12228">Accurate wind forecasts are essential for operational decision-making and public safety, yet forecasts tend to miss near-surface high wind speeds in complex terrain. In response, advances in machine...</span><span class="abstract-full" id="full-2609.12228" hidden>Accurate wind forecasts are essential for operational decision-making and public safety, yet forecasts tend to miss near-surface high wind speeds in complex terrain. In response, advances in machine learning (ML) weather prediction methods have demonstrated the ability to improve forecast skill beyond traditional numerical weather prediction (NWP) models. However, the absence of a benchmark dataset to evaluate NWP and ML models with sufficient, quality-controlled wind speed observations in complex terrain poses challenges to the development and intercomparison of high-quality surface wind forecasts across the Conterminous United States (CONUS). We develop the Wind IN-situ Data Benchmark (WIND-Bench), a benchmark dataset from in-situ observations in the Meteorological Assimilation Data Ingest System (MADIS) observational network. WIND-Bench integrates multiple sensor networks with quality control that distinguishes sensor failures from high-wind conditions, using a framework that validates observations against forecasts from the National Oceanic and Atmospheric Administration (NOAA) High-Resolution Rapid Refresh (HRRR) model. WIND-Bench provides a standardized benchmark for evaluating ML and NWP models and for quantifying forecast skill, accelerating the development, evaluation, and operational deployment of skilled near-surface wind forecasts.</span> <span class="abstract-toggle" data-id="2609.12228">more</span>
 
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.11696v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.11696v1) · [:material-content-copy: BibTeX](../../bibtex/2609.11696.bib){ .bibtex-link }
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.12228v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.12228v1) · [:material-content-copy: BibTeX](../../bibtex/2609.12228.bib){ .bibtex-link }
     { .paper-links }
 
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
     { .paper-tags }
 
 -   #### Stochastically Perturbed Weights: Ensembles from Deterministic Machine-Learning Weather Models { #2609.08412 }
@@ -193,6 +193,19 @@ hide:
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
+-   #### Climate Physics Dynamic Matching { #2608.26907 }
+
+    *Gurjeet Sangra Singh, Frantzeska Lavda, Alexandros Kalousis* · Aug 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2608.26907">Deep generative models such as flow matching and diffusion models have shown potential for learning complex dynamical systems, but typically act as black boxes that neglect underlying physical...</span><span class="abstract-full" id="full-2608.26907" hidden>Deep generative models such as flow matching and diffusion models have shown potential for learning complex dynamical systems, but typically act as black boxes that neglect underlying physical structure, while physics-based models governed by partial differential equations are often incomplete due to missing source terms, or uncertain parametrisations. We present Climate Physics Dynamic Matching (ClimPhyDM), a variational simulation-free dynamics informed framework for weather forecasting that combines an advection-type physics prior with data-driven components in a variational framework. % to capture the stochasticity and multi-modality of unresolved atmospheric dynamics. On the ERA5 benchmark at hourly (42-hour) and monthly (5-month) resolutions, ClimPhyDM outperforms ClimODE, and GB-DM, keeping the lower error at extended horizon, indicating improved temporal stability and resistance to error accumulation, while its simulation-free paradigm also enables training on a single modest 12 GB consumer GPU.</span> <span class="abstract-toggle" data-id="2608.26907">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.26907v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.26907v1) · [:material-content-copy: BibTeX](../../bibtex/2608.26907.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
+
 -   #### Bridging short- and medium-range weather forecasting with machine learning { #2608.26822 }
 
     *Timothy A. Smith, Mariah Pope, Sergey Frolov, Brett Basarab, Daniel Abdi, Paul Madden et al.* · Aug 2026
@@ -255,6 +268,19 @@ hide:
     <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
+-   #### Tianmu-TC: Physics-constraints Generative Artificial Intelligence for Global Tropical Cyclone Forecasting { #2608.18500 }
+
+    *Shiqi Zhang, Pan Mu, Cheng Huang, Hanting Yan, Yuchao Zhu, Jinglin Zhang, Shengyong Chen et al.* · Aug 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2608.18500">Tropical cyclones (TCs) pose severe risks from strong winds and heavy rainfall. However, forecasting their track and intensity remains challenging due to chaotic atmosphere and the rapid...</span><span class="abstract-full" id="full-2608.18500" hidden>Tropical cyclones (TCs) pose severe risks from strong winds and heavy rainfall. However, forecasting their track and intensity remains challenging due to chaotic atmosphere and the rapid amplification of initial condition errors, leading to growing forecast uncertainty. While numerical weather prediction (NWP) and deep learning models have made progress, they remain computationally demanding and often fail under complex meteorological scenarios. Here, we present Tianmu-TC, a physics-constraints generative framework for global TC forecasting. Trained on Western North Pacific data, Tianmu-TC leverages physics-constraints to generate controllable outputs with reduced uncertainty thus improving forecast reliability. Experiments show Tianmu-TC outperforms deterministic and ensemble meteorological artificial intelligence models and authoritative NWP systems such as ECMWF in global ocean basins, with significantly lower computational cost. We further show Tianmu-TC performs well in challenging scenarios such as data sparsity, anomaly tracks, rapid intensification and weakening. These findings suggest physics-constraints generative AI offers a promising approach for reliable, efficient global TC forecasting.</span> <span class="abstract-toggle" data-id="2608.18500">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.18500v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.18500v1) · [:material-content-copy: BibTeX](../../bibtex/2608.18500.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
 -   #### How Do AI Climate Models Respond to Warming Across Climate Zones? { #2608.17986 }
 
     *Charlotte C. Merchant, Milan Klöwer, Bradley Stanley-Clamp, Maren Höver, Simon L. L. Michel et al.* · Aug 2026
@@ -266,32 +292,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### High-resolution Calibrated Probabilistic Hourly Precipitation from a Deterministic Forecast { #2608.12685 }
-
-    *Thomas M Hamill* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.12685">An “Attention Residual U-Net” method is described for probabilistic quantitative precipitation forecasting (PQPF) that predicts the hourly probability of no precipitation plus the distribution of...</span><span class="abstract-full" id="full-2608.12685" hidden>An “Attention Residual U-Net” method is described for probabilistic quantitative precipitation forecasting (PQPF) that predicts the hourly probability of no precipitation plus the distribution of positive precipitation from a weighted mixture of two Gamma distributions. The neural network is trained on patches of numerical weather prediction (NWP) hourly precipitation from The Weather Company's convection-permitting GRAF (Global high-Resolution Atmospheric Forecasting) model along with terrain information and column-average relative humidity from the National Oceanic and Atmospheric Administration's (NOAA's) Global Forecast System (GFS). The target data are NOAA's Multi-Radar, Multi-Sensor (MRMS) gauge-corrected, quality controlled radar data sampled to the same grid as the GRAF data. The network outputs distributional parameters for each model grid point. Training uses negative log-likelihood as a proper scoring rule, with climatological initialization for stable convergence. Inference is performed as a single forward pass over the contiguous United States (CONUS) domain, with edge-replication padding to satisfy the network's spatial-divisibility requirement. The subsequent forecasts are spatially detailed, highly reliable, and skillful with respect to climatology and a simpler reference forecast method. The method is particularly useful for estimating probabilities in regions with large terrain variation.</span> <span class="abstract-toggle" data-id="2608.12685">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.12685v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.12685v1) · [:material-content-copy: BibTeX](../../bibtex/2608.12685.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
-    { .paper-tags }
-
--   #### Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling { #2608.12271 }
-
-    *Pedro Sousa, Will Tebbutt, Sadiq Jaffer, Robin Young, Anil Madhavapeddy, Richard E. Turner* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.12271">Global weather reanalyses and forecasts resolve the evolving atmospheric state on coarse grids, but site-specific applications require predictions at arbitrary locations where near-surface conditions...</span><span class="abstract-full" id="full-2608.12271" hidden>Global weather reanalyses and forecasts resolve the evolving atmospheric state on coarse grids, but site-specific applications require predictions at arbitrary locations where near-surface conditions also depend on unresolved terrain and land-surface properties. Existing probabilistic downscalers address this gap using hand-crafted topographic descriptors. We ask instead whether Earth observation foundation models can provide transferable sub-grid surface representations for probabilistic weather downscaling.   We augment a convolutional conditional neural process that downscales coarse ERA5 reanalysis fields at ~25 km resolution with a learned local surface descriptor, obtained by compressing a patch of TESSERA embeddings at 10 m resolution. Although these embeddings summarise surface conditions over annual timescales, they improve downscaling of instantaneous 2 m temperature and 10 m wind speed by encoding persistent surface properties that capture a location's departure from the coarse-grid atmospheric state. Across five climatically diverse regions, the embedding improves point and probabilistic skill at stations held out in both space and time, overall improving CRPS skill by 11.5% for 2 m temperature and 6.2% for 10 m wind speed. We further analyse how its contribution differs by variable, finding that topography explains more of temperature's sub-grid structure, while TESSERA provides additional surface information for wind speed.   These improvements persist when the coarse input is changed from ERA5 to forecasts from the Aurora AI forecasting model, and when predicting at newly deployed stations with no regional history. To our knowledge, this is the first evidence that long-timescale Earth-observation embeddings can support short-timescale weather downscaling where sub-grid departures are systematically structured by persistent surface properties.</span> <span class="abstract-toggle" data-id="2608.12271">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.12271v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.12271v1) · [:material-content-copy: BibTeX](../../bibtex/2608.12271.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a>
     { .paper-tags }
 
 -   #### Do AI weather models miss extremes? { #2608.09972 }
@@ -369,19 +369,6 @@ hide:
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.28220v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.28220v1) · [:material-content-copy: BibTeX](../../bibtex/2607.28220.bib){ .bibtex-link }
     { .paper-links }
 
--   #### MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation { #2607.21917 }
-
-    *Yongming Wang, Xuguang Wang* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.21917">Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation...</span><span class="abstract-full" id="full-2607.21917" hidden>Machine learning (ML) emulators offer a cost-efficient alternative to numerical weather prediction models for generating convection-allowing background ensembles in ensemble-based data assimilation (DA). However, few studies have explored ML-based surrogate background ensembles for estimating background-error covariances (BECs). This study develops a convection-allowing emulator, MAPCast, trained on historical convection-allowing simulations from the Model for Prediction Across Scales (MPAS), and evaluates its ability to estimate BECs, paving the way toward multiscale DA. The evaluation uses 10 retrospective convective cases at 15- and 60-min forecast lead times corresponding to subhourly and hourly DA. MAPCast reproduces MPAS forecasts with good fidelity, including realistic storm coverage, temporal evolution, and similar spatial and spectral characteristics of state variables. Discrepancies are primarily confined to small spatial scales near sharp gradients and convective-scale features and variables. For BEC statistics, MAPCast captures ensemble spread magnitude and spatial distribution for most variables, although larger errors occur for storm-related fields that are vertical velocity and reflectivity. Correlation structures are reproduced most faithfully at mesoscale and above, followed by at convective scales, whereas cross-variable correlations are less accurately represented than univariate correlations, indicating that multivariate coupling remains the principal limitation. MAPCast shows weaker replication of full-scale versus decomposed large and small-scale correlations. BEC estimates derived from 15-min forecasts consistently outperform those from 60-min forecasts, suggesting that shorter lead times better preserve flow-dependent error structures.</span> <span class="abstract-toggle" data-id="2607.21917">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.21917v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.21917v1) · [:material-content-copy: BibTeX](../../bibtex/2607.21917.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
-    { .paper-tags }
-
 -   #### Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction { #2607.21080 }
 
     *Yun-Ye Cai, Hsuan-Tien Lin* · Jul 2026
@@ -392,7 +379,20 @@ hide:
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.21080v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.21080v1) · [:material-content-copy: BibTeX](../../bibtex/2607.21080.bib){ .bibtex-link }
     { .paper-links }
 
+-   #### Spatial Generalization Tests for Machine Learning-based Weather Models to Assess Physical Consistency { #2607.20716 }
+
+    *Maren Höver, Milan Klöwer, Christian Schroeder de Witt, Hannah M. Christensen* · Jul 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2607.20716">Machine learning-based weather prediction is revolutionizing weather forecasting by learning from weather data in present-day climate. However, generalization to other climates remains a major...</span><span class="abstract-full" id="full-2607.20716" hidden>Machine learning-based weather prediction is revolutionizing weather forecasting by learning from weather data in present-day climate. However, generalization to other climates remains a major challenge. With melting sea ice, land-use change, and increasing ocean temperatures, boundary conditions are changing. Therefore, generalization in time depends on generalization in space. Here, we present three test cases to evaluate whether machine learning-based weather and climate models generalize in space and apply them to GraphCast and NeuralGCM. We reverse or rotate the planet in longitude or latitude under the model's coordinate system and adapt all boundary conditions and forcings accordingly. Physics-based general circulation models simulate a rotated/reversed planet with only rounding errors, but GraphCast and NeuralGCM fail these tests. The analyses furthermore revealed unphysical variable mappings based on correlation rather than causation. We argue that machine learning-based climate models should be designed to pass generalization tests to prevent overfitting on present-day regional climate.</span> <span class="abstract-toggle" data-id="2607.20716">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.20716v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.20716v1) · [:material-content-copy: BibTeX](../../bibtex/2607.20716.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
+
 </div>
 
-<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [4](4.md) [5](5.md) [6](6.md) [7](7.md) [8](8.md) [9](9.md) [10](10.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
+<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [4](4.md) [5](5.md) [6](6.md) [7](7.md) [8](8.md) [9](9.md) [10](10.md) [11](11.md) [12](12.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
 

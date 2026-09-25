@@ -11,17 +11,18 @@ search:
 <div class="tag-group">
 <span class="tag-group-name">Topic</span>
 <div class="tag-chips">
-<button class="md-tag tag-chip" type="button" data-tag="global-models">Global Models <span class="tag-chip-count">291</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="global-models">Global Models <span class="tag-chip-count">347</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="regional-models">Regional Models <span class="tag-chip-count">60</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="nowcasting">Nowcasting <span class="tag-chip-count">97</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="downscaling">Downscaling <span class="tag-chip-count">43</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="data-assimilation">Data Assimilation <span class="tag-chip-count">95</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="ensembles">Ensembles <span class="tag-chip-count">79</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="climate-modeling">Climate Modeling <span class="tag-chip-count">309</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="extreme-weather">Extreme Weather <span class="tag-chip-count">89</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="ocean-sea-ice">Ocean & Sea Ice <span class="tag-chip-count">57</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="air-quality-composition">Air Quality & Composition <span class="tag-chip-count">62</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="remote-sensing">Remote Sensing <span class="tag-chip-count">71</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="other">Other <span class="tag-chip-count">275</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="downscaling">Downscaling <span class="tag-chip-count">95</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="post-processing">Post-processing <span class="tag-chip-count">25</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="data-assimilation">Data Assimilation <span class="tag-chip-count">74</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="climate-modeling">Climate Modeling <span class="tag-chip-count">289</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="hydrology">Hydrology <span class="tag-chip-count">37</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="ocean-sea-ice">Ocean & Sea Ice <span class="tag-chip-count">83</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="air-quality-composition">Air Quality & Composition <span class="tag-chip-count">71</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="remote-sensing">Remote Sensing <span class="tag-chip-count">98</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="other">Other <span class="tag-chip-count">192</span></button>
 </div>
 </div>
 <div class="tag-group">

@@ -6,9 +6,12 @@ non-weather-related papers (starred papers are always kept).
 Tags aren't stored here; build_pages.py derives them with tagging.py.
 
 Usage:
-    python categorize_papers.py
+    python src/categorize_papers.py          # re-sort "New" and "Other" only
+    python src/categorize_papers.py --all    # re-sort every paper (after changing topics)
 """
 
+import argparse
+import os
 import yaml
 import re
 from find_papers import (
@@ -18,7 +21,7 @@ from find_papers import (
 )
 
 
-def main():
+def main(recategorize_all=False):
     with open('papers.yml', 'r') as f:
         papers = yaml.safe_load(f) or []
 
@@ -40,8 +43,8 @@ def main():
             stats['filtered'] += 1
             continue
 
-        # Re-categorize uncategorized papers
-        if paper['category'] in ('New', 'Other'):
+        # Re-sort uncategorized papers (or all of them with --all)
+        if recategorize_all or paper['category'] in ('New', 'Other'):
             new_category = categorize_paper(title, abstract)
             if new_category != paper['category']:
                 print(f"  {paper['category']} -> {new_category}: {title[:60]}")
@@ -76,4 +79,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # Paths (papers.yml, docs/, ...) are relative to the repo root
+    os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    parser = argparse.ArgumentParser(description='Re-sort and filter papers.yml.')
+    parser.add_argument('--all', action='store_true',
+                        help='re-sort every paper, not just "New" and "Other"')
+    main(parser.parse_args().all)

@@ -1,15 +1,16 @@
 """Add a single paper to papers.yml by arXiv ID or URL.
 
 Usage:
-    python add_paper.py 2604.09041 --star
-    python add_paper.py "https://arxiv.org/abs/2604.09041"
-    python add_paper.py "some text containing an arxiv link" --star
+    python src/add_paper.py 2604.09041 --star
+    python src/add_paper.py "https://arxiv.org/abs/2604.09041"
+    python src/add_paper.py "some text containing an arxiv link" --star
 
 The first arXiv ID found in the argument is used, so the raw body of a
 GitHub issue can be passed directly.
 """
 
 import argparse
+import os
 import re
 import sys
 
@@ -58,6 +59,8 @@ def add_paper(text, star=False):
 
 
 if __name__ == '__main__':
+    # Paths (papers.yml, docs/, ...) are relative to the repo root
+    os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     parser = argparse.ArgumentParser(description='Add a paper to papers.yml by arXiv ID/URL.')
     parser.add_argument('text', help='arXiv ID, URL, or text containing one')
     parser.add_argument('--star', action='store_true',

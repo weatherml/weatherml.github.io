@@ -18,10 +18,9 @@ SUGGEST_URL = f'{REPO_URL}/issues/new?template=suggest-paper.yml'
 
 # Category display order (categories not listed here appear at the end)
 CATEGORY_ORDER = [
-    'Global Models', 'Nowcasting', 'Downscaling',
-    'Data Assimilation', 'Ensembles', 'Climate Modeling',
-    'Extreme Weather', 'Ocean & Sea Ice', 'Air Quality & Composition',
-    'Remote Sensing', 'Other',
+    'Global Models', 'Regional Models', 'Nowcasting', 'Downscaling',
+    'Post-processing', 'Data Assimilation', 'Climate Modeling', 'Hydrology',
+    'Ocean & Sea Ice', 'Air Quality & Composition', 'Remote Sensing', 'Other',
 ]
 
 MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -306,10 +305,13 @@ def write_listing(folder, heading, meta, listing_papers, front_matter=''):
 
 
 def nav_entries(label, folder, pages, indent):
-    """Nav lines for a listing; later pages nest under it (hidden by CSS)."""
+    """Nav lines for a listing; later pages nest under it (hidden by CSS).
+
+    Always a sub-section, even with one page: a bare index.md directly under
+    "All Papers" would become that section's own index (navigation.indexes)
+    and drop out of the sidebar.
+    """
     pad = ' ' * indent
-    if len(pages) == 1:
-        return [f"{pad}- '{label}': {listing_page(folder)}\n"]
     lines = [f"{pad}- '{label}':\n", f"{pad}  - {listing_page(folder)}\n"]
     for n in range(2, len(pages) + 1):
         lines.append(f"{pad}  - 'Page {n}': {listing_page(folder, n)}\n")
@@ -588,4 +590,6 @@ def build_pages():
 
 
 if __name__ == '__main__':
+    # Paths (papers.yml, docs/, ...) are relative to the repo root
+    os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     build_pages()

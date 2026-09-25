@@ -1,4 +1,5 @@
 import argparse
+import os
 import arxiv
 import yaml
 from datetime import datetime, timedelta
@@ -10,17 +11,39 @@ GITHUB_URL_PATTERN = re.compile(r'https?://github\.com/[\w\-\.]+/[\w\-\.]+')
 CATEGORIES = {
     'Global Models': {
         'keywords': [
-            'global weather', 'medium-range weather', 'medium-range forecast',
-            'global forecast', 'neural weather prediction', 'ai weather',
-            'weather prediction model', 'global weather model',
-            'weather forecasting model', 'operational weather forecast',
-            'machine-learned weather', 'machine learned weather',
-            'autoregressive weather', 'global prediction model',
+            'global weather', 'medium-range', 'global forecast',
+            'neural weather prediction', 'ai weather', 'machine-learned weather',
+            'machine learned weather', 'data-driven weather', 'autoregressive weather',
+            'global prediction model', 'operational weather forecast',
+            'weather foundation model', 'ai-based weather', 'ml weather',
+            'global atmospher',
         ],
         'strong_keywords': [
             'fourcastnet', 'pangu-weather', 'pangu weather', 'graphcast',
             'gencast', 'fuxi', 'fuxiweather', 'climax', 'neuralgcm', 'aifs',
             'stormer', 'fengwu', 'skyai', 'aurora weather', 'weatherbench',
+        ],
+        # Broad forecasting phrases: enough to place a paper here when nothing
+        # more specific matches, too weak to outweigh another topic
+        'weak_keywords': [
+            'weather forecasting', 'weather prediction', 'forecasting system',
+            'weather prediction model', 'weather forecasting model',
+            'tropical cyclone forecast', 'track forecast', 'intensity forecast',
+            'typhoon forecast', 'hurricane forecast',
+        ],
+    },
+    # Regional signals are strong so they beat the broad forecasting
+    # keywords of Global Models, which regional papers also match
+    'Regional Models': {
+        'keywords': [
+            'regional model', 'regional prediction', 'regional domain',
+            'regional emulator', 'mesoscale model', 'high-resolution regional',
+        ],
+        'strong_keywords': [
+            'limited-area', 'limited area model', 'regional weather',
+            'regional forecast', 'regional nwp', 'convection-permitting',
+            'convection-allowing', 'kilometer-scale', 'km-scale', 'stretched-grid',
+            'neural-lam', 'stormcast', 'yinglong', 'regional aifs', 'lam-aifs',
         ],
     },
     'Nowcasting': {
@@ -41,6 +64,21 @@ CATEGORIES = {
             'super-resolution weather', 'super-resolution climate',
             'downscaling forecast', 'downscaling reanalysis', 'downscaling model',
             'downscaling land surface', 'atmospheric downscaling',
+            'downscaling', 'super-resolution', 'superresolution',
+        ],
+    },
+    'Post-processing': {
+        'keywords': [
+            'post-processing', 'postprocessing', 'post-processed', 'bias correction',
+            'bias-correct', 'model output statistics', 'forecast correction',
+            'error correction', 'correcting forecasts', 'calibrated forecast',
+            'forecast calibration', 'ensemble calibration', 'superensemble',
+            'multi-model ensemble', 'forecast blending', 'station forecast',
+            'point forecast', 'site-specific forecast',
+        ],
+        'strong_keywords': [
+            'statistical post-processing', 'ensemble post-processing',
+            'post-processing of ensemble', 'post-processing of weather',
         ],
     },
     'Data Assimilation': {
@@ -50,27 +88,27 @@ CATEGORIES = {
             'state estimation', 'ensemble kalman',
         ],
     },
-    'Ensembles': {
-        'keywords': [
-            'ensemble forecast', 'ensemble prediction', 'ensemble model',
-            'probabilistic forecast', 'ensemble weather', 'ensemble spread',
-            'post-processing ensemble', 'ensemble member',
-        ],
-    },
     'Climate Modeling': {
         'keywords': [
             'climate model', 'climate simulation', 'climate change',
             'climate projection', 'climate scenario', 'global climate',
             'climate emulator', 'earth system model', 'climate risk',
             'climate prediction', 'climate variability', 'climate forcing',
+            'parameterization', 'parametrization', 'subgrid', 'sub-grid',
+            'general circulation model', 'seasonal forecast', 'seasonal prediction',
+            'subseasonal', 'sub-seasonal', 's2s',
         ],
     },
-    'Extreme Weather': {
+    'Hydrology': {
         'keywords': [
-            'extreme weather', 'tropical cyclone', 'hurricane prediction',
-            'hurricane forecast', 'typhoon', 'severe storm', 'extreme precipitation',
-            'flood prediction', 'flood forecast', 'heatwave', 'heat wave',
-            'wildfire prediction', 'tornado',
+            'hydrolog', 'rainfall-runoff', 'runoff', 'streamflow', 'river discharge',
+            'river flow', 'flood forecast', 'flood prediction', 'flood inundation',
+            'inundation', 'soil moisture', 'snow water equivalent', 'snowpack',
+            'groundwater', 'evapotranspiration', 'catchment', 'watershed',
+        ],
+        'strong_keywords': [
+            'rainfall-runoff model', 'streamflow forecast', 'streamflow prediction',
+            'hydrological model', 'flood forecasting',
         ],
     },
     # Listed after the weather categories so ties go to those
@@ -195,19 +233,27 @@ def is_ml_related(title, abstract):
     return any(term in text for term in ML_TERMS)
 
 
+# Keywords in the title say what a paper is about; in the abstract they may
+# just be context ("compared with GraphCast"), so title matches count more
+TITLE_WEIGHT = 3
+
+
 def categorize_paper(title, abstract):
     """Auto-categorize a paper based on title and abstract keywords."""
-    text = f"{title} {abstract}".lower()
+    title = title.lower()
+    abstract = abstract.lower()
 
     scores = {}
     for category, config in CATEGORIES.items():
         score = 0
-        for kw in config.get('keywords', []):
-            if kw in text:
-                score += 1
-        for kw in config.get('strong_keywords', []):
-            if kw in text:
-                score += 5
+        for weight, keywords in ((0.5, config.get('weak_keywords', [])),
+                                 (1, config.get('keywords', [])),
+                                 (5, config.get('strong_keywords', []))):
+            for kw in keywords:
+                if kw in title:
+                    score += weight * TITLE_WEIGHT
+                elif kw in abstract:
+                    score += weight
         scores[category] = score
 
     best_category = max(scores, key=scores.get)
@@ -317,6 +363,8 @@ def find_new_papers(lookback_days=14, max_results=300, dry_run=False):
 
 
 if __name__ == '__main__':
+    # Paths (papers.yml, docs/, ...) are relative to the repo root
+    os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     parser = argparse.ArgumentParser(description='Find new weather-ML papers on arXiv.')
     parser.add_argument('--lookback-days', type=int, default=14)
     parser.add_argument('--max-results', type=int, default=300,

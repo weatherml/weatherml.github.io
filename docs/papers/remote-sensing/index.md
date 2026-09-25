@@ -8,7 +8,7 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">71 papers · page 1 of 3 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">98 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
@@ -25,6 +25,19 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
+    { .paper-tags }
+
+-   #### Distilling deep optical flow stereo methods to retrieve dense three-dimensional wind fields { #2609.03100 }
+
+    *Thomas J. Vandal, Dong L. Wu, James L. Carr, Derek J. Posselt, Elise Penn, Tristan Ballard et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.03100">Geostationary atmospheric motion vectors (AMVs) provide the dense horizontal wind vectors (u,v) and heights ingested into data assimilation systems. Traditional AMVs track features using window-based...</span><span class="abstract-full" id="full-2609.03100" hidden>Geostationary atmospheric motion vectors (AMVs) provide the dense horizontal wind vectors (u,v) and heights ingested into data assimilation systems. Traditional AMVs track features using window-based cross-correlation and estimate heights via infrared brightness temperatures paired with numerical weather prediction (NWP) background states, creating a circular dependency that yields inaccurate heights, high computational cost, and sparse retrievals. Stereo winds from GEO-GEO and GEO-LEO geometrically resolve heights from parallax shifts across different poses, eliminating NWP dependence and improving accuracy, but they remain computationally heavy with limited coverage. In this work, we replace window-based tracking in stereo matching with deep optical flow for efficient, improved retrieval. Fine-tuning balances a self-supervised geometric residual loss with supervised radiosonde reconstruction. To eliminate multi-satellite overlap requirements, we distill the stereo teacher into a single-satellite student model. Chi-square and height uncertainties from the teacher are emulated by the student for quality assurance. The student generates winds across full-disk GEO imagery globally. Validation compares stereo and student models against radiosondes, operational AMVs, ERA5 reanalysis, and EarthCARE cloud profiles. Results through triple collocation show that stereo winds improve performance beyond operational AMVs for water vapor bands (6.2, 6.9, and 7.3 μm), wit degradation in the long-wave infrared (11.2 μm) band.</span> <span class="abstract-toggle" data-id="2609.03100">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.03100v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.03100v1) · [:material-content-copy: BibTeX](../../bibtex/2609.03100.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 -   #### A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data { #2609.01514 }
@@ -105,6 +118,32 @@ hide:
     <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
+-   #### FarSky: Task-Aware Latent-Space Coupling for Generative Intra-Hour Solar Forecasting { #2608.11254 }
+
+    *Yann Fabel, Bijan Nouri, Milon Miah, Niklas Blum, Luis F. Zarzalejo, Julia Kowalski et al.* · Aug 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2608.11254">Accurate solar irradiance forecasting is essential for the reliable integration of photovoltaic power into modern electricity grids. All-sky imagers (ASI) provide high-resolution observations of...</span><span class="abstract-full" id="full-2608.11254" hidden>Accurate solar irradiance forecasting is essential for the reliable integration of photovoltaic power into modern electricity grids. All-sky imagers (ASI) provide high-resolution observations of clouds, making them well suited for intra-hour forecasting. Recent deep learning approaches have substantially improved forecast accuracy but are often limited by deterministic predictions and a reduced capability to anticipate ramp events. This work proposes FarSky, a generative forecasting framework that leverages latent-space coupling to learn task-aware representations of sky images. A multi-task autoencoder first learns a shared latent representation for image reconstruction and irradiance estimation. A latent diffusion model then generates future latent states conditioned on recent observations, from which irradiance forecasts are directly decoded. Probabilistic forecasts are inherently obtained through stochastic sampling. The framework is developed using a multi-year ASI dataset acquired at the Plataforma Solar de Almería, Spain, and evaluated on two independent test datasets against persistence, state-of-the-art end-to-end, and generative forecasting approaches. FarSky achieves the best overall deterministic and probabilistic forecasting performance, improving forecast skill by up to 11 percentage points. Furthermore, it substantially improves ramp event detection over existing methods, achieving F1-scores above 60%. These results demonstrate the potential of combining generative models with task-aware latent-space coupling for solar forecasting.</span> <span class="abstract-toggle" data-id="2608.11254">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.11254v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.11254v1) · [:material-content-copy: BibTeX](../../bibtex/2608.11254.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a>
+    { .paper-tags }
+
+-   #### Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields { #2608.08354 }
+
+    *Meheru Zannat, Sk. Md. Masudul Ahsan* · Aug 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2608.08354">Tropical cyclones are growing more destructive in a changing climate, and efficient forecasting of their structure and track has become a necessity. Deep generative models promise an alternative to...</span><span class="abstract-full" id="full-2608.08354" hidden>Tropical cyclones are growing more destructive in a changing climate, and efficient forecasting of their structure and track has become a necessity. Deep generative models promise an alternative to computationally expensive numerical weather prediction (NWP), yet current systems produce either satellite imagery or atmospheric fields, never both; they need many sampling steps, putting them out of reach of modest hardware; and their storm tracks come from regression heads with no physical link to the generated atmosphere. This work presents a single-pass model that jointly forecasts GRIDSAT-B1 infrared imagery and four ERA5 atmospheric fields (U-wind, V-wind, air temperature, and surface pressure) out to nine hours. A five-channel variational autoencoder compresses each 5 x 256 x 256 frame to a 4 x 64 x 64 latent, and a conditional rectified-flow UNet with a factorized temporal-attention module predicts the next three frames from three past frames, their best-track coordinates, and timestamps. The model is then reward-fine-tuned (DRaFT) against a differentiable track error derived from the predicted winds through a steering-flow calculation. On held-out 2022 storms the model reaches 16.35 dB PSNR and 0.759 SSIM, ahead of a reproduced cascaded-diffusion baseline at every lead time (+0.84 dB at +9 h) while sampling ~30x faster (56 ms vs. 1673 ms). Track error at +9 h is 62.4 km, 15% below the baseline, and a reward fine-tuning study demonstrates a further 8-11% track-error reduction across sampler budgets.</span> <span class="abstract-toggle" data-id="2608.08354">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.08354v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.08354v1) · [:material-content-copy: BibTeX](../../bibtex/2608.08354.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
 -   #### Meteosat Third Generation imagery improves CNN-based SSI retrieval { #2607.28093 }
 
     *Gordei Pribõtkin, Piia Post, Velle Toll* · Jul 2026
@@ -170,30 +209,17 @@ hide:
     <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a>
     { .paper-tags }
 
--   #### A harmonised dataset for Earth system foundation models { #2607.03298 }
+-   #### MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones { #2606.24263 }
 
-    *Carlos Rodriguez-Pardo, Massimo Tavoni* · Jul 2026
+    *Clément Dauvilliers, Claire Monteleoni* · Jun 2026
     { .paper-meta }
 
-    <span class="abstract-snippet" id="snip-2607.03298">Foundation models for Earth systems have so far been trained primarily on physical climate and weather data, with limited representation of the human systems that both drive and respond to...</span><span class="abstract-full" id="full-2607.03298" hidden>Foundation models for Earth systems have so far been trained primarily on physical climate and weather data, with limited representation of the human systems that both drive and respond to environmental change. The lack of a unified global training resource that combines climate, land, ocean, cryosphere, infrastructure, hazards, and socioeconomic data on a common grid hinders progress toward truly multimodal Earth system foundation models. We present WorldTensor, a harmonised global dataset that aligns hundreds of environmental and socioeconomic variables to a standardised 0.25$^\circ$ spatial grid and annual temporal framework. WorldTensor integrates reanalysis products, remote sensing, emissions inventories, land use reconstructions, hydrological observations, infrastructure and hazard datasets, and socioeconomic indicators within a single representation designed for machine learning workflows. To build the dataset, we regridded inputs across heterogeneous native resolutions and projections, rasterised point and vector datasets into spatially meaningful gridded fields, and reconciled temporal coverages ranging from daily observations to sparse multiyear socioeconomic snapshots. All outputs are distributed as NetCDF files with standardised coordinates, variable metadata, and a common CF metadata convention. WorldTensor provides a reproducible resource for training and evaluating foundation models that learn coupled dynamics across environmental and human systems at planetary scale.</span> <span class="abstract-toggle" data-id="2607.03298">more</span>
+    <span class="abstract-snippet" id="snip-2606.24263">Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution...</span><span class="abstract-full" id="full-2606.24263" hidden>Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution phases. While this raises the need for an interpolation method, it is made challenging by the high level of heterogeneity of microwave data coming from different instruments. In this work, we introduce the first generative model that can be applied to multiple geospatial sources that change across samples, occur at irregular time intervals, are misaligned geographically, and come from instruments with varying characteristics. We apply this model to the case of spatio-temporal interpolation of tropical cyclone microwave images from other microwave and infrared instruments. We train using a self-supervised task in which a random source is masked and reconstructed, and show that it leads to a significant decrease in Continuous Ranked Probability Score over supervised training. We show a further improvement by combining infrared and microwave data compared to microwave only. Using these improvements, the generative model produces an ensemble mean on par with that of a deterministic model, while generating a power spectrum significantly closer to that of true observations. To the best of our knowledge, this is the first generative model that interpolates microwave images of cyclones by combining multiple microwave instruments and infrared observations at irregular time intervals.</span> <span class="abstract-toggle" data-id="2606.24263">more</span>
 
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.03298v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.03298v1) · [:material-content-copy: BibTeX](../../bibtex/2607.03298.bib){ .bibtex-link }
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.24263v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.24263v1) · [:material-content-copy: BibTeX](../../bibtex/2606.24263.bib){ .bibtex-link }
     { .paper-links }
 
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Deep Learning for Soil Moisture Estimation: Fusing Satellite Data with Optimally-Lagged Meteorological Features { #2606.21475 }
-
-    *Adrian Canovas-Rodriguez, Aurora González Vidal, Antonio F. Skarmeta* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.21475">Accurate soil moisture estimation in semi-arid agricultural regions requires integrating remote sensing and meteorological information while accounting for the delayed response of soil moisture to...</span><span class="abstract-full" id="full-2606.21475" hidden>Accurate soil moisture estimation in semi-arid agricultural regions requires integrating remote sensing and meteorological information while accounting for the delayed response of soil moisture to atmospheric forcing. This study introduces a Cross-Correlation Function (CCF) methodology to determine optimal temporal lags (0-30 days) between meteorological variables and soil moisture, as well as inter-depth lags (0-15 days) describing vertical moisture propagation from the surface (10 cm) to deeper layers (20-50 cm). The approach was validated across seven agricultural plots in southeastern Spain. Three deep learning architectures, each targeting a distinct prediction granularity, were evaluated under five feature configurations ranging from satellite-only to full satellite-meteorology-depth fusion: a CNN for per-pixel estimation within each plot, an LSTM for frame-level (daily plot-mean) prediction, and a CNN-LSTM hybrid operating on sliding windows with pooled multi-patch training. Models were assessed on held-out data to measure genuine generalisation. Meteorological variables improved performance over the satellite-only baseline, while subsurface depth information proved decisive across all architectures. The per-pixel CNN achieved the strongest single-patch result (R^2 = 0.877, RMSE = 2.28), with a seven-patch average R^2 of 0.535, representing an improvement of +1.00 over the satellite-only baseline. The pooled CNN-LSTM hybrid obtained the highest overall performance (R^2 = 0.930, CVRMSE = 8.0%). These results demonstrate that explicitly modelling atmospheric and vertical subsurface delays substantially improves soil moisture estimation for precision agriculture.</span> <span class="abstract-toggle" data-id="2606.21475">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.21475v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.21475v1) · [:material-content-copy: BibTeX](../../bibtex/2606.21475.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 -   #### SIMBA: ABidirectional Retrieval Forward Simulation Framework for Modeling FY-4A GIIRS Hyperspectral Infrared Radiances Toward NWP Applications { #2606.19943 }
@@ -216,6 +242,19 @@ hide:
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.11534v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.11534v1) · [:material-content-copy: BibTeX](../../bibtex/2606.11534.bib){ .bibtex-link }
     { .paper-links }
 
+-   #### Physics-Guided Dual Decoding and Spectral Supervision for Global 3D Hydrometeor Prediction { #2606.08563 }
+
+    *Dandan Chen, Yaqiang Wang* · Jun 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2606.08563">While global data-driven models excel at predicting continuous atmospheric variables, three-dimensional hydrometeor forecasting remains challenging due to the zero-inflated, long-tailed distributions...</span><span class="abstract-full" id="full-2606.08563" hidden>While global data-driven models excel at predicting continuous atmospheric variables, three-dimensional hydrometeor forecasting remains challenging due to the zero-inflated, long-tailed distributions of these variables. Standard deep learning optimization often yields overly smooth forecasts, attenuating extreme events and spatial textures. We propose PredHydro-Net, a physics-guided dual-decoding framework that mitigates this smoothing. To resolve multi-variable optimization conflicts, it employs a decoupled architecture where macroscopic thermodynamic and dynamic fields unidirectionally modulate hydrometeor generation. By integrating wavelet-based frequency decoupling, spectral amplitude matching, and adversarial training, the model achieves a favorable trade-off between quantitative accuracy and spatial fidelity. In a 72-h global evaluation, PredHydro-Net outperforms both spatiotemporal deep learning baselines (Earthformer and PredRNNv2) and the operational Global Forecast System (GFS) in extreme-event detection and spectral representation. Furthermore, it demonstrates strong climatological consistency with Global Precipitation Measurement (GPM) satellite retrievals. The model reasonably reproduces the three-dimensional cloud structures in extreme weather events, such as Hurricane Ian. Feature attribution confirms its dependence on physical precursors such as relative humidity and wind convergence, offering a robust, physics-informed approach to long-tailed atmospheric prediction.</span> <span class="abstract-toggle" data-id="2606.08563">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.08563v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.08563v1) · [:material-content-copy: BibTeX](../../bibtex/2606.08563.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
+    { .paper-tags }
+
 -   #### Set-Based Transformer for Atmospheric Compensation in Standoff LWIR Hyperspectral Imaging { #2606.08324 }
 
     *Fabian Perez, Nicolas Quintero, Jeferson Acevedo, Hoover Rueda-Chacon* · Jun 2026
@@ -227,6 +266,19 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
+    { .paper-tags }
+
+-   #### Towards a Foundation Model for the Martian Atmosphere { #2605.28851 }
+
+    *Sujit Roy, Udayshankar Nair, Yuling Wu, Georgios Priftis, Liping Wang, Anastasia Georgiou et al.* · May 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2605.28851">The martian atmosphere hosts dynamical phenomena ranging from planet-encircling dust storms to mesoscale orographic clouds and nocturnal low-level jets. General circulation model show capability to...</span><span class="abstract-full" id="full-2605.28851" hidden>The martian atmosphere hosts dynamical phenomena ranging from planet-encircling dust storms to mesoscale orographic clouds and nocturnal low-level jets. General circulation model show capability to simulate these phenomena, but is computationally expensive at resolution needed to resolve mesoscale features. While assimilation of satellite remote sensing observation enable forecasting capabilities using such models, observation record is often sparse, short and fragmented across instrument generators. These constraints motivate the development of a data-driven foundation model for the Martian atmosphere.   Foundation models live in a complex design landscape. There is an interplay between the available data, the physics of the underlying processes and corresponding developments in AI. Even though the idea of a foundation model is to address multiple use cases in a data- and compute-efficient manner, it is important to have a clear picture what applications can sensibly addressed by a single model.   The purpose of this paper is to elucidate this design landscape. We discuss available data ranging from atmospheric retrievals to reanalysis datasets as well as existing physical models. Moreover, we identify a wide range of candidate downstream applications. Finally, we consider relevant recent developments in artificial intelligence (AI) that can be leveraged in this context. Here, we put a particular emphasis on AI models for atmospheric physics, data-driven approaches to data assimilation as well as methods to work in a limited data setting.</span> <span class="abstract-toggle" data-id="2605.28851">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.28851v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.28851v1) · [:material-content-copy: BibTeX](../../bibtex/2605.28851.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
     { .paper-tags }
 
 -   #### Quantification of atmospheric carbon dioxide from the Geostationary Operational Environmental Satellite (GOES East) { #2605.23991 }
@@ -251,6 +303,19 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.22268v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.22268v1) · [:material-content-copy: BibTeX](../../bibtex/2605.22268.bib){ .bibtex-link }
     { .paper-links }
+
+-   #### A plug-and-play generative framework for multi-satellite precipitation estimation { #2605.14426 }
+
+    *Yunfan Yang, Haofei Sun, Xiuyu Sun, Wei Han, Xiaoze Xu, Xingtao Song, Jun Li, Zhiqiu Gao, Wei Huang et al.* · May 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2605.14426">Reliable precipitation monitoring is essential for disaster risk reduction, water resources management, and agricultural decision-making. Multi-source satellite observations, particularly the...</span><span class="abstract-full" id="full-2605.14426" hidden>Reliable precipitation monitoring is essential for disaster risk reduction, water resources management, and agricultural decision-making. Multi-source satellite observations, particularly the combination of geostationary infrared and passive microwave measurements, have become a primary means of precipitation detection. Traditional multi-source satellite precipitation estimation methods remain computationally inefficient, and many deep learning methods lack the flexibility to incorporate new sensors without retraining the full model. Here we introduce PRISMA (Precipitation Inference from Satellite Modalities via generAtive modeling), a plug-and-play latent generative framework for multi-sensor precipitation estimation. PRISMA learns an unconditional precipitation prior from IMERG Final fields and constrains it through independently trained, sensor-specific conditional branches, allowing new observation sources to be incorporated without retraining the generative backbone. Applied to FY-4B AGRI infrared and GPM GMI microwave observations, PRISMA improves Critical Success Index by up to 40.3% and reduces root-mean-square error by 22.6% relative to infrared-only estimation within microwave swaths, while also improving probabilistic skill and maintaining an average inference time of about 37 s. Independent rain-gauge validation across China confirms consistent gains, and typhoon case studies show that microwave conditioning restores eyewall and spiral rainband structures, reducing storm-core mean absolute error by up to 42.3%. PRISMA thus provides an extensible and efficient framework for multi-sensor precipitation estimation.</span> <span class="abstract-toggle" data-id="2605.14426">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.14426v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.14426v1) · [:material-content-copy: BibTeX](../../bibtex/2605.14426.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
 
 -   #### Cloud-top infrared observations reveal the four-dimensional precipitation structure { #2605.07499 }
 
@@ -291,6 +356,32 @@ hide:
     <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
     { .paper-tags }
 
+-   #### Toward a Scientific Discovery Engine for Weather and Climate Data: A Visual Analytics Workbench for Embedding-Based Exploration { #2605.00972 }
+
+    *Nihanth W. Cherukuru, Matt Rehme, Kirsten J. Mayer, David John Gagne, John Schreck, John Clyne et al.* · May 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2605.00972">Earth system science is producing increasingly large, high-dimensional datasets from both physics-based and AI-driven models. While embedding-based representations make these data searchable and...</span><span class="abstract-full" id="full-2605.00972" hidden>Earth system science is producing increasingly large, high-dimensional datasets from both physics-based and AI-driven models. While embedding-based representations make these data searchable and serve as foundational building blocks for AI-driven discovery engines, nearest neighbors in latent spaces are not automatically scientifically meaningful. They may reflect real meteorological structures, or simply artifacts of preprocessing, geography, or model bias. Researchers therefore need visual tools to inspect latent space organization, trace search results back to physical evidence, and evaluate candidate representations against one another.   We present an open source visual analytics workbench designed to support this provenance-aware scientific retrieval workflow. The system links distinct embedding experiments to shared source data, metadata, spatial contexts, and model configurations. It enables interactive retrieval strategy design by allowing users to issue image-level and localized patch-level queries, apply multi-constraint filters, and inspect analogs through familiar meteorological views. This facilitates a discovery loop where scientists characterize a phenomenon in a well-understood dataset and use its latent signature to probe larger archives. While we demonstrate the workbench through a tropical cyclone retrieval scenario using a vision foundation model (DINOv3) on ERA5 data, the framework is model-agnostic and designed to integrate with other embedding architectures in the future. Finally, we evaluate its out-of-core retrieval backend, demonstrating that interactive visual search over tens of millions of embeddings is highly scalable on commodity hardware.</span> <span class="abstract-toggle" data-id="2605.00972">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.00972v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.00972v2) · [:material-content-copy: BibTeX](../../bibtex/2605.00972.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
+-   #### Earth System Foundation Model (ESFM): A unified framework for heterogeneous data integration and forecasting { #2605.00850 }
+
+    *Firat Ozdemir, Yun Cheng, Salman Mohebi, Fanny Lehmann, Simon Adamov, Zhenyi Zhang et al.* · May 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2605.00850">Foundation models (FMs) for the Earth system learn statistical relationships between physical variables across massive datasets to enable versatile downstream applications through finetuning,...</span><span class="abstract-full" id="full-2605.00850" hidden>Foundation models (FMs) for the Earth system learn statistical relationships between physical variables across massive datasets to enable versatile downstream applications through finetuning, separating them from task-specific weather models. Here, we introduce Earth System Foundation Model (ESFM), a fully open model building on the 3D Swin UNet backbone of the pioneering Aurora model. ESFM introduces extensions that increase functionality and foster adoption in climate sciences. First, the encoding scheme and training protocols have been extended to handle diverse datasets, including those containing missing values across all spatio-temporal dimensions such as satellite data, as well as station data, all under one backbone. Axial attention is introduced to capture inter-variable dependencies. As a result ESFM skillfully predicts variables in regions or on pressure levels where no data is present at the initial time, while preserving inter-variable relationships, for example between temperature, pressure, and humidity. Individual variable tokenization enables different sets of variables to be shuffled during training and simplifies the process of building extensions for new downstream tasks. Adaptive layer norm-based ensembles allow for a simple yet effective way to transform deterministic ESFM to a probabilistic FM. We present findings using dense gridded data (ERA5, CMIP6), regionally masked dense data, sparse gridded MODIS satellite data, and station data. Results demonstrate competitive or superior performance relative to state-of-the-art benchmarks. Case studies of Super Typhoon Doksuri (2023) and 2024 sudden stratospheric warming events show accurate positional and magnitude estimations of extreme weather. ESFM retains the strengths of previous foundation models, such as long-term stability, but facilitates application to a variety of downstream tasks.</span> <span class="abstract-toggle" data-id="2605.00850">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.00850v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.00850v1) · [:fontawesome-brands-github: Code](https://github.com/swiss-ai/ESFM) · [:material-content-copy: BibTeX](../../bibtex/2605.00850.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
 -   #### Attention-based Multi-modal Deep Learning Model of Spatio-temporal Crop Yield Prediction with Satellite, Soil and Climate Data { #2604.19217 }
 
     *Gopal Krishna Shyam, Ila Chandrakar* · Apr 2026
@@ -304,95 +395,7 @@ hide:
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a>
     { .paper-tags }
 
--   #### ClimAgent: LLM as Agents for Autonomous Open-ended Climate Science Analysis { #2604.16922 }
-
-    *Hao Wang, Jindong Han, Wei Fan, Hao Liu* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.16922">Climate research is pivotal for mitigating global environmental crises, yet the accelerating volume of multi-scale datasets and the complexity of analytical tools have created significant...</span><span class="abstract-full" id="full-2604.16922" hidden>Climate research is pivotal for mitigating global environmental crises, yet the accelerating volume of multi-scale datasets and the complexity of analytical tools have created significant bottlenecks, constraining scientific discovery to fragmented and labor-intensive workflows. While the emergence Large Language Models (LLMs) offers a transformative paradigm to scale scientific expertise, existing explorations remain largely confined to simple Question-Answering (Q&A) tasks. These approaches often oversimplify real-world challenges, neglecting the intricate physical constraints and the data-driven nature required in professional climate science.To bridge this gap, we introduce ClimAgent, a general-purpose autonomous framework designed to execute a wide spectrum of research tasks across diverse climate sub-fields. By integrating a unified tool-use environment with rigorous reasoning protocols, ClimAgent transcends simple retrieval to perform end-to-end modeling and analysis. To foster systematic evaluation, we propose ClimaBench, the first comprehensive benchmark for real-world climate discovery. It encompasses challenging problems spanning 5 distinct task categories derived from professional scenarios between 2000 and 2025. Experiments on ClimaBench demonstrate that ClimAgent significantly outperforms state-of-the-art baselines, achieving a 40.21% improvement over original LLM solutions in solution rigorousness and practicality. Our code are available at https://github.com/usail-hkust/ClimAgent.</span> <span class="abstract-toggle" data-id="2604.16922">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.16922v3) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.16922v3) · [:fontawesome-brands-github: Code](https://github.com/usail-hkust/ClimAgent) · [:material-content-copy: BibTeX](../../bibtex/2604.16922.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
-    { .paper-tags }
-
--   #### Retrodictive Forecasting: A Proof-of-Concept for Exploiting Temporal Asymmetry in Time Series Prediction { #2603.00636 }
-
-    *Cedric Damour* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.00636">We propose a retrodictive forecasting paradigm for time series: instead of predicting the future from the past, we identify the future that best explains the observed present via inverse MAP...</span><span class="abstract-full" id="full-2603.00636" hidden>We propose a retrodictive forecasting paradigm for time series: instead of predicting the future from the past, we identify the future that best explains the observed present via inverse MAP optimization over a Conditional Variational Autoencoder (CVAE). This conditioning is a statistical modeling choice for Bayesian inversion; it does not assert that future events cause past observations. The approach is theoretically grounded in an information-theoretic arrow-of-time measure: the symmetrized Kullback-Leibler divergence between forward and time-reversed trajectory ensembles provides both the conceptual rationale and an operational GO/NO-GO diagnostic for applicability. We implement the paradigm as MAP inference over an inverse CVAE with a learned RealNVP normalizing-flow prior and evaluate it on six time series cases: four synthetic processes with controlled temporal asymmetry and two ERA5 reanalysis datasets (wind speed and solar irradiance). The work makes four contributions: (i) a formal retrodictive inference formulation; (ii) an inverse CVAE architecture; (iii) a model-free irreversibility diagnostic; and (iv) a falsifiable validation protocol with four pre-specified predictions. All pre-specified predictions are empirically supported: the diagnostic correctly classifies all six cases; the learned flow prior improves over an isotropic Gaussian baseline on GO cases; the inverse MAP yields no spurious advantage on time-reversible dynamics; and on irreversible GO cases, it achieves competitive or superior RMSE relative to forward baselines, with a statistically significant 17.7% reduction over a forward MLP on ERA5 solar irradiance. These results provide a structured proof-of-concept that retrodictive forecasting can constitute a viable alternative to conventional forward prediction when statistical time-irreversibility is present and exploitable.</span> <span class="abstract-toggle" data-id="2603.00636">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.00636v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.00636v1) · [:fontawesome-brands-github: Code](https://github.com/cdamour/retrodictive-forecasting) · [:material-content-copy: BibTeX](../../bibtex/2603.00636.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### A Dual-TransUNet Deep Learning Framework for Multi-Source Precipitation Merging and Improving Seasonal and Extreme Estimates { #2602.04757 }
-
-    *Yuchen Ye, Zixuan Qi, Shixuan Li, Wei Qi, Yanpeng Cai, Chaoxia Yuan* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.04757">Multi-source precipitation products (MSPs) from satellite retrievals and reanalysis are widely used for hydroclimatic monitoring, yet spatially heterogeneous biases and limited skill for extremes...</span><span class="abstract-full" id="full-2602.04757" hidden>Multi-source precipitation products (MSPs) from satellite retrievals and reanalysis are widely used for hydroclimatic monitoring, yet spatially heterogeneous biases and limited skill for extremes still constrain their hydrologic utility. Here we develop a dual-stage TransUNet-based multi-source precipitation merging framework (DDL-MSPMF) that integrates six MSPs with four ERA5 near-surface physical predictors. A first-stage classifier estimates daily precipitation occurrence probability, and a second-stage regressor fuses the classifier outputs together with all predictors to estimate daily precipitation amount at 0.25 degree resolution over China for 2001-2020. Benchmarking against multiple deep learning and hybrid baselines shows that the TransUNet - TransUNet configuration yields the best seasonal performance (R = 0.75; RMSE = 2.70 mm/day) and improves robustness relative to a single-regressor setting. For heavy precipitation (>25 mm/day), DDL-MSPMF increases equitable threat scores across most regions of eastern China and better reproduces the spatial pattern of the July 2021 Zhengzhou rainstorm, indicating enhanced extreme-event detection beyond seasonal-mean corrections. Independent evaluation over the Qinghai-Tibet Plateau using TPHiPr further supports its applicability in data-scarce regions. SHAP analysis highlights the importance of precipitation occurrence probabilities and surface pressure, providing physically interpretable diagnostics. The proposed framework offers a scalable and explainable approach for precipitation fusion and extreme-event assessment.</span> <span class="abstract-toggle" data-id="2602.04757">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.04757v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.04757v1) · [:material-content-copy: BibTeX](../../bibtex/2602.04757.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Radar-Based Raindrop Size Distribution Prediction: Comparing Analytical, Neural Network, and Decision Tree Approaches { #2602.01236 }
-
-    *R. J. Humphreys* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.01236">Reliable estimation of the raindrop size distribution (RSD) is important for applications including quantitative precipitation estimation, soil erosion modelling, and wind turbine blade erosion....</span><span class="abstract-full" id="full-2602.01236" hidden>Reliable estimation of the raindrop size distribution (RSD) is important for applications including quantitative precipitation estimation, soil erosion modelling, and wind turbine blade erosion. While in situ instruments such as disdrometers provide detailed RSD measurements, they are spatially limited, motivating the use of polarimetric radar for remote retrieval of rain microphysical properties. This study presents a comparative evaluation of analytical and machine-learning approaches for retrieving RSD parameters from polarimetric radar observables. One-minute OTT Parsivel2 disdrometer measurements collected between September 2020 and May 2022 at Sheepdrove Farm, UK, were quality-controlled using collocated weighing and tipping-bucket rain gauges. Measured RSDs were fitted to a normalised three-parameter gamma distribution, from which a range of polarimetric radar variables were analytically simulated. Analytical retrievals, neural networks, and decision tree models were then trained to estimate the gamma distribution parameters across multiple radar feature sets and model architectures. To assess robustness and equifinality, each model configuration was trained 100 times using random 70/30 train-test splits, yielding approximately 17,000 trained models in total. Machine-learning approaches generally outperform analytical methods; however, no single model class or architecture is uniformly optimal. Model performance depends strongly on both the target RSD parameter and the available radar observables, with decision trees showing particular robustness in reduced-feature regimes. These results highlight the importance of aligning retrieval model structure with operational data constraints rather than adopting a single universal approach.</span> <span class="abstract-toggle" data-id="2602.01236">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.01236v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.01236v1) · [:material-content-copy: BibTeX](../../bibtex/2602.01236.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a>
-    { .paper-tags }
-
--   #### Prototype-based Explainable Neural Networks with Channel-specific Reasoning for Geospatial Learning Tasks { #2602.00331 }
-
-    *Anushka Narayanan, Karianne J. Bergen* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.00331">Explainable AI (XAI) is essential for understanding machine learning (ML) decision-making and ensuring model trustworthiness in scientific applications. Prototype-based XAI methods offer an...</span><span class="abstract-full" id="full-2602.00331" hidden>Explainable AI (XAI) is essential for understanding machine learning (ML) decision-making and ensuring model trustworthiness in scientific applications. Prototype-based XAI methods offer an intrinsically interpretable alternative to post-hoc approaches which often yield inconsistent explanations. Prototype-based XAI methods make predictions based on the similarity between inputs and learned prototypes that represent typical characteristics of target classes. However, existing prototype-based models are primarily designed for standard RGB image data and are not optimized for the distinct, variable-specific channels commonly found in geoscientific image and raster datasets. In this study, we develop a prototype-based XAI approach tailored for multi-channel geospatial data, where each channel represents a distinct physical environmental variable or spectral channel. Our approach enables the model to identify separate, channel-specific prototypical characteristics sourced from multiple distinct training examples that inform how these features individually and in combination influence model prediction while achieving comparable performance to standard neural networks. We demonstrate this method through two geoscientific case studies: (1) classification of Madden Julian Oscillation phases using multi-variable climate data and (2) land-use classification from multispectral satellite imagery. This approach produces both local (instance-level) and global (model-level) explanations for providing insights into feature-relevance across channels. By explicitly incorporating channel-prototypes into the prediction process, we discuss how this approach enhances the transparency and trustworthiness of ML models for geoscientific learning tasks.</span> <span class="abstract-toggle" data-id="2602.00331">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.00331v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.00331v1) · [:material-content-copy: BibTeX](../../bibtex/2602.00331.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### THOR: A Versatile Foundation Model for Earth Observation Climate and Society Applications { #2601.16011 }
-
-    *Theodor Forgaard, Jarle H. Reksten, Anders U. Waldeland, Valerio Marsocci, Nicolas Longépé et al.* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.16011">Current Earth observation foundation models are architecturally rigid, struggle with heterogeneous sensors and are constrained to fixed patch sizes. This limits their deployment in real-world...</span><span class="abstract-full" id="full-2601.16011" hidden>Current Earth observation foundation models are architecturally rigid, struggle with heterogeneous sensors and are constrained to fixed patch sizes. This limits their deployment in real-world scenarios requiring flexible computeaccuracy trade-offs. We propose THOR, a "computeadaptive" foundation model that solves both input heterogeneity and deployment rigidity. THOR is the first architecture to unify data from Copernicus Sentinel-1, -2, and -3 (OLCI & SLSTR) satellites, processing their native 10 m to 1000 m resolutions in a single model. We pre-train THOR with a novel randomized patch and input image size strategy. This allows a single set of pre-trained weights to be deployed at inference with any patch size, enabling a dynamic trade-off between computational cost and feature resolution without retraining. We pre-train THOR on THOR Pretrain, a new, large-scale multi-sensor dataset and demonstrate state-of-the-art performance on downstream benchmarks, particularly in data-limited regimes like the PANGAEA 10% split, validating that THOR's flexible feature generation excels for diverse climate and society applications.</span> <span class="abstract-toggle" data-id="2601.16011">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.16011v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.16011v1) · [:material-content-copy: BibTeX](../../bibtex/2601.16011.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
-
--   #### FAConvLSTM: Factorized-Attention ConvLSTM for Efficient Feature Extraction in Multivariate Climate Data { #2601.10914 }
-
-    *Francis Ndikum Nji, Jianwu Wang* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.10914">Learning physically meaningful spatiotemporal representations from high-resolution multivariate Earth observation data is challenging due to strong local dynamics, long-range teleconnections,...</span><span class="abstract-full" id="full-2601.10914" hidden>Learning physically meaningful spatiotemporal representations from high-resolution multivariate Earth observation data is challenging due to strong local dynamics, long-range teleconnections, multi-scale interactions, and nonstationarity. While ConvLSTM2D is a commonly used baseline, its dense convolutional gating incurs high computational cost and its strictly local receptive fields limit the modeling of long-range spatial structure and disentangled climate dynamics. To address these limitations, we propose FAConvLSTM, a Factorized-Attention ConvLSTM layer designed as a drop-in replacement for ConvLSTM2D that simultaneously improves efficiency, spatial expressiveness, and physical interpretability. FAConvLSTM factorizes recurrent gate computations using lightweight [1 times 1] bottlenecks and shared depthwise spatial mixing, substantially reducing channel complexity while preserving recurrent dynamics. Multi-scale dilated depthwise branches and squeeze-and-excitation recalibration enable efficient modeling of interacting physical processes across spatial scales, while peephole connections enhance temporal precision. To capture teleconnection-scale dependencies without incurring global attention cost, FAConvLSTM incorporates a lightweight axial spatial attention mechanism applied sparsely in time. A dedicated subspace head further produces compact per timestep embeddings refined through temporal self-attention with fixed seasonal positional encoding. Experiments on multivariate spatiotemporal climate data shows superiority demonstrating that FAConvLSTM yields more stable, interpretable, and robust latent representations than standard ConvLSTM, while significantly reducing computational overhead.</span> <span class="abstract-toggle" data-id="2601.10914">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.10914v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.10914v1) · [:material-content-copy: BibTeX](../../bibtex/2601.10914.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a>
-    { .paper-tags }
-
 </div>
 
-<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
+<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [4](4.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
 

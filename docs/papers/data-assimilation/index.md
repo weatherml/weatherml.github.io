@@ -8,24 +8,11 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">95 papers · page 1 of 4 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">74 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
-
--   #### Distilling deep optical flow stereo methods to retrieve dense three-dimensional wind fields { #2609.03100 }
-
-    *Thomas J. Vandal, Dong L. Wu, James L. Carr, Derek J. Posselt, Elise Penn, Tristan Ballard et al.* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.03100">Geostationary atmospheric motion vectors (AMVs) provide the dense horizontal wind vectors (u,v) and heights ingested into data assimilation systems. Traditional AMVs track features using window-based...</span><span class="abstract-full" id="full-2609.03100" hidden>Geostationary atmospheric motion vectors (AMVs) provide the dense horizontal wind vectors (u,v) and heights ingested into data assimilation systems. Traditional AMVs track features using window-based cross-correlation and estimate heights via infrared brightness temperatures paired with numerical weather prediction (NWP) background states, creating a circular dependency that yields inaccurate heights, high computational cost, and sparse retrievals. Stereo winds from GEO-GEO and GEO-LEO geometrically resolve heights from parallax shifts across different poses, eliminating NWP dependence and improving accuracy, but they remain computationally heavy with limited coverage. In this work, we replace window-based tracking in stereo matching with deep optical flow for efficient, improved retrieval. Fine-tuning balances a self-supervised geometric residual loss with supervised radiosonde reconstruction. To eliminate multi-satellite overlap requirements, we distill the stereo teacher into a single-satellite student model. Chi-square and height uncertainties from the teacher are emulated by the student for quality assurance. The student generates winds across full-disk GEO imagery globally. Validation compares stereo and student models against radiosondes, operational AMVs, ERA5 reanalysis, and EarthCARE cloud profiles. Results through triple collocation show that stereo winds improve performance beyond operational AMVs for water vapor bands (6.2, 6.9, and 7.3 μm), wit degradation in the long-wave infrared (11.2 μm) band.</span> <span class="abstract-toggle" data-id="2609.03100">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.03100v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.03100v1) · [:material-content-copy: BibTeX](../../bibtex/2609.03100.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
 
 -   #### A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems { #2608.22454 }
 
@@ -63,19 +50,6 @@ hide:
     <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
     { .paper-tags }
 
--   #### Generative data assimilation highlights fronts as key regulators of ocean energy cascade { #2608.14955 }
-
-    *Scott A. Martin, Georgy E. Manucharyan, Patrice Klein* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.14955">Mesoscale eddies are fundamental to the ocean circulation, yet the extent to which submesoscale motions, a few kilometers across, influence mesoscale eddy energetics through a kinetic energy cascade...</span><span class="abstract-full" id="full-2608.14955" hidden>Mesoscale eddies are fundamental to the ocean circulation, yet the extent to which submesoscale motions, a few kilometers across, influence mesoscale eddy energetics through a kinetic energy cascade remains uncertain. High-resolution simulations predict that submesoscale fronts are key regulators of the cascade, transferring energy both downscale towards dissipation and upscale to sustain and shape the seasonality of mesoscale eddies. Testing these predictions has remained difficult because existing observations and state estimates cannot resolve submesoscale currents over sufficiently broad domains. Here we map the ocean's submesoscale energy cascade by combining multi-source satellite observations with a generative deep learning framework, reconstructing gap-free, kilometer-scale surface currents with physically plausible dynamics learned from simulations. Applying this to the eddy-rich Agulhas Current system, we find that submesoscales energize the mesoscale through an upscale energy cascade above 10 km, contributing to the seasonality of mesoscale eddies. Below 10 km, convergence at submesoscale fronts drives a downscale cascade towards dissipation. Both upscale and downscale pathways concentrate within fronts, where cross-scale transfer is up to an order of magnitude more efficient. Despite their limited extent, fronts account for a substantial fraction of the domain-integrated cascade, establishing them as key regulators of the cascade and targets for next-generation eddy parameterizations.</span> <span class="abstract-toggle" data-id="2608.14955">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.14955v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.14955v1) · [:material-content-copy: BibTeX](../../bibtex/2608.14955.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
-    { .paper-tags }
-
 -   #### Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities { #2607.26581 }
 
     *Tanmay Ghosh, Shaurabh Anand, Rakesh Gomaji Nannewar, Nithin Nagaraj* · Jul 2026
@@ -102,15 +76,18 @@ hide:
     <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
--   #### ARCO-Mars: A Unified Cloud-Optimized Archive of Mars Atmosphere Reanalysis { #2606.21701 }
+-   #### Uncertainty quantification via conformal prediction in data assimilation { #2606.27001 }
 
-    *Ananyo Bhattacharya* · Jun 2026
+    *Catherine George, Alireza Javanmardi, Tijana Janjić, Eyke Hüllermeier* · Jun 2026
     { .paper-meta }
 
-    <span class="abstract-snippet" id="snip-2606.21701">Long-term records of the Martian atmosphere based on general circulation models and reanalysis of atmospheric state variables are important to understand the diurnal, seasonal, and climatological...</span><span class="abstract-full" id="full-2606.21701" hidden>Long-term records of the Martian atmosphere based on general circulation models and reanalysis of atmospheric state variables are important to understand the diurnal, seasonal, and climatological changes of the planet. Atmospheric dynamics of the Martian atmosphere are strongly influenced by the characterization of dust lifting, solar insolation, and spatial variations in topography. We present ARCO-Mars, a unified Analysis-Ready Cloud-Optimized dataset providing integrated access to three independent Mars atmospheric reanalysis products: EMARS, MACDA, and OpenMARS spanning over Mars Years 24-35. These reanalyses assimilate thermal infrared retrievals from the MGS/TES, ODY/THEMIS, and MRO/MCS instruments, providing both two and three-dimensional surface and atmospheric state variables, including temperature, winds, surface pressure, and dust optical depth. The dataset is stored in Zarr v3 format and hosted on HuggingFace, enabling efficient cloud-based access without requiring local storage of the full archive. We compare the state variables between the three reanalysis products to identify systematic differences, attributed to differences in data assimilation and general circulation models. ARCO-Mars provides a community resource for Mars atmospheric science, numerical weather prediction validation, and machine learning applications, including weather forecasting and data assimilation.</span> <span class="abstract-toggle" data-id="2606.21701">more</span>
+    <span class="abstract-snippet" id="snip-2606.27001">Quantifying the evolution of uncertainty is critical to both probabilistic forecasting and data assimilation in numerical weather prediction. In this study, we investigate the applicability of...</span><span class="abstract-full" id="full-2606.27001" hidden>Quantifying the evolution of uncertainty is critical to both probabilistic forecasting and data assimilation in numerical weather prediction. In this study, we investigate the applicability of conformal prediction (CP), a recent machine learning (ML) method, to quantify uncertainty in a controlled, idealized setting. We use the one dimensional modified shallow water model, designed to mimic the convective process. CP provides a set of possible outcomes with a chosen confidence level. Here, we compare and evaluate the average empirical coverage, the average interval length, miss low, miss high and average interval score loss (AISL) for three variants of CP, namely a) Standard CP, b) Normalized CP and c) Conformalized Quantile Regression. We further compare these CP-based uncertainty estimates with traditional ensemble-based measures such as standard deviation intervals and ensemble spread. In addition, we investigate the integration of CP-derived uncertainty within the data assimilation cycle through CP perturbations. Our results highlight the strengths and limitations of each approach, providing insight into the effectiveness of CP to complement common ensemble-based uncertainty quantification in simplified atmospheric models.</span> <span class="abstract-toggle" data-id="2606.27001">more</span>
 
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.21701v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.21701v1) · [:material-content-copy: BibTeX](../../bibtex/2606.21701.bib){ .bibtex-link }
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.27001v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.27001v1) · [:material-content-copy: BibTeX](../../bibtex/2606.27001.bib){ .bibtex-link }
     { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
 
 -   #### Using Distributional Regression Networks to Retrieve Cloud Properties from Solar Satellite Channels for Data Assimilation { #2606.21294 }
 
@@ -125,19 +102,6 @@ hide:
     <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
     { .paper-tags }
 
--   #### Towards a Foundation Model for the Martian Atmosphere { #2605.28851 }
-
-    *Sujit Roy, Udayshankar Nair, Yuling Wu, Georgios Priftis, Liping Wang, Anastasia Georgiou et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.28851">The martian atmosphere hosts dynamical phenomena ranging from planet-encircling dust storms to mesoscale orographic clouds and nocturnal low-level jets. General circulation model show capability to...</span><span class="abstract-full" id="full-2605.28851" hidden>The martian atmosphere hosts dynamical phenomena ranging from planet-encircling dust storms to mesoscale orographic clouds and nocturnal low-level jets. General circulation model show capability to simulate these phenomena, but is computationally expensive at resolution needed to resolve mesoscale features. While assimilation of satellite remote sensing observation enable forecasting capabilities using such models, observation record is often sparse, short and fragmented across instrument generators. These constraints motivate the development of a data-driven foundation model for the Martian atmosphere.   Foundation models live in a complex design landscape. There is an interplay between the available data, the physics of the underlying processes and corresponding developments in AI. Even though the idea of a foundation model is to address multiple use cases in a data- and compute-efficient manner, it is important to have a clear picture what applications can sensibly addressed by a single model.   The purpose of this paper is to elucidate this design landscape. We discuss available data ranging from atmospheric retrievals to reanalysis datasets as well as existing physical models. Moreover, we identify a wide range of candidate downstream applications. Finally, we consider relevant recent developments in artificial intelligence (AI) that can be leveraged in this context. Here, we put a particular emphasis on AI models for atmospheric physics, data-driven approaches to data assimilation as well as methods to work in a limited data setting.</span> <span class="abstract-toggle" data-id="2605.28851">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.28851v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.28851v1) · [:material-content-copy: BibTeX](../../bibtex/2605.28851.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
-
 -   #### Global kilometre-scale tropical cyclone inner-core vector winds from sparse scalar CYGNSS observations { #2605.18477 }
 
     *Xinhai Han, Xiaohui Li, Jingsong Yang, Zeyi Niu, Guoqi Han, Jiuke Wang, Wei Huang, Yunxia Zheng et al.* · May 2026
@@ -149,6 +113,19 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
+    { .paper-tags }
+
+-   #### ForcingDAS: Unified and Robust Data Assimilation via Diffusion Forcing { #2605.14285 }
+
+    *Yixuan Jia, Siyi Chen, Yida Pan, Xiao Li, Lianghe Shi, Chanyong Jung, Haijie Yuan, Ismail Alkhouri et al.* · May 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2605.14285">Data assimilation (DA) estimates the state of an evolving dynamical system from noisy, partial observations, and is widely used in scientific simulation as well as weather and climate science. In...</span><span class="abstract-full" id="full-2605.14285" hidden>Data assimilation (DA) estimates the state of an evolving dynamical system from noisy, partial observations, and is widely used in scientific simulation as well as weather and climate science. In practice, filtering methods rely on frame-to-frame transition models. However, these models are fragile when observations are non-Markovian (when they form only a partial slice of a higher-dimensional latent state as in real-world weather data): they tend to accumulate errors over long horizons. At the same time, learned DA methods typically commit to a single regime, either filtering (nowcasting, real-time forecasting) or smoothing (retrospective reanalysis), which splits what should be a shared prior across application-specific pipelines. To address both issues, we introduce ForcingDAS, a unified and robust DA framework. Built on Diffusion Forcing with an independent noise level assigned to each frame, ForcingDAS learns a joint-trajectory prior instead of frame-to-frame transitions. This allows it to capture long-horizon temporal dependencies and reduce error accumulation. In addition, the same trained model spans the full filtering to smoothing spectrum at inference time. Specifically, nowcasting, fixed-lag smoothing, and batch reanalysis are selected through the inference schedule alone, without retraining. We evaluate ForcingDAS on 2D Navier-Stokes vorticity, precipitation nowcasting, and global atmospheric state estimation. Across all settings, a single model is competitive with or outperforms both learned and classical baselines that are specialized for individual regimes, with the largest gains observed on real-world weather benchmarks.</span> <span class="abstract-toggle" data-id="2605.14285">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.14285v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.14285v1) · [:material-content-copy: BibTeX](../../bibtex/2605.14285.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 -   #### Acceleration of horizontal numerical advection for atmospheric modeling through surrogate modeling with temporal coarse-graining { #2605.10956 }
@@ -198,32 +175,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a>
-    { .paper-tags }
-
--   #### Global Attention with Linear Complexity for Exascale Generative Data Assimilation in Earth System Prediction { #2604.16590 }
-
-    *Xiao Wang, Zezhong Zhang, Isaac Lyngaas, Hong-Jun Yoon, Jong-Youl Choi, Siming Liang, Janet Wang et al.* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.16590">Accurate weather and climate prediction relies on data assimilation (DA), which estimates the Earth system state by integrating observations with models. While exascale computing has significantly...</span><span class="abstract-full" id="full-2604.16590" hidden>Accurate weather and climate prediction relies on data assimilation (DA), which estimates the Earth system state by integrating observations with models. While exascale computing has significantly advanced earth simulation, scalable and accurate inference of the Earth system state remains a fundamental bottleneck, limiting uncertainty quantification and prediction of extreme events. We introduce a unified one-stage generative DA framework that reformulates assimilation as Bayesian posterior sampling, replacing the conventional forecast-update cycle with compute-dense, GPU-efficient inference. At the core is STORM, a novel spatiotemporal transformer with a global attention linear-complexity scaling algorithm that breaks the quadratic attention barrier. On 32,768 GPUs of the Frontier supercomputer, our method achieves 63% strong scaling efficiency and 1.6 ExaFLOP sustained performance. We further scale to 20 billion spatiotemporal tokens, enabling km-scale global modeling over 177k temporal frames, regimes previously unreachable, establishing a new paradigm for Earth system prediction.</span> <span class="abstract-toggle" data-id="2604.16590">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.16590v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.16590v1) · [:material-content-copy: BibTeX](../../bibtex/2604.16590.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
-    { .paper-tags }
-
--   #### Calibration of a neural network ocean closure for improved mean state and variability { #2604.06398 }
-
-    *Pavel Perezhogin, Alistair Adcroft, Laure Zanna* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.06398">Global ocean models exhibit biases in the mean state and variability, particularly at coarse resolution, where mesoscale eddies are unresolved. To address these biases, parameterization coefficients...</span><span class="abstract-full" id="full-2604.06398" hidden>Global ocean models exhibit biases in the mean state and variability, particularly at coarse resolution, where mesoscale eddies are unresolved. To address these biases, parameterization coefficients are typically tuned ad hoc. Here, we formulate parameter tuning as a calibration problem using Ensemble Kalman Inversion (EKI). We optimize parameters of a neural network parameterization of mesoscale eddies in two idealized ocean models at coarse resolution. The calibrated parameterization reduces errors by factors of 1.7-3.3 in the time-averaged fluid interfaces and their variability compared to the unparameterized model, depending on the metric and configuration. The EKI method is robust to noise in time-averaged statistics arising from chaotic ocean dynamics. Furthermore, we propose an efficient calibration protocol that bypasses integration to statistical equilibrium by carefully choosing an initial condition. These results demonstrate that systematic calibration can substantially improve coarse-resolution ocean simulations and provide a practical pathway for reducing biases in global ocean models.</span> <span class="abstract-toggle" data-id="2604.06398">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.06398v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.06398v2) · [:material-content-copy: BibTeX](../../bibtex/2604.06398.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 -   #### Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models { #2604.00082 }
@@ -377,7 +328,56 @@ hide:
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.11440v3) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.11440v3) · [:material-content-copy: BibTeX](../../bibtex/2601.11440.bib){ .bibtex-link }
     { .paper-links }
 
+-   #### The Ensemble Schr{ö}dinger Bridge filter for Nonlinear Data Assimilation { #2512.18928 }
+
+    *Feng Bao, Hui Sun* · Dec 2025
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2512.18928">This work puts forward a novel nonlinear optimal filter namely the Ensemble Schr{ö}dinger Bridge nonlinear filter. The proposed filter finds marriage of the standard prediction procedure and the...</span><span class="abstract-full" id="full-2512.18928" hidden>This work puts forward a novel nonlinear optimal filter namely the Ensemble Schr{ö}dinger Bridge nonlinear filter. The proposed filter finds marriage of the standard prediction procedure and the diffusion generative modeling for the analysis procedure to realize one filtering step. The designed approach finds no structural model error, and it is derivative free, training free and highly parallizable. Experimental results show that the designed algorithm performs well given highly nonlinear dynamics in (mildly) high dimension up to 40 or above under a chaotic environment. It also shows better performance than classical methods such as the ensemble Kalman filter and the Particle filter in numerous tests given different level of nonlinearity. Future work will focus on extending the proposed approach to practical meteorological applications and establishing a rigorous convergence analysis.</span> <span class="abstract-toggle" data-id="2512.18928">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.18928v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.18928v1) · [:material-content-copy: BibTeX](../../bibtex/2512.18928.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### A Neural-Network Model-Measurement-Based Observation Operator For Weather Radar Reflectivity Assimilation { #2512.18289 }
+
+    *Marco Stefanelli, Žiga Zaplotnik, Gregor Skok* · Dec 2025
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2512.18289">In three-dimensional variational data assimilation (3DVar) for numerical weather prediction (NWP), the observation operator $\mathcal{H}$ plays a central role by mapping model state variables to an...</span><span class="abstract-full" id="full-2512.18289" hidden>In three-dimensional variational data assimilation (3DVar) for numerical weather prediction (NWP), the observation operator $\mathcal{H}$ plays a central role by mapping model state variables to an observation equivalent. For weather radar, however, specifying $\mathcal{H}$ is particularly challenging: reflectivity is a nonlinear, microphysics-dependent diagnostic quantity that only indirectly relates to the model's prognostic variables, making traditional parameterised radar operators complex, regime-dependent and difficult to tune. In this study, we propose a neural-network (NN)-based observation operator for radar reflectivity and apply it within a 3DVar framework. Using five years (2019-2023) of radar reflectivity data from the Lisca radar and 4.4 km-resolution short-range forecasts from ALADIN model over Slovenia, we train a convolutional encoder-decoder neural network to map model temperature, humidity, horizontal wind components and surface pressure fields to radar reflectivity. Across independent test cases spanning clear-sky, stratiform, and convective regimes, the NN-based operator accurately reproduces the spatial structure and intensity of observed reflectivity, relying primarily on the model state near the observation point. In the extreme precipitation case, which caused widespread floods in Slovenia on August 4, 2023, assimilating the full radar disc reduces the domain-averaged reflectivity root-mean-square error from 5.99 dBZ to 3.47 dBZ and improves the alignment between the analysed and observed convective bands. Embedded within 3DVar, the Jacobian of the NN observation operator allows radar reflectivity observations to inform model state variables, producing corresponding analysis increments. The proposed NN radar observation operator offers a flexible alternative to traditional parameterised radar operators for improving convective-storm forecasts.</span> <span class="abstract-toggle" data-id="2512.18289">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.18289v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.18289v2) · [:material-content-copy: BibTeX](../../bibtex/2512.18289.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
+    { .paper-tags }
+
+-   #### Continuous data assimilation for 2D stochastic Navier-Stokes equations { #2512.15184 }
+
+    *Hakima Bessaih, Benedetta Ferrario, Oussama Landoulsi, Margherita Zanella* · Dec 2025
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2512.15184">Continuous data assimilation methods, such as the nudging algorithm introduced by Azouani, Olson, and Titi (AOT) [2], are known to be highly effective in deterministic settings for asymptotically...</span><span class="abstract-full" id="full-2512.15184" hidden>Continuous data assimilation methods, such as the nudging algorithm introduced by Azouani, Olson, and Titi (AOT) [2], are known to be highly effective in deterministic settings for asymptotically synchronizing approximate solutions with observed dynamics. In this work, we extend this framework to a stochastic regime by considering the two-dimensional incompressible Navier-Stokes equations subject to either additive or multiplicative noise. We establish sufficient conditions on the nudging parameter and the spatial observation scale that guarantee convergence of the nudged solution to the true stochastic flow.   In the case of multiplicative noise, convergence holds in expectation, with exponential or polynomial rates depending on the growth of the noise covariance. For additive noise, we obtain the exponential convergence both in expectation and pathwise. These results yield a stochastic generalization of the AOT theory, demonstrating how the interplay between random forcing, viscous dissipation and feedback control governs synchronization in stochastic fluid systems.</span> <span class="abstract-toggle" data-id="2512.15184">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.15184v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.15184v1) · [:material-content-copy: BibTeX](../../bibtex/2512.15184.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Balancing Accuracy and Speed: A Multi-Fidelity Ensemble Kalman Filter with a Machine Learning Surrogate Model { #2512.12276 }
+
+    *Jeffrey van der Voort, Martin Verlaan, Hanne Kekkonen* · Dec 2025
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2512.12276">Currently, more and more machine learning (ML) surrogates are being developed for computationally expensive physical models. In this work we investigate the use of a Multi-Fidelity Ensemble Kalman...</span><span class="abstract-full" id="full-2512.12276" hidden>Currently, more and more machine learning (ML) surrogates are being developed for computationally expensive physical models. In this work we investigate the use of a Multi-Fidelity Ensemble Kalman Filter (MF-EnKF) in which the low-fidelity model is such a machine learning surrogate model, instead of a traditional low-resolution or reduced-order model. The idea behind this is to use an ensemble of a few expensive full model runs, together with an ensemble of many cheap but less accurate ML model runs. In this way we hope to reach increased accuracy within the same computational budget. We investigate the performance by testing the approach on two common test problems, namely the Lorenz-2005 model and the Quasi-Geostrophic model. By keeping the original physical model in place, we obtain a higher accuracy than when we completely replace it by the ML model. Furthermore, the MF-EnKF reaches improved accuracy within the same computational budget. The ML surrogate has similar or improved accuracy compared to the low-resolution one, but it can provide a larger speed-up. Our method contributes to increasing the effective ensemble size in the EnKF, which improves the estimation of the initial condition and hence accuracy of the predictions in fields such as meteorology and oceanography.</span> <span class="abstract-toggle" data-id="2512.12276">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.12276v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.12276v1) · [:material-content-copy: BibTeX](../../bibtex/2512.12276.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
 </div>
 
-<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [4](4.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
+<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
 
