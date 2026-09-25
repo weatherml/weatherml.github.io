@@ -1,19 +1,13 @@
-# weatherml
+# [weatherml.github.io](https://weatherml.github.io)
 
 Papers on AI for weather forecasting, climate modelling and atmospheric
-science, updated weekly from arXiv: **[weatherml.github.io](https://weatherml.github.io)**
-
-- **All Papers**: browse by topic
-- **Explore**: filter by topic and tag, e.g. [Nowcasting + Diffusion](https://weatherml.github.io/explore/?t=nowcasting,diffusion-flow-matching)
-- [RSS feed](https://weatherml.github.io/feed.xml) · [BibTeX](https://weatherml.github.io/all_papers.bib) · [Suggest a paper](https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml)
+science, updated weekly from arXiv.
 
 ## How it works
 
 1. A weekly Action runs `find_papers.py`: searches arXiv, filters for weather + ML, assigns a topic, appends to `papers.yml`.
 2. `build_pages.py` generates `docs/` and the paper list below; tags come from `tagging.py`.
 3. Pushes to `main` build the site with [Zensical](https://zensical.org) and deploy to GitHub Pages.
-
-`docs/` is generated (except `stylesheets/`, `javascripts/`, `assets/`), so don't edit it by hand.
 
 ## Development
 
