@@ -310,3 +310,16 @@ h1#__skip {
 .md-typeset .grid.cards .paper-links a:hover {
   color: var(--md-accent-fg-color);
 }
+
+/* Keep "weatherml" in the header while scrolling; the theme normally swaps
+   it for the page title (e.g. "Global Models") once the heading scrolls by */
+.md-header__title--active .md-header__topic {
+  z-index: 0;
+  pointer-events: auto;
+  opacity: 1;
+  transform: none;
+}
+
+.md-header__topic + .md-header__topic {
+  display: none;
+}
