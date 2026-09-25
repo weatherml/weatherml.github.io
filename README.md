@@ -1,68 +1,35 @@
 # weatherml
 
-A collection of papers on AI for weather forecasting, climate modelling and
-atmospheric science, updated weekly from arXiv.
+Papers on AI for weather forecasting, climate modelling and atmospheric
+science, updated weekly from arXiv: **[weatherml.github.io](https://weatherml.github.io)**
 
-**Browse it at [weatherml.github.io](https://weatherml.github.io)**
-
-- **All Papers**: papers by topic (Global Models, Nowcasting, Downscaling,
-  Data Assimilation, Ensembles, Climate Modeling, Extreme Weather,
-  Ocean & Sea Ice, Air Quality & Composition, Remote Sensing, Other)
-- **Explore**: combine topics and tags (method, theme, domain, resolution,
-  time step), e.g. [Nowcasting + Diffusion](https://weatherml.github.io/explore/?t=nowcasting,diffusion-flow-matching)
-- **[RSS feed](https://weatherml.github.io/feed.xml)** of new papers, and
-  **[BibTeX](https://weatherml.github.io/all_papers.bib)** for everything
-  (or per topic, or per paper)
-
-Missing a paper? [Suggest it](https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml).
+- **All Papers**: browse by topic
+- **Explore**: filter by topic and tag, e.g. [Nowcasting + Diffusion](https://weatherml.github.io/explore/?t=nowcasting,diffusion-flow-matching)
+- [RSS feed](https://weatherml.github.io/feed.xml) · [BibTeX](https://weatherml.github.io/all_papers.bib) · [Suggest a paper](https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml)
 
 ## How it works
 
-1. **Find**: every Sunday a GitHub Action runs `find_papers.py`, which
-   searches arXiv (atmospheric physics plus ML categories with weather terms
-   in the title), keeps papers that are both weather- and ML-related, sorts
-   them into a topic and appends them to `papers.yml`.
-2. **Build**: `build_pages.py` turns `papers.yml` into the site's pages in
-   `docs/` (topic pages, the Explore data, BibTeX files, the feed) and the
-   paper list at the bottom of this README. Tags come from the rules in
-   `tagging.py` and are worked out at build time, so editing a rule re-tags
-   every paper.
-3. **Deploy**: every push to `main` builds the site with
-   [Zensical](https://zensical.org) and publishes it to GitHub Pages.
+1. A weekly Action runs `find_papers.py`: searches arXiv, filters for weather + ML, assigns a topic, appends to `papers.yml`.
+2. `build_pages.py` generates `docs/` and the paper list below; tags come from `tagging.py`.
+3. Pushes to `main` build the site with [Zensical](https://zensical.org) and deploy to GitHub Pages.
 
-Everything in `docs/` except `stylesheets/`, `javascripts/` and `assets/` is
-generated, so change `papers.yml` or the scripts rather than editing it.
+`docs/` is generated (except `stylesheets/`, `javascripts/`, `assets/`), so don't edit it by hand.
 
 ## Development
 
 ```bash
 uv sync
-uv run python build_pages.py   # regenerate docs/ from papers.yml
-uv run zensical serve          # preview at http://localhost:8000
+uv run python build_pages.py
+uv run zensical serve   # http://localhost:8000
 ```
 
 ## Adding papers
 
-- **Anyone** can [suggest a paper](https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml);
-  suggestions are reviewed by hand.
-- **Collaborators** can open an [Add paper issue](https://github.com/weatherml/weatherml.github.io/issues/new?template=add-paper.yml)
-  with the arXiv link. A GitHub Action fetches the metadata, adds the paper,
-  rebuilds the site and closes the issue.
-- **From the command line**:
-
-  ```bash
-  uv run python add_paper.py 2604.09041 --star   # arXiv ID or URL
-  uv run python build_pages.py
-  ```
-
-  `--star` marks the paper as hand-picked, which keeps it even if it fails
-  the automatic relevance filters.
+- Open an [Add paper issue](https://github.com/weatherml/weatherml.github.io/issues/new?template=add-paper.yml) (collaborators; added automatically), or
+- `uv run python add_paper.py <arXiv ID or URL> --star`, then `build_pages.py`. `--star` keeps it even if it fails the relevance filters.
 
 <details>
-<summary>One-click add from the browser (bookmarklet)</summary>
-
-Save this as a bookmark; clicking it on any arXiv page opens a prefilled
-Add paper issue (one more click on "Submit new issue" and it's added):
+<summary>Bookmarklet: add the arXiv paper you're viewing</summary>
 
 ```
 javascript:(function(){var m=document.location.href.match(/\d{4}\.\d{4,5}/);var id=m?m[0]:prompt('arXiv ID:');if(!id)return;window.open('https://github.com/weatherml/weatherml.github.io/issues/new?labels=add-paper&title='+encodeURIComponent('Add paper: '+id)+'&body='+encodeURIComponent('https://arxiv.org/abs/'+id));})();
@@ -70,17 +37,11 @@ javascript:(function(){var m=document.location.href.match(/\d{4}\.\d{4,5}/);var 
 
 </details>
 
-## Maintenance
-
 <details>
-<summary>Re-sorting papers after changing categories or filters</summary>
-
-`categorize_papers.py` re-sorts papers in "Other" into the current topics and
-drops papers that fail the relevance filters in `find_papers.py` (starred
-papers are always kept):
+<summary>Re-sorting after changing topics or filters</summary>
 
 ```bash
-uv run python categorize_papers.py
+uv run python categorize_papers.py   # re-sorts "Other", drops irrelevant papers (keeps starred)
 uv run python build_pages.py
 ```
 
@@ -89,18 +50,17 @@ uv run python build_pages.py
 <details>
 <summary>Repository layout</summary>
 
-| Path | What it is |
+| Path | |
 |---|---|
-| `papers.yml` | The collection: one entry per paper |
-| `find_papers.py` | Weekly arXiv search, relevance filters and topic rules |
-| `add_paper.py` | Adds a single paper by arXiv ID or URL |
-| `categorize_papers.py` | Re-sorts and filters existing papers |
-| `tagging.py` | Tag rules (method, theme, domain, resolution, time step) |
-| `build_pages.py` | Generates `docs/`, the feed, BibTeX and this README's paper list |
-| `mkdocs.yml` | Site configuration (read by Zensical); `nav` is generated |
-| `docs/stylesheets/`, `docs/javascripts/` | Site styling, the Explore filter, math rendering, BibTeX copy |
-| `overrides/` | Theme override (adds the feed link to every page) |
-| `.github/workflows/` | Weekly update, add-paper-from-issue and deploy actions |
+| `papers.yml` | The collection |
+| `find_papers.py` | arXiv search, relevance filters, topic rules |
+| `add_paper.py` | Add one paper |
+| `categorize_papers.py` | Re-sort and filter existing papers |
+| `tagging.py` | Tag rules |
+| `build_pages.py` | Generates `docs/`, feed, BibTeX, README list |
+| `mkdocs.yml` | Site config (`nav` is generated) |
+| `docs/javascripts/`, `docs/stylesheets/` | Explore filter, math, BibTeX copy, styling |
+| `.github/workflows/` | Weekly update, add-paper, deploy |
 
 </details>
 
@@ -108,12 +68,10 @@ uv run python build_pages.py
 
 ## Papers (1468)
 
-Generated by `build_pages.py`; newest first. Click a topic to expand it.
+Newest first.
 
 <details>
-<summary><b>Global Models</b> (291)</summary>
-
-On the site: [Global Models](https://weatherml.github.io/papers/global-models/)
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (291)</summary>
 
 - **West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation** (Sep 2026) - [arXiv:2609.25512](https://arxiv.org/abs/2609.25512v1)
 - **FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting** (Sep 2026) - [arXiv:2609.25505](https://arxiv.org/abs/2609.25505v1)
@@ -410,9 +368,7 @@ On the site: [Global Models](https://weatherml.github.io/papers/global-models/)
 </details>
 
 <details>
-<summary><b>Nowcasting</b> (97)</summary>
-
-On the site: [Nowcasting](https://weatherml.github.io/papers/nowcasting/)
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (97)</summary>
 
 - **IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy** (Sep 2026) - [arXiv:2609.17175](https://arxiv.org/abs/2609.17175v1)
 - **From Nowcasting to Forecasting: Adapting a Reanalysis-Trained** (Sep 2026) - [arXiv:2609.03763](https://arxiv.org/abs/2609.03763v1)
@@ -515,9 +471,7 @@ On the site: [Nowcasting](https://weatherml.github.io/papers/nowcasting/)
 </details>
 
 <details>
-<summary><b>Downscaling</b> (43)</summary>
-
-On the site: [Downscaling](https://weatherml.github.io/papers/downscaling/)
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (43)</summary>
 
 - **Steering Diffusion Priors with Sparse Observations for High-Resolution Temperature Downscaling** (Sep 2026) - [arXiv:2609.09247](https://arxiv.org/abs/2609.09247v1)
 - **Python-Fortran Hybrid Programming to Fuse AI and Physical Models: Examples of AI-LDA in climate and weather models (Hf2pMDA_v1.0)** (Aug 2026) - [arXiv:2608.29532](https://arxiv.org/abs/2608.29532v1)
@@ -566,9 +520,7 @@ On the site: [Downscaling](https://weatherml.github.io/papers/downscaling/)
 </details>
 
 <details>
-<summary><b>Data Assimilation</b> (95)</summary>
-
-On the site: [Data Assimilation](https://weatherml.github.io/papers/data-assimilation/)
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (95)</summary>
 
 - **Distilling deep optical flow stereo methods to retrieve dense three-dimensional wind fields** (Sep 2026) - [arXiv:2609.03100](https://arxiv.org/abs/2609.03100v1)
 - **A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems** (Aug 2026) - [arXiv:2608.22454](https://arxiv.org/abs/2608.22454v1)
@@ -669,9 +621,7 @@ On the site: [Data Assimilation](https://weatherml.github.io/papers/data-assimil
 </details>
 
 <details>
-<summary><b>Ensembles</b> (79)</summary>
-
-On the site: [Ensembles](https://weatherml.github.io/papers/ensembles/)
+<summary><b><a href="https://weatherml.github.io/papers/ensembles/">Ensembles</a></b> (79)</summary>
 
 - **A dataset of one-dimensional idealized probabilistic fields** (Sep 2026) - [arXiv:2609.25720](https://arxiv.org/abs/2609.25720v1)
 - **Predictability-Guided Multiscale Probabilistic Forecasting of Wind Direction under Extreme Shear** (Sep 2026) - [arXiv:2609.16707](https://arxiv.org/abs/2609.16707v1)
@@ -756,9 +706,7 @@ On the site: [Ensembles](https://weatherml.github.io/papers/ensembles/)
 </details>
 
 <details>
-<summary><b>Climate Modeling</b> (309)</summary>
-
-On the site: [Climate Modeling](https://weatherml.github.io/papers/climate-modeling/)
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (309)</summary>
 
 - **Analysis of trade-offs in urban heat mitigation using a Bayesian Optimization framework for an urban canopy layer model** (Sep 2026) - [arXiv:2609.25953](https://arxiv.org/abs/2609.25953v1)
 - **Learning Prognostic Variables for AI Convective Parameterizations via Symbolic Distillation** (Sep 2026) - [arXiv:2609.24882](https://arxiv.org/abs/2609.24882v1)
@@ -1073,9 +1021,7 @@ On the site: [Climate Modeling](https://weatherml.github.io/papers/climate-model
 </details>
 
 <details>
-<summary><b>Extreme Weather</b> (89)</summary>
-
-On the site: [Extreme Weather](https://weatherml.github.io/papers/extreme-weather/)
+<summary><b><a href="https://weatherml.github.io/papers/extreme-weather/">Extreme Weather</a></b> (89)</summary>
 
 - **EastAsiaClimateExtremes: An AI-Ready Dataset of Weekly Atmospheric and Oceanic Extremes over East Asia for Subseasonal Prediction Research** (Sep 2026) - [arXiv:2609.08241](https://arxiv.org/abs/2609.08241v2)
 - **Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles** (Sep 2026) - [arXiv:2609.02034](https://arxiv.org/abs/2609.02034v1)
@@ -1170,9 +1116,7 @@ On the site: [Extreme Weather](https://weatherml.github.io/papers/extreme-weathe
 </details>
 
 <details>
-<summary><b>Ocean & Sea Ice</b> (57)</summary>
-
-On the site: [Ocean & Sea Ice](https://weatherml.github.io/papers/ocean-sea-ice/)
+<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (57)</summary>
 
 - **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (Sep 2026) - [arXiv:2609.22574](https://arxiv.org/abs/2609.22574v1)
 - **Neptune: An AI model for Global Ocean Subseasonal Prediction** (Sep 2026) - [arXiv:2609.08606](https://arxiv.org/abs/2609.08606v1)
@@ -1235,9 +1179,7 @@ On the site: [Ocean & Sea Ice](https://weatherml.github.io/papers/ocean-sea-ice/
 </details>
 
 <details>
-<summary><b>Air Quality & Composition</b> (62)</summary>
-
-On the site: [Air Quality & Composition](https://weatherml.github.io/papers/air-quality-composition/)
+<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (62)</summary>
 
 - **From Regional to Global: Transfer Learning for Atmospheric Transport Emulators** (Sep 2026) - [arXiv:2609.23838](https://arxiv.org/abs/2609.23838v1)
 - **Quantifying AI data center nitrogen oxide (NO$_x$) emissions from space** (Aug 2026) - [arXiv:2608.22153](https://arxiv.org/abs/2608.22153v1)
@@ -1305,9 +1247,7 @@ On the site: [Air Quality & Composition](https://weatherml.github.io/papers/air-
 </details>
 
 <details>
-<summary><b>Remote Sensing</b> (71)</summary>
-
-On the site: [Remote Sensing](https://weatherml.github.io/papers/remote-sensing/)
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (71)</summary>
 
 - **Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework** (Sep 2026) - [arXiv:2609.12254](https://arxiv.org/abs/2609.12254v1)
 - **A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data** (Sep 2026) - [arXiv:2609.01514](https://arxiv.org/abs/2609.01514v1)
@@ -1384,9 +1324,7 @@ On the site: [Remote Sensing](https://weatherml.github.io/papers/remote-sensing/
 </details>
 
 <details>
-<summary><b>Other</b> (275)</summary>
-
-On the site: [Other](https://weatherml.github.io/papers/other/)
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (275)</summary>
 
 - **Inference of Unknown Dynamical Components Using Next Generation Reservoir Computing: From Chaotic Systems to Climate Data** (Sep 2026) - [arXiv:2609.24754](https://arxiv.org/abs/2609.24754v1)
 - **A more predictable Madden-Julian Oscillation index derived from Koopman spectral analysis** (Sep 2026) - [arXiv:2609.19435](https://arxiv.org/abs/2609.19435v1)
