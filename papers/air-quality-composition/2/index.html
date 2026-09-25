@@ -1,0 +1,2939 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://weatherml.github.io/papers/air-quality-composition/2/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../3/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.svg">
+      <meta name="generator" content="zensical-0.0.65">
+    
+    
+      
+        <title>Air Quality & Composition · Page 2 - weatherml</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.40d3fdbb.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.812a03bb.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.9/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  <link rel="alternate" type="application/atom+xml" title="weatherml" href="../../../feed.xml">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#air-quality-composition" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="weatherml" class="md-header__button md-logo" aria-label="weatherml" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.74 5.47c2.36 1.03 3.61 3.56 3.18 5.99A6 6 0 0 1 18 16v.17a3 3 0 0 1 1-.17 3 3 0 0 1 3 3 3 3 0 0 1-3 3H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h.27C5 12.45 4.6 10.24 5.5 8.26a5.49 5.49 0 0 1 7.24-2.79m-.81 1.83c-1.77-.8-3.84.01-4.62 1.77-.46 1.02-.38 2.15.1 3.06A5.99 5.99 0 0 1 12 10c.7 0 1.38.12 2 .34a3.51 3.51 0 0 0-2.07-3.04m1.62-3.66c-.55-.24-1.1-.41-1.67-.52l2.49-1.3.9 2.89a7.7 7.7 0 0 0-1.72-1.07m-7.46.8c-.49.35-.92.75-1.29 1.19l.11-2.81 2.96.68c-.62.21-1.22.53-1.78.94M18 9.71c-.09-.59-.22-1.16-.41-1.71l2.38 1.5-2.05 2.23c.11-.65.13-1.33.08-2.02M3.04 11.3c.07.6.2 1.17.39 1.7l-2.37-1.5L3.1 9.28c-.1.65-.13 1.33-.06 2.02M19 18h-3v-2a4 4 0 0 0-4-4 4 4 0 0 0-4 4H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13a1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            weatherml
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Air Quality & Composition · Page 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/weatherml/weatherml.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    weatherml/weatherml.github.io
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../global-models/" class="md-tabs__link">
+          
+  
+  All Papers
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../explore/" class="md-tabs__link">
+        
+  
+  Explore
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="weatherml" class="md-nav__button md-logo" aria-label="weatherml" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.74 5.47c2.36 1.03 3.61 3.56 3.18 5.99A6 6 0 0 1 18 16v.17a3 3 0 0 1 1-.17 3 3 0 0 1 3 3 3 3 0 0 1-3 3H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h.27C5 12.45 4.6 10.24 5.5 8.26a5.49 5.49 0 0 1 7.24-2.79m-.81 1.83c-1.77-.8-3.84.01-4.62 1.77-.46 1.02-.38 2.15.1 3.06A5.99 5.99 0 0 1 12 10c.7 0 1.38.12 2 .34a3.51 3.51 0 0 0-2.07-3.04m1.62-3.66c-.55-.24-1.1-.41-1.67-.52l2.49-1.3.9 2.89a7.7 7.7 0 0 0-1.72-1.07m-7.46.8c-.49.35-.92.75-1.29 1.19l.11-2.81 2.96.68c-.62.21-1.22.53-1.78.94M18 9.71c-.09-.59-.22-1.16-.41-1.71l2.38 1.5-2.05 2.23c.11-.65.13-1.33.08-2.02M3.04 11.3c.07.6.2 1.17.39 1.7l-2.37-1.5L3.1 9.28c-.1.65-.13 1.33-.06 2.02M19 18h-3v-2a4 4 0 0 0-4-4 4 4 0 0 0-4 4H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13a1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+
+    </a>
+    weatherml
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/weatherml/weatherml.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    weatherml/weatherml.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  All Papers
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  All Papers
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../global-models/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Global Models
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_1">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Global Models
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 5
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 6
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 7
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 8
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 9
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 10
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 11
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global-models/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 12
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../regional-models/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Regional Models
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_2">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Regional Models
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regional-models/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../nowcasting/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Nowcasting
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Nowcasting
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nowcasting/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nowcasting/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nowcasting/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../downscaling/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Downscaling
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Downscaling
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downscaling/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downscaling/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downscaling/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../post-processing/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Post-processing
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../data-assimilation/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Data Assimilation
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Data Assimilation
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-assimilation/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-assimilation/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../climate-modeling/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Climate Modeling
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_7">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Climate Modeling
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 5
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 6
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 7
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 8
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 9
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 10
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hydrology/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Hydrology
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Hydrology
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hydrology/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ocean-sea-ice/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Ocean & Sea Ice
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Ocean & Sea Ice
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ocean-sea-ice/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ocean-sea-ice/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Air Quality & Composition
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_1_10">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Air Quality & Composition
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../remote-sensing/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Remote Sensing
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_11">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Remote Sensing
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-sensing/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-sensing/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-sensing/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../other/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Other
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_12">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Other
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 5
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 6
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 7
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Explore
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+<div class="listing-header">
+<h1 id="air-quality-composition">Air Quality &amp; Composition<a class="headerlink" href="#air-quality-composition" title="Permanent link">&para;</a></h1>
+<p class="page-meta">71 papers · page 2 of 3 · <a href="../../../bib/air-quality-composition.bib" download><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> BibTeX for this topic</a></p>
+</div>
+<div class="grid cards">
+<ul>
+<li>
+<h4 id="2512.02268">Spatiotemporal Pyramid Flow Matching for Climate Emulation<a class="headerlink" href="#2512.02268" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Jeremy Andrew Irvin, Jiaqi Han, Zikui Wang, Abdulaziz Alharbi, Yufei Zhao et al.</em> · Dec 2025</p>
+<p><span class="abstract-snippet" id="snip-2512.02268">Generative models have the potential to transform the way we emulate Earth's changing climate. Previous generative approaches rely on weather-scale autoregression for climate emulation, but this is...</span><span class="abstract-full" id="full-2512.02268" hidden>Generative models have the potential to transform the way we emulate Earth's changing climate. Previous generative approaches rely on weather-scale autoregression for climate emulation, but this is inherently slow for long climate horizons and has yet to demonstrate stable rollouts under nonstationary forcings. Here, we introduce Spatiotemporal Pyramid Flows (SPF), a new class of flow matching approaches that model data hierarchically across spatial and temporal scales. Inspired by cascaded video models, SPF partitions the generative trajectory into a spatiotemporal pyramid, progressively increasing spatial resolution to reduce computation and coupling each stage with an associated timescale to enable direct sampling at any temporal level in the pyramid. This design, together with conditioning each stage on prescribed physical forcings (e.g., greenhouse gases or aerosols), enables efficient, parallel climate emulation at multiple timescales. On ClimateBench, SPF outperforms strong flow matching baselines and pre-trained models at yearly and monthly timescales while offering fast sampling, especially at coarser temporal levels. To scale SPF, we curate ClimateSuite, the largest collection of Earth system simulations to date, comprising over 33,000 simulation-years across ten climate models and the first dataset to include simulations of climate interventions. We find that the scaled SPF model demonstrates good generalization to held-out scenarios across climate models. Together, SPF and ClimateSuite provide a foundation for accurate, efficient, probabilistic climate emulation across temporal scales and realistic future scenarios. Data and code is publicly available at https://github.com/stanfordmlgroup/spf .</span> <span class="abstract-toggle" data-id="2512.02268">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2512.02268v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2512.02268v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a href="https://github.com/stanfordmlgroup/spf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg></span> Code</a> · <a class="bibtex-link" href="../../../bibtex/2512.02268.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion &amp; flow matching</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a></p>
+</li>
+<li>
+<h4 id="2511.14059">Reconstructing the Aerosol State from Partial Observations with Generative Modeling<a class="headerlink" href="#2511.14059" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>E. Saleh, S. Ghaffari, J. H. Curtis, L. Patel, P. A. Bosler, N. Riemer, M. West</em> · Nov 2025</p>
+<p><span class="abstract-snippet" id="snip-2511.14059">Key aerosol properties that shape climate -- such as CCN activity, scattering and absorption, and ice nucleation efficiency -- are difficult to infer from measurements that typically capture only a...</span><span class="abstract-full" id="full-2511.14059" hidden>Key aerosol properties that shape climate -- such as CCN activity, scattering and absorption, and ice nucleation efficiency -- are difficult to infer from measurements that typically capture only a part of the aerosol state. We develop a conditional generative framework that maps a label (a vector of partial observations) to an ensemble of plausible aerosol states and propagates these to diagnostics, yielding mean estimates with confidence intervals. Using synthetic data, we evaluate two label configurations: a low-dimensional setup with limited number distribution and bulk-composition information, and a high-dimensional setup including complete number and total mass distributions plus species bulk masses. Generated samples maintain strong label compliance, and higher-dimensional labels markedly reduce variability. CCN activity and volume scattering are well constrained even under the low-dimensional setup, whereas dust- and BC-sensitive diagnostics (frozen fraction, absorption) benefit substantially from the additional information in the high-dimensional case. This framework clarifies which observational inputs most effectively constrain different diagnostics and demonstrates how generative machine learning can provide uncertainty-aware estimates from incomplete aerosol information.</span> <span class="abstract-toggle" data-id="2511.14059">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2511.14059v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2511.14059v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2511.14059.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2510.23663">AI-Driven Carbon Monitoring: Transformer-Based Reconstruction of Atmospheric CO2 in Canadian Poultry Regions<a class="headerlink" href="#2510.23663" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Padmanabhan Jagannathan Prajesh, Kaliaperumal Ragunath, Miriam Gordon, Bruce Rathgeber et al.</em> · Oct 2025</p>
+<p><span class="abstract-snippet" id="snip-2510.23663">Accurate mapping of column-averaged CO2 (XCO2) over agricultural landscapes is essential for guiding emission mitigation strategies. We present a Spatiotemporal Vision Transformer with Wavelets...</span><span class="abstract-full" id="full-2510.23663" hidden>Accurate mapping of column-averaged CO2 (XCO2) over agricultural landscapes is essential for guiding emission mitigation strategies. We present a Spatiotemporal Vision Transformer with Wavelets (ST-ViWT) framework that reconstructs continuous, uncertainty-quantified XCO2 fields from OCO-2 across southern Canada, emphasizing poultry-intensive regions. The model fuses wavelet time-frequency representations with transformer attention over meteorology, vegetation indices, topography, and land cover. On 2024 OCO-2 data, ST-ViWT attains R2 = 0.984 and RMSE = 0.468 ppm; 92.3 percent of gap-filled predictions lie within +/-1 ppm. Independent validation with TCCON shows robust generalization (bias = -0.14 ppm; r = 0.928), including faithful reproduction of the late-summer drawdown. Spatial analysis across 14 poultry regions reveals a moderate positive association between facility density and XCO2 (r = 0.43); high-density areas exhibit larger seasonal amplitudes (9.57 ppm) and enhanced summer variability. Compared with conventional interpolation and standard machine-learning baselines, ST-ViWT yields seamless 0.25 degree CO2 surfaces with explicit uncertainties, enabling year-round coverage despite sparse observations. The approach supports integration of satellite constraints with national inventories and precision livestock platforms to benchmark emissions, refine region-specific factors, and verify interventions. Importantly, transformer-based Earth observation enables scalable, transparent, spatially explicit carbon accounting, hotspot prioritization, and policy-relevant mitigation assessment.</span> <span class="abstract-toggle" data-id="2510.23663">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2510.23663v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2510.23663v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2510.23663.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a></p>
+</li>
+<li>
+<h4 id="2510.21123">Navigating Through Turbulence: Blueprint for the Next Generation of Weather-Climate Scientists<a class="headerlink" href="#2510.21123" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Gan Zhang, Zhuo Wang, Kevin A Reed, Lucas M Harris</em> · Oct 2025</p>
+<p><span class="abstract-snippet" id="snip-2510.21123">The field of weather and climate science is at a pivotal moment, defined by the dual forces of unprecedented technological advancement. While a shifting research and employment landscape has created...</span><span class="abstract-full" id="full-2510.21123" hidden>The field of weather and climate science is at a pivotal moment, defined by the dual forces of unprecedented technological advancement. While a shifting research and employment landscape has created career uncertainty, leading to a significant migration of talent toward the private sector, it has simultaneously spurred an expansion of the ecosystem through the emergence of new computational tools and the growing role of industry innovators and stakeholders. This perspective paper argues that this new, expanded ecosystem presents extraordinary opportunities for students and early-career professionals. We outline the emerging scientific frontiers powered by high-resolution simulations and artificial intelligence, suggest a practical path for navigating a more fluid career landscape, and propose how education and training must evolve to equip the next generation for success.</span> <span class="abstract-toggle" data-id="2510.21123">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2510.21123v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2510.21123v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2510.21123.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2510.17935">Discovering How Ice Crystals Grow Using Neural ODE's and Symbolic Regression<a class="headerlink" href="#2510.17935" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Kara D. Lamb, Jerry Y. Harrington, Alfred M. Moyle, Gwenore F. Pokrifka, Benjamin W. Clouser et al.</em> · Oct 2025</p>
+<p><span class="abstract-snippet" id="snip-2510.17935">Depositional ice growth is an important process for cirrus cloud evolution, but the physics of ice growth in atmospheric conditions is still poorly understood. One major challenge in constraining...</span><span class="abstract-full" id="full-2510.17935" hidden>Depositional ice growth is an important process for cirrus cloud evolution, but the physics of ice growth in atmospheric conditions is still poorly understood. One major challenge in constraining depositional ice growth models against observations is that the early growth rates of ice crystals cannot be directly observed, and proposed models require assumptions about the functional dependence of physical processes that are still highly uncertain. Neural ordinary differential equations (NODE's) are a recently developed machine learning method that can be used to learn the derivative of an unknown function. Here we use NODE's to learn the functional dependence of unknown physics in the depositional ice growth model by optimizing against experimental measurements of ice crystal mass. We find a functional form for the depositional ice growth model that best fits 290 mass time series of ice crystals grown in a levitation diffusion chamber. We use symbolic regression to derive an equation for the function learned by the NODE model, which includes additional terms proportional to ice crystal mass in the capacitance growth model. We evaluate this functional form against experimental data sets from the AIDA Aerosol and Cloud Chamber, finding that our new proposed model for depositional ice growth accurately reproduces experimental results in the early stages of ice crystal growth.</span> <span class="abstract-toggle" data-id="2510.17935">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2510.17935v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2510.17935v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2510.17935.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2510.10361">Generative Modeling of Aerosol State Representations<a class="headerlink" href="#2510.10361" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Ehsan Saleh, Saba Ghaffari, Jeffrey H. Curtis, Lekha Patel, Peter A. Bosler, Nicole Riemer et al.</em> · Oct 2025</p>
+<p><span class="abstract-snippet" id="snip-2510.10361">Aerosol-cloud--radiation interactions remain among the most uncertain components of the Earth's climate system, in partdue to the high dimensionality of aerosol state representations and the...</span><span class="abstract-full" id="full-2510.10361" hidden>Aerosol-cloud--radiation interactions remain among the most uncertain components of the Earth's climate system, in partdue to the high dimensionality of aerosol state representations and the difficulty of obtaining complete <em>in situ</em> measurements. Addressing these challenges requires methods that distill complex aerosol properties into compact yet physically meaningful forms. Generative autoencoder models provide such a pathway. We present a framework for learning deep variational autoencoder (VAE) models of speciated mass and number concentration distributions, which capture detailed aerosol size-composition characteristics. By compressing hundreds of original dimensions into ten latent variables, the approach enables efficient storage and processing while preserving the fidelity of key diagnostics, including cloud condensation nuclei (CCN) spectra, optical scattering and absorption coefficients, and ice nucleation properties. Results show that CCN spectra are easiest to reconstruct accurately, optical properties are moderately difficult, and ice nucleation properties are the most challenging. To improve performance, we introduce a preprocessing optimization strategy that avoids repeated retraining and yields latent representations resilient to high-magnitude Gaussian noise, boosting accuracy for CCN spectra, optical coefficients, and frozen fraction spectra. Finally, we propose a novel realism metric -- based on the sliced Wasserstein distance between generated samples and a held-out test set -- for optimizing the KL divergence weight in VAEs. Together, these contributions enable compact, robust, and physically meaningful representations of aerosol states for large-scale climate applications.</span> <span class="abstract-toggle" data-id="2510.10361">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2510.10361v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2510.10361v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2510.10361.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2510.06140">Zeeman: A Deep Learning Regional Atmospheric Chemistry Transport Model<a class="headerlink" href="#2510.06140" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Mijie Pang, Jianbing Jin, Arjo Segers, Hai Xiang Lin, Guoqiang Wang, Hong Liao, Wei Han</em> · Oct 2025</p>
+<p><span class="abstract-snippet" id="snip-2510.06140">Atmospheric chemistry encapsulates the emission of various pollutants, the complex chemistry reactions, and the meteorology dominant transport, which form a dynamic system that governs air quality....</span><span class="abstract-full" id="full-2510.06140" hidden>Atmospheric chemistry encapsulates the emission of various pollutants, the complex chemistry reactions, and the meteorology dominant transport, which form a dynamic system that governs air quality. While deep learning (DL) models have shown promise in capturing intricate patterns for forecasting individual atmospheric component - such as PM2.5 and ozone - the critical interactions among multiple pollutants and the combined influence of emissions and meteorology are often overlook. This study introduces an advanced DL-based atmospheric chemistry transport model Zeeman for multi-component atmospheric chemistry simulation. Leveraging an attention mechanism, our model effectively captures the nuanced relationships among these constituents. Performance metrics demonstrate that our approach rivals numerical models, offering an efficient solution for atmospheric chemistry. In the future, this model could be further integrated with data assimilation techniques to facilitate efficient and accurate atmospheric emission estimation and concentration forecast.</span> <span class="abstract-toggle" data-id="2510.06140">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2510.06140v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2510.06140v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2510.06140.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2510.05751">Uncertainty assessment in satellite-based greenhouse gas emissions estimates using emulated atmospheric transport<a class="headerlink" href="#2510.05751" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Jeffrey N. Clark, Elena Fillola, Nawid Keshtmand, Raul Santos-Rodriguez, Matthew Rigby</em> · Oct 2025</p>
+<p><span class="abstract-snippet" id="snip-2510.05751">Monitoring greenhouse gas emissions and evaluating national inventories require efficient, scalable, and reliable inference methods. Top-down approaches, combined with recent advances in satellite...</span><span class="abstract-full" id="full-2510.05751" hidden>Monitoring greenhouse gas emissions and evaluating national inventories require efficient, scalable, and reliable inference methods. Top-down approaches, combined with recent advances in satellite observations, provide new opportunities to evaluate emissions at continental and global scales. However, transport models used in these methods remain a key source of uncertainty: they are computationally expensive to run at scale, and their uncertainty is difficult to characterise. Artificial intelligence offers a dual opportunity to accelerate transport simulations and to quantify their associated uncertainty.   We present an ensemble-based pipeline for estimating atmospheric transport "footprints", greenhouse gas mole fraction measurements, and their uncertainties using a graph neural network emulator of a Lagrangian Particle Dispersion Model (LPDM). The approach is demonstrated with GOSAT (Greenhouse Gases Observing Satellite) observations for Brazil in 2016. The emulator achieved a ~1000x speed-up over the NAME LPDM, while reproducing large-scale footprint structures. Ensembles were calculated to quantify absolute and relative uncertainty, revealing spatial correlations with prediction error. The results show that ensemble spread highlights low-confidence spatial and temporal predictions for both atmospheric transport footprints and methane mole fractions.   While demonstrated here for an LPDM emulator, the approach could be applied more generally to atmospheric transport models, supporting uncertainty-aware greenhouse gas inversion systems and improving the robustness of satellite-based emissions monitoring. With further development, ensemble-based emulators could also help explore systematic LPDM errors, offering a computationally efficient pathway towards a more comprehensive uncertainty budget in greenhouse gas flux estimates.</span> <span class="abstract-toggle" data-id="2510.05751">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2510.05751v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2510.05751v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2510.05751.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a></p>
+</li>
+<li>
+<h4 id="2509.11728">Fast and Interpretable Machine Learning Modelling of Atmospheric Molecular Clusters<a class="headerlink" href="#2509.11728" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Lauri Seppäläinen, Jakub Kubečka, Jonas Elm, Kai Puolamäki</em> · Sep 2025</p>
+<p><span class="abstract-snippet" id="snip-2509.11728">Understanding how atmospheric molecular clusters form and grow is key to resolving one of the biggest uncertainties in climate modelling: the formation of new aerosol particles. While quantum...</span><span class="abstract-full" id="full-2509.11728" hidden>Understanding how atmospheric molecular clusters form and grow is key to resolving one of the biggest uncertainties in climate modelling: the formation of new aerosol particles. While quantum chemistry offers accurate insights into these early-stage clusters, its steep computational costs limit large-scale exploration. In this work, we present a fast, interpretable, and surprisingly powerful alternative: <span class="arithmatex">\(k\)</span>-nearest neighbour (<span class="arithmatex">\(k\)</span>-NN) regression model. By leveraging chemically informed distance metrics, including a kernel-induced metric and one learned via metric learning for kernel regression (MLKR), we show that simple <span class="arithmatex">\(k\)</span>-NN models can rival more complex kernel ridge regression (KRR) models in accuracy, while reducing computational time by orders of magnitude. We perform this comparison with the well-established Faber-Christensen-Huang-Lilienfeld (FCHL19) molecular descriptor, but other descriptors (e.g., FCHL18, MBDF, and CM) can be shown to have similar performance. Applied to both simple organic molecules in the QM9 benchmark set and large datasets of atmospheric molecular clusters (sulphuric acid-water and sulphuric-multibase -base systems), our <span class="arithmatex">\(k\)</span>-NN models achieve near-chemical accuracy, scale seamlessly to datasets with over 250,000 entries, and even appears to extrapolate to larger unseen clusters with minimal error (often nearing 1 kcal/mol). With built-in interpretability and straightforward uncertainty estimation, this work positions <span class="arithmatex">\(k\)</span>-NN as a potent tool for accelerating discovery in atmospheric chemistry and beyond.</span> <span class="abstract-toggle" data-id="2509.11728">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2509.11728v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2509.11728v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a href="https://github.com/edahelsinki/JK-kNN"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg></span> Code</a> · <a class="bibtex-link" href="../../../bibtex/2509.11728.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a></p>
+</li>
+<li>
+<h4 id="2507.10609">A Feed-Forward Artificial Intelligence Pipeline for Sustainable Desalination under Climate Uncertainties: UAE Insights<a class="headerlink" href="#2507.10609" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Obumneme Nwafor, Chioma Nwafor, Amro Zakaria, Nkechi Nwankwo</em> · Jul 2025</p>
+<p><span class="abstract-snippet" id="snip-2507.10609">The United Arab Emirates (UAE) relies heavily on seawater desalination to meet over 90% of its drinking water needs. Desalination processes are highly energy intensive and account for approximately...</span><span class="abstract-full" id="full-2507.10609" hidden>The United Arab Emirates (UAE) relies heavily on seawater desalination to meet over 90% of its drinking water needs. Desalination processes are highly energy intensive and account for approximately 15% of the UAE's electricity consumption, contributing to over 22% of the country's energy-related CO2 emissions. Moreover, these processes face significant sustainability challenges in the face of climate uncertainties such as rising seawater temperatures, salinity, and aerosol optical depth (AOD). AOD greatly affects the operational and economic performance of solar-powered desalination systems through photovoltaic soiling, membrane fouling, and water turbidity cycles.   This study proposes a novel pipelined two-stage predictive modelling architecture: the first stage forecasts AOD using satellite-derived time series and meteorological data; the second stage uses the predicted AOD and other meteorological factors to predict desalination performance efficiency losses. The framework achieved 98% accuracy, and SHAP (SHapley Additive exPlanations) was used to reveal key drivers of system degradation. Furthermore, this study proposes a dust-aware rule-based control logic for desalination systems based on predicted values of AOD and solar efficiency. This control logic is used to adjust the desalination plant feed water pressure, adapt maintenance scheduling, and regulate energy source switching.   To enhance the practical utility of the research findings, the predictive models and rule-based controls were packaged into an interactive dashboard for scenario and predictive analytics. This provides a management decision-support system for climate-adaptive planning.</span> <span class="abstract-toggle" data-id="2507.10609">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2507.10609v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2507.10609v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2507.10609.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a></p>
+</li>
+<li>
+<h4 id="2506.18018">A deep-learning model for predicting daily PM2.5 concentration in response to emission reduction<a class="headerlink" href="#2506.18018" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Shigan Liu, Guannan Geng, Yanfei Xiang, Hejun Hu, Xiaodong Liu, Xiaomeng Huang, Qiang Zhang</em> · Jun 2025</p>
+<p><span class="abstract-snippet" id="snip-2506.18018">Air pollution remains a leading global health threat, with fine particulate matter (PM2.5) contributing to millions of premature deaths annually. Chemical transport models (CTMs) are essential tools...</span><span class="abstract-full" id="full-2506.18018" hidden>Air pollution remains a leading global health threat, with fine particulate matter (PM2.5) contributing to millions of premature deaths annually. Chemical transport models (CTMs) are essential tools for evaluating how emission controls improve air quality and save lives, but they are computationally intensive. Reduced form models accelerate simulations but sacrifice spatial-temporal granularity, accuracy, and flexibility. Here we present CleanAir, a deep-learning-based model developed as an efficient alternative to CTMs in simulating daily PM2.5 and its chemical compositions in response to precursor emission reductions at 36 km resolution, which could predict PM2.5 concentration for a full year within 10 seconds on a single GPU, a speed five orders of magnitude faster. Built on a Residual Symmetric 3D U-Net architecture and trained on more than 2,400 emission reduction scenarios generated by a well-validated Community Multiscale Air Quality (CMAQ) model, CleanAir generalizes well across unseen meteorological years and emission patterns. It produces results comparable to CMAQ in both absolute concentrations and emission-induced changes, enabling efficient, full-coverage simulations across short-term interventions and long-term planning horizons. This advance empowers researchers and policymakers to rapidly evaluate a wide range of air quality strategies and assess the associated health impacts, thereby supporting more responsive and informed environmental decision-making.</span> <span class="abstract-toggle" data-id="2506.18018">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2506.18018v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2506.18018v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2506.18018.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a></p>
+</li>
+<li>
+<h4 id="2506.07321">Capability demonstration of a JEDI-based system for TEMPO assimilation: system description and evaluation<a class="headerlink" href="#2506.07321" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Maryam Abdi-Oskouei, Jérôme Barré</em> · Jun 2025</p>
+<p><span class="abstract-snippet" id="snip-2506.07321">The launch of the Tropospheric Emissions: Monitoring of Pollution (TEMPO) mission in 2023 marked a new era in air quality monitoring by providing high-frequency, geostationary observations of column...</span><span class="abstract-full" id="full-2506.07321" hidden>The launch of the Tropospheric Emissions: Monitoring of Pollution (TEMPO) mission in 2023 marked a new era in air quality monitoring by providing high-frequency, geostationary observations of column NO2 across North America. In this study, we present the first implementation of a TEMPO NO2 data assimilation system using the Joint Effort for Data assimilation Integration (JEDI) framework. Leveraging a four-dimensional ensemble variational (4DEnVar) approach and an Ensemble of Data Assimilations (EDA), we demonstrate a novel capability to assimilate hourly NO2 retrievals from TEMPO alongside polar-orbiting TROPOMI data into NASA's GEOS Composition Forecast (GEOS-CF) model. The system is evaluated over the CONUS region for August 2023, using a suite of independent measurements including Pandora spectrometers, AirNow surface stations, and aircraft-based observations from AEROMMA and STAQS field campaigns. Results show that the assimilation system successfully integrates geostationary NO2 observations, improves model performance in the column, and captures diurnal variability. However, assimilation also leads to systematic reductions in surface NO2 levels, improving agreement with some datasets (e.g., Pandora, AEROMMA) but degrading comparisons with others (e.g., AirNow). These findings highlight the importance of joint evaluation across platforms and motivate further development of dual-concentration emission assimilation schemes. While the system imposes high computational costs, primarily from the forecast model, ongoing efforts to integrate AI-based model emulators offer a promising path toward scalable, real-time assimilation of geostationary atmospheric composition data.</span> <span class="abstract-toggle" data-id="2506.07321">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2506.07321v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2506.07321v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2506.07321.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a></p>
+</li>
+<li>
+<h4 id="2505.14731">Effective climate policies for major emission reductions of ozone precursors: Global evidence from two decades<a class="headerlink" href="#2505.14731" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Ningning Yao, Huan Xi, Lang Chen, Zhe Song, Jian Li, Yulei Chen, Baocai Guo, Yuanhang Zhang et al.</em> · May 2025</p>
+<p><span class="abstract-snippet" id="snip-2505.14731">Despite policymakers deploying various tools to mitigate emissions of ozone (O3) precursors, such as nitrogen oxides (NOx), carbon monoxide (CO), and volatile organic compounds (VOCs), the...</span><span class="abstract-full" id="full-2505.14731" hidden>Despite policymakers deploying various tools to mitigate emissions of ozone (O<sub>3</sub>) precursors, such as nitrogen oxides (NO<sub>x</sub>), carbon monoxide (CO), and volatile organic compounds (VOCs), the effectiveness of policy combinations remains uncertain. We employ an integrated framework that couples structural break detection with machine learning to pinpoint effective interventions across the building, electricity, industrial, and transport sectors, identifying treatment effects as abrupt changes without prior assumptions about policy treatment assignment and timing. Applied to two decades of global O<sub>3</sub> precursor emissions data, we detect 78, 77, and 78 structural breaks for NO<sub>x</sub>, CO, and VOCs, corresponding to cumulative emission reductions of 0.96-0.97 Gt, 2.84-2.88 Gt, and 0.47-0.48 Gt, respectively. Sector-level analysis shows that electricity sector structural policies cut NO<sub>x</sub> by up to 32.4%, while in buildings, developed countries combined adoption subsidies with carbon taxes to achieve 42.7% CO reductions and developing countries used financing plus fuel taxes to secure 52.3%. VOCs abatement peaked at 38.5% when fossil-fuel subsidy reforms were paired with financial incentives. Finally, hybrid strategies merging non-price measures (subsidies, bans, mandates) with pricing instruments delivered up to an additional 10% co-benefit. These findings guide the sequencing and complementarity of context-specific policy portfolios for O<sub>3</sub> precursor mitigation.</span> <span class="abstract-toggle" data-id="2505.14731">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2505.14731v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2505.14731v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2505.14731.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2505.10556">An AI-driven framework for the prediction of personalised health response to air pollution<a class="headerlink" href="#2505.10556" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Nazanin Zounemat-Kermani, Sadjad Naderi, Claire H. Dilliway, Claire E. Heaney, Shrreya Behll et al.</em> · May 2025</p>
+<p><span class="abstract-snippet" id="snip-2505.10556">Air pollution is a growing global health threat, exacerbated by climate change and linked to cardiovascular and respiratory diseases. While personal sensing devices enable real-time physiological...</span><span class="abstract-full" id="full-2505.10556" hidden>Air pollution is a growing global health threat, exacerbated by climate change and linked to cardiovascular and respiratory diseases. While personal sensing devices enable real-time physiological monitoring, their integration with environmental data for individualised health prediction remains underdeveloped. Here, we present a modular, cloud-based framework that predicts personalised physiological responses to pollution by combining wearable-derived data with real-time environmental exposures. At its core is an Adversarial Autoencoder (AAE), initially trained on high-resolution pollution-health data from the INHALE study and fine-tuned using smartwatch data via transfer learning to capture individual-specific patterns. Consistent with changes in pollution levels commonly observed in the real-world, simulated pollution spikes (+100%) revealed modest but measurable increases in vital signs (e.g., +2.5% heart rate, +3.5% breathing rate). To assess clinical relevance, we analysed U-BIOPRED data and found that individuals with such subclinical vital sign elevations had higher asthma burden scores or elevated Fractional Exhaled Nitric Oxide (FeNO), supporting the physiological validity of these AI-predicted responses. This integrative approach demonstrates the feasibility of anticipatory, personalised health modelling in response to environmental challenges, offering a scalable and secure infrastructure for AI-driven environmental health monitoring.</span> <span class="abstract-toggle" data-id="2505.10556">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2505.10556v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2505.10556v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2505.10556.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2504.19764">BiXiao: An AI-Based Atmospheric Environment Forecasting Model Using Discontinuous Grids<a class="headerlink" href="#2504.19764" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Shengxuan Ji, Yawei Qu, Cheng Yuan, Tijian Wang, Bing Liu, Lili Zhu, Huihui Zheng, Zhenfeng Qiu et al.</em> · Apr 2025</p>
+<p><span class="abstract-snippet" id="snip-2504.19764">Currently, the technique of numerical model-based atmospheric environment forecasting has becoming mature, yet traditional numerical prediction methods struggle to balance computational costs and...</span><span class="abstract-full" id="full-2504.19764" hidden>Currently, the technique of numerical model-based atmospheric environment forecasting has becoming mature, yet traditional numerical prediction methods struggle to balance computational costs and forecast accuracy, facing developmental bottlenecks. Recent advancements in artificial intelligence (AI) offer new solutions for weather prediction. However, most existing AI models do not have atmospheric environmental forecasting capabilities, while those with related functionalities remain constrained by grid-dependent data requirements, thus unable to deliver operationally feasible city-scale atmospheric environment forecasts. Here we introduce 'BiXiao', a novel discontinuous-grid AI model for atmospheric environment forecasting. 'BiXiao' couples meteorological and environmental sub-models to generate predictions using site-specific observational data, completing 72-hour forecasts for six major pollutants across all key cities in the Beijing-Tianjin-Hebei region within 30 seconds. In the comparative experiments, the 'BiXiao' model outperforms mainstream numerical models in both computational efficiency and forecast accuracy. It surpasses CAMS with respect of operational 72-hour forecasting and exceeds WRF-Chem's performance in heavy pollution case predictions. The 'BiXiao' shows potential for nationwide application, providing innovative technical support and new perspectives for China's atmospheric environment forecasting operations.</span> <span class="abstract-toggle" data-id="2504.19764">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2504.19764v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2504.19764v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2504.19764.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2504.17492">Prototype-enhanced prediction in graph neural networks for climate applications<a class="headerlink" href="#2504.17492" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Nawid Keshtmand, Elena Fillola, Jeffrey Nicholas Clark, Raul Santos-Rodriguez, Matthew Rigby</em> · Apr 2025</p>
+<p><span class="abstract-snippet" id="snip-2504.17492">Data-driven emulators are increasingly being used to learn and emulate physics-based simulations, reducing computational expense and run time. Here, we present a structured way to improve the quality...</span><span class="abstract-full" id="full-2504.17492" hidden>Data-driven emulators are increasingly being used to learn and emulate physics-based simulations, reducing computational expense and run time. Here, we present a structured way to improve the quality of these high-dimensional emulated outputs, through the use of prototypes: an approximation of the emulator's output passed as an input, which informs the model and leads to better predictions. We demonstrate our approach to emulate atmospheric dispersion, key for greenhouse gas emissions monitoring, by comparing a baseline model to models trained using prototypes as an additional input. The prototype models achieve better performance, even with few prototypes and even if they are chosen at random, but we show that choosing the prototypes through data-driven methods (k-means) can lead to almost 10% increased performance in some metrics.</span> <span class="abstract-toggle" data-id="2504.17492">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2504.17492v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2504.17492v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2504.17492.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a></p>
+</li>
+<li>
+<h4 id="2503.18912">Causal Links Between Anthropogenic Emissions and Air Pollution Dynamics in Delhi<a class="headerlink" href="#2503.18912" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Sourish Das, Sudeep Shukla, Alka Yadav, Anirban Chakraborti</em> · Mar 2025</p>
+<p><span class="abstract-snippet" id="snip-2503.18912">Air pollution poses significant health and environmental challenges, particularly in rapidly urbanizing regions. Delhi-National Capital Region experiences air pollution episodes due to complex...</span><span class="abstract-full" id="full-2503.18912" hidden>Air pollution poses significant health and environmental challenges, particularly in rapidly urbanizing regions. Delhi-National Capital Region experiences air pollution episodes due to complex interactions between anthropogenic emissions and meteorological conditions. Understanding the causal drivers of key pollutants such as <span class="arithmatex">\(PM_{2.5}\)</span> and ground <span class="arithmatex">\(O_3\)</span> is crucial for developing effective mitigation strategies. This study investigates the causal links of anthropogenic emissions on <span class="arithmatex">\(PM_{2.5}\)</span> and <span class="arithmatex">\(O_3\)</span> concentrations using predictive modeling and causal inference techniques. Integrating high-resolution air quality data from Jan 2018 to Aug 2023 across 32 monitoring stations, we develop predictive regression models that incorporate meteorological variables (temperature and relative humidity), pollutant concentrations (<span class="arithmatex">\(NO_2, SO_2, CO\)</span>), and seasonal harmonic components to capture both diurnal and annual cycles. Here, we show that reductions in anthropogenic emissions lead to significant decreases in <span class="arithmatex">\(PM_{2.5}\)</span> levels, whereas their effect on <span class="arithmatex">\(O_3\)</span> remains marginal and statistically insignificant. To address spatial heterogeneity, we employ Gaussian Process modeling. Further, we use Granger causality analysis and counterfactual simulation to establish direct causal links. Validation using real-world data from the COVID-19 lockdown confirms that reduced emissions led to a substantial drop in <span class="arithmatex">\(PM_{2.5}\)</span> but only a slight, insignificant change in <span class="arithmatex">\(O_3\)</span>. The findings highlight the necessity of targeted emission reduction policies while emphasizing the need for integrated strategies addressing both particulate and ozone pollution. These insights are crucial for policymakers designing air pollution interventions in other megacities, and offer a scalable methodology for tackling complex urban air pollution through data-driven decision-making.</span> <span class="abstract-toggle" data-id="2503.18912">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2503.18912v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2503.18912v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2503.18912.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a></p>
+</li>
+<li>
+<h4 id="2503.18405">Offline Meteorology-Pollution Coupling Global Air Pollution Forecasting Model with Bilinear Pooling<a class="headerlink" href="#2503.18405" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Xu Fan, Yuetan Lin, Bing Gong, Hao Li</em> · Mar 2025</p>
+<p><span class="abstract-snippet" id="snip-2503.18405">Air pollution has become a major threat to human health, making accurate forecasting crucial for pollution control. Traditional physics-based models forecast global air pollution by coupling...</span><span class="abstract-full" id="full-2503.18405" hidden>Air pollution has become a major threat to human health, making accurate forecasting crucial for pollution control. Traditional physics-based models forecast global air pollution by coupling meteorology and pollution processes, using either online or offline methods depending on whether fully integrated with meteorological models and run simultaneously. However, the high computational demands of both methods severely limit real-time prediction efficiency. Existing deep learning (DL) solutions employ online coupling strategies for global air pollution forecasting, which finetune pollution forecasting based on pretrained atmospheric models, requiring substantial training resources. This study pioneers a DL-based offline coupling framework that utilizes bilinear pooling to achieve offline coupling between meteorological fields and pollutants. The proposed model requires only 13% of the parameters of DL-based online coupling models while achieving competitive performance. Compared with the state-of-the-art global air pollution forecasting model CAMS, our approach demonstrates superiority in 63% variables across all forecast time steps and 85% variables in predictions exceeding 48 hours. This work pioneers experimental validation of the effectiveness of meteorological fields in DL-based global air pollution forecasting, demonstrating that offline coupling meteorological fields with pollutants can achieve a 15% relative reduction in RMSE across all pollution variables. The research establishes a new paradigm for real-time global air pollution warning systems and delivers critical technical support for developing more efficient and comprehensive AI-powered global atmospheric forecasting frameworks.</span> <span class="abstract-toggle" data-id="2503.18405">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2503.18405v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2503.18405v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2503.18405.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2503.12367">Integrating mobile and fixed monitoring data for high-resolution PM2.5 mapping using machine learning<a class="headerlink" href="#2503.12367" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Rui Xu, Dawen Yao, Yuzhuang Pian, Ruhui Cao, Yixin Fu, Xinru Yang, Ting Gan, Yonghong Liu</em> · Mar 2025</p>
+<p><span class="abstract-snippet" id="snip-2503.12367">Constructing high resolution air pollution maps at lower cost is crucial for sustainable city management and public health risk assessment. However, traditional fixed-site monitoring lacks spatial...</span><span class="abstract-full" id="full-2503.12367" hidden>Constructing high resolution air pollution maps at lower cost is crucial for sustainable city management and public health risk assessment. However, traditional fixed-site monitoring lacks spatial coverage, while mobile low-cost sensors exhibit significant data instability. This study integrates PM2.5 data from 320 taxi-mounted mobile low-cost sensors and 52 fixed monitoring stations to address these limitations. By employing the machine learning methods, an appropriate mapping relationship was established between fixed and mobile monitoring concentration. The resulting pollution maps achieved 500-meter spatial and 5-minute temporal resolutions, showing close alignment with fixed monitoring data (+4.35% bias) but significant deviation from raw mobile data (-31.77%). The fused map exhibits the fine-scale spatial variability also observed in the mobile pollution map, while showing the stable temporal variability closer to that of the fixed pollution map (fixed: 1.12 plus or minus 0.73%, mobile: 3.15 plus or minus 2.44%, mapped: 1.01 plus or minus 0.65%). These findings demonstrate the potential of large-scale mobile low-cost sensor networks for high-resolution air quality mapping, supporting targeted urban environmental governance and health risk mitigation.</span> <span class="abstract-toggle" data-id="2503.12367">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2503.12367v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2503.12367v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2503.12367.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a></p>
+</li>
+<li>
+<h4 id="2503.06777">Agile Climate-Sensor Design and Calibration Algorithms Using Machine Learning: Experiments From Cape Point<a class="headerlink" href="#2503.06777" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Travis Barrett, Amit Kumar Mishra</em> · Mar 2025</p>
+<p><span class="abstract-snippet" id="snip-2503.06777">In this paper, we describe the design of an inexpensive and agile climate sensor system which can be repurposed easily to measure various pollutants. We also propose the use of machine learning...</span><span class="abstract-full" id="full-2503.06777" hidden>In this paper, we describe the design of an inexpensive and agile climate sensor system which can be repurposed easily to measure various pollutants. We also propose the use of machine learning regression methods to calibrate CO2 data from this cost-effective sensing platform to a reference sensor at the South African Weather Service's Cape Point measurement facility. We show the performance of these methods and found that Random Forest Regression was the best in this scenario. This shows that these machine learning methods can be used to improve the performance of cost-effective sensor platforms and possibly extend the time between manual calibration of sensor networks.</span> <span class="abstract-toggle" data-id="2503.06777">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2503.06777v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2503.06777v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2503.06777.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a></p>
+</li>
+<li>
+<h4 id="2502.11941">Deep Spatio-Temporal Neural Network for Air Quality Reanalysis<a class="headerlink" href="#2502.11941" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Ammar Kheder, Benjamin Foreback, Lili Wang, Zhi-Song Liu, Michael Boy</em> · Feb 2025</p>
+<p><span class="abstract-snippet" id="snip-2502.11941">Air quality prediction is key to mitigating health impacts and guiding decisions, yet existing models tend to focus on temporal trends while overlooking spatial generalization. We propose AQ-Net, a...</span><span class="abstract-full" id="full-2502.11941" hidden>Air quality prediction is key to mitigating health impacts and guiding decisions, yet existing models tend to focus on temporal trends while overlooking spatial generalization. We propose AQ-Net, a spatiotemporal reanalysis model for both observed and unobserved stations in the near future. AQ-Net utilizes the LSTM and multi-head attention for the temporal regression. We also propose a cyclic encoding technique to ensure continuous time representation. To learn fine-grained spatial air quality estimation, we incorporate AQ-Net with the neural kNN to explore feature-based interpolation, such that we can fill the spatial gaps given coarse observation stations. To demonstrate the efficiency of our model for spatiotemporal reanalysis, we use data from 2013-2017 collected in northern China for PM2.5 analysis. Extensive experiments show that AQ-Net excels in air quality reanalysis, highlighting the potential of hybrid spatio-temporal models to better capture environmental dynamics, especially in urban areas where both spatial and temporal variability are critical.</span> <span class="abstract-toggle" data-id="2502.11941">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2502.11941v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2502.11941v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2502.11941.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a></p>
+</li>
+<li>
+<h4 id="2502.08460">Discontinuous stochastic forcing in Greenland ice core data<a class="headerlink" href="#2502.08460" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Keno Riechers, Andreas Morr, Klaus Lehnertz, Pedro G. Lind, Niklas Boers, Dirk Witthaut et al.</em> · Feb 2025</p>
+<p><span class="abstract-snippet" id="snip-2502.08460">Paleoclimate proxy records from Greenland ice cores, archiving e.g. <span class="arithmatex">\(δ^{18}\)</span>O as a proxy for surface temperature, show that sudden climatic shifts called Dansgaard-Oeschger events (DO) occurred...</span><span class="abstract-full" id="full-2502.08460" hidden>Paleoclimate proxy records from Greenland ice cores, archiving e.g. <span class="arithmatex">\(δ^{18}\)</span>O as a proxy for surface temperature, show that sudden climatic shifts called Dansgaard-Oeschger events (DO) occurred repeatedly during the last glacial interval. They comprised substantial warming of the Arctic region from cold to milder conditions. Concomitant abrupt changes in the dust concentrations of the same ice cores suggest that sudden reorganisations of the hemispheric-scale atmospheric circulation have accompanied the warming events. Genuine bistability of the North Atlantic climate system is commonly hypothesised to explain the existence of stadial (cold) and interstadial (milder) periods in Greenland. However, the physical mechanisms that drove abrupt transitions from the stadial to the interstadial state, and more gradual yet still abrupt reverse transitions, remain debated. Here, we conduct a one-dimensional data-driven analysis of the Greenland temperature and atmospheric circulation proxies under the purview of stochastic processes. We take the Kramers-Moyal equation to estimate each proxy's drift and diffusion terms within a Markovian model framework. We then assess noise contributions beyond Gaussian white noise. The resulting stochastic differential equation (SDE) models feature a monostable drift for the Greenland temperature proxy and a bistable one for the atmospheric circulation proxy. Indicators of discontinuity in stochastic processes suggest to include higher-order terms of the Kramers-Moyal equation when modelling the Greenland temperature proxy's evolution. This constitutes a qualitative difference in the characteristics of the two time series, which should be further investigated from the standpoint of climate dynamics.</span> <span class="abstract-toggle" data-id="2502.08460">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2502.08460v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2502.08460v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2502.08460.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2502.01654">Predicting concentration levels of air pollutants by transfer learning and recurrent neural network<a class="headerlink" href="#2502.01654" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Iat Hang Fong, Tengyue Li, Simon Fong, Raymond K. Wong, Antonio J. Tallón-Ballesteros</em> · Feb 2025</p>
+<p><span class="abstract-snippet" id="snip-2502.01654">Air pollution (AP) poses a great threat to human health, and people are paying more attention than ever to its prediction. Accurate prediction of AP helps people to plan for their outdoor activities...</span><span class="abstract-full" id="full-2502.01654" hidden>Air pollution (AP) poses a great threat to human health, and people are paying more attention than ever to its prediction. Accurate prediction of AP helps people to plan for their outdoor activities and aids protecting human health. In this paper, long-short term memory (LSTM) recurrent neural networks (RNNs) have been used to predict the future concentration of air pollutants (APS) in Macau. Additionally, meteorological data and data on the concentration of APS have been utilized. Moreover, in Macau, some air quality monitoring stations (AQMSs) have less observed data in quantity, and, at the same time, some AQMSs recorded less observed data of certain types of APS. Therefore, the transfer learning and pre-trained neural networks have been employed to assist AQMSs with less observed data to build a neural network with high prediction accuracy. The experimental sample covers a period longer than 12-year and includes daily measurements from several APS as well as other more classical meteorological values. Records from five stations, four out of them are AQMSs and the remaining one is an automatic weather station, have been prepared from the aforesaid period and eventually underwent to computational intelligence techniques to build and extract a prediction knowledge-based system. As shown by experimentation, LSTM RNNs initialized with transfer learning methods have higher prediction accuracy; it incurred shorter training time than randomly initialized recurrent neural networks.</span> <span class="abstract-toggle" data-id="2502.01654">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2502.01654v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2502.01654v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2502.01654.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a></p>
+</li>
+<li>
+<h4 id="2501.18761">Probabilistic Joint Recovery Method for CO<span class="arithmatex">\(_2\)</span> Plume Monitoring<a class="headerlink" href="#2501.18761" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Zijun Deng, Rafael Orozco, Abhinav Prakash Gahlot, Felix J. Herrmann</em> · Jan 2025</p>
+<p><span class="abstract-snippet" id="snip-2501.18761">Reducing CO<span class="arithmatex">\(_2\)</span> emissions is crucial to mitigating climate change. Carbon Capture and Storage (CCS) is one of the few technologies capable of achieving net-negative CO<span class="arithmatex">\(_2\)</span> emissions. However,...</span><span class="abstract-full" id="full-2501.18761" hidden>Reducing CO<span class="arithmatex">\(_2\)</span> emissions is crucial to mitigating climate change. Carbon Capture and Storage (CCS) is one of the few technologies capable of achieving net-negative CO<span class="arithmatex">\(_2\)</span> emissions. However, predicting fluid flow patterns in CCS remains challenging due to uncertainties in CO<span class="arithmatex">\(_2\)</span> plume dynamics and reservoir properties. Building on existing seismic imaging methods like the Joint Recovery Method (JRM), which lacks uncertainty quantification, we propose the Probabilistic Joint Recovery Method (pJRM). By estimating posterior distributions across surveys using a shared generative model, pJRM provides uncertainty information to improve risk assessment in CCS projects.</span> <span class="abstract-toggle" data-id="2501.18761">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2501.18761v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2501.18761v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2501.18761.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a></p>
+</li>
+<li>
+<h4 id="2412.08851">Quantum Kernel-Based Long Short-term Memory for Climate Time-Series Forecasting<a class="headerlink" href="#2412.08851" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Yu-Chao Hsu, Nan-Yow Chen, Tai-Yu Li,  Po-Heng,  Lee, Kuan-Cheng Chen</em> · Dec 2024</p>
+<p><span class="abstract-snippet" id="snip-2412.08851">We present the Quantum Kernel-Based Long short-memory (QK-LSTM) network, which integrates quantum kernel methods into classical LSTM architectures to enhance predictive accuracy and computational...</span><span class="abstract-full" id="full-2412.08851" hidden>We present the Quantum Kernel-Based Long short-memory (QK-LSTM) network, which integrates quantum kernel methods into classical LSTM architectures to enhance predictive accuracy and computational efficiency in climate time-series forecasting tasks, such as Air Quality Index (AQI) prediction. By embedding classical inputs into high-dimensional quantum feature spaces, QK-LSTM captures intricate nonlinear dependencies and temporal dynamics with fewer trainable parameters. Leveraging quantum kernel methods allows for efficient computation of inner products in quantum spaces, addressing the computational challenges faced by classical models and variational quantum circuit-based models. Designed for the Noisy Intermediate-Scale Quantum (NISQ) era, QK-LSTM supports scalable hybrid quantum-classical implementations. Experimental results demonstrate that QK-LSTM outperforms classical LSTM networks in AQI forecasting, showcasing its potential for environmental monitoring and resource-constrained scenarios, while highlighting the broader applicability of quantum-enhanced machine learning frameworks in tackling large-scale, high-dimensional climate datasets.</span> <span class="abstract-toggle" data-id="2412.08851">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2412.08851v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2412.08851v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2412.08851.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a></p>
+</li>
+<li>
+<h4 id="2412.02498">Advancing global aerosol forecasting with artificial intelligence<a class="headerlink" href="#2412.02498" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Ke Gui, Xutao Zhang, Huizheng Che, Lei Li, Yu Zheng, Linchang An, Yucong Miao, Hujia Zhao et al.</em> · Dec 2024</p>
+<p><span class="abstract-snippet" id="snip-2412.02498">Aerosol forecasting is essential for air quality warnings, health risk assessment, and climate change mitigation. However, it is more complex than weather forecasting due to the intricate...</span><span class="abstract-full" id="full-2412.02498" hidden>Aerosol forecasting is essential for air quality warnings, health risk assessment, and climate change mitigation. However, it is more complex than weather forecasting due to the intricate interactions between aerosol physicochemical processes and atmospheric dynamics, resulting in significant uncertainty and high computational costs. Here, we develop an artificial intelligence-driven global aerosol-meteorology forecasting system (AI-GAMFS), which provides reliable 5-day, 3-hourly forecasts of aerosol optical components and surface concentrations at a 0.5° x 0.625° resolution. AI-GAMFS combines Vision Transformer and U-Net in a backbone network, robustly capturing the complex aerosol-meteorology interactions via global attention and spatiotemporal encoding. Trained on 42 years of advanced aerosol reanalysis data and initialized with GEOS Forward Processing (GEOS-FP) analyses, AI-GAMFS delivers operational 5-day forecasts in one minute. It outperforms the Copernicus Atmosphere Monitoring Service (CAMS) global forecasting system, GEOS-FP forecasts, and several regional dust forecasting systems in forecasting most aerosol variables including aerosol optical depth and dust components. Our results mark a significant step forward in leveraging AI to refine physics-based aerosol forecasting, facilitating more accurate global warnings for aerosol pollution events, such as dust storms and wildfires.</span> <span class="abstract-toggle" data-id="2412.02498">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2412.02498v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2412.02498v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2412.02498.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a></p>
+</li>
+<li>
+<h4 id="2411.15518">Developing Global Aerosol Models based on the Analysis of 30-Year Ground Measurements by AERONET (AEROEX models) and Implication on Satellite based Aerosol Retrievals<a class="headerlink" href="#2411.15518" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Manoj K Mishra, Shameela S F, Pradyuman Singh Rathore</em> · Nov 2024</p>
+<p><span class="abstract-snippet" id="snip-2411.15518">The AErosol RObotic NETwork (AERONET), established in 1993 with limited global sites, has grown to over 900 locations, providing three decades of continuous aerosol data. While earlier studies based...</span><span class="abstract-full" id="full-2411.15518" hidden>The AErosol RObotic NETwork (AERONET), established in 1993 with limited global sites, has grown to over 900 locations, providing three decades of continuous aerosol data. While earlier studies based on shorter time periods (10-12 years) and fewer sites (approximately 250) made significant contributions to aerosol research, the vast AERONET dataset (1993-2023) calls for a comprehensive reevaluation to refine global aerosol models and improve satellite retrievals. This is particularly important in light of major environmental changes such as industrialization, land use shifts, and natural events like wildfires and dust storms. In this study, a set of fine and coarse aerosol models called AERONET-Extended (AEROEX) models are developed based on cluster analysis of 30-years AERONET data, analyzing over 202,000 samples using Gaussian Mixture Models to classify aerosol types by season and region. Aerosols are categorized into spherical, spheroidal, and mixed types using particle linear depolarization ratio and fine mode fraction. Four fine-mode aerosol models were derived based on differences in scattering and absorption properties, revealing regional/seasonal variations, particularly in North America, Europe and Asia. Additionally, two coarse-mode aerosol models were identified, separated by their absorbing properties in dust-prone and polluted regions. We performed simulation analysis showing that the new models significantly improve satellite-based aerosol optical depth retrievals compared to widely used dark target aerosol models. A global aerosol model map, generated at 1x1 degree resolution for each season using Random Forest and expert refinement, provides valuable insights for climate and atmospheric studies, improving satellite-based aerosol retrievals at global scale.</span> <span class="abstract-toggle" data-id="2411.15518">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2411.15518v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2411.15518v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2411.15518.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a></p>
+</li>
+<li>
+<h4 id="2411.12013">Neural and Time-Series Approaches for Pricing Weather Derivatives: Performance and Regime Adaptation Using Satellite Data<a class="headerlink" href="#2411.12013" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Marco Hening Tallarico, Pablo Olivares</em> · Nov 2024</p>
+<p><span class="abstract-snippet" id="snip-2411.12013">This paper studies pricing of weather-derivative (WD) contracts on temperature and precipitation. For temperature-linked strangles in Toronto and Chicago, we benchmark a harmonic-regression/ARMA...</span><span class="abstract-full" id="full-2411.12013" hidden>This paper studies pricing of weather-derivative (WD) contracts on temperature and precipitation. For temperature-linked strangles in Toronto and Chicago, we benchmark a harmonic-regression/ARMA model against a feed-forward neural network (NN), finding that the NN reduces out-of-sample mean-squared error (MSE) and materially shifts December fair values relative to both the time-series model and the industry-standard Historic Burn Approach (HBA).   For precipitation, we employ a compound Poisson--Gamma framework: shape and scale parameters are estimated via maximum likelihood estimation (MLE) and via a convolutional neural network (CNN) trained on 30-day rainfall sequences spanning multiple seasons. The CNN adaptively learns season-specific <span class="arithmatex">\((α,β)\)</span> mappings, thereby capturing heterogeneity across regimes that static i.i.d.\ fits miss. At valuation, we assume days are i.i.d.\ <span class="arithmatex">\(Γ(\hatα,\hatβ)\)</span> within each regime and apply a mean-count approximation (replacing the Poisson count by its mean (<span class="arithmatex">\(n\hatλ\)</span>) to derive closed-form strangle prices.   Exploratory analysis of 1981--2023 NASA POWER data confirms pronounced seasonal heterogeneity in <span class="arithmatex">\((α,β)\)</span> between summer and winter, demonstrating that static global fits are inadequate. Back-testing on Toronto and Chicago grids shows that our regime-adaptive CNN yields competitive valuations and underscores how model choice can shift strangle prices. Payoffs are evaluated analytically when possible and by simulation elsewhere, enabling a like-for-like comparison of forecasting and valuation methods.</span> <span class="abstract-toggle" data-id="2411.12013">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2411.12013v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2411.12013v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2411.12013.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a></p>
+</li>
+<li>
+<h4 id="2411.03402">Climate AI for Corporate Decarbonization Metrics Extraction<a class="headerlink" href="#2411.03402" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Aditya Dave, Mengchen Zhu, Dapeng Hu, Sachin Tiwari</em> · Nov 2024</p>
+<p><span class="abstract-snippet" id="snip-2411.03402">Corporate Greenhouse Gas (GHG) emission targets are important metrics in sustainable investing [12, 16]. To provide a comprehensive view of company emission objectives, we propose an approach to...</span><span class="abstract-full" id="full-2411.03402" hidden>Corporate Greenhouse Gas (GHG) emission targets are important metrics in sustainable investing [12, 16]. To provide a comprehensive view of company emission objectives, we propose an approach to source these metrics from company public disclosures. Without automation, curating these metrics manually is a labor-intensive process that requires combing through lengthy corporate sustainability disclosures that often do not follow a standard format. Furthermore, the resulting dataset needs to be validated thoroughly by Subject Matter Experts (SMEs), further lengthening the time-to-market. We introduce the Climate Artificial Intelligence for Corporate Decarbonization Metrics Extraction (CAI) model and pipeline, a novel approach utilizing Large Language Models (LLMs) to extract and validate linked metrics from corporate disclosures. We demonstrate that the process improves data collection efficiency and accuracy by automating data curation, validation, and metric scoring from public corporate disclosures. We further show that our results are agnostic to the choice of LLMs. This framework can be applied broadly to information extraction from textual data.</span> <span class="abstract-toggle" data-id="2411.03402">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2411.03402v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2411.03402v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2411.03402.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs &amp; agents</a></p>
+</li>
+<li>
+<h4 id="2410.06681">AI, Climate, and Regulation: From Data Centers to the AI Act<a class="headerlink" href="#2410.06681" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Kai Ebert, Nicolas Alder, Ralf Herbrich, Philipp Hacker</em> · Oct 2024</p>
+<p><span class="abstract-snippet" id="snip-2410.06681">We live in a world that is experiencing an unprecedented boom of AI applications that increasingly penetrate and enhance all sectors of private and public life, from education, media, medicine, and...</span><span class="abstract-full" id="full-2410.06681" hidden>We live in a world that is experiencing an unprecedented boom of AI applications that increasingly penetrate and enhance all sectors of private and public life, from education, media, medicine, and mobility to the industrial and professional workspace, and -- potentially particularly consequentially -- robotics. As this world is simultaneously grappling with climate change, the climate and environmental implications of the development and use of AI have become an important subject of public and academic debate. In this paper, we aim to provide guidance on the climate-related regulation for data centers and AI specifically, and discuss how to operationalize these requirements. We also highlight challenges and room for improvement, and make a number of policy proposals to this end. In particular, we propose a specific interpretation of the AI Act to bring reporting on the previously unadressed energy consumption from AI inferences back into the scope. We also find that the AI Act fails to address indirect greenhouse gas emissions from AI applications. Furthermore, for the purpose of energy consumption reporting, we compare levels of measurement within data centers and recommend measurement at the cumulative server level. We also argue for an interpretation of the AI Act that includes environmental concerns in the mandatory risk assessment (sustainability risk assessment, SIA), and provide guidance on its operationalization. The EU data center regulation proves to be a good first step but requires further development by including binding renewable energy and efficiency targets for data centers. Overall, we make twelve concrete policy proposals, in four main areas: Energy and Environmental Reporting Obligations; Legal and Regulatory Clarifications; Transparency and Accountability Mechanisms; and Future Far-Reaching Measures beyond Transparency.</span> <span class="abstract-toggle" data-id="2410.06681">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2410.06681v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2410.06681v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2410.06681.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a></p>
+</li>
+</ul>
+</div>
+<nav class="pager"><a class="pager-step" href="../"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg></span> Newer</a> <a href="../">1</a> <strong>2</strong> <a href="../3/">3</a> <a class="pager-step" href="../3/">Older <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></nav>
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">Suggest a paper</a> · <a href="/feed.xml">RSS feed</a> · <a href="/all_papers.bib" download>All papers as BibTeX</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.code.copy","content.tabs.link","navigation.indexes","navigation.top","navigation.tabs","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","search.highlight","search.share","search.suggest","toc.follow"],"redirect":"../../../redirect.json","search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c04ba553.min.js"></script>
+      
+        <script src="../../../javascripts/bibtex.js"></script>
+      
+        <script src="../../../javascripts/home-link.js"></script>
+      
+        <script src="../../../javascripts/tag-filter.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.18.9/dist/katex.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+    
+  </body>
+</html>
