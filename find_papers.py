@@ -73,6 +73,36 @@ CATEGORIES = {
             'wildfire prediction', 'tornado',
         ],
     },
+    # Listed after the weather categories so ties go to those
+    'Ocean & Sea Ice': {
+        'keywords': [
+            'ocean forecast', 'ocean model', 'ocean circulation', 'ocean state',
+            'ocean emulator', 'ocean reanalysis', 'oceanograph', 'sea surface temperature',
+            'sea surface height', 'sea level', 'sea ice', 'significant wave height',
+            'wave height', 'ocean wave', 'marine heatwave', 'mesoscale eddies',
+            'eddy-resolving', 'coastal ocean', 'iceberg', 'salinity', 'ocean carbon',
+        ],
+        'strong_keywords': [
+            'samudra', 'neuralom', 'xihe', 'wenhai', 'glonet', 'langya',
+        ],
+    },
+    'Air Quality & Composition': {
+        'keywords': [
+            'air quality', 'air pollut', 'pm2.5', 'pm10', 'pm$_{2.5}$', 'aerosol',
+            'ozone', 'no2', 'no$_2$', 'so2', 'methane', 'co2', 'atmospheric composition',
+            'chemical transport', 'atmospheric chemistry', 'pollutant', 'smoke',
+            'dust', 'greenhouse gas', 'emission inventor', 'plume',
+        ],
+    },
+    'Remote Sensing': {
+        'keywords': [
+            'remote sensing', 'satellite retrieval', 'retrieval', 'satellite imagery',
+            'satellite image', 'geostationary', 'cloud detection', 'cloud mask',
+            'cloud property', 'radiance', 'passive microwave', 'meteosat', 'himawari',
+            'goes-16', 'goes-r', 'sentinel', 'modis', 'viirs', 'lidar', 'earth observation',
+            'radiative transfer',
+        ],
+    },
 }
 
 # arXiv API queries. Kept deliberately broad — relevance filtering happens
@@ -95,6 +125,25 @@ SEARCH_QUERIES = [
 EXCLUDE_TERMS = [
     'autonomous driving', 'autonomous vehicle', 'self-driving',
     'driving scene', 'driver assistance',
+    # Unambiguous even when they only appear in the abstract
+    'de-weathering', 'deweathering', 'weather removal', 'plasma spray',
+    'hemodynamic', 'turbulence mitigation',
+]
+
+# Checked against the title only: common enough in abstracts of genuine
+# weather papers ("all weather variables", "insurance applications") to
+# cause false positives there
+EXCLUDE_TITLE_TERMS = [
+    # Computer vision in bad weather rather than weather itself
+    'adverse weather', 'adverse-weather', 'all-weather', 'all-in-one weather',
+    'multi-weather', 'cross-weather', 'weather restoration', 'image restoration', 'dehaz',
+    'derain', 'depth estimation', 'depth completion', 'stereo matching',
+    '3d object detection', 'point cloud', 'semantic occupancy',
+    'scene reconstruction', 'geo-localization', 'image classification',
+    'imaging through atmospheric', 'beam transmission', 'mimo channel',
+    # Unrelated fields that share atmospheric/weather vocabulary
+    'exoplanet', 'loss reserving', 'startup', 'eloran', 'train delay',
+    'railway delay', 'crash risk', 'traffic', 'level crossing', 'cell culture',
 ]
 
 # Terms that indicate a paper uses ML/AI methods (needed because the
@@ -130,27 +179,12 @@ WEATHER_TERMS = [
     'global model', 'forecast skill', 'forecast accuracy',
 ]
 
-# ML method tags to auto-extract
-METHOD_TAGS = {
-    'transformer': ['transformer', 'attention mechanism', 'self-attention', 'cross-attention'],
-    'diffusion': ['diffusion model', 'denoising diffusion', 'score-based', 'ddpm', 'flow matching'],
-    'GAN': ['generative adversarial', ' gan ', 'adversarial network'],
-    'CNN': ['convolutional neural', ' cnn ', 'u-net', 'unet', 'resnet'],
-    'GNN': ['graph neural', 'graph network', 'message passing'],
-    'physics-informed': ['physics-informed', 'physics informed', 'physics-based', 'physics based'],
-    'reinforcement-learning': ['reinforcement learning'],
-    'variational': ['variational inference', 'variational autoencoder', ' vae '],
-    'foundation-model': ['foundation model', 'large-scale pretrain', 'pre-trained'],
-    'operator-learning': ['neural operator', 'fourier neural operator', 'deeponet'],
-    'recurrent': ['lstm', 'recurrent neural', ' rnn ', ' gru '],
-    'probabilistic': ['probabilistic', 'uncertainty quantification', 'bayesian'],
-}
-
-
 def is_weather_related(title, abstract):
     """Check if a paper is related to weather/climate/atmospheric science."""
     text = f"{title} {abstract}".lower()
     if any(term in text for term in EXCLUDE_TERMS):
+        return False
+    if any(term in title.lower() for term in EXCLUDE_TITLE_TERMS):
         return False
     return any(term in text for term in WEATHER_TERMS)
 
@@ -182,22 +216,6 @@ def categorize_paper(title, abstract):
     return 'Other'
 
 
-def extract_tags(title, abstract, arxiv_categories=None):
-    """Extract method tags from paper title and abstract."""
-    text = f" {title} {abstract} ".lower()
-    tags = []
-
-    for tag, keywords in METHOD_TAGS.items():
-        if any(kw in text for kw in keywords):
-            tags.append(tag)
-
-    if arxiv_categories:
-        for cat in arxiv_categories:
-            tags.append(cat)
-
-    return tags
-
-
 def make_paper_entry(result):
     """Build a papers.yml entry from an arxiv.Result."""
     title = result.title
@@ -223,7 +241,6 @@ def make_paper_entry(result):
         'year': result.published.year,
         'arxiv': result.entry_id.split('/')[-1],
         'abstract': abstract,
-        'tags': extract_tags(title, abstract, arxiv_cats),
         'arxiv_categories': arxiv_cats,
     }
     if github_url:

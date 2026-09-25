@@ -1,10 +1,15 @@
-site_name: Deep Learning in Weather
+site_name: weatherml
 site_url: https://weatherml.github.io/
 repo_url: https://github.com/weatherml/weatherml.github.io
 repo_name: weatherml/weatherml.github.io
 edit_uri: edit/main/docs/
+copyright: >-
+  <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">Suggest a paper</a>
+  · <a href="/feed.xml">RSS feed</a>
+  · <a href="/all_papers.bib" download>All papers as BibTeX</a>
 theme:
   name: material
+  custom_dir: overrides
   palette:
   - media: '(prefers-color-scheme: light)'
     scheme: default
@@ -32,17 +37,32 @@ theme:
   - navigation.tabs
   - navigation.instant
   - navigation.instant.prefetch
+  - navigation.instant.progress
   - search.highlight
   - search.share
   - search.suggest
   - toc.follow
 
+plugins:
+  - search
+  # /papers/ used to be a single page of every paper
+  - redirects:
+      redirect_maps:
+        papers/index.md: papers/global-models/index.md
+
 extra_css:
   - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/katex@0.18.9/dist/katex.min.css
 extra_javascript:
   - javascripts/bibtex.js
+  - javascripts/home-link.js
+  - javascripts/tag-filter.js
+  - https://cdn.jsdelivr.net/npm/katex@0.18.9/dist/katex.min.js
+  - javascripts/katex.js
 
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -59,6 +79,71 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Home: index.md
-  - Papers: papers.md
-  - Tags: tags.md
+  - All Papers:
+    - 'Global Models':
+      - papers/global-models/index.md
+      - 'Page 2': papers/global-models/2.md
+      - 'Page 3': papers/global-models/3.md
+      - 'Page 4': papers/global-models/4.md
+      - 'Page 5': papers/global-models/5.md
+      - 'Page 6': papers/global-models/6.md
+      - 'Page 7': papers/global-models/7.md
+      - 'Page 8': papers/global-models/8.md
+      - 'Page 9': papers/global-models/9.md
+      - 'Page 10': papers/global-models/10.md
+    - 'Nowcasting':
+      - papers/nowcasting/index.md
+      - 'Page 2': papers/nowcasting/2.md
+      - 'Page 3': papers/nowcasting/3.md
+      - 'Page 4': papers/nowcasting/4.md
+    - 'Downscaling':
+      - papers/downscaling/index.md
+      - 'Page 2': papers/downscaling/2.md
+    - 'Data Assimilation':
+      - papers/data-assimilation/index.md
+      - 'Page 2': papers/data-assimilation/2.md
+      - 'Page 3': papers/data-assimilation/3.md
+      - 'Page 4': papers/data-assimilation/4.md
+    - 'Ensembles':
+      - papers/ensembles/index.md
+      - 'Page 2': papers/ensembles/2.md
+      - 'Page 3': papers/ensembles/3.md
+    - 'Climate Modeling':
+      - papers/climate-modeling/index.md
+      - 'Page 2': papers/climate-modeling/2.md
+      - 'Page 3': papers/climate-modeling/3.md
+      - 'Page 4': papers/climate-modeling/4.md
+      - 'Page 5': papers/climate-modeling/5.md
+      - 'Page 6': papers/climate-modeling/6.md
+      - 'Page 7': papers/climate-modeling/7.md
+      - 'Page 8': papers/climate-modeling/8.md
+      - 'Page 9': papers/climate-modeling/9.md
+      - 'Page 10': papers/climate-modeling/10.md
+      - 'Page 11': papers/climate-modeling/11.md
+    - 'Extreme Weather':
+      - papers/extreme-weather/index.md
+      - 'Page 2': papers/extreme-weather/2.md
+      - 'Page 3': papers/extreme-weather/3.md
+    - 'Ocean & Sea Ice':
+      - papers/ocean-sea-ice/index.md
+      - 'Page 2': papers/ocean-sea-ice/2.md
+    - 'Air Quality & Composition':
+      - papers/air-quality-composition/index.md
+      - 'Page 2': papers/air-quality-composition/2.md
+      - 'Page 3': papers/air-quality-composition/3.md
+    - 'Remote Sensing':
+      - papers/remote-sensing/index.md
+      - 'Page 2': papers/remote-sensing/2.md
+      - 'Page 3': papers/remote-sensing/3.md
+    - 'Other':
+      - papers/other/index.md
+      - 'Page 2': papers/other/2.md
+      - 'Page 3': papers/other/3.md
+      - 'Page 4': papers/other/4.md
+      - 'Page 5': papers/other/5.md
+      - 'Page 6': papers/other/6.md
+      - 'Page 7': papers/other/7.md
+      - 'Page 8': papers/other/8.md
+      - 'Page 9': papers/other/9.md
+      - 'Page 10': papers/other/10.md
+  - Explore: explore/index.md
