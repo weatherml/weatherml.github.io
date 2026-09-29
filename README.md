@@ -60,13 +60,14 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1468)
+## Papers (1485)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (347)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (348)</summary>
 
+- **Suitable Measures for the Potential Operational Utility of AI NWP Rainfall Forecasts Over Africa** (Sep 2026) - [arXiv:2609.31775](https://arxiv.org/abs/2609.31775v1)
 - **A dataset of one-dimensional idealized probabilistic fields** (Sep 2026) - [arXiv:2609.25720](https://arxiv.org/abs/2609.25720v1)
 - **FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting** (Sep 2026) - [arXiv:2609.25505](https://arxiv.org/abs/2609.25505v1)
 - **Spatial Aggregation of ROC and Precision-Recall Curves** (Sep 2026) - [arXiv:2609.19517](https://arxiv.org/abs/2609.19517v1)
@@ -484,8 +485,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (97)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (99)</summary>
 
+- **Explainable Deep Learning for Probabilistic Nowcasting of Radar Reflectivity in Tornadic Storms** (Sep 2026) - [arXiv:2609.35675](https://arxiv.org/abs/2609.35675v1)
+- **MW-Nowcast: Six-hour ensemble nowcasting of extreme precipitation** (Sep 2026) - [arXiv:2609.34836](https://arxiv.org/abs/2609.34836v1)
 - **IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy** (Sep 2026) - [arXiv:2609.17175](https://arxiv.org/abs/2609.17175v1)
 - **From Nowcasting to Forecasting: Adapting a Reanalysis-Trained** (Sep 2026) - [arXiv:2609.03763](https://arxiv.org/abs/2609.03763v1)
 - **GenONet: A Generative operator Network for High-Resolution Precipitation Nowcasting** (Sep 2026) - [arXiv:2609.00544](https://arxiv.org/abs/2609.00544v1)
@@ -587,8 +590,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (95)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (98)</summary>
 
+- **Lightweight Probabilistic Downscaling from a Deterministic Base Model** (Sep 2026) - [arXiv:2609.29383](https://arxiv.org/abs/2609.29383v1)
+- **Generative Atmospheric Super-Resolution from Heterogeneous In Situ Observations through Composable Interfaces** (Sep 2026) - [arXiv:2609.29027](https://arxiv.org/abs/2609.29027v1)
+- **Evaluating Cross-region Generalization for Wavelet-Diffusion Precipitation Downscaling** (Sep 2026) - [arXiv:2609.28749](https://arxiv.org/abs/2609.28749v1)
 - **Diffusion-Based Super-Resolution of Adriatic Sea Oceanographic Fields** (Sep 2026) - [arXiv:2609.22574](https://arxiv.org/abs/2609.22574v1)
 - **Steering Diffusion Priors with Sparse Observations for High-Resolution Temperature Downscaling** (Sep 2026) - [arXiv:2609.09247](https://arxiv.org/abs/2609.09247v1)
 - **Python-Fortran Hybrid Programming to Fuse AI and Physical Models: Examples of AI-LDA in climate and weather models (Hf2pMDA_v1.0)** (Aug 2026) - [arXiv:2608.29532](https://arxiv.org/abs/2608.29532v1)
@@ -799,8 +805,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (289)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (292)</summary>
 
+- **Safe Greenhouse Climate Control Using Lagrangian-Constrained PPO with Kolmogorov-Arnold Networks** (Sep 2026) - [arXiv:2609.34966](https://arxiv.org/abs/2609.34966v1)
+- **Learning Hierarchical Causal Representations of the Effects of Forcings on Temperature in Climate Models** (Sep 2026) - [arXiv:2609.30995](https://arxiv.org/abs/2609.30995v1)
+- **Understanding Perturbed Parameter Ensemble Sensitivities Using A Contrastive Learning Approach** (Sep 2026) - [arXiv:2609.30420](https://arxiv.org/abs/2609.30420v1)
 - **Analysis of trade-offs in urban heat mitigation using a Bayesian Optimization framework for an urban canopy layer model** (Sep 2026) - [arXiv:2609.25953](https://arxiv.org/abs/2609.25953v1)
 - **Learning Prognostic Variables for AI Convective Parameterizations via Symbolic Distillation** (Sep 2026) - [arXiv:2609.24882](https://arxiv.org/abs/2609.24882v1)
 - **Climate Variability Modulates the Impact of Price Spikes on Food Insecurity** (Sep 2026) - [arXiv:2609.24394](https://arxiv.org/abs/2609.24394v1)
@@ -1137,8 +1146,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (83)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (85)</summary>
 
+- **On the Limits of Univariate Deep Learning for Significant Wave Height Forecasting** (Sep 2026) - [arXiv:2609.30688](https://arxiv.org/abs/2609.30688v1)
+- **HClimRep-Ocean: A Global Ocean Emulator on an Unstructured Mesh** (Sep 2026) - [arXiv:2609.28601](https://arxiv.org/abs/2609.28601v2)
 - **How well is surface ocean carbon represented in observations and ocean models?** (Sep 2026) - [arXiv:2609.00133](https://arxiv.org/abs/2609.00133v1)
 - **Decadal wave reconstruction in the Mediterranean Sea with graph neural networks** (Aug 2026) - [arXiv:2608.16449](https://arxiv.org/abs/2608.16449v1)
 - **DLESyM-Ocean: A Deep Learning Probabilistic Global Model for Simulating Present-Day Upper Ocean and Sea Ice** (Aug 2026) - [arXiv:2608.11545](https://arxiv.org/abs/2608.11545v1)
@@ -1303,8 +1314,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (98)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (99)</summary>
 
+- **Low latency global carbon budget reveals strong land sink recovery in 2025** (Sep 2026) - [arXiv:2609.34226](https://arxiv.org/abs/2609.34226v1)
 - **Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework** (Sep 2026) - [arXiv:2609.12254](https://arxiv.org/abs/2609.12254v1)
 - **Distilling deep optical flow stereo methods to retrieve dense three-dimensional wind fields** (Sep 2026) - [arXiv:2609.03100](https://arxiv.org/abs/2609.03100v1)
 - **A Sensor-Adaptive Incremental Learning Framework for Artifact Detection in Satellite Precipitation Data** (Sep 2026) - [arXiv:2609.01514](https://arxiv.org/abs/2609.01514v1)
@@ -1407,8 +1419,13 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (192)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (197)</summary>
 
+- **Predicting Delayed Train Trajectories on the Dutch Railway Network: Explainable AI Evaluation of Topological, Operational and Weather Features with Tree Based Ensemble Methods** (Sep 2026) - [arXiv:2609.34692](https://arxiv.org/abs/2609.34692v1)
+- **StatD2GAN: When Calibration Masks Generator Quality in Held-Out Evaluation of Synthetic Weather Sequences** (Sep 2026) - [arXiv:2609.33761](https://arxiv.org/abs/2609.33761v1)
+- **Mechanism-Aware Ensemble Conditioning for Data-Limited Emulation of Extreme Events** (Sep 2026) - [arXiv:2609.30746](https://arxiv.org/abs/2609.30746v1)
+- **PISCES: Physics-Informed Solar-wind Convolutional autoEncoder for Space-weather Anomaly Detection and Early Warning** (Sep 2026) - [arXiv:2609.28022](https://arxiv.org/abs/2609.28022v1)
+- **Sparse-Observation Atmospheric Thermal Forecasting with Physics-Informed Neural Networks for Climate-Aware Digital Twins** (Sep 2026) - [arXiv:2609.27290](https://arxiv.org/abs/2609.27290v1)
 - **Inference of Unknown Dynamical Components Using Next Generation Reservoir Computing: From Chaotic Systems to Climate Data** (Sep 2026) - [arXiv:2609.24754](https://arxiv.org/abs/2609.24754v1)
 - **Predictability-Guided Multiscale Probabilistic Forecasting of Wind Direction under Extreme Shear** (Sep 2026) - [arXiv:2609.16707](https://arxiv.org/abs/2609.16707v1)
 - **4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling** (Sep 2026) - [arXiv:2609.12815](https://arxiv.org/abs/2609.12815v1)

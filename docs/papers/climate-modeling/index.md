@@ -8,11 +8,44 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">289 papers · page 1 of 10 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">292 papers · page 1 of 10 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Safe Greenhouse Climate Control Using Lagrangian-Constrained PPO with Kolmogorov-Arnold Networks { #2609.34966 }
+
+    *Hangzun Liu, Yuling Fan, Fang Tian, Zhilong Bie, Zaiwen Feng, Yongliang Qiao* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.34966">Greenhouse climate control balances economic return with maintaining temperature, humidity and CO2 within crop-adapted growth ranges. Conventional reinforcement learning (RL) greenhouse controllers...</span><span class="abstract-full" id="full-2609.34966" hidden>Greenhouse climate control balances economic return with maintaining temperature, humidity and CO2 within crop-adapted growth ranges. Conventional reinforcement learning (RL) greenhouse controllers use fixed reward penalties to limit climate constraint violations, yet such heuristic penalties cannot explicitly constrain long-term cumulative violations. Poorly tuned weights either lead to overly conservative policies and lower yields, or fail to suppress persistent climate deviations that harm photosynthesis and induce crop diseases. To address this issue, we formulate greenhouse climate regulation as a Constrained Markov Decision Process (CMDP) and use a Lagrangian safe RL framework RCPO-PPO to separate economic optimization and cumulative safety constraints, enabling adaptive penalty adjustment without manual tuning. To handle strong nonlinear, time-varying coupling between greenhouse microclimate and crop growth, Kolmogorov-Arnold Networks (KANs) replace Multi-Layer Perceptrons (MLPs) as policy and value approximators for improved nonlinear representation. Sinusoidal cyclic time features are embedded in observations to capture diurnal environmental periodicity. Simulations use a classic winter lettuce greenhouse model driven by 40-day real weather disturbances. Compared with vanilla penalty-based PPO, our method cuts cumulative climate violations by 18.65% and raises lettuce economic profit by 2.91%, keeping violations stable near the safety threshold. This decoupled CMDP optimization with KAN-based policy representation mitigates long-term climate risks and boosts planting profits, offering a constraint-aware control strategy for precision greenhouse cultivation.</span> <span class="abstract-toggle" data-id="2609.34966">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.34966v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.34966v1) · [:material-content-copy: BibTeX](../../bibtex/2609.34966.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Learning Hierarchical Causal Representations of the Effects of Forcings on Temperature in Climate Models { #2609.30995 }
+
+    *Shan Zhao, Ilija Trajkovic, Julia Kaltenborn, Yaniv Gurwicz, Peer Nowack, David Rolnick et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.30995">Machine learning (ML) emulators provide a fast and cost-effective method to simulate climate change scenarios after being trained on Earth System Models projections. However, the black-box nature of...</span><span class="abstract-full" id="full-2609.30995" hidden>Machine learning (ML) emulators provide a fast and cost-effective method to simulate climate change scenarios after being trained on Earth System Models projections. However, the black-box nature of those data-driven approaches limit the usability and trustworthiness of their outputs and in particular their use as causal attribution tools. Here, we develop a hierarchical causal representation learning framework applied to sea surface temperature fields from a state-of-the-art global climate model. As a key advance over previous work, our framework explicitly models both atmospheric dynamical interactions arising from internal climate variability and forced responses due to changes in atmospheric greenhouse gas and aerosol concentrations. When trained on future climate change scenarios, our method accurately predicts the long-term global mean and regional temperature evolution and shows physically realistic responses to perturbations in greenhouse gas and aerosol concentrations when evaluated on unseen scenarios. Our results underline the potential of causal representation learning frameworks for advancing climate model emulation.</span> <span class="abstract-toggle" data-id="2609.30995">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.30995v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.30995v1) · [:material-content-copy: BibTeX](../../bibtex/2609.30995.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Understanding Perturbed Parameter Ensemble Sensitivities Using A Contrastive Learning Approach { #2609.30420 }
+
+    *Da Fan, David John Gagne, Gregory S Elsaesser, Brian Medeiros, Addisu G Semie, Qingyuan Yang et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.30420">Perturbed parameter ensembles (PPEs) reveal how physics parameters affect climate simulations, but interpreting parameter sensitivities across multivariate, spatially structured outputs remains...</span><span class="abstract-full" id="full-2609.30420" hidden>Perturbed parameter ensembles (PPEs) reveal how physics parameters affect climate simulations, but interpreting parameter sensitivities across multivariate, spatially structured outputs remains challenging, particularly when calibrating models against observations. We develop an explainable contrastive learning model that maps 5 monthly cloud and radiation fields into a shared representation space. We train the model on the fields of two 100-member Community Atmosphere Model version 6 (CAM6) PPEs, spanning 34 parameters, that only differ in the warm rain microphysics scheme: KK2000, the default bulk microphysics scheme, and TAU-ML, a neural network emulator of a bin microphysics scheme. The learned representations separates two PPEs with over 94% linear classification accuracy while preserving the seasonal variability and ensemble spread due to parameter perturbations. In the shared representation space, the representations of satellite observations occupy the same low-dimensional manifold as the PPEs but are displaced from them most strongly during boreal spring and autumn. TAU-ML PPE has a lower distance to observations compared to KK2000 in the representation space. Integrated Gradients attributions highlights the contributions in subtropical low-cloud regions, Northern and Southern Hemisphere storm track regions, and tropical convection regions to differences between PPEs and observations. Regional attributions correlate most strongly with parameters associated with cloud microphysics, boundary layer turbulence, and deep convection. These results demonstrate that explainable representations of climate fields can attribute model differences to specific variables, regions, seasons, and physical parameters.</span> <span class="abstract-toggle" data-id="2609.30420">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.30420v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.30420v1) · [:material-content-copy: BibTeX](../../bibtex/2609.30420.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
 
 -   #### Analysis of trade-offs in urban heat mitigation using a Bayesian Optimization framework for an urban canopy layer model { #2609.25953 }
 
@@ -352,45 +385,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.20901v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.20901v1) · [:material-content-copy: BibTeX](../../bibtex/2606.20901.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland { #2606.20034 }
-
-    *Htet Yamin Ko Ko, Clement Atzberger* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.20034">Understanding urban spatial morphology is critical for climate modeling, risk assessment, and sustainable urban design, and Local Climate Zone (LCZ) mapping provides the basic framework for this....</span><span class="abstract-full" id="full-2606.20034" hidden>Understanding urban spatial morphology is critical for climate modeling, risk assessment, and sustainable urban design, and Local Climate Zone (LCZ) mapping provides the basic framework for this. However, many cities still use coarse ~100-m resolution LCZ records, which are unsuitable for fine-scale urban research. In this study, precomputed embeddings from TESSERA (Feng et al., 2025) and AlphaEarth (Brown et al., 2025) are compared to traditional Sentinel-1/2 (S1S2) composites in five Swiss cities to see if they can upscale coarse LCZ maps to 10-m resolution using an attention-based U-Net. Three experiments assess multi-city transferability, the impact of higher-resolution reference data, and temporal robustness to year-to-year phenology changes. We find that all datasets achieve strong performance with test data Intersection-over-Union (IoU) ranging from 0.59-0.69 and 0.77-0.82 in the first two experiments. TESSERA consistently outperforms both S1S2 and AlphaEarth across both settings As expected, we find that the transfer of embedding-based models from one year to another remains an open challenge. Overall, however, our results demonstrate the promising potential of embeddings derived from EO foundation models to reduce time consuming preprocessing, respectively, manual feature engineering tasks and to guide a universal deep learning-based LCZ mapping workflow. When combined with a simple location-aware attention U-Net architecture, the embeddings enhance regional transferability and scalability, supporting the development of comprehensive and reproducible fine-scale LCZ maps for global urban climate applications Improving reference data quality remains the strongest lever for further accuracy gains.</span> <span class="abstract-toggle" data-id="2606.20034">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.20034v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.20034v1) · [:material-content-copy: BibTeX](../../bibtex/2606.20034.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
-
--   #### Optimal scenario design for climate emulation { #2606.19302 }
-
-    *Christopher B. Womack, Shahine Bouabid, Andrei Sokolov, Popat Salunke, Glenn Flierl et al.* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.19302">As deep learning for physical systems continues to grow in popularity, efforts to improve generalizability have primarily focused on designing architectures that embed physical constraints. However,...</span><span class="abstract-full" id="full-2606.19302" hidden>As deep learning for physical systems continues to grow in popularity, efforts to improve generalizability have primarily focused on designing architectures that embed physical constraints. However, for machine-learning surrogate climate models (emulators), we show that the low structural diversity in existing scenarios commonly used to generate training data places a ceiling on predictive skill. Here, we examine whether training datasets themselves can be optimized to improve generalization. We introduce a method to create datasets that produce emulators capable of generalizing to new, structurally different scenarios absent from the training data. We use a differentiable Simple Climate Model (SCM) to calculate the sensitivity of emulator loss to perturbations in the training data, iteratively updating the training data to maximize emulator skill. For an SCM, training on one scenario optimized in this fashion outperforms an emulator trained on six standard ScenarioMIP pathways. We achieve this higher predictive skill despite training on a smaller dataset, finding that our emulator successfully isolates distinct physical behaviors of different climate forcing agents (e.g., greenhouse gases vs. aerosols) without single-forcing runs. We then demonstrate that scenarios optimized using an SCM, when used to drive an intermediate-complexity climate model, produce a training dataset that yields a more skillful emulator than training on ScenarioMIP outputs. Our results suggest that, in the compute-constrained environment of running full-scale climate models, generating a small number of dynamically rich scenarios provides greater marginal value for emulation and characterizing system responses than expanding the suite of traditional emissions pathways.</span> <span class="abstract-toggle" data-id="2606.19302">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.19302v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.19302v1) · [:material-content-copy: BibTeX](../../bibtex/2606.19302.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
-    { .paper-tags }
-
--   #### Investigating Inductive Biases for Machine Learning Emulation of Sudden Stratospheric Warmings in Idealised Isca Simulations { #2606.18857 }
-
-    *Oskar Bohn Lassen, Simon Driscoll, Stephen I. Thomson, Sebastian Schemm, Francisco C. Pereira* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.18857">Machine-learning emulators are increasingly used for weather prediction and have the potential to extend skill on subseasonal-to-seasonal timescales by learning dynamically important sources of...</span><span class="abstract-full" id="full-2606.18857" hidden>Machine-learning emulators are increasingly used for weather prediction and have the potential to extend skill on subseasonal-to-seasonal timescales by learning dynamically important sources of predictability. A key challenge is whether the models can exploit predictability anchors, such as stratospheric variability, that influence tropospheric circulation beyond short lead times. We test how architectural inductive bias affects emulation of sudden stratospheric warming (SSW) dynamics using paired idealised Isca simulations that differ only in an imposed wave-2 heating perturbation. Across convolutional, transformer, and graph-based architectures trained for one-step prediction, model differences are modest when the stratosphere is dynamically quiet but widen substantially when SSW-like variability is active. Our results identify explicit three-dimensional vertical coupling as a key inductive bias for machine-learning emulation of stratospheric dynamics. However, Eliassen-Palm flux diagnostics show that low forecast error does not guarantee physically faithful wave-mean-flow interaction, with coherent errors remaining in stratospheric wave-driving structure.</span> <span class="abstract-toggle" data-id="2606.18857">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.18857v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.18857v1) · [:material-content-copy: BibTeX](../../bibtex/2606.18857.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
-    { .paper-tags }
 
 </div>
 

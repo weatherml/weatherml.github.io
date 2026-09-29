@@ -8,11 +8,37 @@ hide:
 
 # Nowcasting
 
-<p class="page-meta" markdown="span">97 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">99 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Explainable Deep Learning for Probabilistic Nowcasting of Radar Reflectivity in Tornadic Storms { #2609.35675 }
+
+    *Nathan Erickson, Amy McGovern, Aaron Hill* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.35675">Tornadoes pose substantial risk to human life and property in the United States, causing more than 50 fatalities and \$100 million of property damage on average annually. When tornadoes are likely,...</span><span class="abstract-full" id="full-2609.35675" hidden>Tornadoes pose substantial risk to human life and property in the United States, causing more than 50 fatalities and \$100 million of property damage on average annually. When tornadoes are likely, weather radar provides critical information for forecasters by providing information on storm morphology, storm motion, and intensity trends. Additional tools such as satellite and numerical weather prediction model runs can provide useful short-term information for understanding changes in storm characteristics. This work demonstrates a U-Net deep-learning system for nowcasting the evolution of radar reflectivity following tornadogenesis, which can provide value to forecasters by synthesizing large amounts of input data (e.g., radar imagery, near-storm environment data) and generating predictions of radar reflectivity from its inputs. Inputs to the model are radar imagery from the Multi-Radar Multi-Sensor (MRMS) dataset and near-storm environment data from the High-Resolution Rapid Refresh (HRRR) numerical weather prediction model. The U-Net is trained on a dataset of tornadic storms to produce 30 minutes of probabilistic predictions of radar reflectivity following tornadogenesis, with probabilistic predictions obtained by predicting parameters of the SinhArcSinh, or SHASH, distribution. The model produces physically realistic predictions of radar evolution, achieves comparable skill to next-hour forecasts from the HRRR, demonstrates reasonable probabilistic calibration and is accompanied by a variety of explainability methods to improve understanding by end users. Additionally, predictions from the model can be obtained much more quickly than those from a numerical weather prediction model. With further development, this model could be extended to nowcast radar reflectivity evolution in an operational setting.</span> <span class="abstract-toggle" data-id="2609.35675">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.35675v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.35675v1) · [:material-content-copy: BibTeX](../../bibtex/2609.35675.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
+    { .paper-tags }
+
+-   #### MW-Nowcast: Six-hour ensemble nowcasting of extreme precipitation { #2609.34836 }
+
+    *Ning Wang, Zuliang Fang, Weixin Jin, Zhongjian Lv, Shuang Qin, Pengcheng Zhao, Siqi Xiang et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.34836">Extending reliable nowcasting of extreme precipitation could provide critical additional time for warnings and emergency response during high-impact events such as flash floods. Radar-based...</span><span class="abstract-full" id="full-2609.34836" hidden>Extending reliable nowcasting of extreme precipitation could provide critical additional time for warnings and emergency response during high-impact events such as flash floods. Radar-based generative machine-learning models have enabled skilful hyperlocal precipitation nowcasting, but accurate prediction of intense precipitation remains confined to the first few hours. Because storm-scale structure is predictable for longer than individual cells, a natural strategy is to predict that structure while generatively modelling only the uncertain local growth, decay, reorganisation and initiation of storms. Here we present Microsoft Weather Nowcast (MW-Nowcast), a six-hour ensemble radar nowcasting model that jointly learns a deterministic predictor to capture organised precipitation structure shared across ensemble members, and a generator to produce diverse local residuals around this shared prediction. Across independent test data from the United States, Europe and China, MW-Nowcast achieves higher detection skill than leading methods for heavy and extreme precipitation throughout the 6 h horizon. For the most intense rainfall, MW-Nowcast doubles the available warning time across all three regions, delivering 6 h forecasts with skill previously limited to 3 h for the leading generative baseline. A cost-loss decision analysis shows that MW-Nowcast retains substantial value for a broad range of applications even at 4-6 h, where alternative methods offer little benefit. These additional hours can give forecasters and emergency managers the time to warn and act before extreme rainfall strikes, helping to protect lives and property.</span> <span class="abstract-toggle" data-id="2609.34836">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.34836v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.34836v1) · [:material-content-copy: BibTeX](../../bibtex/2609.34836.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
 
 -   #### IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy { #2609.17175 }
 
@@ -367,32 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### Extending Precipitation Nowcasting Horizons via Spectral Fusion of Radar Observations and Foundation Model Priors { #2603.21768 }
-
-    *Yuze Qin, Qingyong Li, Zhiqing Guo, Wen Wang, Yan Liu, Yangli-ao Geng* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.21768">Precipitation nowcasting is critical for disaster mitigation and aviation safety. However, radar-only models frequently suffer from a lack of large-scale atmospheric context, leading to performance...</span><span class="abstract-full" id="full-2603.21768" hidden>Precipitation nowcasting is critical for disaster mitigation and aviation safety. However, radar-only models frequently suffer from a lack of large-scale atmospheric context, leading to performance degradation at longer lead times. While integrating meteorological variables predicted by weather foundation models offers a potential remedy, existing architectures fail to reconcile the profound representational heterogeneities between radar imagery and meteorological data. To bridge this gap, we propose PW-FouCast, a novel frequency-domain fusion framework that leverages Pangu-Weather forecasts as spectral priors within a Fourier-based backbone. Our architecture introduces three key innovations: (i) Pangu-Weather-guided Frequency Modulation to align spectral magnitudes and phases with meteorological priors; (ii) Frequency Memory to correct phase discrepancies and preserve temporal evolution; and (iii) Inverted Frequency Attention to reconstruct high-frequency details typically lost in spectral filtering. Extensive experiments on the SEVIR and MeteoNet benchmarks demonstrate that PW-FouCast achieves state-of-the-art performance, effectively extending the reliable forecast horizon while maintaining structural fidelity. Our code is available at https://github.com/Onemissed/PW-FouCast.</span> <span class="abstract-toggle" data-id="2603.21768">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.21768v3) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.21768v3) · [:fontawesome-brands-github: Code](https://github.com/Onemissed/PW-FouCast) · [:material-content-copy: BibTeX](../../bibtex/2603.21768.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### PA-Net: Precipitation-Adaptive Mixture-of-Experts for Long-Tail Rainfall Nowcasting { #2603.13818 }
-
-    *Xinyu Xiao, Sen Lei, Eryun Liu, Shiming Xiang, Hao Li, Cheng Yuan, Yuan Qi, Qizhao Jin* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.13818">Precipitation nowcasting is vital for flood warning, agricultural management, and emergency response, yet two bottlenecks persist: the prohibitive cost of modeling million-scale spatiotemporal tokens...</span><span class="abstract-full" id="full-2603.13818" hidden>Precipitation nowcasting is vital for flood warning, agricultural management, and emergency response, yet two bottlenecks persist: the prohibitive cost of modeling million-scale spatiotemporal tokens from multi-variate atmospheric fields, and the extreme long-tailed rainfall distribution where heavy-to-torrential events -- those of greatest societal impact -- constitute fewer than 0.1% of all samples. We propose the Precipitation-Adaptive Network (PA-Net), a Transformer framework whose computational budget is explicitly governed by rainfall intensity. Its core component, Precipitation-Adaptive MoE (PA-MoE), dynamically scales the number of activated experts per token according to local precipitation magnitude, channeling richer representational capacity toward the rare yet critical heavy-rainfall tail. A Dual-Axis Compressed Latent Attention mechanism factorizes spatiotemporal attention with convolutional reduction to manage massive context lengths, while an intensity-aware training protocol progressively amplifies learning signals from extreme-rainfall samples. Experiment on ERA5 demonstrate consistent improvements over state-of-the-art baselines, with particularly significant gains in heavy-rain and rainstorm regimes.</span> <span class="abstract-toggle" data-id="2603.13818">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.13818v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.13818v1) · [:material-content-copy: BibTeX](../../bibtex/2603.13818.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
     { .paper-tags }
 
 </div>

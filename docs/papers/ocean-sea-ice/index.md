@@ -8,11 +8,37 @@ hide:
 
 # Ocean & Sea Ice
 
-<p class="page-meta" markdown="span">83 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">85 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### On the Limits of Univariate Deep Learning for Significant Wave Height Forecasting { #2609.30688 }
+
+    *Yilin Zhai, Hongyuan Shi, Zaijin You* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.30688">This study conducts a systematic hyperparameter search across five deep learning architectures, DLinear, LSTM, PatchTST, ResAttLstm, and Mamba2, and nine context lengths (1-168 h) for single-station...</span><span class="abstract-full" id="full-2609.30688" hidden>This study conducts a systematic hyperparameter search across five deep learning architectures, DLinear, LSTM, PatchTST, ResAttLstm, and Mamba2, and nine context lengths (1-168 h) for single-station significant wave height (Hs) forecasting on NDBC buoy 41009, followed by re-evaluation of the best configurations on a 47-buoy, 37-year corpus. The five families converge to a common performance level on the multi-buoy evaluation (between-family SD = 0.0014 m^2, 0.8% of the grand mean), a spread dwarfed by the 4.83x cross-dataset MSE shift between buoy corpora. All multi-buoy trials beat persistence (mean skill +0.062), but no architecture consistently outperforms the others. On the single-buoy experiment, skill peaks at 12-24 h where five trials fall below persistence, per-family Q4/Q3 test MSE ratios range from 2.4 to 2.6, and deep models underperform persistence for the most extreme 1% of waves. These findings are consistent with the interpretation that persistence already captures the dominant linear-inertial signal in univariate Hs, and that architecture engineering under this univariate input setting has reached diminishing returns: cross-buoy variance, not model class, dominates forecast error. Future work should prioritise atmospheric covariates, zero-shot cross-buoy transfer, and decomposition of Hs into swell and wind-sea components. By establishing a rigorous reference baseline for what univariate Hs models can and cannot achieve, this study provides a benchmark against which future multivariate and physics-informed approaches can be calibrated, and offers practical guidance for lightweight buoy-level forecasting in mid-latitude storm-dominated and swell-mixed environments.</span> <span class="abstract-toggle" data-id="2609.30688">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.30688v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.30688v1) · [:material-content-copy: BibTeX](../../bibtex/2609.30688.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a>
+    { .paper-tags }
+
+-   #### HClimRep-Ocean: A Global Ocean Emulator on an Unstructured Mesh { #2609.28601 }
+
+    *Kacper Nowak, Aleksei Koldunov, Nikolay Koldunov, Savvas Melidonis, Ankit Patnala, Simon Grasse et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.28601">Machine-learning (ML) emulators for atmospheric processes have advanced rapidly in recent years, transforming weather forecasting. Although early ML ocean forecasting models now exist, they remain...</span><span class="abstract-full" id="full-2609.28601" hidden>Machine-learning (ML) emulators for atmospheric processes have advanced rapidly in recent years, transforming weather forecasting. Although early ML ocean forecasting models now exist, they remain less developed than their atmospheric counterparts. Unlike the atmosphere, much of the ocean's kinetic energy resides in mesoscale eddies whose characteristic spatial scales are approximately an order of magnitude smaller than those of comparable atmospheric features. Moreover, complex coastlines, narrow straits, and ice-covered seas make boundary representation a central challenge that atmospheric models do not face. Consequently, numerical ocean simulations commonly use locally refined or even completely unstructured meshes. However, their data-driven counterparts have so far been built around latitude-longitude grids. We present HClimRep-Ocean, an ocean emulator that operates directly on the native unstructured mesh of FESOM2. The emulator is trained on a 209-year AWI-CM3 control integration and is run without atmospheric forcing, receiving the atmospheric state only at initialisation time, which isolates the predictability carried by the ocean state itself. Skill is strongly field-dependent: for currents, HClimRep-Ocean outperforms every reference at 30 day forecast, whereas for temperature and salinity a damped-anomaly persistence forecast remains the more accurate estimator. This behaviour is physically interpretable: current variability is largely geostrophic and internally generated, whereas sea-surface temperature and salinity fluctuations are driven by atmospheric forcing through weather state. Evaluated independently on the OceanBench benchmark, a reanalysis-trained variant of HClimRep-Ocean achieves the lowest RMSE against GLORYS reanalysis among all assessed systems, confirming the competitiveness of the native-mesh approach.</span> <span class="abstract-toggle" data-id="2609.28601">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.28601v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.28601v2) · [:material-content-copy: BibTeX](../../bibtex/2609.28601.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
 
 -   #### How well is surface ocean carbon represented in observations and ocean models? { #2609.00133 }
 
@@ -359,32 +385,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.22152v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.22152v1) · [:material-content-copy: BibTeX](../../bibtex/2512.22152.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Lazy Diffusion: Mitigating spectral collapse in generative diffusion-based stable autoregressive emulation of turbulent flows { #2512.09572 }
-
-    *Anish Sambamurthy, Ashesh Chattopadhyay* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.09572">Turbulent flows posses broadband, power-law spectra in which multiscale interactions couple high-wavenumber fluctuations to large-scale dynamics. Although diffusion-based generative models offer a...</span><span class="abstract-full" id="full-2512.09572" hidden>Turbulent flows posses broadband, power-law spectra in which multiscale interactions couple high-wavenumber fluctuations to large-scale dynamics. Although diffusion-based generative models offer a principled probabilistic forecasting framework, we show that standard DDPMs induce a fundamental <em>spectral collapse</em>: a Fourier-space analysis of the forward SDE reveals a closed-form, mode-wise signal-to-noise ratio (SNR) that decays monotonically in wavenumber, $|k|$ for spectra $S(k)\!\propto\!|k|^{-λ}$, rendering high-wavenumber modes indistinguishable from noise and producing an intrinsic spectral bias. We reinterpret the noise schedule as a spectral regularizer and introduce power-law schedules $β(τ)\!\propto\!τ^γ$ that preserve fine-scale structure deeper into diffusion time, along with <em>Lazy Diffusion</em>, a one-step distillation method that leverages the learned score geometry to bypass long reverse-time trajectories and prevent high-$k$ degradation. Applied to high-Reynolds-number 2D Kolmogorov turbulence and $1/12^\circ$ Gulf of Mexico ocean reanalysis, these methods resolve spectral collapse, stabilize long-horizon autoregression, and restore physically realistic inertial-range scaling. Together, they show that naïve Gaussian scheduling is structurally incompatible with power-law physics and that physics-aware diffusion processes can yield accurate, efficient, and fully probabilistic surrogates for multiscale dynamical systems.</span> <span class="abstract-toggle" data-id="2512.09572">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.09572v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.09572v1) · [:material-content-copy: BibTeX](../../bibtex/2512.09572.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows { #2511.20109 }
-
-    *Hyeonjae Kim, Chenyue Li, Wen Deng, Mengxi Jin, Wen Huang, Mengqian Lu, Binhang Yuan* · Nov 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2511.20109">Climate science demands automated workflows to transform comprehensive questions into data-driven statements across massive, heterogeneous datasets. However, generic LLM agents and static scripting...</span><span class="abstract-full" id="full-2511.20109" hidden>Climate science demands automated workflows to transform comprehensive questions into data-driven statements across massive, heterogeneous datasets. However, generic LLM agents and static scripting pipelines lack climate-specific context and flexibility, thus, perform poorly in practice. We present ClimateAgent, an autonomous multi-agent framework that orchestrates end-to-end climate data analytic workflows. ClimateAgent decomposes user questions into executable sub-tasks coordinated by an Orchestrate-Agent and a Plan-Agent; acquires data via specialized Data-Agents that dynamically introspect APIs to synthesize robust download scripts; and completes analysis and reporting with a Coding-Agent that generates Python code, visualizations, and a final report with a built-in self-correction loop. To enable systematic evaluation, we introduce Climate-Agent-Bench-85, a benchmark of 85 real-world tasks spanning atmospheric rivers, drought, extreme precipitation, heat waves, sea surface temperature, and tropical cyclones. On Climate-Agent-Bench-85, ClimateAgent achieves 100% task completion and a report quality score of 8.32, outperforming GitHub-Copilot (6.27) and a GPT-5 baseline (3.26). These results demonstrate that our multi-agent orchestration with dynamic API awareness and self-correcting execution substantially advances reliable, end-to-end automation for climate science analytic tasks.</span> <span class="abstract-toggle" data-id="2511.20109">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2511.20109v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2511.20109v1) · [:material-content-copy: BibTeX](../../bibtex/2511.20109.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a>
-    { .paper-tags }
 
 </div>
 

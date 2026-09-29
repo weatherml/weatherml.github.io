@@ -8,11 +8,21 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">98 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">99 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Low latency global carbon budget reveals strong land sink recovery in 2025 { #2609.34226 }
+
+    *Philippe Ciais, Piyu Ke, Xiangjun Tian, Stephen Sitch, Wei Li, Xiaomeng Du, Xiaofan Gui et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.34226">The atmospheric CO2 growth rate fell sharply in 2025, from a record 3.76 $\pm$ 0.09 ppm yr-1 in 2024 to 2.06 $\pm$ 0.09 ppm yr-1 (NOAA marine boundary layer observations), below the 2015-2022 mean of...</span><span class="abstract-full" id="full-2609.34226" hidden>The atmospheric CO2 growth rate fell sharply in 2025, from a record 3.76 $\pm$ 0.09 ppm yr-1 in 2024 to 2.06 $\pm$ 0.09 ppm yr-1 (NOAA marine boundary layer observations), below the 2015-2022 mean of 2.47 ppm yr-1, even as fossil CO2 emissions rose by 0.7% to 10.38 GtC yr-1. Here we present a low-latency global and regional carbon budget for 2025, combining three dynamic global vegetation models (DGVMs) and ocean model emulators with four atmospheric inversions constrained by OCO-2 satellite retrievals. The global net land sink reached 2.36 $\pm$ 0.16 GtC yr-1 in 2025 (DGVMs: 2.04 $\pm$ 0.24; inversions: 2.68 $\pm$ 0.20 GtC yr-1), strengthening by 2.81 $\pm$ 0.31 GtC yr-1 from 2024 and exceeding the 2015-2022 mean by 0.71 $\pm$ 0.13 GtC yr-1. Ocean uptake (3.11 $\pm$ 0.36 GtC yr-1) remained similar to 2024, making the land sink rebound the dominant driver of the slowdown in CO2 growth. Tropical lands shifted from net sources in 2024 to net sinks in 2025, with enhanced uptake across much of Africa and northern Eurasia, and land flux anomalies covaried with GRACE terrestrial water storage. Where the sink had weakened substantially in 2023-2024, about 80% of the area showed some recovery, with overall recovery of 87.3% (DGVMs) to 99.5% (inversions). Recovery exceeded 100% in the tropics but remained incomplete in the northern extratropics, indicating a strong but spatially uneven rebound of the land carbon sink.</span> <span class="abstract-toggle" data-id="2609.34226">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.34226v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.34226v1) · [:material-content-copy: BibTeX](../../bibtex/2609.34226.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework { #2609.12254 }
 
@@ -380,19 +390,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Attention-based Multi-modal Deep Learning Model of Spatio-temporal Crop Yield Prediction with Satellite, Soil and Climate Data { #2604.19217 }
-
-    *Gopal Krishna Shyam, Ila Chandrakar* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.19217">Crop yield prediction is one of the most important challenge, which is crucial to world food security and policy-making decisions. The conventional forecasting techniques are limited in their...</span><span class="abstract-full" id="full-2604.19217" hidden>Crop yield prediction is one of the most important challenge, which is crucial to world food security and policy-making decisions. The conventional forecasting techniques are limited in their accuracy with reference to the fact that they utilize static data sources that do not reflect the dynamic and intricate relationships that exist between the variables of the environment over time [5,13]. This paper presents Attention-Based Multi-Modal Deep Learning Framework (ABMMDLF), which is suggested to be used in high-accuracy spatio-temporal crop yield prediction.   The model we use combines multi-year satellite imagery, high-resolution time-series of meteorological data and initial soil properties as opposed to the traditional models which use only one of the aforementioned factors [12, 21]. The main architecture involves the use of Convolutional Neural Networks (CNN) to extract spatial features and a Temporal Attention Mechanism to adaptively weight important phenological periods targeted by the algorithm to change over time and condition on spatial features of images and video sequences. As can be experimentally seen, the proposed research work provides an R^2 score of 0.89, which is far better than the baseline models do.</span> <span class="abstract-toggle" data-id="2604.19217">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.19217v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.19217v1) · [:material-content-copy: BibTeX](../../bibtex/2604.19217.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a>
     { .paper-tags }
 
 </div>
