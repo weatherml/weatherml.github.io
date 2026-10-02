@@ -8,11 +8,50 @@ hide:
 
 # Regional Models
 
-<p class="page-meta" markdown="span">60 papers · page 1 of 2 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">63 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography { #2610.01835 }
+
+    *Alberto Pennino, Francesco Zanetta, Michele Cattaneo, Claire Merker, Radi Radev, Jonas Bhend et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.01835">We present Varda-single-1.0, a medium-range data-driven weather prediction system built for the Alpine domain. It provides hourly deterministic regional forecasts on a mesh of 1 km resolution and...</span><span class="abstract-full" id="full-2610.01835" hidden>We present Varda-single-1.0, a medium-range data-driven weather prediction system built for the Alpine domain. It provides hourly deterministic regional forecasts on a mesh of 1 km resolution and global forecasts on a 31 km mesh. The system comprises two independently trained stretched-grid Graph Transformer models with encoder-processor-decoder architecture, developed in the Anemoi framework: a 6-hourly autoregressive forecaster and a temporal downscaler reconstructing hourly forecasts between the forecaster's steps. Its training curriculum includes pre-training on ERA5 reanalysis data, followed by training on a 20-year kilometre-scale regional reanalysis, and finally fine-tuning on operational kilometre-scale analyses. Verified over one year against operational analyses and surface station observations, Varda-single is competitive with or improves on MeteoSwiss' operational numerical weather prediction baselines for most headline scores and variables. It broadly matches the skill of the high-resolution 1 km ICON-CH1-EPS control at lead times up to +33 h and generally outperforms the 2 km ICON-CH2-EPS control at lead times up to +120 h. Despite competitive aggregate scores, Varda-single underestimates some local wind maxima and produces overly smooth convective precipitation fields, consistent with the smoothing associated with squared-error training. To gain insight into the model's behaviour, we investigate three case studies beyond the aggregated headline scores, and find particular weaknesses in Varda-single's representation of local winds over complex terrain. Varda-single represents an important step in the development of high-resolution ML forecasting over complex terrain, in complementing the operational regional numerical weather prediction models of MeteoSwiss with data-driven models and in providing a pretrained model for researchers and user-specific applications.</span> <span class="abstract-toggle" data-id="2610.01835">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.01835v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.01835v1) · [:material-content-copy: BibTeX](../../bibtex/2610.01835.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a>
+    { .paper-tags }
+
+-   #### Less is more: error-distance scaling relation for data-efficient kilometer-scale downscaling of extreme heat { #2609.40140 }
+
+    *Ahmed Marey, Henry Lu, Abhishek Gaur, Sherif Goubran, Malek Aloui, Theodore Potsis, David Rolnick et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.40140">Extreme heat is where urban adaptation needs kilometer-scale data the most, but the simulations training a downscaler can cost more than they save, and how much is needed has not been identified. We...</span><span class="abstract-full" id="full-2609.40140" hidden>Extreme heat is where urban adaptation needs kilometer-scale data the most, but the simulations training a downscaler can cost more than they save, and how much is needed has not been identified. We measured it with CASPER, a U-Net with a structure-preserving loss downscaling 32 km reanalysis to 1 km temperature, humidity and wind, across 24 configurations of one to eight months. Held-out error grows linearly with climatological distance to the training data, RMSE = 0.83 + 2.95 d, explaining 90% of its variance against 7% for volume and predicting unseen months in advance. On held-out extreme summer weeks CASPER preserves the fine-scale structure and cross-variable physics that matched-budget baselines degrade, and matches station observations during documented heat waves to within 1.8 K. Transfer to a new region degrades geographically; 11 days of local simulation cuts Vancouver's held-out error from 3.8 to 1.3 K. Training periods should span the target climate: the same accuracy for four times less simulation, putting kilometer-scale downscaling of extreme heat within reach of groups without large computing facilities.</span> <span class="abstract-toggle" data-id="2609.40140">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.40140v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.40140v2) · [:material-content-copy: BibTeX](../../bibtex/2609.40140.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
+    { .paper-tags }
+
+-   #### RainAtlas: A Multi-Continental Dataset for Precipitation Downscaling { #2609.39833 }
+
+    *Pierre-Louis Lemaire, Luca Schmidt, Wietze Suijker, Alex Hernandez-Garcia, David Rolnick* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.39833">Extreme rainfall events are increasing in intensity and frequency as climate change accelerates. While kilometer-scale precipitation forecasts are critical for supporting local decision-making, the...</span><span class="abstract-full" id="full-2609.39833" hidden>Extreme rainfall events are increasing in intensity and frequency as climate change accelerates. While kilometer-scale precipitation forecasts are critical for supporting local decision-making, the limited availability of high-resolution precipitation observations hinders their accuracy, especially in under-resourced regions. Machine learning models are widely used to downscale precipitation data to km-scale, but their application to unseen geographies presents challenges. First, processing raw high-resolution precipitation datasets across regions requires significant engineering and domain expertise. Second, generalization across regions remains difficult. To help overcome these barriers, we release RainAtlas, a large-scale, ML-ready and multi-continental dataset for precipitation downscaling. Covering three continents, RainAtlas harmonizes heterogeneous hourly km-scale observations to a common 2-km grid. Each regional partition contains around 210,000 aligned low- and high-resolution precipitation pairs, respectively from ERA5 reanalysis and direct observations. We benchmark state-of-the-art ML-based downscaling models across RainAtlas using a wide range of metrics. Our evaluation reveals substantial variance in out-of-domain generalization depending on the training regions. This underscores the need for cross-regional, multi-source km-scale evaluation, establishing RainAtlas as a well-positioned benchmark for precipitation downscaling research.</span> <span class="abstract-toggle" data-id="2609.39833">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.39833v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.39833v1) · [:material-content-copy: BibTeX](../../bibtex/2609.39833.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
+    { .paper-tags }
 
 -   #### West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation { #2609.25512 }
 
@@ -356,46 +395,7 @@ hide:
     <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a>
     { .paper-tags }
 
--   #### Flo: A data-driven limited-area storm surge model { #2601.02090 }
-
-    *Nils Melsom Kristensen, Mateusz Matuszak, Paulina Tedesco, Ina Kristine Berentsen Kullmann et al.* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.02090">We present Flo, a data-driven storm surge model, covering the North Sea, Norwegian Sea and Barents Sea. The model is built using the Anemoi framework for creating machine learning weather forecasting...</span><span class="abstract-full" id="full-2601.02090" hidden>We present Flo, a data-driven storm surge model, covering the North Sea, Norwegian Sea and Barents Sea. The model is built using the Anemoi framework for creating machine learning weather forecasting systems, developed by the European Centre for Medium-Range Weather Forecasts and partners. The model is based on a graph neural network, and is capable of simulating water level due to atmospheric effects (wind stress and inverse barometer effect, i.e. the non-tidally induced part of the total water level; the residual water level) at a horizontal resolution of 4 km and a temporal resolution of 1 hour with a quality comparable to the numerical model on which it was trained. The model was trained using a dataset consisting of 43 years of atmospheric data from the 3-km Norwegian Reanalysis hindcast for mean sea level pressure and winds, and the NORA-Surge hindcast for water level. Evaluation was done by comparing results from hindcast runs of the Flo model against independent observations of more than 90 water level gauges along the European coast, and against the NORA-Surge hindcast. The evaluation shows that Flo produces hindcasts with accuracy similar to the NORA-Surge hindcast, and it is shown that the model can resolve key physical processes. As the NORA-Surge hindcast used for training does not include data assimilation, Flo is not expected to systematically outperform the numerical model when evaluated against observations. Nevertheless, the present work represents an important step towards complementing traditional physics-based storm surge modelling with machine learning approaches and the framework establishes a strong foundation for future developments, particularly for training storm surge models that offer more flexibility for incorporating observations and other additional data sources.</span> <span class="abstract-toggle" data-id="2601.02090">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.02090v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.02090v2) · [:material-content-copy: BibTeX](../../bibtex/2601.02090.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
-    { .paper-tags }
-
--   #### HiRO-ACE: Fast and skillful AI emulation and downscaling trained on a 3 km global storm-resolving model { #2512.18224 }
-
-    *W. Andre Perkins, Anna Kwa, Jeremy McGibbon, Troy Arcomano, Spencer K. Clark, Oliver Watt-Meyer et al.* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.18224">Kilometer-scale simulations of the atmosphere are an important tool for assessing local weather extremes and climate impacts, but computational expense limits their use to small regions, short...</span><span class="abstract-full" id="full-2512.18224" hidden>Kilometer-scale simulations of the atmosphere are an important tool for assessing local weather extremes and climate impacts, but computational expense limits their use to small regions, short periods, and limited ensembles. Machine learning offers a pathway to efficiently emulate these high-resolution simulations. Here we introduce HiRO-ACE, a two-stage AI modeling framework combining a stochastic version of the Ai2 Climate Emulator (ACE2S) with diffusion-based downscaling (HiRO) to generate 3 km precipitation fields over arbitrary regions of the globe. Both components are trained on data derived from a decade of atmospheric simulation by X-SHiELD, a 3 km global storm-resolving model. HiRO performs a 32x downscaling--generating 3 km 6-hourly precipitation from coarse 100 km inputs by training on paired high-resolution and coarsened X-SHiELD outputs. ACE2S is a $1^\circ \times 1^\circ$ ($\sim$100 km) stochastic autoregressive global atmosphere emulator that maintains grid-scale precipitation variability consistent with coarsened X-SHiELD, enabling its outputs to be ingested by HiRO without additional tuning. HiRO-ACE reproduces the distribution of extreme precipitation rates through the 99.99th percentile, with time-mean precipitation biases below 10% almost everywhere. The framework generates plausible tropical cyclones, fronts, and convective events from poorly resolved coarse inputs. Its computational efficiency allows generation of 6-hourly high-resolution regional precipitation for decades of simulated climate within a single day using one H100 GPU, while the probabilistic design enables ensemble generation for quantifying uncertainty. This establishes an AI-enabled pathway for affordably leveraging the realism of expensive km-scale simulations to support local climate adaptation planning and extreme event risk assessment.</span> <span class="abstract-toggle" data-id="2512.18224">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.18224v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.18224v2) · [:material-content-copy: BibTeX](../../bibtex/2512.18224.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a>
-    { .paper-tags }
-
--   #### High-Resolution Probabilistic Data-Driven Weather Modeling with a Stretched-Grid { #2511.23043 }
-
-    *Even Marius Nordhagen, Håvard Homleid Haugen, Aram Farhad Shafiq Salihi, Magnus Sikora Ingstad et al.* · Nov 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2511.23043">We present a probabilistic data-driven weather model capable of providing an ensemble of high spatial resolution realizations of 87 variables at arbitrary forecast length and ensemble size. The model...</span><span class="abstract-full" id="full-2511.23043" hidden>We present a probabilistic data-driven weather model capable of providing an ensemble of high spatial resolution realizations of 87 variables at arbitrary forecast length and ensemble size. The model uses a stretched grid, dedicating 2.5 km resolution to a region of interest, and 31 km resolution elsewhere. Based on a stochastic encoder-decoder architecture, the model is trained using a loss function based on the Continuous Ranked Probability Score (CRPS) evaluated point-wise in real and spectral space. The spectral loss components is shown to be necessary to create fields that are spatially coherent. The model is compared to high-resolution operational numerical weather prediction forecasts from the MetCoOp Ensemble Prediction System (MEPS), showing competitive forecasts when evaluated against observations from surface weather stations. The model produced fields that are more spatially coherent than mean squared error based models and CRPS based models without the spectral component in the loss.</span> <span class="abstract-toggle" data-id="2511.23043">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2511.23043v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2511.23043v1) · [:material-content-copy: BibTeX](../../bibtex/2511.23043.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a>
-    { .paper-tags }
-
 </div>
 
-<nav class="pager" markdown="span">**1** [2](2.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
+<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
 

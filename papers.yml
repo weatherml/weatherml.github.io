@@ -40093,3 +40093,481 @@
   - cs.AI
   - math.AP
   - math.NA
+- category: Other
+  title: AI Emulation of Stochastic Sudden Stratospheric Warming with Interpretable
+    Latent Structure
+  authors: C. Daniel Boscu, Daniel Hernandez, Fabio Alvarez Ventura, Justin Finkel,
+    Ashesh Chattopadhyay, Pedram Hassanzadeh, Dorian S. Abbot
+  year: 2026
+  arxiv: 2610.02069v1
+  abstract: Rare weather regime transitions pose a challenge for data-driven modeling
+    due to class imbalance. In this study, we develop a probabilistic deep learning
+    emulator for a prototypical system with regime transitions, the stochastic Holton--Mass
+    model of stratospheric variability, and analyze the structure of its learned latent
+    space. The Holton--Mass model exhibits two metastable regimes, a strong and a
+    weak polar vortex, maintained by nonlinear wave--mean flow interactions, with
+    weak stochastic forcing intermittently triggering rare transitions between these
+    regimes that qualitatively represent SSW events. We employ a ResNet-inspired Conditional
+    Variational Autoencoder with six-layer encoder and decoder layers and explicit
+    current-state conditioning to model the distribution of the system's state at
+    the next time step (one day). The emulator accurately reproduces short-term dynamics,
+    steady-state probability distributions, regime persistence statistics, rare transition
+    rates, the transition committor function, and the transition expected lead time
+    of the physical model. Beyond emulation fidelity, we interrogate the learned latent
+    representation to understand how the model internalizes the underlying metastable
+    structure of the dynamics. Principal Component Analysis of the 32-dimensional
+    latent space reveals a clear and unsupervised separation into four physically
+    interpretable clusters corresponding to strong versus weak vortex regimes and
+    stable versus transition-prone configurations. Such emergent regime separation
+    in latent space is hard to identify for deep generative models applied to high-dimensional
+    stochastic systems. Our results show that carefully designed probabilistic emulators
+    can uncover physically meaningful manifolds governing extreme-event dynamics,
+    potentially aiding the development of improved operational advanced warning systems.
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Regional Models
+  title: 'Varda-single-1.0: deterministic data-driven weather forecasting at 1 km
+    resolution over Switzerland''s complex topography'
+  authors: Alberto Pennino, Francesco Zanetta, Michele Cattaneo, Claire Merker, Radi
+    Radev, Jonas Bhend, Louis Frey, Hugues de Laroussilhe, Ophélia Miralles, Carlos
+    Osuna, Daniele Nerini, Andreas Pauling, Daniel Hupp, Ulrich Hamann, Mary McGlohon,
+    Marti Bosch, Luca Lanzilao, Marco Arpagaus, Lukas Jansing, Daniel Leuenberger,
+    Mark A. Liniger, Katrin Ehlert, Matthew Chantry, Håvard Homleid Haugen, Gert Mertes,
+    Ana Prieto Nemesio, Mario Santa Cruz, Jasper Wijnands, Gabriel Moldovan, Harrison
+    Cook, Oliver Fuhrer
+  year: 2026
+  arxiv: 2610.01835v1
+  abstract: 'We present Varda-single-1.0, a medium-range data-driven weather prediction
+    system built for the Alpine domain. It provides hourly deterministic regional
+    forecasts on a mesh of 1 km resolution and global forecasts on a 31 km mesh. The
+    system comprises two independently trained stretched-grid Graph Transformer models
+    with encoder-processor-decoder architecture, developed in the Anemoi framework:
+    a 6-hourly autoregressive forecaster and a temporal downscaler reconstructing
+    hourly forecasts between the forecaster''s steps. Its training curriculum includes
+    pre-training on ERA5 reanalysis data, followed by training on a 20-year kilometre-scale
+    regional reanalysis, and finally fine-tuning on operational kilometre-scale analyses.
+    Verified over one year against operational analyses and surface station observations,
+    Varda-single is competitive with or improves on MeteoSwiss'' operational numerical
+    weather prediction baselines for most headline scores and variables. It broadly
+    matches the skill of the high-resolution 1 km ICON-CH1-EPS control at lead times
+    up to +33 h and generally outperforms the 2 km ICON-CH2-EPS control at lead times
+    up to +120 h. Despite competitive aggregate scores, Varda-single underestimates
+    some local wind maxima and produces overly smooth convective precipitation fields,
+    consistent with the smoothing associated with squared-error training. To gain
+    insight into the model''s behaviour, we investigate three case studies beyond
+    the aggregated headline scores, and find particular weaknesses in Varda-single''s
+    representation of local winds over complex terrain. Varda-single represents an
+    important step in the development of high-resolution ML forecasting over complex
+    terrain, in complementing the operational regional numerical weather prediction
+    models of MeteoSwiss with data-driven models and in providing a pretrained model
+    for researchers and user-specific applications.'
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Other
+  title: Explaining El Niño Forecasts with the Average Gradient Outer Product
+  authors: Yuan Hui, Dorian S. Abbot, Robert J. Webber
+  year: 2026
+  arxiv: 2610.01095v1
+  abstract: 'An important and unresolved problem in the physical sciences is explaining
+    the predictions made by neural networks. Several explainable artificial intelligence
+    (XAI) methods have been proposed to address this problem, including gradient XAI,
+    Integrated Gradients, and GradientSHAP. We evaluate the baseline XAI methods according
+    to four scores: sensitivity (XAI patterns strongly affect predictions), attribution
+    (XAI patterns reproduce the change in prediction relative to a baseline), robustness
+    (XAI patterns remain stable for nearby inputs), and coherence (XAI patterns are
+    spatially smooth). We also introduce a new method, average gradient outer product
+    (AGOP) XAI, that uses global gradient information to identify an important direction
+    for a specific input. We apply XAI to neural network predictions of the El Niño-Southern
+    Oscillation (ENSO) based on data from the Zebiak-Cane model.   AGOP XAI achieves
+    the highest attribution, robustness, and coherence scores in the architecture
+    and lead-time comparisons reported here. Its sensitivity is surpassed by gradient
+    XAI, which is maximally sensitive by definition. Beyond diagnosing neural-network
+    behavior, AGOP XAI can generate candidate hypotheses about physical mechanisms.
+    The method highlights an equatorial thermocline-depth signal consistent with recharge
+    oscillator physics, together with a southeastern-Pacific lobe that may be specific
+    to the Zebiak-Cane model. Finally, we test the physical relevance of AGOP using
+    optimized perturbations that move the Zebiak-Cane model along AGOP explanation
+    coordinates. Such perturbations can suppress the selected extreme events or, from
+    a near-neutral ensemble, generate strong El Niño or La Niña events 10 months later.'
+  arxiv_categories:
+  - physics.ao-ph
+  github: https://github.com/rjwebber/agop-xai
+- category: Global Models
+  title: 'Weather Jiu-Jitsu: Exploring the Feasibility of Control Paradigms in Weather
+    Foundation Models'
+  authors: Prakriti Biswas, Kobi Abayomi, Upmanu Lall
+  year: 2026
+  arxiv: 2610.00792v1
+  abstract: 'Weather Jiu-Jitsu is a control paradigm for extreme climatological events,
+    inspired by chaos theory. As a proposition, small, precise, targeted, and cost-inexpensive
+    perturbations can redirect trajectories of a large dynamical system. This strategy
+    has been demonstrated analytically in the Lorenz-63 system, where a naturally
+    chaotic trajectory switching between two attractors can be confined to a single
+    attractor, indefinitely, via arbitrarily small perturbations. This paper examines
+    the feasibility of Microsoft''s Aurora -- a 1.3 billion parameter global atmospheric
+    model -- as a test bed for this strategy. This paper explores three questions:
+    (1) Is Aurora a reliable enough simulation environment to serve as a meaningful
+    testbed? (2) Are the perturbations required to redirect its trajectories small
+    enough to be physically plausible? (3) Does Aurora''s learned latent space (the
+    parametric estimators on climatological attributes) yield any apparent, structured,
+    and/or perhaps interpretable features that can convey a geo/atmospheric response
+    to initial conditions? We find evidence consistent with all three: Aurora''s modeled
+    trajectories respond to perturbations beyond measurement drift, the perturbation
+    magnitudes required are small relative to the model''s own forecast uncertainty,
+    and its latent representations exhibit directional structure that responds to
+    Jiu-Jitsu-type interventions, even though that structure does not separate extreme
+    from normal states outright. These results should be read as feasibility diagnostics
+    rather than a demonstration of control: we do not implement or test an actual
+    steering intervention on Aurora, and several of our findings, particularly around
+    the model''s latent-space geometry, are exploratory.'
+  arxiv_categories:
+  - physics.ao-ph
+- category: Regional Models
+  title: 'Less is more: error-distance scaling relation for data-efficient kilometer-scale
+    downscaling of extreme heat'
+  authors: Ahmed Marey, Henry Lu, Abhishek Gaur, Sherif Goubran, Malek Aloui, Theodore
+    Potsis, David Rolnick, Alex Hernandez-Garcia, Liangzhu Leon Wang
+  year: 2026
+  arxiv: 2609.40140v2
+  abstract: 'Extreme heat is where urban adaptation needs kilometer-scale data the
+    most, but the simulations training a downscaler can cost more than they save,
+    and how much is needed has not been identified. We measured it with CASPER, a
+    U-Net with a structure-preserving loss downscaling 32 km reanalysis to 1 km temperature,
+    humidity and wind, across 24 configurations of one to eight months. Held-out error
+    grows linearly with climatological distance to the training data, RMSE = 0.83
+    + 2.95 d, explaining 90% of its variance against 7% for volume and predicting
+    unseen months in advance. On held-out extreme summer weeks CASPER preserves the
+    fine-scale structure and cross-variable physics that matched-budget baselines
+    degrade, and matches station observations during documented heat waves to within
+    1.8 K. Transfer to a new region degrades geographically; 11 days of local simulation
+    cuts Vancouver''s held-out error from 3.8 to 1.3 K. Training periods should span
+    the target climate: the same accuracy for four times less simulation, putting
+    kilometer-scale downscaling of extreme heat within reach of groups without large
+    computing facilities.'
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Other
+  title: A library for differentiable signal processing and machine learning on the
+    sphere
+  authors: Thorsten Kurth, Max Rietmann, Mauro Bisson, Andrea Paris, Alberto Carpentieri,
+    Jean Kossaifi, Anima Anandkumar, Christian Hundt, Boris Bonev
+  year: 2026
+  arxiv: 2609.39737v1
+  abstract: The two-dimensional sphere embedded in three-dimensional Euclidean space
+    S2, plays a central role in a variety of scientific and engineering domains, including
+    geophysics, planetary science, geodesy, atmospheric physics, quantum chemistry,
+    cosmology, and virtual reality, among many others. As machine learning increasingly
+    permeates these fields, the demand grows for robust tools that process and model
+    functions on the sphere, while respecting the inherent topological and symmetry
+    properties of the domain. We present torch-harmonics, a comprehensive library
+    that offers efficient, differentiable implementations of advanced signal processing
+    and machine learning (ML) methods for spherical data. These include the spherical
+    harmonic transform (SHT), the spherical analogue of the Fourier transform, vector
+    spherical harmonics, discrete-continuous and spectral convolutions, as well as
+    both global and neighborhood spherical attention mechanisms. Beyond traditional
+    representations, torch-harmonics provides the building blocks for state-of-the-art
+    spherical ML architectures such as spherical transformers in order to enable scalable,
+    rotationally-aware learning and inference in modern scientific and engineering
+    applications.
+  arxiv_categories:
+  - cs.LG
+  - physics.ao-ph
+  - physics.geo-ph
+- category: Global Models
+  title: 'Butterfly Effect Confirmed in Global AI Weather Models: Evidence from Tropical
+    Cyclone Forecasting'
+  authors: Jeremy Cheuk-Hin Leung, Daosheng Xu, Weiye Yu, Shaojing Zhang, Xiaodong
+    Zeng, Gaozhen Nie, Jie Feng, Jingchen Pu, Yi Li, Kaijun Ren, Qingcun Zeng, Banglin
+    Zhang
+  year: 2026
+  arxiv: 2609.39379v1
+  abstract: A paradox recently emerged in artificial intelligence (AI) weather prediction
+    research. While some claim AI weather models cannot simulate atmospheric butterfly
+    effect, this conflicts with AI models' limited predictability and advances in
+    AI ensemble forecasting. This study demonstrates via counterexamples that the
+    butterfly effect does exist in AI weather predictions. For Super Typhoon Khanun,
+    AI predictions are constrained by a double-attractor system. Minor initial perturbations
+    confined to two regions trigger state transitions between two local attractors,
+    causing a 1006-km difference in the predicted storm position on Day 7. This behavior
+    is consistent with numerical weather prediction models and observed in ~12% of
+    tropical cyclones in the past 5 years. These findings verify AI's ability to capture
+    atmospheric chaos and provide the physical basis for AI ensemble forecasting.
+  arxiv_categories:
+  - physics.ao-ph
+  - nlin.CD
+- category: Other
+  title: Methodological Changes to the Attention ResUNet Hourly Precipitation Postprocessor
+  authors: Thomas M. Hamill
+  year: 2026
+  arxiv: 2609.38609v1
+  abstract: This note is a technical companion to a previously published preprint
+    describing an Attention Residual U-Net that postprocesses deterministic forecasts
+    from The Weather Company's Global and Regional Atmospheric Forecast (GRAF) model
+    into probabilistic hourly precipitation forecasts. It documents what has changed
+    in that method since publication. Feature-wise Linear Modulation conditioning
+    on calendar season and forecast lead time is used to produce a single trained
+    model for each season, replacing 192 separately trained per-month, per-lead checkpoints.
+    Lead time is extended from 48 to 72 h. Two new input channels are used, per-pixel
+    local solar hour and a static, monthly-varying precipitation climatology. During
+    verification, the climatological reference against which the Brier Skill Score
+    is computed now has an added diurnal dimension, on top of the monthly resolution
+    it already had. Brier Skill Score and reliability are compared between the new
+    vs. the previous training. Forecasts generated with the new training show a modest,
+    consistent improvement of the current training over the original.
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Global Models
+  title: A neural network-based Universal Thermal Climate Index for reliable global
+    thermal-stress classification across extreme weather
+  authors: Bikem Pastine, Milan Klöwer, Tianning Tang, Sarah Wilson Kemsley, Louise
+    Slater
+  year: 2026
+  arxiv: 2609.35949v1
+  abstract: Extreme temperatures are the leading cause of climate-related mortality
+    world-wide. Climate-health research and operational weather forecasting require
+    accurate estimates of human thermal stress. The Universal Thermal Climate Index
+    (UTCI) is among the most sophisticated and widely used feels-like temperature
+    metrics. However, its ubiquitous polynomial approximation does not generalize
+    well to extreme weather conditions. Here, we introduce Neural-UTCI, a neural network
+    that calculates UTCI with substantially higher accuracy across global conditions
+    at a lower computational cost for operational use. Neural-UTCI reduces the polynomial
+    approximation RMSE from 2.78°C to 0.36 °C, an 87% improvement, and lowers thermal
+    stress misclassification rates from 5.3% to 1.7%, with consistent performance
+    across resampling experiments. These differences affect thermal exposure metrics.
+    For example, during the 2003 European heatwave summer in Rome, Italy, the number
+    of very strong heat stress days increases from 15 to 35 days when using Neural-UTCI
+    compared to operational products like ERA5-HEAT. Simultaneously, Neural-UTCI reliably
+    classifies extreme cold stress conditions, allowing continuous global application.
+    By improving UTCI accuracy, Neural-UTCI can strengthen climate-health risk assessments
+    and public weather warning systems, especially as global warming increases the
+    incidence of extreme events.
+  arxiv_categories:
+  - physics.ao-ph
+- category: Other
+  title: Unsupervised Domain Adaptation for Enhanced Radiometer Image Precipitation
+    Estimation using Conditional Flow Matching
+  authors: Victor Enescu, Assaad Zeghina, Matthieu Meignin, Nicolas Viltard, Cécile
+    Mallet
+  year: 2026
+  arxiv: 2610.01890v1
+  abstract: Deep generative networks have recently achieved unprecedented performance
+    in precise image and video editing using sophisticated textual prompts. However,
+    the effectiveness of such models heavily depends on access to very large supervised
+    and annotated image datasets, which can be very difficult to obtain. This is particularly
+    true for satellite instruments, which very rarely overlap with labelled data,
+    and suffer from domain shifts in the rare occasions they do. In this paper, we
+    investigate the potential of flow matching models for unsupervised domain adaptation
+    of satellite radiometer images. Our main contribution is a novel unsupervised
+    method that achieves precise domain alignment by leveraging parts of the deterministic
+    ordinary differential equations in flow matching models, conditioned on different
+    satellite instruments. A key strength of our approach is its ability to preserve
+    essential information while adapting across any domains since the perturbations
+    are in theory bijective. Extensive experiments conducted on the GPM-Core constellation
+    show the benefit of our conditional domain adaptation, particularly in improving
+    rain precipitation estimation from radiometer imagery.
+  arxiv_categories:
+  - cs.CV
+  - cs.AI
+- category: Data Assimilation
+  title: Benchmarking Generative Models for Weather Data Assimilation on Real Station
+    Observations
+  authors: Ruizhe Huang, Qidong Yang, Jonathan Giezendanner, Sherrie Wang
+  year: 2026
+  arxiv: 2610.00728v1
+  abstract: 'Weather reanalysis products rely on computationally intensive numerical
+    weather predictions followed by data assimilation that corrects the forecast toward
+    observations. Deep generative models offer a cheaper alternative that shifts much
+    of this cost from inference to offline training. However, existing generative
+    approaches have been evaluated on synthetic observations or under different datasets
+    and evaluation schemes, making it unclear which design choices actually improve
+    real-world data assimilation. We present the first controlled benchmark of generative
+    weather data assimilation on real weather station observations. Using 11,849 NOAA
+    MADIS stations across the contiguous United States and four weather variables,
+    we evaluate methods while holding the dataset, observation operator, and deep
+    learning architecture fixed. The benchmark compares the major design choices,
+    including diffusion versus flow matching, pixel versus latent-space formulations,
+    and multiple inference-time conditioning strategies, against a classical 3D-Var
+    baseline. The benchmark reveals three clear conclusions. First, learned generative
+    priors outperform the Gaussian prior of 3D-Var (35.7% vs. 33.3% RMSE reduction
+    over ERA5) despite using no ERA5 background field at inference. Second, full-gradient
+    guidance consistently outperforms stop-gradient and initial-noise optimization.
+    Third, other choices provide little measurable benefit: diffusion and flow matching
+    perform nearly identically under matched conditions, and latent-space variable
+    mixing does not help. We further evaluate both dense and sparse station settings
+    and find advantages from generative AI and full-gradient guidance more pronounced
+    under sparsity. Together, these results identify which components of generative
+    weather data assimilation improve performance on real station observations and
+    establish a standardized benchmark for future work.'
+  arxiv_categories:
+  - cs.LG
+  - cs.AI
+- category: Regional Models
+  title: 'RainAtlas: A Multi-Continental Dataset for Precipitation Downscaling'
+  authors: Pierre-Louis Lemaire, Luca Schmidt, Wietze Suijker, Alex Hernandez-Garcia,
+    David Rolnick
+  year: 2026
+  arxiv: 2609.39833v1
+  abstract: Extreme rainfall events are increasing in intensity and frequency as climate
+    change accelerates. While kilometer-scale precipitation forecasts are critical
+    for supporting local decision-making, the limited availability of high-resolution
+    precipitation observations hinders their accuracy, especially in under-resourced
+    regions. Machine learning models are widely used to downscale precipitation data
+    to km-scale, but their application to unseen geographies presents challenges.
+    First, processing raw high-resolution precipitation datasets across regions requires
+    significant engineering and domain expertise. Second, generalization across regions
+    remains difficult. To help overcome these barriers, we release RainAtlas, a large-scale,
+    ML-ready and multi-continental dataset for precipitation downscaling. Covering
+    three continents, RainAtlas harmonizes heterogeneous hourly km-scale observations
+    to a common 2-km grid. Each regional partition contains around 210,000 aligned
+    low- and high-resolution precipitation pairs, respectively from ERA5 reanalysis
+    and direct observations. We benchmark state-of-the-art ML-based downscaling models
+    across RainAtlas using a wide range of metrics. Our evaluation reveals substantial
+    variance in out-of-domain generalization depending on the training regions. This
+    underscores the need for cross-regional, multi-source km-scale evaluation, establishing
+    RainAtlas as a well-positioned benchmark for precipitation downscaling research.
+  arxiv_categories:
+  - cs.LG
+- category: Global Models
+  title: 'STCFormer: Adaptive Spatio-Temporal Modeling with Dynamic Cluster Transformer
+    for Station-based Weather Forecasting'
+  authors: Rongwen Li, Haixin Xie, Mingyang Wang, Hongwu Liu, Kun Fang, Changjian
+    Chen, Zhuo Tang, Kenli Li
+  year: 2026
+  arxiv: 2610.00377v1
+  abstract: Station-based weather forecasting supports daily life and economic activity,
+    yet accurate forecasts require modeling complex spatial dependencies among stations.
+    Recent clustering-based selective modeling offers a promising alternative to dense
+    inter-station interactions. However, a grouping shared across an observation window
+    may obscure local changes in station relationships, while intra-cluster interactions
+    alone may miss important global context. The theoretical advantages of selective
+    interactions over dense connectivity also remain insufficiently understood. We
+    therefore propose STCFormer, an adaptive spatio-temporal Transformer that dynamically
+    groups stations according to their local evolution within each temporal patch.
+    Its Cluster-Guided Attention Block combines fine-grained local attention within
+    clusters and global attention over regional state summaries, allowing each station
+    to access information beyond its own cluster. We further show that a derived Lipschitz
+    upper bound for cluster-conditioned local attention is no larger than its fully
+    connected counterpart, explaining a potential robustness benefit and motivating
+    the design of InfoLoss. Experiments on three real-world weather datasets spanning
+    eight temperature and wind forecasting tasks show that STCFormer achieves the
+    lowest 24-hour mean squared error on all eight tasks and ranks first or second
+    in 47 of 48 comparisons across metrics and forecasting horizons. Ablations and
+    case studies further confirm the benefits of locally adaptive grouping and complementary
+    local-global interactions. Our code can be obtained at https://github.com/hnu-vis/STCFormer.
+  arxiv_categories:
+  - cs.LG
+  - stat.ML
+  github: https://github.com/hnu-vis/STCFormer
+- category: Global Models
+  title: Proper Scoring Rule-based Diffusion for Probabilistic Weather Forecasting
+  authors: Joonhyeong Park, Giung Nam, Hyungi Lee, Kyunghyun Cho, Byoungwoo Park,
+    Juho Lee
+  year: 2026
+  arxiv: 2609.38632v1
+  abstract: Recent probabilistic weather forecasters train stochastic predictors with
+    the continuous ranked probability score (CRPS) to generate each ensemble member
+    in a single forward pass. These models learn the predictive distribution from
+    the forecast context alone, which becomes difficult at longer forecast horizons
+    where uncertainty is high. To learn the predictive distribution more effectively,
+    we introduce auxiliary conditional denoising tasks that predict the same future
+    state from the context and its corrupted version, which provides partial future
+    information that can reduce prediction ambiguity. Building on distributional diffusion
+    models, we learn the conditional distributions of these tasks with a single stochastic
+    predictor by minimizing a proper scoring rule across noise levels. At inference,
+    the predictor can still generate each ensemble member in a single forward pass
+    at the fully corrupted endpoint. Standard CRPS training is recovered as the endpoint-only
+    special case of our formulation, so our framework extends existing CRPS-based
+    forecasters with only additional conditioning inputs. Controlled experiments show
+    that the auxiliary tasks improve one-step forecasting across architectures, with
+    larger gains at longer forecast horizons. The gains extend to high-dimensional
+    global weather forecasting under both training from scratch and fine-tuning, along
+    with improved calibration and potential benefits for generalization under distribution
+    shift.
+  arxiv_categories:
+  - cs.LG
+- category: Global Models
+  title: 'An Input-Frugal Deep Learning Framework for Weather-Driven National Crop-Yield
+    Forecasting: A Case Study of Brazilian Soybean'
+  authors: Fernando Dupin da Cunha Mello, Prashant Kumar, Erick G. Sperandio Nascimento
+  year: 2026
+  arxiv: 2609.38447v1
+  abstract: Reliable, timely crop-yield forecasts are essential for market stability
+    and risk management, yet many approaches rely on costly or hard-to-scale inputs.
+    We present a frugal, transferable, and architecture-agnostic deep learning framework
+    that uses routine weather as the only time-varying input plus two lightweight
+    static context inputs (crop year and an agro-environmental label) to capture long-run
+    change and regional heterogeneity, while supporting multiple sequence encoders
+    under identical data requirements. Using a 20-season Brazilian soybean case study
+    (2001/02-2020/21) with leave-one-year-out cross-validation, we benchmark MLP,
+    CNN, LSTM, CNN-LSTM, a Transformer encoder and the Mamba state-space model against
+    linear ridge regression and a five-year moving-average "farmer" baseline. All
+    deep learning variants outperform ridge, and all sequential encoders surpass the
+    non-sequential MLP. The Transformer achieves the best national accuracy (RMSE
+    149 kg ha^-1; rRMSE 5.3%; R^2 = 0.784), reducing error by 47.6% relative to the
+    farmer baseline. In-season forecasts improve monotonically from early- to late-season
+    issuance, reaching approximately 50% lower error than the baseline at the latest
+    forecast point. Ablations indicate that the agro-environmental label and spatial
+    instance expansion (multiple grid-node weather sequences per municipality-year)
+    contribute positively without increasing input complexity. SHAP diagnostics suggest
+    crop year explains most of the long-run trajectory, whereas within-season weather
+    and agro-environmental context primarily drive interannual deviations, with moisture/cloud
+    and thermal-demand variables dominating. Overall, the framework is straightforward
+    to deploy across other crops and geographic regions and is naturally compatible
+    with operational weather forecasts for routine monitoring.
+  arxiv_categories:
+  - cs.LG
+  - stat.AP
+- category: Nowcasting
+  title: 'NowcastDiT: Diffusion Transformers are Effective Precipitation Nowcasters'
+  authors: Haoran Xu, Xingzhuo Guo, Yuchen Zhang, Jincheng Zhong, Jianmin Wang, Mingsheng
+    Long
+  year: 2026
+  arxiv: 2609.37038v1
+  abstract: 'Precipitation nowcasting demands accurate short-term forecasts under
+    strong spatiotemporal variability. Diffusion models are well suited to modeling
+    complex precipitation distributions, yet existing approaches often introduce increasingly
+    specialized designs, leaving the capability of a standard diffusion architecture
+    underexplored. We show that a standard Diffusion Transformer already provides
+    a simple and scalable foundation for precipitation nowcasting, with domain-specific
+    requirements accommodated naturally within its design space. Based on this principle,
+    we develop NowcastDiT and instantiate this flexibility through two complementary
+    adaptations: a dynamics-aware noise prior for temporally coherent forecasts, and
+    end-to-end reinforcement learning with timestep-aware rewards for meteorological
+    skill. Experiments on SEVIR and MRMS benchmarks show that NowcastDiT achieves
+    state-of-the-art performance in both perceptual quality and meteorological skill.
+    These results suggest that standard DiT can serve as an effective foundation for
+    precipitation nowcasting.'
+  arxiv_categories:
+  - cs.LG
+  - cs.AI
+  - cs.CV
+- category: Nowcasting
+  title: Physics-Guided Flow-Map Matching for Precipitation Nowcasting
+  authors: Shunya Nagashima, Takumi Bannai, Makoto Misaizu, Keisuke Maeda, Takahiro
+    Ogawa, Miki Haseyama
+  year: 2026
+  arxiv: 2609.37487v1
+  abstract: Precipitation nowcasting, generating future radar fields from past observations,
+    is critical for flood warning and disaster response. It is also a demanding benchmark
+    for spatiotemporal generative modeling, with chaotic dynamics, heavy-tailed intensities,
+    and rare high-intensity structures that matter most. Deterministic models minimize
+    a pixel loss and are driven toward the conditional mean, which blurs exactly those
+    structures, while generative models that add a stochastic residual on top of a
+    deterministic backbone inherit the same blur. We propose Physics-Guided Flow-Map
+    Matching (PG-FMM), a conditional flow-map model that decouples predictable advection
+    from uncertain small-scale detail. A frozen Lagrangian advection prior transports
+    the radar field and supplies an explicit motion forecast, and a flow-map generative
+    head, conditioned on the past frames and the prior rollout rather than summed
+    onto it, produces sharp stochastic detail in four sampling steps. The prior serves
+    only as guidance, so the head replaces blurred structure instead of inheriting
+    it. Extensive experiments on four radar benchmarks show that PG-FMM outperforms
+    state-of-the-art methods on 18 of 24 metrics, with the largest gains at heavy-rain
+    thresholds, where the critical success index improves by up to 58.9%. The project
+    page can be found at https://neurogica.github.io/PG-FMM.
+  arxiv_categories:
+  - cs.CV
+  - cs.LG

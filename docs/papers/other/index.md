@@ -8,11 +8,73 @@ hide:
 
 # Other
 
-<p class="page-meta" markdown="span">197 papers · page 1 of 7 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">202 papers · page 1 of 7 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### AI Emulation of Stochastic Sudden Stratospheric Warming with Interpretable Latent Structure { #2610.02069 }
+
+    *C. Daniel Boscu, Daniel Hernandez, Fabio Alvarez Ventura, Justin Finkel, Ashesh Chattopadhyay et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.02069">Rare weather regime transitions pose a challenge for data-driven modeling due to class imbalance. In this study, we develop a probabilistic deep learning emulator for a prototypical system with...</span><span class="abstract-full" id="full-2610.02069" hidden>Rare weather regime transitions pose a challenge for data-driven modeling due to class imbalance. In this study, we develop a probabilistic deep learning emulator for a prototypical system with regime transitions, the stochastic Holton--Mass model of stratospheric variability, and analyze the structure of its learned latent space. The Holton--Mass model exhibits two metastable regimes, a strong and a weak polar vortex, maintained by nonlinear wave--mean flow interactions, with weak stochastic forcing intermittently triggering rare transitions between these regimes that qualitatively represent SSW events. We employ a ResNet-inspired Conditional Variational Autoencoder with six-layer encoder and decoder layers and explicit current-state conditioning to model the distribution of the system's state at the next time step (one day). The emulator accurately reproduces short-term dynamics, steady-state probability distributions, regime persistence statistics, rare transition rates, the transition committor function, and the transition expected lead time of the physical model. Beyond emulation fidelity, we interrogate the learned latent representation to understand how the model internalizes the underlying metastable structure of the dynamics. Principal Component Analysis of the 32-dimensional latent space reveals a clear and unsupervised separation into four physically interpretable clusters corresponding to strong versus weak vortex regimes and stable versus transition-prone configurations. Such emergent regime separation in latent space is hard to identify for deep generative models applied to high-dimensional stochastic systems. Our results show that carefully designed probabilistic emulators can uncover physically meaningful manifolds governing extreme-event dynamics, potentially aiding the development of improved operational advanced warning systems.</span> <span class="abstract-toggle" data-id="2610.02069">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.02069v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.02069v1) · [:material-content-copy: BibTeX](../../bibtex/2610.02069.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
+    { .paper-tags }
+
+-   #### Unsupervised Domain Adaptation for Enhanced Radiometer Image Precipitation Estimation using Conditional Flow Matching { #2610.01890 }
+
+    *Victor Enescu, Assaad Zeghina, Matthieu Meignin, Nicolas Viltard, Cécile Mallet* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.01890">Deep generative networks have recently achieved unprecedented performance in precise image and video editing using sophisticated textual prompts. However, the effectiveness of such models heavily...</span><span class="abstract-full" id="full-2610.01890" hidden>Deep generative networks have recently achieved unprecedented performance in precise image and video editing using sophisticated textual prompts. However, the effectiveness of such models heavily depends on access to very large supervised and annotated image datasets, which can be very difficult to obtain. This is particularly true for satellite instruments, which very rarely overlap with labelled data, and suffer from domain shifts in the rare occasions they do. In this paper, we investigate the potential of flow matching models for unsupervised domain adaptation of satellite radiometer images. Our main contribution is a novel unsupervised method that achieves precise domain alignment by leveraging parts of the deterministic ordinary differential equations in flow matching models, conditioned on different satellite instruments. A key strength of our approach is its ability to preserve essential information while adapting across any domains since the perturbations are in theory bijective. Extensive experiments conducted on the GPM-Core constellation show the benefit of our conditional domain adaptation, particularly in improving rain precipitation estimation from radiometer imagery.</span> <span class="abstract-toggle" data-id="2610.01890">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.01890v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.01890v1) · [:material-content-copy: BibTeX](../../bibtex/2610.01890.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### Explaining El Niño Forecasts with the Average Gradient Outer Product { #2610.01095 }
+
+    *Yuan Hui, Dorian S. Abbot, Robert J. Webber* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.01095">An important and unresolved problem in the physical sciences is explaining the predictions made by neural networks. Several explainable artificial intelligence (XAI) methods have been proposed to...</span><span class="abstract-full" id="full-2610.01095" hidden>An important and unresolved problem in the physical sciences is explaining the predictions made by neural networks. Several explainable artificial intelligence (XAI) methods have been proposed to address this problem, including gradient XAI, Integrated Gradients, and GradientSHAP. We evaluate the baseline XAI methods according to four scores: sensitivity (XAI patterns strongly affect predictions), attribution (XAI patterns reproduce the change in prediction relative to a baseline), robustness (XAI patterns remain stable for nearby inputs), and coherence (XAI patterns are spatially smooth). We also introduce a new method, average gradient outer product (AGOP) XAI, that uses global gradient information to identify an important direction for a specific input. We apply XAI to neural network predictions of the El Niño-Southern Oscillation (ENSO) based on data from the Zebiak-Cane model.   AGOP XAI achieves the highest attribution, robustness, and coherence scores in the architecture and lead-time comparisons reported here. Its sensitivity is surpassed by gradient XAI, which is maximally sensitive by definition. Beyond diagnosing neural-network behavior, AGOP XAI can generate candidate hypotheses about physical mechanisms. The method highlights an equatorial thermocline-depth signal consistent with recharge oscillator physics, together with a southeastern-Pacific lobe that may be specific to the Zebiak-Cane model. Finally, we test the physical relevance of AGOP using optimized perturbations that move the Zebiak-Cane model along AGOP explanation coordinates. Such perturbations can suppress the selected extreme events or, from a near-neutral ensemble, generate strong El Niño or La Niña events 10 months later.</span> <span class="abstract-toggle" data-id="2610.01095">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.01095v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.01095v1) · [:fontawesome-brands-github: Code](https://github.com/rjwebber/agop-xai) · [:material-content-copy: BibTeX](../../bibtex/2610.01095.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
+    { .paper-tags }
+
+-   #### A library for differentiable signal processing and machine learning on the sphere { #2609.39737 }
+
+    *Thorsten Kurth, Max Rietmann, Mauro Bisson, Andrea Paris, Alberto Carpentieri, Jean Kossaifi et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.39737">The two-dimensional sphere embedded in three-dimensional Euclidean space S2, plays a central role in a variety of scientific and engineering domains, including geophysics, planetary science, geodesy,...</span><span class="abstract-full" id="full-2609.39737" hidden>The two-dimensional sphere embedded in three-dimensional Euclidean space S2, plays a central role in a variety of scientific and engineering domains, including geophysics, planetary science, geodesy, atmospheric physics, quantum chemistry, cosmology, and virtual reality, among many others. As machine learning increasingly permeates these fields, the demand grows for robust tools that process and model functions on the sphere, while respecting the inherent topological and symmetry properties of the domain. We present torch-harmonics, a comprehensive library that offers efficient, differentiable implementations of advanced signal processing and machine learning (ML) methods for spherical data. These include the spherical harmonic transform (SHT), the spherical analogue of the Fourier transform, vector spherical harmonics, discrete-continuous and spectral convolutions, as well as both global and neighborhood spherical attention mechanisms. Beyond traditional representations, torch-harmonics provides the building blocks for state-of-the-art spherical ML architectures such as spherical transformers in order to enable scalable, rotationally-aware learning and inference in modern scientific and engineering applications.</span> <span class="abstract-toggle" data-id="2609.39737">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.39737v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.39737v1) · [:material-content-copy: BibTeX](../../bibtex/2609.39737.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Methodological Changes to the Attention ResUNet Hourly Precipitation Postprocessor { #2609.38609 }
+
+    *Thomas M. Hamill* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.38609">This note is a technical companion to a previously published preprint describing an Attention Residual U-Net that postprocesses deterministic forecasts from The Weather Company's Global and Regional...</span><span class="abstract-full" id="full-2609.38609" hidden>This note is a technical companion to a previously published preprint describing an Attention Residual U-Net that postprocesses deterministic forecasts from The Weather Company's Global and Regional Atmospheric Forecast (GRAF) model into probabilistic hourly precipitation forecasts. It documents what has changed in that method since publication. Feature-wise Linear Modulation conditioning on calendar season and forecast lead time is used to produce a single trained model for each season, replacing 192 separately trained per-month, per-lead checkpoints. Lead time is extended from 48 to 72 h. Two new input channels are used, per-pixel local solar hour and a static, monthly-varying precipitation climatology. During verification, the climatological reference against which the Brier Skill Score is computed now has an added diurnal dimension, on top of the monthly resolution it already had. Brier Skill Score and reliability are compared between the new vs. the previous training. Forecasts generated with the new training show a modest, consistent improvement of the current training over the original.</span> <span class="abstract-toggle" data-id="2609.38609">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.38609v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.38609v1) · [:material-content-copy: BibTeX](../../bibtex/2609.38609.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
 
 -   #### Predicting Delayed Train Trajectories on the Dutch Railway Network: Explainable AI Evaluation of Topological, Operational and Weather Features with Tree Based Ensemble Methods { #2609.34692 }
 
@@ -331,71 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Tracing the space-time causal origins of Earth system extremes { #2607.10033 }
-
-    *Jhayron S. Pérez-Carrasquilla, J. Jake Nichol, Vanessa Robledo, Diana Bull, Katherine Dagon et al.* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.10033">Identifying the causes of Earth's extremes is challenging because counterfactual experiments are not possible in the observed world, while numerical experiments are computationally expensive and...</span><span class="abstract-full" id="full-2607.10033" hidden>Identifying the causes of Earth's extremes is challenging because counterfactual experiments are not possible in the observed world, while numerical experiments are computationally expensive and subject to biases. Data-driven causal discovery offers a complementary path, but existing approaches can fail in undersampled, high-dimensional regimes, and may not recover multi-timestep, multivariate pathways leading to particular events. We introduce Tracer of Causal Evolutions in Space and Time (TraCE-ST), a probabilistic Lagrangian approach that produces event-conditioned causal trajectories in multivariate gridded data. In synthetic experiments and real-world extreme events, TraCE-ST recovers known causal drivers and estimates their relative contributions, while also highlighting less-studied drivers, including orography-driven vorticity for Tropical Storm Debby (2006) and anomalous ocean-surface fluxes for the 2021 Pacific Northwest heatwave. Here, we propose causal tracking as an efficient data-driven framework for synthesizing causal evidence and generating testable hypotheses, complementing association analyses and numerical modeling while accelerating the study of high-impact events.</span> <span class="abstract-toggle" data-id="2607.10033">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.10033v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.10033v1) · [:material-content-copy: BibTeX](../../bibtex/2607.10033.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a>
-    { .paper-tags }
-
--   #### Spatial Support Matters: Geometry-Aware Graph Fusion for Rainfall Field Reconstruction { #2607.01621 }
-
-    *Low Jun Yu, Niramay Kachhadiya, Herath Mudiyanselage Viraj Vidura Herath, Sanka Rasnayaka et al.* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.01621">Fine-scale rainfall reconstruction is critical for urban flood modeling, but real rainfall sensing systems observe the field through incompatible spatial supports: gauges measure points, microwave...</span><span class="abstract-full" id="full-2607.01621" hidden>Fine-scale rainfall reconstruction is critical for urban flood modeling, but real rainfall sensing systems observe the field through incompatible spatial supports: gauges measure points, microwave links measure paths, and radar/satellite products measure gridded areas. These differences in measurement support impose geometrically distinct constraints on the rainfall field, yet existing heterogeneous graph approaches reconcile such sources in feature space, giving each its own embedding while discarding the geometry of its support. We propose a geometry-aware multi-support heterogeneous graph neural network that represents each observation according to its support type (0D point, 1D line, or 2D grid) as a distinct node layer, and fuses them through cross-support message passing into a point-support prediction layer from which the field is reconstructed. An inductive masked-node formulation decouples prediction resolution from sensing resolution, allowing the same trained model to reconstruct the field at user-defined target locations or display grids. On Singapore data, the proposed method reduces RMSE by 23.2% over the classical interpolation baseline, inverse-distance weighting, and consistently outperforms other neural architectures such as convolutional fusion and support-agnostic heterogeneous graph baselines. A generalization study using data from Sydney, Australia lets us characterize when multi-support fusion helps: the available skill appears to depend on gauge spacing relative to the spatial correlation length of the field, so fusion delivers the largest gains where the field is under-sampled relative to its correlation length and little when it is already resolved. Code and models will be open-sourced upon paper acceptance.</span> <span class="abstract-toggle" data-id="2607.01621">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.01621v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.01621v1) · [:material-content-copy: BibTeX](../../bibtex/2607.01621.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### Wind-Aware Reinforcement Learning Control of a Small Quadrotor Using Learned Onboard Wind Estimation in Simulated Atmospheric Turbulence { #2607.01528 }
-
-    *Abdullah Al Tasim, Wei Sun* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.01528">Small multirotor aircraft are increasingly tasked with operations in the atmospheric boundary layer, where turbulent winds comparable to the vehicle's airspeed degrade trajectory tracking and can...</span><span class="abstract-full" id="full-2607.01528" hidden>Small multirotor aircraft are increasingly tasked with operations in the atmospheric boundary layer, where turbulent winds comparable to the vehicle's airspeed degrade trajectory tracking and can defeat conventional feedback control. This work illustrates a two-stage learning pipeline that first estimates the local wind from onboard kinematics and dynamics and then exploits that estimate inside a reinforcement learning (RL) flight controller. The wind estimator, an attention-augmented gated recurrent network trained on thousands of simulated flights through von Karman turbulence with power-law shear and veer, recovers the horizontal wind vector with a per-flight root-mean-square error of 0.40 m/s and a direction error of 3.2 degrees on unseen wind regimes, an accuracy near the floor imposed by unresolved turbulence, and generalizes to vertical ascent profiles with a skill score of 0.861 over a constant-wind reference. A proximal policy optimization controller receiving the frozen estimator's output reduces horizontal trajectory tracking error by 48% relative to a wind-blind proportional-derivative baseline across mean winds of 4 m/s to 12 m/s, winning on 100% of evaluation episodes. A three-way ablation decomposes this improvement into a kinematic component, available without wind information, and a wind-perception component; the perception share rises with wind speed, from small in light winds toward roughly half the total benefit in strong winds, consistent with the quadratic scaling of aerodynamic drag. The controller degrades gracefully on out-of-distribution winds of 13 m/s to 15 m/s, where the baseline fails catastrophically.</span> <span class="abstract-toggle" data-id="2607.01528">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.01528v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.01528v1) · [:material-content-copy: BibTeX](../../bibtex/2607.01528.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a>
-    { .paper-tags }
-
--   #### Conditional Tropical Cyclogenesis Rates via Rare-Event Sampling in a Neural Weather Emulator { #2606.30920 }
-
-    *John S. Schreck, William Chapman, Charlie Becker, David John Gagne* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.30920">We couple Forward Flux Sampling (FFS), a non-equilibrium rare-event technique from statistical mechanics, to a neural weather emulator (SDL-WXFormer, 1° grid spacing) to estimate conditional tropical...</span><span class="abstract-full" id="full-2606.30920" hidden>We couple Forward Flux Sampling (FFS), a non-equilibrium rare-event technique from statistical mechanics, to a neural weather emulator (SDL-WXFormer, 1° grid spacing) to estimate conditional tropical cyclogenesis rates, or how often a tropical cyclone achieves a hurricane-level central pressure, without modifying model dynamics. Tropical cyclogenesis rates vary by orders of magnitude across regimes, yet direct ensemble sampling cannot resolve this variability at operationally feasible ensemble sizes. FFS decomposes the rare disturbance to mature cyclone intensification path into a flux through an initial interface pressure and a product of conditional crossing probabilities across four intermediate interface pressures. We use the 1° emulator because FFS requires O(10^4) model trajectories per initial condition, and because the model's calibrated stochastic layers provide the necessary exploratory spread. Applied to 98 Atlantic basin initial conditions spanning 21 August - 8 October 2022, FFS resolves genesis rates spanning nearly three orders of magnitude, capturing a seasonal cycle qualitatively consistent with observations. A self-consistency check comparing FFS rates to independent direct-sampling rates yields a mean ratio of 1.03 +/- 0.15 across all initial conditions. Computational enhancement factors range from 3X (most active environment) to 140X (most suppressed), with a geometric mean of 14X. Three case studies illustrate the physical diagnostics the method provides: the rate-limiting step is initial tropical organization for the Earl environment, uniformly high crossing probabilities for the Fiona precursor environment, and a compound barrier at the final intensification stages for the Ian environment. More efficient emulators would enable application of FFS to finer resolutions.</span> <span class="abstract-toggle" data-id="2606.30920">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.30920v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.30920v1) · [:material-content-copy: BibTeX](../../bibtex/2606.30920.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a>
-    { .paper-tags }
-
--   #### An Integrated Two-Stage Deep-Learning Tool for Rapid Post-Hurricane Damage Identification and Repair Scheduling { #2606.29117 }
-
-    *Hooman Torkaman, Ellis Oti Boateng, Jignesh Solanki, Anurag Srivastava* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.29117">Post-hurricane damage assessment and repair scheduling can require computationally intensive simulation and optimization. This paper presents an integrated two-stage deep-learning tool for rapid...</span><span class="abstract-full" id="full-2606.29117" hidden>Post-hurricane damage assessment and repair scheduling can require computationally intensive simulation and optimization. This paper presents an integrated two-stage deep-learning tool for rapid damaged-line identification and repair-schedule computation. An available offline synthetic dataset for the IEEE 9500-node test feeder contains 1,700 hurricane scenarios with exposure features, grid metadata, fragility parameters, OpenDSS outputs, damaged-line labels, and Adaptive Large Neighborhood Search reference schedules. Stage 1 benchmarks MLP, ResMLP, and GraphSAGE, while Stage 2 compares MLP, DeepSets, and Set Transformer. The selected ResMLP-Set Transformer pipeline propagates Stage 1 errors into Stage 2 and achieves a damaged-job F1-score of 0.920, pairwise order agreement of 0.854, and start- and end-time mean absolute errors of 4.349 min and 4.486 min, respectively. The tool provides rapid initial repair-log decision support for new hurricane cases.</span> <span class="abstract-toggle" data-id="2606.29117">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.29117v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.29117v1) · [:material-content-copy: BibTeX](../../bibtex/2606.29117.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
     { .paper-tags }
 
 </div>

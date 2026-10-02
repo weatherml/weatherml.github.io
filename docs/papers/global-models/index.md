@@ -8,11 +8,86 @@ hide:
 
 # Global Models
 
-<p class="page-meta" markdown="span">348 papers · page 1 of 12 · <a href="../../bib/global-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">354 papers · page 1 of 12 · <a href="../../bib/global-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Weather Jiu-Jitsu: Exploring the Feasibility of Control Paradigms in Weather Foundation Models { #2610.00792 }
+
+    *Prakriti Biswas, Kobi Abayomi, Upmanu Lall* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.00792">Weather Jiu-Jitsu is a control paradigm for extreme climatological events, inspired by chaos theory. As a proposition, small, precise, targeted, and cost-inexpensive perturbations can redirect...</span><span class="abstract-full" id="full-2610.00792" hidden>Weather Jiu-Jitsu is a control paradigm for extreme climatological events, inspired by chaos theory. As a proposition, small, precise, targeted, and cost-inexpensive perturbations can redirect trajectories of a large dynamical system. This strategy has been demonstrated analytically in the Lorenz-63 system, where a naturally chaotic trajectory switching between two attractors can be confined to a single attractor, indefinitely, via arbitrarily small perturbations. This paper examines the feasibility of Microsoft's Aurora -- a 1.3 billion parameter global atmospheric model -- as a test bed for this strategy. This paper explores three questions: (1) Is Aurora a reliable enough simulation environment to serve as a meaningful testbed? (2) Are the perturbations required to redirect its trajectories small enough to be physically plausible? (3) Does Aurora's learned latent space (the parametric estimators on climatological attributes) yield any apparent, structured, and/or perhaps interpretable features that can convey a geo/atmospheric response to initial conditions? We find evidence consistent with all three: Aurora's modeled trajectories respond to perturbations beyond measurement drift, the perturbation magnitudes required are small relative to the model's own forecast uncertainty, and its latent representations exhibit directional structure that responds to Jiu-Jitsu-type interventions, even though that structure does not separate extreme from normal states outright. These results should be read as feasibility diagnostics rather than a demonstration of control: we do not implement or test an actual steering intervention on Aurora, and several of our findings, particularly around the model's latent-space geometry, are exploratory.</span> <span class="abstract-toggle" data-id="2610.00792">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.00792v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.00792v1) · [:material-content-copy: BibTeX](../../bibtex/2610.00792.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
+
+-   #### STCFormer: Adaptive Spatio-Temporal Modeling with Dynamic Cluster Transformer for Station-based Weather Forecasting { #2610.00377 }
+
+    *Rongwen Li, Haixin Xie, Mingyang Wang, Hongwu Liu, Kun Fang, Changjian Chen, Zhuo Tang, Kenli Li* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.00377">Station-based weather forecasting supports daily life and economic activity, yet accurate forecasts require modeling complex spatial dependencies among stations. Recent clustering-based selective...</span><span class="abstract-full" id="full-2610.00377" hidden>Station-based weather forecasting supports daily life and economic activity, yet accurate forecasts require modeling complex spatial dependencies among stations. Recent clustering-based selective modeling offers a promising alternative to dense inter-station interactions. However, a grouping shared across an observation window may obscure local changes in station relationships, while intra-cluster interactions alone may miss important global context. The theoretical advantages of selective interactions over dense connectivity also remain insufficiently understood. We therefore propose STCFormer, an adaptive spatio-temporal Transformer that dynamically groups stations according to their local evolution within each temporal patch. Its Cluster-Guided Attention Block combines fine-grained local attention within clusters and global attention over regional state summaries, allowing each station to access information beyond its own cluster. We further show that a derived Lipschitz upper bound for cluster-conditioned local attention is no larger than its fully connected counterpart, explaining a potential robustness benefit and motivating the design of InfoLoss. Experiments on three real-world weather datasets spanning eight temperature and wind forecasting tasks show that STCFormer achieves the lowest 24-hour mean squared error on all eight tasks and ranks first or second in 47 of 48 comparisons across metrics and forecasting horizons. Ablations and case studies further confirm the benefits of locally adaptive grouping and complementary local-global interactions. Our code can be obtained at https://github.com/hnu-vis/STCFormer.</span> <span class="abstract-toggle" data-id="2610.00377">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.00377v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.00377v1) · [:fontawesome-brands-github: Code](https://github.com/hnu-vis/STCFormer) · [:material-content-copy: BibTeX](../../bibtex/2610.00377.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
+
+-   #### Butterfly Effect Confirmed in Global AI Weather Models: Evidence from Tropical Cyclone Forecasting { #2609.39379 }
+
+    *Jeremy Cheuk-Hin Leung, Daosheng Xu, Weiye Yu, Shaojing Zhang, Xiaodong Zeng, Gaozhen Nie, Jie Feng et al.* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.39379">A paradox recently emerged in artificial intelligence (AI) weather prediction research. While some claim AI weather models cannot simulate atmospheric butterfly effect, this conflicts with AI models'...</span><span class="abstract-full" id="full-2609.39379" hidden>A paradox recently emerged in artificial intelligence (AI) weather prediction research. While some claim AI weather models cannot simulate atmospheric butterfly effect, this conflicts with AI models' limited predictability and advances in AI ensemble forecasting. This study demonstrates via counterexamples that the butterfly effect does exist in AI weather predictions. For Super Typhoon Khanun, AI predictions are constrained by a double-attractor system. Minor initial perturbations confined to two regions trigger state transitions between two local attractors, causing a 1006-km difference in the predicted storm position on Day 7. This behavior is consistent with numerical weather prediction models and observed in ~12% of tropical cyclones in the past 5 years. These findings verify AI's ability to capture atmospheric chaos and provide the physical basis for AI ensemble forecasting.</span> <span class="abstract-toggle" data-id="2609.39379">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.39379v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.39379v1) · [:material-content-copy: BibTeX](../../bibtex/2609.39379.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### Proper Scoring Rule-based Diffusion for Probabilistic Weather Forecasting { #2609.38632 }
+
+    *Joonhyeong Park, Giung Nam, Hyungi Lee, Kyunghyun Cho, Byoungwoo Park, Juho Lee* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.38632">Recent probabilistic weather forecasters train stochastic predictors with the continuous ranked probability score (CRPS) to generate each ensemble member in a single forward pass. These models learn...</span><span class="abstract-full" id="full-2609.38632" hidden>Recent probabilistic weather forecasters train stochastic predictors with the continuous ranked probability score (CRPS) to generate each ensemble member in a single forward pass. These models learn the predictive distribution from the forecast context alone, which becomes difficult at longer forecast horizons where uncertainty is high. To learn the predictive distribution more effectively, we introduce auxiliary conditional denoising tasks that predict the same future state from the context and its corrupted version, which provides partial future information that can reduce prediction ambiguity. Building on distributional diffusion models, we learn the conditional distributions of these tasks with a single stochastic predictor by minimizing a proper scoring rule across noise levels. At inference, the predictor can still generate each ensemble member in a single forward pass at the fully corrupted endpoint. Standard CRPS training is recovered as the endpoint-only special case of our formulation, so our framework extends existing CRPS-based forecasters with only additional conditioning inputs. Controlled experiments show that the auxiliary tasks improve one-step forecasting across architectures, with larger gains at longer forecast horizons. The gains extend to high-dimensional global weather forecasting under both training from scratch and fine-tuning, along with improved calibration and potential benefits for generalization under distribution shift.</span> <span class="abstract-toggle" data-id="2609.38632">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.38632v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.38632v1) · [:material-content-copy: BibTeX](../../bibtex/2609.38632.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
+
+-   #### An Input-Frugal Deep Learning Framework for Weather-Driven National Crop-Yield Forecasting: A Case Study of Brazilian Soybean { #2609.38447 }
+
+    *Fernando Dupin da Cunha Mello, Prashant Kumar, Erick G. Sperandio Nascimento* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.38447">Reliable, timely crop-yield forecasts are essential for market stability and risk management, yet many approaches rely on costly or hard-to-scale inputs. We present a frugal, transferable, and...</span><span class="abstract-full" id="full-2609.38447" hidden>Reliable, timely crop-yield forecasts are essential for market stability and risk management, yet many approaches rely on costly or hard-to-scale inputs. We present a frugal, transferable, and architecture-agnostic deep learning framework that uses routine weather as the only time-varying input plus two lightweight static context inputs (crop year and an agro-environmental label) to capture long-run change and regional heterogeneity, while supporting multiple sequence encoders under identical data requirements. Using a 20-season Brazilian soybean case study (2001/02-2020/21) with leave-one-year-out cross-validation, we benchmark MLP, CNN, LSTM, CNN-LSTM, a Transformer encoder and the Mamba state-space model against linear ridge regression and a five-year moving-average "farmer" baseline. All deep learning variants outperform ridge, and all sequential encoders surpass the non-sequential MLP. The Transformer achieves the best national accuracy (RMSE 149 kg ha^-1; rRMSE 5.3%; R^2 = 0.784), reducing error by 47.6% relative to the farmer baseline. In-season forecasts improve monotonically from early- to late-season issuance, reaching approximately 50% lower error than the baseline at the latest forecast point. Ablations indicate that the agro-environmental label and spatial instance expansion (multiple grid-node weather sequences per municipality-year) contribute positively without increasing input complexity. SHAP diagnostics suggest crop year explains most of the long-run trajectory, whereas within-season weather and agro-environmental context primarily drive interannual deviations, with moisture/cloud and thermal-demand variables dominating. Overall, the framework is straightforward to deploy across other crops and geographic regions and is naturally compatible with operational weather forecasts for routine monitoring.</span> <span class="abstract-toggle" data-id="2609.38447">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.38447v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.38447v1) · [:material-content-copy: BibTeX](../../bibtex/2609.38447.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### A neural network-based Universal Thermal Climate Index for reliable global thermal-stress classification across extreme weather { #2609.35949 }
+
+    *Bikem Pastine, Milan Klöwer, Tianning Tang, Sarah Wilson Kemsley, Louise Slater* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.35949">Extreme temperatures are the leading cause of climate-related mortality world-wide. Climate-health research and operational weather forecasting require accurate estimates of human thermal stress. The...</span><span class="abstract-full" id="full-2609.35949" hidden>Extreme temperatures are the leading cause of climate-related mortality world-wide. Climate-health research and operational weather forecasting require accurate estimates of human thermal stress. The Universal Thermal Climate Index (UTCI) is among the most sophisticated and widely used feels-like temperature metrics. However, its ubiquitous polynomial approximation does not generalize well to extreme weather conditions. Here, we introduce Neural-UTCI, a neural network that calculates UTCI with substantially higher accuracy across global conditions at a lower computational cost for operational use. Neural-UTCI reduces the polynomial approximation RMSE from 2.78°C to 0.36 °C, an 87% improvement, and lowers thermal stress misclassification rates from 5.3% to 1.7%, with consistent performance across resampling experiments. These differences affect thermal exposure metrics. For example, during the 2003 European heatwave summer in Rome, Italy, the number of very strong heat stress days increases from 15 to 35 days when using Neural-UTCI compared to operational products like ERA5-HEAT. Simultaneously, Neural-UTCI reliably classifies extreme cold stress conditions, allowing continuous global application. By improving UTCI accuracy, Neural-UTCI can strengthen climate-health risk assessments and public weather warning systems, especially as global warming increases the incidence of extreme events.</span> <span class="abstract-toggle" data-id="2609.35949">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.35949v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.35949v1) · [:material-content-copy: BibTeX](../../bibtex/2609.35949.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a>
+    { .paper-tags }
 
 -   #### Suitable Measures for the Potential Operational Utility of AI NWP Rainfall Forecasts Over Africa { #2609.31775 }
 
@@ -319,78 +394,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
     { .paper-tags }
-
--   #### VeinCast: Physics-Guided Dynamic Field Graphs with Graph-Conditioned Fusion for Global Medium-Range Weather Forecasting { #2608.09286 }
-
-    *Zhisheng Chen, Jinhan Li, Yuxuan Li, Yuan Gao, Hao Wu, Zheng Lu, Jinlong Du, Kun Wang, Bo An* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.09286">Global medium-range weather forecasting requires modeling structured yet state-dependent interactions among heterogeneous atmospheric fields. Existing data-driven models largely learn these...</span><span class="abstract-full" id="full-2608.09286" hidden>Global medium-range weather forecasting requires modeling structured yet state-dependent interactions among heterogeneous atmospheric fields. Existing data-driven models largely learn these interactions implicitly, whereas equation-level physical constraints may inherit approximation and model-form biases. We present VeinCast, a physics-guided dynamic field graph and graph-conditioned fusion framework that jointly forecasts 69 surface and upper-air fields. Within each local window, its Physics-Guided Dynamic Field Graph combines predefined atmospheric relations with state-dependent Top-K residual edges and adapts Earth-window attention using the resulting graph context. Graph-Conditioned Latent Fusion further employs graph context and source-node centrality to guide field-to-latent aggregation, while bounded feedback preserves field-specific information. On the $1.5^\circ$ ERA5 benchmark, VeinCast demonstrates competitive forecasting performance across all 69 meteorological fields at lead times of up to 14 days, compared with representative global weather forecasting models including FuXi, Pangu-Weather, GraphCast, FengWu, and ARROW. Ablations confirm that the two modules provide complementary gains, demonstrating the effectiveness of relational-level physical guidance for data-driven weather forecasting.</span> <span class="abstract-toggle" data-id="2608.09286">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.09286v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.09286v1) · [:material-content-copy: BibTeX](../../bibtex/2608.09286.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Timestep-Conditioned Transformers for Global Weather Forecasting { #2608.06241 }
-
-    *Sam Levang, Fran Bartolic, Ty Dickinson, Chase Dwelle, Paulius Rauba, Viktor Cikojevic* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.06241">Existing machine-learning weather forecasting models rely on predetermined and fixed autoregressive timesteps. The choice of model timestep involves a fundamental trade-off: shorter timesteps (e.g. 1...</span><span class="abstract-full" id="full-2608.06241" hidden>Existing machine-learning weather forecasting models rely on predetermined and fixed autoregressive timesteps. The choice of model timestep involves a fundamental trade-off: shorter timesteps (e.g. 1 to 6 hours) finely resolve atmospheric dynamics within the diurnal cycle but increase error accumulation for a given forecast horizon, while longer timesteps (e.g. 24 hours) reduce error accumulation but limit the usability of short-range forecasts where sub-daily predictability is high. In this work, we present GEM-3, a probabilistic global weather model that addresses this trade-off through explicit multi-timestep inference. With a single set of trained weights, the model timestep can be configured at inference time to balance predictability and usability across a broad forecast horizon. Additionally, we find that mixed-timestep training consistently improves rollout stability relative to timestep-specialist models. Under the hood, GEM-3 is a lightweight neighborhood-attention transformer with ~134M parameters on an equirectangular grid with a number of architectural advancements beyond its predecessor GEM-2. The result is a practical forecasting system that couples near-SOTA medium-range probabilistic skill, stable extended-range rollouts, efficient training and inference, and decision-relevant diagnostics.</span> <span class="abstract-toggle" data-id="2608.06241">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.06241v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.06241v1) · [:material-content-copy: BibTeX](../../bibtex/2608.06241.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### MarsCast: Transfer Learning of AI Weather Foundation Models to Planetary Atmospheres { #2608.05054 }
-
-    *M. L. Carroll, J. Li, S. D. Guzewich, G. Villanueva, J. A. Caraballo-Vega, M. J. Frost* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.05054">We investigate the transferability of Earth weather foundation models to planetary atmospheres by adapting the GraphCast graph neural weather forecasting model to Mars. While GraphCast achieves...</span><span class="abstract-full" id="full-2608.05054" hidden>We investigate the transferability of Earth weather foundation models to planetary atmospheres by adapting the GraphCast graph neural weather forecasting model to Mars. While GraphCast achieves state-of-the-art performance for terrestrial forecasting, its applicability to non-Earth environments remains unexplored. Using the Mars Climate Database (MCD), which provides global atmospheric fields across vertical altitude levels (similar to Earth pressure levels), we evaluate zero-shot and fine-tuned GraphCast predictions of Martian temperature and wind fields. Zero-shot forecasts produce a surprisingly accurate depiction of current conditions but fail to reproduce diurnal variability and rapidly decay toward climatological mean states. To address this limitation, we fine-tune GraphCast using MCD variables and top-of-atmosphere solar radiation forcing while holding humidity constant. Fine-tuning enables rapid learning of Martian thermal variability. Within as few as 10 training epochs, the model begins to capture the diurnal cycle and forecasts up to 10 days reproduce seasonal and vertical temperature structure. Prediction quality improves with training sample size and exhibits sensitivity to seasonal initialization. These results demonstrate that Earth-trained AI weather models can be adapted to simulate Martian atmospheric dynamics, providing a pathway toward rapid planetary weather prediction to support mission operations, dust storm risk mitigation, and future human exploration.</span> <span class="abstract-toggle" data-id="2608.05054">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.05054v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.05054v1) · [:material-content-copy: BibTeX](../../bibtex/2608.05054.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting { #2608.03959 }
-
-    *Simon Pfreundschuh, Christian D. Kummerow, Johannes Schmude, Sujit Roy, Rahul Ramachandran et al.* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.03959">Accurate precipitation forecasting remains one of the most challenging problems in weather prediction. While recent AI weather prediction (AIWP) systems have achieved substantial improvements in...</span><span class="abstract-full" id="full-2608.03959" hidden>Accurate precipitation forecasting remains one of the most challenging problems in weather prediction. While recent AI weather prediction (AIWP) systems have achieved substantial improvements in medium-range forecasting skill, precipitation often remains a secondary target and is commonly learned from reanalysis datasets that contain considerable uncertainty. In this work, we investigate two complementary strategies for improving AI-based precipitation forecasts. Building on the Prithvi-WxC foundation model, we develop Prithvi-Precip, a global precipitation forecasting system, and examine (1) the impact of training targets derived from satellite-based precipitation estimates rather than reanalysis fields and (2) the direct assimilation of satellite observations into the forecasting model.   We systematically evaluate key design choices for finetuning the Prithvi-WxC AI foundation model for precipitation forecasting. We find that autoregressive rollout training produces substantially more accurate forecasts than direct conditioning on forecast lead time. Using independent radar-based precipitation estimates for evaluation, we show that training on satellite-derived precipitation targets yields improved forecast accuracy relative to training on MERRA-2 precipitation fields. Furthermore, direct ingestion of satellite observations provides additional improvements at short lead times, with the largest gains occurring in tropical and subtropical regions.   Together, these advances enable Prithvi-Precip to substantially improve upon directly comparable precipitation forecasts from the Goddard Earth Observing System. Our results highlight the potential of improved precipitation targets and the direct integration of satellite observations as promising pathways for advancing medium-range AI precipitation forecasting.</span> <span class="abstract-toggle" data-id="2608.03959">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.03959v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.03959v1) · [:material-content-copy: BibTeX](../../bibtex/2608.03959.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### Weather Emulators at the Frontier of Heat Extremes Predictability { #2607.28220 }
-
-    *Cas Decancq, Thomas Mortier, Jessica Keune, Diego G. Miralles* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.28220">Atmospheric predictability declines rapidly beyond the next ten days, such that forecasts at longer lead times primarily convey large-scale trends rather than specific states. Yet in a warming world,...</span><span class="abstract-full" id="full-2607.28220" hidden>Atmospheric predictability declines rapidly beyond the next ten days, such that forecasts at longer lead times primarily convey large-scale trends rather than specific states. Yet in a warming world, improving early warnings of extreme heat is an increasingly critical challenge. Here we evaluate six state-of-the-art deep learning weather emulators - Pangu-Weather, FuXi, ArchesWeather, AIFS, GraphCast and Aurora - alongside leading dynamical systems and statistical baselines in forecasting global near-surface temperature and extreme heat at lead times of 10-15 days. We find that several emulators rival or even surpass physics-based forecasts in deterministic temperature skill, but do so at the cost of reduced spectral fidelity, in a process widely known as blurring. While all models show some degree of predictive skill for extreme heat, most emulators under-represent peak intensities, and IFS recall is greater than that of any of the emulators. These results highlight both the emerging potential of AI to enhance extended range temperature prediction, and the remaining challenges in delivering reliable, actionable early warnings in a changing climate.</span> <span class="abstract-toggle" data-id="2607.28220">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.28220v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.28220v1) · [:material-content-copy: BibTeX](../../bibtex/2607.28220.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction { #2607.21080 }
-
-    *Yun-Ye Cai, Hsuan-Tien Lin* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.21080">Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although the...</span><span class="abstract-full" id="full-2607.21080" hidden>Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although the autoregressive pipeline is highly scalable and flexible, its prediction errors grow rapidly over long forecasting horizons. In this work, we study this error growth phenomenon from both theoretical and empirical perspectives. Our analysis reveals that the growth is driven by a feedback loop between output errors and input distribution shifts. Specifically, the autoregressive process amplifies small initial output errors, which progressively corrupt subsequent input distributions, echoing the butterfly effect in atmospheric science and ultimately deteriorating forecasting accuracy over longer horizons. Furthermore, we show that this distributional shift originates at the earliest stage of inference, with out-of-distribution signatures detectable as early as the first autoregressive step. To mitigate this issue, we propose <strong>Self-Output Fine-Tuning (SOFT)</strong>, a plug-and-play strategy that leverages the model's own one-step predictions to calibrate the biased input distribution encountered at the first step. Extensive experiments demonstrate that, despite its simplicity, SOFT achieves state-of-the-art performance on long-horizon forecasting tasks and substantially reduces both prediction errors and distributional discrepancy. The success of SOFT highlights the importance of reexamining the fundamental pipeline of deep learning weather prediction, representing a critical pipeline advance for atmospheric science.</span> <span class="abstract-toggle" data-id="2607.21080">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.21080v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.21080v1) · [:material-content-copy: BibTeX](../../bibtex/2607.21080.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

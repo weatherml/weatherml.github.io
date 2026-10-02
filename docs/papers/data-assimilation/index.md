@@ -8,11 +8,24 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">74 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">75 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations { #2610.00728 }
+
+    *Ruizhe Huang, Qidong Yang, Jonathan Giezendanner, Sherrie Wang* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.00728">Weather reanalysis products rely on computationally intensive numerical weather predictions followed by data assimilation that corrects the forecast toward observations. Deep generative models offer...</span><span class="abstract-full" id="full-2610.00728" hidden>Weather reanalysis products rely on computationally intensive numerical weather predictions followed by data assimilation that corrects the forecast toward observations. Deep generative models offer a cheaper alternative that shifts much of this cost from inference to offline training. However, existing generative approaches have been evaluated on synthetic observations or under different datasets and evaluation schemes, making it unclear which design choices actually improve real-world data assimilation. We present the first controlled benchmark of generative weather data assimilation on real weather station observations. Using 11,849 NOAA MADIS stations across the contiguous United States and four weather variables, we evaluate methods while holding the dataset, observation operator, and deep learning architecture fixed. The benchmark compares the major design choices, including diffusion versus flow matching, pixel versus latent-space formulations, and multiple inference-time conditioning strategies, against a classical 3D-Var baseline. The benchmark reveals three clear conclusions. First, learned generative priors outperform the Gaussian prior of 3D-Var (35.7% vs. 33.3% RMSE reduction over ERA5) despite using no ERA5 background field at inference. Second, full-gradient guidance consistently outperforms stop-gradient and initial-noise optimization. Third, other choices provide little measurable benefit: diffusion and flow matching perform nearly identically under matched conditions, and latent-space variable mixing does not help. We further evaluate both dense and sparse station settings and find advantages from generative AI and full-gradient guidance more pronounced under sparsity. Together, these results identify which components of generative weather data assimilation improve performance on real station observations and establish a standardized benchmark for future work.</span> <span class="abstract-toggle" data-id="2610.00728">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.00728v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.00728v1) · [:material-content-copy: BibTeX](../../bibtex/2610.00728.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
+    { .paper-tags }
 
 -   #### A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems { #2608.22454 }
 
@@ -363,19 +376,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.15184v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.15184v1) · [:material-content-copy: BibTeX](../../bibtex/2512.15184.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Balancing Accuracy and Speed: A Multi-Fidelity Ensemble Kalman Filter with a Machine Learning Surrogate Model { #2512.12276 }
-
-    *Jeffrey van der Voort, Martin Verlaan, Hanne Kekkonen* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.12276">Currently, more and more machine learning (ML) surrogates are being developed for computationally expensive physical models. In this work we investigate the use of a Multi-Fidelity Ensemble Kalman...</span><span class="abstract-full" id="full-2512.12276" hidden>Currently, more and more machine learning (ML) surrogates are being developed for computationally expensive physical models. In this work we investigate the use of a Multi-Fidelity Ensemble Kalman Filter (MF-EnKF) in which the low-fidelity model is such a machine learning surrogate model, instead of a traditional low-resolution or reduced-order model. The idea behind this is to use an ensemble of a few expensive full model runs, together with an ensemble of many cheap but less accurate ML model runs. In this way we hope to reach increased accuracy within the same computational budget. We investigate the performance by testing the approach on two common test problems, namely the Lorenz-2005 model and the Quasi-Geostrophic model. By keeping the original physical model in place, we obtain a higher accuracy than when we completely replace it by the ML model. Furthermore, the MF-EnKF reaches improved accuracy within the same computational budget. The ML surrogate has similar or improved accuracy compared to the low-resolution one, but it can provide a larger speed-up. Our method contributes to increasing the effective ensemble size in the EnKF, which improves the estimation of the initial condition and hence accuracy of the predictions in fields such as meteorology and oceanography.</span> <span class="abstract-toggle" data-id="2512.12276">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.12276v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.12276v1) · [:material-content-copy: BibTeX](../../bibtex/2512.12276.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
 
 </div>
 

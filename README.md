@@ -60,13 +60,19 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1485)
+## Papers (1502)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (348)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (354)</summary>
 
+- **Weather Jiu-Jitsu: Exploring the Feasibility of Control Paradigms in Weather Foundation Models** (Oct 2026) - [arXiv:2610.00792](https://arxiv.org/abs/2610.00792v1)
+- **STCFormer: Adaptive Spatio-Temporal Modeling with Dynamic Cluster Transformer for Station-based Weather Forecasting** (Oct 2026) - [arXiv:2610.00377](https://arxiv.org/abs/2610.00377v1)
+- **Butterfly Effect Confirmed in Global AI Weather Models: Evidence from Tropical Cyclone Forecasting** (Sep 2026) - [arXiv:2609.39379](https://arxiv.org/abs/2609.39379v1)
+- **Proper Scoring Rule-based Diffusion for Probabilistic Weather Forecasting** (Sep 2026) - [arXiv:2609.38632](https://arxiv.org/abs/2609.38632v1)
+- **An Input-Frugal Deep Learning Framework for Weather-Driven National Crop-Yield Forecasting: A Case Study of Brazilian Soybean** (Sep 2026) - [arXiv:2609.38447](https://arxiv.org/abs/2609.38447v1)
+- **A neural network-based Universal Thermal Climate Index for reliable global thermal-stress classification across extreme weather** (Sep 2026) - [arXiv:2609.35949](https://arxiv.org/abs/2609.35949v1)
 - **Suitable Measures for the Potential Operational Utility of AI NWP Rainfall Forecasts Over Africa** (Sep 2026) - [arXiv:2609.31775](https://arxiv.org/abs/2609.31775v1)
 - **A dataset of one-dimensional idealized probabilistic fields** (Sep 2026) - [arXiv:2609.25720](https://arxiv.org/abs/2609.25720v1)
 - **FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting** (Sep 2026) - [arXiv:2609.25505](https://arxiv.org/abs/2609.25505v1)
@@ -419,8 +425,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (60)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (63)</summary>
 
+- **Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography** (Oct 2026) - [arXiv:2610.01835](https://arxiv.org/abs/2610.01835v1)
+- **Less is more: error-distance scaling relation for data-efficient kilometer-scale downscaling of extreme heat** (Sep 2026) - [arXiv:2609.40140](https://arxiv.org/abs/2609.40140v2)
+- **RainAtlas: A Multi-Continental Dataset for Precipitation Downscaling** (Sep 2026) - [arXiv:2609.39833](https://arxiv.org/abs/2609.39833v1)
 - **West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation** (Sep 2026) - [arXiv:2609.25512](https://arxiv.org/abs/2609.25512v1)
 - **Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles** (Sep 2026) - [arXiv:2609.02034](https://arxiv.org/abs/2609.02034v1)
 - **Generative data assimilation highlights fronts as key regulators of ocean energy cascade** (Aug 2026) - [arXiv:2608.14955](https://arxiv.org/abs/2608.14955v1)
@@ -485,8 +494,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (99)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (101)</summary>
 
+- **Physics-Guided Flow-Map Matching for Precipitation Nowcasting** (Sep 2026) - [arXiv:2609.37487](https://arxiv.org/abs/2609.37487v1)
+- **NowcastDiT: Diffusion Transformers are Effective Precipitation Nowcasters** (Sep 2026) - [arXiv:2609.37038](https://arxiv.org/abs/2609.37038v1)
 - **Explainable Deep Learning for Probabilistic Nowcasting of Radar Reflectivity in Tornadic Storms** (Sep 2026) - [arXiv:2609.35675](https://arxiv.org/abs/2609.35675v1)
 - **MW-Nowcast: Six-hour ensemble nowcasting of extreme precipitation** (Sep 2026) - [arXiv:2609.34836](https://arxiv.org/abs/2609.34836v1)
 - **IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy** (Sep 2026) - [arXiv:2609.17175](https://arxiv.org/abs/2609.17175v1)
@@ -725,8 +736,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (74)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (75)</summary>
 
+- **Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations** (Oct 2026) - [arXiv:2610.00728](https://arxiv.org/abs/2610.00728v1)
 - **A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic systems** (Aug 2026) - [arXiv:2608.22454](https://arxiv.org/abs/2608.22454v1)
 - **Advanced Linear Algebra with Applications - Part I (Numerical linear algebra for PDEs, machine learning, and data assimilation)** (Aug 2026) - [arXiv:2608.21234](https://arxiv.org/abs/2608.21234v1)
 - **Coupled multiscale paleoclimate reconstruction with four-dimensional variational data assimilation** (Aug 2026) - [arXiv:2608.19469](https://arxiv.org/abs/2608.19469v1)
@@ -1419,8 +1431,13 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (197)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (202)</summary>
 
+- **AI Emulation of Stochastic Sudden Stratospheric Warming with Interpretable Latent Structure** (Oct 2026) - [arXiv:2610.02069](https://arxiv.org/abs/2610.02069v1)
+- **Unsupervised Domain Adaptation for Enhanced Radiometer Image Precipitation Estimation using Conditional Flow Matching** (Oct 2026) - [arXiv:2610.01890](https://arxiv.org/abs/2610.01890v1)
+- **Explaining El Niño Forecasts with the Average Gradient Outer Product** (Oct 2026) - [arXiv:2610.01095](https://arxiv.org/abs/2610.01095v1)
+- **A library for differentiable signal processing and machine learning on the sphere** (Sep 2026) - [arXiv:2609.39737](https://arxiv.org/abs/2609.39737v1)
+- **Methodological Changes to the Attention ResUNet Hourly Precipitation Postprocessor** (Sep 2026) - [arXiv:2609.38609](https://arxiv.org/abs/2609.38609v1)
 - **Predicting Delayed Train Trajectories on the Dutch Railway Network: Explainable AI Evaluation of Topological, Operational and Weather Features with Tree Based Ensemble Methods** (Sep 2026) - [arXiv:2609.34692](https://arxiv.org/abs/2609.34692v1)
 - **StatD2GAN: When Calibration Masks Generator Quality in Held-Out Evaluation of Synthetic Weather Sequences** (Sep 2026) - [arXiv:2609.33761](https://arxiv.org/abs/2609.33761v1)
 - **Mechanism-Aware Ensemble Conditioning for Data-Limited Emulation of Extreme Events** (Sep 2026) - [arXiv:2609.30746](https://arxiv.org/abs/2609.30746v1)

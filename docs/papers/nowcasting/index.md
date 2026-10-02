@@ -8,11 +8,37 @@ hide:
 
 # Nowcasting
 
-<p class="page-meta" markdown="span">99 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">101 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Physics-Guided Flow-Map Matching for Precipitation Nowcasting { #2609.37487 }
+
+    *Shunya Nagashima, Takumi Bannai, Makoto Misaizu, Keisuke Maeda, Takahiro Ogawa, Miki Haseyama* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.37487">Precipitation nowcasting, generating future radar fields from past observations, is critical for flood warning and disaster response. It is also a demanding benchmark for spatiotemporal generative...</span><span class="abstract-full" id="full-2609.37487" hidden>Precipitation nowcasting, generating future radar fields from past observations, is critical for flood warning and disaster response. It is also a demanding benchmark for spatiotemporal generative modeling, with chaotic dynamics, heavy-tailed intensities, and rare high-intensity structures that matter most. Deterministic models minimize a pixel loss and are driven toward the conditional mean, which blurs exactly those structures, while generative models that add a stochastic residual on top of a deterministic backbone inherit the same blur. We propose Physics-Guided Flow-Map Matching (PG-FMM), a conditional flow-map model that decouples predictable advection from uncertain small-scale detail. A frozen Lagrangian advection prior transports the radar field and supplies an explicit motion forecast, and a flow-map generative head, conditioned on the past frames and the prior rollout rather than summed onto it, produces sharp stochastic detail in four sampling steps. The prior serves only as guidance, so the head replaces blurred structure instead of inheriting it. Extensive experiments on four radar benchmarks show that PG-FMM outperforms state-of-the-art methods on 18 of 24 metrics, with the largest gains at heavy-rain thresholds, where the critical success index improves by up to 58.9%. The project page can be found at https://neurogica.github.io/PG-FMM.</span> <span class="abstract-toggle" data-id="2609.37487">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.37487v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.37487v1) · [:material-content-copy: BibTeX](../../bibtex/2609.37487.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### NowcastDiT: Diffusion Transformers are Effective Precipitation Nowcasters { #2609.37038 }
+
+    *Haoran Xu, Xingzhuo Guo, Yuchen Zhang, Jincheng Zhong, Jianmin Wang, Mingsheng Long* · Sep 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2609.37038">Precipitation nowcasting demands accurate short-term forecasts under strong spatiotemporal variability. Diffusion models are well suited to modeling complex precipitation distributions, yet existing...</span><span class="abstract-full" id="full-2609.37038" hidden>Precipitation nowcasting demands accurate short-term forecasts under strong spatiotemporal variability. Diffusion models are well suited to modeling complex precipitation distributions, yet existing approaches often introduce increasingly specialized designs, leaving the capability of a standard diffusion architecture underexplored. We show that a standard Diffusion Transformer already provides a simple and scalable foundation for precipitation nowcasting, with domain-specific requirements accommodated naturally within its design space. Based on this principle, we develop NowcastDiT and instantiate this flexibility through two complementary adaptations: a dynamics-aware noise prior for temporally coherent forecasts, and end-to-end reinforcement learning with timestep-aware rewards for meteorological skill. Experiments on SEVIR and MRMS benchmarks show that NowcastDiT achieves state-of-the-art performance in both perceptual quality and meteorological skill. These results suggest that standard DiT can serve as an effective foundation for precipitation nowcasting.</span> <span class="abstract-toggle" data-id="2609.37038">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.37038v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.37038v1) · [:material-content-copy: BibTeX](../../bibtex/2609.37038.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
 
 -   #### Explainable Deep Learning for Probabilistic Nowcasting of Radar Reflectivity in Tornadic Storms { #2609.35675 }
 
@@ -367,32 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a>
-    { .paper-tags }
-
--   #### MAG-Net: Physics-Aware Multi-Modal Fusion of Geostationary Satellite and Radar for Severe Convective Precipitation Nowcasting { #2604.02818 }
-
-    *Dandan Chen, Yaqiang Wang, Anyuan Xiong, Enda Zhu* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.02818">Radar-based convective precipitation nowcasting suffers from rapid performance degradation beyond 30 minutes due to missing thermodynamic variables. Existing deep learning models also face blurring...</span><span class="abstract-full" id="full-2604.02818" hidden>Radar-based convective precipitation nowcasting suffers from rapid performance degradation beyond 30 minutes due to missing thermodynamic variables. Existing deep learning models also face blurring effects, training instability, and limited interpretability. To address this, we propose MAG-Net, a Physics-Aware Multi-modal Attention-guided Generator Network. It integrates radar dynamics with selected geostationary satellite channels (IR 10.8, WV 7.1, BTD) to incorporate thermodynamic and microphysical precursors. MAG-Net features a Dual-Stream Encoder for heterogeneous modalities and a Symmetric Dual-Head Decoder optimizing reflectivity regression and event probability via an uncertainty-weighted multi-task strategy. Furthermore, an inference-time Gradient-Preserving Fusion (GPF) strategy combines probabilistic constraints with regression details for better high-frequency texture retention. Experiments on a large-scale dataset (2018-2023) over southeastern China show MAG-Net outperforms deterministic (e.g., CPrecNet) and generative (e.g., DGMR) baselines. Specifically, it improves CSI40 by 0.083 (0.172 to 0.255) over CPrecNet, enhancing intense convective echo detection. Finally, Integrated Gradients (IG) analysis reveals the model's reliance on satellite inputs increases with forecast lead time and convective intensity, confirming that satellite data captures critical precursors for severe weather prediction.</span> <span class="abstract-toggle" data-id="2604.02818">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.02818v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.02818v1) · [:material-content-copy: BibTeX](../../bibtex/2604.02818.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### SmaAT-QMix-UNet: A Parameter-Efficient Vector-Quantized UNet for Precipitation Nowcasting { #2603.21879 }
-
-    *Nikolas Stavrou, Siamak Mehrkanoon* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.21879">Weather forecasting supports critical socioeconomic activities and complements environmental protection, yet operational Numerical Weather Prediction (NWP) systems remain computationally intensive,...</span><span class="abstract-full" id="full-2603.21879" hidden>Weather forecasting supports critical socioeconomic activities and complements environmental protection, yet operational Numerical Weather Prediction (NWP) systems remain computationally intensive, thus being inefficient for certain applications. Meanwhile, recent advances in deep data-driven models have demonstrated promising results in nowcasting tasks. This paper presents SmaAT-QMix-UNet, an enhanced variant of SmaAT-UNet that introduces two key innovations: a vector quantization (VQ) bottleneck at the encoder-decoder bridge, and mixed kernel depth-wise convolutions (MixConv) replacing selected encoder and decoder blocks. These enhancements both reduce the model's size and improve its nowcasting performance. We train and evaluate SmaAT-QMix-UNet on a Dutch radar precipitation dataset (2016-2019), predicting precipitation 30 minutes ahead. Three configurations are benchmarked: using only VQ, only MixConv, and the full SmaAT-QMix-UNet. Grad-CAM saliency maps highlight the regions influencing each nowcast, while a UMAP embedding of the codewords illustrates how the VQ layer clusters encoder outputs. The source code for SmaAT-QMix-UNet is publicly available on GitHub: https://github.com/nstavr04/MasterThesisSnellius.</span> <span class="abstract-toggle" data-id="2603.21879">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.21879v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.21879v2) · [:fontawesome-brands-github: Code](https://github.com/nstavr04/MasterThesisSnellius) · [:material-content-copy: BibTeX](../../bibtex/2603.21879.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
     { .paper-tags }
 
 </div>
