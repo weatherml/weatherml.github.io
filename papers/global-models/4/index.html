@@ -1,0 +1,3006 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://weatherml.github.io/papers/global-models/4/">
+      
+      
+        <link rel="prev" href="../3/">
+      
+      
+        <link rel="next" href="../5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.svg">
+      <meta name="generator" content="zensical-0.0.69">
+    
+    
+      
+        <title>Global Models · Page 4 - weatherml</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.e15858d4.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.b27955a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.9/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  <link rel="alternate" type="application/atom+xml" title="weatherml" href="../../../feed.xml">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
+    <div data-md-component="skip">
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="weatherml" class="md-header__button md-logo" aria-label="weatherml" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.74 5.47c2.36 1.03 3.61 3.56 3.18 5.99A6 6 0 0 1 18 16v.17a3 3 0 0 1 1-.17 3 3 0 0 1 3 3 3 3 0 0 1-3 3H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h.27C5 12.45 4.6 10.24 5.5 8.26a5.49 5.49 0 0 1 7.24-2.79m-.81 1.83c-1.77-.8-3.84.01-4.62 1.77-.46 1.02-.38 2.15.1 3.06A5.99 5.99 0 0 1 12 10c.7 0 1.38.12 2 .34a3.51 3.51 0 0 0-2.07-3.04m1.62-3.66c-.55-.24-1.1-.41-1.67-.52l2.49-1.3.9 2.89a7.7 7.7 0 0 0-1.72-1.07m-7.46.8c-.49.35-.92.75-1.29 1.19l.11-2.81 2.96.68c-.62.21-1.22.53-1.78.94M18 9.71c-.09-.59-.22-1.16-.41-1.71l2.38 1.5-2.05 2.23c.11-.65.13-1.33.08-2.02M3.04 11.3c.07.6.2 1.17.39 1.7l-2.37-1.5L3.1 9.28c-.1.65-.13 1.33-.06 2.02M19 18h-3v-2a4 4 0 0 0-4-4 4 4 0 0 0-4 4H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13a1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            weatherml
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Global Models · Page 4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/weatherml/weatherml.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    weatherml/weatherml.github.io
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  All Papers
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../explore/" class="md-tabs__link">
+        
+  
+  Explore
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="weatherml" class="md-nav__button md-logo" aria-label="weatherml" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.74 5.47c2.36 1.03 3.61 3.56 3.18 5.99A6 6 0 0 1 18 16v.17a3 3 0 0 1 1-.17 3 3 0 0 1 3 3 3 3 0 0 1-3 3H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h.27C5 12.45 4.6 10.24 5.5 8.26a5.49 5.49 0 0 1 7.24-2.79m-.81 1.83c-1.77-.8-3.84.01-4.62 1.77-.46 1.02-.38 2.15.1 3.06A5.99 5.99 0 0 1 12 10c.7 0 1.38.12 2 .34a3.51 3.51 0 0 0-2.07-3.04m1.62-3.66c-.55-.24-1.1-.41-1.67-.52l2.49-1.3.9 2.89a7.7 7.7 0 0 0-1.72-1.07m-7.46.8c-.49.35-.92.75-1.29 1.19l.11-2.81 2.96.68c-.62.21-1.22.53-1.78.94M18 9.71c-.09-.59-.22-1.16-.41-1.71l2.38 1.5-2.05 2.23c.11-.65.13-1.33.08-2.02M3.04 11.3c.07.6.2 1.17.39 1.7l-2.37-1.5L3.1 9.28c-.1.65-.13 1.33-.06 2.02M19 18h-3v-2a4 4 0 0 0-4-4 4 4 0 0 0-4 4H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13a1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+
+    </a>
+    weatherml
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/weatherml/weatherml.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    weatherml/weatherml.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  All Papers
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  All Papers
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Global Models
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_1_1">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Global Models
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 5
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 6
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 7
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 8
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 9
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 10
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 11
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 12
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 13
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../regional-models/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Regional Models
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_2">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Regional Models
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regional-models/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regional-models/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../nowcasting/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Nowcasting
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Nowcasting
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nowcasting/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nowcasting/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nowcasting/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../downscaling/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Downscaling
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Downscaling
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downscaling/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downscaling/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downscaling/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../post-processing/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Post-processing
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../data-assimilation/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Data Assimilation
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Data Assimilation
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-assimilation/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-assimilation/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../climate-modeling/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Climate Modeling
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_7">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Climate Modeling
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 5
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 6
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 7
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 8
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 9
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../climate-modeling/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 10
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hydrology/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Hydrology
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Hydrology
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hydrology/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ocean-sea-ice/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Ocean & Sea Ice
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Ocean & Sea Ice
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ocean-sea-ice/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ocean-sea-ice/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../air-quality-composition/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Air Quality & Composition
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_10">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Air Quality & Composition
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../air-quality-composition/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../air-quality-composition/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../remote-sensing/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Remote Sensing
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_11">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Remote Sensing
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-sensing/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-sensing/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remote-sensing/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../other/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Other
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_12">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Other
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 2
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 4
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 5
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 6
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Page 7
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Explore
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
+                
+                  
+
+  
+  
+
+
+<div class="listing-header">
+<h1 id="global-models">Global Models<a class="headerlink" href="#global-models" title="Permanent link">&para;</a></h1>
+<p class="page-meta">365 papers · page 4 of 13 · <a href="../../../bib/global-models.bib" download><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> BibTeX for this topic</a></p>
+</div>
+<div class="grid cards">
+<ul>
+<li>
+<h4 id="2605.03997">Uncertainty Quantification in Forecast Comparisons<a class="headerlink" href="#2605.03997" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Marc-Oliver Pohle, Tanja Zahn, Sebastian Lerch</em> · May 2026</p>
+<p><span class="abstract-snippet" id="snip-2605.03997">Skill scores, which measure the relative improvement of a forecasting method over a benchmark via consistent scoring functions and proper scoring rules, are a standard tool in forecast evaluation,...</span><span class="abstract-full" id="full-2605.03997" hidden>Skill scores, which measure the relative improvement of a forecasting method over a benchmark via consistent scoring functions and proper scoring rules, are a standard tool in forecast evaluation, yet their sampling uncertainty is rarely rigorously quantified. With modern forecasting applications being increasingly multivariate and involving evaluations across multiple horizons, variables, spatial locations, and forecasting methods, standard tools like the pairwise Diebold-Mariano forecast accuracy test or pointwise confidence intervals fail to account for the multiple comparison problem, leading to inflated Type I error rates and invalid joint inference. To address the lack of a coherent, statistically rigorous framework for quantifying uncertainty across these multi-dimensional evaluation problems, we introduce simultaneous confidence bands for expected scores and skill scores. Our framework provides a versatile tool for joint inference that is applicable to any forecast type from mean and quantile to full distributional forecasts. We develop a bootstrap implementation and show that our bands are valid under multivariate extensions of the classical Diebold-Mariano assumptions. We demonstrate the practical utility of the approach in two case studies by quantifying the benefits of time-varying parameter models for macroeconomic forecasting, and by comparing data-driven and physics-based models in probabilistic weather forecasting.</span> <span class="abstract-toggle" data-id="2605.03997">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2605.03997v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2605.03997v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2605.03997.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a></p>
+</li>
+<li>
+<h4 id="2605.01599">Cast3: Translating numerical weather prediction principles into data-driven forecasting<a class="headerlink" href="#2605.01599" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Congyi Nai, Baoxiang Pan, Yuan Liang, Xi Chen</em> · May 2026</p>
+<p><span class="abstract-snippet" id="snip-2605.01599">Data-driven weather models have made rapid advances in recent years, reaching and in some metrics surpassing the large-scale forecast skill of operational numerical weather prediction. This progress,...</span><span class="abstract-full" id="full-2605.01599" hidden>Data-driven weather models have made rapid advances in recent years, reaching and in some metrics surpassing the large-scale forecast skill of operational numerical weather prediction. This progress, however, has been built almost entirely on the reanalysis data that NWP produced, while the methodological knowledge that the NWP community distilled over decades of multi-scale atmospheric modelling remains largely unused. Here we present Cast3, a generative forecasting framework that systematically absorbs NWP meta-knowledge to close this gap. Cast3 operates on variable-resolution cubed-sphere grids for scale-aware representation and constructs structurally diverse super-ensembles that sample the complementary biases of different grid discretizations, delivering state-of-the-art ensemble prediction. It further introduces generative nudging, a posterior-sampling strategy that distils the collective information of the full ensemble into a single forecast possessing both the large-scale accuracy of the ensemble mean and the mesoscale realism of a high-resolution member. Evaluated across synoptic-scale skill, spectral fidelity, station-level surface verification, and tropical cyclone prediction, Cast3 outperforms established deterministic and generative baselines across various dimensions. More broadly, these results demonstrate that the design principles embedded in computational atmospheric science offer a rich and largely untapped foundation for the next generation of data-driven Earth system modelling.</span> <span class="abstract-toggle" data-id="2605.01599">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2605.01599v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2605.01599v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2605.01599.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a></p>
+</li>
+<li>
+<h4 id="2605.01126">Extreme Weather Bench: A framework and benchmark for evaluation of high-impact weather<a class="headerlink" href="#2605.01126" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Amy McGovern, Taylor Mandelbaum, Daniel Rothenberg, Nicholas Loveday, Corey Potvin et al.</em> · May 2026</p>
+<p><span class="abstract-snippet" id="snip-2605.01126">Forecasting the wide variety of high-impact weather events experienced globally is a challenge for both Artificial Intelligence (AI) and Numerical Weather Prediction (NWP) models and it is critical...</span><span class="abstract-full" id="full-2605.01126" hidden>Forecasting the wide variety of high-impact weather events experienced globally is a challenge for both Artificial Intelligence (AI) and Numerical Weather Prediction (NWP) models and it is critical that such models be properly verified before deployment. Although AI weather models are rapidly evolving, much of their evaluation is currently done either with a global-scale evaluation or by hand-picking a small number of case studies or a region. A widely-used open-source benchmark suite focusing on high-impact weather will help to drive the science forward for all scales of weather models, as it has for other AI fields. Here we introduce Extreme Weather Bench (EWB), a new community-driven benchmark suite that facilitates model validation and verification on a variety of high-impact hazards that matter to people around the globe. EWB provides a standard set of case studies (spanning across multiple spatial and temporal scales and different parts of the weather spectrum), observational data, impact-based metrics, and open-source code for users to evaluate their models. Verifying that a model works against a standard set of case studies, especially events that are high-impact for the general public, is a key piece of improving the trustworthiness of AI models. EWB will help to drive the science forward for all weather models, enabling true comparisons across models and evaluating models on specific high-impact phenomena through the use of case studies. EWB is a free open-source community-driven system and will continue to evolve to include additional phenomena, test cases and metrics in collaboration with the worldwide weather and forecast verification community.</span> <span class="abstract-toggle" data-id="2605.01126">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2605.01126v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2605.01126v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2605.01126.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2604.27944">Calibrating Attribution Proxies for Reward Allocation in Participatory Weather Sensing<a class="headerlink" href="#2604.27944" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Mark C. Ballandies, Michael T. C. Chiu, Claudio J. Tessone</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.27944">Large-scale IoT weather sensing networks require incentive mechanisms to sustain participation, yet determining how much value individual data contributions bring to the network remains an open...</span><span class="abstract-full" id="full-2604.27944" hidden>Large-scale IoT weather sensing networks require incentive mechanisms to sustain participation, yet determining how much value individual data contributions bring to the network remains an open problem. Existing approaches address data quality but not data valuation; in operational meteorology, adjoint-based methods derive value from the forecast model itself but require full data assimilation infrastructure. We propose to utilise differentiable AI weather models to fill this gap and characterise gradient-based attribution on gridded GFS analysis inputs as a candidate value signal, evaluating fidelity, calibration, cost, and gaming vulnerability across more than 400 configurations. Attribution captures near-optimal sensor placement utility with monotonically faithful payments, but can be inflated by adversarial inputs, with detection requiring external baseline data. These findings establish gradient attribution as a computationally validated signal for model-informed reward allocation in participatory weather sensing.</span> <span class="abstract-toggle" data-id="2604.27944">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.27944v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.27944v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.27944.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a></p>
+</li>
+<li>
+<h4 id="2604.27313">PINN-Cast: Exploring the Role of Continuous-Depth NODE in Transformers and Physics Informed Loss as Soft Physical Constraints in Short-term Weather Forecasting<a class="headerlink" href="#2604.27313" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Hira Saleem, Flora Salim, Cormac Purcell</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.27313">Operational weather prediction has long relied on physics-based numerical weather prediction (NWP), whose accuracy comes at the cost of substantial compute and complex simulation workflows. Recent...</span><span class="abstract-full" id="full-2604.27313" hidden>Operational weather prediction has long relied on physics-based numerical weather prediction (NWP), whose accuracy comes at the cost of substantial compute and complex simulation workflows. Recent transformer-based forecasters offer efficient data-driven alternatives, however transformers are physics-agnostic models. Additionally, standard transformer encoders evolve representations through discrete layer updates that may be less suited to modeling smooth latent dynamics. In this work, we propose a continuous-depth transformer encoder for weather forecasting that integrates Neural Ordinary Differential Equation (Neural ODE) dynamics within each encoder block. Specifically, we replace discrete residual updates with ODE-based updates solved using adaptive numerical integration. We also introduce a two-branch attention module that combines conventional patch-wise self-attention with an auxiliary branch that applies a derivative operator to attention logits, providing an additional change-sensitive interaction signal. To further align forecasts with governing principles, we propose a customized physics-informed training objective that enforces physical consistency as a soft constraint. We evaluate the proposed method against a standard discrete transformer baseline and an existing continuous-time Neural ODE forecasting variant, demonstrating the importance of PINN-Cast in short term weather forecasting.</span> <span class="abstract-toggle" data-id="2604.27313">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.27313v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.27313v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.27313.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a></p>
+</li>
+<li>
+<h4 id="2604.25559">Representing the Surface Ocean in ECMWF's data-driven forecasting system AIFS<a class="headerlink" href="#2604.25559" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Sara Hahner, Lorenzo Zampieri, Jean-Raymond Bidlot, Philip Browne, Matthew Chantry et al.</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.25559">Machine-learning (ML) models, such as the AIFS at the ECMWF, have revolutionised weather forecasting in recent years. We present an extension of the AIFS that jointly models the atmosphere and...</span><span class="abstract-full" id="full-2604.25559" hidden>Machine-learning (ML) models, such as the AIFS at the ECMWF, have revolutionised weather forecasting in recent years. We present an extension of the AIFS that jointly models the atmosphere and surface ocean, including ocean waves and sea ice. The primary objective of this extension is to enhance machine-learning medium-range forecasting and enable new use cases by expanding the weather state to better capture coupled surface processes. Our approach departs from traditional numerical models by not having two separate models for the atmosphere and marine components. The joint model instead learns correlations across the entire atmosphere-ocean interface in a component-agnostic way, and can exploit the expressive capacity of ML architectures to learn cross-component relationships directly from the data.   We leverage tailored and targeted datasets and solve model design challenges such as missing values over land, multi-scale temporal dynamics, and physical realism of forecast fields and demonstrate the utility of loss scaling in guiding the learning process. We evaluate how representing the surface ocean affects medium-range weather forecasts. We also assess the model's ability to predict surface-ocean fields, including wave swell and tropical-cyclone cold wakes. For nearly all evaluated marine variables, we observe an improvement of approximately one day in forecast skill at medium-range lead times compared to physics-based models. Furthermore, we demonstrate that the model is robust to idealised initial conditions outside the training distribution and responds to them in a physically consistent way. Overall, our findings suggest that the joint AIFS modelling approach offers significant potential for combined atmosphere-ocean forecasting. Our work provides a solid foundation for future development of data-driven coupled Earth system models with greater flexibility and physical fidelity.</span> <span class="abstract-toggle" data-id="2604.25559">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.25559v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.25559v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.25559.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2604.22522">Hybrid weather prediction using spectral nudging toward machine-learning forecasts<a class="headerlink" href="#2604.22522" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>I. Polichtchouk, M. C. A. Clare, M. Chantry, E. Gascón, M. Maier-Gerber, B. Vanniere, S. Lang</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.22522">A hybrid approach to numerical weather prediction is investigated, in which the unperturbed physics-based ECMWF Integrated Forecasting System (IFS) is spectrally nudged toward forecasts from a...</span><span class="abstract-full" id="full-2604.22522" hidden>A hybrid approach to numerical weather prediction is investigated, in which the unperturbed physics-based ECMWF Integrated Forecasting System (IFS) is spectrally nudged toward forecasts from a machine-learned weather forecast model, trained to forecast on model levels. Nudging is applied only to the large scales of virtual temperature and vorticity, with the objective of improving large-scale forecast skill while preserving the dynamical and physical behaviour of the underlying physics-based model at smaller scales. Consistent with previous studies, spectral nudging substantially improves large-scale forecast skill relative to the free-running IFS, with gains of up to 1.5 days in the tropics and 12-18 hours in the extra-tropics, and a reduced frequency of forecast busts. These improvements are achieved while preserving forecast variability. The representation of extreme near-surface weather is maintained or improved. Tropical cyclone track forecasts benefit from improved large-scale steering flow, while storm intensity remains comparable to that of the physics-based model and more physically consistent than in pure machine-learned weather forecast models. These results confirm that scale-selective spectral nudging provides a practical pathway for combining machine-learning and physics-based forecasting systems.</span> <span class="abstract-toggle" data-id="2604.22522">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.22522v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.22522v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.22522.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a></p>
+</li>
+<li>
+<h4 id="2604.20467">Mechanistic Interpretability Tool for AI Weather Models<a class="headerlink" href="#2604.20467" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Kirsten I. Tempest, Matthias Beylich, George C. Craig</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.20467">Artificial Intelligence (AI) weather models are improving rapidly, and their forecasts are already competitive with long-established traditional Numerical Weather Prediction (NWP). To build...</span><span class="abstract-full" id="full-2604.20467" hidden>Artificial Intelligence (AI) weather models are improving rapidly, and their forecasts are already competitive with long-established traditional Numerical Weather Prediction (NWP). To build confidence in this new methodology, it is critical that we understand how these predictions are generated. This is a huge challenge as these AI weather models remain largely black boxes. In other areas of Machine Learning (ML), mechanistic interpretability has emerged as a framework for understanding ML predictions by analysing the building blocks responsible for them. Here we present an open-source, highly adaptable tool which incorporates concepts from mechanistic interpretability. The tool organises internal latent representations from the model processor and allows for initial analyses, including cosine similarity and Principal Component Analysis (PCA), enabling the user to identify directions in latent space potentially associated with meteorological features. Applying our tool to the graph neural network GraphCast, we present preliminary case studies for mid-latitude synoptic-scale waves and specific humidity. These demonstrate the tool's ability to identify linear combinations of latent channels that appear to correspond to interpretable features.</span> <span class="abstract-toggle" data-id="2604.20467">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.20467v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.20467v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.20467.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a></p>
+</li>
+<li>
+<h4 id="2604.18906">Instability-Aware Steering of an Extreme Atmospheric River in an AI Weather Foundation Model<a class="headerlink" href="#2604.18906" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Moyan Liu, Qin Huang, Upmanu Lall</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.18906">Advances in deep learning methods for weather forecasting are creating opportunities to computationally explore the potential for steering or control of extreme weather trajectories for societal risk...</span><span class="abstract-full" id="full-2604.18906" hidden>Advances in deep learning methods for weather forecasting are creating opportunities to computationally explore the potential for steering or control of extreme weather trajectories for societal risk reduction. We present initial investigations into the feasibility of redirecting extreme atmospheric rivers (ARs) through small, instability-aware perturbations. Using the Aurora AI weather foundation model, we identify sensitive upstream locations using finite-time Lyapunov exponents and jet-eddy interaction criteria. We apply an idealized cloud-seeding operator that mimics latent heat release to assess whether these Lyapunov-guided interventions can influence downstream evolution. In a case study of a severe California AR, perturbations induce coherent downstream shifts in moisture transport, reducing intensity at landfall under favorable kinematic conditions. The response is nonlinear and contingent on the local flow geometry. These initial results suggest that the atmosphere's intrinsic chaotic sensitivity could be leveraged for dynamical control, offering a new research direction for extreme event risk mitigation.</span> <span class="abstract-toggle" data-id="2604.18906">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.18906v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.18906v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.18906.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a></p>
+</li>
+<li>
+<h4 id="2604.18727">Skillful Global Ocean Emulation and the Role of Correlation-Aware Loss<a class="headerlink" href="#2604.18727" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Niraj Agarwal, Timothy A. Smith, Sergey Frolov, Laura C. Slivinski</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.18727">Machine learning emulators have shown extraordinary skill in forecasting atmospheric states, and their application to global ocean dynamics offers similar promise. Here, we adapt the GraphCast...</span><span class="abstract-full" id="full-2604.18727" hidden>Machine learning emulators have shown extraordinary skill in forecasting atmospheric states, and their application to global ocean dynamics offers similar promise. Here, we adapt the GraphCast architecture into a dedicated ocean-only emulator, driven by prescribed atmospheric conditions, for medium-range predictions. The emulator is trained on NOAA's UFS-Replay dataset. Using a 24 hour time step, single initial condition, and without using autoregressive training, we produce an emulator that provides skillful forecasts for 10-15 day lead times. We further demonstrate the use of Mahalanobis distance as loss that improves the forecast skill compared to the Mean Squared Error loss by explicitly accounting for the correlations between tendencies of the target variables. Using spatial correlation analysis of the forecasted fields, we also show that the proposed correlation-aware loss acts as a statistical-dynamical regularizer for the slow, correlated dynamics of the global oceans, offering a better background forecast for downstream tasks like data assimilation.</span> <span class="abstract-toggle" data-id="2604.18727">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.18727v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.18727v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.18727.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2604.16643">WP-MIP: An Artificial Intelligence, Hybrid, and Physically Based Model Intercomparison Project for Weather Prediction<a class="headerlink" href="#2604.16643" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Ron McTaggart-Cowan, Linus Magnusson, Inna Polichtchouk, Duncan Ackerley, Martin Koehler et al.</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.16643">Rapid progress in the field of machine-learning for weather prediction has led to the emergence of algorithms whose forecasting skill can exceed that of traditional physically based models. This...</span><span class="abstract-full" id="full-2604.16643" hidden>Rapid progress in the field of machine-learning for weather prediction has led to the emergence of algorithms whose forecasting skill can exceed that of traditional physically based models. This development represents an opportunity to improve the quality of forecasting services provided by operational centers, particularly given the speed at which machine-learning based models generate predictions. Despite the clear promise of these systems, questions remain about the ability of the current generation of machine-learning models to generate physically consistent predictions of the full suite of required forecast fields under all conditions. Answering these questions will require careful comparisons between the well-understood physically based models, current state-of-the-art machine-learning models, and the hybrid models that combine elements of these two archetypes. The Weather Prediction Model Intercomparison Project (WP-MIP) is a World Meteorological Organization-supported initiative whose initial goal is to create a centralized database of physically based, machine-learning, and hybrid model forecasts to enable a distributed assessment and evaluation effort. The first instance of WP-MIP focuses on global deterministic predictions using both center-specific and common initializations to facilitate sensitivity studies. Forecasts contributed by institutions across six continents will be used to develop AI-ready verification techniques that highlight the strengths and weaknesses of each class of prediction system, with the goal of establishing best-practice guidance to model developers and national weather centers. The broad engagement of the operational and forecast-evaluation communities in WP-MIP will ensure that the project results are highly relevant to the development and deployment of next-generation weather prediction systems.</span> <span class="abstract-toggle" data-id="2604.16643">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.16643v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.16643v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.16643.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a></p>
+</li>
+<li>
+<h4 id="2604.16429">(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting Models<a class="headerlink" href="#2604.16429" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Maksim Zhdanov, Ana Lucic, Max Welling, Jan-Willem van de Meent</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.16429">We introduce Mosaic, a probabilistic weather forecasting model that addresses three failure modes of spectral degradation in ML-based weather prediction: spectral damping (statistical),...</span><span class="abstract-full" id="full-2604.16429" hidden>We introduce Mosaic, a probabilistic weather forecasting model that addresses three failure modes of spectral degradation in ML-based weather prediction: spectral damping (statistical), high-frequency aliasing (architectural), and residual high-frequency leakage (parametric). Mosaic generates ensemble members through learned functional perturbations and operates on native-resolution grids via mesh-aligned block-sparse attention, a hardware-aligned mechanism that captures long-range dependencies at linear cost by sharing keys and values across spatially adjacent queries. At 1.5° resolution with 214M parameters, Mosaic matches or outperforms models trained on 6<span class="arithmatex">\(\times\)</span> finer resolution on key variables and achieves state-of-the-art results among 1.5° models, producing well-calibrated ensembles whose individual members exhibit near-perfect spectral alignment across all resolved frequencies. A 24-member, 10-day forecast takes under 12s on a single H100~GPU. Code is available at https://github.com/maxxxzdn/mosaic.</span> <span class="abstract-toggle" data-id="2604.16429">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.16429v3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.16429v3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a href="https://github.com/maxxxzdn/mosaic"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg></span> Code</a> · <a class="bibtex-link" href="../../../bibtex/2604.16429.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a></p>
+</li>
+<li>
+<h4 id="2604.09041">U-Cast: A Surprisingly Simple and Efficient Frontier Probabilistic AI Weather Forecaster<a class="headerlink" href="#2604.09041" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Salva Rühling Cachay, Duncan Watson-Parris, Rose Yu</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.09041">AI-based weather forecasting now rivals traditional physics-based ensembles, but state-of-the-art (SOTA) models rely on specialized architectures and massive computational budgets, creating a high...</span><span class="abstract-full" id="full-2604.09041" hidden>AI-based weather forecasting now rivals traditional physics-based ensembles, but state-of-the-art (SOTA) models rely on specialized architectures and massive computational budgets, creating a high barrier to entry. We demonstrate that such complexity is unnecessary for frontier performance. We introduce \ours, a probabilistic forecaster built on a standard U-Net backbone trained with a simple recipe: deterministic pre-training on Mean Absolute Error followed by short probabilistic fine-tuning on the Continuous Ranked Probability Score (CRPS) using Monte Carlo Dropout for stochasticity. As a result, our model matches or exceeds the probabilistic skill of GenCast and IFS ENS at <span class="arithmatex">\(1.5^\circ\)</span> resolution while reducing training compute by over <span class="arithmatex">\(10\times\)</span> compared to leading CRPS-based models and inference latency by over <span class="arithmatex">\(10\times\)</span> compared to diffusion-based models. U-Cast trains in under 12 H200 GPU-days and generates a 15-day ensemble forecast in 3 seconds. These results suggest that scalable, general-purpose architectures paired with efficient training curricula can match complex domain-specific designs at a fraction of the cost, opening the training of frontier probabilistic weather models to the broader community.</span> <span class="abstract-toggle" data-id="2604.09041">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.09041v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.09041v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a href="https://github.com/Rose-STL-Lab/u-cast"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg></span> Code</a> · <a class="bibtex-link" href="../../../bibtex/2604.09041.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a></p>
+</li>
+<li>
+<h4 id="2604.04998">El Nino Prediction Based on Weather Forecast and Geographical Time-series Data<a class="headerlink" href="#2604.04998" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Viet Trinh, Ha-Vy Luu, Quoc-Khiem Nguyen-Pham, Hung Tong, Thanh-Huyen Tran, Hoai-Nam Nguyen Dang</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.04998">This paper proposes a novel framework for enhancing the prediction accuracy and lead time of El Niño events, crucial for mitigating their global climatic, economic, and societal impacts. Traditional...</span><span class="abstract-full" id="full-2604.04998" hidden>This paper proposes a novel framework for enhancing the prediction accuracy and lead time of El Niño events, crucial for mitigating their global climatic, economic, and societal impacts. Traditional prediction models often rely on oceanic and atmospheric indices, which may lack the granularity or dynamic interplay captured by comprehensive meteorological and geographical datasets. Our framework integrates real-time global weather forecast data with anomalies, subsurface ocean heat content, and atmospheric pressure across various temporal and spatial resolutions. Leveraging a hybrid deep learning architecture that combines a Convolutional Neural Network (CNN) for spatial feature extraction and a Long Short-Term Memory (LSTM) network for temporal dependency modeling, the framework aims to identify complex precursors and evolving patterns of El Niño events.</span> <span class="abstract-toggle" data-id="2604.04998">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.04998v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.04998v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.04998.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2604.03300">AIFS-COMPO: A Global Data-Driven Atmospheric Composition Forecasting System<a class="headerlink" href="#2604.03300" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Paula Harder, Johannes Flemming, Mihai Alexe, Gert Mertes, Baudouin Raoult, Matthew Chantry</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.03300">We introduce AIFS-COMPO, a skilful medium-range data-driven global forecasting system for aerosols and reactive gases. Building on the ECMWF Artificial Intelligence Forecast System (AIFS), AIFS-COMPO...</span><span class="abstract-full" id="full-2604.03300" hidden>We introduce AIFS-COMPO, a skilful medium-range data-driven global forecasting system for aerosols and reactive gases. Building on the ECMWF Artificial Intelligence Forecast System (AIFS), AIFS-COMPO employs a transformer-based encoder-processor-decoder architecture to jointly model meteorological and atmospheric composition variables. The model is trained on Copernicus Atmosphere Monitoring Service (CAMS) reanalysis, analysis, and forecast data to learn the coupled dynamics of weather, emissions, transport, and atmospheric chemistry. We evaluate AIFS-COMPO against a range of atmospheric composition observations and compare its performance with the operational CAMS global forecasting system IFS-COMPO. The results show that AIFS-COMPO achieves comparable or improved forecast skill for several key species while requiring only a fraction of the computational resources. Furthermore, the efficiency of the approach enables forecasts beyond the current operational horizon, demonstrating the potential of AI-based systems for fast and accurate global atmospheric composition prediction.</span> <span class="abstract-toggle" data-id="2604.03300">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.03300v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.03300v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.03300.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2604.01215">The Recipe Matters More Than the Kitchen:Mathematical Foundations of the AI Weather Prediction Pipeline<a class="headerlink" href="#2604.01215" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Piyush Garg, Diana R. Gergel, Andrew E. Shao, Galen J. Yacalis</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.01215">AI weather prediction has advanced rapidly, yet no unified mathematical framework explains what determines forecast skill. Existing theory addresses specific architectural choices rather than the...</span><span class="abstract-full" id="full-2604.01215" hidden>AI weather prediction has advanced rapidly, yet no unified mathematical framework explains what determines forecast skill. Existing theory addresses specific architectural choices rather than the learning pipeline as a whole, while operational evidence from 2023-2026 demonstrates that training methodology, loss function design, and data diversity matter at least as much as architecture selection. This paper makes two interleaved contributions. Theoretically, we construct a framework rooted in approximation theory on the sphere, dynamical systems theory, information theory, and statistical learning theory that treats the complete learning pipeline (architecture, loss function, training strategy, data distribution) rather than architecture alone. We establish a Learning Pipeline Error Decomposition showing that estimation error (loss- and data-dependent) dominates approximation error (architecture-dependent) at current scales. We develop a Loss Function Spectral Theory formalizing MSE-induced spectral blurring in spherical harmonic coordinates, and derive Out-of-Distribution Extrapolation Bounds proving that data-driven models systematically underestimate record-breaking extremes with bias growing linearly in record exceedance. Empirically, we validate these predictions via inference across ten architecturally diverse AI weather models using NVIDIA Earth2Studio with ERA5 initial conditions, evaluating six metrics across 30 initialization dates spanning all seasons. Results confirm universal spectral energy loss at high wavenumbers for MSE-trained models, rising Error Consensus Ratios showing that the majority of forecast error is shared across architectures, and linear negative bias during extreme events. A Holistic Model Assessment Score provides unified multi-dimensional evaluation, and a prescriptive framework enables mathematical evaluation of proposed pipelines before training.</span> <span class="abstract-toggle" data-id="2604.01215">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.01215v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.01215v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.01215.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+</li>
+<li>
+<h4 id="2604.00897">Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching<a class="headerlink" href="#2604.00897" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Aymeric Delefosse, Anastase Charantonis, Dominique Béréziat</em> · Apr 2026</p>
+<p><span class="abstract-snippet" id="snip-2604.00897">Machine learning-based weather forecasting models now surpass state-of-the-art numerical weather prediction systems, but training and operating these models at high spatial resolution remains...</span><span class="abstract-full" id="full-2604.00897" hidden>Machine learning-based weather forecasting models now surpass state-of-the-art numerical weather prediction systems, but training and operating these models at high spatial resolution remains computationally expensive. We present a modular framework that decouples forecasting from spatial resolution by applying learned generative super-resolution as a post-processing step to coarse-resolution forecast trajectories. We formulate super-resolution as a stochastic inverse problem, using a residual formulation to preserve large-scale structure while reconstructing unresolved variability. The model is trained with flow matching exclusively on reanalysis data and is applied to global medium-range forecasts. We evaluate (i) design consistency by re-coarsening super-resolved forecasts and comparing them to the original coarse trajectories, and (ii) high-resolution forecast quality using standard ensemble verification metrics and spectral diagnostics. Results show that super-resolution preserves large-scale structure and variance after re-coarsening, introduces physically consistent small-scale variability, and achieves competitive probabilistic forecast skill at 0.25° resolution relative to an operational ensemble baseline, while requiring only a modest additional training cost compared with end-to-end high-resolution forecasting.</span> <span class="abstract-toggle" data-id="2604.00897">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.00897v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2604.00897v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2604.00897.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion &amp; flow matching</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a></p>
+</li>
+<li>
+<h4 id="2603.29200">Improving Ensemble Forecasts of Abnormally Deflecting Tropical Cyclones with Fused Atmosphere-Ocean-Terrain Data<a class="headerlink" href="#2603.29200" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Qixiang Li, Yuan Zhou, Shuwei Huo, Chong Wang, Xiaofeng Li</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.29200">Deep learning-based tropical cyclone (TC) forecasting methods have demonstrated significant potential and application advantages, as they feature much lower computational cost and faster operation...</span><span class="abstract-full" id="full-2603.29200" hidden>Deep learning-based tropical cyclone (TC) forecasting methods have demonstrated significant potential and application advantages, as they feature much lower computational cost and faster operation speed than numerical weather prediction models. However, existing deep learning methods still have key limitations: they can only process a single type of sequential trajectory data or homogeneous meteorological variables, and fail to achieve accurate forecasting of abnormal deflected TCs. To address these challenges, we present two groundbreaking contributions. First, we have constructed a multimodal and multi-source dataset named AOT-TCs for TC forecasting in the Northwest Pacific basin. As the first dataset of its kind, it innovatively integrates heterogeneous variables from the atmosphere, ocean, and land, thus obtaining a comprehensive and information-rich meteorological dataset. Second, based on the AOT-TCs dataset, we propose a forecasting model that can handle both normal and abnormally deflected TCs. This is the first TC forecasting model to adopt an explicit atmosphere-ocean-terrain coupling architecture, enabling it to effectively capture complex interactions across physical domains. Extensive experiments on all TC cases in the Northwest Pacific from 2017 to 2024 show that our model achieves state-of-the-art performance in TC forecasting: it not only significantly improves the forecasting accuracy of normal TCs but also breaks through the technical bottleneck in forecasting abnormally deflected TCs.</span> <span class="abstract-toggle" data-id="2603.29200">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.29200v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.29200v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.29200.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks &amp; datasets</a></p>
+</li>
+<li>
+<h4 id="2603.27738">TianJi:An autonomous AI meteorologist for discovering physical mechanisms in atmospheric science<a class="headerlink" href="#2603.27738" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Kaikai Zhang, Xiang Wang, Haoluo Zhao, Nan Chen, Mengyang Yu Jing-Jia Luo, Tao Song, Fan Meng</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.27738">Artificial intelligence (AI) has achieved breakthroughs comparable to traditional numerical models in data-driven weather forecasting, yet it remains essentially statistical fitting and struggles to...</span><span class="abstract-full" id="full-2603.27738" hidden>Artificial intelligence (AI) has achieved breakthroughs comparable to traditional numerical models in data-driven weather forecasting, yet it remains essentially statistical fitting and struggles to uncover the physical causal mechanisms of the atmosphere. Physics-oriented mechanism research still heavily relies on domain knowledge and cumbersome engineering operations of human scientists, becoming a bottleneck restricting the efficiency of Earth system science exploration. Here, we propose TianJi - the first "AI meteorologist" system capable of autonomously driving complex numerical models to verify physical mechanisms. Powered by a large language model-driven multi-agent architecture, TianJi can autonomously conduct literature research and generate scientific hypotheses. We further decouple scientific research into cognitive planning and engineering execution: the meta-planner interprets hypotheses and devises experimental roadmaps, while a cohort of specialized worker agents collaboratively complete data preparation, model configuration, and multi-dimensional result analysis. In two classic atmospheric dynamic scenarios (squall-line cold pools and typhoon track deflections), TianJi accomplishes expert-level end-to-end experimental operations with zero human intervention, compressing the research cycle to a few hours. It also delivers detailed result analyses and autonomously judges and explains the validity of the hypotheses from outputs. TianJi reveals that the role of AI in Earth system science is transitioning from a "black-box predictor" to an "interpretable scientific collaborator", offering a new paradigm for high-throughput exploration of scientific mechanisms.</span> <span class="abstract-toggle" data-id="2603.27738">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.27738v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.27738v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.27738.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs &amp; agents</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a></p>
+</li>
+<li>
+<h4 id="2603.27288">StretchCast: Global-Regional AI Weather Forecasting on Stretched Cubed-Sphere Mesh<a class="headerlink" href="#2603.27288" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Jin Feng</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.27288">Global AI weather forecasting still relies mainly on uniform-resolution models, making it hard to combine regional refinement, two-way regional-global coupling, and affordable training cost. We...</span><span class="abstract-full" id="full-2603.27288" hidden>Global AI weather forecasting still relies mainly on uniform-resolution models, making it hard to combine regional refinement, two-way regional-global coupling, and affordable training cost. We introduce StretchCast, a global-regional AI forecasting framework built on a variable-resolution stretched cubed-sphere (SCS) mesh that preserves a closed global domain while concentrating resolution over a target region. Within this framework, we develop a one-step predictor, SCS_Base Model, and a rollout-oriented multistep predictor, SCS_FCST4 Model, to test the feasibility of SCS-based forecasting and the benefit of joint multistep training. Experiments use ERA5 with 69 variables over 1998-2022. Because training compute remains limited, this study uses a coarse-resolution proof-of-concept configuration rather than a final high-resolution system. Even with only about 7,776 effective global grid cells and roughly 0.875 degree resolution over the center-refined face, the 23M-parameter SCS_Base Model yields stable multivariate forecasts. With 83M parameters and training cost on the order of hours, SCS_FCST4 Model delivers competitive medium-range anomaly-correlation evolution over the target region after unified reprojection, especially for geopotential height, specific humidity, and part of the lower-tropospheric winds, while maintaining smooth cross-face continuity and realistic multiscale structure in typhoon and spectral analyses. These results support StretchCast as a practical lightweight foundation for global-regional AI weather forecasting.</span> <span class="abstract-toggle" data-id="2603.27288">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.27288v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.27288v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.27288.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2603.26703">Evaluating data-driven background ensembles covariances from Graphcast: a case study for Hurricane Lee (2023)<a class="headerlink" href="#2603.26703" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Zhihong Chen, Xuguang Wang</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.26703">Short-term background ensemble covariances (BEC) are crucial for ensemble-based data assimilation (DA). However, limited studies so far have examined the fidelity of the cost-effective data-driven...</span><span class="abstract-full" id="full-2603.26703" hidden>Short-term background ensemble covariances (BEC) are crucial for ensemble-based data assimilation (DA). However, limited studies so far have examined the fidelity of the cost-effective data-driven model in producing the short-term BEC for hurricane data assimilation. In this study, we evaluate the background ensemble spread and correlations from GraphCast against those of GEFS for Hurricane Lee (2023) during both its intensification and non-intensification phases. Specifically, the BEC in the hurricane vortex, the hurricane environment, and the vortex-environment interactions are examined. Within the hurricane vortex, the background ensemble of GraphCast is less dispersive than GEFS. The two models agree well on the background ensemble correlations that are tied to the primary circulation but show a larger correlation difference associated with the secondary circulation, indicating the two models represent unbalanced and diabatic processes differently. In the hurricane environment, binned univariable correlations show linear relationships between the two models, with a weaker horizontal geopotential height correlation in GraphCast. GraphCast also shows a reduced spread and a flatter empirical orthogonal function spectrum of the 500 hPa geopotential height background ensemble, with more perturbation growth distributed to smaller-scale features such as shortwaves. For the vortex-environment interaction, the two models produce close background ensemble correlation patterns for Lee's track but differ more for intensity. Overall, GraphCast can produce broadly consistent short-term BEC for Hurricane Lee compared to those of GEFS. However, systematic difference exists in certain variables, scales, and processes, suggesting the need to further investigate its fidelity in a cycled hurricane DA context.</span> <span class="abstract-toggle" data-id="2603.26703">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.26703v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.26703v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.26703.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a></p>
+</li>
+<li>
+<h4 id="2603.26165">Error Growth Dynamic and Predictability of Tropical Cyclone in Machine Learning Weather Prediction Model<a class="headerlink" href="#2603.26165" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Jingchen Pu, Mu Mu, Jie Feng, Hao Li</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.26165">Predictability analysis, which focuses on perturbation growth dynamic, is a key problem in both weather and climate prediction. Among all perturbations, the conditional nonlinear optimal perturbation...</span><span class="abstract-full" id="full-2603.26165" hidden>Predictability analysis, which focuses on perturbation growth dynamic, is a key problem in both weather and climate prediction. Among all perturbations, the conditional nonlinear optimal perturbation (CNOP) leads to maximum uncertainties in forecasts, which is fundamentally important for theoretical studies and applications. Traditionally, CNOPs are solved through iterative optimization of numerical weather prediction (NWP) systems. Their large computational demands pose significant challenges to long-term predictability analysis. In our study, using a fast and accurate Artificial intelligence (AI) model, i.e. FuXi, a low-cost optimization framework for solving 5-day tropical cyclone (TC) CNOP is developed. For the first time, CNOPs that achieve the optimal (i.e., fastest) nonlinear development of long-term TC forecast errors are solved, with their optimality and physical explainability verified. Results demonstrate that perturbations with specific spatial structures undergo significant development. In both AI and NWP models, AI-based CNOPs exhibit rapid and physically consistent error growth across diverse TC cases, faster compared to random and lagged forecast perturbations. Furthermore, sensitivity analysis reveals that far-environment systems and processes are more crucial for long-term TC forecasts. Structural analyses of the CNOP emphasizes the interactions between TC internal and external processes for rapid perturbation growth. The success derivation of AI-based CNOPs, with their rapid growth and physical explainability verified in both AI and NWP models, suggests that AI models can capture the most rapidly growing perturbation patterns and their subsequent nonlinear evolution. Thus, potential of AI models is highlighted for advancing atmospheric predictability researches, including theoretical analysis, targeting observations and ensemble forecasts.</span> <span class="abstract-toggle" data-id="2603.26165">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.26165v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.26165v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.26165.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a></p>
+</li>
+<li>
+<h4 id="2603.25687">On Neural Scaling Laws for Weather Emulation through Continual Training<a class="headerlink" href="#2603.25687" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Shashank Subramanian, Alexander Kiefer, Arnur Nigmetov, Amir Gholami, Dmitriy Morozov et al.</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.25687">Neural scaling laws, which in some domains can predict the performance of large neural networks as a function of model, data, and compute scale, are the cornerstone of building foundation models in...</span><span class="abstract-full" id="full-2603.25687" hidden>Neural scaling laws, which in some domains can predict the performance of large neural networks as a function of model, data, and compute scale, are the cornerstone of building foundation models in Natural Language Processing and Computer Vision. We study neural scaling in Scientific Machine Learning, focusing on models for weather forecasting. To analyze scaling behavior in as simple a setting as possible, we adopt a minimal, scalable, general-purpose Swin Transformer architecture, and we use continual training with constant learning rates and periodic cooldowns as an efficient training strategy. We show that models trained in this minimalist way follow predictable scaling trends and even outperform standard cosine learning rate schedules. Cooldown phases can be re-purposed to improve downstream performance, e.g., enabling accurate multi-step rollouts over longer forecast horizons as well as sharper predictions through spectral loss adjustments. We also systematically explore a wide range of model and dataset sizes under various compute budgets to construct IsoFLOP curves, and we identify compute-optimal training regimes. Extrapolating these trends to larger scales highlights potential performance limits, demonstrating that neural scaling can serve as an important diagnostic for efficient resource allocation. We open-source our code for reproducibility.</span> <span class="abstract-toggle" data-id="2603.25687">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.25687v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.25687v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.25687.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a></p>
+</li>
+<li>
+<h4 id="2603.24428">Marchuk: Efficient Global Weather Forecasting from Mid-Range to Sub-Seasonal Scales via Flow Matching<a class="headerlink" href="#2603.24428" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Arsen Kuzhamuratov, Mikhail Zhirnov, Andrey Kuznetsov, Ivan Oseledets, Konstantin Sobolev</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.24428">Accurate subseasonal weather forecasting remains a major challenge due to the inherently chaotic nature of the atmosphere, which limits the predictive skill of conventional models beyond the...</span><span class="abstract-full" id="full-2603.24428" hidden>Accurate subseasonal weather forecasting remains a major challenge due to the inherently chaotic nature of the atmosphere, which limits the predictive skill of conventional models beyond the mid-range horizon (approximately 15 days). In this work, we present <em>Marchuk</em>, a generative latent flow-matching model for global weather forecasting spanning mid-range to subseasonal timescales, with prediction horizons of up to 30 days. Marchuk conditions on current-day weather maps and autoregressively predicts subsequent days' weather maps within the learned latent space. We replace rotary positional encodings (RoPE) with trainable positional embeddings and extend the temporal context window, which together enhance the model's ability to represent and propagate long-range temporal dependencies during latent forecasting. Marchuk offers two key advantages: high computational efficiency and strong predictive performance. Despite its compact architecture of only 276 million parameters, the model achieves performance comparable to LaDCast, a substantially larger model with 1.6 billion parameters, while operating at significantly higher inference speeds. We open-source our inference code and model at: https://v-gen-ai.github.io/Marchuk/</span> <span class="abstract-toggle" data-id="2603.24428">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.24428v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.24428v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.24428.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion &amp; flow matching</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a></p>
+</li>
+<li>
+<h4 id="2603.23043">Assessing the Robustness of Climate Foundation Models under No-Analog Distribution Shifts<a class="headerlink" href="#2603.23043" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Maria Conchita Agana Navarro, Geng Li, Theo Wolf, Maria Perez-Ortiz</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.23043">The accelerating pace of climate change introduces profound non-stationarities that challenge the ability of Machine Learning based climate emulators to generalize beyond their training...</span><span class="abstract-full" id="full-2603.23043" hidden>The accelerating pace of climate change introduces profound non-stationarities that challenge the ability of Machine Learning based climate emulators to generalize beyond their training distributions. While these emulators offer computationally efficient alternatives to traditional Earth System Models, their reliability remains a potential bottleneck under "no-analog" future climate states, which we define here as regimes where external forcing drives the system into conditions outside the empirical range of the historical training data. A fundamental challenge in evaluating this reliability is data contamination; because many models are trained on simulations that already encompass future scenarios, true out-of-distribution (OOD) performance is often masked. To address this, we benchmark the OOD robustness of three state-of-the-art architectures: U-Net, ConvLSTM, and the ClimaX foundation model specifically restricted to a historical-only training regime (1850-2014). We evaluate these models using two complementary strategies: (i) temporal extrapolation to the recent climate (2015-2023) and (ii) cross-scenario forcing shifts across divergent emission pathways. Our analysis within this experimental setup reveals an accuracy vs. stability trade-off: while the ClimaX foundation model achieves the lowest absolute error, it exhibits higher relative performance changes under distribution shifts, with precipitation errors increasing by up to 8.44% under extreme forcing scenarios. These findings suggest that when restricted to historical training dynamics, even high-capacity foundation models are sensitive to external forcing trajectories. Our results underscore the necessity of scenario-aware training and rigorous OOD evaluation protocols to ensure the robustness of climate emulators under a changing climate.</span> <span class="abstract-toggle" data-id="2603.23043">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.23043v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.23043v2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.23043.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a></p>
+</li>
+<li>
+<h4 id="2603.22314">Enhancing AI-Based Tropical Cyclone Track and Intensity Forecasting via Systematic Bias Correction<a class="headerlink" href="#2603.22314" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Peisong Niu, Haifan Zhang, Yang Zhao, Tian Zhou, Ziqing Ma, Wenqiang Shen, Junping Zhao et al.</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.22314">Tropical cyclones (TCs) pose severe threats to life, infrastructure, and economies in tropical and subtropical regions, underscoring the critical need for accurate and timely forecasts of both track...</span><span class="abstract-full" id="full-2603.22314" hidden>Tropical cyclones (TCs) pose severe threats to life, infrastructure, and economies in tropical and subtropical regions, underscoring the critical need for accurate and timely forecasts of both track and intensity. Recent advances in AI-based weather forecasting have shown promise in improving TC track forecasts. However, these systems are typically trained on coarse-resolution reanalysis data (e.g., ERA5 at 0.25 degree), which constrains predicted TC positions to a fixed grid and introduces significant discretization errors. Moreover, intensity forecasting remains limited especially for strong TCs by the smoothing effect of coarse meteorological fields and the use of regression losses that bias predictions toward conditional means. To address these limitations, we propose BaguanCyclone, a novel, unified framework that integrates two key innovations: (1) a probabilistic center refinement module that models the continuous spatial distribution of TC centers, enabling finer track precision; and (2) a region-aware intensity forecasting module that leverages high-resolution internal representations within dynamically defined sub-grid zones around the TC core to better capture localized extremes. Evaluated on the global IBTrACS dataset across six major TC basins, our system consistently outperforms both operational numerical weather prediction (NWP) models and most AI-based baselines, delivering a substantial enhancement in forecast accuracy. Remarkably, BaguanCyclone excels in navigating meteorological complexities, consistently delivering accurate forecasts for re-intensification, sweeping arcs, twin cyclones, and meandering events. Our code is available at https://github.com/DAMO-DI-ML/Baguan-cyclone.</span> <span class="abstract-toggle" data-id="2603.22314">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.22314v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.22314v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a href="https://github.com/DAMO-DI-ML/Baguan-cyclone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg></span> Code</a> · <a class="bibtex-link" href="../../../bibtex/2603.22314.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a></p>
+</li>
+<li>
+<h4 id="2603.21284">Sonny: Breaking the Compute Wall in Medium-Range Weather Forecasting<a class="headerlink" href="#2603.21284" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Minjong Cheon</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.21284">Weather forecasting is a fundamental problem for protecting lives and infrastructure from high-impact atmospheric events. Recently, data-driven weather forecasting methods based on deep learning have...</span><span class="abstract-full" id="full-2603.21284" hidden>Weather forecasting is a fundamental problem for protecting lives and infrastructure from high-impact atmospheric events. Recently, data-driven weather forecasting methods based on deep learning have demonstrated strong performance, often reaching accuracy levels competitive with operational numerical systems. However, many existing models rely on large-scale training regimes and compute-intensive architectures, which raises the practical barrier for academic groups with limited compute resources. Here we introduce Sonny, an efficient hierarchical transformer that achieves competitive medium-range forecasting performance while remaining feasible within reasonable compute budgets. At the core of Sonny is a two-stage StepsNet design: a narrow slow path first models large-scale atmospheric dynamics, and a subsequent full-width fast path integrates thermodynamic interactions. To stabilize medium-range rollout without an additional fine-tuning stage, we apply exponential moving average (EMA) during training. On WeatherBench2, Sonny yields robust medium-range forecast skill, remains competitive with operational baselines, and demonstrates clear advantages over FastNet, particularly at extended tropical lead times. In practice, Sonny can be trained to convergence on a single NVIDIA A40 GPU in approximately 5.5 days.</span> <span class="abstract-toggle" data-id="2603.21284">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.21284v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.21284v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.21284.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a></p>
+</li>
+<li>
+<h4 id="2603.20541">Watch an AI Weather Model Learn (and Unlearn) Tropical Cyclones<a class="headerlink" href="#2603.20541" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Rebecca Baiman, Ankur Mahesh, Elizabeth A. Barnes</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.20541">In a changing climate, artificial intelligence (AI) weather models have the potential to provide cheaper, faster, and more accurate forecasts of high-impact weather events. To realize this potential...</span><span class="abstract-full" id="full-2603.20541" hidden>In a changing climate, artificial intelligence (AI) weather models have the potential to provide cheaper, faster, and more accurate forecasts of high-impact weather events. To realize this potential and gauge trustworthiness, there is a need for more research on how models learn extreme events and how that learning might be improved. Here, we investigate how a Spherical Fourier Neural Operator (SFNO) learns tropical cyclones (TCs) by saving every checkpoint from training and analyzing storm specific metrics. We find evidence that for some storms the SFNO learns information about TC intensity that it loses later in training. This unlearning pattern is associated with anomalously moist environments and may be due to the model unlearning the relationship between moisture and TC intensity. This work provides a first example of leveraging task-specific training dynamics to further our understanding of how AI weather models learn extreme events.</span> <span class="abstract-toggle" data-id="2603.20541">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.20541v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.20541v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.20541.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a></p>
+</li>
+<li>
+<h4 id="2603.19591">Data-driven ensemble prediction of the global ocean<a class="headerlink" href="#2603.19591" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Qiusheng Huang, Xiaohui Zhong, Anboyu Guo, Ziyi Peng, Lei Chen, Hao Li</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.19591">Data-driven models have advanced deterministic ocean forecasting, but extending machine learning to probabilistic global ocean prediction remains an open challenge. Here we introduce FuXi-ONS, the...</span><span class="abstract-full" id="full-2603.19591" hidden>Data-driven models have advanced deterministic ocean forecasting, but extending machine learning to probabilistic global ocean prediction remains an open challenge. Here we introduce FuXi-ONS, the first machine-learning ensemble forecasting system for the global ocean, providing 5-day forecasts on a global 1° grid up to 365 days for sea-surface temperature, sea-surface height, subsurface temperature, salinity and ocean currents. Rather than relying on repeated integration of computationally expensive numerical models, FuXi-ONS learns physically structured perturbations and incorporates an atmospheric encoding module to stabilize long-range forecasts. Evaluated against GLORYS12 reanalysis, FuXi-ONS improves both ensemble-mean skill and probabilistic forecast quality relative to deterministic and noise-perturbed baselines, and shows competitive performance against established seasonal forecast references for SST and Niño3.4 variability, while running orders of magnitude faster than conventional ensemble systems. These results provide a strong example of machine learning advancing a core problem in ocean science, and establish a practical path toward efficient probabilistic ocean forecasting and climate risk assessment.</span> <span class="abstract-toggle" data-id="2603.19591">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.19591v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.19591v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.19591.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty &amp; ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a></p>
+</li>
+<li>
+<h4 id="2603.19488">Machine Learning-Based Prediction of Heat Index in Selected U.S. Cities<a class="headerlink" href="#2603.19488" title="Permanent link">&para;</a></h4>
+<p class="paper-meta"><em>Yushan Han, Calen Randall</em> · Mar 2026</p>
+<p><span class="abstract-snippet" id="snip-2603.19488">Heat stress has harmful effects that impact communities across the Unitedt States, particularly when high temperatures are accompanied by high humidity. The combined impact of temperature and...</span><span class="abstract-full" id="full-2603.19488" hidden>Heat stress has harmful effects that impact communities across the Unitedt States, particularly when high temperatures are accompanied by high humidity. The combined impact of temperature and humidity can be summarized by the heat index (HI). Current state-of-the-art numerical weather prediction models are often biased when forecasting temperature and humidity even within a 24-hour forecast lead time. This study explores the ability of machine learning (ML) models to accurately predict the next-day heat index using Random Forest and single-layer Gated Recurrent Unit (GRU) models in four locations across the United States. We find that Random Forest and GRU models perform reasonably well at all four selected locations. Mean absolute HI error ranges from 4.5 to 6.6 °F. All model versions have an accuracy rate exceeding 80% in three of the four locations in terms of successfully forecasting an extreme heat day, as indicated by a high afternoon HI. The GRU model achieves over 95% accuracy in these three locations. Model performance details vary by location. In Minneapolis and Portland, which have relatively few days with high HI values, models' accuracy is high, but the recall and precision are generally very low. In contrast, Dallas, a location with many high HI days, shows moderately high accuracy, as well as extremely high recall and precision. These differences are likely due to distinct causes of heatwaves in different climatological regions of the United States, as reflected in the feature importance scores output by Random Forest models. The ML models designed in this study can be used to assist with local heat index forecasting and extreme heat warning issuance at minimal computational cost.</span> <span class="abstract-toggle" data-id="2603.19488">more</span></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2603.19488v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg></span> arXiv</a> · <a href="https://arxiv.org/pdf/2603.19488v1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span> PDF</a> · <a class="bibtex-link" href="../../../bibtex/2603.19488.bib"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span> BibTeX</a></p>
+<p class="paper-tags"><a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a></p>
+</li>
+</ul>
+</div>
+<nav class="pager"><a class="pager-step" href="../3/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg></span> Newer</a> <a href="../">1</a> <a href="../2/">2</a> <a href="../3/">3</a> <strong>4</strong> <a href="../5/">5</a> <a href="../6/">6</a> <a href="../7/">7</a> <a href="../8/">8</a> <a href="../9/">9</a> <a href="../10/">10</a> <a href="../11/">11</a> <a href="../12/">12</a> <a href="../13/">13</a> <a class="pager-step" href="../5/">Older <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></nav>
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">Suggest a paper</a> · <a href="/feed.xml">RSS feed</a> · <a href="/all_papers.bib" download>All papers as BibTeX</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      
+<div class="md-progress" data-md-component="progress" role="progressbar" aria-label="Loading"></div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.code.copy","content.tabs.link","navigation.indexes","navigation.top","navigation.tabs","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","search.highlight","search.share","search.suggest","toc.follow"],"redirect":"../../../redirect.json","search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8b1c90bd.min.js"></script>
+      
+        <script src="../../../javascripts/bibtex.js"></script>
+      
+        <script src="../../../javascripts/home-link.js"></script>
+      
+        <script src="../../../javascripts/tag-filter.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.18.9/dist/katex.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+    
+  </body>
+</html>
