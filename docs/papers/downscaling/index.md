@@ -8,11 +8,37 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">98 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">100 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Generalizable Neural Downscaling of Earth System Model Wind Fields via Continuous Dynamics Modeling { #2610.03757 }
+
+    *Chenxi Yu, Jianan Wei, Hanlin Kong, Hao Sun, Bian He, Wenguan Wang* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.03757">Accurate high-resolution wind field simulations are critical for resolving fine-scale atmospheric dynamics, yet the simulation of wind fields in Earth System Models (ESMs) remains limited by coarse...</span><span class="abstract-full" id="full-2610.03757" hidden>Accurate high-resolution wind field simulations are critical for resolving fine-scale atmospheric dynamics, yet the simulation of wind fields in Earth System Models (ESMs) remains limited by coarse spatial resolution and systematic biases. To address this, data-driven down scaling techniques have been widely used to enhance coarse-resolution ESM outputs. However, existing methods are typically tied to fixed discretizations, limiting generalization across models with different native resolutions. Here we formulate global near-surface wind downscaling as an operator-learning problem on continuous atmospheric state fields and develop a downscaling neural operator that maps coarse-scale fields to fine-scale counterparts across heterogeneous discretizations. The operator learning-based neural downscaling framework outperforms dominant baselines, recovers fine-scale physical structures, and generalizes to previously unseen ESMs and future climate scenarios without retraining, while preserving long-term wind projection trends. These findings establish a generalizable paradigm for high-resolution climate downscaling across diverse simulation outputs and future scenarios.</span> <span class="abstract-toggle" data-id="2610.03757">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.03757v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.03757v1) · [:material-content-copy: BibTeX](../../bibtex/2610.03757.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a>
+    { .paper-tags }
+
+-   #### Scale-Recursive Rectified Flows for Few-Step Precipitation Ensembles { #2610.02611 }
+
+    *Shunya Nagashima, Takumi Bannai* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.02611">Fine-resolution precipitation estimates support flood risk assessment and water management, but coarse satellite products cannot resolve rainfall within each grid cell. Generative models address this...</span><span class="abstract-full" id="full-2610.02611" hidden>Fine-resolution precipitation estimates support flood risk assessment and water management, but coarse satellite products cannot resolve rainfall within each grid cell. Generative models address this ambiguity by producing ensembles of plausible high-resolution rainfall fields. Among these models, rectified flows generate samples by iteratively transforming random noise into rainfall fields. Reducing the number of sampling steps accelerates generation but can make ensemble members too similar, understating uncertainty. We propose a scale-recursive rectified flow that generates broad patterns before local details and guides sampling-step allocation by comparing ensemble variability with prediction error across spatial scales. Validation scores and rainfall power spectra constrain the allocation to avoid excessive amplification. In satellite-to-radar downscaling over the contiguous United States, our analysis identified broad rainfall patterns as the main source of insufficient ensemble variability under reduced sampling budgets. Allocating more steps to the coarse flow improved probabilistic accuracy and rain detection across training seeds at fixed architecture and computational cost. The proposed model also achieved better probabilistic accuracy with shorter sampling time than a nonrecursive flow using more steps.</span> <span class="abstract-toggle" data-id="2610.02611">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.02611v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.02611v1) · [:material-content-copy: BibTeX](../../bibtex/2610.02611.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
 
 -   #### Lightweight Probabilistic Downscaling from a Deterministic Base Model { #2609.29383 }
 
@@ -373,29 +399,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a>
-    { .paper-tags }
-
--   #### 30-meter Land Surface Temperature from Landsat via Progressive Self-Training Downscaling { #2603.29478 }
-
-    *Huanfeng Shen, Chan Li, Menghui Jiang, Penghai Wu, Guanhao Zhang, Tian Xie* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.29478">Land surface temperature (LST) is a critical parameter for characterizing surface energy balance and hydrothermal processes. While Landsat provides invaluable LST observations at medium spatial...</span><span class="abstract-full" id="full-2603.29478" hidden>Land surface temperature (LST) is a critical parameter for characterizing surface energy balance and hydrothermal processes. While Landsat provides invaluable LST observations at medium spatial resolution for over 40 years, its native spatial resolution of thermal bands (e.g., 100 m) remains insufficient compared to its 30 m optical bands, failing to meet the demands of fine-scale studies. To address this issues, this study proposes a progressive self-training framework for downscaling Landsat LST to 30 m without relying on fine-scale ground truth, while maintaining minimal data dependence. The framework progressively optimizes a cross-modal fusion network to refine thermal details in a coarse-to-fine manner, characterized by one pre-training and two fine-tuning stages. Spatial validation against SDGSAT-1 30 m LST and temporal validation using in situ measurements confirm its reliability and accuracy, with both station-averaged MAE and RMSE outperforming the official cubic product by approximately 0.4 K. Further performance comparison experiments demonstrate that the proposed framework consistently reconstructs coherent fine-scale thermal patterns while preserving spatial heterogeneity. Multi spatial resolution evaluations and ablation studies verify the effectiveness of the proposed strategy and network design. Overall, the framework provides a stable pathway for enhancing the spatial resolution of Landsat LST, providing fine-resolution data support for fine-scale surface process studies and localized environmental monitoring.</span> <span class="abstract-toggle" data-id="2603.29478">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.29478v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.29478v1) · [:material-content-copy: BibTeX](../../bibtex/2603.29478.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Climate Downscaling with Stochastic Interpolants (CDSI) { #2603.03838 }
-
-    *Erik Larsson, Ramon Fuentes-Franco, Mikhail Ivanov, Fredrik Lindsten* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.03838">Global climate projections rely on computationally demanding Earth System Models (ESMs), which are typically limited to coarse spatial resolutions due to their high cost. To obtain high-resolution...</span><span class="abstract-full" id="full-2603.03838" hidden>Global climate projections rely on computationally demanding Earth System Models (ESMs), which are typically limited to coarse spatial resolutions due to their high cost. To obtain high-resolution projections for regions of interest, it is common to use Regional Climate Models (RCMs), which are driven by data produced by ESMs as boundary conditions. While more efficient than running ESMs at fine resolution, RCMs remain expensive and restrict the size of ensemble simulations. Inspired by recent advances in probabilistic machine learning for weather and climate, we introduce a data-driven climate downscaling method based on stochastic interpolants. Our approach efficiently transforms coarse ESM output into high-resolution regional climate projections at a fraction of the computational cost of traditional RCMs. Through extensive validation, we demonstrate that our method generates accurate regional ensembles, enabling both improved uncertainty quantification and broader use of high-resolution climate information.</span> <span class="abstract-toggle" data-id="2603.03838">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.03838v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.03838v1) · [:material-content-copy: BibTeX](../../bibtex/2603.03838.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
     { .paper-tags }
 
 </div>

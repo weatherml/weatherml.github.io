@@ -8,11 +8,63 @@ hide:
 
 # Other
 
-<p class="page-meta" markdown="span">202 papers · page 1 of 7 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">206 papers · page 1 of 7 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### A Physics-Constrained Implicit Profile Network for Continuous Reconstruction of Tropical Cyclone Near-Surface Wind Profiles { #2610.11405 }
+
+    *Jian Ma, Yilin Yang, Robert Rogers, Jun A. Zhang, Jie Tang* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.11405">Near the ocean surface, tropical cyclone winds change rapidly with height, but direct measurements are limited because aircraft dropsondes provide only sparse and irregular observations. Continuous...</span><span class="abstract-full" id="full-2610.11405" hidden>Near the ocean surface, tropical cyclone winds change rapidly with height, but direct measurements are limited because aircraft dropsondes provide only sparse and irregular observations. Continuous wind profiles are important for understanding hurricane boundary-layer processes, improving storm-surge prediction, supporting offshore engineering, and assessing coastal hazards. In this study, we developed an artificial intelligence model that combines machine learning with physical principles to reconstruct continuous wind profiles from sparse observations. The model is designed to preserve the observed surface winds while generating realistic changes in wind speed and direction with height. Tests using more than two decades of NOAA hurricane observations show that the method accurately reproduces the vertical structure of tropical cyclone winds over a wide range of storm intensities. The framework can also extend satellite-derived surface wind measurements into three-dimensional near-surface wind fields, providing new opportunities for hurricane research, operational forecasting, and engineering applications.</span> <span class="abstract-toggle" data-id="2610.11405">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.11405v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.11405v1) · [:material-content-copy: BibTeX](../../bibtex/2610.11405.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
+-   #### Conditional Flow Matching for Generation of 3D Multi-variable Instantaneous Urban Microclimate Fields { #2610.10430 }
+
+    *Peng Liu, Shaoxiang Qin, Theodore Potsis, Lili Ji, Dingyang Geng, Liangzhu Leon Wang* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.10430">Rapid and accurate prediction of urban wind and temperature fields is important for urban microclimate design and climate adaptation. Large-eddy simulation (LES) effectively resolves these...</span><span class="abstract-full" id="full-2610.10430" hidden>Rapid and accurate prediction of urban wind and temperature fields is important for urban microclimate design and climate adaptation. Large-eddy simulation (LES) effectively resolves these instantaneous fields, but its application is limited in iterative design of urban microclimate applications due to high computational cost. Existing regressive data-driven models offers quick outputs, but they produce only deterministic point predictions that inherently fail to represent turbulent stochasticity. This paper adopts a novel generative framework of Conditional Flow Matching (CFM) that uses building geometry and mean flow as guidance to generate plausible three-dimensional instantaneous velocity and temperature fields for urban microclimate in seconds. To overcome the GPU memory bottleneck of pixel space 3D generation, the model operates in parallel on overlapping pixel space through a shared-noise initialization that preserves high spatial continuity of flow structure across the entire domain. Against reference LES data, the CFM surrogate can rapidly and accurately restore the first-order statistics with Normalized Root Mean Square Error (NRMSE) of 2.99% for wind and 1.77% for temperature, second-order turbulence metrics with NRMSE of 7.17% for wind and 8.84% for temperature, turbulent kinetic energy with NRMSE of 7%, probability density function and vertical profiles in representative locations. Wind engineering application of local gust prediction demonstrate that the speed and accuracy of CFM, supporting the use of generative AI for making turbulence-aware resilient urban design and climate adaptation more computationally feasible.</span> <span class="abstract-toggle" data-id="2610.10430">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.10430v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.10430v1) · [:material-content-copy: BibTeX](../../bibtex/2610.10430.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a>
+    { .paper-tags }
+
+-   #### SoftSEEPS improves ML-based precipitation forecasting { #2610.09752 }
+
+    *Jost Arndt, Utku Isil, Noelia Otero, Rodrigo Almeida, Wojciech Samek, Jackie Ma* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.09752">In this paper we have developed a differentiable approximation of the well-known SEEPS score, which we name SoftSEEPS. This allows the training of a Machine Learning model to forecast precipitation...</span><span class="abstract-full" id="full-2610.09752" hidden>In this paper we have developed a differentiable approximation of the well-known SEEPS score, which we name SoftSEEPS. This allows the training of a Machine Learning model to forecast precipitation directly. We test SoftSEEPS on the IMERG dataset (0.1 degree resolution) by training a decoder for precipitation on the latent space of a pre-trained low-resolution forecasting model. Combining SoftSEEPS and RMSE in a joint objective is possible with marginal trade-offs in either metric.</span> <span class="abstract-toggle" data-id="2610.09752">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.09752v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.09752v1) · [:material-content-copy: BibTeX](../../bibtex/2610.09752.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### Beyond the Doppler Dilemma: Improved Fast Weather Radar Unambiguous Doppler Velocity Spectrum Reconstruction from Sparse Aperiodic Sweeps { #2610.09172 }
+
+    *Tworit Dash, S. A. K. Syed Mohamed, Oleg Krasnov, Alexander Yarovoy* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.09172">The problem of fast Doppler counter-aliasing for short-dwell weather-radar measurements is addressed. The proposed approach realizes a log-periodic slow-time design by changing only the waiting time...</span><span class="abstract-full" id="full-2610.09172" hidden>The problem of fast Doppler counter-aliasing for short-dwell weather-radar measurements is addressed. The proposed approach realizes a log-periodic slow-time design by changing only the waiting time between otherwise unchanged frequency-modulated continuous-wave (FMCW) chirps. The fast-time waveform, bandwidth, and range-processing chain are preserved while the acquisition changes the Doppler ambiguity structure. We formulate a novel moment-space ambiguity function for distributed weather spectra. It measures statistical ambiguity jointly in mean Doppler velocity and spectral width and expresses the competing sidelobes through their expected relative likelihood. A complex Gaussian process (CGP) maximum-likelihood estimator reconstructs the spectrum from the measured aperiodic samples. A deterministic basin-selection and optimization strategy accelerates the same CGP likelihood without defining a different statistical estimator. Real precipitation measurements establish central-branch stability over an extended search domain. Using 64 slow-time sweeps, we compare three acquisitions and their associated estimators. Periodic data are processed by the discrete Fourier transform (DFT) and parametric spectral estimation (PSE), log-periodic data by the nonuniform discrete Fourier transform (NUDFT) and CGP, and staggered data by velocity-difference and CGP estimators. The differences become more pronounced when the dwell is reduced to 32 sweeps. The results show that aperiodic time sampling enables extended-domain branch identification without degrading spectral-width estimation.</span> <span class="abstract-toggle" data-id="2610.09172">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.09172v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.09172v1) · [:material-content-copy: BibTeX](../../bibtex/2610.09172.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a>
+    { .paper-tags }
 
 -   #### AI Emulation of Stochastic Sudden Stratospheric Warming with Interpretable Latent Structure { #2610.02069 }
 
@@ -341,58 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### From Heat Stress to Perception: Interpretable Data-Driven Models of Human Thermal Sensation { #2607.25850 }
-
-    *Abed Hammoud, Xinjie Huang, Qinqin Kong, Marialena Nikolopoulou, Elie Bou-Zeid* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.25850">Heat stress indices are designed to quantify physiological thermal stress, but their relevance for inferring the thermal perception of individuals remains unclear. In this study, we show that thermal...</span><span class="abstract-full" id="full-2607.25850" hidden>Heat stress indices are designed to quantify physiological thermal stress, but their relevance for inferring the thermal perception of individuals remains unclear. In this study, we show that thermal stress and thermal sensation often diverge, as evidenced by distinct global sensitivity patterns with respect to environmental drivers. Using thermal sensation vote survey data, we demonstrate that the dominant sensitivities of stress-based metrics do not align with those governing reported human thermal sensation. Given the multitude of globally-applicable thermal stress indices and the lack of comparable general thermal sensation metrics, we develop two complementary data-driven modeling frameworks for thermal sensation. First, we construct polynomial chaos expansion (PCE) surrogates to represent thermal sensation as a function of meteorological variables, enabling efficient variance-based sensitivity analysis and explicit identification of influential inputs and interactions. Second, we develop multilayer perceptron (MLP) classifiers that capture the nonlinear and subjective nature of thermal perception, while achieving high predictive accuracy. The PCE models provide physically interpretable sensitivities that can explain the drivers of thermal sensation, while the MLPs offer flexible predictive capability suited to complex environments. We apply both modeling approaches at city- and continent-scales, revealing systematic differences in sensitivity structure and performance across climates. In particular, we find that the sensitivity of TSV-based models to the variability of meteorological conditions across geoclimatic zone encodes distinct dependencies on temperature, radiation, humidity, and wind that vary geographically, and are generally different from those of heat stress indices.</span> <span class="abstract-toggle" data-id="2607.25850">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.25850v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.25850v1) · [:material-content-copy: BibTeX](../../bibtex/2607.25850.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates { #2607.25668 }
-
-    *Muhammad Akbar Khan, Fahim Raees, Ubaida Fatima* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.25668">Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where...</span><span class="abstract-full" id="full-2607.25668" hidden>Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where summer temperatures routinely exceed 45 C. We present a two-stage computational framework for thermal ranking of five low-cost indigenous wall materials: mud brick, clay-straw adobe, lime-stabilised bamboo panel, fired clay brick, and lime-mud composite. First, a validated Crank-Nicolson finite difference method (FDM) solves the one-dimensional transient heat equation with Robin boundary conditions under diurnal solar and outdoor air-temperature forcing, generating 1500 periodic-day solutions across a nine-dimensional parameter space by Latin Hypercube sampling. Second, a Physics-Informed Neural Operator (PINO) with a Fourier Neural Operator (FNO) backbone learns the parameter-to-solution operator mu -> T(x,t), enforcing both data fidelity and PDE consistency. The trained PINO attains a relative L2 field error of 5.14e-4 and a 0.201 K mean absolute error on the peak inner surface temperature, preserving the FDM material ranking exactly; PINO trained on 150 FDM samples matches a data-only FNO trained on twice as many, so the physics loss is most valuable when data are scarce. The periodic-day formulation also yields the ISO 13786 time lag and decrement factor, reproduced to within 0.99 h and 0.010. At nominal hot-dry summer conditions, clay-straw adobe achieves the best cost-performance index among widely available materials. A climate sweep, confirmed by FDM spot checks, reveals a regime boundary: under sub-ambient outdoor conditions the ranking inverts to conductive fired clay brick, delineating heat-exclusion and heat-rejection regimes. The framework supports evidence-based material selection for post-flood reconstruction in hot-dry regions.</span> <span class="abstract-toggle" data-id="2607.25668">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.25668v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.25668v1) · [:material-content-copy: BibTeX](../../bibtex/2607.25668.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
-    { .paper-tags }
-
--   #### Predictive Modeling of High-Altitude Clear Air Turbulence in the United States: A Machine Learning Approach { #2607.11899 }
-
-    *Kadir Gokdeniz, Irem Ulku* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.11899">High-altitude Clear Air Turbulence (CAT) poses significant risks to aviation safety due to its unpredictability and challenges in detection. This study leverages machine learning models to improve...</span><span class="abstract-full" id="full-2607.11899" hidden>High-altitude Clear Air Turbulence (CAT) poses significant risks to aviation safety due to its unpredictability and challenges in detection. This study leverages machine learning models to improve CAT prediction within U.S. airspace at 200-350 hPa pressure levels, utilizing Pilot Reports (PIREPs), ERA5 reanalysis data, and aircraft aerodynamic parameters from the BADA database. Gradient boosting algorithms, particularly XGBoost, achieved the highest performance with an AUC of 0.904, demonstrating superior capability in capturing non-linear atmospheric dynamics. Key findings highlight the dominance of geographic coordinates (17.5% feature importance) and turbulence indices like TI3 in prediction, emphasizing the role of regional topography and upper-tropospheric instability. The integration of aerodynamic features such as drag force and wing loading improved the detection of moderate-to-severe perceived turbulence intensity (POD improved from 0.845 to 0.866), providing additional value to traditional aircraft-independent methods. Seasonal analysis revealed winter months as peak periods for CAT incidents, correlating with jet stream activity. While results align with global studies, limitations include geographic scope and aircraft-type diversity. This research underscores the potential of machine learning for operational CAT forecasting, with recommendations for future work focusing on global data integration and real-time telemetry to address climate-driven turbulence trends.</span> <span class="abstract-toggle" data-id="2607.11899">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.11899v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.11899v1) · [:material-content-copy: BibTeX](../../bibtex/2607.11899.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a>
-    { .paper-tags }
-
--   #### Improved Global Ocean Heat Content Estimation by Modeling Vertical Spatio-Temporal Dependence { #2607.11832 }
-
-    *Thea Sukianto, Donata Giglio, Mikael Kuusela* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.11832">Estimating ocean heat content (OHC) with reliable uncertainties is critical for understanding and monitoring the evolution of Earth's climate, as the ocean has stored most of the energy accumulated...</span><span class="abstract-full" id="full-2607.11832" hidden>Estimating ocean heat content (OHC) with reliable uncertainties is critical for understanding and monitoring the evolution of Earth's climate, as the ocean has stored most of the energy accumulated in the climate system due to Earth Energy Imbalance. Here, we use Argo profiling float data from 2004-2022 to map OHC. As fewer Argo observations are available deeper in the water column, previous studies have partitioned the ocean into at least two pressure layers and mapped each separately, which complicates the estimation of uncertainties when the maps are summed to get the total OHC. In this work, we consider the case of two pressure layers and propose an improved mapping and uncertainty quantification method using bivariate locally stationary Gaussian processes and conditional simulations to map the two sections jointly while accounting for the correlation between them. We find that modeling this correlation results in improved OHC anomaly mapping and up to a 15 percent reduction of global OHC anomaly uncertainties in comparison to mapping the two layers separately without accounting for their dependence. These estimated uncertainties are essential to analyze the statistical significance of OHC anomalies on both regional and global scales, which we demonstrate using several climatological case studies.</span> <span class="abstract-toggle" data-id="2607.11832">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.11832v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.11832v1) · [:material-content-copy: BibTeX](../../bibtex/2607.11832.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 </div>

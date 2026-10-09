@@ -8,11 +8,24 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">99 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">100 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals from infrared brightness temperature { #2610.09859 }
+
+    *Matthieu Meignin, Cécile Mallet, Nicolas Viltard* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.09859">Accurate precipitation estimation at fine spatial scales is critical for hydrology, agriculture, and climate studies. Infrared brightness temperatures from geostationary satellites offer excellent...</span><span class="abstract-full" id="full-2610.09859" hidden>Accurate precipitation estimation at fine spatial scales is critical for hydrology, agriculture, and climate studies. Infrared brightness temperatures from geostationary satellites offer excellent temporal coverage over continental-scale domains. However, because these measurements primarily characterize cloud-top properties rather than precipitation processes near the surface, their correlation with rainfall intensity remains limited, making quantitative precipitation estimation challenging. In this study, we conduct a systematic inter-comparison of state-of-the-art deep learning models for high-resolution precipitation retrieval from Meteosat Second Generation infrared brightness temperatures over metropolitan France. These models include deterministic U-Nets, transformer-based architectures, conditional GANs, and diffusion models. We construct a curated dataset spanning 2008--2023, combining M{é}t{é}o-France radar mosaics as reference with multi-channel infrared observations, and design preprocessing and sampling strategies to address the heavy-tailed, intermittent nature of rainfall. Our results show that deterministic models provide robust mean estimates and excel in pixel-wise accuracy, but systematically underestimate extreme precipitation. In contrast, generative models better capture the full precipitation distribution, including rare and heavy rainfall events, producing more realistic spatial structures at the cost of reduced pixel-wise fidelity. These results highlight a trade-off between pixel-wise accuracy and precipitation variability, showing that generative approaches are advantageous for extreme-event detection and probabilistic applications. This work establishes a reproducible framework for evaluating infrared- based precipitation retrieval methods and provides guidance for designing models that balance precision, variability, and extreme-event representation.</span> <span class="abstract-toggle" data-id="2610.09859">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.09859v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.09859v1) · [:material-content-copy: BibTeX](../../bibtex/2610.09859.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=gans" data-tag="gans">GANs</a> <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
 
 -   #### Low latency global carbon budget reveals strong land sink recovery in 2025 { #2609.34226 }
 
@@ -377,19 +390,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
-    { .paper-tags }
-
--   #### Earth System Foundation Model (ESFM): A unified framework for heterogeneous data integration and forecasting { #2605.00850 }
-
-    *Firat Ozdemir, Yun Cheng, Salman Mohebi, Fanny Lehmann, Simon Adamov, Zhenyi Zhang et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.00850">Foundation models (FMs) for the Earth system learn statistical relationships between physical variables across massive datasets to enable versatile downstream applications through finetuning,...</span><span class="abstract-full" id="full-2605.00850" hidden>Foundation models (FMs) for the Earth system learn statistical relationships between physical variables across massive datasets to enable versatile downstream applications through finetuning, separating them from task-specific weather models. Here, we introduce Earth System Foundation Model (ESFM), a fully open model building on the 3D Swin UNet backbone of the pioneering Aurora model. ESFM introduces extensions that increase functionality and foster adoption in climate sciences. First, the encoding scheme and training protocols have been extended to handle diverse datasets, including those containing missing values across all spatio-temporal dimensions such as satellite data, as well as station data, all under one backbone. Axial attention is introduced to capture inter-variable dependencies. As a result ESFM skillfully predicts variables in regions or on pressure levels where no data is present at the initial time, while preserving inter-variable relationships, for example between temperature, pressure, and humidity. Individual variable tokenization enables different sets of variables to be shuffled during training and simplifies the process of building extensions for new downstream tasks. Adaptive layer norm-based ensembles allow for a simple yet effective way to transform deterministic ESFM to a probabilistic FM. We present findings using dense gridded data (ERA5, CMIP6), regionally masked dense data, sparse gridded MODIS satellite data, and station data. Results demonstrate competitive or superior performance relative to state-of-the-art benchmarks. Case studies of Super Typhoon Doksuri (2023) and 2024 sudden stratospheric warming events show accurate positional and magnitude estimations of extreme weather. ESFM retains the strengths of previous foundation models, such as long-term stability, but facilitates application to a variety of downstream tasks.</span> <span class="abstract-toggle" data-id="2605.00850">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.00850v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.00850v1) · [:fontawesome-brands-github: Code](https://github.com/swiss-ai/ESFM) · [:material-content-copy: BibTeX](../../bibtex/2605.00850.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
 </div>

@@ -8,11 +8,24 @@ hide:
 
 # Nowcasting
 
-<p class="page-meta" markdown="span">101 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">102 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Just Weather Scoring: Efficient End-to-end Nowcasting with Distributional Diffusion { #2610.12189 }
+
+    *Jannik Wiese, Johannes Schusterbauer, Tommaso Martorella, Björn Ommer* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.12189">Generative diffusion models are well-suited for probabilistic precipitation nowcasting, but existing approaches often rely on separately trained compression or deterministic forecasting components...</span><span class="abstract-full" id="full-2610.12189" hidden>Generative diffusion models are well-suited for probabilistic precipitation nowcasting, but existing approaches often rely on separately trained compression or deterministic forecasting components and remain costly at inference due to iterative denoising. We introduce Just Weather Scoring (JWS), a single-stage, end-to-end diffusion model which addresses both issues by forecasting directly in radar space and enabling few-step generation. Radar-space modeling greatly simplifies training and inference and eliminates uncertainty arising from lossy compression. JWS combines Masked Asynchronous Diffusion, a timestep-sampling scheme that preserves clean context while adapting diffusion training to high-dimensional spatio-temporal data, with a simple scoring-rule objective that aligns training with probabilistic forecasting and unlocks few-step generation. On the SEVIR and MeteoNet benchmarks, JWS achieves state-of-the-art probabilistic forecasting performance at reduced training and inference cost. Even our smallest model remains competitive using substantially fewer parameters and more than 17x faster inference.</span> <span class="abstract-toggle" data-id="2610.12189">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.12189v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.12189v1) · [:material-content-copy: BibTeX](../../bibtex/2610.12189.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a>
+    { .paper-tags }
 
 -   #### Physics-Guided Flow-Map Matching for Precipitation Nowcasting { #2609.37487 }
 
@@ -380,19 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
-    { .paper-tags }
-
--   #### A Diffusion-Contrastive Graph Neural Network with Virtual Nodes for Wind Nowcasting in Unobserved Regions { #2604.10328 }
-
-    *Jie Shi, Siamak Mehrkanoon* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.10328">Accurate weather nowcasting remains one of the central challenges in atmospheric science, with critical implications for climate resilience, energy security, and disaster preparedness. Since it is...</span><span class="abstract-full" id="full-2604.10328" hidden>Accurate weather nowcasting remains one of the central challenges in atmospheric science, with critical implications for climate resilience, energy security, and disaster preparedness. Since it is not feasible to deploy observation stations everywhere, some regions lack dense observational networks, resulting in unreliable short-term wind predictions across those unobserved areas. Here we present a deep graph self-supervised framework that extends nowcasting capability into such unobserved regions without requiring new sensors. Our approach introduces "virtual nodes" into a diffusion and contrastive-based graph neural network, enabling the model to learn wind condition (i.e., speed, direction and gusts) in places with no direct measurements. Using high-temporal resolution weather station data across the Netherlands, we demonstrate that this approach reduces nowcast mean absolute error (MAE) of wind speed, gusts, and direction in unobserved regions by more than 30% - 46% compared with interpolation and regression methods. By enabling localized nowcasts where no measurements exist, this method opens new pathways for renewable energy integration, agricultural planning, and early-warning systems in data-sparse regions.</span> <span class="abstract-toggle" data-id="2604.10328">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.10328v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.10328v1) · [:material-content-copy: BibTeX](../../bibtex/2604.10328.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a>
     { .paper-tags }
 
 </div>

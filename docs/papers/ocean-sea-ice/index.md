@@ -8,11 +8,50 @@ hide:
 
 # Ocean & Sea Ice
 
-<p class="page-meta" markdown="span">85 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">88 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Multi-model ocean oxygen fields predicted by conditional diffusion models { #2610.08523 }
+
+    *Linus Vogt, Laure Zanna* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.08523">Dissolved oxygen is important for the ocean's ecosystems and biogeochemical cycles. Yet, Earth System Models (ESMs) vary in their simulations of the present-day and future ocean oxygen inventory. To...</span><span class="abstract-full" id="full-2610.08523" hidden>Dissolved oxygen is important for the ocean's ecosystems and biogeochemical cycles. Yet, Earth System Models (ESMs) vary in their simulations of the present-day and future ocean oxygen inventory. To narrow down the uncertainty in estimates of ocean oxygen content, we train a conditional generative diffusion model on outputs of a multi-model ESM ensemble to learn the conditional distribution of upper-ocean oxygen given physical input variables such as temperature and salinity. This generative model has considerable skill in the Atlantic and Southern Oceans, and can generate realistic oxygen samples under conditions not seen in the training data. We validate this model using observational datasets, and use it to generate oxygen fields for models without oxygen data using only temperature and salinity as conditioning inputs. This physics-conditioned extrapolation suggests that model biases in the tropical Pacific Oxygen Minimum Zone may be smaller than currently assumed when considering a larger set of physical ocean states. Our approach provides a complementary way to represent probabilistic multi-model climate distributions.</span> <span class="abstract-toggle" data-id="2610.08523">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.08523v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.08523v1) · [:material-content-copy: BibTeX](../../bibtex/2610.08523.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a>
+    { .paper-tags }
+
+-   #### OceanMind: A multi-agent AI system for ocean diagnosis { #2610.03780 }
+
+    *Fan Zhang, Weicong Cheng, Yuheng Chen, Hiuseut Kung, Ying Zhang, Aixi Han, Quanjia Zhong, Can Yang et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.03780">Time-dependent, three-dimensional (3D) oceanic multi-variables define coherent states of the evolving ocean to facilitate ocean diagnosis and advance ocean science to better inform environmental and...</span><span class="abstract-full" id="full-2610.03780" hidden>Time-dependent, three-dimensional (3D) oceanic multi-variables define coherent states of the evolving ocean to facilitate ocean diagnosis and advance ocean science to better inform environmental and hazard management. However, extracting quantitative evidence from these variables requires substantial and complex analytical effort. We introduce OceanMind, a multi-agent AI system that directly couples large language models (LLMs) with comprehensive time-dependent 3D ocean states for swift and effective diagnosis. OceanMind organizes the analytical process into four coordinated complexity stages: Query Routing, Skill-based Planning, Tool Execution, and Evidence-based Summary Generation. Specialized agents interpret user requests, construct and execute multi-step computational workflows, and synthesize quantitative evidence. To ensure reliable workflow construction, 63 reusable ocean-specific analysis skills serve as procedural manuals that guide the LLM agent in selecting data, conducting diagnostics, and applying analytical tools. With reflection and replanning mechanisms that use execution feedback to repair invalid plans, OceanMind ensures reliable analysis workflows across diverse needs. On a benchmark of 240 computational-workflow queries spanning the four stages, OceanMind outperformed general ReAct agents with the same registered tool pool, achieving relative improvements of 41.2% in effectiveness and 21.5% in efficiency. Beyond the benchmark, OceanMind reproduced published oceanic diagnostics, validated hypotheses, and supported environmental decision-making over global oceans. Overall, OceanMind advances LLMs by integrating them with time-dependent 3D ocean analysis, enabling scientific interpretation and enhancing formulation of environmental policies based on quantitative ocean evidence.</span> <span class="abstract-toggle" data-id="2610.03780">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.03780v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.03780v1) · [:material-content-copy: BibTeX](../../bibtex/2610.03780.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
+
+-   #### BridgeCast: Bridging Ocean Wave Forecasts to Reanalysis via Flow Matching with Exogenous Variables { #2610.03759 }
+
+    *Siyu Gan, Dongsheng Luo, Kunxiaojia Yuan, Dongjin Song, Jingchao Ni* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.03759">Ocean wave forecasting is essential for maritime safety, offshore operations, and coastal resilience, yet remains challenging due to systematic biases in physics-based models. Physical models, while...</span><span class="abstract-full" id="full-2610.03759" hidden>Ocean wave forecasting is essential for maritime safety, offshore operations, and coastal resilience, yet remains challenging due to systematic biases in physics-based models. Physical models, while widely used, rely on approximations and parameterizations that limit their accuracy under complex ocean-atmosphere conditions. To enhance ocean wave forecasting, we propose BridgeCast, within a physics-AI hybrid framework for bias correction. BridgeCast is a probabilistic model based on conditional flow matching (CFM) that learns to transform physical model forecasts into reanalysis-like fields. It treats physical forecasts as corrupted observations and employs a continuous-time generative process to bridge their distribution toward that of reanalysis data. BridgeCast is parameterized by a Transformer-based architecture that enables spatiotemporal modeling, incorporation of exogenous atmospheric variables, and flexible inference via both ordinary and stochastic differential equation formulations. Extensive experiments on real-world datasets demonstrate that BridgeCast consistently outperforms state-of-the-art baselines across regions and forecast lead times.</span> <span class="abstract-toggle" data-id="2610.03759">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.03759v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.03759v1) · [:material-content-copy: BibTeX](../../bibtex/2610.03759.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
+    { .paper-tags }
 
 -   #### On the Limits of Univariate Deep Learning for Significant Wave Height Forecasting { #2609.30688 }
 
@@ -349,42 +388,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
     { .paper-tags }
-
--   #### Estimation of temperature and precipitation uncertainties using quantile neural networks { #2601.17243 }
-
-    *Andrew Brettin, Laure Zanna* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.17243">Extreme events pose significant risks and are challenging to predict. Assessing climate hazards requires placing quantitative constraints on geophysical fields under observable but fluctuating...</span><span class="abstract-full" id="full-2601.17243" hidden>Extreme events pose significant risks and are challenging to predict. Assessing climate hazards requires placing quantitative constraints on geophysical fields under observable but fluctuating conditions. We propose a framework for estimating uncertainties -- a ReLU-bias loss quantile neural network (RBLQNN) -- with two novel modifications to the loss function to enforce uniform quantile accuracy and reduce degenerate predicted probability distributions. We evaluate the RBLQNN against other probabilistic baselines on a suite of datasets: synthetic datasets, observed daily temperature maxima from 1,501 NOAA Global Surface Summary of the Day (GSOD) weather stations, and altimetry-observed precipitation from the Tropical Rainfall Measuring Mission (TRMM). On synthetic datasets, the RBLQNN accurately predicts conditional distributions where more restrictive methods like linear quantile regression (LQR) or mean-variance estimation (MVE) neural networks fail, mitigates shortcomings of some other quantile neural networks, and converges stably under a range of hyperparameters. When applied to daily temperature maxima, the RBLQNN reveals that temperature distributions are relatively well described by Gaussian statistics, though nonlinear dependencies on local sea level pressure and geopotential heights appear important. For precipitation statistics, the RBLQNN strongly outperforms both LQR and MVE baselines, demonstrating its capacity to capture highly nonlinear and non-Gaussian conditional distributions. The RBLQNN's performance across varied datasets demonstrates it is a flexible and general approach for constraining uncertainties in geophysical quantities with nonlinear or non-Gaussian conditional dependencies.</span> <span class="abstract-toggle" data-id="2601.17243">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.17243v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.17243v1) · [:material-content-copy: BibTeX](../../bibtex/2601.17243.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Extending SST Anomaly Forecasts Through Simultaneous Decomposition of Seasonal and PDO Modes { #2601.01864 }
-
-    *Rameshan Kallummal* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.01864">We present a new approach to forecasting North Pacific Sea Surface Temperatures (SST) by recognizing that interannual variability primarily reflects amplitude changes in four dominant seasonal...</span><span class="abstract-full" id="full-2601.01864" hidden>We present a new approach to forecasting North Pacific Sea Surface Temperatures (SST) by recognizing that interannual variability primarily reflects amplitude changes in four dominant seasonal cycles. Our multivariate linear model simultaneously captures these amplitude-modulated seasonal cycles along with the Pacific Decadal Oscillation (PDO), which naturally emerges as an intrinsic feature of the system rather than a separate phenomenon. Using sixteen-dimensional regression based on four spatially distributed time series per variable, the model delivers unprecedented forecast accuracy for both interannual amplitude modulations and PDO evolution, maintaining skill beyond 36 months -- a substantial improvement over current operational and research forecasts, including machine learning methods. Predictions initialized in 2024 project that the PDO will remain in its negative phase through late 2026, implying reduced likelihood of severe marine heatwaves in the eastern North Pacific during this period. These findings have direct implications for regional climate impacts, including storm tracks, precipitation patterns, and marine ecosystem health. By treating seasonal and interannual variability as coupled rather than independent processes, this framework advances our understanding of North Pacific climate dynamics and provides a powerful tool for stakeholders managing climate-sensitive resources and planning adaptation strategies in regions strongly influenced by North Pacific conditions.</span> <span class="abstract-toggle" data-id="2601.01864">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.01864v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.01864v1) · [:material-content-copy: BibTeX](../../bibtex/2601.01864.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Neural ocean forecasting from sparse satellite-derived observations: a case-study for SSH dynamics and altimetry data { #2512.22152 }
-
-    *Daria Botvynko, Pierre Haslée, Lucile Gaultier, Bertrand Chapron, Clement de Boyer Montégut et al.* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.22152">We present an end-to-end deep learning framework for short-term forecasting of global sea surface dynamics based on sparse satellite altimetry data. Building on two state-of-the-art architectures:...</span><span class="abstract-full" id="full-2512.22152" hidden>We present an end-to-end deep learning framework for short-term forecasting of global sea surface dynamics based on sparse satellite altimetry data. Building on two state-of-the-art architectures: U-Net and 4DVarNet, originally developed for image segmentation and spatiotemporal interpolation respectively, we adapt the models to forecast the sea level anomaly and sea surface currents over a 7-day horizon using sequences of sparse nadir altimeters observations. The model is trained on data from the GLORYS12 operational ocean reanalysis, with synthetic nadir sampling patterns applied to simulate realistic observational coverage. The forecasting task is formulated as a sequence-to-sequence mapping, with the input comprising partial sea level anomaly (SLA) snapshots and the target being the corresponding future full-field SLA maps. We evaluate model performance using (i) normalized root mean squared error (nRMSE), (ii) averaged effective resolution, (iii) percentage of correctly predicted velocities magnitudes and angles, and benchmark results against the operational Mercator Ocean forecast product. Results show that end-to-end neural forecasts outperform the baseline across all lead times, with particularly notable improvements in high variability regions. Our framework is developed within the OceanBench benchmarking initiative, promoting reproducibility and standardized evaluation in ocean machine learning. These results demonstrate the feasibility and potential of end-to-end neural forecasting models for operational oceanography, even in data-sparse conditions.</span> <span class="abstract-toggle" data-id="2512.22152">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.22152v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.22152v1) · [:material-content-copy: BibTeX](../../bibtex/2512.22152.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

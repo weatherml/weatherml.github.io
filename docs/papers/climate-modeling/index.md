@@ -8,11 +8,99 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">292 papers · page 1 of 10 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">299 papers · page 1 of 10 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### SciExam for ENSO: Can AI Agents Build Climate Models? { #2610.10513 }
+
+    *Yinling Zhang, Langchen Liu, Dongbin Xiu, Xueyan Zou, Xu Kuang, Mengdi Wang, Shilong Liu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.10513">Language-model agents are increasingly asked to carry out open-ended scientific research, yet their results are usually graded against a known answer, a rubric, or a language-model reviewer, none of...</span><span class="abstract-full" id="full-2610.10513" hidden>Language-model agents are increasingly asked to carry out open-ended scientific research, yet their results are usually graded against a known answer, a rubric, or a language-model reviewer, none of which can tell whether a new scientific model is valid. The AI Science Exam for El Nino-Southern Oscillation (SciExam for ENSO) is a benchmark in which agents build low-order stochastic models of ENSO, the dominant mode of interannual climate variability, from real observations. Within a six-hour budget, agents process the observations, write their own diagnostics, which are then frozen, and develop a model using only these diagnostics as feedback. Hidden graders then test whether the model reproduces ENSO's statistics, recovers unobserved variables, and forecasts held-out years, and score a published model in the same way. Across twelve agent systems, six produce models that score higher than the published model, mainly through better reconstruction and forecasting. The simplified forms of the stronger models are each compatible with one of the two competing explanations of ENSO's warm-cold asymmetry, an open debate that the task never mentions. Controlled runs of the top system under varied information suggest that its scores do not come from recalling the dated observational record and that the information it receives shapes how it builds its model. SciExam for ENSO can thus evaluate agent research where no answer is known, and the results suggest that agents can already build competitive models whose structures bear on questions that scientists still debate.</span> <span class="abstract-toggle" data-id="2610.10513">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.10513v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.10513v1) · [:fontawesome-brands-github: Code](https://github.com/ylzhang2447/SciExam-ENSO-code) · [:material-content-copy: BibTeX](../../bibtex/2610.10513.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
+
+-   #### Artificial intelligence pathways from weather to climate { #2610.09770 }
+
+    *Tom Beucler, J. David Neelin, Hui Su, Shivanshi Asthana, Chris Bretherton, Will Chapman et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.09770">Deep learning has made rapid advances in weather forecasting: autoregressive models trained on atmospheric reanalyses now rival dynamical models across nowcasting, medium-range, and...</span><span class="abstract-full" id="full-2610.09770" hidden>Deep learning has made rapid advances in weather forecasting: autoregressive models trained on atmospheric reanalyses now rival dynamical models across nowcasting, medium-range, and subseasonal-to-seasonal lead times, producing well-calibrated ensemble forecasts at reduced cost. We review these advances and consider their extension to climate horizons, where the challenge shifts from initial-condition skill to producing reliable statistical responses under altered forcings. AI-powered climate prediction systems must produce credible forced responses to drivers (e.g., greenhouse gases, land-use change) typically outside the observed record. We propose two minimum requirements for AI in climate modeling: (i) external forcing agents must enter explicitly enough to support interventions in which they vary independently; and (ii) robustness must be stress-tested in out-of-distribution regimes, including extremes and counterfactual trajectories. Using leading AI autoregressive emulators and hybrid physics-AI models, we identify development and coupling challenges. Comparing the reported throughput of these models with that of GPU-ported dynamical models highlights how AI can reduce time-to-solution by advancing only the target variables at the required resolution and using longer time steps, rather than integrating a full high-frequency, multivariate state. Diverse AI downscaling strategies can partially substitute for explicit fine-scale resolution, paving the way toward inexpensive local hazard assessment across prediction horizons.</span> <span class="abstract-toggle" data-id="2610.09770">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.09770v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.09770v1) · [:material-content-copy: BibTeX](../../bibtex/2610.09770.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
+    { .paper-tags }
+
+-   #### EC-EarthFlow: Probabilistic emulation of daily transient global climate model simulations with flow matching { #2610.09715 }
+
+    *Kirien Whan, Nikolaj T. Mücke, Karin van der Wiel* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.09715">We introduce EC-EarthFlow, a generative flow matching model that emulates simulations from the physical climate model EC-Earth3. The model is trained on transient simulations from EC-Earth3...</span><span class="abstract-full" id="full-2610.09715" hidden>We introduce EC-EarthFlow, a generative flow matching model that emulates simulations from the physical climate model EC-Earth3. The model is trained on transient simulations from EC-Earth3 (1950-2166, SSP2-4.5) to predict the day ahead temperature field from the previous days temperature as well as annual mean temperature. Predictions are made auto-regressively with rollout periods of between a month and an extended season. Using only this variable of interest, we are able to reproduce the daily variability, spatial patterns, annual cycle and long-term trend from EC-Earth3 at a substantially lower computational cost than the physical model. We demonstrate that EC-EarthFlow is stable for long inference periods, and that it can learn the physical relationships as simulated in EC-Earth3.</span> <span class="abstract-toggle" data-id="2610.09715">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.09715v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.09715v1) · [:material-content-copy: BibTeX](../../bibtex/2610.09715.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
+
+-   #### Skillful Data-Driven Subseasonal Soil Moisture Forecasting: Prospects and Limits for Flash Drought Prediction { #2610.07060 }
+
+    *Noelia Otero, Atahan Özer, Miguel-Ángel Fernández-Torres, Jackie Ma* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.07060">Despite substantial progress in short-to-medium-range weather forecasting, predicting high-impact events such as flash droughts remains a key challenge for both early warning operations and...</span><span class="abstract-full" id="full-2610.07060" hidden>Despite substantial progress in short-to-medium-range weather forecasting, predicting high-impact events such as flash droughts remains a key challenge for both early warning operations and physically-based subseasonal-to-seasonal (S2S) prediction systems. Here we demonstrate that, for S2S soil-moisture forecasting over Europe, forecast skill depends as much on how the prediction problem is formulated as on the forecasting model itself. Using a Vision Transformer-based architecture with dual-pathway temporal and spatial attention, we show that residual learning is essential to outperform persistence. This advantage is realized only when forecasting root-zone soil moisture in physical units rather than standardized anomalies, revealing that the target representation itself constrains predictability. A probabilistic extension via quantile-head fine-tuning further provides well-calibrated predictive distributions. Benchmarked against deep-learning and operational ECMWF S2S baselines over 2021-2022, our model achieves the highest deterministic and probabilistic skill at all lead times and reliably detects anomalously dry root-zone states (below the 20th percentile). Yet flash drought onset, defined by multi-pentad intensification criteria, remains a fundamental challenge shared across all current S2S systems. These findings advance data-driven S2S soil-moisture forecasting while highlighting the remaining challenge of predicting rapid drought development.</span> <span class="abstract-toggle" data-id="2610.07060">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.07060v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.07060v1) · [:material-content-copy: BibTeX](../../bibtex/2610.07060.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
+
+-   #### ClimateBench v2.0: Probabilistic Climate Model Benchmarking { #2610.04558 }
+
+    *Duncan Watson-Parris, Willa Tobin, Aytaç Paçal, Manuel Schlund, V. Balaji, Kevin Bowman et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.04558">We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and...</span><span class="abstract-full" id="full-2610.04558" hidden>We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and precipitation changes. The protocol is designed to evaluate any physics-based, data-driven, or hybrid climate model on equal footing using a common set of observational and out-of-distribution tests. We define three tiers of evaluation. Tier I establishes physical credibility through entry-ticket tests of energy conservation, coupled (co-)variability, and basic forced responses. Tier II scores models against post-2015 observations of surface temperature, precipitation, radiative fluxes, sea ice, and key modes of variability using fair CRPS as the primary probabilistic score, complemented by distributional and ensemble-consistency diagnostics. Tier III tests out-of-distribution generalization through paleoclimate simulations spanning the Last Interglacial, Last Glacial Maximum, and Mid-Holocene, and through perfect-model experiments in which data-driven models must predict the future climate of existing Earth system models from historical data alone. We reserve all observational data after 2015 for testing, and submissions must include multiple ensemble members to enable probabilistic evaluation. This reservation exploits a new opportunity provided by the decade of observations accumulated since the end of the CMIP6 historical experiment, which constitutes an out-of-sample record of forced climate change (and internal variability) for the current generation of models, and we quantify, in an idealized setting, the information it carries about mid-century warming. We provide the evaluation code, observational reference datasets, and perfect-model training data as an open benchmark to drive measurable progress in climate projection across all modeling approaches.</span> <span class="abstract-toggle" data-id="2610.04558">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.04558v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.04558v1) · [:material-content-copy: BibTeX](../../bibtex/2610.04558.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### AEGIS: Differentiable Mars Climate Model with Neural Closures { #2610.04081 }
+
+    *Sameera S Kashyap, Victor Cruz, Angel Yepez, Razvan Marinescu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.04081">General circulation models (GCMs) are the primary tool for simulating planetary atmospheres. They play a vital role in understanding Mars's atmosphere, as forecasting its unique weather is...</span><span class="abstract-full" id="full-2610.04081" hidden>General circulation models (GCMs) are the primary tool for simulating planetary atmospheres. They play a vital role in understanding Mars's atmosphere, as forecasting its unique weather is mission-critical for operations such as entry, descent, and landing. Mars poses unusual challenges for these models, as observations are sparse compared to Earth. In addition, a thin \co{} atmosphere alongside a radiatively active dust cycle creates a volatile atmosphere with large diurnal temperature swings and no true terrestrial analog for validation. Existing Mars GCMs, including the LMD PCM, the NASA Ames Mars GCM, and PlanetWRF, are mature and physically detailed but are implemented in legacy Fortran with finite-difference or finite-volume solvers, and they do not expose gradients for calibration or machine learning. Here we present AEGIS, a modular differentiable Mars climate model that couples Mars's unique atmospheric physics to the Dinosaur dynamical core, with interfaces for neural closures. We showcase stable ten-Mars-year simulations that reproduce the seasonal \co{} cycle while conserving the total \co{} inventory, capture realistic large-scale surface-temperature structure, and produce surface pressure that follows Mars Orbiter Laser Altimeter (MOLA) topography. Gradients through coupled trajectories agree with finite differences and support physical calibration and neural training. We compare with conventional GCMs, highlighting the framework's computational efficiency and differentiability.</span> <span class="abstract-toggle" data-id="2610.04081">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.04081v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.04081v1) · [:material-content-copy: BibTeX](../../bibtex/2610.04081.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### S2S-JEPA: Predicting the Predictable at Subseasonal-to-Seasonal Timescales { #2610.03106 }
+
+    *Chenyu Dong, Gianmarco Mengaldo* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.03106">The subseasonal-to-seasonal (S2S) timescale, roughly from two weeks to two months ahead, is a critical forecast window for sectors such as agriculture, energy, and water management. Yet, it is widely...</span><span class="abstract-full" id="full-2610.03106" hidden>The subseasonal-to-seasonal (S2S) timescale, roughly from two weeks to two months ahead, is a critical forecast window for sectors such as agriculture, energy, and water management. Yet, it is widely known as the ‘predictability desert’. Recent AI weather models excel up to two weeks ahead but deteriorate beyond, largely because they are trained to predict fine-scale details that are neither predictable nor essential at S2S timescales. We argue that a more physically grounded objective is to forecast only the slowly varying components that remain predictable. Computer vision reached the same conclusion with the Joint-Embedding Predictive Architecture (JEPA), which predicts in latent space, discarding unpredictable details. In this work, we introduce S2S-JEPA, which brings the JEPA paradigm to S2S forecasting. It is tailored to this task through design elements from state-of-the-art AI weather models. S2S-JEPA achieves comparable skill to the gold-standard ECMWF physics-based ensemble and surpasses it on multiple metrics at weeks 5 to 6.</span> <span class="abstract-toggle" data-id="2610.03106">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.03106v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.03106v1) · [:material-content-copy: BibTeX](../../bibtex/2610.03106.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
 
 -   #### Safe Greenhouse Climate Control Using Lagrangian-Constrained PPO with Kolmogorov-Arnold Networks { #2609.34966 }
 
@@ -297,94 +385,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
-
--   #### A Sequence-to-Sequence ConvLSTM Approach for Leaf Area Index Forecasting over the South-Central United States { #2608.00879 }
-
-    *Zhixing Ruan, Lixin Lu* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.00879">Leaf Area Index (LAI) is a fundamental biophysical variable governing land-atmosphere interactions; however, LAI forecasting at high spatial resolution remains an unsolved challenge. While recent...</span><span class="abstract-full" id="full-2608.00879" hidden>Leaf Area Index (LAI) is a fundamental biophysical variable governing land-atmosphere interactions; however, LAI forecasting at high spatial resolution remains an unsolved challenge. While recent machine learning approaches have demonstrated LAI estimation at point or regional scales, none provides a gridded, meteorology-driven prognostic forecast suitable for subseasonal land surface and climate modeling applications. Here we present a sequence-to-sequence Convolutional LSTM (ConvLSTM) framework that generates daily 1-km LAI forecasts up to 30 days ahead, driven by historical LAI sequences and daily meteorological forcing including temperature and precipitation. Trained and evaluated over the South-Central United States -- a region of strong climate gradients and diverse vegetation -- the model achieves a domain-averaged RMSE of 0.36 at a 30-day lead time, more than a third lower than the persistence baseline. Forecast skill remains robust across seasons, geographic distributions, and plant functional types, including forests, grasslands, shrublands, and croplands. To our knowledge, this is the first demonstration of skillful LAI forecasting at a 30-day horizon at 1-km resolution.</span> <span class="abstract-toggle" data-id="2608.00879">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.00879v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.00879v1) · [:material-content-copy: BibTeX](../../bibtex/2608.00879.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Anomalous Diffusion of Tropical Cyclones Observed in Huge Ensembles of Hindcasts { #2607.21954 }
-
-    *Abdoul R. Zeba, William D. Collins, Ankur Mahesh, Boris Bonev, Karthik Kashinath, Thorsten Kurth et al.* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.21954">We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual...</span><span class="abstract-full" id="full-2607.21954" hidden>We examine whether tropical cyclones (TCs) obey ordinary Brownian or anomalous diffusion using a huge ensemble (HENS) of hindcasts for summer 2023. Anomalous diffusion has been inferred for actual TCs from the fluctuations in their tracks from the shortest paths between the initiation and termination of each cyclone. We reproduce the same anomalous diffusion power laws connecting spatial position and time using HENS. In addition, we show that the variance in the position of a single TC across HENS since initiation follows a scaling law with time that, in some cases, corresponds to ballistic motion of the TC through the background atmospheric flow. This determination was enabled by the exceptional statistics determined from thousands of plausible yet counterfactual recreations of 34 individual TCs. HENS consists of 7424 15-day hindcasts initiated from observed atmospheric conditions each day from June 1, 2023 to August 31, 2023 using the ECMWF ERA5 meteorological reanalysis. The hindcasts were generated using NVIDIA's Spherical Fourier Neural Operator (SFNO) machine-learning-based weather and climate emulator. We identify tropical cyclones in HENS using a variant of the Tempest Extremes detection and tracking frameworks for TCs with adjustments to the disposable parameters to minimize the numbers of false positives and negatives relative to the International Best Track Archive for Climate Stewardship (IBTrACS) records for TCs observed in summer 2023. We conclude with the implications of our findings for the predictability of TC tracks and landfall locations on lead times of days to weeks.</span> <span class="abstract-toggle" data-id="2607.21954">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.21954v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.21954v1) · [:material-content-copy: BibTeX](../../bibtex/2607.21954.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Flexible generation of daily Earth system model projections across radiative forcing scenarios { #2607.21382 }
-
-    *Yu Huang, Sebastian Bathiany, Shangshang Yang, Philipp Hess, Michael Aich, Niklas Boers* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.21382">Earth system model (ESM) projections of the climate system's response to anthropogenic forcing are central to assess the impacts of climate change and inform adaptation and mitigation policies....</span><span class="abstract-full" id="full-2607.21382" hidden>Earth system model (ESM) projections of the climate system's response to anthropogenic forcing are central to assess the impacts of climate change and inform adaptation and mitigation policies. However, given their high computational cost, projections are only made for a limited set of standardized forcing scenarios with limited temporal extent, such as the Shared Socioeconomic Pathways (SSPs), the spatiotemporal resolution remains too low for direct impact assessments, and uncertainties cannot be comprehensively quantified. Recent data-driven models offer efficient and accurate high-resolution simulations for weather prediction, but cannot extrapolate to future greenhouse gas concentrations because they cannot capture the responses to unprecedented forcing, limiting their value for climate change projections. Here, we combine response theory with a tailored generative machine learning framework to address this challenge. Our approach extracts the physical forced response to radiative forcing from monthly low-resolution ESM fields, and uses this response to guide a generative model to infer consistent daily global high-resolution temperature and precipitation projections. Our probabilistic approach generalizes across ESMs and provides long-term, bias-corrected responses to radiative forcing at high spatiotemporal resolution. It efficiently generates large ensembles needed for uncertainty quantification, effectively fills the gaps between existing SSPs, and readily extends climate projections to 2300 and beyond. Our framework hence complements ESM projections by providing efficient, stable, and high spatiotemporal resolution long-term climate projection ensembles across emission scenarios, enabling detailed impact assessment and exploration of long-term climate commitment.</span> <span class="abstract-toggle" data-id="2607.21382">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.21382v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.21382v1) · [:material-content-copy: BibTeX](../../bibtex/2607.21382.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
-    { .paper-tags }
-
--   #### A Deep Learning Earth System Model Simulation of Indian Monsoon Intraseasonal and Interannual Variability { #2607.01676 }
-
-    *Bijit Kumar Banerjee, Devabrat Sharma, R. I. Sujith, Chandrashekar Lakshminarayanan et al.* · Jul 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2607.01676">With the data-driven artificial intelligence/machine learning (AI/ML) models having demonstrated their ability to extend the prediction horizon of large-scale weather at a fraction of computational...</span><span class="abstract-full" id="full-2607.01676" hidden>With the data-driven artificial intelligence/machine learning (AI/ML) models having demonstrated their ability to extend the prediction horizon of large-scale weather at a fraction of computational cost of numerical weather prediction models, a pertinent question is, could these models do the same for sub-seasonal to seasonal (S2S) prediction? A key challenge in developing a S2S prediction system is the requirement for a coupled ocean-atmosphere Earth system emulator that can stably simulate the observed intraseasonal and interannual variability with fidelity. In the rapidly evolving field of AI/ML weather models, such a deep learning 3D ocean-atmosphere coupled model has become available, called SamudrACE. With our interest in developing an AI/ML S2S model for Indian monsoon, here we examine the extent to which SamudrACE faithfully simulates Indian monsoon intraseasonal and interannual variability. Compared to observation, we found biases in SamudrACE's simulation of monsoon intraseasonal and interannual variability. Our systematic documentation and analyses of these biases provide a useful benchmark for improving not only SamudrACE but also coupled emulators in general and could fast track the development of a deep learning 3D global S2S prediction system.</span> <span class="abstract-toggle" data-id="2607.01676">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2607.01676v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2607.01676v1) · [:material-content-copy: BibTeX](../../bibtex/2607.01676.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
-    { .paper-tags }
-
--   #### Learning Climate Variability from Scarce Data with Diffusion Models: A Test Case for ENSO { #2606.27094 }
-
-    *Lluis Palma, Vincent Verjans, Amanda Duarte, Albert Soret, Markus Donat* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.27094">Diffusion models are increasingly applied to climate emulation, but whether they capture the correct modes of variability remains unclear, a concern amplified by data scarcity at longer timescales....</span><span class="abstract-full" id="full-2606.27094" hidden>Diffusion models are increasingly applied to climate emulation, but whether they capture the correct modes of variability remains unclear, a concern amplified by data scarcity at longer timescales. We investigate this using synthetic tropical Pacific SST fields from Linear Inverse Models (LIMs), whose known low-order structure bypasses the overlapping and confounding modes of real observations. With sufficient training data, our model recovers the correct structure of both Gaussian and non-Gaussian LIMs, including ENSO's Eastern/Central Pacific asymmetry. Yet an ablation study on the number of monthly training samples reveals that the 700 observations in ERSSTv5 fall an order of magnitude short of the 7,000 samples needed for convergence, and that not all diffusion parameterisations recover the correct low-order structure. Pre-training on CMIP6 with a learned model embedding, followed by fine-tuning on scarce observations, closes this gap, reproducing observed statistics more faithfully than both Gaussian and non-Gaussian LIMs.</span> <span class="abstract-toggle" data-id="2606.27094">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.27094v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.27094v1) · [:material-content-copy: BibTeX](../../bibtex/2606.27094.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
-    { .paper-tags }
-
--   #### Sampling sea state using a diffusion model { #2606.26389 }
-
-    *Jiarong Wu, Bertrand Chapron, Laure Zanna* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.26389">Sea state prediction is essential for operational maritime applications and coupled earth system modeling, yet current spectral wave models remain computationally prohibitive for many use cases,...</span><span class="abstract-full" id="full-2606.26389" hidden>Sea state prediction is essential for operational maritime applications and coupled earth system modeling, yet current spectral wave models remain computationally prohibitive for many use cases, including online coupling to climate simulations and making probabilistic (ensemble-based) predictions. While deep learning has recently demonstrated strong performance in weather forecasting, existing AI-based wave models are predominantly deterministic and largely limited to bulk variables such as significant wave height, leaving probabilistic sea state estimation largely unexplored. In this work, we propose a diffusion-based generative model for global sea state estimation that conditions on a relatively long history (5 days) of global wind forcing. This generative model directly samples the complex conditional distribution of sea state without autoregressive time-stepping. Unlike prior approaches, our framework naturally extends beyond bulk variables to estimate partition-related variables and derived quantities, such as Stokes drift and mean square slope. Trained on a 30-year global WAVEWATCH-III hindcast, the model achieves substantial computational acceleration compared with numerical spectral models while delivering skillful predictions and a calibrated ensemble spread for the bulk variables. Our results suggest that diffusion-based sea state sampling offers a promising path toward probabilistic wave forecasting and efficient coupling of sea state information into broader earth system models.</span> <span class="abstract-toggle" data-id="2606.26389">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.26389v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.26389v1) · [:material-content-copy: BibTeX](../../bibtex/2606.26389.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Towards bridging the gap between data-driven and theoretical turbulence closures in stratified flows { #2606.20901 }
-
-    *Laure Zanna, Pavel Perezhogin* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.20901">Turbulence closure models are essential for solving the equations of motion in realistic systems, where fully resolving all relevant scales of motion is computationally infeasible. Developing...</span><span class="abstract-full" id="full-2606.20901" hidden>Turbulence closure models are essential for solving the equations of motion in realistic systems, where fully resolving all relevant scales of motion is computationally infeasible. Developing turbulence closures remains one of the most challenging problems in fluid dynamics. Specifically, the Navier-Stokes equations, when filtered to isolate large-scale motions, introduce new terms representing the influence of subgrid-scale turbulent stresses. These terms, which can only be computed directly by resolving the turbulence itself, therefore lead to the closure problem: we must add new equations or introduce assumptions to relate the unresolved scales of motions to the resolved flow. Here we consider the closure problem for oceanic flows, i.e., stratified, Boussinesq, incompressible, in a rotating frame of reference. In particular, we focus on a closure for ocean mesoscale eddies, which have horizontal scales of 10-100km and are key to the redistribution of momentum, energy, and tracers in the ocean. In particular, mesoscale eddies can reinject energy and momentum into the large-scale flow through an inverse energy cascade. Here, we explore a range of theoretical and data-driven ocean mesoscale closures and examine their connections using analytical and data-driven methods. This note aims to bridge the gap between novel methods from artificial intelligence (AI) and machine learning and theoretical fluid dynamics to address significant challenges in the physics of turbulence.</span> <span class="abstract-toggle" data-id="2606.20901">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.20901v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.20901v1) · [:material-content-copy: BibTeX](../../bibtex/2606.20901.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

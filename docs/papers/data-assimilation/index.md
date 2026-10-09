@@ -8,11 +8,47 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">75 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">78 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### The interface of data assimilation and machine learning { #2610.07496 }
+
+    *Eviatar Bach* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.07496">Data assimilation (DA) is the process of combining forecasts from a model with observations in order to optimally estimate the state of a system. This is critical for chaotic systems, such as the...</span><span class="abstract-full" id="full-2610.07496" hidden>Data assimilation (DA) is the process of combining forecasts from a model with observations in order to optimally estimate the state of a system. This is critical for chaotic systems, such as the atmosphere, since if observations are not continually assimilated the model will quickly lose skill. DA is routinely performed (usually every 6 hours) at operational forecasting centres around the world.   In this article we discuss the interface of machine learning (ML) and DA. This is still an emerging and quickly developing field, and this article tries to give an overview of some of the main topics and methods.</span> <span class="abstract-toggle" data-id="2610.07496">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.07496v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.07496v1) · [:material-content-copy: BibTeX](../../bibtex/2610.07496.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### LD-EnFF: Latent-Dynamics Ensemble Flow Filtering for Data Assimilation with Sparse Observations { #2610.04034 }
+
+    *Ziyu Tian, Kaichen Shen, Wenbo Hao, Phillip Si, Peng Chen, Wei Zhu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.04034">Data assimilation combines model forecasts with noisy, incomplete observations to estimate the evolving state of a dynamical system. Existing methods face two compounding challenges: high-dimensional...</span><span class="abstract-full" id="full-2610.04034" hidden>Data assimilation combines model forecasts with noisy, incomplete observations to estimate the evolving state of a dynamical system. Existing methods face two compounding challenges: high-dimensional nonlinear dynamics make repeated forward simulation computationally expensive, while sparse observations provide limited direct information about the full state. To address these challenges, we propose the Latent-Dynamics Ensemble Flow Filter (LD-EnFF), a sequential Bayesian filtering framework that performs both forecast propagation and filtering updates in a compact latent space. LD-EnFF combines a latent dynamics surrogate for ensemble propagation with a variational autoencoder (VAE)-based observation model that evaluates a state-dependent observation likelihood in latent space. At each assimilation step, an ensemble filtering update based on flow matching uses the forecast ensemble and this likelihood to generate posterior samples, jointly updating latent states and uncertain parameters. This design avoids repeated full-state simulation during forecasting and full-field reconstruction during likelihood evaluation. LD-EnFF substantially outperforms a broad range of data assimilation algorithms on benchmarks spanning Kolmogorov flow, tsunami propagation, and atmospheric modeling, all featuring complex dynamics and sparse, noisy observations.</span> <span class="abstract-toggle" data-id="2610.04034">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.04034v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.04034v1) · [:material-content-copy: BibTeX](../../bibtex/2610.04034.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### A Unified Framework for Bayesian Data Assimilation with Generative Models and Observation Interpolants { #2610.03396 }
+
+    *Nikolaj T. Mücke, Benjamin Sanderse* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.03396">Bayesian data assimilation combines model forecasts with noisy observations, but sampling high-dimensional, non-Gaussian posteriors remains challenging. We introduce an observation-interpolant...</span><span class="abstract-full" id="full-2610.03396" hidden>Bayesian data assimilation combines model forecasts with noisy observations, but sampling high-dimensional, non-Gaussian posteriors remains challenging. We introduce an observation-interpolant framework that turns pretrained stochastic interpolant, flow matching, and diffusion models into posterior samplers without retraining. Conditioning the interpolant path on observations yields a shared likelihood-score correction to the drift or velocity, unifying stochastic and deterministic posterior sampling. The resulting SDEs and ODEs sample the exact posterior when the intermediate likelihood score is known. For practical computation, we approximate this score using a closed-form Gaussian surrogate with a bias-corrected mean and covariance inflated by the model's source covariance. Jacobian-free and ensemble-shared approximations make the method tractable in high dimensions. We evaluate the framework on linear-Gaussian dynamics, stochastic two-dimensional Navier-Stokes, and urban airflow with up to $O(10^4)$ degrees of freedom.</span> <span class="abstract-toggle" data-id="2610.03396">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.03396v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.03396v1) · [:material-content-copy: BibTeX](../../bibtex/2610.03396.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a>
+    { .paper-tags }
 
 -   #### Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations { #2610.00728 }
 
@@ -339,42 +375,6 @@ hide:
     <span class="abstract-snippet" id="snip-2601.11440">Urban wind flow reconstruction is essential for assessing air quality, heat dispersion, and pedestrian comfort, yet remains challenging when only sparse sensor data are available. We propose GenDA, a...</span><span class="abstract-full" id="full-2601.11440" hidden>Urban wind flow reconstruction is essential for assessing air quality, heat dispersion, and pedestrian comfort, yet remains challenging when only sparse sensor data are available. We propose GenDA, a generative data assimilation framework that reconstructs high-resolution wind fields on unstructured meshes from limited observations. The model employs a multiscale graph-based diffusion architecture trained on computational fluid dynamics (CFD) simulations and interprets classifier-free guidance as a learned posterior reconstruction mechanism: the unconditional branch learns a geometry-aware flow prior, while the sensor-conditioned branch injects observational constraints during sampling. This formulation enables obstacle-aware reconstruction and generalization to held-out mesh geometries, wind directions, and sensor configurations within the studied urban-flow setting, without retraining. We consider both sparse fixed sensors and trajectory-based observations using the same reconstruction procedure. When evaluated against supervised graph neural network (GNN) baselines and classical reduced-order data assimilation methods, GenDA reduces the relative root-mean-square error (RRMSE) by 25-57% and increases the structural similarity index (SSIM) by 23-33% across the tested meshes. Experiments are conducted on Reynolds-averaged Navier-Stokes (RANS) simulations of a real urban neighborhood in Bristol, United Kingdom, at a characteristic Reynolds number of $\mathrm{Re}\approx2\times10^{7}$, featuring complex building geometry and irregular terrain. The proposed framework provides a scalable path toward generative, geometry-aware data assimilation for environmental monitoring in complex domains.</span> <span class="abstract-toggle" data-id="2601.11440">more</span>
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.11440v3) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.11440v3) · [:material-content-copy: BibTeX](../../bibtex/2601.11440.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### The Ensemble Schr{ö}dinger Bridge filter for Nonlinear Data Assimilation { #2512.18928 }
-
-    *Feng Bao, Hui Sun* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.18928">This work puts forward a novel nonlinear optimal filter namely the Ensemble Schr{ö}dinger Bridge nonlinear filter. The proposed filter finds marriage of the standard prediction procedure and the...</span><span class="abstract-full" id="full-2512.18928" hidden>This work puts forward a novel nonlinear optimal filter namely the Ensemble Schr{ö}dinger Bridge nonlinear filter. The proposed filter finds marriage of the standard prediction procedure and the diffusion generative modeling for the analysis procedure to realize one filtering step. The designed approach finds no structural model error, and it is derivative free, training free and highly parallizable. Experimental results show that the designed algorithm performs well given highly nonlinear dynamics in (mildly) high dimension up to 40 or above under a chaotic environment. It also shows better performance than classical methods such as the ensemble Kalman filter and the Particle filter in numerous tests given different level of nonlinearity. Future work will focus on extending the proposed approach to practical meteorological applications and establishing a rigorous convergence analysis.</span> <span class="abstract-toggle" data-id="2512.18928">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.18928v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.18928v1) · [:material-content-copy: BibTeX](../../bibtex/2512.18928.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### A Neural-Network Model-Measurement-Based Observation Operator For Weather Radar Reflectivity Assimilation { #2512.18289 }
-
-    *Marco Stefanelli, Žiga Zaplotnik, Gregor Skok* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.18289">In three-dimensional variational data assimilation (3DVar) for numerical weather prediction (NWP), the observation operator $\mathcal{H}$ plays a central role by mapping model state variables to an...</span><span class="abstract-full" id="full-2512.18289" hidden>In three-dimensional variational data assimilation (3DVar) for numerical weather prediction (NWP), the observation operator $\mathcal{H}$ plays a central role by mapping model state variables to an observation equivalent. For weather radar, however, specifying $\mathcal{H}$ is particularly challenging: reflectivity is a nonlinear, microphysics-dependent diagnostic quantity that only indirectly relates to the model's prognostic variables, making traditional parameterised radar operators complex, regime-dependent and difficult to tune. In this study, we propose a neural-network (NN)-based observation operator for radar reflectivity and apply it within a 3DVar framework. Using five years (2019-2023) of radar reflectivity data from the Lisca radar and 4.4 km-resolution short-range forecasts from ALADIN model over Slovenia, we train a convolutional encoder-decoder neural network to map model temperature, humidity, horizontal wind components and surface pressure fields to radar reflectivity. Across independent test cases spanning clear-sky, stratiform, and convective regimes, the NN-based operator accurately reproduces the spatial structure and intensity of observed reflectivity, relying primarily on the model state near the observation point. In the extreme precipitation case, which caused widespread floods in Slovenia on August 4, 2023, assimilating the full radar disc reduces the domain-averaged reflectivity root-mean-square error from 5.99 dBZ to 3.47 dBZ and improves the alignment between the analysed and observed convective bands. Embedded within 3DVar, the Jacobian of the NN observation operator allows radar reflectivity observations to inform model state variables, producing corresponding analysis increments. The proposed NN radar observation operator offers a flexible alternative to traditional parameterised radar operators for improving convective-storm forecasts.</span> <span class="abstract-toggle" data-id="2512.18289">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.18289v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.18289v2) · [:material-content-copy: BibTeX](../../bibtex/2512.18289.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
-    { .paper-tags }
-
--   #### Continuous data assimilation for 2D stochastic Navier-Stokes equations { #2512.15184 }
-
-    *Hakima Bessaih, Benedetta Ferrario, Oussama Landoulsi, Margherita Zanella* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.15184">Continuous data assimilation methods, such as the nudging algorithm introduced by Azouani, Olson, and Titi (AOT) [2], are known to be highly effective in deterministic settings for asymptotically...</span><span class="abstract-full" id="full-2512.15184" hidden>Continuous data assimilation methods, such as the nudging algorithm introduced by Azouani, Olson, and Titi (AOT) [2], are known to be highly effective in deterministic settings for asymptotically synchronizing approximate solutions with observed dynamics. In this work, we extend this framework to a stochastic regime by considering the two-dimensional incompressible Navier-Stokes equations subject to either additive or multiplicative noise. We establish sufficient conditions on the nudging parameter and the spatial observation scale that guarantee convergence of the nudged solution to the true stochastic flow.   In the case of multiplicative noise, convergence holds in expectation, with exponential or polynomial rates depending on the growth of the noise covariance. For additive noise, we obtain the exponential convergence both in expectation and pathwise. These results yield a stochastic generalization of the AOT theory, demonstrating how the interplay between random forcing, viscous dissipation and feedback control governs synchronization in stochastic fluid systems.</span> <span class="abstract-toggle" data-id="2512.15184">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.15184v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.15184v1) · [:material-content-copy: BibTeX](../../bibtex/2512.15184.bib){ .bibtex-link }
     { .paper-links }
 
 </div>

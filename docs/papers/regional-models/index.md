@@ -8,11 +8,37 @@ hide:
 
 # Regional Models
 
-<p class="page-meta" markdown="span">63 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">65 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment { #2610.12401 }
+
+    *Guowen Li, Yang Liu, Yujie Wang, Qiuyan Sun, Haoyuan Liang, Juepeng Zheng, Hong Cheng, Haohuan Fu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.12401">Kilometer-scale regional weather forecasting is essential for local weather warnings and weather-sensitive decisions. Existing data-driven approaches often rely on numerical forecasts for large-scale...</span><span class="abstract-full" id="full-2610.12401" hidden>Kilometer-scale regional weather forecasting is essential for local weather warnings and weather-sensitive decisions. Existing data-driven approaches often rely on numerical forecasts for large-scale guidance or require additional training of global forecasting components. Pretrained global weather models offer an efficient source of large-scale forecasts, motivating their reuse to guide high-resolution regional prediction. However, this coupling requires aligning global and regional representations across different grids and integrating global guidance with local interactions to advance regional states. We propose ScaleCast, a regional forecasting framework that addresses these challenges through Global-Regional Alignment. Its Global-Regional Conversion module aligns joint global and regional representations with regional locations, while the Global-Regional Alignment and Dynamics block combines aligned guidance with regional neighborhood interactions. Experiments using ERA5 global analyses on a 0.25-degree grid and CERRA regional reanalysis at 5.5 km spacing demonstrate improved regional forecasts across surface and upper-air variables, with a single trained model supporting multiple global forecast drivers (i.e., Pangu-Weather, GraphCast, and HRES) without specific retraining. Fine-tuning on HRRR at 3 km spacing further demonstrates the framework's adaptability to a different regional domain and spatial resolution. Windstorm case studies show improved cyclone positioning and core-pressure estimates, while comparisons with HadISD station observations show closer agreement with local temperature and humidity changes.</span> <span class="abstract-toggle" data-id="2610.12401">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.12401v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.12401v1) · [:material-content-copy: BibTeX](../../bibtex/2610.12401.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a>
+    { .paper-tags }
+
+-   #### legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents { #2610.11883 }
+
+    *Pierre Gentine, Dhruv Balwada, Aytaç Paçal, Linnia Hawkins, Alistair Adcroft, Hang Fan et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.11883">Earth system models (ESMs) have grown tremendously in realism, yet key uncertainties persist in the climate response to greenhouse-gas forcing, particularly due to cloud radiative feedbacks. In...</span><span class="abstract-full" id="full-2610.11883" hidden>Earth system models (ESMs) have grown tremendously in realism, yet key uncertainties persist in the climate response to greenhouse-gas forcing, particularly due to cloud radiative feedbacks. In addition, their software architecture was not designed for accelerator hardware or modern artificial intelligence (AI). Here we present legoESM, a composable, differentiable, multiscale ESM written in JAX. It builds on decades of community-developed parameterizations and numerical methods, recast in a unified framework by AI coding agents under a human-specified scientific contract and verified through benchmarking. Dynamical cores, physics schemes, grids, complexity levels and components are swappable like building blocks, and can use conventional physics or machine-learned emulators. A single code base spans metre-scale large-eddy simulation to global simulations and weather to climate. End-to-end differentiability enables gradient-based calibration, variational data assimilation and online training. legoESM modular architecture enables systematic evaluation of diverse model variants to explore structural uncertainty and test hypotheses. legoESM produces realistic simulations across scales, reduces land-surface temperature bias through gradient-based calibration, and scales efficiently on GPUs to kilometer-scale simulations. It offers an open, community infrastructure for hypothesis testing, research and teaching in Earth sciences and a template for multiscale physical systems.</span> <span class="abstract-toggle" data-id="2610.11883">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.11883v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.11883v1) · [:material-content-copy: BibTeX](../../bibtex/2610.11883.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
+    { .paper-tags }
 
 -   #### Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography { #2610.01835 }
 
@@ -367,32 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### MR-GNF: Multi-Resolution Graph Neural Forecasting on Ellipsoidal Meshes for Efficient Regional Weather Prediction { #2603.13563 }
-
-    *Andrii Shchur, Inna Skarga-Bandurova* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.13563">Weather forecasting offers an ideal testbed for artificial intelligence (AI) to learn complex, multi-scale physical systems. Traditional numerical weather prediction remains computationally costly...</span><span class="abstract-full" id="full-2603.13563" hidden>Weather forecasting offers an ideal testbed for artificial intelligence (AI) to learn complex, multi-scale physical systems. Traditional numerical weather prediction remains computationally costly for frequent regional updates, as high-resolution nests require intensive boundary coupling. We introduce Multi-Resolution Graph Neural Forecasting (MR-GNF), a lightweight, physics-aware model that performs short-term regional forecasts directly on an ellipsoidal, multi-scale graph of the Earth. The framework couples a 0.25° region of interest with a 0.5° context belt and 1.0° outer domain, enabling continuous cross-scale message passing without explicit nested boundaries. Its axial graph-attention network alternates vertical self-attention across pressure levels with horizontal graph attention across surface nodes, capturing implicit 3-D structure in just 1.6 M parameters. Trained on 40 years of ERA5 reanalysis (1980-2024), MR-GNF delivers stable +6 h to +24 h forecasts for near-surface temperature, wind, and precipitation over the UK-Ireland sector. Despite a total compute cost below 80 GPU-hours on a single RTX 6000 Ada, the model matches or exceeds heavier regional AI systems while preserving physical consistency across scales. These results demonstrate that graph-based neural operators can achieve trustworthy, high-resolution weather prediction at a fraction of NWP cost, opening a practical path toward AI-driven early-warning and renewable-energy forecasting systems. Project page and code: https://github.com/AndriiShchur/MR-GNF</span> <span class="abstract-toggle" data-id="2603.13563">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.13563v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.13563v1) · [:fontawesome-brands-github: Code](https://github.com/AndriiShchur/MR-GNF) · [:material-content-copy: BibTeX](../../bibtex/2603.13563.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### AI-Based Regional Emulation for Kilometer-Scale Dynamical Downscaling { #2602.18646 }
-
-    *Yingkai Sha, Tracy Hertneky, Ethan Gutmann, Seth McGinnis, Rachel McCrary, Lulin Xue et al.* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.18646">An AI-based Limited-Area Model (LAM) is developed for dynamical downscaling over the Southern Great Plains and the southeastern United States, with strong generalization abilities under diverse...</span><span class="abstract-full" id="full-2602.18646" hidden>An AI-based Limited-Area Model (LAM) is developed for dynamical downscaling over the Southern Great Plains and the southeastern United States, with strong generalization abilities under diverse boundary conditions. The model is trained using 0.25-degree, 3-hourly ERA5 as forcings and CONUS404 as targets in 1980--2019, producing 4-km, hourly dynamical downscaling outputs; it is also connected to a post-processing model to derive additional diagnostic variables. The model is evaluated across multiple forcing datasets, time periods, and climate regimes. For present-day downscaling in the 2021--2024 water years, the model produces stable multi-year simulations with no unrealistic drift; its deterministic verification scores are comparable to other weather-forecasting-oriented AI models. The model also generalizes robustly to a 1.0-degree, 6-hourly non-ERA5 forcing dataset, yielding only minor performance changes. Frontal cyclone and hurricane case studies further demonstrate that the model reconstructs realistic, interpretable weather-scale dynamical and thermodynamic structure from coarse boundary information. The AI-based LAM is further tested by downscaling 30-year global climate model runs in 1980--2010 and 2070--2100, and climate model ensembles in 2025-2027. In this application, the model remains stable at hourly downscaling frequencies for all 30 years and effectively captures future climate-change signals, indicating meaningful generalization across different climate regimes. When downscaling ensembles, the model produces well-posed ensemble distributions without collapsing the ensemble spread. Overall, the AI-based LAM of this study offers good downscaling performance and generalization abilities. It provides a practical and transferable example of adapting AI weather prediction models for regional climate applications.</span> <span class="abstract-toggle" data-id="2602.18646">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.18646v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.18646v2) · [:material-content-copy: BibTeX](../../bibtex/2602.18646.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a>
     { .paper-tags }
 
 </div>

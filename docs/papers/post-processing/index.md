@@ -8,11 +8,24 @@ hide:
 
 # Post-processing
 
-<p class="page-meta" markdown="span">25 papers · <a href="../../bib/post-processing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">26 papers · <a href="../../bib/post-processing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Low-rank tensor structure of precipitation and its application to satellite-reference merging { #2610.11000 }
+
+    *Ryan Solgi, Rohan Shankar, Hugo A. Loaiciga* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.11000">The intermittent and variable nature of precipitation makes its accurate estimation over extended domains difficult, yet its spatiotemporal structure suggests that a low-rank representation may be...</span><span class="abstract-full" id="full-2610.11000" hidden>The intermittent and variable nature of precipitation makes its accurate estimation over extended domains difficult, yet its spatiotemporal structure suggests that a low-rank representation may be possible. This work represents daily precipitation over the contiguous United States (CONUS) as spatiotemporal tensors and applies CANDECOMP/PARAFAC factorization, showing that preserving the native spatial and temporal modes yields more accurate reconstruction than factorizing independent daily fields or unfolded space--time matrices. Building on this finding, this work presents TMerge, a tensor-based framework that integrates satellite precipitation with sparse reference observations through shared low-rank spatial and temporal factors. TMerge was applied to correct the IMERG Final Run product with climate prediction center reference observations over CONUS. During 2019-2022, TMerge increased correlation from 0.53 to 0.85 and reduced root-mean-square error and mean absolute error by 48.2% and 29.3%, respectively. TMerge consistently outperformed linear bias correction, quantile mapping, and neural networks across seasons, precipitation-intensity regimes, and regions. Improvements were spatially coherent and largest in coastal regions where IMERG errors were greatest. These results demonstrate that low-rank tensor structure parsimoniously approximates the dominant spatiotemporal variability of precipitation and provides a practical mechanism for improving satellite estimates under limited reference observations over extended domains.</span> <span class="abstract-toggle" data-id="2610.11000">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.11000v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.11000v1) · [:material-content-copy: BibTeX](../../bibtex/2610.11000.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
 
 -   #### ClimTip-GML: A global bias-corrected and downscaled dataset for assessing impacts of climate tipping events { #2609.23149 }
 
