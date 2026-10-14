@@ -8,11 +8,24 @@ hide:
 
 # Hydrology
 
-<p class="page-meta" markdown="span">37 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">38 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes { #2610.14493 }
+
+    *M Jawad, HV Gupta, MA Farmani, A Behrangi, GY Niu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.14493">Recent advances in machine learning have improved rainfall-runoff prediction, yet most data-driven models remain difficult to interpret and do not explicitly enforce physical conservation laws. We...</span><span class="abstract-full" id="full-2610.14493" hidden>Recent advances in machine learning have improved rainfall-runoff prediction, yet most data-driven models remain difficult to interpret and do not explicitly enforce physical conservation laws. We present the Gated Catchment Hydrology Model (GCHM), a mass-conserving architecture based on the Mass-Conserving Perceptron (MCP). GCHM uses five storage states representing canopy interception, snow, soil moisture, groundwater, and streamflow generation. Constrained gates govern precipitation partitioning, evapotranspiration, infiltration, seepage, runoff, and baseflow while learning context-dependent process relationships.   We evaluate GCHM across 50 CAMELS catchments spanning snowmelt-dominated, recent-rainfall, historical-rainfall, and arid regimes, using NOAA AORC meteorological forcing and remotely sensed vegetation and land-surface data. Performance is assessed using the Jawad-Kling-Gupta Efficiency (JKGE) metric, which accounts for stationary and non-stationary hydrologic behavior. We compare the full architecture with ablated variants and recurrent neural network benchmarks.   GCHM reproduces streamflow dynamics across diverse hydroclimatic regimes, including arid catchments, while maintaining interpretable states and fluxes. Ablation experiments show that simplified architectures may perform adequately under wet conditions but struggle to represent flow persistence and recession during dry periods, when groundwater storage sustains low flows. Learned gates recover hydrologically plausible relationships governing snowmelt, runoff, seepage, and evapotranspiration. GCHM combines competitive predictive performance with mass conservation and interpretability, providing a foundation for hydrologic modeling and counterfactual analysis.</span> <span class="abstract-toggle" data-id="2610.14493">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.14493v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.14493v1) · [:material-content-copy: BibTeX](../../bibtex/2610.14493.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
+    { .paper-tags }
 
 -   #### Rainfall Sensing via Mobile Communication Signals { #2608.16088 }
 
@@ -389,19 +402,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Using Machine Learning to Discover Parsimonious and Physically-Interpretable Representations of Catchment-Scale Rainfall-Runoff Dynamics { #2412.04845 }
-
-    *Yuan-Heng Wang, Hoshin V. Gupta* · Dec 2024
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2412.04845">Due largely to challenges associated with physical interpretability of machine learning (ML) methods, and because model interpretability is key to credibility in management applications, many...</span><span class="abstract-full" id="full-2412.04845" hidden>Due largely to challenges associated with physical interpretability of machine learning (ML) methods, and because model interpretability is key to credibility in management applications, many scientists and practitioners are hesitant to discard traditional physical-conceptual (PC) modeling approaches despite their poorer predictive performance. Here, we examine how to develop parsimonious minimally-optimal representations that can facilitate better insight regarding system functioning. The term minimally-optimal indicates that the desired outcome can be achieved with the smallest possible effort and resources, while parsimony is widely held to support understanding. Accordingly, we suggest that ML-based modeling should use computational units that are inherently physically-interpretable, and explore how generic network architectures comprised of Mass-Conserving-Perceptron can be used to model dynamical systems in a physically-interpretable manner.   In the context of spatially-lumped catchment-scale modeling, we find that both physical interpretability and good predictive performance can be achieved using a distributed-state network with context-dependent gating and information sharing across nodes. The distributed-state mechanism ensures a sufficient number of temporally-evolving properties of system storage while information-sharing ensures proper synchronization of such properties. The results indicate that MCP-based ML models with only a few layers (up to two) and relativity few physical flow pathways (up to three) can play a significant role in ML-based streamflow modelling.</span> <span class="abstract-toggle" data-id="2412.04845">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2412.04845v5) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2412.04845v5) · [:material-content-copy: BibTeX](../../bibtex/2412.04845.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
     { .paper-tags }
 
 </div>

@@ -8,11 +8,24 @@ hide:
 
 # Ocean & Sea Ice
 
-<p class="page-meta" markdown="span">88 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">89 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Learning native eddy-resolving ocean dynamics outperforms coarse emulation and downscaling { #2610.14645 }
+
+    *Zilu Liu, Tao Zhang, Hailong Liu, Kai Xu, Qinghui Lin, Maoxue Yu, Jiangfeng Yu, Jingwei Xie et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.14645">Eddy-resolving ocean simulations are essential for representing mesoscale dynamics that regulate ocean circulation, energy transport, and climate variability. However, they are costly to generate,...</span><span class="abstract-full" id="full-2610.14645" hidden>Eddy-resolving ocean simulations are essential for representing mesoscale dynamics that regulate ocean circulation, energy transport, and climate variability. However, they are costly to generate, store, and share. Artificial intelligence (AI) may help, but it remains unclear whether high-resolution ocean fields can be faithfully represented by evolving ocean states at coarse resolution followed by spatial downscaling, or whether dynamical evolution needs to be learned directly from native high-resolution simulations. We show that directly learning dynamical evolution on a 0.1$^\circ$ grid provides a more faithful representation of mesoscale variability than evolving ocean states on a 1$^\circ$ grid followed by downscaling reconstruction. We developed a full-depth 1$^\circ$ emulator and a native 0.1$^\circ$ sea surface temperature (SST) emulator, both of which remained stable over long-term free-running simulations without significant drift, providing reliable baselines for this comparison. Direct learning at 0.1$^\circ$ preserves mesoscale energy, spectral characteristics, and frontal gradients, whereas the coarse-resolution evolution followed by downscaling approach recovers large-scale patterns but fails to reproduce key mesoscale signatures. We show that the learned mesoscale statistics remain consistent across diverse hardware platforms, supporting the reproducibility and portability of AI-based ocean simulations. These results suggest that downscaling of low-resolution large-scale states alone is insufficient to represent ocean mesoscale variability, supporting the need to learn dynamical evolution directly in a high-resolution state space. These findings highlight the continued importance of high-resolution physics ocean models as a foundation for AI-based ocean simulation, providing dynamically resolved training data for physically faithful high-resolution emulators.</span> <span class="abstract-toggle" data-id="2610.14645">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.14645v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.14645v1) · [:material-content-copy: BibTeX](../../bibtex/2610.14645.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a>
+    { .paper-tags }
 
 -   #### Multi-model ocean oxygen fields predicted by conditional diffusion models { #2610.08523 }
 
@@ -374,19 +387,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
-    { .paper-tags }
-
--   #### Rapid estimation of global sea surface temperatures from sparse streaming in situ observations { #2601.21913 }
-
-    *Cassidy All, Kevin Ho, Maya Magnuski, Christopher Nicolaides, Louisa B. Ebby, Mohammad Farazmand* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.21913">Reconstructing high-resolution sea surface temperatures (SST) from staggered SST measurements is essential for weather forecasting and climate projections. However, when SST measurements are sparse,...</span><span class="abstract-full" id="full-2601.21913" hidden>Reconstructing high-resolution sea surface temperatures (SST) from staggered SST measurements is essential for weather forecasting and climate projections. However, when SST measurements are sparse, the resulting inferred SST fields are rather inaccurate. Here, we demonstrate the ability of Sparse Discrete Empirical Interpolation Method (S-DEIM) to reconstruct the high-resolution SST field from sparse in situ observations, without using a model. The S-DEIM estimate consists of two terms, one computed from instantaneous in situ observations using empirical interpolation, and the other learned from the historical time series of observations using recurrent neural networks (RNNs). We train the RNNs using the National Oceanic and Atmospheric Administration's weekly high-resolution SST dataset spanning the years 1989-2021 which constitutes the training data. Subsequently, we examine the performance of S-DEIM on the test data, comprising January 2022 to January 2023. For this test data, S-DEIM infers the high-resolution SST from 100 in situ observations, constituting only 0.2% of the high-resolution spatial grid. We show that the resulting S-DEIM reconstructions are about 40% more accurate than earlier empirical interpolation methods, such as DEIM and Q-DEIM. Furthermore, 91% of S-DEIM estimates fall within $\pm 1^\circ$C of the true SST. We also demonstrate that S-DEIM is robust with respect to sensor placement: even when the sensors are distributed randomly, S-DEIM reconstruction error deteriorates only by 1-2%. S-DEIM is also computationally efficient. Training the RNN, which is performed only once offline, takes approximately one minute. Once trained, the S-DEIM reconstructions are computed in less than a second. As such, S-DEIM can be used for rapid SST reconstruction from sparse streaming observational data in real time.</span> <span class="abstract-toggle" data-id="2601.21913">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.21913v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.21913v1) · [:material-content-copy: BibTeX](../../bibtex/2601.21913.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
     { .paper-tags }
 
 </div>

@@ -8,11 +8,37 @@ hide:
 
 # Other
 
-<p class="page-meta" markdown="span">206 papers · page 1 of 7 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">208 papers · page 1 of 7 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Forecasting carbon-risk hotspots ahead of the extreme 2026 El Niño { #2610.16714 }
+
+    *Xiaomeng Du, Runda Jiang, Philippe Ciais, Pierre Friedlingstein, Stephen Sitch, Mike O'Sullivan et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.16714">A potentially super El Niño is forecasted in 2026, raising the need to anticipate land carbon-cycle risks before its impacts unfold. We develop a prospective early-warning framework that uses dynamic...</span><span class="abstract-full" id="full-2610.16714" hidden>A potentially super El Niño is forecasted in 2026, raising the need to anticipate land carbon-cycle risks before its impacts unfold. We develop a prospective early-warning framework that uses dynamic global vegetation models driven by an ensemble of ECMWF seasonal climate forecasts and machine-learning burned area predictions. Forecasts indicate a $0.23 \pm 0.21$ PgC reduction in global net biome productivity in the second half of 2026, with hotspots of sink weakening in eastern South America and elevated fire risk in Southeast Asia.</span> <span class="abstract-toggle" data-id="2610.16714">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.16714v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.16714v1) · [:material-content-copy: BibTeX](../../bibtex/2610.16714.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
+
+-   #### Sensitivity Fidelity Reveals Physical Dependencies Beyond Forecast Accuracy in Deep-Learning Earth-System Models { #2610.15540 }
+
+    *Qi Chen, Peng Zhan, Hongxing Cui, Wenqing Cui, Ibrahim Hoteit* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.15540">Deep-learning models increasingly rival numerical simulation in Earth-system forecasting, yet forecast error alone cannot determine whether their learned input-output dependencies are physically...</span><span class="abstract-full" id="full-2610.15540" hidden>Deep-learning models increasingly rival numerical simulation in Earth-system forecasting, yet forecast error alone cannot determine whether their learned input-output dependencies are physically consistent. Here we introduce sensitivity fidelity as an additional criterion: alongside prediction error, model responses to input perturbations should be examined against a trusted reference or established physical knowledge. In an idealized Rayleigh-Bénard convection benchmark, four surrogate architectures achieved low forecast errors yet encoded markedly different sensitivities. Quantitative comparison with a matched adjoint distinguished the models far more sharply than forecast accuracy and showed that predictive skill and sensitivity fidelity need not coincide, while finite-perturbation experiments further linked these differences to the propagation of initial-condition uncertainty. We then applied this strategy to El Niño-Southern Oscillation prediction, where no adjoint reference exists and learned sensitivities showed event-wise robustness, validity under finite perturbations, and consistency with established precursors. These results identify gradient-based evaluation as a discriminating complement to forecast-error metrics, providing a practical test of whether data-driven Earth-system models learn physically credible dependencies.</span> <span class="abstract-toggle" data-id="2610.15540">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.15540v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.15540v1) · [:material-content-copy: BibTeX](../../bibtex/2610.15540.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
 
 -   #### A Physics-Constrained Implicit Profile Network for Continuous Reconstruction of Tropical Cyclone Near-Surface Wind Profiles { #2610.11405 }
 
@@ -367,32 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### Climate-Dyna Deep Hedging for XVAs: Model-Based Reinforcement Learning, Residual Climate HVA, and Hedge-Instrument Discovery { #2608.01208 }
-
-    *Xiaozhen Wang, Francois Buet-Golfouse* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.01208">For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot...</span><span class="abstract-full" id="full-2608.01208" hidden>For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot be inferred from a stand-alone stress loss. We obtain this residual by comparing paired climate-on and baseline worlds and reoptimizing the overlay for each hedge universe, which also turns hedge-instrument discovery into a valuation problem: an instrument is useful to the extent that it lowers the optimized residual cost. The linear-Gaussian case has an exact finite-horizon Riccati solution; Climate-Dyna starts from that hedge and learns the remaining nonlinear correction from paired world-model rollouts, with an independent gate deciding whether to deploy the update. In a public-data-calibrated semi-synthetic EU ETS study, crediting the inherited hedge lowers the mean climate charge from 1.517 to 0.906, and the learned overlay lowers it to 0.831 against a 0.821 exact floor; residual Dyna cuts regret by 93% relative to replay with one quarter as many trajectories, while adaptation from only 25 target transitions retains 60.7% of the exact-assisted gain.</span> <span class="abstract-toggle" data-id="2608.01208">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.01208v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.01208v1) · [:material-content-copy: BibTeX](../../bibtex/2608.01208.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a>
-    { .paper-tags }
-
--   #### A Machine Learning-based Non-precipitating Clouds Estimation for THz Dual-Frequency Radar { #2608.00653 }
-
-    *Kazuhiko Tamesue, Zheng Wen, Shotaro Yamaguchi, Hiroyuki Kasai, Wataru Kameyama, Toshio Sato et al.* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.00653">Accurate measurement of non-precipitable clouds is important for early prediction of heavy rainfall disasters caused by extreme weather events. However, microwave cloud radar cannot observe the early...</span><span class="abstract-full" id="full-2608.00653" hidden>Accurate measurement of non-precipitable clouds is important for early prediction of heavy rainfall disasters caused by extreme weather events. However, microwave cloud radar cannot observe the early stages of cloud development from non-precipitation clouds (cumulus) to cumulonimbus. In this paper, we propose a terahertz dual-frequency cloud radar using 150 GHz and 95 GHz bands to detect cloud particles in cumulus smaller than 10 μm. Using a dataset generated by the ITU-R radio propagation model, we estimate the liquid water content of non-precipitation clouds and water vapor content in atmospheric gases, respectively, by using a machine learning-based approach. The effectiveness of using the dual wavelength ratio as an explanatory variable is examined.</span> <span class="abstract-toggle" data-id="2608.00653">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.00653v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.00653v1) · [:material-content-copy: BibTeX](../../bibtex/2608.00653.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
     { .paper-tags }
 
 </div>

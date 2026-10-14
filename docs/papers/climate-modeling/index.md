@@ -8,11 +8,24 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">299 papers · page 1 of 10 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">300 papers · page 1 of 10 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Identifying Arctic states vulnerable to rapid ice loss with a convolutional neural network { #2610.16584 }
+
+    *Matthew Patterson, Ioana Colfescu, Nathan Kirk, Graeme MacGhilchrist* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.16584">This work investigates the incidence of rapid ice-loss events in the Arctic, in which a substantial fraction of September sea-ice is lost in only a few years. Such events are seen to occur in climate...</span><span class="abstract-full" id="full-2610.16584" hidden>This work investigates the incidence of rapid ice-loss events in the Arctic, in which a substantial fraction of September sea-ice is lost in only a few years. Such events are seen to occur in climate model simulations forced with increasing greenhouse gas concentrations, but not as yet in the relatively short observational record. We train a convolutional neural network (CNN) using six large climate model ensembles to diagnose vulnerability to rapid ice-loss events. The trained model is shown to separate higher and lower risk states in out-of-sample climate models via a leave-one-out cross-validation. The model emphasises the role of persistently thin sea-ice, remaining sea-ice extent and sustained high upper ocean heat content as predictors of rapid ice-loss. The CNN is applied to observational data over the satelite-era showing a signal for rapid ice-loss prior to a drop around 2007 and an increasing risk from around 2015 to present. Such rapid-ice loss events would likely have dramatic consequences for Arctic ecosystems, coastal communities and global shipping.</span> <span class="abstract-toggle" data-id="2610.16584">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.16584v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.16584v1) · [:material-content-copy: BibTeX](../../bibtex/2610.16584.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a>
+    { .paper-tags }
 
 -   #### SciExam for ENSO: Can AI Agents Build Climate Models? { #2610.10513 }
 
@@ -371,19 +384,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability { #2608.01864 }
-
-    *Henri Funk, Cornelia Gruber, Göran Kauermann, Helmut Küchenhoff, Magdalena Mittermeier* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.01864">Predicting drought risk is essential for anticipating impacts on water resources, agriculture, ecosystems, and climate adaptation planning. Yet drought forecasts remain uncertain because variability...</span><span class="abstract-full" id="full-2608.01864" hidden>Predicting drought risk is essential for anticipating impacts on water resources, agriculture, ecosystems, and climate adaptation planning. Yet drought forecasts remain uncertain because variability can substantially alter regional precipitation and evaporative demand. Treating this variability as unstructured noise ignores the fact that internal variability has spatial, seasonal, and temporal structure and thus contains information that can be used to improve drought forecasting. We propose a deep-learning-based forecasting framework for European drought prediction and extend it with an uncertainty-aware drought bound that explicitly incorporates internal forecast variability from a large climate model ensemble. This bound represents a physically plausible lower-tail trajectory of future drought conditions and marks how severe drought could plausibly become under an unfavourable realisation of internal variability, giving adaptation planning a conservative, risk-averse reference. We compare the proposed bound with a lower bound derived from reanalysis data only and show that our proposed ensemble-informed bound is better calibrated across most regions and seasons. This is specifically true during anomalously dry conditions, when historical reanalysis alone underestimates lower-tail drought risk. Our results show that internal variability should be treated as a forecast quantity in its own right. More broadly, large ensembles provide a practical way to transfer physically plausible climate variability into machine-learning drought forecasts, yielding risk-aware bounds that are more informative for drought assessment under shifting climate conditions.</span> <span class="abstract-toggle" data-id="2608.01864">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.01864v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.01864v1) · [:material-content-copy: BibTeX](../../bibtex/2608.01864.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
 </div>

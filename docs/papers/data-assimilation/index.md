@@ -8,11 +8,24 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">78 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">79 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Accounting for model error in ensemble variational data assimilation through learned generative dynamics { #2610.17333 }
+
+    *Marc Bocquet, Tobias S. Finn, Sibo Cheng* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.17333">Many approaches have recently been proposed to combine data assimilation with machine learning for improved forecasts with geophysical models. Here, we focus on combining advanced sequential data...</span><span class="abstract-full" id="full-2610.17333" hidden>Many approaches have recently been proposed to combine data assimilation with machine learning for improved forecasts with geophysical models. Here, we focus on combining advanced sequential data assimilation schemes with a generative forecasting model which accounts for complex model errors. This generative model provides a stochastic approximation of the conditional distribution of the successor state given the current state. The proposed variational formulation is a novel one-step weak-constraint 4D-Var scheme in which a learned conditional stochastic forecast replaces the prescribed additive Gaussian model error representation. We derive and implement this formulation as an ensemble variational algorithm, the generative iterative ensemble Kalman filter (IEnKF-G), which generalises the iterative ensemble Kalman filter with additive Gaussian model error (IEnKF-Q). We extend the method to a smoother with an assimilation window spanning multiple time steps and propose a simplified variant.   The IEnKF-G is evaluated on a stochastic variant of the Lorenz 1963 model to assess its robustness. It is then tested on a multi-scale variant of the one-dimensional Lorenz 1996 model, in which the resolved variables are affected by model error originating from the hidden small-scale variables. The algorithm is then compared to an ensemble Kalman filter that adaptively mitigates model and sampling errors, and to the IEnKF-Q. The IEnKF-G is generally more accurate in the tested configurations, with substantial gains under partial observations and significant model error. This demonstrates the potential of generative data-driven models when paired with classical data assimilation methods, particularly when model error is substantial.</span> <span class="abstract-toggle" data-id="2610.17333">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.17333v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.17333v1) · [:material-content-copy: BibTeX](../../bibtex/2610.17333.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
 
 -   #### The interface of data assimilation and machine learning { #2610.07496 }
 
@@ -365,16 +378,6 @@ hide:
     <span class="abstract-snippet" id="snip-2601.20295">Bridging the sim2real gap between computationally inexpensive models and complex physical systems remains a central challenge in machine learning applications to engineering problems, particularly in...</span><span class="abstract-full" id="full-2601.20295" hidden>Bridging the sim2real gap between computationally inexpensive models and complex physical systems remains a central challenge in machine learning applications to engineering problems, particularly in multi-scale settings where reduced-order models typically capture only dominant dynamics. In this work, we present Cheap2Rich, a multi-scale data assimilation framework that reconstructs high-fidelity state spaces from sparse sensor histories by combining a fast low-fidelity prior with learned, interpretable discrepancy corrections. We demonstrate the performance on rotating detonation engines (RDEs), a challenging class of systems that couple detonation-front propagation with injector-driven unsteadiness, mixing, and stiff chemistry across disparate scales. Our approach successfully reconstructs high-fidelity RDE states from sparse measurements while isolating physically meaningful discrepancy dynamics associated with injector-driven effects. The results highlight a general multi-fidelity framework for data assimilation and system identification in complex multi-scale systems, enabling rapid design exploration and real-time monitoring and control while providing interpretable discrepancy dynamics. Code for this project is is available at: github.com/kro0l1k/Cheap2Rich.</span> <span class="abstract-toggle" data-id="2601.20295">more</span>
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.20295v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.20295v1) · [:material-content-copy: BibTeX](../../bibtex/2601.20295.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### GenDA: Generative Data Assimilation on Complex Urban Areas via Classifier-Free Diffusion Guidance { #2601.11440 }
-
-    *Francisco Giral, Álvaro Manzano, Ignacio Gómez, Ricardo Vinuesa, Soledad Le Clainche* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.11440">Urban wind flow reconstruction is essential for assessing air quality, heat dispersion, and pedestrian comfort, yet remains challenging when only sparse sensor data are available. We propose GenDA, a...</span><span class="abstract-full" id="full-2601.11440" hidden>Urban wind flow reconstruction is essential for assessing air quality, heat dispersion, and pedestrian comfort, yet remains challenging when only sparse sensor data are available. We propose GenDA, a generative data assimilation framework that reconstructs high-resolution wind fields on unstructured meshes from limited observations. The model employs a multiscale graph-based diffusion architecture trained on computational fluid dynamics (CFD) simulations and interprets classifier-free guidance as a learned posterior reconstruction mechanism: the unconditional branch learns a geometry-aware flow prior, while the sensor-conditioned branch injects observational constraints during sampling. This formulation enables obstacle-aware reconstruction and generalization to held-out mesh geometries, wind directions, and sensor configurations within the studied urban-flow setting, without retraining. We consider both sparse fixed sensors and trajectory-based observations using the same reconstruction procedure. When evaluated against supervised graph neural network (GNN) baselines and classical reduced-order data assimilation methods, GenDA reduces the relative root-mean-square error (RRMSE) by 25-57% and increases the structural similarity index (SSIM) by 23-33% across the tested meshes. Experiments are conducted on Reynolds-averaged Navier-Stokes (RANS) simulations of a real urban neighborhood in Bristol, United Kingdom, at a characteristic Reynolds number of $\mathrm{Re}\approx2\times10^{7}$, featuring complex building geometry and irregular terrain. The proposed framework provides a scalable path toward generative, geometry-aware data assimilation for environmental monitoring in complex domains.</span> <span class="abstract-toggle" data-id="2601.11440">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.11440v3) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.11440v3) · [:material-content-copy: BibTeX](../../bibtex/2601.11440.bib){ .bibtex-link }
     { .paper-links }
 
 </div>
