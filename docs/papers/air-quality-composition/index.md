@@ -8,11 +8,24 @@ hide:
 
 # Air Quality & Composition
 
-<p class="page-meta" markdown="span">71 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">72 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Collaborative Neural Networks significantly Improve Global Aerosol Retrievals From Multi-Angle Polarimeters { #2610.19217 }
+
+    *Guangliang Fu, Sha Lu, Meng Gao, Jeroen Rietjens, Otto Hasekamp* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.19217">We present the RemoTAP-Hybrid algorithm for global aerosol products retrieved from Multi-Angle Polarimeters (MAP), and apply it to one-year aerosol retrievals from the SPEXone MAP instrument. For the...</span><span class="abstract-full" id="full-2610.19217" hidden>We present the RemoTAP-Hybrid algorithm for global aerosol products retrieved from Multi-Angle Polarimeters (MAP), and apply it to one-year aerosol retrievals from the SPEXone MAP instrument. For the first time, Multiple Collaborated Neural Networks (MCNN) are used to perform global aerosol MAP retrievals over land and ocean. The combined use of MCNN with a full physics inversion in RemoTAP-Hybrid, significantly improves accuracy and computational speed of SPEXone aerosol retrievals. We validate the retrieved Aerosol Optical Depth (AOD), Angstrom Exponent (AE), Single Scattering Albedo (SSA), Absorption AOD (AAOD), Fine mode AOD (FAOD), Coarse mode AOD (CAOD), and fine mode effective radius (reff_fine) with AERONET data. The validation suggests that aerosol retrievals can be further improved when extending the aerosol description to include a fine non-spherical mode. For AOD, the Root-Mean-Square Error (RMSE) is 0.051 (0.037) over land (ocean), while 78.3% (80.8%) of the retrievals are within the requirement formulated by the Global Climate Observing System (GCOS). The RMSE is 0.186 (0.207) for AE, 0.038 (0.044) for SSA, 0.023 (0.014) for AAOD, 0.047 (0.031) for FAOD, 0.043 (0.027) for CAOD, and 0.021 (0.026) for reff_fine over land (ocean). Compared to the current RemoTAP algorithm, RemoTAP-Hybrid shows improved agreement with AERONET for AOD, AE, and FAOD over land and ocean while the number of valid retrievals is increased by 4% (3%) over land (ocean) and the computational time is reduced by 43% (32%). Finally, we present the first global seasonal maps of aerosol optical and microphysical properties and chemical composition from SPEXone.</span> <span class="abstract-toggle" data-id="2610.19217">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.19217v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.19217v1) · [:material-content-copy: BibTeX](../../bibtex/2610.19217.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
 
 -   #### From Regional to Global: Transfer Learning for Atmospheric Transport Emulators { #2609.23838 }
 
@@ -368,19 +381,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Calibrating Geophysical Predictions under Constrained Probabilistic Distributions { #2512.03081 }
-
-    *Zhewen Hou, Jiajin Sun, Subashree Venkatasubramanian, Peter Jin, Shuolin Li, Tian Zheng* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.03081">Machine learning (ML) has shown significant promise in studying complex geophysical dynamical systems, including turbulence and climate processes. Such systems often display sensitive dependence on...</span><span class="abstract-full" id="full-2512.03081" hidden>Machine learning (ML) has shown significant promise in studying complex geophysical dynamical systems, including turbulence and climate processes. Such systems often display sensitive dependence on initial conditions, reflected in positive Lyapunov exponents, where even small perturbations in short-term forecasts can lead to large deviations in long-term outcomes. Thus, meaningful inference requires not only accurate short-term predictions, but also consistency with the system's long-term attractor that is captured by the marginal distribution of state variables. Existing approaches attempt to address this challenge by incorporating spatial and temporal dependence, but these strategies become impractical when data are extremely sparse. In this work, we show that prior knowledge of marginal distributions offers valuable complementary information to short-term observations, motivating a distribution-informed learning framework. We introduce a calibration algorithm based on normalization and the Kernelized Stein Discrepancy (KSD) to enhance ML predictions. The method here employs KSD within a reproducing kernel Hilbert space to calibrate model outputs, improving their fidelity to known physical distributions. This not only sharpens pointwise predictions but also enforces consistency with non-local statistical structures rooted in physical principles. Through synthetic experiments-spanning offline climatological CO2 fluxes and online quasi-geostrophic flow simulations-we demonstrate the robustness and broad utility of the proposed framework.</span> <span class="abstract-toggle" data-id="2512.03081">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.03081v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.03081v2) · [:material-content-copy: BibTeX](../../bibtex/2512.03081.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
 </div>

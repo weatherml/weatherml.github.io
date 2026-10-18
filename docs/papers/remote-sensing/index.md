@@ -8,11 +8,24 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">100 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">101 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression { #2610.21654 }
+
+    *Asanobu Kitamoto, Victor Le Louarn, Noelia Falczuk, Ngoc Anh Tong, Anja Veleva* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.21654">This paper presents the Digital Typhoon Dataset V3, a new version of the longest typhoon satellite image dataset spanning nearly 50 years, designed to benchmark machine learning models on long-term...</span><span class="abstract-full" id="full-2610.21654" hidden>This paper presents the Digital Typhoon Dataset V3, a new version of the longest typhoon satellite image dataset spanning nearly 50 years, designed to benchmark machine learning models on long-term spatio-temporal data. The latest addition to Dataset V3 is multispectral satellite data, enabling multi-channel models. We investigate data-splitting strategies and present benchmarking results for the Northern and Southern Hemispheres. Experimental results show that, under the current dataset construction and experimental setting, multi-channel inputs do not clearly outperform single-channel inputs for pressure regression. Among the evaluated model architectures, image types, and spectral channels, ResNet-18, full-resolution images, and Channel 1 generally provide the best single-channel performance for pressure regression. Performance also differs between the WP and AU datasets by regression target, with lower RMSE on WP for pressure regression and on AU for wind regression. These results highlight the importance of considering dataset-specific and task-specific characteristics when interpreting benchmark performance. Additionally, we analyzed systematic bias in intensity regression, which leads to underestimation of intensity for strong typhoons. We tested imbalance-aware weighting strategies, including inverse-density weighting inspired by BalancedMSE, and showed that these approaches are not sufficient to remove the bias. The dataset is publicly available at http://agora.ex.nii.ac.jp/digital-typhoon/dataset/ and https://github.com/kitamoto-lab/digital-typhoon/.</span> <span class="abstract-toggle" data-id="2610.21654">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.21654v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.21654v1) · [:fontawesome-brands-github: Code](https://github.com/kitamoto-lab/digital-typhoon) · [:material-content-copy: BibTeX](../../bibtex/2610.21654.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
+    { .paper-tags }
 
 -   #### Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals from infrared brightness temperature { #2610.09859 }
 
@@ -377,19 +390,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
-    { .paper-tags }
-
--   #### Toward a Scientific Discovery Engine for Weather and Climate Data: A Visual Analytics Workbench for Embedding-Based Exploration { #2605.00972 }
-
-    *Nihanth W. Cherukuru, Matt Rehme, Kirsten J. Mayer, David John Gagne, John Schreck, John Clyne et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.00972">Earth system science is producing increasingly large, high-dimensional datasets from both physics-based and AI-driven models. While embedding-based representations make these data searchable and...</span><span class="abstract-full" id="full-2605.00972" hidden>Earth system science is producing increasingly large, high-dimensional datasets from both physics-based and AI-driven models. While embedding-based representations make these data searchable and serve as foundational building blocks for AI-driven discovery engines, nearest neighbors in latent spaces are not automatically scientifically meaningful. They may reflect real meteorological structures, or simply artifacts of preprocessing, geography, or model bias. Researchers therefore need visual tools to inspect latent space organization, trace search results back to physical evidence, and evaluate candidate representations against one another.   We present an open source visual analytics workbench designed to support this provenance-aware scientific retrieval workflow. The system links distinct embedding experiments to shared source data, metadata, spatial contexts, and model configurations. It enables interactive retrieval strategy design by allowing users to issue image-level and localized patch-level queries, apply multi-constraint filters, and inspect analogs through familiar meteorological views. This facilitates a discovery loop where scientists characterize a phenomenon in a well-understood dataset and use its latent signature to probe larger archives. While we demonstrate the workbench through a tropical cyclone retrieval scenario using a vision foundation model (DINOv3) on ERA5 data, the framework is model-agnostic and designed to integrate with other embedding architectures in the future. Finally, we evaluate its out-of-core retrieval backend, demonstrating that interactive visual search over tens of millions of embeddings is highly scalable on commodity hardware.</span> <span class="abstract-toggle" data-id="2605.00972">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.00972v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.00972v2) · [:material-content-copy: BibTeX](../../bibtex/2605.00972.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
     { .paper-tags }
 
 </div>

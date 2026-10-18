@@ -8,11 +8,24 @@ hide:
 
 # Hydrology
 
-<p class="page-meta" markdown="span">38 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">39 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data { #2610.19994 }
+
+    *Bipin Kumar, Rajib Chattopadhyay, Harsh P. Bachhav,  Jannu, Bhupendra Bahadur Singh, Ramesh Ragala et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.19994">High-resolution precipitation datasets are essential for weather forecasting, hydrological modeling, and climate risk assessment, yet observation-based gridded products often lack the spatial detail...</span><span class="abstract-full" id="full-2610.19994" hidden>High-resolution precipitation datasets are essential for weather forecasting, hydrological modeling, and climate risk assessment, yet observation-based gridded products often lack the spatial detail required for regional applications. Here we present PrecipCorrDiff, a diffusion-based downscaling framework built by modifying the original corrector diffusion based archetecture that incorporates a customized loss function and a multi-scale residual generation strategy to improve the precipitation especially the representation of extremes. PrecipCorrDiff generates 0.0625° resolution India Meteorological Department (IMD) precipitation fields from 0.25° gridded data while preserving precipitation statistics and reconstructing fine-scale spatial variability. Validation against independent IMD station observations, comparing the proposed framework with the SRGAN-based model and the original CorrDiff model, indicates that the proposed framework substantially improves the representation of spatial precipitation patterns, rainfall intensity distributions, and extreme rainfall events, while eliminating the systematic negative bias present in the previously developed SRGAN-based model. Across four climatologically distinct homogeneous Indian monsoon regions, PrecipCorrDiff reproduces observed precipitation characteristics with near-zero spatial bias, demonstrating the potential of diffusion-based downscaling for generating physically consistent, high-resolution precipitation datasets for hydrological, meteorological, and climate applications.</span> <span class="abstract-toggle" data-id="2610.19994">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.19994v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.19994v1) · [:material-content-copy: BibTeX](../../bibtex/2610.19994.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a>
+    { .paper-tags }
 
 -   #### A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes { #2610.14493 }
 
@@ -389,19 +402,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### A Physics-Constrained Neural Differential Equation Framework for Data-Driven Snowpack Simulation { #2412.06819 }
-
-    *Andrew Charbonneau, Katherine Deck, Tapio Schneider* · Dec 2024
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2412.06819">This paper presents a physics-constrained neural differential equation framework for parameterization, and employs it to model the time evolution of seasonal snow depth given hydrometeorological...</span><span class="abstract-full" id="full-2412.06819" hidden>This paper presents a physics-constrained neural differential equation framework for parameterization, and employs it to model the time evolution of seasonal snow depth given hydrometeorological forcings. When trained on data from multiple SNOTEL sites, the parameterization predicts daily snow depth with under 9% median error and Nash Sutcliffe Efficiencies over 0.94 across a wide variety of snow climates. The parameterization also generalizes to new sites not seen during training, which is not often true for calibrated snow models. Requiring the parameterization to predict snow water equivalent in addition to snow depth only increases error to ~12%. The structure of the approach guarantees the satisfaction of physical constraints, enables these constraints during model training, and allows modeling at different temporal resolutions without additional retraining of the parameterization. These benefits hold potential in climate modeling, and could extend to other dynamical systems with physical constraints.</span> <span class="abstract-toggle" data-id="2412.06819">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2412.06819v3) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2412.06819v3) · [:material-content-copy: BibTeX](../../bibtex/2412.06819.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
     { .paper-tags }
 
 </div>

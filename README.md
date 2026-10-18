@@ -60,13 +60,15 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1549)
+## Papers (1559)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (369)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (371)</summary>
 
+- **Can AI Forecast the Extremes? Evaluating Probabilistic Weather Models on Tropical Cyclones** (Oct 2026) - [arXiv:2610.22077](https://arxiv.org/abs/2610.22077v1)
+- **Forecast lead time and the timing of crew deployment for weather-driven power outages using AI weather models** (Oct 2026) - [arXiv:2610.20918](https://arxiv.org/abs/2610.20918v1)
 - **Establishing baseline model performances for optical turbulence forecasting** (Oct 2026) - [arXiv:2610.18702](https://arxiv.org/abs/2610.18702v1)
 - **Multivariate phase-space interpretation of ensemble forecasts: A comparison of physical and AI models** (Oct 2026) - [arXiv:2610.16422](https://arxiv.org/abs/2610.16422v1)
 - **WeatherBridge: Forecast-Aware Multi-Source Input Adaptation for Pretrained Weather Forecasting Models** (Oct 2026) - [arXiv:2610.14863](https://arxiv.org/abs/2610.14863v1)
@@ -619,8 +621,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (102)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (103)</summary>
 
+- **Generative modelling for multivariate spatio-temporal downscaling of monthly climate fields** (Oct 2026) - [arXiv:2610.19885](https://arxiv.org/abs/2610.19885v1)
 - **Extreme events and statistics in an AI emulator of a global storm-resolving model** (Oct 2026) - [arXiv:2610.17693](https://arxiv.org/abs/2610.17693v1)
 - **Statistical Downscaling of Daily Precipitation from ERA5 Atmospheric Fields to IMERG over West Africa** (Oct 2026) - [arXiv:2610.16816](https://arxiv.org/abs/2610.16816v1)
 - **Generalizable Neural Downscaling of Earth System Model Wind Fields via Continuous Dynamics Modeling** (Oct 2026) - [arXiv:2610.03757](https://arxiv.org/abs/2610.03757v1)
@@ -844,8 +847,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (300)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (302)</summary>
 
+- **Improved Precipitation Variability in the Community Atmosphere Model through Implementation of a Neural-Network Deep Convection Scheme** (Oct 2026) - [arXiv:2610.20405](https://arxiv.org/abs/2610.20405v1)
+- **Unmasking Compensating Errors in Numerical Weather Models: A Process-Additive Neural Network Approach** (Oct 2026) - [arXiv:2610.19772](https://arxiv.org/abs/2610.19772v1)
 - **Identifying Arctic states vulnerable to rapid ice loss with a convolutional neural network** (Oct 2026) - [arXiv:2610.16584](https://arxiv.org/abs/2610.16584v1)
 - **SciExam for ENSO: Can AI Agents Build Climate Models?** (Oct 2026) - [arXiv:2610.10513](https://arxiv.org/abs/2610.10513v1)
 - **Artificial intelligence pathways from weather to climate** (Oct 2026) - [arXiv:2610.09770](https://arxiv.org/abs/2610.09770v1)
@@ -1150,8 +1155,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/hydrology/">Hydrology</a></b> (38)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/hydrology/">Hydrology</a></b> (39)</summary>
 
+- **PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data** (Oct 2026) - [arXiv:2610.19994](https://arxiv.org/abs/2610.19994v1)
 - **A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes** (Oct 2026) - [arXiv:2610.14493](https://arxiv.org/abs/2610.14493v1)
 - **Rainfall Sensing via Mobile Communication Signals** (Aug 2026) - [arXiv:2608.16088](https://arxiv.org/abs/2608.16088v1)
 - **From Conceptual Hydrologic Models to Conceptually Interpretable Neural Networks: A Snow-Water Mass-Conserving-Perceptron Framework for Discovering Catchment-Scale Precipitation-Storage-Runoff Representations** (Jul 2026) - [arXiv:2607.26492](https://arxiv.org/abs/2607.26492v1)
@@ -1289,8 +1295,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (71)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (72)</summary>
 
+- **Collaborative Neural Networks significantly Improve Global Aerosol Retrievals From Multi-Angle Polarimeters** (Oct 2026) - [arXiv:2610.19217](https://arxiv.org/abs/2610.19217v1)
 - **From Regional to Global: Transfer Learning for Atmospheric Transport Emulators** (Sep 2026) - [arXiv:2609.23838](https://arxiv.org/abs/2609.23838v1)
 - **Quantifying AI data center nitrogen oxide (NO$_x$) emissions from space** (Aug 2026) - [arXiv:2608.22153](https://arxiv.org/abs/2608.22153v1)
 - **Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections** (Aug 2026) - [arXiv:2608.18690](https://arxiv.org/abs/2608.18690v1)
@@ -1366,8 +1373,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (100)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (101)</summary>
 
+- **Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression** (Oct 2026) - [arXiv:2610.21654](https://arxiv.org/abs/2610.21654v1)
 - **Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals from infrared brightness temperature** (Oct 2026) - [arXiv:2610.09859](https://arxiv.org/abs/2610.09859v1)
 - **Low latency global carbon budget reveals strong land sink recovery in 2025** (Sep 2026) - [arXiv:2609.34226](https://arxiv.org/abs/2609.34226v1)
 - **Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework** (Sep 2026) - [arXiv:2609.12254](https://arxiv.org/abs/2609.12254v1)
@@ -1472,8 +1480,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (208)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (210)</summary>
 
+- **Energy Flow Shapes the Decomposition Dynamics of a Reactive Atmospheric Intermediate** (Oct 2026) - [arXiv:2610.21259](https://arxiv.org/abs/2610.21259v1)
+- **Variable Masking for Climate Emulation in ACE** (Oct 2026) - [arXiv:2610.21012](https://arxiv.org/abs/2610.21012v1)
 - **Forecasting carbon-risk hotspots ahead of the extreme 2026 El Niño** (Oct 2026) - [arXiv:2610.16714](https://arxiv.org/abs/2610.16714v1)
 - **Sensitivity Fidelity Reveals Physical Dependencies Beyond Forecast Accuracy in Deep-Learning Earth-System Models** (Oct 2026) - [arXiv:2610.15540](https://arxiv.org/abs/2610.15540v1)
 - **A Physics-Constrained Implicit Profile Network for Continuous Reconstruction of Tropical Cyclone Near-Surface Wind Profiles** (Oct 2026) - [arXiv:2610.11405](https://arxiv.org/abs/2610.11405v1)
