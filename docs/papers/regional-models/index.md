@@ -8,11 +8,24 @@ hide:
 
 # Regional Models
 
-<p class="page-meta" markdown="span">65 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">66 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations { #2610.26145 }
+
+    *Henry Addison, Elizabeth J. Kendon, Peter A. G. Watson* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.26145">Effectively preparing for changes in extreme flooding requires understanding present and future rainfall extremes with return periods up to $\sim$100-1000 years, including changes in intensity,...</span><span class="abstract-full" id="full-2610.26145" hidden>Effectively preparing for changes in extreme flooding requires understanding present and future rainfall extremes with return periods up to $\sim$100-1000 years, including changes in intensity, spatial structure at km-scale and sub-daily temporal variability. Conventional km-scale climate models give greatly increased realism compared to typical global climate models (GCMs) but are too computationally costly to allow enough simulations for robustly quantifying changes in extremes. This work presents an approach based on video diffusion to generate realistic precipitation at 8.8km-hourly resolution by spatially and temporally downscaling daily, GCM-scale atmospheric variables. The emulator is trained to produce similar output to a $4\times$-coarsening of the Met Office's 2.2km-resolution UK convection-permitting model. An application for such an emulator is to downscale large-ensemble GCM simulations to allow quantification of $\sim$100-1000-year return level rainfall, which in turn can be used to drive hydrological and flood models for improved projections of future changes in flood risk.</span> <span class="abstract-toggle" data-id="2610.26145">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.26145v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.26145v1) · [:material-content-copy: BibTeX](../../bibtex/2610.26145.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
 
 -   #### Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment { #2610.12401 }
 
@@ -380,19 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Developing Machine Learning-Based Watch-to-Warning Severe Weather Guidance from the Warn-on-Forecast System { #2603.20250 }
-
-    *Montgomery Flora, Samuel Varga, Corey Potvin, Noah Lang* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.20250">While machine learning (ML) post-processing of convection-allowing model (CAM) output for severe weather hazards (large hail, damaging winds, and/or tornadoes) has shown promise for very short lead...</span><span class="abstract-full" id="full-2603.20250" hidden>While machine learning (ML) post-processing of convection-allowing model (CAM) output for severe weather hazards (large hail, damaging winds, and/or tornadoes) has shown promise for very short lead times (0-3 hours), its application to slightly longer forecast windows remains relatively underexplored. In this study, we develop and evaluate a grid-based ML framework to predict the probability of severe weather hazards over the next 2-6 hours using forecast output from the Warn-on-Forecast System (WoFS). Our dataset includes WoFS ensemble forecasts valid every 5 minutes out to 6 hours from 108 days during the 2019--2023 NOAA Hazardous Weather Testbed Spring Forecasting Experiments. We train ML models to generate probabilistic forecasts of severe weather akin to Storm Prediction Center outlooks (i.e., likelihood of a tornado, severe wind, or severe hail event within 36 km of each point). We compare a histogram gradient-boosted tree (HGBT) model and a deep learning U-Net approach against a carefully calibrated baseline generated from 2-5 km updraft helicity. Results indicate that the HGBT and U-Net outperform the baseline, particularly at higher probability thresholds. The HGBT achieves the best performance metrics, but predicted probabilities cap at 60% while the U-net forecasts extend to 100%. Similar to previous studies, the U-Net produces spatially smoother guidance than the tree-based method. These findings add to the growing evidence of the effectiveness of ML-based CAM post-processing for providing short-term severe weather guidance.</span> <span class="abstract-toggle" data-id="2603.20250">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.20250v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.20250v1) · [:material-content-copy: BibTeX](../../bibtex/2603.20250.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
     { .paper-tags }
 
 </div>

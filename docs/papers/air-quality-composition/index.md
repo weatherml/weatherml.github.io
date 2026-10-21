@@ -8,11 +8,37 @@ hide:
 
 # Air Quality & Composition
 
-<p class="page-meta" markdown="span">72 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">74 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### AirMPA: A Meteorology-to-Pollution Adapter for Global Air Quality Forecasting { #2610.25797 }
+
+    *Yiheng Wang, Kai Zheng, Yuetan Lin, Fanglu Fan, Chenliang Tao, Guochao Chen, Hongliang Zhang, Hao Li* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.25797">Accurate real-time forecasting of atmospheric pollutants is essential for reducing exposure risks and improving public health. Traditional numerical forecasting systems suffer from incomplete...</span><span class="abstract-full" id="full-2610.25797" hidden>Accurate real-time forecasting of atmospheric pollutants is essential for reducing exposure risks and improving public health. Traditional numerical forecasting systems suffer from incomplete parameterizations, uncertain inputs, and high computational cost. Existing deep learning approaches improve efficiency, but often entangle meteorological and pollutant variables within unified forecasting frameworks, limiting flexibility and pollutant-specific representation learning. To address these challenges, we propose AirMPA, a decoupled autoregressive framework for meteorology-to-pollution forecasting. AirMPA predicts 13 atmospheric pollutants at 0.4° spatial resolution and 12-h temporal resolution using meteorological fields, emission priors, and historical pollutant concentrations. The model is built on an improved Swin-Transformer architecture with zonal release attention and dual-branch fusion, enabling more effective modeling of global transport continuity and heterogeneous pollutant dynamics. During training, AirMPA uses the fifth-generation atmospheric reanalysis from the European Centre for Medium-Range Weather Forecasts (ERA5) as meteorological forcing, while during inference it directly ingests forecast fields from external meteorological models, enabling stable autoregressive prediction up to 5 days ahead. Experiments show that AirMPA consistently outperforms Aurora and surpasses the Copernicus Atmosphere Monitoring Service (CAMS) in approximately 90% of pollutant-lead-time evaluation cases over the 5-day forecast horizon, while outperforming CAMS on all variables beyond 48 h. These results demonstrate the potential of decoupled meteorology-to-pollution forecasting for global air quality prediction.</span> <span class="abstract-toggle" data-id="2610.25797">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.25797v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.25797v1) · [:material-content-copy: BibTeX](../../bibtex/2610.25797.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
+    { .paper-tags }
+
+-   #### Atmospheric Chemistry-Climate Modeling with an AI Foundation Model { #2610.22555 }
+
+    *James Weber, Makoto Kelp* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.22555">Atmospheric composition and chemistry-climate interactions are central to predicting future climate change. Yet simulating chemical and aerosol processes is typically the most expensive component of...</span><span class="abstract-full" id="full-2610.22555" hidden>Atmospheric composition and chemistry-climate interactions are central to predicting future climate change. Yet simulating chemical and aerosol processes is typically the most expensive component of an atmospheric model and is often highly simplified or prescribed entirely. AI weather forecasting foundation models have shown skill rivalling process-based models and are increasingly fine-tuned for new atmospheric tasks. Here, we present the first foundation model to capture interactions between emissions, atmospheric composition, and radiation. We fine-tune the Aurora Earth system foundation model on simulations from the chemistry-climate model UKCA. Our model reproduces daily meteorology, composition, aerosol, and radiation fields of the coupled system with 23 of 27 predicted fields achieving $R^2$ above 0.85 in both the troposphere and stratosphere. It reproduces ozone, CO, and temperature with annual mean biases below 4% and the downwelling shortwave and longwave fluxes to within 6%. Our model remains stable in autoregressive simulation over 50 years while running ~$100\times$ faster than UKCA. By training on paired emissions scenarios, our model learns responses to perturbations by capturing tropospheric ozone's response to changes in NO and CO emissions and surface radiation's response to aerosol. We further show that incorporating MLS satellite ozone retrievals into training corrects biases in the underlying UKCA fields, reducing zonal mean ozone error against collocated observations by 23% between 250 and 20 hPa. Our approach does not suggest process-based modeling can be replaced but demonstrates that a foundation model can be adapted to respond to forcings and learn from observations at a relatively small computational cost.</span> <span class="abstract-toggle" data-id="2610.22555">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.22555v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.22555v1) · [:material-content-copy: BibTeX](../../bibtex/2610.22555.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
 
 -   #### Collaborative Neural Networks significantly Improve Global Aerosol Retrievals From Multi-Angle Polarimeters { #2610.19217 }
 
@@ -355,32 +381,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
-    { .paper-tags }
-
--   #### Blackening Cryosphere: Revealing Hotspot Shifts and HGB-Based Forecasting of Absorbing Aerosol Threats over the Himalayan Frozen Frontiers { #2602.15052 }
-
-    *Abira Sengupta, Ayoti Banerjee, Sarbani Palit, Brendon Woodford* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.15052">Black carbon and mineral dust are key absorbing aerosols that influence atmospheric radiation and increasingly threaten global cryospheric stability. This study examines the long-range transport and...</span><span class="abstract-full" id="full-2602.15052" hidden>Black carbon and mineral dust are key absorbing aerosols that influence atmospheric radiation and increasingly threaten global cryospheric stability. This study examines the long-range transport and seasonal variability of these aerosols over Pakistan and their movement toward the western Himalayas. Using satellite-derived Absorption Aerosol Optical Depth (AAOD) data from 2019 to mid-2025, we analyse their spatiotemporal behaviour across Pakistan's urban lowlands and high-altitude regions. Fifteen-day aggregated AAOD fields are used to track seasonal transport into glaciated terrain, where deposited aerosols can darken snow and ice and accelerate melt. For high-AAOD events, a probabilistic forecasting approach based on machine learning (ML) was developed. Using geographical, seasonal, and lagged indicators, a histogram-based gradient boosting classifier was trained to predict AAOD exceedance one step in advance. ROC-AUC, PR-AUC, and the Brier score were used to assess the model's performance. The results show high predictive capacity and good probability calibration, with values of 0.791, 0.269, and 0.028, respectively. Forecasts indicate that areas adjacent to Himalayan glaciers consistently exhibit the highest probability of increasing AAOD, signalling an elevated risk of aerosol-induced snowmelt.</span> <span class="abstract-toggle" data-id="2602.15052">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.15052v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.15052v1) · [:material-content-copy: BibTeX](../../bibtex/2602.15052.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### AODDiff: Probabilistic Reconstruction of Aerosol Optical Depth via Diffusion-based Bayesian Inference { #2512.24847 }
-
-    *Linhao Fan, Hongqiang Fang, Jingyang Dai, Yong Jiang, Qixing Zhang* · Dec 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2512.24847">High-quality reconstruction of Aerosol Optical Depth (AOD) fields is critical for Atmosphere monitoring, yet current models remain constrained by the scarcity of complete training data and a lack of...</span><span class="abstract-full" id="full-2512.24847" hidden>High-quality reconstruction of Aerosol Optical Depth (AOD) fields is critical for Atmosphere monitoring, yet current models remain constrained by the scarcity of complete training data and a lack of uncertainty quantification.To address these limitations, we propose AODDiff, a probabilistic reconstruction framework based on diffusion-based Bayesian inference. By leveraging the learned spatiotemporal probability distribution of the AOD field as a generative prior, this framework can be flexibly adapted to various reconstruction tasks without requiring task-specific retraining. We first introduce a corruption-aware training strategy to learns a spatiotemporal AOD prior solely from naturally incomplete data. Subsequently, we employ a decoupled annealing posterior sampling strategy that enables the more effective and integration of heterogeneous observations as constraints to guide the generation process. We validate the proposed framework through extensive experiments on Reanalysis data. Results across downscaling and inpainting tasks confirm the efficacy and robustness of AODDiff, specifically demonstrating its advantage in maintaining high spatial spectral fidelity. Furthermore, as a generative model, AODDiff inherently enables uncertainty quantification via multiple sampling, offering critical confidence metrics for downstream applications.</span> <span class="abstract-toggle" data-id="2512.24847">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2512.24847v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2512.24847v1) · [:material-content-copy: BibTeX](../../bibtex/2512.24847.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
 </div>

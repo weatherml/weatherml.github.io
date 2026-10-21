@@ -8,11 +8,50 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">103 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">106 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations { #2610.28327 }
+
+    *Christian Donner, Michele Cattaneo, Maxim Samarin, Francesco Zanetta, Icíar Lloréns Jover et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.28327">We present the Observation Assimilation Transformer (OAT), a geometry-aware neural process that corrects and refines a prior numerical weather prediction (NWP) field into a high-resolution posterior...</span><span class="abstract-full" id="full-2610.28327" hidden>We present the Observation Assimilation Transformer (OAT), a geometry-aware neural process that corrects and refines a prior numerical weather prediction (NWP) field into a high-resolution posterior field by assimilating sparse observations. OAT is an encoder-decoder transformer that considers a set of observed locations and their NWP prior to condition predictions at a set of arbitrary unobserved query locations. Its sparse attention mechanism makes it scalable to thousands of station observations and depends on relative positions between locations, never on the absolute coordinates. The model allows for partially missing observations, predictions at arbitrary continuous locations without grid projection, and outputs are parametric distributions. A station-randomized training algorithm is developed with continuous ranked probability score (CRPS) loss. We test OAT on two datasets - one at regional scale with hundreds of stations, and one at continental scale with thousands of stations. On these datasets OAT outperforms several baselines and shows well calibrated predictions. In an illustrative case study, OAT's downscaling capabilities are demonstrated by downscaling ERA5 (~31km) to COSMO (1km), where OAT achieves lower mean absolute error (MAE) and CRPS for temperature and precipitation on test stations compared to COSMO.</span> <span class="abstract-toggle" data-id="2610.28327">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.28327v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.28327v1) · [:material-content-copy: BibTeX](../../bibtex/2610.28327.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
+    { .paper-tags }
+
+-   #### TerraNostra-Bench: Benchmarking Spatial Downscaling and Temporal Rollout for Global 1-km Land-Use Reconstruction { #2610.27793 }
+
+    *Amirpasha Mozaffari, Marina Castaño, Stefano Materia, Joan Vedrí, Jordi Varela-Agrelo et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.27793">Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly due to imperfect land surface representations in Earth system models. We propose a data-driven...</span><span class="abstract-full" id="full-2610.27793" hidden>Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly due to imperfect land surface representations in Earth system models. We propose a data-driven framework for high-resolution land-use reconstruction, treated as a semantic-segmentation task, that combines coarse-resolution scenario data and climate classification with static geophysical features to produce annual land-use maps at 1 km resolution. We introduce TerraNostra-Bench, a change-aware evaluation protocol that separates spatial downscaling from autoregressive temporal rollout and scores models on the rare land-use-change pixels rather than the dominant static background. Using it, we compare convolutional (U-Net) and transformer (Swin) backbones in autoregressive and non-autoregressive schemes against persistence, linear, and shallow convolutional baselines. The autoregressive prior is the most informative input yet accumulates error over long rollouts: autoregressive models lose 5.7-7.2 accuracy points over 13 years, against 2.2-2.8 for non-autoregressive models. This trade-off is governed by the autoregressive choice rather than the backbone. It can be tuned by an inference-time prior-trust threshold that requires no retraining and by the training-time weighting of reconstruction and change objectives; the two levers trace complementary frontiers, with calibration recovering up to 10 accuracy points while keeping change sensitivity above the persistence floor. Extrapolating beyond the training window, backward to 1955-1959 and forward to 2015-2019 under scenario forcing, the models retain most of their in-window skill and show the same trade-off, indicating it is intrinsic to the design. This work provides the methodological foundation and evaluation surface for a forthcoming temporally continuous land-use product.</span> <span class="abstract-toggle" data-id="2610.27793">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.27793v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.27793v1) · [:material-content-copy: BibTeX](../../bibtex/2610.27793.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
+    { .paper-tags }
+
+-   #### Spherical Physics-informed Neural Operator with Multi-scale Coupling for Meteorological Downscaling { #2610.24708 }
+
+    *Yiqiang Ye, Yichi Wang, Haodi Zhang, Jiawei Wen, Jiahui Jiang, Zhaoyu Zhong, Jiangjian Yu et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.24708">Meteorological downscaling is crucial for high-resolution regional climate forecasting and disaster early warning. While neural operators have emerged as a promising paradigm for modeling complex...</span><span class="abstract-full" id="full-2610.24708" hidden>Meteorological downscaling is crucial for high-resolution regional climate forecasting and disaster early warning. While neural operators have emerged as a promising paradigm for modeling complex spatiotemporal mappings, existing frameworks often struggle with spherical manifold geometric distortions, inherent atmospheric multi-scale coupling mismatches, and lack of explicit atmospheric laws. We propose the Spherical Physics-informed Neural Operator, which utilizes a Spherical Laplacian Decomposition to partition atmospheric fields into hierarchical frequency components, maintaining exact point-wise correspondence across scales. To evaluate these representations at arbitrary locations, we introduce a localized spherical integral operator that approximates continuous kernel transforms via geometry-aware attention. Dynamical consistency is further enforced by embedding differentiable constraints into the learning process. Extensive experiments demonstrate that our framework attains superior accuracy and zero-shot generalization across various meteorological variables and unseen queries, representing a robust and interpretable solution for global-to-regional meteorological downscaling.</span> <span class="abstract-toggle" data-id="2610.24708">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.24708v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.24708v1) · [:material-content-copy: BibTeX](../../bibtex/2610.24708.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
 
 -   #### Generative modelling for multivariate spatio-temporal downscaling of monthly climate fields { #2610.19885 }
 
@@ -360,45 +399,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a>
-    { .paper-tags }
-
--   #### PODiff: Latent Diffusion in Proper Orthogonal Decomposition Space for Scientific Super-Resolution { #2605.03399 }
-
-    *Onkar Jadhav, Tim French, Matthew Rayson, Nicole L. Jones* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.03399">Probabilistic super-resolution of high-dimensional spatial fields using diffusion models is often computationally prohibitive due to the cost of operating directly in pixel space. We propose PODiff,...</span><span class="abstract-full" id="full-2605.03399" hidden>Probabilistic super-resolution of high-dimensional spatial fields using diffusion models is often computationally prohibitive due to the cost of operating directly in pixel space. We propose PODiff, a structured conditional generative framework that performs diffusion in a fixed, variance-ordered Proper Orthogonal Decomposition (POD) coefficient space, exploiting the orthogonality of POD modes to impose an interpretable, variance-ordered latent geometry. This design enables efficient ensemble generation, preserves dominant spatial structure, and yields spatially interpretable, well-calibrated uncertainty at substantially lower computational cost. We evaluate PODiff on sea surface temperature downscaling over the West Australian coast and on a controlled advection-diffusion benchmark. PODiff achieves reconstruction accuracy comparable to pixel-space diffusion while requiring significantly less memory and producing more reliable uncertainty estimates than deterministic and Monte Carlo Dropout baselines.</span> <span class="abstract-toggle" data-id="2605.03399">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.03399v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.03399v1) · [:material-content-copy: BibTeX](../../bibtex/2605.03399.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### Conditional Flow Matching for Probabilistic Downscaling of Maximum 3-day Snowfall in Alaska { #2604.25172 }
-
-    *Douglas Brinkerhoff, Elizabeth Fischer* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.25172">Precipitation in complex terrain is governed by orographic processes operating at scales of a few kilometers, yet climate models typically run at resolutions of 50--100~km where this topographic...</span><span class="abstract-full" id="full-2604.25172" hidden>Precipitation in complex terrain is governed by orographic processes operating at scales of a few kilometers, yet climate models typically run at resolutions of 50--100~km where this topographic detail is absent. Dynamical downscaling with high-resolution regional models such as WRF can resolve these processes, but the computational cost -- months of wall-clock time per scenario -- precludes the large ensembles needed for uncertainty quantification. We present WxFlow, a conditional generative model based on flow matching that learns to map coarse-resolution climate model output and high-resolution topography to calibrated probabilistic ensembles of fine-scale precipitation fields. Applied to 4~km WRF simulations of maximum 3-day snowfall over southeast Alaska, WxFlow achieves 87.8% improvement in spectral fidelity and dramatically lower Continuous Ranked Probability Scores relative to conventional lapse-rate-corrected bicubic downscaling, while generating 50-member ensembles in seconds on a laptop. Ensemble spread is spatially coherent and governed by topography, reflecting physically plausible uncertainty structure. All code is available at https://github.com/glide-ism/wrf-flow.</span> <span class="abstract-toggle" data-id="2604.25172">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.25172v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.25172v1) · [:fontawesome-brands-github: Code](https://github.com/glide-ism/wrf-flow) · [:material-content-copy: BibTeX](../../bibtex/2604.25172.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting { #2604.07928 }
-
-    *Tao Hana, Zhibin Wen, Zhenghao Chen, Fenghua Lin, Junyu Gao, Song Guo, Lei Bai* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.07928">While AI-based numerical weather prediction (NWP) enables rapid forecasting, generating high-resolution outputs remains computationally demanding due to limited multi-scale adaptability and...</span><span class="abstract-full" id="full-2604.07928" hidden>While AI-based numerical weather prediction (NWP) enables rapid forecasting, generating high-resolution outputs remains computationally demanding due to limited multi-scale adaptability and inefficient data representations. We propose the 3D Gaussian splatting-based scale-aware vision transformer (GSSA-ViT), a novel framework for arbitrary-resolution forecasting and flexible downscaling of high-dimensional atmospheric fields. Specifically, latitude-longitude grid points are treated as centers of 3D Gaussians. A generative 3D Gaussian prediction scheme is introduced to estimate key parameters, including covariance, attributes, and opacity, for unseen samples, improving generalization and mitigating overfitting. In addition, a scale-aware attention module is designed to capture cross-scale dependencies, enabling the model to effectively integrate information across varying downscaling ratios and support continuous resolution adaptation. To our knowledge, this is the first NWP approach that combines generative 3D Gaussian modeling with scale-aware attention for unified multi-scale prediction. Experiments on ERA5 show that the proposed method accurately forecasts 87 atmospheric variables at arbitrary resolutions, while evaluations on ERA5 and CMIP6 demonstrate its superior performance in downscaling tasks. The proposed framework provides an efficient and scalable solution for high-resolution, multi-scale atmospheric prediction and downscaling. Code is available at: https://github.com/binbin2xs/weather-GS.</span> <span class="abstract-toggle" data-id="2604.07928">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.07928v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.07928v1) · [:fontawesome-brands-github: Code](https://github.com/binbin2xs/weather-GS) · [:material-content-copy: BibTeX](../../bibtex/2604.07928.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
     { .paper-tags }
 
 </div>
