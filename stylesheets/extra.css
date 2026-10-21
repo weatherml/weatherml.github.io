@@ -1,0 +1,331 @@
+.md-nav--secondary > .md-nav__title {
+  display: none;
+}
+
+h1#__skip {
+  display: none;
+}
+
+.md-content__inner {
+  margin-top: -1rem !important;
+  padding-top: 0 !important;
+}
+
+.md-content__inner::before {
+  display: none;
+}
+
+
+/* Light outlined chips (overrides the theme's bold grey tags) */
+.md-typeset .md-tag {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin: 0.15em 0.1em;
+  font-size: 0.62rem;
+  font-weight: 400;
+  border-radius: 0.25em;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  letter-spacing: 0.01em;
+}
+
+/* Cards fill equal height in grid rows */
+.grid.cards > ul > li {
+  align-self: stretch;
+}
+
+/* Expanded card spans full row */
+.grid.cards > ul > li.card-expanded {
+  grid-column: 1 / -1;
+}
+
+/* Style h4 inside cards to match the bold title look; titles longer than
+   three lines are cut with an ellipsis */
+.grid.cards h4 {
+  font-size: 1em;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+/* No ¶ permalink on paper cards. The anchors themselves stay, since the
+   feed, search and "more" links on Explore point at them */
+.md-typeset .grid.cards h4 .headerlink {
+  display: none;
+}
+
+/* Keep linked-to cards clear of the sticky header */
+.grid.cards h4[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* Briefly highlight the card a link points to */
+.grid.cards > ul > li:has(h4:target) {
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Small muted line under page titles: counts, downloads, feed */
+.md-typeset .page-meta {
+  margin-top: 0;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .page-meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--md-default-fg-color--lightest);
+  text-underline-offset: 0.2em;
+}
+
+.md-typeset .page-meta a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Compact topic links: title and count on one line */
+.md-typeset .grid.cards.topics {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 0.4rem;
+}
+
+.md-typeset .grid.cards.topics > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0.8rem;
+}
+
+.topic-count {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset a.md-tag:hover {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.abstract-toggle {
+  font-size: 0.75em;
+  cursor: pointer;
+  color: var(--md-default-fg-color--light);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.abstract-toggle:hover {
+  opacity: 1;
+}
+
+/* Pager at the bottom of topic pages */
+.md-typeset .pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.2rem 0.9rem;
+  margin: 2rem 0 1rem;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pager a {
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+
+.md-typeset .pager a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset .pager strong {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .pager .pager-step {
+  color: var(--md-default-fg-color);
+}
+
+/* Topic pages 2..N are in the nav only so the topic stays highlighted;
+   hide them and their expand arrows (the pager links them instead) */
+.md-nav--primary .md-nav[data-md-level="2"],
+.md-nav--primary .md-nav__container > label {
+  display: none;
+}
+
+.md-nav--primary .md-nav__item--active > .md-nav__container > .md-nav__link {
+  color: var(--md-typeset-a-color);
+}
+
+/* Topic cards read as plain text; the card itself signals it's a link */
+.md-typeset .grid.cards.topics a {
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+
+.md-typeset .grid.cards.topics > ul > li:hover a {
+  color: var(--md-accent-fg-color);
+}
+
+/* Stretch the topic link over the whole card */
+.md-typeset .grid.cards.topics > ul > li {
+  position: relative;
+}
+
+.md-typeset .grid.cards.topics a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Site name in the header links home (see home-link.js) */
+.md-header__topic:first-child {
+  cursor: pointer;
+}
+
+/* Tag chips on cards link to their tag page */
+.md-typeset a.md-tag {
+  text-decoration: none;
+}
+
+/* Tag filter: a row of chips per group */
+.md-typeset .tag-group {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.md-typeset .tag-group-name {
+  flex: 0 0 5.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.md-typeset .tag-chip {
+  margin: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.md-typeset .tag-chip-count {
+  margin-left: 0.2em;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .tag-chip.is-selected {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+}
+
+.md-typeset .tag-chip:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.md-typeset .tag-status {
+  margin-top: 1.5rem;
+}
+
+.md-typeset .tag-more-wrap {
+  text-align: center;
+}
+
+/* .md-button sets display, which would otherwise override [hidden] */
+.md-typeset #tag-more[hidden] {
+  display: none;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .tag-group {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+/* "more" in filter results is a link to the full card; keep it muted */
+.md-typeset a.abstract-toggle {
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+
+/* Topic pages: title left, paper count and BibTeX link right */
+.md-typeset .listing-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset .listing-header h1,
+.md-typeset .listing-header .page-meta {
+  margin: 0;
+}
+
+/* Paper cards: every card in a row shares the same five row tracks
+   (title, authors, abstract, links, tags) through subgrid, so each part
+   starts at the same height across the row whatever the title or author
+   list length */
+.md-typeset .grid.cards:not(.topics) > ul > li {
+  display: grid;
+  grid-row: span 5;
+  grid-template-rows: subgrid;
+  row-gap: 0.6rem;
+}
+
+.md-typeset .grid.cards:not(.topics) > ul > li > * {
+  margin: 0;
+}
+
+.md-typeset .grid.cards .paper-links {
+  padding-top: 0.2rem;
+}
+
+/* Authors and date: secondary to the title and abstract */
+.md-typeset .grid.cards .paper-meta {
+  margin-top: -0.3rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* arXiv · PDF · Code · BibTeX: quiet until hovered */
+.md-typeset .grid.cards .paper-links {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .grid.cards .paper-links a {
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+
+.md-typeset .grid.cards .paper-links a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Keep "weatherml" in the header while scrolling; the theme normally swaps
+   it for the page title (e.g. "Global Models") once the heading scrolls by */
+.md-header__title--active .md-header__topic {
+  z-index: 0;
+  pointer-events: auto;
+  opacity: 1;
+  transform: none;
+}
+
+.md-header__topic + .md-header__topic {
+  display: none;
+}
