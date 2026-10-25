@@ -60,13 +60,16 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1574)
+## Papers (1581)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (375)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (378)</summary>
 
+- **Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings** (Oct 2026) - [arXiv:2610.31237](https://arxiv.org/abs/2610.31237v1)
+- **From Weather to Enhanced Weathering: Weather Foundation Models for Carbon Dioxide Removal at Operational Scale** (Oct 2026) - [arXiv:2610.28973](https://arxiv.org/abs/2610.28973v1)
+- **Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model** (Oct 2026) - [arXiv:2610.28904](https://arxiv.org/abs/2610.28904v1)
 - **GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting** (Oct 2026) - [arXiv:2610.28512](https://arxiv.org/abs/2610.28512v1)
 - **Beyond the record: evaluating probabilistic AI weather forecasts deep in the tail** (Oct 2026) - [arXiv:2610.25545](https://arxiv.org/abs/2610.25545v1)
 - **UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models** (Oct 2026) - [arXiv:2610.25001](https://arxiv.org/abs/2610.25001v1)
@@ -518,8 +521,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (104)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (105)</summary>
 
+- **Space weather dependence of decameter-scale ionospheric irregularities spatial distribution** (Oct 2026) - [arXiv:2610.29630](https://arxiv.org/abs/2610.29630v1)
 - **Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting** (Oct 2026) - [arXiv:2610.26486](https://arxiv.org/abs/2610.26486v1)
 - **Network-Wide Freeway Speed Nowcasting and Forecasting from Sparse Fixed Sensors with a Probe-Supervised Graph Convolutional Recurrent Network** (Oct 2026) - [arXiv:2610.22630](https://arxiv.org/abs/2610.22630v1)
 - **Just Weather Scoring: Efficient End-to-end Nowcasting with Distributional Diffusion** (Oct 2026) - [arXiv:2610.12189](https://arxiv.org/abs/2610.12189v1)
@@ -1494,8 +1498,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (211)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (214)</summary>
 
+- **Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting** (Oct 2026) - [arXiv:2610.29654](https://arxiv.org/abs/2610.29654v1)
+- **Urban climate regressions require representative monitoring networks** (Oct 2026) - [arXiv:2610.29423](https://arxiv.org/abs/2610.29423v1)
+- **Data-driven and physics-guided hindcasting of measured wave spectra** (Oct 2026) - [arXiv:2610.29306](https://arxiv.org/abs/2610.29306v1)
 - **Zephyrus-R1: Agentic Reinforcement Learning for Weather Reporting** (Oct 2026) - [arXiv:2610.25625](https://arxiv.org/abs/2610.25625v1)
 - **Energy Flow Shapes the Decomposition Dynamics of a Reactive Atmospheric Intermediate** (Oct 2026) - [arXiv:2610.21259](https://arxiv.org/abs/2610.21259v1)
 - **Variable Masking for Climate Emulation in ACE** (Oct 2026) - [arXiv:2610.21012](https://arxiv.org/abs/2610.21012v1)
