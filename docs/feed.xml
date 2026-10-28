@@ -5,7 +5,147 @@
   <link href="https://weatherml.github.io/"/>
   <link rel="self" href="https://weatherml.github.io/feed.xml"/>
   <id>https://weatherml.github.io/</id>
-  <updated>2026-10-25T04:01:38Z</updated>
+  <updated>2026-10-28T12:10:24Z</updated>
+  <entry>
+    <title>KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry</title>
+    <link href="https://arxiv.org/abs/2610.37655"/>
+    <link rel="related" href="https://weatherml.github.io/papers/air-quality-composition/#2610.37655"/>
+    <id>https://arxiv.org/abs/2610.37655</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Wenqing Peng, Michael Boy, Zhi-Song Liu</name></author>
+    <category term="Air Quality &amp; Composition"/>
+    <summary>Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled, and vectorisable chemistry code in JAX from mechanisms written in the KPP language. KPPax evaluates the rate law with sparse operations in log space, which keeps it differentiable, and integrates the stiff system with the implicit solvers and the forward- and reverse-mode adjoints of the \texttt{diffrax} library, so that exact sensitivities are obtained without hand-derived adjoint code. We demonstrate two applications with the POLLU benchmark mechanism. In the first, the Fisher information matrix computed from an automatically differentiated Jacobian predicts, before any fit, which of the 25 rate coefficients a flow-tube-like design can identify, and noisy synthetic estimation confirms the predicted uncertainties of the nine identifiable rate coefficients to within about 30\% while revealing clusters of fast reactions of which only ratios are constrained. In the second, a neural-network correction of an emission inventory is trained offline on per-scenario 4D-Var retrievals and then fine-tuned online through the chemical model, which reduces the error of the biogenic correction by a factor of 2.4--5 and recovers information on low-temperature emissions that the individual retrievals lose. KPPax makes KPP mechanisms directly usable for parameter estimation and hybrid physics--machine-learning modelling.</summary>
+  </entry>
+  <entry>
+    <title>An Input Skip Can Reparameterize a VAE Without Improving the Generator</title>
+    <link href="https://arxiv.org/abs/2610.37456"/>
+    <link rel="related" href="https://weatherml.github.io/papers/other/#2610.37456"/>
+    <id>https://arxiv.org/abs/2610.37456</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Kevin Lee</name></author>
+    <category term="Other"/>
+    <summary>An input skip can reduce reconstruction error while leaving a model's distribution of new samples unchanged. For a Gaussian variational autoencoder (VAE) with constant input skip $0\leqα&lt;1$, a model without a skip can be written in skip form by multiplying its decoder output by $b=1-α$ and its noise variance by $b^2$. The distribution of observations and latent variables and its exact generative scores stay the same, while reconstruction mean squared error (MSE) is multiplied by $b^2$. Separate training can produce different generators because optimization depends on the parameter coordinates. In a Gaussian experiment with known density, changing skip and observation variance together reduces MSE but worsens energy score and the estimate of negative log density from importance sampling. On seven annual Deep-ocean Assessment and Reporting of Tsunamis (DART) records, energy score differences at the same observation variance have both signs on four original records and favor the skip on three records from 2018. Probabilistic principal component analysis (PPCA) has lower mean energy scores than every neural DART fit. With the encoder and decoder kept the same, estimating observation variance from training reconstruction error can also worsen energy score. Assessing generation requires more than reconstruction error.</summary>
+  </entry>
+  <entry>
+    <title>Scale-aware and spatially-localised optimisation of kilometre-scale MLWP models</title>
+    <link href="https://arxiv.org/abs/2610.37325"/>
+    <link rel="related" href="https://weatherml.github.io/papers/global-models/#2610.37325"/>
+    <id>https://arxiv.org/abs/2610.37325</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>James Chappell, Sophie Luise Arana, Jack Bowyer, Alejandro Coca-Castro, Evangeline Corcoran, Eric G. Daub, Tom Dunstan, Noushin Eftekhari, Anna-Louise Ellis, J. Scott Hosking, Manvendra Janmaijaya, David Salvador-Jasin, Ben Shipway, Nathan Simpson, Oliver Strickson, David Walters</name></author>
+    <category term="Global Models"/>
+    <summary>Preserving fine-scale structure without degrading spatial accuracy is a central challenge for kilometre-scale machine-learning weather prediction (MLWP). We introduce a loss based on the dual-tree complex wavelet transform that constrains atmospheric fields jointly by scale, location, and orientation. We evaluate its performance using an experimental joint global--regional FastNet configuration, which produces \SI{1.5}{km} forecasts over the UK alongside $\sim$\SI{31}{km} global forecasts. Relative to both mean-squared error (MSE) and an FFT-based spectral objective, the wavelet loss substantially improves spectral fidelity. Compared with MSE training, it maintains similar pointwise performance, improves neighbourhood-based verification, and produces sharper precipitation fields with more realistic intensity distributions. These results demonstrate that spatially localised wavelet constraints can preserve multiscale atmospheric structure while largely avoiding the loss of pointwise accuracy associated with globally supported spectral objectives.</summary>
+  </entry>
+  <entry>
+    <title>Noise Steering: Exploiting Wake Steering and Acoustic Directivity for Noise-Constrained Wind Farm Control via Reinforcement Learning</title>
+    <link href="https://arxiv.org/abs/2610.36888"/>
+    <link rel="related" href="https://weatherml.github.io/papers/air-quality-composition/#2610.36888"/>
+    <id>https://arxiv.org/abs/2610.36888</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Martín de Frutos, Baptiste Corban, Claire Bizon Monroc, Ana Bušić, Donatien Dubuc, Jiamin Zhud, Esteban Ferrer</name></author>
+    <category term="Air Quality &amp; Composition"/>
+    <summary>Existing noise mitigation strategies for wind farms usually consist in reducing turbines power output, without accounting for the wake interactions between them and the noise emission directivity. This leads to over-conservative policies and unexploited wind power. Yet, turbine yaw can simultaneously affect wake interactions and the direction of noise emission, offering an additional degree of freedom for farm-level noise control. We therefore propose Noise Steering, a model-free reinforcement learning (RL) strategy that jointly controls turbine yaw angles and power setpoints to maximise farm power while satisfying a local noise constraint in a defined region. To enable training at a reduced computational cost, a low-fidelity acoustic model is coupled with the steady-state FLORIS simulator. The RL agent effectively learns how to redirect wakes and noise directivity away from the protected region while redistributing power across the farm. On a six-turbine test farm, the policy satisfies the 40 dB noise constraint throughout the full range of turbulent winds, with an average power deficit of only 2% relative to greedy unimpeded control, and up to 7.7% at high wind speeds. In comparison, the industry-standard noise-reduced operation (NRO) baseline here generates an average power loss of 17%. When deployed in the higher-fidelity FAST.Farm simulator, the policy largely retains its performance under steady and turbulent inflow, despite differences in simulation fidelity. These results demonstrate the potential of combining yaw control and power derating through RL to improve the power-noise trade-off in wind farm operation.</summary>
+  </entry>
+  <entry>
+    <title>FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling</title>
+    <link href="https://arxiv.org/abs/2610.36297"/>
+    <link rel="related" href="https://weatherml.github.io/papers/climate-modeling/#2610.36297"/>
+    <id>https://arxiv.org/abs/2610.36297</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Pratham Aggarwal, Duncan Watson-Parris, William E. Chapman</name></author>
+    <category term="Climate Modeling"/>
+    <summary>Coupled climate simulations are computationally expensive, largely because of the atmosphere. We introduce FASST, a coupled climate model that retains the prognostic POP2 ocean while replacing the atmosphere and sea ice with lightweight U-Net emulators. The atmospheric emulator is diagnostic, predicting surface fluxes from the evolving ocean-ice state every $6$ simulated hours, while the sea-ice emulator advances the ice state monthly. For $140$ years of unforced integration, FASST maintains a stable global-mean climate without SST restoring, with post-transient global-mean SST of $291.30 \pm 0.22\mathrm{K}$ compared with $291.25 \pm 0.10\mathrm{K}$ in CESM$2$ piControl. FASST also captures interannual Niño-$3.4$ variability, although with weaker amplitude than CESM ($0.62\mathrm{K}$ versus $1.02\mathrm{K}$). These results demonstrate that a stateless learned atmosphere can sustain stable, free-running coupled climate simulations over century-scale integrations.</summary>
+  </entry>
+  <entry>
+    <title>Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast</title>
+    <link href="https://arxiv.org/abs/2610.36186"/>
+    <link rel="related" href="https://weatherml.github.io/papers/regional-models/#2610.36186"/>
+    <id>https://arxiv.org/abs/2610.36186</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Daniel Abdi, Isidora Jankov, Vanderlei Vargas, Paul Madden, Emily Carpenter, Travis Wilson, Jeff Hamilton, Molly Smith, Lindsay Blank, Linlin Cui, Jun Wang, Matthew Mahalik</name></author>
+    <category term="Regional Models"/>
+    <summary>Improving convective-scale skill in data-driven regional weather models requires better representing rare high-impact events, training at native resolution, broadening variable output, and demonstrating performance in real-time settings. Here, we evaluate these challenges using HRRRCast, a data-driven convection-allowing emulator trained on the High-Resolution Rapid Refresh (HRRR) analysis data. HRRRCast combines native 3-km training, moderate sigmoid-weighted loss reweighting for reflectivity and precipitation, and broader system improvements including expansion of the training archive from 3 to 9 years (2016--2025), increased vertical resolution, expanded outputs, and architectural upgrades. The weighted loss improves high-threshold skill while preserving common-event behavior. Native-resolution training avoids aliasing from 6-km subsampling and substantially improves fractions skill score at convective scales, with gains that persist across pooling windows. HRRRCast has also been running in near-real-time mode for the past year. In seven months of independent observation-based verification, HRRRCast ensemble means improve several near-surface metrics relative to operational HRRR and maintain strong precipitation and reflectivity performance. Single-member reflectivity skill is strongest at 20--30 dBZ; at 40 dBZ, skill is near parity at 6-km pooling and better at pooling radii $\geq$30 km. Precipitation skill remains competitive through 1 in/h and extends to about 3 in/h in the best recent configuration. A focused comparison with HREF further shows useful low-cost probabilistic guidance for 3-h precipitation. At storm scale, HRRRCast exhibits a displacement--structure trade-off, with generally better storm placement than storm morphology.</summary>
+  </entry>
+  <entry>
+    <title>GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models</title>
+    <link href="https://arxiv.org/abs/2610.35693"/>
+    <link rel="related" href="https://weatherml.github.io/papers/global-models/#2610.35693"/>
+    <id>https://arxiv.org/abs/2610.35693</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Alessandro Lucatelli, Ferdinand Unterhuber, Katharina Krenzer, Mennatallah El-Assady, Benedikt Soja, Christina Humer, Joel Oskarsson</name></author>
+    <category term="Global Models"/>
+    <summary>Machine learning Earth-system models are becoming increasingly important, and so is their development. Graph-based models, one of the most prominent approaches, allow developers to constrain the learning process before training via graph connectivity. Yet, developing these models remains challenging: the graph is built algorithmically with little intuition about the final result beyond static plotting, which requires extra work and is often not detailed enough. Even after successful training, how the model arrives at forecasts remains obscure. We present GNN-VIEW, an interactive browser-based tool that supports the development of such systems. GNN-VIEW exposes the graph's information pathways, allowing model developers to debug the graph structure before training. After training, GNN-VIEW uses attribution-based explainability to reveal which input features are used by the trained model for a given forecast. This helps developers understand why a model fails. We showcase the usefulness of GNN-VIEW in the construction stage of a graph for an ocean forecasting model, and in explaining poorly predicted precipitation of a trained weather forecasting model during Hurricane Laura.</summary>
+  </entry>
+  <entry>
+    <title>Application of Artificial Intelligence in the Management of Climate Change-Related Health Issues in Africa</title>
+    <link href="https://arxiv.org/abs/2610.35294"/>
+    <link rel="related" href="https://weatherml.github.io/papers/climate-modeling/#2610.35294"/>
+    <id>https://arxiv.org/abs/2610.35294</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Peter Kokol, Martha Kachweka, Helena Blazun Vosner, Samuel Chol Buol, Jernej Zavrsnik, Bojan Zlahtic, Grega Zlahtic</name></author>
+    <category term="Climate Modeling"/>
+    <summary>While climate change disproportionately impacts African public health, AI predictive modeling remains heavily constrained. Using a Synthetic Knowledge Synthesis approach and VOSviewer, we conducted a bibliometric analysis of Scopus-indexed literature, comparing Global and African corpora. Network analysis reveals stark divergences: global research emphasizes complex, predictive models for planetary health, whereas African research focuses on localized, reactive solutions for immediate infectious disease triage. Severe structural barriers in Africa, including compute deficits, data silos, and energy instability, hinder advanced AI scaling. Ultimately, international funding must shift from siloed pilot projects toward building foundational digital infrastructure and localized AI frameworks.</summary>
+  </entry>
+  <entry>
+    <title>Machine Learning Applications in the Solar Interior and Atmosphere</title>
+    <link href="https://arxiv.org/abs/2610.34687"/>
+    <link rel="related" href="https://weatherml.github.io/papers/other/#2610.34687"/>
+    <id>https://arxiv.org/abs/2610.34687</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Vishal Upendran, Carlos J. Díaz Baso</name></author>
+    <category term="Other"/>
+    <summary>The solar interior and atmosphere constitute a strongly coupled, multiscale dynamical system defined by continuous temporal evolution. Predicting the state of this system requires modeling physical interactions that span disparate spatial and temporal scales, constrained by heterogeneous and sparse data. This chapter formalizes the Sun within the mathematical framework of dynamical systems theory, defining a global state vector ($\vec{S}$) governed by thermodynamical, kinetic, and magnetic properties. Because solar observations represent projected, multi-modal, and partially observable measurements ($\vec{O}[\vec{S}]$) of this hidden state, pure physics-based deduction is fundamentally constrained. We present a unifying thesis: the primary role of machine learning in heliophysics is to act as a structured family of mathematical operators---specifically Inference ($\mathcal{I}$), Emulation ($\mathcal{E}$), Propagation ($\mathcal{P}$), and Control ($\mathcal{C}$)---that reconstruct, simulate, and couple this global state vector across disparate physical layers. By framing the vast, multi-disciplinary literature within this unified state-space taxonomy, we demonstrate how data-driven techniques bridge observational gaps to resolve hidden multiscale couplings and dramatically accelerate the simulation of non-linear processes, establishing a rigorous pathway to predict the global evolution of the Sun.</summary>
+  </entry>
+  <entry>
+    <title>An actively trained neural operator for near-explicit atmospheric chemistry</title>
+    <link href="https://arxiv.org/abs/2610.33771"/>
+    <link rel="related" href="https://weatherml.github.io/papers/air-quality-composition/#2610.33771"/>
+    <id>https://arxiv.org/abs/2610.33771</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Zhi-Song Liu, Wenqing Peng, Ammar Kheder, Risto Makkonen, Michael Boy</name></author>
+    <category term="Air Quality &amp; Composition"/>
+    <summary>Earth-system models simplify atmospheric chemistry into condensed mechanisms, because near-explicit mechanisms such as the Master Chemical Mechanism (MCM) are too costly to solve in every grid cell. Neural emulators could lift this limit, but most advance the chemistry in small time steps and cover only a few species or a reduced mechanism. Here we introduce FNO-MoE, a Fourier neural operator with a mixture of experts that predicts the full near-explicit chemical state over 30 minutes in a single call. The same network also guides its own training, using the disagreement among its experts to select the most informative box-model simulations. At equal cost, this active sampling yields a more accurate emulator than random or evenly spread sampling. Fine-tuning on longer trajectories keeps it stable over multi-hour runs in which models trained on short simulations diverge. The resulting emulator reproduces the evolution of thousands of species with high fidelity, remains accurate for unseen chemical compositions and runs orders of magnitude faster than the numerical solver. These results open a new direction for emulating complex atmospheric systems: neural operators that predict the full chemical state over long windows and choose their own training data. Training under changing meteorology is the next step towards bringing near-explicit chemistry into Earth-system models.</summary>
+  </entry>
+  <entry>
+    <title>Nowcasting aerosol particle size distributions from PM2.5 with physics-regularized flow matching</title>
+    <link href="https://arxiv.org/abs/2610.33557"/>
+    <link rel="related" href="https://weatherml.github.io/papers/nowcasting/#2610.33557"/>
+    <id>https://arxiv.org/abs/2610.33557</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Zhi-Song Liu, Jenni Köykkä, Wenqing Peng, Ammar Kheder, Petri Clusius, Michael Boy</name></author>
+    <category term="Nowcasting"/>
+    <summary>The mass concentration of particles smaller than 2.5um (PM2.5) is cheap to measure and widely monitored, whereas the particle number size distribution (PSD) requires costly instruments and is measured at only a few research stations. Yet many aerosol effects, such as vapor uptake, cloud droplet formation and deposition in the human respiratory tract, depend on the PSD rather than on mass. We explore whether recent generative deep learning models can nowcast the PSD: from the PM2.5 record and eight meteorological parameters over a 24h window, a model generates an ensemble of plausible hourly size distributions for the same window, reflecting that one mass can arise from many size distributions. Rather than proposing a single best model, we use two contrasting Finnish stations, the boreal forest site Hyytiälä and the urban site Kumpula, as a controlled testbed. On it, we benchmark six generative models against deterministic and climatological baselines, locally and after transfer between sites, and test physical constraints for neural network training. Flow matching performs best overall; its guided variant has the lowest continuous ranked probability score (CRPS) at both sites. A constraint based on a reduced aerosol general dynamic equation (GDE) lowers the CRPS by 5.5-11.5% at the training site and reduces errors after transfer between sites. Transfer remains harder than local estimation, identifying training on large multi-station data sets as the next step towards PSD estimates at unmonitored locations. This benchmark establishes physics-informed generative models as a promising route from routine air-quality monitoring to size-resolved aerosol information.</summary>
+  </entry>
+  <entry>
+    <title>Climate downscaling with likelihood functional flow matching</title>
+    <link href="https://arxiv.org/abs/2610.33482"/>
+    <link rel="related" href="https://weatherml.github.io/papers/downscaling/#2610.33482"/>
+    <id>https://arxiv.org/abs/2610.33482</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Zhi-Song Liu, Helmi Toropainen, Ammar Kheder, Michael Boy</name></author>
+    <category term="Downscaling"/>
+    <summary>Decisions about heat, frost and flooding are made locally, yet reanalyses and climate models resolve tens of kilometres. Generative downscalers add kilometre-scale detail with uncertainty, but are tied to a grid, costly to sample and lack a tractable likelihood. Here we introduce CD-FFM, a functional flow-matching model that treats the high-resolution field as a continuous random field that one model can query at any location and resolution. Its velocity acts pointwise, so spatial variability comes from a noise prior fitted to the observed spectrum and every observation has an exact likelihood. Downscaling ERA5 to 1 km daily temperature over Fennoscandia, CD-FFM lowers the continuous ranked probability score by 27-31% against regression and 12-18% against a forty-times larger neural operator in each of three test years, and outperforms a CorrDiff-style diffusion model while sampling about fifty times faster. The same model transfers to precipitation and makes large kilometre-scale ensembles affordable.</summary>
+  </entry>
+  <entry>
+    <title>Data Quality Audit and Bivariate Temperature-Humidity Analysis of a Long-Term LoRaWAN Network: Anomaly Detection, PCA, Clustering and Machine Learning</title>
+    <link href="https://arxiv.org/abs/2610.32438"/>
+    <link rel="related" href="https://weatherml.github.io/papers/air-quality-composition/#2610.32438"/>
+    <id>https://arxiv.org/abs/2610.32438</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Mamadou Sow</name></author>
+    <category term="Air Quality &amp; Composition"/>
+    <summary>Long-term environmental IoT/LPWAN deployments often aggregate heterogeneous data streams from diverse devices without systematic auditing of each variable's actual coverage prior to analysis-an increased risk when multiple sensor types coexist within the same network. This work proposes a C++17 processing pipeline applied to the Tour Perret LoRaWAN dataset (421 937 frames, June 2021--June 2023, 5 devices). A systematic coverage audit integrated into the extraction phase reveals that CO2 is completely missing (0% coverage) and pressure is reported only by an isolated base module (Wyres, 4.24% of the corpus), invalidating the initial hypothesis of a joint four-variable analysis. The analysis is refocused on the Temperature--Humidity pair, jointly available across 205{,}005 frames (95.76%) from 4 Elsys EMS sensors. The pipeline sequentially performs anomaly detection (modified Z-score, Isolation Forest), bivariate Principal Component Analysis, clustering (K-means, DBSCAN), and a multilayer perceptron predicting humidity from temperature and time, whose residuals serve as a detector for slow drift. On real-world data: Temperature--Humidity correlation r=-0.662, two-component PCA (PC1 =83.1% of variance), Isolation Forest detects 2.12% multivariate anomalies while univariate Z-score detects none, calibrated DBSCAN isolates 0.17% noise across 13 clusters, and the MLP achieves $R^2=0.672$ (RMSE =10.54%) in cross-validation. This work demonstrates that per-variable coverage auditing prior to modeling is a necessary methodological step for heterogeneous multi-sensor IoT datasets.</summary>
+  </entry>
+  <entry>
+    <title>Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport</title>
+    <link href="https://arxiv.org/abs/2610.32148"/>
+    <link rel="related" href="https://weatherml.github.io/papers/data-assimilation/#2610.32148"/>
+    <id>https://arxiv.org/abs/2610.32148</id>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author><name>Siming Liang, Peter Jan van Leeuwen, Hristo G. Chipilski, Zezhong Zhang, Feng Bao, Guannan Zhang</name></author>
+    <category term="Data Assimilation"/>
+    <summary>Background-error covariance models are central to atmospheric data assimilation because they spread partial observational information across space, variables, and dynamically coupled scales. Ensemble and variational methods exploit this covariance geometry efficiently, but their standard analysis formulations are largely built around Gaussian or locally quadratic approximations. Score-based ensemble filtering provides a framework for nonlinear distributional transport, but existing Ensemble Score Filter (EnSF) formulations lack an intrinsic covariance-mediated pathway for propagating likelihood information from observed to unobserved state components. We introduce a covariance-informed ensemble score filter (CI-EnSF) that embeds localized forecast-error covariance geometry directly into the forward diffusion and reverse transport. The proposed forward diffusion is covariance-shaped in standardized state space and becomes isotropic under the corresponding control-variable transformation. This covariance structure continuously propagates observational information from observed to unobserved state components throughout the reverse transport analysis trajectory. Experiments with Lorenz-96 and surface quasi-geostrophic (SQG) dynamics show a clear regime dependence. For linear observations, a well-tuned LETKF is more accurate, while CI-EnSF maintains stable cycling and effective covariance-mediated information propagation. Under strongly nonlinear observations and under climatological initialization, CI-EnSF achieves lower analysis error and greater cycling robustness than Gaussian ensemble benchmarks such as the LETKF, with improvements extending across spatial scales in the nonlinear SQG experiment. These results suggest that the principal benefit of CI-EnSF arises from combining nonlinear distributional transport with the mature covariance geometry used in conventional data assimilation.</summary>
+  </entry>
   <entry>
     <title>Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings</title>
     <link href="https://arxiv.org/abs/2610.31237"/>
@@ -365,145 +505,5 @@
     <author><name>David Sagna, Redouane Lguensat, Samo Diatta</name></author>
     <category term="Downscaling"/>
     <summary>Global reanalyses are too coarse to resolve the convective systems that produce most West African monsoon rainfall. In this work, we use U-Net based architectures to downscale daily ERA5 fields (0.25°) to IMERG V07 satellite precipitation (0.1°) over West Africa for the June to October seasons of 2000 to 2024, using geopotential, temperature, humidity and wind at three pressure levels together with elevation and land fraction. Adding ERA5 precipitation as input slightly improves performance for this particular challenging region. We find that all the deterministic networks investigated for this work are too dry and lose almost all observed variance below a few hundred kilometers, which motivated our use of a GAN-based alternative. We also investigated permutation importance for the U-Net that ranks 500 hPa specific humidity first, consistent with the sensitivity of deep convection to mid-tropospheric moisture.</summary>
-  </entry>
-  <entry>
-    <title>Forecasting carbon-risk hotspots ahead of the extreme 2026 El Niño</title>
-    <link href="https://arxiv.org/abs/2610.16714"/>
-    <link rel="related" href="https://weatherml.github.io/papers/other/#2610.16714"/>
-    <id>https://arxiv.org/abs/2610.16714</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Xiaomeng Du, Runda Jiang, Philippe Ciais, Pierre Friedlingstein, Stephen Sitch, Mike O'Sullivan, Jefferson Goncalves de Souza, Tim Stripp, Piyu Ke, Yi Xi, Minxuan Sun, Xiaoran Wu, Mengjie Han, Shanshan Song, Qiang Zhang, Wei Li</name></author>
-    <category term="Other"/>
-    <summary>A potentially super El Niño is forecasted in 2026, raising the need to anticipate land carbon-cycle risks before its impacts unfold. We develop a prospective early-warning framework that uses dynamic global vegetation models driven by an ensemble of ECMWF seasonal climate forecasts and machine-learning burned area predictions. Forecasts indicate a $0.23 \pm 0.21$ PgC reduction in global net biome productivity in the second half of 2026, with hotspots of sink weakening in eastern South America and elevated fire risk in Southeast Asia.</summary>
-  </entry>
-  <entry>
-    <title>Identifying Arctic states vulnerable to rapid ice loss with a convolutional neural network</title>
-    <link href="https://arxiv.org/abs/2610.16584"/>
-    <link rel="related" href="https://weatherml.github.io/papers/climate-modeling/#2610.16584"/>
-    <id>https://arxiv.org/abs/2610.16584</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Matthew Patterson, Ioana Colfescu, Nathan Kirk, Graeme MacGhilchrist</name></author>
-    <category term="Climate Modeling"/>
-    <summary>This work investigates the incidence of rapid ice-loss events in the Arctic, in which a substantial fraction of September sea-ice is lost in only a few years. Such events are seen to occur in climate model simulations forced with increasing greenhouse gas concentrations, but not as yet in the relatively short observational record. We train a convolutional neural network (CNN) using six large climate model ensembles to diagnose vulnerability to rapid ice-loss events. The trained model is shown to separate higher and lower risk states in out-of-sample climate models via a leave-one-out cross-validation. The model emphasises the role of persistently thin sea-ice, remaining sea-ice extent and sustained high upper ocean heat content as predictors of rapid ice-loss. The CNN is applied to observational data over the satelite-era showing a signal for rapid ice-loss prior to a drop around 2007 and an increasing risk from around 2015 to present. Such rapid-ice loss events would likely have dramatic consequences for Arctic ecosystems, coastal communities and global shipping.</summary>
-  </entry>
-  <entry>
-    <title>Multivariate phase-space interpretation of ensemble forecasts: A comparison of physical and AI models</title>
-    <link href="https://arxiv.org/abs/2610.16422"/>
-    <link rel="related" href="https://weatherml.github.io/papers/global-models/#2610.16422"/>
-    <id>https://arxiv.org/abs/2610.16422</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Martin Bonte, Stéphane Vannitsem</name></author>
-    <category term="Global Models"/>
-    <summary>Ensemble forecasts from the ECMWF's Integrated Forecasting System (IFS) and the Artificial Intelligence Forecasting System (AIFS-ENS) are compared using a multi-dimensional evaluation framework. Within this framework, the uncertainty is interpreted as the linear subspace spanned by the ensemble members in phase space, from which various geometric properties are extracted. As revealed by the analysis, the error does not entirely lie in this subspace, but is reasonably well calibrated in all directions. Moreover, the framework allows to quantify that this subspace critically depends on the number of ensemble members, suggesting that the current setups only partially represent the uncertainty subspace. This phase-space interpretation furthermore allows a direct comparison of the error-representation patterns of AIFS-ENS and IFS by computing the principal angles between the subspaces: IFS and AIFS ensemble subspaces do not entirely overlap in phase space, even though they were shown to have similar abilities to represent the amplitude and the structure of the error.</summary>
-  </entry>
-  <entry>
-    <title>Sensitivity Fidelity Reveals Physical Dependencies Beyond Forecast Accuracy in Deep-Learning Earth-System Models</title>
-    <link href="https://arxiv.org/abs/2610.15540"/>
-    <link rel="related" href="https://weatherml.github.io/papers/other/#2610.15540"/>
-    <id>https://arxiv.org/abs/2610.15540</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Qi Chen, Peng Zhan, Hongxing Cui, Wenqing Cui, Ibrahim Hoteit</name></author>
-    <category term="Other"/>
-    <summary>Deep-learning models increasingly rival numerical simulation in Earth-system forecasting, yet forecast error alone cannot determine whether their learned input-output dependencies are physically consistent. Here we introduce sensitivity fidelity as an additional criterion: alongside prediction error, model responses to input perturbations should be examined against a trusted reference or established physical knowledge. In an idealized Rayleigh-Bénard convection benchmark, four surrogate architectures achieved low forecast errors yet encoded markedly different sensitivities. Quantitative comparison with a matched adjoint distinguished the models far more sharply than forecast accuracy and showed that predictive skill and sensitivity fidelity need not coincide, while finite-perturbation experiments further linked these differences to the propagation of initial-condition uncertainty. We then applied this strategy to El Niño-Southern Oscillation prediction, where no adjoint reference exists and learned sensitivities showed event-wise robustness, validity under finite perturbations, and consistency with established precursors. These results identify gradient-based evaluation as a discriminating complement to forecast-error metrics, providing a practical test of whether data-driven Earth-system models learn physically credible dependencies.</summary>
-  </entry>
-  <entry>
-    <title>WeatherBridge: Forecast-Aware Multi-Source Input Adaptation for Pretrained Weather Forecasting Models</title>
-    <link href="https://arxiv.org/abs/2610.14863"/>
-    <link rel="related" href="https://weatherml.github.io/papers/global-models/#2610.14863"/>
-    <id>https://arxiv.org/abs/2610.14863</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Mutian Xi, Xinyu Su, Xiaohui Zhong, Hao Li</name></author>
-    <category term="Global Models"/>
-    <summary>Data-driven weather forecasting models are commonly trained on ERA5, yet operational deployment must use timely initial states from physics-based numerical weather prediction (NWP) systems whose distributions differ substantially from ERA5. Direct initialization with these states can degrade autoregressive forecasts, motivating input adaptation that keeps the pretrained forecasting model unchanged. Here, we introduce WeatherBridge, a unified, source-conditioned adapter that maps heterogeneous operational NWP initial states to ERA5 reference states without updating the pretrained forecasting model. WeatherBridge predicts the structured residual corrections with a Swin-UNet and injects source embeddings across multiple spatial scales, allowing the model to capture shared atmospheric structure and source-specific discrepancies. Its training objective combines latitude-weighted ERA5 reconstruction with One-step Rollout Alignment (ORA), which backpropagates one-step forecast error through a frozen FuXi model to optimize the adapted states for both initial state fidelity and downstream forecast compatibility. We evaluate WeatherBridge using daily GFS, HRES, and CMA initializations from 1 January to 22 November 2025 across six variables and lead times up to 240 hours. Relative to raw source initialization of FuXi, WeatherBridge reduces the mean RMSE of FuXi over the 6- 240-hour rollout for 17 of 18 source-variable combinations, with a median reduction of 10.2% and a maximum reduction of 46.3%. The adapter trained with frozen FuXi also improves FengWu forecasts on GFS inputs without retraining either the adapter or FengWu. These results demonstrate that forecast-aware input adaptation can improve forecasts from heterogeneous operational NWP inputs and transfer across pretrained ERA5-based forecasting models.</summary>
-  </entry>
-  <entry>
-    <title>Learning native eddy-resolving ocean dynamics outperforms coarse emulation and downscaling</title>
-    <link href="https://arxiv.org/abs/2610.14645"/>
-    <link rel="related" href="https://weatherml.github.io/papers/ocean-sea-ice/#2610.14645"/>
-    <id>https://arxiv.org/abs/2610.14645</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Zilu Liu, Tao Zhang, Hailong Liu, Kai Xu, Qinghui Lin, Maoxue Yu, Jiangfeng Yu, Jingwei Xie, Zhao Jing, Minghua Zhang, Lixin Wu</name></author>
-    <category term="Ocean &amp; Sea Ice"/>
-    <summary>Eddy-resolving ocean simulations are essential for representing mesoscale dynamics that regulate ocean circulation, energy transport, and climate variability. However, they are costly to generate, store, and share. Artificial intelligence (AI) may help, but it remains unclear whether high-resolution ocean fields can be faithfully represented by evolving ocean states at coarse resolution followed by spatial downscaling, or whether dynamical evolution needs to be learned directly from native high-resolution simulations. We show that directly learning dynamical evolution on a 0.1$^\circ$ grid provides a more faithful representation of mesoscale variability than evolving ocean states on a 1$^\circ$ grid followed by downscaling reconstruction. We developed a full-depth 1$^\circ$ emulator and a native 0.1$^\circ$ sea surface temperature (SST) emulator, both of which remained stable over long-term free-running simulations without significant drift, providing reliable baselines for this comparison. Direct learning at 0.1$^\circ$ preserves mesoscale energy, spectral characteristics, and frontal gradients, whereas the coarse-resolution evolution followed by downscaling approach recovers large-scale patterns but fails to reproduce key mesoscale signatures. We show that the learned mesoscale statistics remain consistent across diverse hardware platforms, supporting the reproducibility and portability of AI-based ocean simulations. These results suggest that downscaling of low-resolution large-scale states alone is insufficient to represent ocean mesoscale variability, supporting the need to learn dynamical evolution directly in a high-resolution state space. These findings highlight the continued importance of high-resolution physics ocean models as a foundation for AI-based ocean simulation, providing dynamically resolved training data for physically faithful high-resolution emulators.</summary>
-  </entry>
-  <entry>
-    <title>A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes</title>
-    <link href="https://arxiv.org/abs/2610.14493"/>
-    <link rel="related" href="https://weatherml.github.io/papers/hydrology/#2610.14493"/>
-    <id>https://arxiv.org/abs/2610.14493</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>M Jawad, HV Gupta, MA Farmani, A Behrangi, GY Niu</name></author>
-    <category term="Hydrology"/>
-    <summary>Recent advances in machine learning have improved rainfall-runoff prediction, yet most data-driven models remain difficult to interpret and do not explicitly enforce physical conservation laws. We present the Gated Catchment Hydrology Model (GCHM), a mass-conserving architecture based on the Mass-Conserving Perceptron (MCP). GCHM uses five storage states representing canopy interception, snow, soil moisture, groundwater, and streamflow generation. Constrained gates govern precipitation partitioning, evapotranspiration, infiltration, seepage, runoff, and baseflow while learning context-dependent process relationships.   We evaluate GCHM across 50 CAMELS catchments spanning snowmelt-dominated, recent-rainfall, historical-rainfall, and arid regimes, using NOAA AORC meteorological forcing and remotely sensed vegetation and land-surface data. Performance is assessed using the Jawad-Kling-Gupta Efficiency (JKGE) metric, which accounts for stationary and non-stationary hydrologic behavior. We compare the full architecture with ablated variants and recurrent neural network benchmarks.   GCHM reproduces streamflow dynamics across diverse hydroclimatic regimes, including arid catchments, while maintaining interpretable states and fluxes. Ablation experiments show that simplified architectures may perform adequately under wet conditions but struggle to represent flow persistence and recession during dry periods, when groundwater storage sustains low flows. Learned gates recover hydrologically plausible relationships governing snowmelt, runoff, seepage, and evapotranspiration. GCHM combines competitive predictive performance with mass conservation and interpretability, providing a foundation for hydrologic modeling and counterfactual analysis.</summary>
-  </entry>
-  <entry>
-    <title>Diffusion Precipitation Generation with Medium-range Weather Forecasting</title>
-    <link href="https://arxiv.org/abs/2610.12976"/>
-    <link rel="related" href="https://weatherml.github.io/papers/global-models/#2610.12976"/>
-    <id>https://arxiv.org/abs/2610.12976</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Guowen Li, Yang Liu, Mengxuan Chen, Jiashun Cheng, Haoyuan Liang, Shilei Cao, Yujie Wang, Juepeng Zheng, Fang Wang, Yerong Feng, Meng Jin, Hong Cheng, Yutong Lu, Haohuan Fu</name></author>
-    <category term="Global Models"/>
-    <summary>Accurate daily precipitation forecasts are important for weather-sensitive decisions. Although recent Weather Foundation Models (WFMs) have achieved significant progress, they are trained on reanalysis data, which exhibit regional and intensity-dependent biases. Since retraining WFMs on observation-based targets is costly, we study Dynamics-Precipitation Decoupling, a plug-and-play framework that uses a separately trained generator to map non-precipitation forecasts from a frozen weather model to observation-aligned daily precipitation. Its key challenges are to capture heterogeneous rainfall distributions and align daily accumulations with atmospheric signals that evolve across space and time. To address them, we train a diffusion generator conditional on atmospheric states and satellite-gauge estimates of precipitation. A multi-scale recurrent encoder summarizes atmospheric evolution, while cross-attention aligns atmospheric and precipitation features during denoising. Extensive evaluation of various backbones, including Pangu-Weather, GraphCast, and HRES, on global and regional forecasting shows improved daily precipitation accuracy and event detection, with better representation of localized accumulation patterns. Global ensemble evaluation shows lower Brier scores than ENS and training-from-scratch GenCast at all reported lead times, with lower CRPS in most comparisons. Remarkably, a heavy-rainfall case study using 2,288 stations in China further supports improved daily accumulation patterns and event detection against ground observations.</summary>
-  </entry>
-  <entry>
-    <title>Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment</title>
-    <link href="https://arxiv.org/abs/2610.12401"/>
-    <link rel="related" href="https://weatherml.github.io/papers/regional-models/#2610.12401"/>
-    <id>https://arxiv.org/abs/2610.12401</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Guowen Li, Yang Liu, Yujie Wang, Qiuyan Sun, Haoyuan Liang, Juepeng Zheng, Hong Cheng, Haohuan Fu</name></author>
-    <category term="Regional Models"/>
-    <summary>Kilometer-scale regional weather forecasting is essential for local weather warnings and weather-sensitive decisions. Existing data-driven approaches often rely on numerical forecasts for large-scale guidance or require additional training of global forecasting components. Pretrained global weather models offer an efficient source of large-scale forecasts, motivating their reuse to guide high-resolution regional prediction. However, this coupling requires aligning global and regional representations across different grids and integrating global guidance with local interactions to advance regional states. We propose ScaleCast, a regional forecasting framework that addresses these challenges through Global-Regional Alignment. Its Global-Regional Conversion module aligns joint global and regional representations with regional locations, while the Global-Regional Alignment and Dynamics block combines aligned guidance with regional neighborhood interactions. Experiments using ERA5 global analyses on a 0.25-degree grid and CERRA regional reanalysis at 5.5 km spacing demonstrate improved regional forecasts across surface and upper-air variables, with a single trained model supporting multiple global forecast drivers (i.e., Pangu-Weather, GraphCast, and HRES) without specific retraining. Fine-tuning on HRRR at 3 km spacing further demonstrates the framework's adaptability to a different regional domain and spatial resolution. Windstorm case studies show improved cyclone positioning and core-pressure estimates, while comparisons with HadISD station observations show closer agreement with local temperature and humidity changes.</summary>
-  </entry>
-  <entry>
-    <title>Just Weather Scoring: Efficient End-to-end Nowcasting with Distributional Diffusion</title>
-    <link href="https://arxiv.org/abs/2610.12189"/>
-    <link rel="related" href="https://weatherml.github.io/papers/nowcasting/#2610.12189"/>
-    <id>https://arxiv.org/abs/2610.12189</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Jannik Wiese, Johannes Schusterbauer, Tommaso Martorella, Björn Ommer</name></author>
-    <category term="Nowcasting"/>
-    <summary>Generative diffusion models are well-suited for probabilistic precipitation nowcasting, but existing approaches often rely on separately trained compression or deterministic forecasting components and remain costly at inference due to iterative denoising. We introduce Just Weather Scoring (JWS), a single-stage, end-to-end diffusion model which addresses both issues by forecasting directly in radar space and enabling few-step generation. Radar-space modeling greatly simplifies training and inference and eliminates uncertainty arising from lossy compression. JWS combines Masked Asynchronous Diffusion, a timestep-sampling scheme that preserves clean context while adapting diffusion training to high-dimensional spatio-temporal data, with a simple scoring-rule objective that aligns training with probabilistic forecasting and unlocks few-step generation. On the SEVIR and MeteoNet benchmarks, JWS achieves state-of-the-art probabilistic forecasting performance at reduced training and inference cost. Even our smallest model remains competitive using substantially fewer parameters and more than 17x faster inference.</summary>
-  </entry>
-  <entry>
-    <title>legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents</title>
-    <link href="https://arxiv.org/abs/2610.11883"/>
-    <link rel="related" href="https://weatherml.github.io/papers/regional-models/#2610.11883"/>
-    <id>https://arxiv.org/abs/2610.11883</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Pierre Gentine, Dhruv Balwada, Aytaç Paçal, Linnia Hawkins, Alistair Adcroft, Hang Fan, Jianing Fang, Aya Lahlou, Kara D. Lamb, David M. Lawrence, Julien Le Sommer, Joseph Mouallem, Juan Nathaniel, Duncan Watson-Parris, Veronika Eyring</name></author>
-    <category term="Regional Models"/>
-    <summary>Earth system models (ESMs) have grown tremendously in realism, yet key uncertainties persist in the climate response to greenhouse-gas forcing, particularly due to cloud radiative feedbacks. In addition, their software architecture was not designed for accelerator hardware or modern artificial intelligence (AI). Here we present legoESM, a composable, differentiable, multiscale ESM written in JAX. It builds on decades of community-developed parameterizations and numerical methods, recast in a unified framework by AI coding agents under a human-specified scientific contract and verified through benchmarking. Dynamical cores, physics schemes, grids, complexity levels and components are swappable like building blocks, and can use conventional physics or machine-learned emulators. A single code base spans metre-scale large-eddy simulation to global simulations and weather to climate. End-to-end differentiability enables gradient-based calibration, variational data assimilation and online training. legoESM modular architecture enables systematic evaluation of diverse model variants to explore structural uncertainty and test hypotheses. legoESM produces realistic simulations across scales, reduces land-surface temperature bias through gradient-based calibration, and scales efficiently on GPUs to kilometer-scale simulations. It offers an open, community infrastructure for hypothesis testing, research and teaching in Earth sciences and a template for multiscale physical systems.</summary>
-  </entry>
-  <entry>
-    <title>A Physics-Constrained Implicit Profile Network for Continuous Reconstruction of Tropical Cyclone Near-Surface Wind Profiles</title>
-    <link href="https://arxiv.org/abs/2610.11405"/>
-    <link rel="related" href="https://weatherml.github.io/papers/other/#2610.11405"/>
-    <id>https://arxiv.org/abs/2610.11405</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Jian Ma, Yilin Yang, Robert Rogers, Jun A. Zhang, Jie Tang</name></author>
-    <category term="Other"/>
-    <summary>Near the ocean surface, tropical cyclone winds change rapidly with height, but direct measurements are limited because aircraft dropsondes provide only sparse and irregular observations. Continuous wind profiles are important for understanding hurricane boundary-layer processes, improving storm-surge prediction, supporting offshore engineering, and assessing coastal hazards. In this study, we developed an artificial intelligence model that combines machine learning with physical principles to reconstruct continuous wind profiles from sparse observations. The model is designed to preserve the observed surface winds while generating realistic changes in wind speed and direction with height. Tests using more than two decades of NOAA hurricane observations show that the method accurately reproduces the vertical structure of tropical cyclone winds over a wide range of storm intensities. The framework can also extend satellite-derived surface wind measurements into three-dimensional near-surface wind fields, providing new opportunities for hurricane research, operational forecasting, and engineering applications.</summary>
-  </entry>
-  <entry>
-    <title>A Graph Neural Network for Global Daily Fire Radiative Power Prediction at Medium-Range Lead Times</title>
-    <link href="https://arxiv.org/abs/2610.11022"/>
-    <link rel="related" href="https://weatherml.github.io/papers/global-models/#2610.11022"/>
-    <id>https://arxiv.org/abs/2610.11022</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Li Zhang, Jun Wang, Isidora Jankov, Yongxin Liu, Gonzalo A. Ferrada, Ravan Ahmadov, Ligia Bernardet, Haonan Chen, Shobha Kondragunta</name></author>
-    <category term="Global Models"/>
-    <summary>Skillful prediction of biomass-burning activity several days in advance is important for air-quality forecasting and aerosol prediction. Two operational constraints motivate this work. First, the GBBEPx satellite fire radiative power (FRP) product used to initialize NOAA's GEFS-Aerosols is available with about a 1.5-day latency, so each forecast cycle relies on the most recently available, but already outdated, fire observations. Second, these fire inputs are then held fixed throughout the subsequent 5-day operational forecast, or 7 days in the GSL experimental system, effectively assuming no evolution in fire activity. We develop a data-driven model that predicts global FRP one to seven days ahead from the most recent available observations. The model adapts a spatiotemporal graph neural network using reanalysis meteorology, land-cover and vegetation information, recent fire history, and GBBEPx FRP as the training target. It is trained on 2020-2022 data and evaluated for 2023-2024. The model reproduces the global seasonal cycle and substantially outperforms persistence. At 0.1$^\circ$ resolution, mean squared error is reduced by 32% at one-day lead and 43% at seven days in 2023, and by 24% and 40% in 2024. At 1$^\circ$ resolution, the critical success index ranges from 0.32 to 0.60. Detection skill declines only modestly with lead time, whereas intensity skill degrades more rapidly. Large fires are detected reliably, but their radiative power is systematically underestimated. These results demonstrate useful predictability of fire activity several days ahead and identify intensity calibration and small-fire placement as the main remaining challenges before predicted FRP can support operational aerosol forecasts.</summary>
-  </entry>
-  <entry>
-    <title>Low-rank tensor structure of precipitation and its application to satellite-reference merging</title>
-    <link href="https://arxiv.org/abs/2610.11000"/>
-    <link rel="related" href="https://weatherml.github.io/papers/post-processing/#2610.11000"/>
-    <id>https://arxiv.org/abs/2610.11000</id>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <author><name>Ryan Solgi, Rohan Shankar, Hugo A. Loaiciga</name></author>
-    <category term="Post-processing"/>
-    <summary>The intermittent and variable nature of precipitation makes its accurate estimation over extended domains difficult, yet its spatiotemporal structure suggests that a low-rank representation may be possible. This work represents daily precipitation over the contiguous United States (CONUS) as spatiotemporal tensors and applies CANDECOMP/PARAFAC factorization, showing that preserving the native spatial and temporal modes yields more accurate reconstruction than factorizing independent daily fields or unfolded space--time matrices. Building on this finding, this work presents TMerge, a tensor-based framework that integrates satellite precipitation with sparse reference observations through shared low-rank spatial and temporal factors. TMerge was applied to correct the IMERG Final Run product with climate prediction center reference observations over CONUS. During 2019-2022, TMerge increased correlation from 0.53 to 0.85 and reduced root-mean-square error and mean absolute error by 48.2% and 29.3%, respectively. TMerge consistently outperformed linear bias correction, quantile mapping, and neural networks across seasons, precipitation-intensity regimes, and regions. Improvements were spatially coherent and largest in coastal regions where IMERG errors were greatest. These results demonstrate that low-rank tensor structure parsimoniously approximates the dominant spatiotemporal variability of precipitation and provides a practical mechanism for improving satellite estimates under limited reference observations over extended domains.</summary>
   </entry>
 </feed>

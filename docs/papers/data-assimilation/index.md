@@ -8,11 +8,24 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">79 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">80 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport { #2610.32148 }
+
+    *Siming Liang, Peter Jan van Leeuwen, Hristo G. Chipilski, Zezhong Zhang, Feng Bao, Guannan Zhang* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.32148">Background-error covariance models are central to atmospheric data assimilation because they spread partial observational information across space, variables, and dynamically coupled scales. Ensemble...</span><span class="abstract-full" id="full-2610.32148" hidden>Background-error covariance models are central to atmospheric data assimilation because they spread partial observational information across space, variables, and dynamically coupled scales. Ensemble and variational methods exploit this covariance geometry efficiently, but their standard analysis formulations are largely built around Gaussian or locally quadratic approximations. Score-based ensemble filtering provides a framework for nonlinear distributional transport, but existing Ensemble Score Filter (EnSF) formulations lack an intrinsic covariance-mediated pathway for propagating likelihood information from observed to unobserved state components. We introduce a covariance-informed ensemble score filter (CI-EnSF) that embeds localized forecast-error covariance geometry directly into the forward diffusion and reverse transport. The proposed forward diffusion is covariance-shaped in standardized state space and becomes isotropic under the corresponding control-variable transformation. This covariance structure continuously propagates observational information from observed to unobserved state components throughout the reverse transport analysis trajectory. Experiments with Lorenz-96 and surface quasi-geostrophic (SQG) dynamics show a clear regime dependence. For linear observations, a well-tuned LETKF is more accurate, while CI-EnSF maintains stable cycling and effective covariance-mediated information propagation. Under strongly nonlinear observations and under climatological initialization, CI-EnSF achieves lower analysis error and greater cycling robustness than Gaussian ensemble benchmarks such as the LETKF, with improvements extending across spatial scales in the nonlinear SQG experiment. These results suggest that the principal benefit of CI-EnSF arises from combining nonlinear distributional transport with the mature covariance geometry used in conventional data assimilation.</span> <span class="abstract-toggle" data-id="2610.32148">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.32148v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.32148v1) · [:material-content-copy: BibTeX](../../bibtex/2610.32148.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
 
 -   #### Accounting for model error in ensemble variational data assimilation through learned generative dynamics { #2610.17333 }
 
@@ -369,16 +382,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
-
--   #### Cheap2Rich: A Multi-Fidelity Framework for Data Assimilation and System Identification of Multiscale Physics -- Rotating Detonation Engines { #2601.20295 }
-
-    *Yuxuan Bao, Jan Zajac, Megan Powers, Venkat Raman, J. Nathan Kutz* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.20295">Bridging the sim2real gap between computationally inexpensive models and complex physical systems remains a central challenge in machine learning applications to engineering problems, particularly in...</span><span class="abstract-full" id="full-2601.20295" hidden>Bridging the sim2real gap between computationally inexpensive models and complex physical systems remains a central challenge in machine learning applications to engineering problems, particularly in multi-scale settings where reduced-order models typically capture only dominant dynamics. In this work, we present Cheap2Rich, a multi-scale data assimilation framework that reconstructs high-fidelity state spaces from sparse sensor histories by combining a fast low-fidelity prior with learned, interpretable discrepancy corrections. We demonstrate the performance on rotating detonation engines (RDEs), a challenging class of systems that couple detonation-front propagation with injector-driven unsteadiness, mixing, and stiff chemistry across disparate scales. Our approach successfully reconstructs high-fidelity RDE states from sparse measurements while isolating physically meaningful discrepancy dynamics associated with injector-driven effects. The results highlight a general multi-fidelity framework for data assimilation and system identification in complex multi-scale systems, enabling rapid design exploration and real-time monitoring and control while providing interpretable discrepancy dynamics. Code for this project is is available at: github.com/kro0l1k/Cheap2Rich.</span> <span class="abstract-toggle" data-id="2601.20295">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.20295v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.20295v1) · [:material-content-copy: BibTeX](../../bibtex/2601.20295.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

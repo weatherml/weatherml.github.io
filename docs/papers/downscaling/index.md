@@ -8,11 +8,24 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">106 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">107 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Climate downscaling with likelihood functional flow matching { #2610.33482 }
+
+    *Zhi-Song Liu, Helmi Toropainen, Ammar Kheder, Michael Boy* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.33482">Decisions about heat, frost and flooding are made locally, yet reanalyses and climate models resolve tens of kilometres. Generative downscalers add kilometre-scale detail with uncertainty, but are...</span><span class="abstract-full" id="full-2610.33482" hidden>Decisions about heat, frost and flooding are made locally, yet reanalyses and climate models resolve tens of kilometres. Generative downscalers add kilometre-scale detail with uncertainty, but are tied to a grid, costly to sample and lack a tractable likelihood. Here we introduce CD-FFM, a functional flow-matching model that treats the high-resolution field as a continuous random field that one model can query at any location and resolution. Its velocity acts pointwise, so spatial variability comes from a noise prior fitted to the observed spectrum and every observation has an exact likelihood. Downscaling ERA5 to 1 km daily temperature over Fennoscandia, CD-FFM lowers the continuous ranked probability score by 27-31% against regression and 12-18% against a forty-times larger neural operator in each of three test years, and outperforms a CorrDiff-style diffusion model while sampling about fifty times faster. The same model transfers to precipitation and makes large kilometre-scale ensembles affordable.</span> <span class="abstract-toggle" data-id="2610.33482">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.33482v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.33482v2) · [:material-content-copy: BibTeX](../../bibtex/2610.33482.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
 
 -   #### Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations { #2610.28327 }
 
@@ -386,19 +399,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
-    { .paper-tags }
-
--   #### Generative climate downscaling enables high-resolution compound risk assessment by preserving multivariate dependencies { #2605.11531 }
-
-    *Takuro Kutsuna, Noriko N. Ishizaki, Norihiro Oyama, Hiroaki Yoshida* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.11531">Physics-based climate projections using general circulation models are essential for assessing future risks, but their coarse resolution limits regional decision-making. Statistical downscaling can...</span><span class="abstract-full" id="full-2605.11531" hidden>Physics-based climate projections using general circulation models are essential for assessing future risks, but their coarse resolution limits regional decision-making. Statistical downscaling can efficiently add detail, yet many methods treat variables independently, degrading inter-variable relationships that govern compound hazards such as heat stress, drought, and wildfire. Here we show that a diffusion-based multivariate generative framework, combined with bias correction, recovers degraded inter-variable correlations even under a 50$\times$ increase in linear resolution. When applied to five meteorological variables over Japan, the framework reduces inter-variable correlation errors by more than fourfold relative to existing baselines while improving both univariate and spatial accuracy, leading to more accurate detection of severe drought. These results demonstrate that multivariate generative downscaling improves the reliability of compound risk assessment under large resolution gaps.</span> <span class="abstract-toggle" data-id="2605.11531">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.11531v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.11531v1) · [:material-content-copy: BibTeX](../../bibtex/2605.11531.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a>
     { .paper-tags }
 
 </div>

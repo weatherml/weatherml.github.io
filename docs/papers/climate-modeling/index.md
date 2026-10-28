@@ -8,11 +8,34 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">304 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">306 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling { #2610.36297 }
+
+    *Pratham Aggarwal, Duncan Watson-Parris, William E. Chapman* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.36297">Coupled climate simulations are computationally expensive, largely because of the atmosphere. We introduce FASST, a coupled climate model that retains the prognostic POP2 ocean while replacing the...</span><span class="abstract-full" id="full-2610.36297" hidden>Coupled climate simulations are computationally expensive, largely because of the atmosphere. We introduce FASST, a coupled climate model that retains the prognostic POP2 ocean while replacing the atmosphere and sea ice with lightweight U-Net emulators. The atmospheric emulator is diagnostic, predicting surface fluxes from the evolving ocean-ice state every $6$ simulated hours, while the sea-ice emulator advances the ice state monthly. For $140$ years of unforced integration, FASST maintains a stable global-mean climate without SST restoring, with post-transient global-mean SST of $291.30 \pm 0.22\mathrm{K}$ compared with $291.25 \pm 0.10\mathrm{K}$ in CESM$2$ piControl. FASST also captures interannual Niño-$3.4$ variability, although with weaker amplitude than CESM ($0.62\mathrm{K}$ versus $1.02\mathrm{K}$). These results demonstrate that a stateless learned atmosphere can sustain stable, free-running coupled climate simulations over century-scale integrations.</span> <span class="abstract-toggle" data-id="2610.36297">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.36297v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.36297v1) · [:material-content-copy: BibTeX](../../bibtex/2610.36297.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
+
+-   #### Application of Artificial Intelligence in the Management of Climate Change-Related Health Issues in Africa { #2610.35294 }
+
+    *Peter Kokol, Martha Kachweka, Helena Blazun Vosner, Samuel Chol Buol, Jernej Zavrsnik et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.35294">While climate change disproportionately impacts African public health, AI predictive modeling remains heavily constrained. Using a Synthetic Knowledge Synthesis approach and VOSviewer, we conducted a...</span><span class="abstract-full" id="full-2610.35294" hidden>While climate change disproportionately impacts African public health, AI predictive modeling remains heavily constrained. Using a Synthetic Knowledge Synthesis approach and VOSviewer, we conducted a bibliometric analysis of Scopus-indexed literature, comparing Global and African corpora. Network analysis reveals stark divergences: global research emphasizes complex, predictive models for planetary health, whereas African research focuses on localized, reactive solutions for immediate infectious disease triage. Severe structural barriers in Africa, including compute deficits, data silos, and energy instability, hinder advanced AI scaling. Ultimately, international funding must shift from siloed pilot projects toward building foundational digital infrastructure and localized AI frameworks.</span> <span class="abstract-toggle" data-id="2610.35294">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.35294v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.35294v1) · [:material-content-copy: BibTeX](../../bibtex/2610.35294.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### Disentangling forced and internal components in observed climate evolution using spatiotemporal deep learning { #2610.28219 }
 
@@ -358,32 +381,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a>
-    { .paper-tags }
-
--   #### UHI-Bench: Benchmarking Dual-Source Urban Heat Island Modeling Across Cities in Diverse Climate Regimes { #2608.23857 }
-
-    *Wanyun Ling, Chenxi Liu, Yi Xie, Aopu Xu, Zhuoqi Zeng, Ziyue Li* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.23857">Urban heat islands (UHIs) are intensifying under climate change, exacerbating thermal exposure risks. Their two primary observations, land surface temperature UHI (LST-UHI) and near-surface air...</span><span class="abstract-full" id="full-2608.23857" hidden>Urban heat islands (UHIs) are intensifying under climate change, exacerbating thermal exposure risks. Their two primary observations, land surface temperature UHI (LST-UHI) and near-surface air temperature UHI (AirT-UHI), capture physically distinct aspects of urban heat. However, most studies rely on a single source, and substituting one for the other can substantially bias the magnitude and spatial variability of human heat exposure. Accurate UHI modeling also requires dynamic meteorological drivers and static urban morphology features, but spatiotemporal incompatibilities hinder their alignment. Cloud gaps in LST observations and sparse AirT station networks further limit dual-source UHI modeling, motivating cross-city transfer across diverse climates. To bridge these gaps, we introduce UHI-Bench, the first UHI benchmark for dual-source UHI modeling that integrates dynamic and static environmental context. Following a unified signal, mechanism, and transfer framework, it evaluates over 20 baselines from four model families on five tasks across 20 cities and nine Köppen climate classes. Results show that no model is uniformly best, although foundation models remain consistently competitive and stable. Environmental covariates generally improve performance, but their utility varies across sources and tasks. Cross-city transferability is better explained by overlap in UHI regimes than by climate-zone similarity. With the dataset and standardized pipeline, our work provides practical guidance for urban heat modeling, promotes climate data equity, and supports future advances in climate research.</span> <span class="abstract-toggle" data-id="2608.23857">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.23857v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.23857v1) · [:material-content-copy: BibTeX](../../bibtex/2608.23857.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
-
--   #### DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections { #2608.21998 }
-
-    *S. Stamatelopoulos, M. Wang, I. Lopez-Gomez, L. Zepeda-Nunez, Z. Y. Wan, R. Carver, F. Sha et al.* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.21998">Regional climate risk assessment is critical for applications such as infrastructure design, disaster forecasting, and insurance resource allocation. However, estimating regional (i.e.,...</span><span class="abstract-full" id="full-2608.21998" hidden>Regional climate risk assessment is critical for applications such as infrastructure design, disaster forecasting, and insurance resource allocation. However, estimating regional (i.e., high-spatial-resolution) risk with global climate models (GCMs) remains computationally prohibitive, which has driven the development of downscaling methods for coarse GCM outputs. Downscaling is vital for rare events, since quantifying their extreme properties requires high spatial resolution and very long GCM simulations. These methods non-intrusively increase GCM resolution while correcting statistical biases from unresolved fine-scale processes, thereby improving the accuracy of extreme event statistics with long return periods. A key challenge is preserving dynamical consistency, as freely evolving GCM trajectories are not expected to track the observational dataset used for training the correction operator. This is critical for causal extreme event analyses, where storyline-based risk assessment, i.e., extreme event catalogs, is necessary for effective planning. We address this challenge by introducing Dynamically and Statistically Consistent downscaling (DySCo), a non-intrusive framework yielding high-resolution climate projections consistent with coarse GCM dynamics. DySCo relies on a data-driven reformulation of nudging to create dynamically paired training trajectories without intrusive GCM modifications. Using these paired trajectories, we train a dynamically and statistically consistent, two-stage operator. We evaluate the method by downscaling the Community Earth System Model v2 Large Ensemble (LENS2) in time and space towards historical reanalysis. Results show DySCo achieves superior dynamical consistency with the coarse GCM trajectories, essentially applying a minimal, causal correction to the GCM, preserving top statistical performance comparable to state-of-the-art unsupervised models.</span> <span class="abstract-toggle" data-id="2608.21998">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.21998v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.21998v1) · [:material-content-copy: BibTeX](../../bibtex/2608.21998.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 </div>

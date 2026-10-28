@@ -8,11 +8,60 @@ hide:
 
 # Air Quality & Composition
 
-<p class="page-meta" markdown="span">74 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">78 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry { #2610.37655 }
+
+    *Wenqing Peng, Michael Boy, Zhi-Song Liu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.37655">Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable...</span><span class="abstract-full" id="full-2610.37655" hidden>Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled, and vectorisable chemistry code in JAX from mechanisms written in the KPP language. KPPax evaluates the rate law with sparse operations in log space, which keeps it differentiable, and integrates the stiff system with the implicit solvers and the forward- and reverse-mode adjoints of the <code>diffrax</code> library, so that exact sensitivities are obtained without hand-derived adjoint code. We demonstrate two applications with the POLLU benchmark mechanism. In the first, the Fisher information matrix computed from an automatically differentiated Jacobian predicts, before any fit, which of the 25 rate coefficients a flow-tube-like design can identify, and noisy synthetic estimation confirms the predicted uncertainties of the nine identifiable rate coefficients to within about 30% while revealing clusters of fast reactions of which only ratios are constrained. In the second, a neural-network correction of an emission inventory is trained offline on per-scenario 4D-Var retrievals and then fine-tuned online through the chemical model, which reduces the error of the biogenic correction by a factor of 2.4--5 and recovers information on low-temperature emissions that the individual retrievals lose. KPPax makes KPP mechanisms directly usable for parameter estimation and hybrid physics--machine-learning modelling.</span> <span class="abstract-toggle" data-id="2610.37655">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.37655v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.37655v1) · [:material-content-copy: BibTeX](../../bibtex/2610.37655.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
+    { .paper-tags }
+
+-   #### Noise Steering: Exploiting Wake Steering and Acoustic Directivity for Noise-Constrained Wind Farm Control via Reinforcement Learning { #2610.36888 }
+
+    *Martín de Frutos, Baptiste Corban, Claire Bizon Monroc, Ana Bušić, Donatien Dubuc, Jiamin Zhud et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.36888">Existing noise mitigation strategies for wind farms usually consist in reducing turbines power output, without accounting for the wake interactions between them and the noise emission directivity....</span><span class="abstract-full" id="full-2610.36888" hidden>Existing noise mitigation strategies for wind farms usually consist in reducing turbines power output, without accounting for the wake interactions between them and the noise emission directivity. This leads to over-conservative policies and unexploited wind power. Yet, turbine yaw can simultaneously affect wake interactions and the direction of noise emission, offering an additional degree of freedom for farm-level noise control. We therefore propose Noise Steering, a model-free reinforcement learning (RL) strategy that jointly controls turbine yaw angles and power setpoints to maximise farm power while satisfying a local noise constraint in a defined region. To enable training at a reduced computational cost, a low-fidelity acoustic model is coupled with the steady-state FLORIS simulator. The RL agent effectively learns how to redirect wakes and noise directivity away from the protected region while redistributing power across the farm. On a six-turbine test farm, the policy satisfies the 40 dB noise constraint throughout the full range of turbulent winds, with an average power deficit of only 2% relative to greedy unimpeded control, and up to 7.7% at high wind speeds. In comparison, the industry-standard noise-reduced operation (NRO) baseline here generates an average power loss of 17%. When deployed in the higher-fidelity FAST.Farm simulator, the policy largely retains its performance under steady and turbulent inflow, despite differences in simulation fidelity. These results demonstrate the potential of combining yaw control and power derating through RL to improve the power-noise trade-off in wind farm operation.</span> <span class="abstract-toggle" data-id="2610.36888">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.36888v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.36888v1) · [:material-content-copy: BibTeX](../../bibtex/2610.36888.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a>
+    { .paper-tags }
+
+-   #### An actively trained neural operator for near-explicit atmospheric chemistry { #2610.33771 }
+
+    *Zhi-Song Liu, Wenqing Peng, Ammar Kheder, Risto Makkonen, Michael Boy* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.33771">Earth-system models simplify atmospheric chemistry into condensed mechanisms, because near-explicit mechanisms such as the Master Chemical Mechanism (MCM) are too costly to solve in every grid cell....</span><span class="abstract-full" id="full-2610.33771" hidden>Earth-system models simplify atmospheric chemistry into condensed mechanisms, because near-explicit mechanisms such as the Master Chemical Mechanism (MCM) are too costly to solve in every grid cell. Neural emulators could lift this limit, but most advance the chemistry in small time steps and cover only a few species or a reduced mechanism. Here we introduce FNO-MoE, a Fourier neural operator with a mixture of experts that predicts the full near-explicit chemical state over 30 minutes in a single call. The same network also guides its own training, using the disagreement among its experts to select the most informative box-model simulations. At equal cost, this active sampling yields a more accurate emulator than random or evenly spread sampling. Fine-tuning on longer trajectories keeps it stable over multi-hour runs in which models trained on short simulations diverge. The resulting emulator reproduces the evolution of thousands of species with high fidelity, remains accurate for unseen chemical compositions and runs orders of magnitude faster than the numerical solver. These results open a new direction for emulating complex atmospheric systems: neural operators that predict the full chemical state over long windows and choose their own training data. Training under changing meteorology is the next step towards bringing near-explicit chemistry into Earth-system models.</span> <span class="abstract-toggle" data-id="2610.33771">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.33771v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.33771v2) · [:material-content-copy: BibTeX](../../bibtex/2610.33771.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
+
+-   #### Data Quality Audit and Bivariate Temperature-Humidity Analysis of a Long-Term LoRaWAN Network: Anomaly Detection, PCA, Clustering and Machine Learning { #2610.32438 }
+
+    *Mamadou Sow* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.32438">Long-term environmental IoT/LPWAN deployments often aggregate heterogeneous data streams from diverse devices without systematic auditing of each variable's actual coverage prior to analysis-an...</span><span class="abstract-full" id="full-2610.32438" hidden>Long-term environmental IoT/LPWAN deployments often aggregate heterogeneous data streams from diverse devices without systematic auditing of each variable's actual coverage prior to analysis-an increased risk when multiple sensor types coexist within the same network. This work proposes a C++17 processing pipeline applied to the Tour Perret LoRaWAN dataset (421 937 frames, June 2021--June 2023, 5 devices). A systematic coverage audit integrated into the extraction phase reveals that CO2 is completely missing (0% coverage) and pressure is reported only by an isolated base module (Wyres, 4.24% of the corpus), invalidating the initial hypothesis of a joint four-variable analysis. The analysis is refocused on the Temperature--Humidity pair, jointly available across 205{,}005 frames (95.76%) from 4 Elsys EMS sensors. The pipeline sequentially performs anomaly detection (modified Z-score, Isolation Forest), bivariate Principal Component Analysis, clustering (K-means, DBSCAN), and a multilayer perceptron predicting humidity from temperature and time, whose residuals serve as a detector for slow drift. On real-world data: Temperature--Humidity correlation r=-0.662, two-component PCA (PC1 =83.1% of variance), Isolation Forest detects 2.12% multivariate anomalies while univariate Z-score detects none, calibrated DBSCAN isolates 0.17% noise across 13 clusters, and the MLP achieves $R^2=0.672$ (RMSE =10.54%) in cross-validation. This work demonstrates that per-variable coverage auditing prior to modeling is a necessary methodological step for heterogeneous multi-sensor IoT datasets.</span> <span class="abstract-toggle" data-id="2610.32438">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.32438v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.32438v1) · [:material-content-copy: BibTeX](../../bibtex/2610.32438.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### AirMPA: A Meteorology-to-Pollution Adapter for Global Air Quality Forecasting { #2610.25797 }
 
@@ -329,58 +378,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
-    { .paper-tags }
-
--   #### Meteorology-Driven GPT4AP: A Multi-Task Forecasting LLM for Atmospheric Air Pollution in Data-Scarce Settings { #2603.29974 }
-
-    *Prasanjit Dey, Soumyabrata Dev, Bianca Schoen-Phelan* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.29974">Accurate forecasting of air pollution is important for environmental monitoring and policy support, yet data-driven models often suffer from limited generalization in regions with sparse...</span><span class="abstract-full" id="full-2603.29974" hidden>Accurate forecasting of air pollution is important for environmental monitoring and policy support, yet data-driven models often suffer from limited generalization in regions with sparse observations. This paper presents Meteorology-Driven GPT for Air Pollution (GPT4AP), a parameter-efficient multi-task forecasting framework based on a pre-trained GPT-2 backbone and Gaussian rank-stabilized low-rank adaptation (rsLoRA). The model freezes the self-attention and feed-forward layers and adapts lightweight positional and output modules, substantially reducing the number of trainable parameters. GPT4AP is evaluated on six real-world air quality monitoring datasets under few-shot, zero-shot, and long-term forecasting settings. In the few-shot regime using 10% of the training data, GPT4AP achieves an average MSE/MAE of 0.686/0.442, outperforming DLinear (0.728/0.530) and ETSformer (0.734/0.505). In zero-shot cross-station transfer, the proposed model attains an average MSE/MAE of 0.529/0.403, demonstrating improved generalization compared with existing baselines. In long-term forecasting with full training data, GPT4AP remains competitive, achieving an average MAE of 0.429, while specialized time-series models show slightly lower errors. These results indicate that GPT4AP provides a data-efficient forecasting approach that performs robustly under limited supervision and domain shift, while maintaining competitive accuracy in data-rich settings.</span> <span class="abstract-toggle" data-id="2603.29974">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.29974v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.29974v1) · [:material-content-copy: BibTeX](../../bibtex/2603.29974.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
-    { .paper-tags }
-
--   #### Anchored-Branched Steady-state WInd Flow Transformer (AB-SWIFT): a metamodel for 3D atmospheric flow in urban environments { #2603.25635 }
-
-    *Armand de Villeroché, Rem-Sophia Mouradi, Vincent Le Guen, Sibo Cheng, Marc Bocquet, Alban Farchi et al.* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.25635">Air flow modeling at a local scale is essential for applications such as pollutant dispersion modeling or wind farm modeling. To circumvent costly Computational Fluid Dynamics (CFD) computations,...</span><span class="abstract-full" id="full-2603.25635" hidden>Air flow modeling at a local scale is essential for applications such as pollutant dispersion modeling or wind farm modeling. To circumvent costly Computational Fluid Dynamics (CFD) computations, deep learning surrogate models have recently emerged as promising alternatives. However, in the context of urban air flow, deep learning models struggle to adapt to the high variations of the urban geometry and to large mesh sizes. To tackle these challenges, we introduce Anchored Branched Steady-state WInd Flow Transformer (AB-SWIFT), a transformer-based model with an internal branched structure uniquely designed for atmospheric flow modeling. We train our model on a specially designed database of atmospheric simulations around randomised urban geometries and with a mixture of unstable, neutral, and stable atmospheric stratifications. Our model reaches the best accuracy on all predicted fields compared to state-of-the-art transformers and graph-based models. Our code and data is available at https://github.com/cerea-daml/abswift.</span> <span class="abstract-toggle" data-id="2603.25635">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.25635v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.25635v1) · [:fontawesome-brands-github: Code](https://github.com/cerea-daml/abswift) · [:material-content-copy: BibTeX](../../bibtex/2603.25635.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
-    { .paper-tags }
-
--   #### Diffusion-based Probabilistic Air Quality Forecasting with Mechanistic Insight { #2603.21131 }
-
-    *Ao Ding, Aoxing Zhang, Tzung-May Fu, Yuanlong Huang, Qianjie Chen, Yuyang Chen, Jiajia Mo, Wei Tao et al.* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.21131">Current operational air quality forecasts are computationally expensive, sensitive to errors in physics and emissions, and often neglect weather-related uncertainty. To address these limitations, we...</span><span class="abstract-full" id="full-2603.21131" hidden>Current operational air quality forecasts are computationally expensive, sensitive to errors in physics and emissions, and often neglect weather-related uncertainty. To address these limitations, we present AirFusion, a hybrid, diffusion-based framework that synergistically integrates knowledge from chemical transport models with real-world observational constraints to enable accurate and efficient probabilistic regional air quality prediction. We apply AirFusion to generate operational 6-day, 30-member ensemble forecasts of surface ozone across China, initialized with observations and driven by ensemble weather forecasts. AirFusion outperforms existing operational benchmarks, achieving substantially lower forecast errors against surface measurements, while also providing ensemble-based diagnostics that explicitly quantify the impacts of weather uncertainty on air quality predictability. Moreover, AirFusion can rapidly adapt to evolving emissions through fine-tuning with only one month of recent observations. These attributes establish AirFusion as a powerful and extensible framework for next-generation probabilistic air quality forecasting, with clear potential for application to other pollutants and regions.</span> <span class="abstract-toggle" data-id="2603.21131">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.21131v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.21131v1) · [:material-content-copy: BibTeX](../../bibtex/2603.21131.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Reconstructing Carbon Monoxide Reanalysis with Machine Learning { #2602.15056 }
-
-    *Paula Harder, Johannes Flemming* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.15056">The Copernicus Atmospheric Monitoring Service provides reanalysis products for atmospheric composition by combining model simulations with satellite observations. The quality of these products...</span><span class="abstract-full" id="full-2602.15056" hidden>The Copernicus Atmospheric Monitoring Service provides reanalysis products for atmospheric composition by combining model simulations with satellite observations. The quality of these products depends strongly on the availability of the observational data, which can vary over time as new satellite instruments become available or are discontinued, such as Carbon Monoxide (CO) observations of the Measurements Of Pollution In The Troposphere (MOPITT) satellite in early 2025. Machine learning offers a promising approach to compensate for such data losses by learning systematic discrepancies between model configurations. In this study, we investigate machine learning methods to predict monthly-mean total column of Carbon Monoxide re-analysis from a control model simulation.</span> <span class="abstract-toggle" data-id="2602.15056">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.15056v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.15056v1) · [:material-content-copy: BibTeX](../../bibtex/2602.15056.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
     { .paper-tags }
 
 </div>

@@ -60,13 +60,15 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1581)
+## Papers (1595)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (378)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (380)</summary>
 
+- **Scale-aware and spatially-localised optimisation of kilometre-scale MLWP models** (Oct 2026) - [arXiv:2610.37325](https://arxiv.org/abs/2610.37325v1)
+- **GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models** (Oct 2026) - [arXiv:2610.35693](https://arxiv.org/abs/2610.35693v1)
 - **Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings** (Oct 2026) - [arXiv:2610.31237](https://arxiv.org/abs/2610.31237v1)
 - **From Weather to Enhanced Weathering: Weather Foundation Models for Carbon Dioxide Removal at Operational Scale** (Oct 2026) - [arXiv:2610.28973](https://arxiv.org/abs/2610.28973v1)
 - **Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model** (Oct 2026) - [arXiv:2610.28904](https://arxiv.org/abs/2610.28904v1)
@@ -449,8 +451,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (66)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (67)</summary>
 
+- **Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast** (Oct 2026) - [arXiv:2610.36186](https://arxiv.org/abs/2610.36186v1)
 - **Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations** (Oct 2026) - [arXiv:2610.26145](https://arxiv.org/abs/2610.26145v1)
 - **Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment** (Oct 2026) - [arXiv:2610.12401](https://arxiv.org/abs/2610.12401v1)
 - **legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents** (Oct 2026) - [arXiv:2610.11883](https://arxiv.org/abs/2610.11883v1)
@@ -521,8 +524,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (105)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (106)</summary>
 
+- **Nowcasting aerosol particle size distributions from PM2.5 with physics-regularized flow matching** (Oct 2026) - [arXiv:2610.33557](https://arxiv.org/abs/2610.33557v1)
 - **Space weather dependence of decameter-scale ionospheric irregularities spatial distribution** (Oct 2026) - [arXiv:2610.29630](https://arxiv.org/abs/2610.29630v1)
 - **Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting** (Oct 2026) - [arXiv:2610.26486](https://arxiv.org/abs/2610.26486v1)
 - **Network-Wide Freeway Speed Nowcasting and Forecasting from Sparse Fixed Sensors with a Probe-Supervised Graph Convolutional Recurrent Network** (Oct 2026) - [arXiv:2610.22630](https://arxiv.org/abs/2610.22630v1)
@@ -632,8 +636,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (106)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (107)</summary>
 
+- **Climate downscaling with likelihood functional flow matching** (Oct 2026) - [arXiv:2610.33482](https://arxiv.org/abs/2610.33482v2)
 - **Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations** (Oct 2026) - [arXiv:2610.28327](https://arxiv.org/abs/2610.28327v1)
 - **TerraNostra-Bench: Benchmarking Spatial Downscaling and Temporal Rollout for Global 1-km Land-Use Reconstruction** (Oct 2026) - [arXiv:2610.27793](https://arxiv.org/abs/2610.27793v1)
 - **Spherical Physics-informed Neural Operator with Multi-scale Coupling for Meteorological Downscaling** (Oct 2026) - [arXiv:2610.24708](https://arxiv.org/abs/2610.24708v1)
@@ -776,8 +781,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (79)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (80)</summary>
 
+- **Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport** (Oct 2026) - [arXiv:2610.32148](https://arxiv.org/abs/2610.32148v1)
 - **Accounting for model error in ensemble variational data assimilation through learned generative dynamics** (Oct 2026) - [arXiv:2610.17333](https://arxiv.org/abs/2610.17333v1)
 - **The interface of data assimilation and machine learning** (Oct 2026) - [arXiv:2610.07496](https://arxiv.org/abs/2610.07496v1)
 - **LD-EnFF: Latent-Dynamics Ensemble Flow Filtering for Data Assimilation with Sparse Observations** (Oct 2026) - [arXiv:2610.04034](https://arxiv.org/abs/2610.04034v1)
@@ -861,8 +867,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (304)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (306)</summary>
 
+- **FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling** (Oct 2026) - [arXiv:2610.36297](https://arxiv.org/abs/2610.36297v1)
+- **Application of Artificial Intelligence in the Management of Climate Change-Related Health Issues in Africa** (Oct 2026) - [arXiv:2610.35294](https://arxiv.org/abs/2610.35294v1)
 - **Disentangling forced and internal components in observed climate evolution using spatiotemporal deep learning** (Oct 2026) - [arXiv:2610.28219](https://arxiv.org/abs/2610.28219v1)
 - **Energy-Aware Earth System Science: A Community Roadmap** (Oct 2026) - [arXiv:2610.23216](https://arxiv.org/abs/2610.23216v1)
 - **Improved Precipitation Variability in the Community Atmosphere Model through Implementation of a Neural-Network Deep Convection Scheme** (Oct 2026) - [arXiv:2610.20405](https://arxiv.org/abs/2610.20405v1)
@@ -1311,8 +1319,12 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (74)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (78)</summary>
 
+- **KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry** (Oct 2026) - [arXiv:2610.37655](https://arxiv.org/abs/2610.37655v1)
+- **Noise Steering: Exploiting Wake Steering and Acoustic Directivity for Noise-Constrained Wind Farm Control via Reinforcement Learning** (Oct 2026) - [arXiv:2610.36888](https://arxiv.org/abs/2610.36888v1)
+- **An actively trained neural operator for near-explicit atmospheric chemistry** (Oct 2026) - [arXiv:2610.33771](https://arxiv.org/abs/2610.33771v2)
+- **Data Quality Audit and Bivariate Temperature-Humidity Analysis of a Long-Term LoRaWAN Network: Anomaly Detection, PCA, Clustering and Machine Learning** (Oct 2026) - [arXiv:2610.32438](https://arxiv.org/abs/2610.32438v1)
 - **AirMPA: A Meteorology-to-Pollution Adapter for Global Air Quality Forecasting** (Oct 2026) - [arXiv:2610.25797](https://arxiv.org/abs/2610.25797v1)
 - **Atmospheric Chemistry-Climate Modeling with an AI Foundation Model** (Oct 2026) - [arXiv:2610.22555](https://arxiv.org/abs/2610.22555v1)
 - **Collaborative Neural Networks significantly Improve Global Aerosol Retrievals From Multi-Angle Polarimeters** (Oct 2026) - [arXiv:2610.19217](https://arxiv.org/abs/2610.19217v1)
@@ -1498,8 +1510,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (214)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (216)</summary>
 
+- **An Input Skip Can Reparameterize a VAE Without Improving the Generator** (Oct 2026) - [arXiv:2610.37456](https://arxiv.org/abs/2610.37456v1)
+- **Machine Learning Applications in the Solar Interior and Atmosphere** (Oct 2026) - [arXiv:2610.34687](https://arxiv.org/abs/2610.34687v1)
 - **Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting** (Oct 2026) - [arXiv:2610.29654](https://arxiv.org/abs/2610.29654v1)
 - **Urban climate regressions require representative monitoring networks** (Oct 2026) - [arXiv:2610.29423](https://arxiv.org/abs/2610.29423v1)
 - **Data-driven and physics-guided hindcasting of measured wave spectra** (Oct 2026) - [arXiv:2610.29306](https://arxiv.org/abs/2610.29306v1)

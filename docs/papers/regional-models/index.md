@@ -8,11 +8,24 @@ hide:
 
 # Regional Models
 
-<p class="page-meta" markdown="span">66 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">67 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast { #2610.36186 }
+
+    *Daniel Abdi, Isidora Jankov, Vanderlei Vargas, Paul Madden, Emily Carpenter, Travis Wilson et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.36186">Improving convective-scale skill in data-driven regional weather models requires better representing rare high-impact events, training at native resolution, broadening variable output, and...</span><span class="abstract-full" id="full-2610.36186" hidden>Improving convective-scale skill in data-driven regional weather models requires better representing rare high-impact events, training at native resolution, broadening variable output, and demonstrating performance in real-time settings. Here, we evaluate these challenges using HRRRCast, a data-driven convection-allowing emulator trained on the High-Resolution Rapid Refresh (HRRR) analysis data. HRRRCast combines native 3-km training, moderate sigmoid-weighted loss reweighting for reflectivity and precipitation, and broader system improvements including expansion of the training archive from 3 to 9 years (2016--2025), increased vertical resolution, expanded outputs, and architectural upgrades. The weighted loss improves high-threshold skill while preserving common-event behavior. Native-resolution training avoids aliasing from 6-km subsampling and substantially improves fractions skill score at convective scales, with gains that persist across pooling windows. HRRRCast has also been running in near-real-time mode for the past year. In seven months of independent observation-based verification, HRRRCast ensemble means improve several near-surface metrics relative to operational HRRR and maintain strong precipitation and reflectivity performance. Single-member reflectivity skill is strongest at 20--30 dBZ; at 40 dBZ, skill is near parity at 6-km pooling and better at pooling radii $\geq$30 km. Precipitation skill remains competitive through 1 in/h and extends to about 3 in/h in the best recent configuration. A focused comparison with HREF further shows useful low-cost probabilistic guidance for 3-h precipitation. At storm scale, HRRRCast exhibits a displacement--structure trade-off, with generally better storm placement than storm morphology.</span> <span class="abstract-toggle" data-id="2610.36186">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.36186v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.36186v1) · [:material-content-copy: BibTeX](../../bibtex/2610.36186.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
 
 -   #### Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations { #2610.26145 }
 
@@ -380,19 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
-    { .paper-tags }
-
--   #### Calibrated Conformal Prediction Intervals for Microphysical Process Rates { #2603.27699 }
-
-    *Miriam Simm, Corinna Hoose, Tom Beucler* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.27699">Conformal prediction can yield statistically valid prediction intervals for any regression model, with no model modifications and small computational costs. To assess its practical value, we apply...</span><span class="abstract-full" id="full-2603.27699" hidden>Conformal prediction can yield statistically valid prediction intervals for any regression model, with no model modifications and small computational costs. To assess its practical value, we apply conformal methods to quantify uncertainty in machine learning emulators of six microphysical process rates. Microphysical process rates describe small-scale processes in atmospheric clouds such as precipitation formation and aerosol-cloud interactions, and help understand weather and climate. The emulators are trained on simulation output from the ICOsahedral Nonhydrostatic (ICON) model in a limited-area numerical weather prediction configuration. We compare split conformal prediction for deterministic emulators with conformalized quantile regression for quantile regression emulators. Both conformal prediction methods yield well-calibrated and sharp prediction intervals on average, but conformalized quantile regression provides more consistent intervals across several orders of magnitude, making it preferable for the uncertainty quantification of climate variables.</span> <span class="abstract-toggle" data-id="2603.27699">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.27699v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.27699v1) · [:material-content-copy: BibTeX](../../bibtex/2603.27699.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
     { .paper-tags }
 
 </div>

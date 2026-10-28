@@ -8,11 +8,31 @@ hide:
 
 # Other
 
-<p class="page-meta" markdown="span">214 papers · page 1 of 8 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">216 papers · page 1 of 8 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### An Input Skip Can Reparameterize a VAE Without Improving the Generator { #2610.37456 }
+
+    *Kevin Lee* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.37456">An input skip can reduce reconstruction error while leaving a model's distribution of new samples unchanged. For a Gaussian variational autoencoder (VAE) with constant input skip $0\leqα<1$, a model...</span><span class="abstract-full" id="full-2610.37456" hidden>An input skip can reduce reconstruction error while leaving a model's distribution of new samples unchanged. For a Gaussian variational autoencoder (VAE) with constant input skip $0\leqα<1$, a model without a skip can be written in skip form by multiplying its decoder output by $b=1-α$ and its noise variance by $b^2$. The distribution of observations and latent variables and its exact generative scores stay the same, while reconstruction mean squared error (MSE) is multiplied by $b^2$. Separate training can produce different generators because optimization depends on the parameter coordinates. In a Gaussian experiment with known density, changing skip and observation variance together reduces MSE but worsens energy score and the estimate of negative log density from importance sampling. On seven annual Deep-ocean Assessment and Reporting of Tsunamis (DART) records, energy score differences at the same observation variance have both signs on four original records and favor the skip on three records from 2018. Probabilistic principal component analysis (PPCA) has lower mean energy scores than every neural DART fit. With the encoder and decoder kept the same, estimating observation variance from training reconstruction error can also worsen energy score. Assessing generation requires more than reconstruction error.</span> <span class="abstract-toggle" data-id="2610.37456">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.37456v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.37456v1) · [:fontawesome-brands-github: Code](https://github.com/magnaprog/vae-skip-reparam) · [:material-content-copy: BibTeX](../../bibtex/2610.37456.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Machine Learning Applications in the Solar Interior and Atmosphere { #2610.34687 }
+
+    *Vishal Upendran, Carlos J. Díaz Baso* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.34687">The solar interior and atmosphere constitute a strongly coupled, multiscale dynamical system defined by continuous temporal evolution. Predicting the state of this system requires modeling physical...</span><span class="abstract-full" id="full-2610.34687" hidden>The solar interior and atmosphere constitute a strongly coupled, multiscale dynamical system defined by continuous temporal evolution. Predicting the state of this system requires modeling physical interactions that span disparate spatial and temporal scales, constrained by heterogeneous and sparse data. This chapter formalizes the Sun within the mathematical framework of dynamical systems theory, defining a global state vector ($\vec{S}$) governed by thermodynamical, kinetic, and magnetic properties. Because solar observations represent projected, multi-modal, and partially observable measurements ($\vec{O}[\vec{S}]$) of this hidden state, pure physics-based deduction is fundamentally constrained. We present a unifying thesis: the primary role of machine learning in heliophysics is to act as a structured family of mathematical operators---specifically Inference ($\mathcal{I}$), Emulation ($\mathcal{E}$), Propagation ($\mathcal{P}$), and Control ($\mathcal{C}$)---that reconstruct, simulate, and couple this global state vector across disparate physical layers. By framing the vast, multi-disciplinary literature within this unified state-space taxonomy, we demonstrate how data-driven techniques bridge observational gaps to resolve hidden multiscale couplings and dramatically accelerate the simulation of non-linear processes, establishing a rigorous pathway to predict the global evolution of the Sun.</span> <span class="abstract-toggle" data-id="2610.34687">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.34687v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.34687v1) · [:material-content-copy: BibTeX](../../bibtex/2610.34687.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting { #2610.29654 }
 
@@ -361,32 +381,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a>
-    { .paper-tags }
-
--   #### Energy Yield and Lifetime Climate Classification via Machine Learning for Optimizing Photovoltaic Module Design and Materials { #2608.25448 }
-
-    *Youri Blom, Sofia Dutto, Alexandru Costache, Rowan Richie, Ruben Pelsser, Wesley Berger, Jing Sun et al.* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.25448">To resiliently and sustainably meet our future energy demand, photovoltaic (PV) modules must be deployed across a broad and diverse range of geographical regions with varying operating conditions. As...</span><span class="abstract-full" id="full-2608.25448" hidden>To resiliently and sustainably meet our future energy demand, photovoltaic (PV) modules must be deployed across a broad and diverse range of geographical regions with varying operating conditions. As these conditions strongly affect both performance and optimal system design, a dedicated PV-specific climate classification can be of great use. In this work, we develop a climate classification framework tailored to PV applications using a variety of machine learning (ML) techniques. Building on previous studies, our approach incorporates both energy yield, and for the first time, also the module lifetime with climate dependent degradation. We generate an interpolated dataset containing twelve input features and two target variables (i.e. energy yield and module lifetime). Feature importance analysis shows that annual global horizontal irradiation and ambient temperature are the most influential predictors. The most accurate regression model achieves root mean square errors (RMSE) of 0.007 MWh for energy yield and 1.5 years for lifetime prediction. The calculated feature importance scores are then integrated into a hierarchical clustering framework, resulting in 6 primary climate clusters (Tropical, Desert, Continental, Temperate, Boreal, and Polar) and 15 corresponding subclusters. Our analysis shows that the low temperature continental climate offers the highest discounted lifetime energy yield. These results can support a wide range of applications, including PV module optimization, system siting decisions, and comparative performance studies.</span> <span class="abstract-toggle" data-id="2608.25448">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.25448v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.25448v1) · [:material-content-copy: BibTeX](../../bibtex/2608.25448.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Predictability of El Niño from Delayed Observations { #2608.24428 }
-
-    *Francisco J. Beron-Vera* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.24428">Using monthly Niño-3.4 anomalies through July 2026, we investigate how much predictive information is contained in delayed observations of the index. Ridge regression identifies informative delays,...</span><span class="abstract-full" id="full-2608.24428" hidden>Using monthly Niño-3.4 anomalies through July 2026, we investigate how much predictive information is contained in delayed observations of the index. Ridge regression identifies informative delays, while multilayer perceptron and sparse identification of nonlinear dynamics (SINDy) models test whether nonlinear complexity provides additional direct forecast skill; gated recurrent unit (GRU) and long short-term memory (LSTM) networks provide a complementary test in which the temporal representation is learned internally. Delayed observations substantially improve forecasts over persistence and climatology at leads of up to six months, but increasing model complexity provides no systematic improvement. Historical recursive experiments favor a simple explicit SINDy recurrence and select shallow recurrent architectures, with no appreciable gain from learning the temporal representation internally. These results support a compact predictive representation of Niño-3.4 evolution in which the representation of past information is more consequential than model complexity. As a prospective application, the selected models are used to forecast the developing 2026 event beyond the last available observation and to compare its predicted evolution with completed historical El Niño events.</span> <span class="abstract-toggle" data-id="2608.24428">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.24428v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.24428v1) · [:material-content-copy: BibTeX](../../bibtex/2608.24428.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
     { .paper-tags }
 
 </div>
