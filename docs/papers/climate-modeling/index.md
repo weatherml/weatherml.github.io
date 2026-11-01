@@ -8,11 +8,24 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">306 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">307 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation { #2610.37870 }
+
+    *Anne Moll-Elsborg, Oskar Bohn Lassen, Francisco Camara Pereira* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.37870">International climate policy requires coordination among countries whose mitigation decisions impose local costs but generate global benefits. Classical game-theoretic and integrated assessment...</span><span class="abstract-full" id="full-2610.37870" hidden>International climate policy requires coordination among countries whose mitigation decisions impose local costs but generate global benefits. Classical game-theoretic and integrated assessment approaches can study these incentives, but typically rely on prescribed behavioural assumptions or equilibrium concepts. Recent work has therefore explored Multi-Agent Reinforcement Learning as a way to model climate-policy cooperation as an emergent outcome of repeated strategic interaction. We extend an existing MARL climate framework with a multi-stage negotiation mechanism in which agents propose agreements, accept or reject commitments, and face penalties for non-compliance. This allows us to study how agreement design affects learned mitigation behaviour, compliance, and climate outcomes. In an idealized setting with four homogeneous agents, we find that non-binding agreements do little to overcome free-riding, while moderate non-compliance penalties improve cooperation and reduce warming. However, excessively strong penalties discourage ambitious commitments, revealing a trade-off between enforcement and participation. We position the framework as a methodological contribution for testing agreement design rather than a predictive model of real negotiations.</span> <span class="abstract-toggle" data-id="2610.37870">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.37870v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.37870v1) · [:material-content-copy: BibTeX](../../bibtex/2610.37870.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
 
 -   #### FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling { #2610.36297 }
 
@@ -369,19 +382,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.00847v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.00847v1) · [:material-content-copy: BibTeX](../../bibtex/2609.00847.bib){ .bibtex-link }
     { .paper-links }
-
--   #### SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations { #2608.26594 }
-
-    *Hiep V. Dang, Antonios Mamalakis* · Aug 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2608.26594">Subseasonal-to-seasonal (S2S) precipitation forecasting has substantial financial and societal impact, yet remains challenging because of weak predictive signals, high associated uncertainty, and the...</span><span class="abstract-full" id="full-2608.26594" hidden>Subseasonal-to-seasonal (S2S) precipitation forecasting has substantial financial and societal impact, yet remains challenging because of weak predictive signals, high associated uncertainty, and the computational cost of operational systems, which constrains simulation fidelity. We introduce SimCast-S2S, a generative latent-diffusion framework for probabilistic S2S precipitation forecasting that addresses three major bottlenecks in data-driven prediction. First, because S2S prediction requires uncertainty quantification rather than only deterministic point forecasts, SimCast-S2S is the first data-driven system that uses a diffusion-based generative pipeline for S2S prediction, enabling effective sampling from the underlying conditional distribution. Second, since generating large probabilistic ensembles is computationally costly in physical space, SimCast-S2S instead operates in a compact latent space learned by variational autoencoders, enabling efficient large-ensemble generation. Third, diffusion models typically require large training datasets; SimCast-S2S overcomes this via transfer learning with low-rank adaptation (LoRA), pretraining on large ensembles of climate simulations before fine-tuning on limited reanalysis data. On reanalysis data, SimCast-S2S outperforms deep learning baselines, including convolutional neural networks and U-Net architectures. Notably, despite using only a subset of atmospheric input variables and no post-processing, bias correction, or calibration, SimCast-S2S remains competitive with, and in many cases outperforms, state-of-the-art operational systems such as the ECMWF-S2S baseline. These results indicate that latent generative modeling combined with simulation-to-reanalysis transfer learning offers an efficient and scalable path toward data-driven probabilistic S2S precipitation forecasting.</span> <span class="abstract-toggle" data-id="2608.26594">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2608.26594v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2608.26594v1) · [:material-content-copy: BibTeX](../../bibtex/2608.26594.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a>
-    { .paper-tags }
 
 </div>
 

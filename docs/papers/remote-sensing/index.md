@@ -8,11 +8,24 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">101 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">102 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones { #2610.40304 }
+
+    *Xinrui Li, Yijun Jin, Yifan Dong, Shoujuan Shu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.40304">Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in...</span><span class="abstract-full" id="full-2610.40304" hidden>Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning.</span> <span class="abstract-toggle" data-id="2610.40304">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.40304v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.40304v1) · [:material-content-copy: BibTeX](../../bibtex/2610.40304.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
 
 -   #### Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression { #2610.21654 }
 
@@ -377,19 +390,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### Climate-based Pre-screening of Self-sustaining Regreening Opportunities in Drylands: A Case Study for Saudi Arabia { #2605.04206 }
-
-    *Katja Froehlich, Jonathan Klein, Ibrahim S. Elbasyoni, Julian D. Hunt, Yoshihide Wada et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.04206">Large-scale restoration in drylands is widely promoted to address land degradation and biodiversity loss, yet many efforts rely on long-term irrigation, limiting sustainability in water-scarce...</span><span class="abstract-full" id="full-2605.04206" hidden>Large-scale restoration in drylands is widely promoted to address land degradation and biodiversity loss, yet many efforts rely on long-term irrigation, limiting sustainability in water-scarce regions. A key challenge is identifying locations where native vegetation can persist without intensive management while minimizing costly field campaigns. A scalable pre-screening framework is presented that integrates climate and remote sensing data to enable cost-efficient site selection in arid environments using Saudi Arabia as a case study. A Climate Suitability Score (CSS), derived from machine learning models trained on expert-curated reference sites, captures complex climatic dependencies on vegetation persistence. Using multi-year ERA5-Land data for Saudi Arabia, national-scale prediction maps are generated and combined with vegetation indices to identify areas where climate is favorable, but vegetation remains underdeveloped. Multi-criteria screening reduces candidates to thirteen priority locations. Climatically analogous intact ecosystems provide benchmarks for restoration targets and indicate that an average 2.5 fold increase in vegetation coverage is a realistic target for restoration efforts. Overall, this approach narrows the search space, reduces costs, and supports resilient ecosystem recovery planning in water-limited regions.</span> <span class="abstract-toggle" data-id="2605.04206">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.04206v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.04206v1) · [:material-content-copy: BibTeX](../../bibtex/2605.04206.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a>
     { .paper-tags }
 
 </div>

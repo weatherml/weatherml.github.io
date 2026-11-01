@@ -60,7 +60,7 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1595)
+## Papers (1602)
 
 Newest first.
 
@@ -636,8 +636,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (107)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (108)</summary>
 
+- **Operator-Aware Posterior Sampling for Multivariate Weather Downscaling** (Oct 2026) - [arXiv:2610.39592](https://arxiv.org/abs/2610.39592v1)
 - **Climate downscaling with likelihood functional flow matching** (Oct 2026) - [arXiv:2610.33482](https://arxiv.org/abs/2610.33482v2)
 - **Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations** (Oct 2026) - [arXiv:2610.28327](https://arxiv.org/abs/2610.28327v1)
 - **TerraNostra-Bench: Benchmarking Spatial Downscaling and Temporal Rollout for Global 1-km Land-Use Reconstruction** (Oct 2026) - [arXiv:2610.27793](https://arxiv.org/abs/2610.27793v1)
@@ -867,8 +868,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (306)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (307)</summary>
 
+- **Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation** (Oct 2026) - [arXiv:2610.37870](https://arxiv.org/abs/2610.37870v1)
 - **FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling** (Oct 2026) - [arXiv:2610.36297](https://arxiv.org/abs/2610.36297v1)
 - **Application of Artificial Intelligence in the Management of Climate Change-Related Health Issues in Africa** (Oct 2026) - [arXiv:2610.35294](https://arxiv.org/abs/2610.35294v1)
 - **Disentangling forced and internal components in observed climate evolution using spatiotemporal deep learning** (Oct 2026) - [arXiv:2610.28219](https://arxiv.org/abs/2610.28219v1)
@@ -1403,8 +1405,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (101)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (102)</summary>
 
+- **Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones** (Oct 2026) - [arXiv:2610.40304](https://arxiv.org/abs/2610.40304v1)
 - **Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression** (Oct 2026) - [arXiv:2610.21654](https://arxiv.org/abs/2610.21654v1)
 - **Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals from infrared brightness temperature** (Oct 2026) - [arXiv:2610.09859](https://arxiv.org/abs/2610.09859v1)
 - **Low latency global carbon budget reveals strong land sink recovery in 2025** (Sep 2026) - [arXiv:2609.34226](https://arxiv.org/abs/2609.34226v1)
@@ -1510,8 +1513,12 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (216)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (220)</summary>
 
+- **From extreme weather to agricultural consequences with agentic AI** (Oct 2026) - [arXiv:2610.40641](https://arxiv.org/abs/2610.40641v1)
+- **Skillful and realistic precipitation forecasting with reinforced diffusion** (Oct 2026) - [arXiv:2610.38775](https://arxiv.org/abs/2610.38775v1)
+- **Curriculum-Based Deep Reinforcement Learning for Robust Autonomous Rocket Landing under Atmospheric Uncertainty** (Oct 2026) - [arXiv:2610.38636](https://arxiv.org/abs/2610.38636v1)
+- **RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh** (Oct 2026) - [arXiv:2610.38211](https://arxiv.org/abs/2610.38211v1)
 - **An Input Skip Can Reparameterize a VAE Without Improving the Generator** (Oct 2026) - [arXiv:2610.37456](https://arxiv.org/abs/2610.37456v1)
 - **Machine Learning Applications in the Solar Interior and Atmosphere** (Oct 2026) - [arXiv:2610.34687](https://arxiv.org/abs/2610.34687v1)
 - **Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting** (Oct 2026) - [arXiv:2610.29654](https://arxiv.org/abs/2610.29654v1)

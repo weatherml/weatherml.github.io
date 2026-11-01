@@ -8,11 +8,21 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">107 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">108 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Operator-Aware Posterior Sampling for Multivariate Weather Downscaling { #2610.39592 }
+
+    *Carlo Saccardi, Rudolf Saathof, Geethu Joseph, Justin Dauwels* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.39592">Statistical downscaling is the task of reconstructing high-resolution meteorological fields from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using a...</span><span class="abstract-full" id="full-2610.39592" hidden>Statistical downscaling is the task of reconstructing high-resolution meteorological fields from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using a diffusion prior over high-resolution fields and incorporating the coarse field only at inference through a likelihood. This decouples the prior from the coarse source, allowing one pretrained model to adapt to different sources. However, two challenges limit this flexibility: (1) when coarse and target fields come from different reanalysis systems, no fixed coarsening operator can capture their relationship; and (2) guidance gradients can differ by orders of magnitude across variables, making a single guidance strength ineffective. This paper addresses both challenges within the guidance loop, leaving the prior unchanged. We learn the forward operator from paired data and normalize the gradient per channel. We show that this normalization corresponds to steepest descent under a block-max norm, allowing a single guidance strength across variables. Our code is publicly available at https://github.com/CarloSaccardi/operator-aware-weather-downscaling.</span> <span class="abstract-toggle" data-id="2610.39592">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.39592v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.39592v1) · [:fontawesome-brands-github: Code](https://github.com/CarloSaccardi/operator-aware-weather-downscaling) · [:material-content-copy: BibTeX](../../bibtex/2610.39592.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### Climate downscaling with likelihood functional flow matching { #2610.33482 }
 
@@ -386,19 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Longwang: Zero-Shot Global Spatiotemporal Precipitation Downscaling with a Latent Generative Prior { #2605.17603 }
-
-    *Yue Wang, Daniele Visioni* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.17603">High-resolution precipitation information is essential for climate impact assessment, yet global climate models remain too coarse to resolve key small-scale processes. Existing machine learning...</span><span class="abstract-full" id="full-2605.17603" hidden>High-resolution precipitation information is essential for climate impact assessment, yet global climate models remain too coarse to resolve key small-scale processes. Existing machine learning downscaling methods often require paired low- and high-resolution data for supervised learning, are tied to fixed regions or scale factors during inference, and can be computationally expensive to train and run in physical space. Here we introduce Longwang, a zero-shot latent generative framework for global spatiotemporal precipitation downscaling. Longwang learns a context-conditioned latent generative prior and combines it with a physically informed observation operator through posterior sampling, enabling daily O(10 km) precipitation fields to be generated from monthly O(100 km) inputs. On ERA5 reanalysis, Longwang outperforms standard posterior sampling with an unconditional generative prior in reconstructing fine-scale spatial patterns, preserving temporal coherence, and recovering extreme precipitation intensities. The framework further generalizes to historical climate simulations and future climate projections under substantial distribution shift.</span> <span class="abstract-toggle" data-id="2605.17603">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.17603v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.17603v1) · [:material-content-copy: BibTeX](../../bibtex/2605.17603.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
     { .paper-tags }
 
 </div>

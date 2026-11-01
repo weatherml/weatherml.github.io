@@ -7,7 +7,7 @@ title: weatherml
 
 A collection of papers on AI for weather forecasting, climate modelling and atmospheric science.
 
-<p class="page-meta" markdown="span">1595 papers · updated 2026-10-28 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
+<p class="page-meta" markdown="span">1602 papers · updated 2026-11-01 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
 
 ## Browse by Topic
 
@@ -16,21 +16,109 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
 -   [Global Models](papers/global-models/index.md) <span class="topic-count">380</span>
 -   [Regional Models](papers/regional-models/index.md) <span class="topic-count">67</span>
 -   [Nowcasting](papers/nowcasting/index.md) <span class="topic-count">106</span>
--   [Downscaling](papers/downscaling/index.md) <span class="topic-count">107</span>
+-   [Downscaling](papers/downscaling/index.md) <span class="topic-count">108</span>
 -   [Post-processing](papers/post-processing/index.md) <span class="topic-count">26</span>
 -   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">80</span>
--   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">306</span>
+-   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">307</span>
 -   [Hydrology](papers/hydrology/index.md) <span class="topic-count">39</span>
 -   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">89</span>
 -   [Air Quality & Composition](papers/air-quality-composition/index.md) <span class="topic-count">78</span>
--   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">101</span>
--   [Other](papers/other/index.md) <span class="topic-count">216</span>
+-   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">102</span>
+-   [Other](papers/other/index.md) <span class="topic-count">220</span>
 
 </div>
 
 ## Recent Additions
 
 <div class="grid cards" markdown data-search-exclude>
+
+-   #### From extreme weather to agricultural consequences with agentic AI { #2610.40641 }
+
+    *Minghan Yu, Mengyu Dai, Yixin Wen, Haizhao Yang* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.40641">Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and...</span><span class="abstract-full" id="full-2610.40641" hidden>Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and the records that could tell span many sources. We present WxCrop, the first agent that judges agricultural hazards from physically interpretable weather indices examined by causal analysis, and the first that combines weather and agricultural information to predict crop loss reliably for past and forecast dates. We demonstrate it in Florida on hurricanes, freezes and dry heat, with a loss model calibrated on insurance records for each, and the same procedure extends to other hazards and areas. Three checks show reliability: the hurricane index detects recorded cyclone days with an AUC of 0.98, recorded losses in held-out years are reproduced to within 2%, and independent production records confirm the county rankings (rank correlation 0.63). Users ask the agent for each crop group's loss as a fraction of expected season value, every number sourced, so that governments, growers and scientists respond to agricultural disasters quickly.</span> <span class="abstract-toggle" data-id="2610.40641">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.40641v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.40641v1) · [:material-content-copy: BibTeX](bibtex/2610.40641.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a>
+    { .paper-tags }
+
+-   #### Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones { #2610.40304 }
+
+    *Xinrui Li, Yijun Jin, Yifan Dong, Shoujuan Shu* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.40304">Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in...</span><span class="abstract-full" id="full-2610.40304" hidden>Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning.</span> <span class="abstract-toggle" data-id="2610.40304">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.40304v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.40304v1) · [:material-content-copy: BibTeX](bibtex/2610.40304.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
+-   #### Operator-Aware Posterior Sampling for Multivariate Weather Downscaling { #2610.39592 }
+
+    *Carlo Saccardi, Rudolf Saathof, Geethu Joseph, Justin Dauwels* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.39592">Statistical downscaling is the task of reconstructing high-resolution meteorological fields from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using a...</span><span class="abstract-full" id="full-2610.39592" hidden>Statistical downscaling is the task of reconstructing high-resolution meteorological fields from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using a diffusion prior over high-resolution fields and incorporating the coarse field only at inference through a likelihood. This decouples the prior from the coarse source, allowing one pretrained model to adapt to different sources. However, two challenges limit this flexibility: (1) when coarse and target fields come from different reanalysis systems, no fixed coarsening operator can capture their relationship; and (2) guidance gradients can differ by orders of magnitude across variables, making a single guidance strength ineffective. This paper addresses both challenges within the guidance loop, leaving the prior unchanged. We learn the forward operator from paired data and normalize the gradient per channel. We show that this normalization corresponds to steepest descent under a block-max norm, allowing a single guidance strength across variables. Our code is publicly available at https://github.com/CarloSaccardi/operator-aware-weather-downscaling.</span> <span class="abstract-toggle" data-id="2610.39592">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.39592v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.39592v1) · [:fontawesome-brands-github: Code](https://github.com/CarloSaccardi/operator-aware-weather-downscaling) · [:material-content-copy: BibTeX](bibtex/2610.39592.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Skillful and realistic precipitation forecasting with reinforced diffusion { #2610.38775 }
+
+    *Ozan Sener, Anand Avati, David Hafner, Jierui Lin, Laura Manduchi, Xiaoying Pang, Langwen Huang et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.38775">Accurate precipitation forecasting remains elusive as physics-based models struggle to resolve mesoscale convection and machine learning often yields physically inconsistent, blurred results that...</span><span class="abstract-full" id="full-2610.38775" hidden>Accurate precipitation forecasting remains elusive as physics-based models struggle to resolve mesoscale convection and machine learning often yields physically inconsistent, blurred results that consistently underestimate extreme events. We present FitzRoy, the first system that simultaneously achieves state-of-the-art predictive skill and physical realism over the continental United States. Through a reinforced diffusion framework, where a conditional discrete diffusion model is refined via reinforcement learning, FitzRoy effectively resolves the long-standing trade-off between pointwise accuracy and structural fidelity. Across lead times up to 24 hours, FitzRoy consistently matches or exceeds state-of-the-art models while preserving structural realism and capturing extreme events. Its low-latency inference further enables deployment in real-time operational settings. In case studies such as the 2025 Texas Hill Country floods and the 2026 Missouri floods, FitzRoy signals record-breaking accumulations that existing models largely missed. By bridging the gap between realism and skill, FitzRoy establishes a new frontier for high-fidelity precipitation forecasting.</span> <span class="abstract-toggle" data-id="2610.38775">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.38775v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.38775v1) · [:material-content-copy: BibTeX](bibtex/2610.38775.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### Curriculum-Based Deep Reinforcement Learning for Robust Autonomous Rocket Landing under Atmospheric Uncertainty { #2610.38636 }
+
+    *Atin Chowdhury, Piyush Joshi* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.38636">Autonomous far-range rocket landing is a challenging control problem because navigation, descent-rate regulation, attitude management, and fuel use must be coordinated in the presence of uncertain...</span><span class="abstract-full" id="full-2610.38636" hidden>Autonomous far-range rocket landing is a challenging control problem because navigation, descent-rate regulation, attitude management, and fuel use must be coordinated in the presence of uncertain atmospheric and vehicle dynamics. This paper presents a curriculum-driven proximal policy optimization (PPO) framework for three-dimensional rocket landing in a stochastic environment incorporating altitude-dependent aerodynamic drag, wind shear, temporally correlated turbulence, discrete gusts, uncertain propulsion and aerodynamic parameters, thrust-vector misalignment, engine lag, actuator-gain variation, noisy observations, and command latency. Learning is organised into far-range approach, soft descent, and integrated landing stages. Policy transfer, critic warm-up after reward changes, rehearsal of earlier tasks, and progressive expansion of weather severity are used to support learning across these coupled phases. Across 100,000 evaluation episodes, the policy achieves 96,656 successful landings, corresponding to a success rate of 96.656% and a 95% Wilson confidence interval of 96.543--96.766%. Success decreases from 98.84% under zero-disturbance conditions to 88.07% in the highest weather-severity band. Successful touchdowns exhibit small miss distances and low residual horizontal and vertical velocities. An exploratory logistic-regression analysis identifies mean wind speed as the strongest measured correlate of success, with initial distance, initial altitude, initial vertical velocity, and wind-shear exponent also associated with outcomes. The results quantify both the effectiveness of the learned policy over the evaluated disturbance distribution and the degradation that occurs under severe compound atmospheric conditions.</span> <span class="abstract-toggle" data-id="2610.38636">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.38636v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.38636v1) · [:material-content-copy: BibTeX](bibtex/2610.38636.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a>
+    { .paper-tags }
+
+-   #### RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh { #2610.38211 }
+
+    *Shahran Rahman Alve, Muhammad Zawad Mahmud, Samiha Islam, Al Jubayer Pial* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.38211">Machine-learning rainfall forecasts are often evaluated by shuffling station records into random training and test sets. For rainfall, this lets a model see what happened at neighbouring stations on...</span><span class="abstract-full" id="full-2610.38211" hidden>Machine-learning rainfall forecasts are often evaluated by shuffling station records into random training and test sets. For rainfall, this lets a model see what happened at neighbouring stations on the very day it is asked to forecast, and it hides the fact that a seasonal lookup table already explains most of the variance. We quantify both effects on 618,650 station-days from 35 Bangladesh Meteorological Department stations (1948-2014). We compare random, temporal (train <=1999, test 2005-2014) and spatio-temporal (unseen stations and unseen years) evaluation, calendar-only versus antecedent-rainfall features, and six learners against climatology, persistence and SARIMA. Three findings stand out. First, a station-month climatology alone classifies high-rainfall months with 88.4% accuracy (AUC 0.950), and no learner improved on it by more than 0.8 points under temporal evaluation. Second, a calendar-only random forest reached a next-day wet-day AUC of 0.889 under a random split, higher than any model with real predictors under temporal evaluation, yet fell to 0.835, below climatology (0.859), on future years. Third, models with lagged rainfall add genuine but modest skill for next-day forecasts: a Brier skill score of 0.074 (95% CI 0.064-0.088) over climatology, rising to 0.091 when station and year inputs are removed and to 0.131 when other stations' same-day observations are added. A GRU sequence model matches but does not exceed gradient boosting, and skill disappears beyond a two-day lead. For monthly totals, no learner beat climatology significantly. We release a leakage-aware protocol and code so that future station-based studies report skill against climatology on held-out years.</span> <span class="abstract-toggle" data-id="2610.38211">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.38211v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.38211v1) · [:material-content-copy: BibTeX](bibtex/2610.38211.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
+
+-   #### Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation { #2610.37870 }
+
+    *Anne Moll-Elsborg, Oskar Bohn Lassen, Francisco Camara Pereira* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.37870">International climate policy requires coordination among countries whose mitigation decisions impose local costs but generate global benefits. Classical game-theoretic and integrated assessment...</span><span class="abstract-full" id="full-2610.37870" hidden>International climate policy requires coordination among countries whose mitigation decisions impose local costs but generate global benefits. Classical game-theoretic and integrated assessment approaches can study these incentives, but typically rely on prescribed behavioural assumptions or equilibrium concepts. Recent work has therefore explored Multi-Agent Reinforcement Learning as a way to model climate-policy cooperation as an emergent outcome of repeated strategic interaction. We extend an existing MARL climate framework with a multi-stage negotiation mechanism in which agents propose agreements, accept or reject commitments, and face penalties for non-compliance. This allows us to study how agreement design affects learned mitigation behaviour, compliance, and climate outcomes. In an idealized setting with four homogeneous agents, we find that non-binding agreements do little to overcome free-riding, while moderate non-compliance penalties improve cooperation and reduce warming. However, excessively strong penalties discourage ambitious commitments, revealing a trade-off between enforcement and participation. We position the framework as a methodological contribution for testing agreement design rather than a predictive model of real negotiations.</span> <span class="abstract-toggle" data-id="2610.37870">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.37870v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.37870v1) · [:material-content-copy: BibTeX](bibtex/2610.37870.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
 
 -   #### KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry { #2610.37655 }
 
@@ -239,97 +327,6 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
-    { .paper-tags }
-
--   #### Urban climate regressions require representative monitoring networks { #2610.29423 }
-
-    *Martí Bosch, Aldo Brandi, Christoph Bachofen, Perrine Hamel, Roy P. Remme, Emma E. Ramsay et al.* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.29423">Land use regression models relate intra-urban air temperature to spatial predictors such as building volume, tree canopy cover and topography, and are increasingly used to produce fine-scale...</span><span class="abstract-full" id="full-2610.29423" hidden>Land use regression models relate intra-urban air temperature to spatial predictors such as building volume, tree canopy cover and topography, and are increasingly used to produce fine-scale temperature maps. However, the accuracy of these estimates can be compromised by unrepresentative monitoring networks. Here we show that reference weather station networks, designed for regional rather than intra-urban monitoring, sample only a narrow portion of a city's spatial heterogeneity, missing both the densely built core and the cool, vegetated periphery that set the two ends of the urban temperature range. As a result, city-wide predictions underestimate temperature differences, in ways that cross-validation against the station measurements does not detect. Using Zurich, Switzerland, as a case study, we compare multiple linear regression, generalized additive models and random forests as up to 117 low-cost temperature sensors are added to the four reference weather stations. When trained on reference stations alone, all three models achieve comparable cross-validated performance. As low-cost sensors broaden the sampled spatial heterogeneity, multiple linear regression scores lower on both metrics, whereas the non-linear models remain at their reference-only level. Although a third of the low-cost sensors already recovers nearly the full predicted temperature range, which predictors are identified, and with which sign, is determined by the station sample rather than the model class. At full coverage, only multiple linear regression leaves significant residual spatial autocorrelation, suggesting a linear form unable to capture non-linear responses of air temperature to urban form. Drawing on landscape ecology research on focal site study design, we provide a transferable framework for diagnosing station network representativeness and improving the reliability of city-wide environmental maps.</span> <span class="abstract-toggle" data-id="2610.29423">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.29423v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.29423v1) · [:material-content-copy: BibTeX](bibtex/2610.29423.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
-    { .paper-tags }
-
--   #### Data-driven and physics-guided hindcasting of measured wave spectra { #2610.29306 }
-
-    *Sander Rikka* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.29306">Short-range hindcasts of measured wave spectra are evaluated using a recurrent model initialized by one hourly buoy spectrum and supplied with local wind, fetch and depth. Measurements from three...</span><span class="abstract-full" id="full-2610.29306" hidden>Short-range hindcasts of measured wave spectra are evaluated using a recurrent model initialized by one hourly buoy spectrum and supplied with local wind, fetch and depth. Measurements from three Baltic Sea stations are combined for training in 2017--2020, validation in 2021 and testing in 2022. ERA5 reanalysis supplies winds throughout the twelve-hour prediction interval. The comparison examines supervision of spectral variance, peak frequency and peak amplitude, followed by empirical wind-sea bounds and a local relaxation constraint. Variance and peak-frequency supervision gives the lowest spectral error within the data-driven comparison, whereas additional peak-amplitude supervision gives the lowest wave-height error. In the matched physical comparison, relaxation reduces height RMSE by 5.01% to \PhPtwoHs{}~cm. Extending this constraint through hours 13--24, without spectral targets at those hours, reduces primary spectral RMSE by 2.31% to \PhPthreeSpec{}~$\unitE$. Upper-bound constraints increase errors. Wind-condition comparisons show spectral gains from extended relaxation in increasing, decreasing and steady strong winds, with little change in steady weak winds. The results support modest, objective-dependent benefits from local physical guidance. Wave-height scores concern the retained frequency band, and operational forecasting and transfer to independent stations remain to be evaluated.</span> <span class="abstract-toggle" data-id="2610.29306">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.29306v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.29306v1) · [:material-content-copy: BibTeX](bibtex/2610.29306.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
-    { .paper-tags }
-
--   #### From Weather to Enhanced Weathering: Weather Foundation Models for Carbon Dioxide Removal at Operational Scale { #2610.28973 }
-
-    *Sasankh Munukutla, Felipe Oviedo, Danrong Zhang, Kenji Takeda, Juan M Lavista Ferres* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.28973">Enhanced Rock Weathering (ERW) is a carbon removal solution with the potential to remove gigatons of CO$_2$ per year, but quantifying that removal today requires dense soil sampling and laboratory...</span><span class="abstract-full" id="full-2610.28973" hidden>Enhanced Rock Weathering (ERW) is a carbon removal solution with the potential to remove gigatons of CO$_2$ per year, but quantifying that removal today requires dense soil sampling and laboratory analysis. We evaluate five weather Foundation Models (FMs) as frozen encoders feeding lightweight decoders, under a leave-one-field-out protocol on 5,192 chronosequences from 264 fields across Brazil and the US. To our knowledge, this is the first holistic evaluation of weather FMs for ERW and the largest evaluation on operational ERW data. We find that across weather FMs, representations transfer to ERW: our best model, TerraNova-ERW, built on Aurora 1.5, positively orders measurements within fields it has never seen. Zero-shot prediction of a new field's mean removal is not yet feasible, and we attribute this to data scale: the same architecture excels on $\sim$$10^5$ natural-weathering sequences, anchoring the scale we expect ERW data must reach. Few-shot prediction, blending the model with a few samples per field, is supported today: TerraNova-ERW recovers over 60% of the highest-removal fields with two samples per field, roughly halves the samples needed to estimate a field's mean removal, and can cut sampling on our densest fields by 28-98%.</span> <span class="abstract-toggle" data-id="2610.28973">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.28973v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.28973v1) · [:material-content-copy: BibTeX](bibtex/2610.28973.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
-
--   #### Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model { #2610.28904 }
-
-    *Jiapei Liu, Ruidong Li, Ting Sun, Guangheng Ni* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.28904">Artificial intelligence (AI) weather models now forecast weather events skillfully, but how they represent these events internally remains unknown. Sparse autoencoders (SAEs) provide sparse features...</span><span class="abstract-full" id="full-2610.28904" hidden>Artificial intelligence (AI) weather models now forecast weather events skillfully, but how they represent these events internally remains unknown. Sparse autoencoders (SAEs) provide sparse features for probing hidden states, but how information about multiple physical attributes of an event is organized across them remains unclear. Using tropical cyclones in GraphCast as a test case, we analyze 2,115 six-hourly timesteps from 205 cyclones, relating SAE activations to position, intensity, and pressure structure across five Layer-8 decompositions and 16 processor layers. Each attribute relates to multiple features; position and pressure-structure relations overlap in a smaller subset. This organization recurs across independent SAEs and layers without feature alignment. In deeper layers, the leading position feature aligns better with position and pressure structure six hours ahead than at present. These results suggest that the organization of physical-attribute relations provides a reproducible level of description for interpreting cyclone-related information in GraphCast.</span> <span class="abstract-toggle" data-id="2610.28904">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.28904v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.28904v1) · [:material-content-copy: BibTeX](bibtex/2610.28904.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a>
-    { .paper-tags }
-
--   #### GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting { #2610.28512 }
-
-    *Ilya Vilkoviskiy, Liang-Hong Mo, Suozhi Huang, Dmitry A. Abanin* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.28512">Unresolved atmospheric processes can introduce history dependence beyond the short input windows used by many weather forecasting models. We introduce GraphCast--Mamba, which augments a frozen,...</span><span class="abstract-full" id="full-2610.28512" hidden>Unresolved atmospheric processes can introduce history dependence beyond the short input windows used by many weather forecasting models. We introduce GraphCast--Mamba, which augments a frozen, pretrained $1^\circ$ GraphCast backbone with a trainable Mamba correction branch combining graph message passing and Mamba layers. The branch retains a temporal memory state across successive six-hour forecast steps, learning corrections informed by temporal context beyond GraphCast's two-frame input. Training is confined to the correction branch, using ERA5 data from 2015--2021. After 2,500 optimizer updates, including warm-up, the selected model achieves substantial improvements relative to the uncorrected GraphCast backbone. It reduces the GraphCast loss (normalized weighted mean-squared error; MSE) by 14.42% when aggregated over the full ten-day forecast and by 21.66% at day 10 (240 h after forecast initialization). At this final forecast lead time, root-mean-square error (RMSE) decreases by 7.09--14.60% across all 11 evaluated variable groups, spanning temperature, wind, pressure, geopotential, specific humidity, and precipitation. These results demonstrate broad improvements in ten-day weather forecasts through a short correction-training schedule while retaining the pretrained backbone.</span> <span class="abstract-toggle" data-id="2610.28512">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.28512v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.28512v1) · [:material-content-copy: BibTeX](bibtex/2610.28512.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a>
-    { .paper-tags }
-
--   #### Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations { #2610.28327 }
-
-    *Christian Donner, Michele Cattaneo, Maxim Samarin, Francesco Zanetta, Icíar Lloréns Jover et al.* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.28327">We present the Observation Assimilation Transformer (OAT), a geometry-aware neural process that corrects and refines a prior numerical weather prediction (NWP) field into a high-resolution posterior...</span><span class="abstract-full" id="full-2610.28327" hidden>We present the Observation Assimilation Transformer (OAT), a geometry-aware neural process that corrects and refines a prior numerical weather prediction (NWP) field into a high-resolution posterior field by assimilating sparse observations. OAT is an encoder-decoder transformer that considers a set of observed locations and their NWP prior to condition predictions at a set of arbitrary unobserved query locations. Its sparse attention mechanism makes it scalable to thousands of station observations and depends on relative positions between locations, never on the absolute coordinates. The model allows for partially missing observations, predictions at arbitrary continuous locations without grid projection, and outputs are parametric distributions. A station-randomized training algorithm is developed with continuous ranked probability score (CRPS) loss. We test OAT on two datasets - one at regional scale with hundreds of stations, and one at continental scale with thousands of stations. On these datasets OAT outperforms several baselines and shows well calibrated predictions. In an illustrative case study, OAT's downscaling capabilities are demonstrated by downscaling ERA5 (~31km) to COSMO (1km), where OAT achieves lower mean absolute error (MAE) and CRPS for temperature and precipitation on test stations compared to COSMO.</span> <span class="abstract-toggle" data-id="2610.28327">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.28327v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.28327v1) · [:material-content-copy: BibTeX](bibtex/2610.28327.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
-    { .paper-tags }
-
--   #### Disentangling forced and internal components in observed climate evolution using spatiotemporal deep learning { #2610.28219 }
-
-    *Parvathi Kooloth, Wenyu Zhou, L. Ruby Leung, Shang-Ping Xie, Hailong Wang, Qiang Fu* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.28219">Attribution of observed historical climate evolution to externally forced change and internal variability is fundamental to understanding climate change and evaluating climate models. Yet such...</span><span class="abstract-full" id="full-2610.28219" hidden>Attribution of observed historical climate evolution to externally forced change and internal variability is fundamental to understanding climate change and evaluating climate models. Yet such attribution remains challenging because the forced response is intertwined with internal variability in observations. Here, we develop a convolutional long short-term memory network (ConvLSTM) to disentangle these two components. Trained and evaluated using large-ensemble simulations from multiple climate models, ConvLSTM consistently outperforms existing model-based, statistical, and machine-learning approaches. Applying ConvLSTM to observations reveals an evolving spatial pattern of the forced response and substantial contributions from internal variability to recent multidecadal climate trends. For several key climate features whose attribution remains debated, ConvLSTM indicates that internal variability amplified the forced reversal of Atlantic interhemispheric temperature asymmetry, dominated the observed La Niña-like warming pattern over the equatorial Pacific and the associated precipitation decline over southwestern North America since 1980, and modulated Arctic amplification around its nearly constant threefold forced value. Comparison between the ConvLSTM-estimated and model-simulated forced responses reveals broadly consistent patterns but also important discrepancies, with climate models simulating stronger Northern Hemisphere warming, weaker subtropical high intensification, and smaller land precipitation declines. Overall, ConvLSTM provides a robust framework for attributing historical climate evolution and evaluating the fidelity of climate models</span> <span class="abstract-toggle" data-id="2610.28219">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.28219v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.28219v1) · [:material-content-copy: BibTeX](bibtex/2610.28219.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a>
     { .paper-tags }
 
 </div>
