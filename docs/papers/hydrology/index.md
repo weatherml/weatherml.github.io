@@ -8,11 +8,24 @@ hide:
 
 # Hydrology
 
-<p class="page-meta" markdown="span">39 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">40 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Generated storm lifecycles fill the rare-event tail of short rainfall records { #2610.41365 }
+
+    *Valerie Tsao, Nathaniel W. Chaney, Manolis Veveakis, Marta Zaniolo* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.41365">Historically rare ''one-in-a-generation'' storms are occurring with unprecedented frequency, causing catastrophic damage and mounting casualties, and exposing the vulnerability of infrastructure...</span><span class="abstract-full" id="full-2610.41365" hidden>Historically rare ''one-in-a-generation'' storms are occurring with unprecedented frequency, causing catastrophic damage and mounting casualties, and exposing the vulnerability of infrastructure designed around short observational records. To overcome the limitations of sparse data, we present StormGen, a generative machine-learning model that transforms an observed storm's initial hours into complete, physically plausible hourly rainfall lifecycles in minutes. Evaluated on a decade of southeast Texas rainfall, StormGen produced close counterparts for 4\5% of the most severe 2% of storms--compared to just 3% for stochastic storm transposition--and maintained spatial coherence over full 24-hour sequences. Crucially, from a single hour of initial rainfall, the model successfully reconstructed the specific lifecycle, spatial pattern, and extreme catchment totals of Hurricane Harvey itself, despite the event being entirely absent in training. Because storm timing alone can more than double peak flows, these complete generated scenarios provide a vital mechanism to stress-test flood protections against unprecedented extremes.</span> <span class="abstract-toggle" data-id="2610.41365">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.41365v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.41365v2) · [:material-content-copy: BibTeX](../../bibtex/2610.41365.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
+    { .paper-tags }
 
 -   #### PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data { #2610.19994 }
 
@@ -389,19 +402,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
-    { .paper-tags }
-
--   #### Graph Learning-based Regional Heavy Rainfall Prediction Using Low-Cost Rain Gauges { #2412.16842 }
-
-    *Edwin Salcedo* · Dec 2024
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2412.16842">Accurate and timely prediction of heavy rainfall events is crucial for effective flood risk management and disaster preparedness. By monitoring, analysing, and evaluating rainfall data at a local...</span><span class="abstract-full" id="full-2412.16842" hidden>Accurate and timely prediction of heavy rainfall events is crucial for effective flood risk management and disaster preparedness. By monitoring, analysing, and evaluating rainfall data at a local level, it is not only possible to take effective actions to prevent any severe climate variation but also to improve the planning of surface and underground hydrological resources. However, developing countries often lack the weather stations to collect data continuously due to the high cost of installation and maintenance. In light of this, the contribution of the present paper is twofold: first, we propose a low-cost IoT system for automatic recording, monitoring, and prediction of rainfall in rural regions. Second, we propose a novel approach to regional heavy rainfall prediction by implementing graph neural networks (GNNs), which are particularly well-suited for capturing the complex spatial dependencies inherent in rainfall patterns. The proposed approach was tested using a historical dataset spanning 72 months, with daily measurements, and experimental results demonstrated the effectiveness of the proposed method in predicting heavy rainfall events, making this approach particularly attractive for regions with limited resources or where traditional weather radar or station coverage is sparse.</span> <span class="abstract-toggle" data-id="2412.16842">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2412.16842v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2412.16842v1) · [:material-content-copy: BibTeX](../../bibtex/2412.16842.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=graph-neural-networks" data-tag="graph-neural-networks">Graph neural networks</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
     { .paper-tags }
 
 </div>

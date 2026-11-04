@@ -8,11 +8,24 @@ hide:
 
 # Post-processing
 
-<p class="page-meta" markdown="span">26 papers · <a href="../../bib/post-processing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">27 papers · <a href="../../bib/post-processing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Patch-Based Deep Kernel Learning for Data Assimilation and Bias Correction with Extremely Sparse Observations { #2610.41596 }
+
+    *Emanuele Mele, Angelo Coluccia, Massimo Cafaro, Italo Epicoco, Paola Nassisi* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.41596">Data Assimilation (DA) reconstructs the state of a spatio-temporal system by combining sensor observations with the output of a numerical model. Since model states are high-dimensional while...</span><span class="abstract-full" id="full-2610.41596" hidden>Data Assimilation (DA) reconstructs the state of a spatio-temporal system by combining sensor observations with the output of a numerical model. Since model states are high-dimensional while observations cover only a small fraction of the domain, DA is a challenging large-scale estimation problem, central to weather forecasting and oceanography. Classical variational methods such as 3D-Var rely on a hand-crafted background error covariance that assumes unbiased errors, and therefore cannot capture state-dependent correlations or systematic model biases. Moreover, their cost grows with the size of the domain. Deep learning (DL) methods can perform DA and bias correction (BC) non-linearly, but typically offer limited interpretability and no calibrated uncertainty estimates. We propose a hybrid framework that couples a convolutional neural network (CNN) with a learnable-kernel Gaussian Process (GP) to jointly perform DA and BC from extremely sparse observations. The model is trained end-to-end by maximizing the marginal log-likelihood, learns a data-driven covariance over the whole grid, and provides both the Maximum A Posteriori analysis and its uncertainty by design. A patch-based strategy reduces the $O(N^3)$ training cost of exact GPs over $N$ grid points to $O(N)$ for a fixed patch size. Inference remains exact and only requires solving a linear system whose $O(m^3)$ cost depends on the number of observations $m \ll N$, not on the domain. The learned covariance can also replace the hand-crafted one in 3D-Var, improving its accuracy without changing the variational formulation. Experiments on sea surface temperature and salinity, with both synthetic and real, extremely sparse in-situ observations, show that the framework outperforms 3D-Var, a classical GP and a competing DL model, while reducing inference time by more than 98% with respect to 3D-Var.</span> <span class="abstract-toggle" data-id="2610.41596">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.41596v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.41596v1) · [:material-content-copy: BibTeX](../../bibtex/2610.41596.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a>
+    { .paper-tags }
 
 -   #### Low-rank tensor structure of precipitation and its application to satellite-reference merging { #2610.11000 }
 

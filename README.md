@@ -60,13 +60,15 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1602)
+## Papers (1616)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (380)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (382)</summary>
 
+- **Sonny-ENS: demystifying machine-learning ensemble weather forecasting** (Nov 2026) - [arXiv:2611.01614](https://arxiv.org/abs/2611.01614v1)
+- **Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend** (Oct 2026) - [arXiv:2610.42130](https://arxiv.org/abs/2610.42130v1)
 - **Scale-aware and spatially-localised optimisation of kilometre-scale MLWP models** (Oct 2026) - [arXiv:2610.37325](https://arxiv.org/abs/2610.37325v1)
 - **GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models** (Oct 2026) - [arXiv:2610.35693](https://arxiv.org/abs/2610.35693v1)
 - **Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings** (Oct 2026) - [arXiv:2610.31237](https://arxiv.org/abs/2610.31237v1)
@@ -451,8 +453,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (67)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (69)</summary>
 
+- **From Sea Surface Height to Velocity - A Machine Learning Approach** (Nov 2026) - [arXiv:2611.04270](https://arxiv.org/abs/2611.04270v1)
+- **Tropical Cyclone-Following Dataset for Limited-Area Machine Learning Applications** (Nov 2026) - [arXiv:2611.03925](https://arxiv.org/abs/2611.03925v1)
 - **Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast** (Oct 2026) - [arXiv:2610.36186](https://arxiv.org/abs/2610.36186v1)
 - **Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations** (Oct 2026) - [arXiv:2610.26145](https://arxiv.org/abs/2610.26145v1)
 - **Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment** (Oct 2026) - [arXiv:2610.12401](https://arxiv.org/abs/2610.12401v1)
@@ -750,8 +754,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/post-processing/">Post-processing</a></b> (26)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/post-processing/">Post-processing</a></b> (27)</summary>
 
+- **Patch-Based Deep Kernel Learning for Data Assimilation and Bias Correction with Extremely Sparse Observations** (Oct 2026) - [arXiv:2610.41596](https://arxiv.org/abs/2610.41596v1)
 - **Low-rank tensor structure of precipitation and its application to satellite-reference merging** (Oct 2026) - [arXiv:2610.11000](https://arxiv.org/abs/2610.11000v1)
 - **ClimTip-GML: A global bias-corrected and downscaled dataset for assessing impacts of climate tipping events** (Sep 2026) - [arXiv:2609.23149](https://arxiv.org/abs/2609.23149v1)
 - **Statistical versus machine learning-based spatial interpolation of post-processed ensemble weather forecasts** (Sep 2026) - [arXiv:2609.07512](https://arxiv.org/abs/2609.07512v1)
@@ -782,8 +787,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (80)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (81)</summary>
 
+- **Machine Learning Sensor Fusion for Water Vapor Radiometry based Tropospheric Delay Calibration** (Oct 2026) - [arXiv:2610.41052](https://arxiv.org/abs/2610.41052v1)
 - **Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport** (Oct 2026) - [arXiv:2610.32148](https://arxiv.org/abs/2610.32148v1)
 - **Accounting for model error in ensemble variational data assimilation through learned generative dynamics** (Oct 2026) - [arXiv:2610.17333](https://arxiv.org/abs/2610.17333v1)
 - **The interface of data assimilation and machine learning** (Oct 2026) - [arXiv:2610.07496](https://arxiv.org/abs/2610.07496v1)
@@ -868,8 +874,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (307)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (308)</summary>
 
+- **Can LLM Agents Improve Imperfect Earth System Model Parameterizations?** (Nov 2026) - [arXiv:2611.03543](https://arxiv.org/abs/2611.03543v1)
 - **Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation** (Oct 2026) - [arXiv:2610.37870](https://arxiv.org/abs/2610.37870v1)
 - **FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling** (Oct 2026) - [arXiv:2610.36297](https://arxiv.org/abs/2610.36297v1)
 - **Application of Artificial Intelligence in the Management of Climate Change-Related Health Issues in Africa** (Oct 2026) - [arXiv:2610.35294](https://arxiv.org/abs/2610.35294v1)
@@ -1181,8 +1188,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/hydrology/">Hydrology</a></b> (39)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/hydrology/">Hydrology</a></b> (40)</summary>
 
+- **Generated storm lifecycles fill the rare-event tail of short rainfall records** (Oct 2026) - [arXiv:2610.41365](https://arxiv.org/abs/2610.41365v2)
 - **PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data** (Oct 2026) - [arXiv:2610.19994](https://arxiv.org/abs/2610.19994v1)
 - **A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes** (Oct 2026) - [arXiv:2610.14493](https://arxiv.org/abs/2610.14493v1)
 - **Rainfall Sensing via Mobile Communication Signals** (Aug 2026) - [arXiv:2608.16088](https://arxiv.org/abs/2608.16088v1)
@@ -1226,8 +1234,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (89)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (91)</summary>
 
+- **A Multidimensional Evaluation Framework for Artificial Intelligence-Based Ocean State Forecasts** (Nov 2026) - [arXiv:2611.04892](https://arxiv.org/abs/2611.04892v1)
+- **New Wine in an Old Bottle -- NeuralPOM: A Hybrid Ocean Forecast Model with Differentiable Dynamics and Staged Learning** (Nov 2026) - [arXiv:2611.02460](https://arxiv.org/abs/2611.02460v1)
 - **Learning native eddy-resolving ocean dynamics outperforms coarse emulation and downscaling** (Oct 2026) - [arXiv:2610.14645](https://arxiv.org/abs/2610.14645v1)
 - **Multi-model ocean oxygen fields predicted by conditional diffusion models** (Oct 2026) - [arXiv:2610.08523](https://arxiv.org/abs/2610.08523v1)
 - **OceanMind: A multi-agent AI system for ocean diagnosis** (Oct 2026) - [arXiv:2610.03780](https://arxiv.org/abs/2610.03780v1)
@@ -1321,8 +1331,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (78)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/air-quality-composition/">Air Quality & Composition</a></b> (79)</summary>
 
+- **Machine learning emulators of dynamic global vegetation models for fast gridded carbon budget predictions** (Nov 2026) - [arXiv:2611.04536](https://arxiv.org/abs/2611.04536v1)
 - **KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry** (Oct 2026) - [arXiv:2610.37655](https://arxiv.org/abs/2610.37655v1)
 - **Noise Steering: Exploiting Wake Steering and Acoustic Directivity for Noise-Constrained Wind Farm Control via Reinforcement Learning** (Oct 2026) - [arXiv:2610.36888](https://arxiv.org/abs/2610.36888v1)
 - **An actively trained neural operator for near-explicit atmospheric chemistry** (Oct 2026) - [arXiv:2610.33771](https://arxiv.org/abs/2610.33771v2)
@@ -1405,8 +1416,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (102)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (103)</summary>
 
+- **SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning** (Oct 2026) - [arXiv:2610.42111](https://arxiv.org/abs/2610.42111v1)
 - **Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones** (Oct 2026) - [arXiv:2610.40304](https://arxiv.org/abs/2610.40304v1)
 - **Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression** (Oct 2026) - [arXiv:2610.21654](https://arxiv.org/abs/2610.21654v1)
 - **Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals from infrared brightness temperature** (Oct 2026) - [arXiv:2610.09859](https://arxiv.org/abs/2610.09859v1)
@@ -1513,8 +1525,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (220)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (222)</summary>
 
+- **Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities** (Nov 2026) - [arXiv:2611.03326](https://arxiv.org/abs/2611.03326v1)
+- **Forecasting Visitor Demand from Open AI-Camera Counts and Weather: Lessons from Japan for Saudi Heritage Sites** (Nov 2026) - [arXiv:2611.01033](https://arxiv.org/abs/2611.01033v1)
 - **From extreme weather to agricultural consequences with agentic AI** (Oct 2026) - [arXiv:2610.40641](https://arxiv.org/abs/2610.40641v1)
 - **Skillful and realistic precipitation forecasting with reinforced diffusion** (Oct 2026) - [arXiv:2610.38775](https://arxiv.org/abs/2610.38775v1)
 - **Curriculum-Based Deep Reinforcement Learning for Robust Autonomous Rocket Landing under Atmospheric Uncertainty** (Oct 2026) - [arXiv:2610.38636](https://arxiv.org/abs/2610.38636v1)

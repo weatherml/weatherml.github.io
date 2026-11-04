@@ -8,11 +8,34 @@ hide:
 
 # Ocean & Sea Ice
 
-<p class="page-meta" markdown="span">89 papers · page 1 of 3 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">91 papers · page 1 of 4 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### A Multidimensional Evaluation Framework for Artificial Intelligence-Based Ocean State Forecasts { #2611.04892 }
+
+    *Ziqing Zu, Ye Yuan, Tiejun Ling, Zhi Chen, Xiang Li, Zhiqiang Li, Qiang Wang, Jiangjiang Xia et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.04892">Artificial intelligence (AI) based ocean state forecasts now approach or surpass those produced by operational ocean forecasting systems as measured by conventional pointwise metrics. However, these...</span><span class="abstract-full" id="full-2611.04892" hidden>Artificial intelligence (AI) based ocean state forecasts now approach or surpass those produced by operational ocean forecasting systems as measured by conventional pointwise metrics. However, these metrics may favor spatially smoothed forecasts and cannot determine whether forecast variables remain physically coherent. Forecast evaluation should therefore move beyond overall pointwise accuracy toward assessing forecast trustworthiness. We propose a multidimensional framework comprising overall pointwise accuracy, physical consistency, and distributional consistency. Overall pointwise accuracy summarizes forecast and reference agreement over all valid samples; physical consistency evaluates dynamical balances using model outputs alone; and distributional consistency evaluates distribution tails and multiscale spatial structures. Three AI models were deployed as representative testbeds in a unified operational environment. This comprehensive assessment shows that lower overall pointwise errors cannot preclude substantial dynamical imbalances and suppressed fine-scale variance. Conversely, higher pointwise errors may arise from spatial displacement of coherent structures rather than a poor representation of their amplitude. The results demonstrate that the evaluation of AI ocean forecasting models should be based on the multi-dimensional assessment of forecast trustworthiness, rather than solely relying on a single metric. The study provides a preliminary framework for AI model intercomparison, which is also informative for targeted model refinement and operational implementation.</span> <span class="abstract-toggle" data-id="2611.04892">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.04892v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.04892v1) · [:material-content-copy: BibTeX](../../bibtex/2611.04892.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### New Wine in an Old Bottle -- NeuralPOM: A Hybrid Ocean Forecast Model with Differentiable Dynamics and Staged Learning { #2611.02460 }
+
+    *Ruiqi Shu, Guangliang Liu, Ruijian Gou, Tianrun Gao, Haomin Wen, Hao Li, Xiaomeng Huang* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.02460">Coarse-grid ocean circulation models rely on empirical subgrid parameterizations that struggle to capture mesoscale eddies, whereas purely data-driven neural forecasters accumulate trajectory drift,...</span><span class="abstract-full" id="full-2611.02460" hidden>Coarse-grid ocean circulation models rely on empirical subgrid parameterizations that struggle to capture mesoscale eddies, whereas purely data-driven neural forecasters accumulate trajectory drift, violate tracer conservation, and damp small-scale variability over extended integrations. Here we present NeuralPOM, a hybrid ocean forecast model that couples differentiable explicit mode-split and semi-implicit free-surface implementations of the Princeton Ocean Model (POM) to a conservation-constrained neural corrector. The three-dimensional primitive-equation solver advances the ocean state, while the neural network periodically updates the physical fields at high-frequency (1 h) or low-frequency (1 day) intervals under volume, heat, and salt conservation constraints. Using a fine-grid reference dataset exceeding 100,000 model days in a wind-driven double-gyre basin, we introduce a three-stage training procedure comprising offline single-step pretraining, multi-step differentiable training through the ocean solver, and multi-day closed-loop rollout training. Over 100-day forecasts, NeuralPOM reduces errors across all prognostic fields relative to coarse-grid physical closures and direct neural forecasters, preserving mesoscale kinetic energy while improving eddy phase alignment. Controlled ablations show that closed-loop training suppresses multi-day drift, whereas backpropagating gradients through the differentiable solver stabilizes high-frequency coupling. Finally, because high-frequency tracer updates can introduce density anomalies via the equation of state that excite spurious baroclinic pressure gradients, we introduce Density-Normal Damping (DND) to attenuate the density-modifying (diapycnal) tracer component while retaining the density-compensated (isopycnal) correction.</span> <span class="abstract-toggle" data-id="2611.02460">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.02460v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.02460v1) · [:material-content-copy: BibTeX](../../bibtex/2611.02460.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
+    { .paper-tags }
 
 -   #### Learning native eddy-resolving ocean dynamics outperforms coarse emulation and downscaling { #2610.14645 }
 
@@ -363,33 +386,7 @@ hide:
     <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
     { .paper-tags }
 
--   #### Large-Ensemble Simulations Reveal Links Between Atmospheric Blocking Frequency and Sea Surface Temperature Variability { #2602.05083 }
-
-    *Zilu Meng, Gregory J. Hakim, Wenchang Yang, Gabriel A. Vecchi* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.05083">Atmospheric blocking events drive persistent weather extremes in midlatitudes, but isolating the influence of sea surface temperature (SST) from chaotic internal atmospheric variability on these...</span><span class="abstract-full" id="full-2602.05083" hidden>Atmospheric blocking events drive persistent weather extremes in midlatitudes, but isolating the influence of sea surface temperature (SST) from chaotic internal atmospheric variability on these events remains a challenge. We address this challenge using century-long (1900-2010), large-ensemble simulations with two computationally efficient deep-learning general circulation models. We find these models skillfully reproduce the observed blocking climatology, matching or exceeding the performance of a traditional high-resolution model and representative CMIP6 models. Averaging the large ensembles filters internal atmospheric noise to isolate the SST-forced component of blocking variability, yielding substantially higher correlations with reanalysis than for individual ensemble members. We identify robust teleconnections linking Greenland blocking frequency to North Atlantic SST and El Niño-like patterns. Furthermore, SST-forced trends in blocking frequency show a consistent decline in winter over Greenland, and an increase over Europe. These results demonstrate that SST variability exerts a significant and physically interpretable influence on blocking frequency and establishes large ensembles from deep learning models as a powerful tool for separating forced SST signals from internal noise.</span> <span class="abstract-toggle" data-id="2602.05083">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.05083v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.05083v1) · [:material-content-copy: BibTeX](../../bibtex/2602.05083.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Hybrid physics-data-driven modeling for sea ice thermodynamics and transfer learning { #2601.23190 }
-
-    *Giovanni De Cillis, Alberto Carrassi, Julien Brajard, Laurent Bertino, Matteo Broccoli et al.* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.23190">This study explores a physics-data driven hybrid approach for sea-ice column physics models, in which a machine learning (ML) component acts as a state-dependent parameterization of forecast errors....</span><span class="abstract-full" id="full-2601.23190" hidden>This study explores a physics-data driven hybrid approach for sea-ice column physics models, in which a machine learning (ML) component acts as a state-dependent parameterization of forecast errors. We examine how perturbations in snow thermodynamics and sea-ice radiative properties affect forecast errors, and train dedicated neural networks (NNs) for each model configuration. The performance of the hybrid models is evaluated for long lead-time forecasts and compared against a benchmark system based on climatological forecast-error estimates. The NN-based hybrids prove to be stable, robust to initial condition and atmospheric forcing errors, and consistently outperform their climatology-based counterpart. To derive guiding principles for efficiently handling possible physical model updates, we perform transfer learning experiments to test whether pretrained NNs optimized for one model configuration can be successfully adapted to another. Results indicate that direct evaluation of pretrained networks on the target task provides useful insights into their adaptability, recommending transfer learning whenever performance exceeds a trivial baseline. Finally, a feature-importance analysis shows that atmospheric forcing inputs have negligible influence on NN predictive skill, while ice-layer enthalpies play a key role in achieving satisfactory performance.</span> <span class="abstract-toggle" data-id="2601.23190">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.23190v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.23190v2) · [:material-content-copy: BibTeX](../../bibtex/2601.23190.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
-    { .paper-tags }
-
 </div>
 
-<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
+<nav class="pager" markdown="span">**1** [2](2.md) [3](3.md) [4](4.md) [Older :material-arrow-right:](2.md){ .pager-step }</nav>
 

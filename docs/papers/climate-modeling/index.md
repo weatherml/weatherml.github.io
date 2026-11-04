@@ -8,11 +8,24 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">307 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">308 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Can LLM Agents Improve Imperfect Earth System Model Parameterizations? { #2611.03543 }
+
+    *Kara D. Lamb* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.03543">Earth system models (ESMs) rely on parameterizations to represent unresolved processes such as convection, cloud microphysics, and turbulence. However, translating advances in physical understanding...</span><span class="abstract-full" id="full-2611.03543" hidden>Earth system models (ESMs) rely on parameterizations to represent unresolved processes such as convection, cloud microphysics, and turbulence. However, translating advances in physical understanding into stable, validated parameterizations and integrating them into ESMs often takes years. Agentic AI could accelerate this process and enable more systematic exploration of design choices. Using warm-rain collision-coalescence as a test case, we evaluate agents' ability to synthesize scientific literature, reimplement published bulk parameterizations, and propose new functional forms as differentiable JAX code. We compare conventional parameterizations, data-driven emulators, and agent-generated closures against high-fidelity superdroplet simulations, repeating unattended experiments across ten language models. With expert guidance or iterative feedback, agents produced executable, differentiable, mass-conserving code, although unattended performance depended strongly on the scheme and language model. Iterative feedback lowered median rollout error for eight of ten models. Retuned physical schemes matched or outperformed many learned parameterizations at substantially lower computational cost, but two of 100 unattended agent-generated closures achieved slightly lower rain-mass error than the most accurate retuned scheme on held-out simulations.</span> <span class="abstract-toggle" data-id="2611.03543">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.03543v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.03543v1) · [:material-content-copy: BibTeX](../../bibtex/2611.03543.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
+    { .paper-tags }
 
 -   #### Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation { #2610.37870 }
 
@@ -371,16 +384,6 @@ hide:
     <span class="abstract-snippet" id="snip-2609.03658">Surface air over land warms substantially more than over the ocean under greenhouse forcing, a phenomenon known as the land-ocean warming contrast. Current explanations for this contrast are commonly...</span><span class="abstract-full" id="full-2609.03658" hidden>Surface air over land warms substantially more than over the ocean under greenhouse forcing, a phenomenon known as the land-ocean warming contrast. Current explanations for this contrast are commonly expressed either in terms of energetic constraints, from top-of-atmosphere and surface energy balance, or dynamical constraints, from large-scale atmospheric dynamics. We show that these perspectives are complementary when viewed through the lens of atmospheric moist static energy (MSE) transport, and that connecting them yields new insight into the controls of the warming contrast and the spread in climate models. We use this framework to construct an interpretable emulator that reproduces the land-ocean warming response across 22 models from the latest Coupled Model Intercomparison Project (CMIP6). We find that the strength of the land-ocean warming contrast emerges from the interplay between a model-dependent radiative baseline and a robust dynamical restoring mechanism that favors greater warming over land. This interplay leads to two broad model regimes that align with climate sensitivity. In low-climate-sensitivity models, more stabilizing radiative feedbacks over the ocean directly favor greater land warming. In high-climate-sensitivity models, radiative feedbacks alone would instead favor greater ocean warming, but a strong MSE-transport feedback (approximately 0.2 PW/K) more than compensates for this tendency. The intermodel spread in the land-ocean warming contrast is closely related to the ratio of radiative feedbacks over land and ocean, highlighting a broader connection between climate sensitivity and the land-ocean warming contrast.</span> <span class="abstract-toggle" data-id="2609.03658">more</span>
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.03658v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.03658v1) · [:material-content-copy: BibTeX](../../bibtex/2609.03658.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### A Checklist to assess the energy and carbon impacts of ML/AI applications in Earth System Modeling { #2609.00847 }
-
-    *Filippo Dainelli, Amirpasha Mozaffari, Marina Castaño, Aina Gaya i Àvila, Lluís Palma Garcia et al.* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.00847">As machine learning and artificial intelligence find their way into nearly every aspect of climate, weather, and Earth system modeling, it is worth pausing to consider what our design decisions imply...</span><span class="abstract-full" id="full-2609.00847" hidden>As machine learning and artificial intelligence find their way into nearly every aspect of climate, weather, and Earth system modeling, it is worth pausing to consider what our design decisions imply for the science and for the computational resources we consume. A growing body of literature addresses the ethical and sustainable development of ML/AI, yet translating these principles into day-to-day research practice remains a challenge as most of best practices are dispersed across multiple studies and commentaries. Here, we distill these discussions into a practical checklist that ML/AI and Earth system science practitioners can use to assess and reduce the environmental footprint of their own applications, organised around the successive stages of the model development pipeline. We complement the checklist with a selection of metrics drawn from the literature for estimating the energy consumption and carbon footprint of a project. For each question, we point to concrete examples and actionable suggestions from recent literature, aiming to bridge the gap between aspirational principles and the decisions researchers face at every stage of the development cycle.</span> <span class="abstract-toggle" data-id="2609.00847">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.00847v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.00847v1) · [:material-content-copy: BibTeX](../../bibtex/2609.00847.bib){ .bibtex-link }
     { .paper-links }
 
 </div>

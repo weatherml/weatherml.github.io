@@ -8,11 +8,24 @@ hide:
 
 # Air Quality & Composition
 
-<p class="page-meta" markdown="span">78 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">79 papers · page 1 of 3 · <a href="../../bib/air-quality-composition.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Machine learning emulators of dynamic global vegetation models for fast gridded carbon budget predictions { #2611.04536 }
+
+    *Piyu Ke, Xiaofan Gui, Stephen Sitch, Zhu Liu, Xun Li, Jiang Bian, Pierre Friedlingstein et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.04536">The land carbon sink explains most of the variability of the atmospheric CO2 growth rate, but the Global Carbon Budget estimates it with dynamic global vegetation models (DGVMs) run once a year....</span><span class="abstract-full" id="full-2611.04536" hidden>The land carbon sink explains most of the variability of the atmospheric CO2 growth rate, but the Global Carbon Budget estimates it with dynamic global vegetation models (DGVMs) run once a year. Emulators could provide it sooner if they reproduce each model outside its training period. Here we show that convolutional neural network emulators of 19 of these models, driven by ERA5 climate and their own past predictions, reproduce the global land sink of these models and its spread over two years not used in training. Global monthly net biome production (NBP) anomalies were reproduced with a median R^2 of 0.81. The error of the multi-model mean annual NBP was at most 0.23 GtC yr^-1. At the grid-cell level, the median R^2 of monthly anomalies was 0.30, partly because of errors that accumulate in the emulated NBP history.</span> <span class="abstract-toggle" data-id="2611.04536">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.04536v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.04536v1) · [:material-content-copy: BibTeX](../../bibtex/2611.04536.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
 
 -   #### KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry { #2610.37655 }
 
@@ -362,19 +375,6 @@ hide:
     <span class="abstract-snippet" id="snip-2604.10094">Anthropogenic methane (CH4) point sources drive near-term climate forcing, safety hazards, and system inefficiencies. Space-based imaging spectroscopy is emerging as a tool for identifying emissions...</span><span class="abstract-full" id="full-2604.10094" hidden>Anthropogenic methane (CH4) point sources drive near-term climate forcing, safety hazards, and system inefficiencies. Space-based imaging spectroscopy is emerging as a tool for identifying emissions globally, but existing approaches largely rely on manual plume identification. Here we present the Methane Analysis and Plume Localization with EMIT (MAPL-EMIT) model, an end-to-end vision transformer framework that leverages the complete radiance spectrum from the Earth Surface Mineral Dust Source Investigation (EMIT) instrument to jointly retrieve methane enhancements across all pixels within a scene. This approach brings together spectral and spatial context to significantly lower detection limits. MAPL-EMIT simultaneously supports enhancement quantification, plume delineation, and source localization, even for multiple overlapping plumes. The model was trained on 3.6 million physics-based synthetic plumes injected into global EMIT radiance data. Synthetic evaluation confirms the model's ability to identify plumes with high recall and precision and to capture weaker plumes relative to existing matched-filter approaches. On real-world benchmarks, MAPL-EMIT captures 79% of known hand-annotated NASA L2B plume complexes across a test set of 1084 EMIT granules, while capturing twice as many plausible plumes than identified by human analysts. Further validation against coincident airborne data, top-emitting landfills, and controlled release experiments confirms the model's ability to identify previously uncaptured sources. By incorporating model-generated metrics such as spectral fit scores and estimated noise levels, the framework can further limit false-positive rates. Overall, MAPL-EMIT enables high-throughput implementation on the full EMIT catalog, shifting methane monitoring from labor-intensive workflows to a rapid, scalable paradigm for global plume mapping at the facility scale.</span> <span class="abstract-toggle" data-id="2604.10094">more</span>
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.10094v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.10094v1) · [:material-content-copy: BibTeX](../../bibtex/2604.10094.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
-    { .paper-tags }
-
--   #### PollutionNet: A Vision Transformer Framework for Climatological Assessment of NO$_2$ and SO$_2$ Using Satellite-Ground Data Fusion { #2604.03311 }
-
-    *Prasanjit Dey, Soumyabrata Dev, Bianca Schoen-Phelan* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.03311">Accurate assessment of atmospheric nitrogen dioxide (NO$_2$) and sulfur dioxide (SO$_2$) is essential for understanding climate-air quality interactions, supporting environmental policy, and...</span><span class="abstract-full" id="full-2604.03311" hidden>Accurate assessment of atmospheric nitrogen dioxide (NO$_2$) and sulfur dioxide (SO$_2$) is essential for understanding climate-air quality interactions, supporting environmental policy, and protecting public health. Traditional monitoring approaches face limitations: satellite observations provide broad spatial coverage but suffer from data gaps, while ground-based sensors offer high temporal resolution but limited spatial extent. To address these challenges, we propose PollutionNet, a Vision Transformer-based framework that integrates Sentinel-5P TROPOMI vertical column density (VCD) data with ground-level observations. By leveraging self-attention mechanisms, PollutionNet captures complex spatiotemporal dependencies that are often missed by conventional CNN and RNN models. Applied to Ireland (2020-2021), our case study demonstrates that PollutionNet achieves state-of-the-art performance (RMSE: 6.89 $μ$g/m$^3$ for NO$_2$, 4.49 $μ$g/m$^3$ for SO$_2$), reducing prediction errors by up to 14% compared to baseline models. Beyond accuracy gains, PollutionNet provides a scalable and data-efficient tool for applied climatology, enabling robust pollution assessments in regions with sparse monitoring networks. These results highlight the potential of advanced machine learning approaches to enhance climate-related air quality research, inform environmental management, and support sustainable policy decisions.</span> <span class="abstract-toggle" data-id="2604.03311">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.03311v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.03311v1) · [:material-content-copy: BibTeX](../../bibtex/2604.03311.bib){ .bibtex-link }
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>

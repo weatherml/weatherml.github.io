@@ -8,11 +8,37 @@ hide:
 
 # Regional Models
 
-<p class="page-meta" markdown="span">67 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">69 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### From Sea Surface Height to Velocity - A Machine Learning Approach { #2611.04270 }
+
+    *Yaswanth Reddy Yaradoddi, Jinbo Wang, Elyes Serghine* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.04270">Inferring upper-ocean velocity from altimetric sea surface height (SSH) remains challenging below 50~km, scales now resolved by the Surface Water and Ocean Topography (SWOT) mission. Conventional...</span><span class="abstract-full" id="full-2611.04270" hidden>Inferring upper-ocean velocity from altimetric sea surface height (SSH) remains challenging below 50~km, scales now resolved by the Surface Water and Ocean Topography (SWOT) mission. Conventional methods rely on geostrophic or cyclogeostrophic balance. Here, we demonstrate that deep learning can predict the full velocity vector from SSH and environmental data and recover derivative-based diagnostics, including spectral energy flux. We trained a U-Net encoder--decoder on hourly fields from the pre-SWOT Cape Basin extraction of the LLC4320 ocean simulation, with 1.5-km grid spacing ($11.8$--$15.8^\circ$E, $41$--$45^\circ$S). Inputs were SSH, sea surface temperature (SST), and wind stress; targets were horizontal velocities at the surface and 50~m, where wind influence is weaker. At 50~m, the best model achieves a speed RMSE of $0.049\,\mathrm{m\,s^{-1}}$, 29% lower than the geostrophic approximation. Predicted relative vorticity has a correlation of 0.93, compared with 0.75 for the geostrophic approximation. The model also recovers divergence with a correlation of 0.66, whereas geostrophic velocity is nondivergent by definition. Tests of training strategies yield four findings: SSH gradients outperform raw SSH as inputs; wind stress is the most useful covariate for total velocity prediction; SST benefits vary seasonally; and including vorticity and divergence in the loss improves accuracy. These results offer a path for transferring high-fidelity simulation physics to SWOT applications, where kilometer-scale SSH snapshots contain superposed balanced and unbalanced signals.</span> <span class="abstract-toggle" data-id="2611.04270">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.04270v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.04270v1) · [:material-content-copy: BibTeX](../../bibtex/2611.04270.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
+    { .paper-tags }
+
+-   #### Tropical Cyclone-Following Dataset for Limited-Area Machine Learning Applications { #2611.03925 }
+
+    *Minh-Khanh Luong, Chanh Kieu* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.03925">This work presents a lightweight dataset of tropical cyclone (TC)-following meteorological variables to facilitate the development and application of machine learning (ML) methods in TC research....</span><span class="abstract-full" id="full-2611.03925" hidden>This work presents a lightweight dataset of tropical cyclone (TC)-following meteorological variables to facilitate the development and application of machine learning (ML) methods in TC research. Using outputs from our previous climate downscaling and idealized simulations, the dataset is constructed as multichannel video sequences that track TC centers throughout their lifetimes. To demonstrate the dataset utility, we present an application in which a regional ML model is trained to predict TC intensity with explicit incorporation of lateral boundary conditions. Our results highlight the importance of lateral boundary information for predicting TC intensity with ML models inside a limited-area domain, underscoring the need to properly account for lateral boundaries when developing regional ML models for TC intensity forecast.</span> <span class="abstract-toggle" data-id="2611.03925">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.03925v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.03925v1) · [:material-content-copy: BibTeX](../../bibtex/2611.03925.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=benchmarks-datasets" data-tag="benchmarks-datasets">Benchmarks & datasets</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
 
 -   #### Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast { #2610.36186 }
 
@@ -368,32 +394,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.09346v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.09346v1) · [:material-content-copy: BibTeX](../../bibtex/2604.09346.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Assessing the ability of a stretched-grid deep-learning weather prediction model to capture physical balances { #2604.01454 }
-
-    *Francesco Pasquini, Michiel Baatsen, Bastien François, Natalie Theeuwes, Maurice Schmeits* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.01454">Weather forecasting has traditionally relied on Numerical Weather Prediction (NWP) models, which simulate weather by solving the governing fluid equations. Recently, the emergence of Deep Learning...</span><span class="abstract-full" id="full-2604.01454" hidden>Weather forecasting has traditionally relied on Numerical Weather Prediction (NWP) models, which simulate weather by solving the governing fluid equations. Recently, the emergence of Deep Learning Weather Prediction (DLWP) models has opened a new era in weather forecasting, offering a data-driven alternative to classical NWP approaches. Regional DLWP models such as the stretched-grid model Bris developed by Met Norway, have demonstrated performance on par with, or even slightly better than regional NWP models across a range of standard forecast metrics. By overcoming the coarse horizontal resolution that constrained earlier global data-driven models, the operational use of regional DLWP systems now appears increasingly promising. Nevertheless, the performance of such models during extreme events is generally inferior to that of regional NWP models, and comprehensive evaluations of their ability to generate physically realistic forecasts are still lacking. Here, we present a study comparing the physical consistency of the deterministic version of Bris with the control run of the operational MetCoOp Ensemble Prediction System (MEPS) in forecasting the severe extratropical cyclone Poly, which hit the Netherlands on 5 July 2023. We examine whether Bris accurately represents deviations from key atmospheric balances and whether it reproduces expected dynamics of the storm. We show that, despite its relatively good performance in terms of RMSE, Bris struggles to capture important mesoscale features of the event and that it significantly disrupts several atmospheric balances. This unrealistic disruption is mainly linked to the fine-scale noise evidenced in its output fields, which leads to incorrect and unrealistic spatial gradients. These results raise critical questions for improving AI-based models to better represent extreme events and how to ensure physical consistency in their predictions.</span> <span class="abstract-toggle" data-id="2604.01454">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.01454v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.01454v1) · [:material-content-copy: BibTeX](../../bibtex/2604.01454.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling { #2603.28173 }
-
-    *Weiqi Chen, Wenwei Wang, Qilong Yuan, Lefei Shen, Bingqing Peng, Jiawei Chen, Bo Wu, Liang Sun* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.28173">Data-driven weather models have advanced global medium-range forecasting, yet high-resolution regional prediction remains challenging due to unresolved multiscale interactions between large-scale...</span><span class="abstract-full" id="full-2603.28173" hidden>Data-driven weather models have advanced global medium-range forecasting, yet high-resolution regional prediction remains challenging due to unresolved multiscale interactions between large-scale dynamics and small-scale processes such as terrain-induced circulations and coastal effects. This paper presents a global-regional coupling framework for kilometer-scale regional weather forecasting that synergistically couples a pretrained Transformer-based global model with a high-resolution regional network via a novel bidirectional coupling module, ScaleMixer. ScaleMixer dynamically identifies meteorologically critical regions through adaptive key-position sampling and enables cross-scale feature interaction through dedicated attention mechanisms. The framework produces forecasts at $0.05^\circ$ ($\sim 5 \mathrm{km}$ ) and 1-hour resolution over China, significantly outperforming operational NWP and AI baselines on both gridded reanalysis data and real-time weather station observations. It exhibits exceptional skill in capturing fine-grained phenomena such as orographic wind patterns and Foehn warming, demonstrating effective global-scale coherence with high-resolution fidelity. The code is available at https://anonymous.4open.science/r/ScaleMixer-6B66.</span> <span class="abstract-toggle" data-id="2603.28173">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.28173v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.28173v1) · [:material-content-copy: BibTeX](../../bibtex/2603.28173.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
-    { .paper-tags }
 
 </div>
 

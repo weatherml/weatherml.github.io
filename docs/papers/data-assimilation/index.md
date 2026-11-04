@@ -8,11 +8,24 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">80 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">81 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Machine Learning Sensor Fusion for Water Vapor Radiometry based Tropospheric Delay Calibration { #2610.41052 }
+
+    *T. K. Sridharan, Yoshiharu Asaki, Brian E. Svoboda* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.41052">The next-generation Very Large Array (ngVLA) intends to use 22 GHz water vapor radiometry (WVR) to correct for tropospheric phase fluctuations in its high-frequency bands. However, current...</span><span class="abstract-full" id="full-2610.41052" hidden>The next-generation Very Large Array (ngVLA) intends to use 22 GHz water vapor radiometry (WVR) to correct for tropospheric phase fluctuations in its high-frequency bands. However, current delay-retrieval methods do not reach the required accuracy and reliability. As a remedy, we propose a machine-learning based retrieval concept and a preliminary architecture, framed as heterogeneous, multi-rate sensor fusion. Atmospheric reanalysis profiles and surface weather set the context in which per-antenna WVR spectra are used to estimate excess path by a Kalman filter whose parameters are learned from high-cadence calibrator phases. The method is being developed, with planned first validation on the 183 GHz WVR system of the Atacama Large Millimeter/submillimeter Array (ALMA).</span> <span class="abstract-toggle" data-id="2610.41052">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.41052v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.41052v1) · [:material-content-copy: BibTeX](../../bibtex/2610.41052.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
 
 -   #### Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport { #2610.32148 }
 
@@ -369,19 +382,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.02328v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.02328v1) · [:material-content-copy: BibTeX](../../bibtex/2602.02328.bib){ .bibtex-link }
     { .paper-links }
-
--   #### SENDAI: A Hierarchical Sparse-measurement, EfficieNt Data AssImilation Framework { #2601.21664 }
-
-    *Xingyue Zhang, Yuxuan Bao, Mars Liyao Gao, J. Nathan Kutz* · Jan 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2601.21664">Bridging the gap between data-rich training regimes and observation-sparse deployment conditions remains a central challenge in spatiotemporal field reconstruction, particularly when target domains...</span><span class="abstract-full" id="full-2601.21664" hidden>Bridging the gap between data-rich training regimes and observation-sparse deployment conditions remains a central challenge in spatiotemporal field reconstruction, particularly when target domains exhibit distributional shifts, heterogeneous structure, and multi-scale dynamics absent from available training data. We present SENDAI, a hierarchical Sparse-measurement, EfficieNt Data AssImilation Framework that reconstructs full spatial states from hyper sparse sensor observations by combining simulation-derived priors with learned discrepancy corrections. We demonstrate the performance on satellite remote sensing, reconstructing MODIS (Moderate Resolution Imaging Spectroradiometer) derived vegetation index fields across six globally distributed sites. Using seasonal periods as a proxy for domain shift, the framework consistently outperforms established baselines that require substantially denser observations -- SENDAI achieves a maximum SSIM improvement of 185% over traditional baselines and a 36% improvement over recent high-frequency-based methods. These gains are particularly pronounced for landscapes with sharp boundaries and sub-seasonal dynamics; more importantly, the framework effectively preserves diagnostically relevant structures -- such as field topologies, land cover discontinuities, and spatial gradients. By yielding corrections that are more structurally and spectrally separable, the reconstructed fields are better suited for downstream inference of indirectly observed variables. The results therefore highlight a lightweight and operationally viable framework for sparse-measurement reconstruction that is applicable to physically grounded inference, resource-limited deployment, and real-time monitor and control.</span> <span class="abstract-toggle" data-id="2601.21664">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2601.21664v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2601.21664v1) · [:material-content-copy: BibTeX](../../bibtex/2601.21664.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
 
 </div>
 

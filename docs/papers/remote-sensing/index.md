@@ -8,11 +8,24 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">102 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">103 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning { #2610.42111 }
+
+    *Ioannis Dravilas, Miruna Stoicescu, Roope Tervo, Carlos Horn, Oriol Hinojo Comellas, Sina Montazeri et al.* · Oct 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2610.42111">Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning...</span><span class="abstract-full" id="full-2610.42111" hidden>Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning approaches rely primarily on gridded reanalysis or forecast data, limiting their applicability to satellite observations available for time-critical applications. We introduce SATFRONT, a machine learning framework for detecting cold, warm, and occluded fronts over Europe from geostationary satellite observations, with reanalysis data as an optional additional input. The model is trained on frontal analyses from five European national meteorological services and evaluated against UK Met Office analyses for 2024. Using satellite observations alone, SATFRONT achieves a Critical Success Index (CSI) of 0.428 at a 150 km tolerance, within the range of agreement between analyses from different meteorological services (0.277-0.501) and higher than that of an operational rule-based front detector that uses satellite data (0.133). Adding ERA5 reanalysis increases the CSI to 0.591. ERA5 substantially improves the placement of individual fronts, although its effect on their annual spatial distribution varies by front type. These results demonstrate that cold, warm, and occluded fronts can be detected directly from geostationary satellite observations, providing a basis for automated frontal analyses at the high temporal frequency required for time-critical applications.</span> <span class="abstract-toggle" data-id="2610.42111">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.42111v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.42111v1) · [:material-content-copy: BibTeX](../../bibtex/2610.42111.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
 
 -   #### Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones { #2610.40304 }
 
@@ -377,19 +390,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### GPROF-IR: An Improved Single-Channel Infrared Precipitation Retrieval for Merged Satellite Precipitation Products { #2605.07167 }
-
-    *Simon Pfreundschuh, Christian D. Kummerow, Jackson Tan, George J. Huffman* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.07167">Current merged precipitation products such as IMERG, GSMAP, and CMORPH combine satellite estimates from passive microwave (PMW) and infrared (IR) observations. However, the different information...</span><span class="abstract-full" id="full-2605.07167" hidden>Current merged precipitation products such as IMERG, GSMAP, and CMORPH combine satellite estimates from passive microwave (PMW) and infrared (IR) observations. However, the different information content of these sensors makes it challenging to produce consistent precipitation estimates, even for coincident observations. The resulting inconsistencies between PMW and IR retrievals can introduce artifacts in the temporal evolution of merged precipitation fields and lead to an overreliance on time-propagated PMW estimates.   We introduce GPROF-IR, a novel IR precipitation retrieval that leverages a convolutional neural network to improve precipitation estimates from single-channel IR observations. We demonstrate that the proposed model is able to leverage the temporal information in half-hourly IR observations to improve precipitation estimates. GPROF-IR is designed for integration into the upcoming release of the Integrated Multi-Satellite Retrieval for GPM (IMERG V08) and produces estimates that are climatologically consistent with the GPROF-NN PMW retrieval.   We evaluate GPROF-IR using independent, global reference measurements and demonstrate substantial improvements over conventional IR retrievals. GPROF-IR provides lower mean squared error and higher correlation coefficient than IMERG V07 PMW estimates over continental land masses but remains below the accuracy of PMW precipitation estimates over sea surfaces and climate regimes with a greater influence from shallow precipitation.   By expoiting both spatial and temporal information content in geostationary IR observations, GPROF-IR establishes a new state of the art for single-channel IR precipitation retrievals. GPROF-IR can be used to quasi-global precipitation estimates at half-hourly resolution from 1998 onward, providing a consistent and accurate foundation for improving merged precipitation products.</span> <span class="abstract-toggle" data-id="2605.07167">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.07167v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.07167v1) · [:material-content-copy: BibTeX](../../bibtex/2605.07167.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
     { .paper-tags }
 
 </div>
