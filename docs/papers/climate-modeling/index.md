@@ -8,11 +8,24 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">308 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">309 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Evaluating the prediction of subgrid eddy kinetic energy from a machine learning model { #2611.06539 }
+
+    *Thomas Wilder, Ranjini Swaminathan, David Storkey, Till Kuhlbrodt* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.06539">Global climate model resolution is still too coarse to fully resolve mesoscale processes, therefore subgrid closures are required to approximate the feedback of eddies onto the resolved flow. With...</span><span class="abstract-full" id="full-2611.06539" hidden>Global climate model resolution is still too coarse to fully resolve mesoscale processes, therefore subgrid closures are required to approximate the feedback of eddies onto the resolved flow. With high-resolution datasets now readily available, there has been a rapid growth in the use of machine learning to develop new eddy closures that could help reduce model biases and uncertainty. In this work we employ an offline learning approach with a convolutional neural network to predict subgrid eddy kinetic energy ($KE_e$), laying the initial groundwork for a machine-learned scale-aware GEOMETRIC eddy closure for the UK's Earth System Model. We address the question of whether global parameterizations are needed or if regional closures are sufficient by evaluating a number of neural network models through region and feature ablation experiments. ML parameterization models generalize to unseen regions when their training data share similar feature and target distributions with those regions. Models that fail to generalize incur distributional shift, or employ different filtering scales for the true eddy kinetic energy field. When holding out features, there is improvement among the generalizable ML models, with some feature spaces leading to improvements in some regions but degrading performance in others. Generally, power spectral density of $KE_e$ tend to diverge at small scales, though some feature spaces are able to minimize this divergence. Overall, the best performing model trained on all regions achieves time-mean and anomaly R2 scores of R2$\approx 0.95$ and R2$\approx 0.8 - 0.9$, respectively.</span> <span class="abstract-toggle" data-id="2611.06539">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.06539v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.06539v1) · [:material-content-copy: BibTeX](../../bibtex/2611.06539.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
 
 -   #### Can LLM Agents Improve Imperfect Earth System Model Parameterizations? { #2611.03543 }
 
@@ -375,16 +388,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
     { .paper-tags }
-
--   #### Radiative and Dynamical Controls on the Land-Ocean Warming Contrast in Climate Models { #2609.03658 }
-
-    *Paolo Giani, Arlene M. Fiore, Raffaele Ferrari, Paul A. O'Gorman, Vincent T. Cooper, Noelle E. Selin* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.03658">Surface air over land warms substantially more than over the ocean under greenhouse forcing, a phenomenon known as the land-ocean warming contrast. Current explanations for this contrast are commonly...</span><span class="abstract-full" id="full-2609.03658" hidden>Surface air over land warms substantially more than over the ocean under greenhouse forcing, a phenomenon known as the land-ocean warming contrast. Current explanations for this contrast are commonly expressed either in terms of energetic constraints, from top-of-atmosphere and surface energy balance, or dynamical constraints, from large-scale atmospheric dynamics. We show that these perspectives are complementary when viewed through the lens of atmospheric moist static energy (MSE) transport, and that connecting them yields new insight into the controls of the warming contrast and the spread in climate models. We use this framework to construct an interpretable emulator that reproduces the land-ocean warming response across 22 models from the latest Coupled Model Intercomparison Project (CMIP6). We find that the strength of the land-ocean warming contrast emerges from the interplay between a model-dependent radiative baseline and a robust dynamical restoring mechanism that favors greater warming over land. This interplay leads to two broad model regimes that align with climate sensitivity. In low-climate-sensitivity models, more stabilizing radiative feedbacks over the ocean directly favor greater land warming. In high-climate-sensitivity models, radiative feedbacks alone would instead favor greater ocean warming, but a strong MSE-transport feedback (approximately 0.2 PW/K) more than compensates for this tendency. The intermodel spread in the land-ocean warming contrast is closely related to the ratio of radiative feedbacks over land and ocean, highlighting a broader connection between climate sensitivity and the land-ocean warming contrast.</span> <span class="abstract-toggle" data-id="2609.03658">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.03658v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.03658v1) · [:material-content-copy: BibTeX](../../bibtex/2609.03658.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

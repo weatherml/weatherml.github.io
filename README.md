@@ -60,13 +60,14 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1616)
+## Papers (1623)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (382)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (383)</summary>
 
+- **Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models** (Nov 2026) - [arXiv:2611.05592](https://arxiv.org/abs/2611.05592v2)
 - **Sonny-ENS: demystifying machine-learning ensemble weather forecasting** (Nov 2026) - [arXiv:2611.01614](https://arxiv.org/abs/2611.01614v1)
 - **Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend** (Oct 2026) - [arXiv:2610.42130](https://arxiv.org/abs/2610.42130v1)
 - **Scale-aware and spatially-localised optimisation of kilometre-scale MLWP models** (Oct 2026) - [arXiv:2610.37325](https://arxiv.org/abs/2610.37325v1)
@@ -453,8 +454,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (69)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/regional-models/">Regional Models</a></b> (70)</summary>
 
+- **Estimating Vertical Ocean Velocity from Horizontal Currents: Linear and Depth-Conditional Neural-Network Approaches on a High-Resolution Regional Ocean Model** (Nov 2026) - [arXiv:2611.07969](https://arxiv.org/abs/2611.07969v1)
 - **From Sea Surface Height to Velocity - A Machine Learning Approach** (Nov 2026) - [arXiv:2611.04270](https://arxiv.org/abs/2611.04270v1)
 - **Tropical Cyclone-Following Dataset for Limited-Area Machine Learning Applications** (Nov 2026) - [arXiv:2611.03925](https://arxiv.org/abs/2611.03925v1)
 - **Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast** (Oct 2026) - [arXiv:2610.36186](https://arxiv.org/abs/2610.36186v1)
@@ -528,8 +530,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (106)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (107)</summary>
 
+- **Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery** (Nov 2026) - [arXiv:2611.08255](https://arxiv.org/abs/2611.08255v1)
 - **Nowcasting aerosol particle size distributions from PM2.5 with physics-regularized flow matching** (Oct 2026) - [arXiv:2610.33557](https://arxiv.org/abs/2610.33557v1)
 - **Space weather dependence of decameter-scale ionospheric irregularities spatial distribution** (Oct 2026) - [arXiv:2610.29630](https://arxiv.org/abs/2610.29630v1)
 - **Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting** (Oct 2026) - [arXiv:2610.26486](https://arxiv.org/abs/2610.26486v1)
@@ -874,8 +877,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (308)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (309)</summary>
 
+- **Evaluating the prediction of subgrid eddy kinetic energy from a machine learning model** (Nov 2026) - [arXiv:2611.06539](https://arxiv.org/abs/2611.06539v1)
 - **Can LLM Agents Improve Imperfect Earth System Model Parameterizations?** (Nov 2026) - [arXiv:2611.03543](https://arxiv.org/abs/2611.03543v1)
 - **Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation** (Oct 2026) - [arXiv:2610.37870](https://arxiv.org/abs/2610.37870v1)
 - **FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling** (Oct 2026) - [arXiv:2610.36297](https://arxiv.org/abs/2610.36297v1)
@@ -1416,8 +1420,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (103)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (106)</summary>
 
+- **Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add?** (Nov 2026) - [arXiv:2611.08148](https://arxiv.org/abs/2611.08148v1)
+- **Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System** (Nov 2026) - [arXiv:2611.07296](https://arxiv.org/abs/2611.07296v1)
+- **A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies** (Nov 2026) - [arXiv:2611.07094](https://arxiv.org/abs/2611.07094v1)
 - **SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning** (Oct 2026) - [arXiv:2610.42111](https://arxiv.org/abs/2610.42111v1)
 - **Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones** (Oct 2026) - [arXiv:2610.40304](https://arxiv.org/abs/2610.40304v1)
 - **Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression** (Oct 2026) - [arXiv:2610.21654](https://arxiv.org/abs/2610.21654v1)

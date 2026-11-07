@@ -11,17 +11,17 @@ search:
 <div class="tag-group">
 <span class="tag-group-name">Topic</span>
 <div class="tag-chips">
-<button class="md-tag tag-chip" type="button" data-tag="global-models">Global Models <span class="tag-chip-count">382</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="regional-models">Regional Models <span class="tag-chip-count">69</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="nowcasting">Nowcasting <span class="tag-chip-count">106</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="global-models">Global Models <span class="tag-chip-count">383</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="regional-models">Regional Models <span class="tag-chip-count">70</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="nowcasting">Nowcasting <span class="tag-chip-count">107</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="downscaling">Downscaling <span class="tag-chip-count">108</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="post-processing">Post-processing <span class="tag-chip-count">27</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="data-assimilation">Data Assimilation <span class="tag-chip-count">81</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="climate-modeling">Climate Modeling <span class="tag-chip-count">308</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="climate-modeling">Climate Modeling <span class="tag-chip-count">309</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="hydrology">Hydrology <span class="tag-chip-count">40</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="ocean-sea-ice">Ocean & Sea Ice <span class="tag-chip-count">91</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="air-quality-composition">Air Quality & Composition <span class="tag-chip-count">79</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="remote-sensing">Remote Sensing <span class="tag-chip-count">103</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="remote-sensing">Remote Sensing <span class="tag-chip-count">106</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="other">Other <span class="tag-chip-count">222</span></button>
 </div>
 </div>
@@ -33,7 +33,7 @@ search:
 <button class="md-tag tag-chip" type="button" data-tag="transformers">Transformers <span class="tag-chip-count">153</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="graph-neural-networks">Graph neural networks <span class="tag-chip-count">54</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="neural-operators">Neural operators <span class="tag-chip-count">41</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="cnn-u-net">CNN / U-Net <span class="tag-chip-count">156</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="cnn-u-net">CNN / U-Net <span class="tag-chip-count">157</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="recurrent-networks">Recurrent networks <span class="tag-chip-count">76</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="foundation-models">Foundation models <span class="tag-chip-count">70</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="physics-ml-hybrid">Physics–ML hybrid <span class="tag-chip-count">124</span></button>
@@ -46,7 +46,7 @@ search:
 <span class="tag-group-name">Theme</span>
 <div class="tag-chips">
 <button class="md-tag tag-chip" type="button" data-tag="precipitation">Precipitation <span class="tag-chip-count">267</span></button>
-<button class="md-tag tag-chip" type="button" data-tag="tropical-cyclones">Tropical cyclones <span class="tag-chip-count">133</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="tropical-cyclones">Tropical cyclones <span class="tag-chip-count">135</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="extremes">Extremes <span class="tag-chip-count">149</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal <span class="tag-chip-count">95</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="uncertainty-ensembles">Uncertainty & ensembles <span class="tag-chip-count">292</span></button>
@@ -60,7 +60,7 @@ search:
 <div class="tag-group">
 <span class="tag-group-name">Domain</span>
 <div class="tag-chips">
-<button class="md-tag tag-chip" type="button" data-tag="global">Global <span class="tag-chip-count">245</span></button>
+<button class="md-tag tag-chip" type="button" data-tag="global">Global <span class="tag-chip-count">246</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="regional">Regional <span class="tag-chip-count">142</span></button>
 <button class="md-tag tag-chip" type="button" data-tag="station-point">Station / point <span class="tag-chip-count">48</span></button>
 </div>

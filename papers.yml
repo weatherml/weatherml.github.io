@@ -43621,3 +43621,192 @@
     to stress-test flood protections against unprecedented extremes.
   arxiv_categories:
   - cs.LG
+- category: Remote Sensing
+  title: 'Detecting Weather Fronts from Satellite Observations: What Does Reanalysis
+    Add?'
+  authors: Ioannis Dravilas, Miruna Stoicescu, Roope Tervo, Carlos Horn, Oriol Hinojo
+    Comellas, Sina Montazeri, Andrea Meraner, Ana Lucic
+  year: 2026
+  arxiv: 2611.08148v1
+  abstract: 'Weather fronts are transition regions between air masses with contrasting
+    thermodynamic properties and are associated with mid-latitude precipitation and
+    severe weather. We investigate machine learning (ML) methods for detecting weather
+    fronts and quantify the contribution of reanalysis data to performance. We compare
+    two configurations of the same ML model for pixel-wise frontal classification
+    over the North Atlantic and Europe: (1) using only geostationary infrared satellite
+    observations, and (2) additionally using 28 ERA5 reanalysis fields. The satellite-only
+    model achieves a neighbourhood critical success index at a 150 km tolerance (CSI@150)
+    of $0.402$, which lies within the range of agreement between analyses from different
+    meteorological services. The satellite$+$ERA5 model achieves $0.575$, an improvement
+    of $0.173$. Our analysis shows that low-level winds are the least predictable
+    from the satellite representation ($R^2 = 0.23$, compared with $0.88$ for temperature),
+    while removing winds or moisture causes the largest decreases in detection performance.'
+  arxiv_categories:
+  - cs.LG
+  - cs.CV
+  - physics.ao-ph
+- category: Regional Models
+  title: 'Estimating Vertical Ocean Velocity from Horizontal Currents: Linear and
+    Depth-Conditional Neural-Network Approaches on a High-Resolution Regional Ocean
+    Model'
+  authors: Francesco M. Ventrella, Cristóbal López, Emilio Hernandez-Garcia
+  year: 2026
+  arxiv: 2611.07969v1
+  abstract: 'The vertical component of the ocean velocity, w, is several orders of
+    magnitude smaller than the horizontal components u and v, yet it controls vertical
+    tracer transport, upwelling, and mixed-layer ventilation. Because w is extremely
+    difficult to measure directly and is normally obtained only diagnostically from
+    the continuity equation, predicting it from the horizontal velocity field is a
+    problem of both practical and physical interest. We address this problem with
+    two data-driven methods, a physically-motivated linear baseline and a convolutional
+    neural network conditioned on depth through Feature-wise Linear Modulation (FiLM).
+    Both methods are applied to a high-resolution regional simulation of the Coastal
+    and Regional Ocean Community model over the Western Mediterranean, using a sub-region
+    of the south-west Mediterranean Sea as a training region and two independent,
+    out-of-sample regions for validation: the Alboran Sea, with a distinct dynamical
+    regime driven by Atlantic inflow through the Strait of Gibraltar, and a transition
+    region between Almería and Cartagena, between the Alboran Sea and the open western
+    Mediterranean. Once the FiLM network is regularized enough to avoid overfitting
+    to a single training domain, we find that its comparison with the physically interpretable
+    linear baseline is domain- and depth-dependent rather than uniform: near the reference
+    depth, essentially all of the achievable out-of-sample performance on both validation
+    domains is already captured by the linear model, but at the deepest levels tested
+    the FiLM network outperforms the linear baseline on the transition domain, whereas
+    on Alboran it does not.'
+  arxiv_categories:
+  - physics.ao-ph
+- category: Remote Sensing
+  title: A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative
+    Transfer at Microwave Frequencies
+  authors: Spencer R. Jones, Simon Pfreundschuh, Christian D. Kummerow
+  year: 2026
+  arxiv: 2611.07094v1
+  abstract: This paper presents an application of machine learning to the problem
+    of the computational expense of atmospheric radiative transfer calculations from
+    physics-based models. While in recent studies individual emulators have been created
+    that emulate certain radiative transfer schemes for different sensors, we show
+    that a general framework can be applied to emulate the radiative transfer method
+    itself. A fully connected deep neural network has been trained to predict top-of-atmosphere
+    microwave radiances in all-sky conditions over various land, ocean and sea ice
+    surfaces at all frequencies from 1 to 300 GHz, and for all incidence angles from
+    0 to 65 degrees. The reference models against which the emulator has been trained
+    include an Eddington two-stream radiative transfer model for one-dimensional and
+    pseudo-three-dimensional microwave brightness temperature simulations. This neural
+    network architecture has also been separately trained to reproduce the explicit
+    calculations of the Community Radiative Transfer Model (CRTM) for a single microwave
+    imager. In all cases, the model architecture is successfully able predict microwave
+    brightness temperatures by being trained directly on the optical properties of
+    the atmosphere and surface and therefore directly emulating the radiative transfer
+    method. Compared to the explicit schemes used to produce the training data, the
+    GPU-enabled emulator is able to produce brightness temperature simulations more
+    than three orders of magnitude faster and with a root-mean-squared-error less
+    than 0.0348 K, 0.0531 K, and 0.0246 K against the independent test data for the
+    two Eddington models and CRTM, respectively. Additionally, preliminary training
+    using a full 3D Monte Carlo scheme for high-resolution simulations shows promising
+    results for the application of this method to "exact" radiative transfer methods,
+    and these results are discussed in Section IV.
+  arxiv_categories:
+  - physics.ao-ph
+- category: Climate Modeling
+  title: Evaluating the prediction of subgrid eddy kinetic energy from a machine learning
+    model
+  authors: Thomas Wilder, Ranjini Swaminathan, David Storkey, Till Kuhlbrodt
+  year: 2026
+  arxiv: 2611.06539v1
+  abstract: Global climate model resolution is still too coarse to fully resolve mesoscale
+    processes, therefore subgrid closures are required to approximate the feedback
+    of eddies onto the resolved flow. With high-resolution datasets now readily available,
+    there has been a rapid growth in the use of machine learning to develop new eddy
+    closures that could help reduce model biases and uncertainty. In this work we
+    employ an offline learning approach with a convolutional neural network to predict
+    subgrid eddy kinetic energy ($KE_e$), laying the initial groundwork for a machine-learned
+    scale-aware GEOMETRIC eddy closure for the UK's Earth System Model. We address
+    the question of whether global parameterizations are needed or if regional closures
+    are sufficient by evaluating a number of neural network models through region
+    and feature ablation experiments. ML parameterization models generalize to unseen
+    regions when their training data share similar feature and target distributions
+    with those regions. Models that fail to generalize incur distributional shift,
+    or employ different filtering scales for the true eddy kinetic energy field. When
+    holding out features, there is improvement among the generalizable ML models,
+    with some feature spaces leading to improvements in some regions but degrading
+    performance in others. Generally, power spectral density of $KE_e$ tend to diverge
+    at small scales, though some feature spaces are able to minimize this divergence.
+    Overall, the best performing model trained on all regions achieves time-mean and
+    anomaly R2 scores of R2$\approx 0.95$ and R2$\approx 0.8 - 0.9$, respectively.
+  arxiv_categories:
+  - physics.ao-ph
+- category: Global Models
+  title: Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather
+    Models
+  authors: P. Trent Vonich, Gregory J. Hakim
+  year: 2026
+  arxiv: 2611.05592v2
+  abstract: Differentiable weather models allow atmospheric initial conditions to
+    be directly optimized to shadow a known trajectory, which we take from a reanalysis
+    dataset. Here, we extend this optimization to include the forecast model, GraphCast,
+    using low-rank adaptation (LoRA). We compare model optimization with initial-condition
+    (IC) optimization, and then joint optimization, where both are tuned simultaneously.
+    When compared against a control forecast initialized with reanalysis data, LoRA
+    and IC optimization individually produce similar improvements. We find similar
+    results when IC and LoRA are jointly optimized across a spectrum of solutions
+    where a tuning coefficient smoothly shifts the weight of the joint optimization
+    from all-LoRA to all-IC; forecast improvement is not unique to the relative contributions
+    of model and IC corrections. To better discriminate the source of error, we introduce
+    a second model, Pangu-Weather, as a supervisor that gates IC updates during joint
+    optimization. This gated optimization is the same as before, except that IC updates
+    at each epoch are accepted only when they improve the forecasts of both models;
+    otherwise, only the LoRA update is accepted. Results show that this cross-model
+    constraint substantially improves agreement between the two models in their response
+    to the same optimized ICs, narrowing the gap in mean forecast error reduction
+    from 64% to 10%. Moreover, when used together, the LoRA and IC corrections from
+    the gated optimization yield GraphCast forecast improvements similar to those
+    from the ungated optimization. These results imply that model error that is encoded
+    in the ungated ICs is shifted to the LoRA corrections via gating, yielding IC
+    corrections that may provide better analysis estimates.
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+- category: Nowcasting
+  title: Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary
+    Imagery
+  authors: Simon Donike, Pritthijit Nath, Cristina Radin, Arthur Avenas, Ruben Cartuyvels,
+    Emiliano Diaz, William K. Jones, Anna Jungbluth
+  year: 2026
+  arxiv: 2611.08255v1
+  abstract: High-resolution tropical cyclone surface wind speeds derived from synthetic
+    aperture radar (SAR) observations can support storm structure and intensity modelling,
+    but remain spatially and temporally sparse and unavailable near-real-time. Geostationary
+    satellites capture cloud tops continuously in space and time, but do not directly
+    resolve surface winds. Here, we present simple neural networks to predict 2D wind
+    fields and storm-scale intensity metrics from geostationary imagery. Through a
+    series of ablation studies, we find that joint prediction of 2D fields and scalar
+    metrics from the model latent space improves the retrieval of the (radius of)
+    maximum wind, especially for rapid intensification events.
+  arxiv_categories:
+  - cs.LG
+- category: Remote Sensing
+  title: 'Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage
+    Recommendation System'
+  authors: Chenchen Kuai, Shixuan Tang, Chaolun Ma, Xiaoqiang Kong, Xiubin Bruce Wang,
+    Yunlong Zhang, Zihao Li
+  year: 2026
+  arxiv: 2611.07296v1
+  abstract: 'When a tropical cyclone (TC) threatens several ports, preparedness planning
+    depends on anticipating which ports are likely to be affected and where disruptions
+    may last longest. Limited historical observations at individual ports and uncertainty
+    in landfall location make these relative impacts difficult to estimate. We use
+    a two-stage recommendation framework that first selects candidate ports based
+    on their proximity to the expected landfall location and then ranks them by their
+    estimated number of impact days. Using AIS-derived impact days for 37 ports and
+    31 TCs in the Gulf of Mexico study region, we compare three ways of representing
+    port--cyclone interactions: pairwise feature interactions, tree-based feature
+    combinations, and explicit feature crosses combined with learned embeddings. In
+    tests on Hurricanes Nicole and Ian, the retrieval stage consistently identifies
+    all observed affected ports under landfall uncertainty. Among the ranking models,
+    Wide & Deep Learning achieves the closest agreement with the observed port rankings.
+    Its mean ranking agreement exceeds that of the distance-based baseline by 85.5%
+    for Nicole and 55.5% for Ian and is less sensitive to uncertainty in the landfall
+    location. These rankings could help port authorities prioritize post-cyclone inspections
+    and allocate recovery resources across ports threatened by the same event.'
+  arxiv_categories:
+  - cs.AI

@@ -8,11 +8,21 @@ hide:
 
 # Regional Models
 
-<p class="page-meta" markdown="span">69 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">70 papers · page 1 of 3 · <a href="../../bib/regional-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Estimating Vertical Ocean Velocity from Horizontal Currents: Linear and Depth-Conditional Neural-Network Approaches on a High-Resolution Regional Ocean Model { #2611.07969 }
+
+    *Francesco M. Ventrella, Cristóbal López, Emilio Hernandez-Garcia* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.07969">The vertical component of the ocean velocity, w, is several orders of magnitude smaller than the horizontal components u and v, yet it controls vertical tracer transport, upwelling, and mixed-layer...</span><span class="abstract-full" id="full-2611.07969" hidden>The vertical component of the ocean velocity, w, is several orders of magnitude smaller than the horizontal components u and v, yet it controls vertical tracer transport, upwelling, and mixed-layer ventilation. Because w is extremely difficult to measure directly and is normally obtained only diagnostically from the continuity equation, predicting it from the horizontal velocity field is a problem of both practical and physical interest. We address this problem with two data-driven methods, a physically-motivated linear baseline and a convolutional neural network conditioned on depth through Feature-wise Linear Modulation (FiLM). Both methods are applied to a high-resolution regional simulation of the Coastal and Regional Ocean Community model over the Western Mediterranean, using a sub-region of the south-west Mediterranean Sea as a training region and two independent, out-of-sample regions for validation: the Alboran Sea, with a distinct dynamical regime driven by Atlantic inflow through the Strait of Gibraltar, and a transition region between Almería and Cartagena, between the Alboran Sea and the open western Mediterranean. Once the FiLM network is regularized enough to avoid overfitting to a single training domain, we find that its comparison with the physically interpretable linear baseline is domain- and depth-dependent rather than uniform: near the reference depth, essentially all of the achievable out-of-sample performance on both validation domains is already captured by the linear model, but at the deepest levels tested the FiLM network outperforms the linear baseline on the transition domain, whereas on Alboran it does not.</span> <span class="abstract-toggle" data-id="2611.07969">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.07969v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.07969v1) · [:material-content-copy: BibTeX](../../bibtex/2611.07969.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### From Sea Surface Height to Velocity - A Machine Learning Approach { #2611.04270 }
 
@@ -384,16 +394,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
     { .paper-tags }
-
--   #### OTProf: estimating high-resolution profiles of optical turbulence ($C_n^2$) from reanalysis using deep learning { #2604.09346 }
-
-    *Maximilian Pierzyna, Sukanta Basu, Rudolf Saathof* · Apr 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2604.09346">Accurate high-resolution vertical profiles of optical turbulence ($C_n^2$), which reflect local meteorology and topography, are crucial for ground-based optical astronomy and free-space optical...</span><span class="abstract-full" id="full-2604.09346" hidden>Accurate high-resolution vertical profiles of optical turbulence ($C_n^2$), which reflect local meteorology and topography, are crucial for ground-based optical astronomy and free-space optical communication. However, measuring these profiles or generating them with numerical weather models requires substantial operational or computational effort. In this work, we present OTProf, a deep-learning method that estimates high-resolution $C_n^2$ profiles from widely available coarse-resolution ERA5 reanalysis data. We evaluate the approach in the Netherlands and compare it with the commonly used Hufnagel-Valley model. Overall, OTProf reproduces the vertical structure of $C_n^2$ more accurately than Hufnagel-Valley and yields more accurate estimates of the Fried parameter $r_0$ and the scintillation index $σ_I^2$. As typical in machine learning, the $C_n^2$ predictions are slightly smoothed compared to reference data, especially in cases of rare strong turbulence. This smoothing affects the integrated parameters, sometimes leading to overly optimistic $r_0$ and $σ_I^2$ values. Despite this limitation, OTProf offers a more accurate, efficient, and physically consistent alternative to traditional analytical models and computationally expensive mesoscale models.</span> <span class="abstract-toggle" data-id="2604.09346">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2604.09346v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2604.09346v1) · [:material-content-copy: BibTeX](../../bibtex/2604.09346.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

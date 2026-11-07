@@ -8,11 +8,44 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">103 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">106 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add? { #2611.08148 }
+
+    *Ioannis Dravilas, Miruna Stoicescu, Roope Tervo, Carlos Horn, Oriol Hinojo Comellas, Sina Montazeri et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.08148">Weather fronts are transition regions between air masses with contrasting thermodynamic properties and are associated with mid-latitude precipitation and severe weather. We investigate machine...</span><span class="abstract-full" id="full-2611.08148" hidden>Weather fronts are transition regions between air masses with contrasting thermodynamic properties and are associated with mid-latitude precipitation and severe weather. We investigate machine learning (ML) methods for detecting weather fronts and quantify the contribution of reanalysis data to performance. We compare two configurations of the same ML model for pixel-wise frontal classification over the North Atlantic and Europe: (1) using only geostationary infrared satellite observations, and (2) additionally using 28 ERA5 reanalysis fields. The satellite-only model achieves a neighbourhood critical success index at a 150 km tolerance (CSI@150) of $0.402$, which lies within the range of agreement between analyses from different meteorological services. The satellite$+$ERA5 model achieves $0.575$, an improvement of $0.173$. Our analysis shows that low-level winds are the least predictable from the satellite representation ($R^2 = 0.23$, compared with $0.88$ for temperature), while removing winds or moisture causes the largest decreases in detection performance.</span> <span class="abstract-toggle" data-id="2611.08148">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.08148v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.08148v1) · [:material-content-copy: BibTeX](../../bibtex/2611.08148.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System { #2611.07296 }
+
+    *Chenchen Kuai, Shixuan Tang, Chaolun Ma, Xiaoqiang Kong, Xiubin Bruce Wang, Yunlong Zhang, Zihao Li* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.07296">When a tropical cyclone (TC) threatens several ports, preparedness planning depends on anticipating which ports are likely to be affected and where disruptions may last longest. Limited historical...</span><span class="abstract-full" id="full-2611.07296" hidden>When a tropical cyclone (TC) threatens several ports, preparedness planning depends on anticipating which ports are likely to be affected and where disruptions may last longest. Limited historical observations at individual ports and uncertainty in landfall location make these relative impacts difficult to estimate. We use a two-stage recommendation framework that first selects candidate ports based on their proximity to the expected landfall location and then ranks them by their estimated number of impact days. Using AIS-derived impact days for 37 ports and 31 TCs in the Gulf of Mexico study region, we compare three ways of representing port--cyclone interactions: pairwise feature interactions, tree-based feature combinations, and explicit feature crosses combined with learned embeddings. In tests on Hurricanes Nicole and Ian, the retrieval stage consistently identifies all observed affected ports under landfall uncertainty. Among the ranking models, Wide & Deep Learning achieves the closest agreement with the observed port rankings. Its mean ranking agreement exceeds that of the distance-based baseline by 85.5% for Nicole and 55.5% for Ian and is less sensitive to uncertainty in the landfall location. These rankings could help port authorities prioritize post-cyclone inspections and allocate recovery resources across ports threatened by the same event.</span> <span class="abstract-toggle" data-id="2611.07296">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.07296v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.07296v1) · [:material-content-copy: BibTeX](../../bibtex/2611.07296.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
+-   #### A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies { #2611.07094 }
+
+    *Spencer R. Jones, Simon Pfreundschuh, Christian D. Kummerow* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.07094">This paper presents an application of machine learning to the problem of the computational expense of atmospheric radiative transfer calculations from physics-based models. While in recent studies...</span><span class="abstract-full" id="full-2611.07094" hidden>This paper presents an application of machine learning to the problem of the computational expense of atmospheric radiative transfer calculations from physics-based models. While in recent studies individual emulators have been created that emulate certain radiative transfer schemes for different sensors, we show that a general framework can be applied to emulate the radiative transfer method itself. A fully connected deep neural network has been trained to predict top-of-atmosphere microwave radiances in all-sky conditions over various land, ocean and sea ice surfaces at all frequencies from 1 to 300 GHz, and for all incidence angles from 0 to 65 degrees. The reference models against which the emulator has been trained include an Eddington two-stream radiative transfer model for one-dimensional and pseudo-three-dimensional microwave brightness temperature simulations. This neural network architecture has also been separately trained to reproduce the explicit calculations of the Community Radiative Transfer Model (CRTM) for a single microwave imager. In all cases, the model architecture is successfully able predict microwave brightness temperatures by being trained directly on the optical properties of the atmosphere and surface and therefore directly emulating the radiative transfer method. Compared to the explicit schemes used to produce the training data, the GPU-enabled emulator is able to produce brightness temperature simulations more than three orders of magnitude faster and with a root-mean-squared-error less than 0.0348 K, 0.0531 K, and 0.0246 K against the independent test data for the two Eddington models and CRTM, respectively. Additionally, preliminary training using a full 3D Monte Carlo scheme for high-resolution simulations shows promising results for the application of this method to "exact" radiative transfer methods, and these results are discussed in Section IV.</span> <span class="abstract-toggle" data-id="2611.07094">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.07094v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.07094v1) · [:material-content-copy: BibTeX](../../bibtex/2611.07094.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning { #2610.42111 }
 
@@ -354,42 +387,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### Impact of Atmospheric Turbulence and Pointing Error on Earth Observation { #2605.22268 }
-
-    *Celia Sánchez-de-Miguel, Antonio M. Mercado-Martínez, Beatriz Soret, Antonio Jurado-Navas et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.22268">Earth Observation (EO) imagery is often degraded by atmospheric turbulence and pointing jitter; yet, these effects are rarely considered in datasets used to train AI-based detection models. Based on...</span><span class="abstract-full" id="full-2605.22268" hidden>Earth Observation (EO) imagery is often degraded by atmospheric turbulence and pointing jitter; yet, these effects are rarely considered in datasets used to train AI-based detection models. Based on prior work, this paper presents an enhanced image simulator that enables the incorporation of vertical-path atmospheric turbulence and satellite pointing jitter, arising from platform and sensor vibrations, to generate physically realistic distorted images. As a case study, vessel detection is evaluated using YOLOv8 and RetinaNet on images generated by the proposed simulator under different levels of turbulence and pointing errors. Results show that YOLOv8 recall decreases from 91% under ideal conditions to 60% in the presence of weak turbulence, and falls below 40% under strong turbulence or jitter. In contrast, RetinaNet demonstrates greater robustness, maintaining approximately 75% recall across degraded conditions. These results highlight the importance of incorporating realistic physical degradations into EO training datasets to ensure reliable performance of AI-based models in operational environments, as demonstrated in maritime surveillance applications.</span> <span class="abstract-toggle" data-id="2605.22268">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.22268v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.22268v1) · [:material-content-copy: BibTeX](../../bibtex/2605.22268.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### A plug-and-play generative framework for multi-satellite precipitation estimation { #2605.14426 }
-
-    *Yunfan Yang, Haofei Sun, Xiuyu Sun, Wei Han, Xiaoze Xu, Xingtao Song, Jun Li, Zhiqiu Gao, Wei Huang et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.14426">Reliable precipitation monitoring is essential for disaster risk reduction, water resources management, and agricultural decision-making. Multi-source satellite observations, particularly the...</span><span class="abstract-full" id="full-2605.14426" hidden>Reliable precipitation monitoring is essential for disaster risk reduction, water resources management, and agricultural decision-making. Multi-source satellite observations, particularly the combination of geostationary infrared and passive microwave measurements, have become a primary means of precipitation detection. Traditional multi-source satellite precipitation estimation methods remain computationally inefficient, and many deep learning methods lack the flexibility to incorporate new sensors without retraining the full model. Here we introduce PRISMA (Precipitation Inference from Satellite Modalities via generAtive modeling), a plug-and-play latent generative framework for multi-sensor precipitation estimation. PRISMA learns an unconditional precipitation prior from IMERG Final fields and constrains it through independently trained, sensor-specific conditional branches, allowing new observation sources to be incorporated without retraining the generative backbone. Applied to FY-4B AGRI infrared and GPM GMI microwave observations, PRISMA improves Critical Success Index by up to 40.3% and reduces root-mean-square error by 22.6% relative to infrared-only estimation within microwave swaths, while also improving probabilistic skill and maintaining an average inference time of about 37 s. Independent rain-gauge validation across China confirms consistent gains, and typhoon case studies show that microwave conditioning restores eyewall and spiral rainband structures, reducing storm-core mean absolute error by up to 42.3%. PRISMA thus provides an extensible and efficient framework for multi-sensor precipitation estimation.</span> <span class="abstract-toggle" data-id="2605.14426">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.14426v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.14426v1) · [:material-content-copy: BibTeX](../../bibtex/2605.14426.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
-    { .paper-tags }
-
--   #### Cloud-top infrared observations reveal the four-dimensional precipitation structure { #2605.07499 }
-
-    *Tianchi Xu, Ziqiang Ma, Andrea Marinoni, Yuanpeng He, Xiaoqing Li, Chuanfeng Zhao, Kang He et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.07499">Accurate four-dimensional (4D) precipitation information is essential for understanding the Earth's energy and water cycles, yet remains observationally unresolved at global scales. Conventional...</span><span class="abstract-full" id="full-2605.07499" hidden>Accurate four-dimensional (4D) precipitation information is essential for understanding the Earth's energy and water cycles, yet remains observationally unresolved at global scales. Conventional theory holds that geostationary infrared observations primarily sense cloud-top properties, with limited sensitivity to sub-cloud precipitation. Here we show that cloud-top infrared measurements nevertheless encode sufficient information to recover the four-dimensional structure of precipitation, revealing a previously unexploited observability of sub-cloud processes. We introduce a physically constrained deep learning framework, 4DPrecipNet, in which a moisture-first constraint requires the latent representation to recover precipitable water vapour, anchoring the model in thermodynamic consistency. By integrating multi-channel infrared radiances with these constraints and radar-derived precipitation profiles, we reconstruct the vertical and temporal evolution of precipitation systems from geostationary orbit. The framework captures deep convective structures and their evolution, with robust performance across large samples and independent radar comparisons. These results demonstrate that sub-cloud precipitation is physically encoded in cloud-top infrared observations, establishing a new pathway for continuous global monitoring of precipitation structure.</span> <span class="abstract-toggle" data-id="2605.07499">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.07499v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.07499v1) · [:material-content-copy: BibTeX](../../bibtex/2605.07499.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 </div>

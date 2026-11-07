@@ -8,11 +8,24 @@ hide:
 
 # Nowcasting
 
-<p class="page-meta" markdown="span">106 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">107 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery { #2611.08255 }
+
+    *Simon Donike, Pritthijit Nath, Cristina Radin, Arthur Avenas, Ruben Cartuyvels, Emiliano Diaz et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.08255">High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally...</span><span class="abstract-full" id="full-2611.08255" hidden>High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. Geostationary satellites capture cloud tops continuously in space and time, but do not directly resolve surface winds. Here, we present simple neural networks to predict 2D wind fields and storm-scale intensity metrics from geostationary imagery. Through a series of ablation studies, we find that joint prediction of 2D fields and scalar metrics from the model latent space improves the retrieval of the (radius of) maximum wind, especially for rapid intensification events.</span> <span class="abstract-toggle" data-id="2611.08255">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.08255v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.08255v1) · [:material-content-copy: BibTeX](../../bibtex/2611.08255.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
 
 -   #### Nowcasting aerosol particle size distributions from PM2.5 with physics-regularized flow matching { #2610.33557 }
 
@@ -383,19 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting { #2605.13197 }
-
-    *Penghui Wen, Yu Luo, Lintao Wang, Mengwei He, Patrick Filippi, Thomas Francis Bishop, Zhiyong Wang* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.13197">Existing precipitation nowcasting methods typically adopt an autoregressive formulation, where future states are predicted from previous outputs. However, such an approach accumulates errors over...</span><span class="abstract-full" id="full-2605.13197" hidden>Existing precipitation nowcasting methods typically adopt an autoregressive formulation, where future states are predicted from previous outputs. However, such an approach accumulates errors over long rollouts, causing forecasts to drift away from physically plausible evolution trajectories. Although various studies have attempted to alleviate this problem by improving step-wise prediction accuracy, they largely neglect the global temporal evolution of meteorological systems and lack mechanisms to actively correct drift during rollouts. To address this issue, we propose McCast, a memory-guided latent drift correction method for precipitation nowcasting. Rather than treating memory as an unordered dictionary of latent states for passive conditioning, McCast leverages temporally organized memory to actively correct autoregressive latent evolution. Specifically, McCast introduces a Drift-Corrective Memory Bank (DCBank) that explicitly estimates the temporally consistent drift corrections to calibrate the divergent trajectory. DCBank performs drift correction in two stages: a Corrective Latent Extractor first predicts an initial correction from the current prediction and a reference latent state, and a Correction-Aware Memory Retrieval module then refines the initial correction using temporally organized historical memory. By explicitly correcting latent evolution, instead of improving step-wise prediction accuracy only, McCast produces more temporally coherent and reliable long-horizon forecasts. Experiments on two widely used benchmarks, SEVIR and MeteoNet, show that McCast achieves state-of-the-art performance, particularly in challenging long-horizon forecasting scenarios.</span> <span class="abstract-toggle" data-id="2605.13197">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.13197v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.13197v1) · [:material-content-copy: BibTeX](../../bibtex/2605.13197.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
     { .paper-tags }
 
 </div>
