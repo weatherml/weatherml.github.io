@@ -8,11 +8,37 @@ hide:
 
 # Nowcasting
 
-<p class="page-meta" markdown="span">107 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">109 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Discovering Equations for the Thermodynamics of South Asian Monsoon Precipitation { #2611.14401 }
+
+    *Savannah L. Ferretti, Jane W. Baldwin, Michael S. Pritchard, Tom Beucler* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.14401">South Asian monsoon precipitation depends on the thermodynamic structure of the lower troposphere, but how its ingredients combine to shape precipitation remains unclear, partly because this...</span><span class="abstract-full" id="full-2611.14401" hidden>South Asian monsoon precipitation depends on the thermodynamic structure of the lower troposphere, but how its ingredients combine to shape precipitation remains unclear, partly because this dependence is nonlocal in the vertical. We use symbolic distillation, which combines neural networks and symbolic regression, to discover interpretable precipitation equations from 21 years of June-August reanalysis data. Neural networks first learn the vertical thermodynamic structure most relevant to precipitation, condensing each variable into a single interpretable feature not tied to a particular vertical grid. Then, symbolic regression derives closed-form equations from these features and the surface state. Our best equation explains 1.5 times as much precipitation variance as a widely used buoyancy-based diagnostic and recovers about 85% of neural network skill while using about a thousand times fewer parameters. Unlike the buoyancy diagnostic, which adds moisture and instability, the equations treat them as competing controls, with the heaviest precipitation occurring when the lower free troposphere is humid. Over ocean, sensible heating is associated with additional precipitation mainly when near-surface air is warm and moist, improving predicted precipitation and its diurnal cycle. Although the learned features were optimized only for precipitation prediction, the equations largely respond to each feature as expected from convective physics, consistent with the reanalysis. These responses reduce the dependence of monsoon precipitation on the entire vertical column to a few simple, testable constraints that could guide data-driven precipitation models to make them more physically consistent.</span> <span class="abstract-toggle" data-id="2611.14401">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.14401v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.14401v1) · [:material-content-copy: BibTeX](../../bibtex/2611.14401.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
+    { .paper-tags }
+
+-   #### Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation { #2611.12999 }
+
+    *Tianyu Xie, Zhaoliang Zeng, Zhehao Liang, Ke Gui, Xutao Zhang, Yaqiang Wang, Dabo Guan, Huizheng Che* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.12999">Surface shortwave radiation (SWR) can change within minutes as clouds evolve, but operational forecasts often trade spatial detail and update frequency for forecast range. We present a...</span><span class="abstract-full" id="full-2611.12999" hidden>Surface shortwave radiation (SWR) can change within minutes as clouds evolve, but operational forecasts often trade spatial detail and update frequency for forecast range. We present a numerical-weather-prediction-independent, observation-to-forecast framework that converts sequences of Himawari-8 Level-1 multispectral imagery and solar geometry directly into 24 gridded SWR fields at 10-min intervals for the next 4 h. A controlled six-model experiment separates the effects of satellite information from those of temporal self-attention. In the 0-1 h window, the full-multispectral attention model achieves a mean absolute error of 37.9 W/m2 and a root mean square error of 63.7 W/m2, reductions of 21.0% and 19.5% relative to a historical-SWR baseline. Improvements extend across nine subregions and include weaker spatial bias and better structural consistency. Temporal attention does not improve forecasts from historical SWR alone, but becomes effective when supplied with multispectral cloud and thermodynamic signals. Direct multispectral observations therefore provide the precursor information required for high-frequency, spatially resolved SWR nowcasting.</span> <span class="abstract-toggle" data-id="2611.12999">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12999v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12999v1) · [:material-content-copy: BibTeX](../../bibtex/2611.12999.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
 
 -   #### Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery { #2611.08255 }
 
@@ -370,32 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting { #2605.14597 }
-
-    *Chunlei Shi, Hao Li, Yufeng Zhu, Boyu Liu, Yongchao Feng, Zengliang Zang, Hongbin Wang, Yanlan Yang et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.14597">Precipitation nowcasting is a vital spatio-temporal prediction task for meteorological applications but faces challenges due to the chaotic property of precipitation systems. Existing methods...</span><span class="abstract-full" id="full-2605.14597" hidden>Precipitation nowcasting is a vital spatio-temporal prediction task for meteorological applications but faces challenges due to the chaotic property of precipitation systems. Existing methods predominantly rely on single-source radar data to build either deterministic or probabilistic models for extrapolation. However, the single deterministic model suffers from blurring due to MSE convergence. The single probabilistic model, typically represented by diffusion models, can generate fine details but suffers from spurious artifacts that compromise accuracy and computational inefficiency. To address these challenges, this paper proposes a novel coarse-to-fine Vision Mamba Unet and residual Diffusion (VMU-Diff) based precipitation nowcasting framework. It realizes precipitation nowcasting through a two-stage process, i.e., a deterministic model-based coarse stage to predict global motion trends and a probabilistic model-based fine stage to generate fine prediction details. In the coarse prediction stage, rather than single-source radar data, both radar and multi-band satellite data are taken as input. A spatial-temporal attention block and several Vision mamba state-space blocks realize multi-source data fusion, and predict the future echo global dynamics. The fine-grained stage is realized by a spatio-temporal refine generator based on residual conditional diffusion models. It first obtains spatio-temporal residual features based on coarse prediction and ground truth, and further reconstructs the residual via conditional Mamba state-space module. Experiments on Jiangsu SWAN datasets demonstrate the improvements of our method over state-of-the-art methods, particularly in short-term forecasts.</span> <span class="abstract-toggle" data-id="2605.14597">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.14597v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.14597v1) · [:material-content-copy: BibTeX](../../bibtex/2605.14597.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Spatiotemporal downscaling and nowcasting of urban land surface temperatures with deep neural networks { #2605.13566 }
-
-    *Solomiia Kurchaba, Angela Meyer* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.13566">Land Surface Temperature (LST) is a key variable for various applications, such as urban climate and ecology studies. Yet, existing satellite-derived LST products provide either high spatial or high...</span><span class="abstract-full" id="full-2605.13566" hidden>Land Surface Temperature (LST) is a key variable for various applications, such as urban climate and ecology studies. Yet, existing satellite-derived LST products provide either high spatial or high temporal resolution, resulting in a fundamental trade-off between the two. To address this trade-off, we combine observations from a geostationary and a polar orbiting satellite and provide LST fields at high spatial and high temporal resolution (1 km at 15-min intervals). We demonstrate their application for intraday forecasting of LSTs. To estimate LST fields at high spatiotemporal resolution, a U-Net model is trained to map LST fields from SEVIRI/MSG (3 km and 15 min resolution) to LST fields from Terra/Aqua MODIS (1 km, 4 overpasses per day) that are collocated in space and time. The presented model has been trained on LSTs across large European cities with a population exceeding 1 million inhabitants, and achieves an RMSE = $1.92$°C and near-zero bias MBE = $0.01$°C on the hold-out test set. As a second step, we present an LST nowcasting model based on ConvLSTM architecture, trained across downscaled LST fields with forecast lead times of 15 to 75 minutes. The nowcasting model outperforms a persistence and a Climatological Rolling Median benchmarks, with RMSEs of $0.57$ to $1.15$°C for the considered lead times and biases ranging from $-0.1$ to $0.14$°C. An additional validation conducted against independent MODIS overpasses confirms robust performance. Our LST forecast model at high spatiotemporal resolution is directly applicable to operational satellite-based LST monitoring.</span> <span class="abstract-toggle" data-id="2605.13566">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.13566v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.13566v2) · [:material-content-copy: BibTeX](../../bibtex/2605.13566.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
     { .paper-tags }
 
 </div>

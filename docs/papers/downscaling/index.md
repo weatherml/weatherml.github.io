@@ -8,11 +8,24 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">108 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">109 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling { #2611.11318 }
+
+    *Minseo Yoon, Minseong Bae, Sojin Lee, Hyunwoo J. Kim* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.11318">High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but...</span><span class="abstract-full" id="full-2611.11318" hidden>High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but adapting them to produce future high-resolution fields from recent coarse states remains challenging and costly. We formulate this setting as Predictive Spatiotemporal Weather Downscaling (PSWD), a task that jointly refines spatial and temporal resolution while predicting future high-resolution trajectories. To this end, we propose a framework that decomposes prediction into spatial and temporal stages using a shared pretrained backbone, fixed numerical scaffolds, and lightweight residual heads. For backbone adaptation, we introduce PROLA (PRincipal-Orthogonal Low-rank Adaptation), which allocates a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement. PROLA further rescales rank-1 optimizer updates using gradient signals, improving adaptation without increasing trainable rank. Experiments in the PSWD setting show that PROLA outperforms representative low-rank adaptation baselines. Further experiments across diverse datasets and tasks support the broader applicability of PROLA, showing that its benefits extend beyond the primary weather downscaling setting.</span> <span class="abstract-toggle" data-id="2611.11318">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11318v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11318v1) · [:material-content-copy: BibTeX](../../bibtex/2611.11318.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
 
 -   #### Operator-Aware Posterior Sampling for Multivariate Weather Downscaling { #2610.39592 }
 
@@ -383,19 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Hybrid Quantum-Classical Corrective Diffusion Modeling for Meteorological Downscaling { #2605.23403 }
-
-    *Rui Wang, Edoardo Pasetto, Amer Delilbasic, Morris Riedel, Kristel Michielsen, Gabriele Cavallaro* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.23403">Statistical downscaling is a crucial component of the weather modeling field, where high-resolution outputs must be reconstructed from coarse-resolution inputs with the full cost of dynamical...</span><span class="abstract-full" id="full-2605.23403" hidden>Statistical downscaling is a crucial component of the weather modeling field, where high-resolution outputs must be reconstructed from coarse-resolution inputs with the full cost of dynamical refinement. In this work, we investigate a hybrid quantum-classical corrective diffusion model for probabilistic statistical downscaling of weather fields. The proposed model inserts variational quantum circuit layers into the most compressed bottleneck of the diffusion UNet while leaving the regression branch fully classical. This placement tests whether quantum circuits can act as compact nonlinear feature maps for latent-channel mixing. We evaluate intra-channel and cross-channel ansätze on 10m wind components. On the 2020 validation set, the hybrid models remain stable, preserve the large-scale spatial organization of the generated wind fields, and improve both MAE and CRPS relative to a classical corrective diffusion model in several configurations. Structural diagnostics further show that the hybrid variants preserve kinetic-energy spectra and windspeed distributions similar to its classical counterpart while producing controlled changes in tail behavior, extreme-windspeed localization, and joint wind field components structure. Backend studies on the 2020 validation set show negligible impact from simulated device noise at the tested circuit scale, whereas real-hardware deployment remains limited by qubit availability and execution fidelity. The 2021 out-of-distribution test shows that these in-distribution gains do not transfer uniformly under temporal shift, revealing a generalization gap that motivates future mitigation through stabilization and regularization. These results show that bottleneck-level quantum hybridization can make a nontrivial contribution to weather statistical downscaling, while also highlighting that circuit scale and hardware deployment remain key limiting factors.</span> <span class="abstract-toggle" data-id="2605.23403">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.23403v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.23403v1) · [:material-content-copy: BibTeX](../../bibtex/2605.23403.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
 
 </div>

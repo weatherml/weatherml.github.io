@@ -60,13 +60,17 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1623)
+## Papers (1639)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (383)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (387)</summary>
 
+- **One2N: Recursive refinement breaks the resolution barrier for Earth-system AI** (Nov 2026) - [arXiv:2611.12249](https://arxiv.org/abs/2611.12249v1)
+- **Ensemble Covariance Propagation with Machine Learning Weather Prediction Models in a Realistic Data Assimilation System** (Nov 2026) - [arXiv:2611.11918](https://arxiv.org/abs/2611.11918v1)
+- **SWXAI: A Unified Multimodal Explainability Library for Space Weather Forecasting and Heliophysics** (Nov 2026) - [arXiv:2611.10861](https://arxiv.org/abs/2611.10861v1)
+- **Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost** (Nov 2026) - [arXiv:2611.09573](https://arxiv.org/abs/2611.09573v1)
 - **Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models** (Nov 2026) - [arXiv:2611.05592](https://arxiv.org/abs/2611.05592v2)
 - **Sonny-ENS: demystifying machine-learning ensemble weather forecasting** (Nov 2026) - [arXiv:2611.01614](https://arxiv.org/abs/2611.01614v1)
 - **Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend** (Oct 2026) - [arXiv:2610.42130](https://arxiv.org/abs/2610.42130v1)
@@ -530,8 +534,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (107)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (109)</summary>
 
+- **Discovering Equations for the Thermodynamics of South Asian Monsoon Precipitation** (Nov 2026) - [arXiv:2611.14401](https://arxiv.org/abs/2611.14401v1)
+- **Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation** (Nov 2026) - [arXiv:2611.12999](https://arxiv.org/abs/2611.12999v1)
 - **Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery** (Nov 2026) - [arXiv:2611.08255](https://arxiv.org/abs/2611.08255v1)
 - **Nowcasting aerosol particle size distributions from PM2.5 with physics-regularized flow matching** (Oct 2026) - [arXiv:2610.33557](https://arxiv.org/abs/2610.33557v1)
 - **Space weather dependence of decameter-scale ionospheric irregularities spatial distribution** (Oct 2026) - [arXiv:2610.29630](https://arxiv.org/abs/2610.29630v1)
@@ -643,8 +649,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (108)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (109)</summary>
 
+- **PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling** (Nov 2026) - [arXiv:2611.11318](https://arxiv.org/abs/2611.11318v1)
 - **Operator-Aware Posterior Sampling for Multivariate Weather Downscaling** (Oct 2026) - [arXiv:2610.39592](https://arxiv.org/abs/2610.39592v1)
 - **Climate downscaling with likelihood functional flow matching** (Oct 2026) - [arXiv:2610.33482](https://arxiv.org/abs/2610.33482v2)
 - **Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations** (Oct 2026) - [arXiv:2610.28327](https://arxiv.org/abs/2610.28327v1)
@@ -790,8 +797,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (81)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (82)</summary>
 
+- **Analysis increments for model bias diagnosis and correction: Theoretical foundations** (Nov 2026) - [arXiv:2611.11162](https://arxiv.org/abs/2611.11162v1)
 - **Machine Learning Sensor Fusion for Water Vapor Radiometry based Tropospheric Delay Calibration** (Oct 2026) - [arXiv:2610.41052](https://arxiv.org/abs/2610.41052v1)
 - **Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport** (Oct 2026) - [arXiv:2610.32148](https://arxiv.org/abs/2610.32148v1)
 - **Accounting for model error in ensemble variational data assimilation through learned generative dynamics** (Oct 2026) - [arXiv:2610.17333](https://arxiv.org/abs/2610.17333v1)
@@ -877,8 +885,14 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (309)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (315)</summary>
 
+- **Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data** (Nov 2026) - [arXiv:2611.13359](https://arxiv.org/abs/2611.13359v1)
+- **MarsNet: Learning the Martian Atmosphere from Observations Alone** (Nov 2026) - [arXiv:2611.12787](https://arxiv.org/abs/2611.12787v1)
+- **Perils and opportunities of AI for public climate services** (Nov 2026) - [arXiv:2611.12106](https://arxiv.org/abs/2611.12106v1)
+- **Rescene-ESM: an Earth system model built around a frozen AI weather model** (Nov 2026) - [arXiv:2611.11066](https://arxiv.org/abs/2611.11066v1)
+- **Guiding future global temperature distributions with simulations and observations** (Nov 2026) - [arXiv:2611.10882](https://arxiv.org/abs/2611.10882v1)
+- **Evaluation of a Multi-Link Machine Learning Approach for Rainfall Detection Using Satellite Microwave Links** (Nov 2026) - [arXiv:2611.09156](https://arxiv.org/abs/2611.09156v1)
 - **Evaluating the prediction of subgrid eddy kinetic energy from a machine learning model** (Nov 2026) - [arXiv:2611.06539](https://arxiv.org/abs/2611.06539v1)
 - **Can LLM Agents Improve Imperfect Earth System Model Parameterizations?** (Nov 2026) - [arXiv:2611.03543](https://arxiv.org/abs/2611.03543v1)
 - **Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation** (Oct 2026) - [arXiv:2610.37870](https://arxiv.org/abs/2610.37870v1)
@@ -1420,8 +1434,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (106)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (108)</summary>
 
+- **PARDIG: Global Precipitation Estimates Learned from Sparse Satellite Observations** (Nov 2026) - [arXiv:2611.13941](https://arxiv.org/abs/2611.13941v1)
+- **RainFlow: Flow Matching for Infrared-Only Quantitative Precipitation Estimation** (Nov 2026) - [arXiv:2611.09663](https://arxiv.org/abs/2611.09663v1)
 - **Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add?** (Nov 2026) - [arXiv:2611.08148](https://arxiv.org/abs/2611.08148v1)
 - **Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System** (Nov 2026) - [arXiv:2611.07296](https://arxiv.org/abs/2611.07296v1)
 - **A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies** (Nov 2026) - [arXiv:2611.07094](https://arxiv.org/abs/2611.07094v1)

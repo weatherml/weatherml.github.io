@@ -8,11 +8,37 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">106 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">108 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### PARDIG: Global Precipitation Estimates Learned from Sparse Satellite Observations { #2611.13941 }
+
+    *Guy Shalev, Stephan Rasp, Boris Babenko, Andrew El-Kadi, Mohammed Alewi Hassen, Samier Merchant et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.13941">Estimating precipitation at the global scale is vital for Earth system science and disaster response, yet observational coverage and measurement precision remain constrained. Existing solutions...</span><span class="abstract-full" id="full-2611.13941" hidden>Estimating precipitation at the global scale is vital for Earth system science and disaster response, yet observational coverage and measurement precision remain constrained. Existing solutions provide options that trade off desirable traits such as skill, latency, geographical coverage, temporal coverage, and spatial and temporal resolution. We present PARDIG, an artificial intelligence framework based on a spherical graph-mesh transformer architecture that produces near-real-time global precipitation estimates. PARDIG is trained on dense multi-modal inputs, including atmospheric state analyses and multi-spectral geostationary satellite imagery, to predict sparse, high-precision precipitation measurements from spaceborne radar. At inference, the trained model is applied densely across the globe at $0.1^\circ$ spatial and 15-minute temporal resolution, producing complete near-real-time precipitation fields from 2016 to the present, alongside a historical variant extending the record back to 1999. Evaluation against three independent radar networks (over the US, Europe, and Japan) and against over 36,000 surface stations worldwide shows that PARDIG consistently outperforms IMERG V07 (Final and Early), MSWEP V3, ERA5, and HRES across precipitation thresholds and regions, with the largest improvements at extreme intensities. Case studies of extreme precipitation events demonstrate that PARDIG successfully captures their spatial structure and timing. The improvements also extend to forecasting: WeatherNext 3, a global weather model, produces more skillful precipitation forecasts when trained to predict PARDIG. Both the historical and near-real-time PARDIG datasets are openly available under a CC BY 4.0 license.</span> <span class="abstract-toggle" data-id="2611.13941">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.13941v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.13941v1) · [:material-content-copy: BibTeX](../../bibtex/2611.13941.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
+
+-   #### RainFlow: Flow Matching for Infrared-Only Quantitative Precipitation Estimation { #2611.09663 }
+
+    *Matthieu Meignin, Cécile Mallet, Nicolas Viltard* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.09663">Geostationary infrared imagers observe precipitating systems every 10 to 15 minutes over large areas, but they sense cloud tops rather than the rain beneath. Their brightness temperatures constrain...</span><span class="abstract-full" id="full-2611.09663" hidden>Geostationary infrared imagers observe precipitating systems every 10 to 15 minutes over large areas, but they sense cloud tops rather than the rain beneath. Their brightness temperatures constrain surface rain only weakly, so retrievals trained by regression return a smooth estimate that misses heavy rain and carries no measure of uncertainty. We treat infrared-only retrieval as conditional generation and introduce RainFlow, a flow-matching model that generates ensembles of rain fields from MSG/SEVIRI infrared observations, in a direct and a residual variant. Evaluated against radar over metropolitan France for a full year, the generated members are realistic rain fields, with the observed dry areas, heavy rain and spatial structure, and the ensemble mean is as accurate as a deterministic baseline. Used as probabilities, the ensembles locate heavy rain at scales where the baseline has no skill, and their spread captures most of the retrieval error, with only slight underdispersion. Trained with a time-sampling density that favours the noise end of the generative trajectory, the two variants reach similar skill. The direct variant depends strongly on this choice of density, whereas the residual variant is nearly insensitive to it. Evaluating the generated rain as a function of brightness temperature shows that the ensembles reproduce how rain depends on it over most of the range. It also isolates the remaining gap, an underestimate of both the amount and the variability of rain under the coldest cloud tops, which scores computed over all pixels do not reveal.</span> <span class="abstract-toggle" data-id="2611.09663">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.09663v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.09663v1) · [:material-content-copy: BibTeX](../../bibtex/2611.09663.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
 
 -   #### Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add? { #2611.08148 }
 
@@ -361,32 +387,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
-    { .paper-tags }
-
--   #### Towards a Foundation Model for the Martian Atmosphere { #2605.28851 }
-
-    *Sujit Roy, Udayshankar Nair, Yuling Wu, Georgios Priftis, Liping Wang, Anastasia Georgiou et al.* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.28851">The martian atmosphere hosts dynamical phenomena ranging from planet-encircling dust storms to mesoscale orographic clouds and nocturnal low-level jets. General circulation model show capability to...</span><span class="abstract-full" id="full-2605.28851" hidden>The martian atmosphere hosts dynamical phenomena ranging from planet-encircling dust storms to mesoscale orographic clouds and nocturnal low-level jets. General circulation model show capability to simulate these phenomena, but is computationally expensive at resolution needed to resolve mesoscale features. While assimilation of satellite remote sensing observation enable forecasting capabilities using such models, observation record is often sparse, short and fragmented across instrument generators. These constraints motivate the development of a data-driven foundation model for the Martian atmosphere.   Foundation models live in a complex design landscape. There is an interplay between the available data, the physics of the underlying processes and corresponding developments in AI. Even though the idea of a foundation model is to address multiple use cases in a data- and compute-efficient manner, it is important to have a clear picture what applications can sensibly addressed by a single model.   The purpose of this paper is to elucidate this design landscape. We discuss available data ranging from atmospheric retrievals to reanalysis datasets as well as existing physical models. Moreover, we identify a wide range of candidate downstream applications. Finally, we consider relevant recent developments in artificial intelligence (AI) that can be leveraged in this context. Here, we put a particular emphasis on AI models for atmospheric physics, data-driven approaches to data assimilation as well as methods to work in a limited data setting.</span> <span class="abstract-toggle" data-id="2605.28851">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.28851v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.28851v1) · [:material-content-copy: BibTeX](../../bibtex/2605.28851.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
-
--   #### Quantification of atmospheric carbon dioxide from the Geostationary Operational Environmental Satellite (GOES East) { #2605.23991 }
-
-    *Aaron Sonabend-W, Sean Campbell, John Platt, Christopher Van Arsdale, Anna M. Michalak* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.23991">There is a growing urgency to track greenhouse gasses with the resolution, precision and accuracy needed to support independent verification of $CO_2$ fluxes at local to global scales. The current...</span><span class="abstract-full" id="full-2605.23991" hidden>There is a growing urgency to track greenhouse gasses with the resolution, precision and accuracy needed to support independent verification of $CO_2$ fluxes at local to global scales. The current generation of space-based sensors, however, only provides sparse observations in space and time. This challenge has fueled interest in the potential use of data from existing missions originally developed for other applications to infer global greenhouse gas variability. The Advanced Baseline Imager (ABI) onboard the Geostationary Operational Environmental Satellite (GOES-East), operational since 2017, provides full coverage of much of the western hemisphere at 10-minute intervals from geostationary orbit across 16 spectral channels at an approximately 2 km$^2$ spatial resolution. Here, we leverage this high spatial coverage and temporal revisit to develop Deep$XCO_2$, a single-pixel, physics-guided neural network to estimate dry-air column $CO_2$ mole fraction ($XCO_2$). Deep$XCO_2$ employs a time series of GOES-East's 16 spectral bands, ECMWF ERA5 lower tropospheric meteorology, MODIS surface reflectance, solar and satellite viewing geometry, and day of year. The network was trained on collocated GOES-East and OCO-2/OCO-3 observations. Deep$XCO_2$ is able to capture realistic $XCO_2$ variability when compared against a held-out year of OCO-2 and OCO-3 observations, and against observations from the TCCON network. We also present case studies illustrating the use of Deep$XCO_2$ to observe $XCO_2$ enhancements over urban areas and drawdown over agricultural regions. Overall, while the precision of GOES-East derived $XCO_2$ can never rival that of dedicated instruments, the unprecedented combination of contiguous geographic coverage, 10-minute temporal frequency, and multi-year record offers the potential to observe aspects of atmospheric $CO_2$ variability currently unseen from space.</span> <span class="abstract-toggle" data-id="2605.23991">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.23991v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.23991v2) · [:material-content-copy: BibTeX](../../bibtex/2605.23991.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
     { .paper-tags }
 
 </div>

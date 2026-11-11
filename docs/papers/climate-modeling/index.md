@@ -8,11 +8,83 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">309 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">315 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data { #2611.13359 }
+
+    *Fedor Buzaev, Dmitry Efremenko, Daria Pugacheva, Fedor Ratnikov, Egor Bugaev, Vladimir Gordin et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.13359">Wind profiles in the atmospheric boundary layer (ABL) drive short-range forecasting and wind-energy siting, yet sparse radiosonde coverage forces practitioners to interpolate them from a handful of...</span><span class="abstract-full" id="full-2611.13359" hidden>Wind profiles in the atmospheric boundary layer (ABL) drive short-range forecasting and wind-energy siting, yet sparse radiosonde coverage forces practitioners to interpolate them from a handful of physical predictors. We benchmark modern tabular learners against analytical parameterizations on 158,097 IGRA soundings. CatBoost, TabM, and FT-Transformer reduce RMSE to 1.3-1.6 m/s, against approximately 3 m/s for power-law and Monin-Obukhov fits; once the predictor set is fixed the three architectures differ by less than 0.05 m/s, so accuracy is driven by predictors rather than architecture. A cohort analysis of within-bin profile dispersion places an empirical floor of approximately 1.77 m/s on any point-wise predictor that uses standard radiosonde features, consistent with prior eddy-viscosity inversions. A one-dimensional Fourier Neural Operator applied as a post-hoc corrector to frozen tabular predictions reduces near-surface RMSE on U.S. stations from 1.5 to 1.2 m/s, while leaving upper-layer error unchanged. Further gains should come from new predictors rather than larger models.</span> <span class="abstract-toggle" data-id="2611.13359">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.13359v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.13359v1) · [:material-content-copy: BibTeX](../../bibtex/2611.13359.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a>
+    { .paper-tags }
+
+-   #### MarsNet: Learning the Martian Atmosphere from Observations Alone { #2611.12787 }
+
+    *Sebastian Mengwall, J. Michael Battalio* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.12787">We present MarsNet, a machine-learned model of the Martian atmosphere trained only on observations. Existing reanalyses assimilate spacecraft retrievals into general circulation models (GCMs), so...</span><span class="abstract-full" id="full-2611.12787" hidden>We present MarsNet, a machine-learned model of the Martian atmosphere trained only on observations. Existing reanalyses assimilate spacecraft retrievals into general circulation models (GCMs), so where observations are sparse their fields largely reflect the model. We therefore use extant reanalyses only for evaluation. MarsNet alternates a two-hour forecast with an update that assimilates the observations of each window, and both steps are learned jointly. Because the Martian record is too sparse for an unrestricted network, learning is confined within a fixed physical structure: the state is in physical units, the forecast uses physical tendencies of fixed form and learned strength, and the update is a bounded Kalman update. MarsNet is trained on Mars Years (MY) 24--31 and evaluated on independent observations. On three seasons of MGS radio-occultation temperatures assimilated by no dataset, MarsNet matches or improves on the three reanalyses in the lowest three scale heights, with a near-surface root-mean-square error (RMSE) of 4.2 K against 4.4--5.4 K, but is less accurate aloft. The model's surface pressures are the most accurate of the four products (RMSE 10 Pa against Curiosity in MY32, compared with 20--46 Pa). On withheld Mars Climate Sounder profiles of MY32, its temperatures beat an observed climatology and persistence, including in ten-sol forecasts without new observations, and its stated uncertainty is close to calibrated. Much of the temperature skill is present before training and appears to come from the structure and tables fitted to the observations, while training mainly improves the surface pressures, at some cost to dust. The model cycles stably through nine Mars years, and the influence of each observation can be traced. Its speed makes experiments on the observing record practical, and it offers an independent reference for GCMs and reanalyses.</span> <span class="abstract-toggle" data-id="2611.12787">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12787v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12787v1) · [:material-content-copy: BibTeX](../../bibtex/2611.12787.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Perils and opportunities of AI for public climate services { #2611.12106 }
+
+    *Francesca Larosa, Sandro Calmanti, Matteo De Felice, Marcello Petitta* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.12106">The rapid integration of artificial intelligence (AI), particularly generative and machine-learning systems, in climate services development and provision is transforming how climate information is...</span><span class="abstract-full" id="full-2611.12106" hidden>The rapid integration of artificial intelligence (AI), particularly generative and machine-learning systems, in climate services development and provision is transforming how climate information is produced, accessed, and interpreted. AI-enabled climate services offer significant opportunities for process automation, optimisation, tailoring, and the translation of complex climate data into actionable knowledge for diverse users. However, the growing reliance on privately controlled algorithms, data infrastructures, and computing facilities raises critical concerns related to governance, transparency, equity and economic sustainability, among others. While the technical architecture of climate services increasingly relies on advanced machine learning and large-scale climate models, their legitimacy as public services may be weakened in the absence of arrangements that prioritise public value and long-lasting societal benefit over profit maximisation. The tension between the public mandate of climate services and the private nature of AI infrastructure challenges traditional notions of openness. Using a consensus-based elicitation method coupled with the PESTLE framework, we analyse the political, economic, social, technological, legal, and environmental risks and opportunities shaping the co-production value chain of AI-enabled climate services. We draw policy-relevant conclusions for data, model and infrastructure supporting the next generation of upstream and downstream climate services as critical applications for society. Our work presents potential and plausible challenges and benefits for a pan-European, decentralised public climate service built on sovereign AI infrastructure and open governance principles.</span> <span class="abstract-toggle" data-id="2611.12106">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12106v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12106v1) · [:material-content-copy: BibTeX](../../bibtex/2611.12106.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Rescene-ESM: an Earth system model built around a frozen AI weather model { #2611.11066 }
+
+    *Minjong Cheon, Kaoru Kakinuma* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.11066">Earth system models underpin climate projections, but their cost limits how many scenarios, ensemble members and impact pathways can be explored. Machine-learning weather models forecast as...</span><span class="abstract-full" id="full-2611.11066" hidden>Earth system models underpin climate projections, but their cost limits how many scenarios, ensemble members and impact pathways can be explored. Machine-learning weather models forecast as skillfully as physics-based models at a fraction of the cost, yet coupled to an ocean they have produced weak El Nino variability or have learned it from climate-model output, and none carries the climate through rivers to the people exposed to it. Here we present Rescene-ESM, an Earth system model whose coupler, YAHO, yokes a frozen 20.8-million-parameter AI weather model to physically formulated ocean, sea-ice, land, river, carbon and energy components constrained by observations. Adding the couplings one at a time shows what each contributes: over a climatological ocean the AI atmosphere varies from year to year by a third of the observed amount over the oceans, and an interactive mixed layer, an equatorial wave ocean, the residual of the observed sea surface temperature (SST) equation as stochastic forcing and the land's moisture flux raise this step by step and bring El Nino and its teleconnections, leaving the mean climate almost unchanged. The full model simulates about 1,000 years per day on one graphics processing unit, holds the observed climate for a thousand years without drift, reproduces the observed 1979-2022 global warming, carries forced change with a physically based structure around the frozen network (transient climate response 1.60 K), routes runoff to 212 river gauges with a median seasonal-cycle correlation of 0.79 and, driven by emissions, separates the heatwave exposure of an SSP1 and an SSP3 world by a factor of 4.7 in 2081-2100, three-quarters of it through the warmer climate.</span> <span class="abstract-toggle" data-id="2611.11066">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11066v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11066v1) · [:material-content-copy: BibTeX](../../bibtex/2611.11066.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
+
+-   #### Guiding future global temperature distributions with simulations and observations { #2611.10882 }
+
+    *Francesco Immorlano, Elijah Tavares, Felix Draxler, Juan Nathaniel, Violette Launeau et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.10882">Assessing climate risks requires projections of daily temperature distributions, including rare and spatially widespread extremes. Climate simulations are costly and biased, while correcting them...</span><span class="abstract-full" id="full-2611.10882" hidden>Assessing climate risks requires projections of daily temperature distributions, including rare and spatially widespread extremes. Climate simulations are costly and biased, while correcting them toward observations risks suppressing inter-model differences. We train a single machine-learning emulator, a conditional diffusion model, on seventeen CMIP6 models and ERA5 reanalysis to generate spatially coherent daily temperature fields conditioned on model identity, date, and CO2-equivalent concentration. At sampling time, diffusion guidance reduces model biases by steering each emulated climate-model distribution toward observations, with its strength selected through perfect-model experiments using withheld simulated futures. Observational influence decreases with projection horizon and forcing. Across seventeen synthetic targets, guidance more than halves median biases in the 1st and 99th percentiles of daily temperature, improves probabilistic scores and reliability, and reduces median annual global-mean temperature RMSE by 32-57% across three emission scenarios. In a detailed benchmark, guidance also outperforms established bias corrections on daily-field probabilistic scores. Efficient sampling generates large ensembles without further climate simulations. For example, our framework corrects CMIP6's roughly threefold historical overestimate of extreme-heat coverage, yet projects that concurrent extremes will affect nearly half of global land on a typical day in the 2080s under SSP3-7.0.</span> <span class="abstract-toggle" data-id="2611.10882">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.10882v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.10882v1) · [:material-content-copy: BibTeX](../../bibtex/2611.10882.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
+
+-   #### Evaluation of a Multi-Link Machine Learning Approach for Rainfall Detection Using Satellite Microwave Links { #2611.09156 }
+
+    *Mostafa Ftouni, Margherita Spalla, Matteo Colli, Andrea Randazzo, Christian Gianoglio* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.09156">The impacts of climate change have increased the need for reliable real-time rainfall monitoring systems. This study investigates rainfall detection using a network of opportunistic sensors based on...</span><span class="abstract-full" id="full-2611.09156" hidden>The impacts of climate change have increased the need for reliable real-time rainfall monitoring systems. This study investigates rainfall detection using a network of opportunistic sensors based on satellite microwave links (SMLs) combined with machine learning (ML) classifiers. Two models, a random forest (RF) and a convolutional neural network (CNN), were trained on aggregated SML data, including information from neighboring links. The results demonstrate that leveraging information from multiple links substantially enhances the detection of both wet and dry periods compared to single-link approaches. Moreover, the RF model consistently provides a more stable and reliable trade-off than CNN, improving rainfall detection and reducing misclassifications overall, with particularly strong performance during harsh weather conditions. The study spanned up to 32 rainy days between 2021 and 2024.</span> <span class="abstract-toggle" data-id="2611.09156">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.09156v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.09156v1) · [:material-content-copy: BibTeX](../../bibtex/2611.09156.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
 
 -   #### Evaluating the prediction of subgrid eddy kinetic energy from a machine learning model { #2611.06539 }
 
@@ -309,84 +381,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
-    { .paper-tags }
-
--   #### A Self-Diagnosing Structural Error-Aware Parameter Estimation Method for Earth System Models { #2609.16210 }
-
-    *Qingyuan Yang, Addisu G Semie, Brian Medeiros, Gregory S Elsaesser, Da Fan, Wayne Chuang* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.16210">We propose a fully automated, structural error-aware, interpretable climate model parameter estimation method that leverages Perturbed Parameter Ensembles (PPEs). It is based on history matching and...</span><span class="abstract-full" id="full-2609.16210" hidden>We propose a fully automated, structural error-aware, interpretable climate model parameter estimation method that leverages Perturbed Parameter Ensembles (PPEs). It is based on history matching and aligns with an increasingly-used iterative simulation-emulation-calibration methodology. The method is motivated by the negative impacts of structural error and emulator and observational uncertainties on climate model parameter estimation efforts, as well as the problems associated with sparsely-sampled PPEs. To address these challenges, the method explicitly builds simpler emulators that avoid overfitting, detect structural error, avoids compensating for structural error through inflated mismatch tolerances, and sequentially excludes structurally inconsistent variables for parameter estimation. The method decomposes the high-dimensional calibration problem into linked low-dimensional subproblems, and integrates their constraints to reconstruct the jointly plausible region of the full parameter space. The method is applied to a 100-member PPE with 34 perturbed parameters generated by a version of CAM6 with machine learning-based warm rain microphysics parameterization. Through iterative application, the method greatly reduces the ensemble spread and improves the matching between simulated and observed zonal climatologies. The method also finds ensemble members that outperform the default CAM6 configuration in root mean square error across multiple diagnostics. Controlled experiments demonstrate that overly-conservative emulator uncertainty could lead to neglect of informative observations, and tolerance of the structural error, in the context of this method, biases the estimated parameters toward compensating for structural error. Our work also emphasizes the value of interpretability for diagnosing structural error and informing parameter estimation in PPE-based calibration.</span> <span class="abstract-toggle" data-id="2609.16210">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.16210v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.16210v1) · [:material-content-copy: BibTeX](../../bibtex/2609.16210.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### A Physics--ML Multi-Fidelity Strategy for Earth System Model Parameter Optimization: A QG Proof-of-Concept { #2609.13275 }
-
-    *Abdullah A. Fahad, Manmeet Singh, Donifan Barahona, Anton Darmenov, Andrea Molod* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.13275">Earth System Models rely on tunable subgrid-scale parameterizations, but optimizing these parameters is computationally expensive, particularly when nonlinear interactions require many simulations....</span><span class="abstract-full" id="full-2609.13275" hidden>Earth System Models rely on tunable subgrid-scale parameterizations, but optimizing these parameters is computationally expensive, particularly when nonlinear interactions require many simulations. We present a hybrid Physics-ML multi-fidelity framework that combines Green's Function Optimization (GFO) with Gaussian Process or Neural Network surrogate optimization. Using a quasi-geostrophic turbulence model, GFO first ranks parameter sensitivities in normalized coordinates and selects a reduced active subset. Nonlinear surrogates then explore this subset using inexpensive 30-day simulations before refining promising candidates with 180-day simulations. Across seven strategies and a 35-member ensemble, GFO-MultiGP and GFO-MultiNN achieved mean improvements of 64.6 percent and 65.2 percent, respectively, while reaching practical saturation after 3,060 and 2,520 simulation-days. The corresponding standalone GP and NN achieved 61.1 percent and 42.0 percent improvements and required 7,740 and 6,660 simulation-days. These results demonstrate an end-to-end sample-efficiency advantage for the tested hybrid pipelines. Because screening, dimensionality reduction, initialization, and fidelity scheduling change simultaneously, their individual contributions are not isolated.</span> <span class="abstract-toggle" data-id="2609.13275">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.13275v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.13275v1) · [:material-content-copy: BibTeX](../../bibtex/2609.13275.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a>
-    { .paper-tags }
-
--   #### Stress-Testing Dynamical and Generative Downscaling Using Subseasonal Extreme Precipitation Forecasts { #2609.11696 }
-
-    *Mauricio Lima, Marika Koukoula, Romain Pilon, Monika Feldmann, Erwan Koch, Daniela I. V. Domeisen et al.* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.11696">Coarse spatial resolution limits the ability of subseasonal prediction models to resolve extreme precipitation. Downscaling with either dynamical or deep generative models can overcome this issue,...</span><span class="abstract-full" id="full-2609.11696" hidden>Coarse spatial resolution limits the ability of subseasonal prediction models to resolve extreme precipitation. Downscaling with either dynamical or deep generative models can overcome this issue, but the comparative performance of these models for extremes across different atmospheric regimes remains poorly understood. In this work, we evaluate the Weather Research and Forecasting (WRF) model against a diffusion-based generative model by downscaling two physically distinct, extreme precipitation events up to lead times of 3 weeks. For a fair comparison with WRF, which can downscale boundary conditions from different driving models without model-specific training, the diffusion model is trained in an unpaired fashion. Both approaches improve upon the raw European Centre for Medium-Range Weather Forecasts forecasts, in comparison to fused rain gauge-radar observations in Switzerland (CombiPrecip), but exhibit regime-dependent strengths. WRF achieves the highest probabilistic skill for a multicell, non-stationary event. Conversely, the diffusion model is more consistent across different performance metrics for the two events, outperforming WRF in a more stationary supercell event. These results demonstrate that explicit dynamical modeling can add value for specific precipitation events for subseasonal lead times, and that generative downscaling adds value more broadly in different situations.</span> <span class="abstract-toggle" data-id="2609.11696">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.11696v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.11696v1) · [:material-content-copy: BibTeX](../../bibtex/2609.11696.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
-    { .paper-tags }
-
--   #### Neptune: An AI model for Global Ocean Subseasonal Prediction { #2609.08606 }
-
-    *Davide Donno, Italo Epicoco, Massimo Cafaro, Gabriele Accarino, Mohammad M. Amirian et al.* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.08606">Subseasonal-to-seasonal (S2S) forecasting is societally critical, supporting decision-making in sectors ranging from water and agricultural management to disaster risk reduction, energy planning, and...</span><span class="abstract-full" id="full-2609.08606" hidden>Subseasonal-to-seasonal (S2S) forecasting is societally critical, supporting decision-making in sectors ranging from water and agricultural management to disaster risk reduction, energy planning, and insurance. Achieving reliable predictions at these timescales requires representing the ocean and its dynamics, but traditional physics-based Ocean General Circulation Models (OGCMs), are computationally expensive and difficult to develop and improve because of the code complexity. In this work, we propose Neptune, an end-to-end data-driven framework for global ocean and sea-ice components emulation tailored for S2S timescales, up to 60 days. Neptune combines Convolutional Neural Networks (CNNs) and Spherical Fourier Neural Operators (SFNOs) to effectively capture local features and global cross-scale interactions, thereby obtaining a coherent representation of the ocean state. Forced by prescribed daily atmospheric fields, Neptune emulates ocean state variables, from temperature and salinity, to zonal and meridional currents, from sea surface height to sea ice thickness and concentration, with daily outputs at the ocean surface and through the water column. Specifically, we propose two variants of Neptune, Neptune-1 and Neptune-025, capable of emulating the ocean state at 1° and 0.25° resolution, respectively. Evaluated against a suite of metrics, including statistics (RMSE, CRPS and ACC), physical coherency (Ocean Heat Content, Eddy Kinetic Energy and Ice Brier Score) and climate indices (ENSO and Z20 metric, IOD), Neptune successfully reproduces the spatio-temporal evolution of the oceanic fields up to 60 days, and is stable over long timescales. Neptune provides compelling evidence that end-to-end data-driven ocean emulators can become a powerful component of next-generation S2S forecasting systems, emulating ocean state at high spatio-temporal resolution.</span> <span class="abstract-toggle" data-id="2609.08606">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.08606v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.08606v1) · [:material-content-copy: BibTeX](../../bibtex/2609.08606.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### GCMagicc v1: a fast generative emulator for multivariate climate-impact ensembles { #2609.08383 }
-
-    *Nicolai Meinshausen, Malte Meinshausen, Jared Lewis, Zebedee Nicholls, Sarah Schöngart et al.* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.08383">Projecting the impacts of climate change requires large ensembles of climate variables that match historical observations, align with the warming ranges assessed by the IPCC, and can efficiently run...</span><span class="abstract-full" id="full-2609.08383" hidden>Projecting the impacts of climate change requires large ensembles of climate variables that match historical observations, align with the warming ranges assessed by the IPCC, and can efficiently run new future emissions scenarios, including the newest generation of climate model scenarios (CMIP7) and pathways consistent with countries' Paris Agreement pledges. Generating such ensembles at the scale needed for impact studies is normally computationally prohibitive. We close this gap with GCMagicc, a hybrid model that pairs a simple physical climate model with machine learning to generate ensembles of 10 climate variables at the resolution of full-scale Earth system models, without relying on GPU resources or retraining for new scenarios. Trained on 32 CMIP6 Earth system models and observational/reanalysis data, GCMagicc complements rather than replaces Earth system models. We apply it to a range of future pathways: the canonical SSP scenarios of the latest IPCC report (1.2-6.1°C warming, min-max across scenarios of 5-95 percentile ranges), current policies (2.3-4.0°C), national pledges under the Paris Agreement (1.5-3.3°C) and the CMIP7 range from the 'VL' to 'H' scenarios (1.2-4.2°C), releasing a large public dataset. As an illustration, we perform an attribution analysis of the severe 2025 Iranian drought using GCMagicc ensembles, with three CMIP6 large ensembles for comparison, with and without anthropogenic forcings. The results suggest a strong anthropogenic signal: a median probability of drought at least as severe as observed of 29% with anthropogenic forcing, and zero under natural-forcing-only simulations. In the future, drought conditions are projected to materially worsen, amplifying the potential for agricultural and food security impacts and geopolitical conflicts that use water scarcity as a weapon. GCMagicc data is available at https://gcmagicc.org.</span> <span class="abstract-toggle" data-id="2609.08383">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.08383v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.08383v1) · [:material-content-copy: BibTeX](../../bibtex/2609.08383.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### EastAsiaClimateExtremes: An AI-Ready Dataset of Weekly Atmospheric and Oceanic Extremes over East Asia for Subseasonal Prediction Research { #2609.08241 }
-
-    *Miae Kim, Yun-Young Lee, Uran Chung* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.08241">Despite growing interest in AI-based prediction of climate extremes, event- or label-based AI-ready extreme climate datasets remain limited, constraining efforts to systematically characterize and...</span><span class="abstract-full" id="full-2609.08241" hidden>Despite growing interest in AI-based prediction of climate extremes, event- or label-based AI-ready extreme climate datasets remain limited, constraining efforts to systematically characterize and forecast such phenomena. To address this gap, we present EastAsiaClimateExtremes, an open dataset that provides ERA5/OISST reanalysis-based weekly extreme labels and event-based metrics for anomalously high temperature (AHT), heavy rainfall (HR), and marine heatwaves (MHW) over East Asia, together with analysis workflows hosted on GitHub to facilitate reproducibility and adaptation. The dataset is fully documented and co-registered with ECMWF S2S hindcast outputs on a common spatial grid and temporal framework, thereby enabling direct comparison between reanalysis-derived labels and dynamical model forecasts. This unified dataset serves as a reference framework for East Asian climate extreme research and AI-based subseasonal-to-seasonal prediction. It supports both quantitative characterization of the spatiotemporal occurrence of regional extremes and systematic diagnosis of S2S model skill in reproducing extreme signals. Beyond these immediate applications, the dataset enables a broader range of studies such as extreme event attribution and compound risk analysis. The accompanying analysis workflows characterize the historical statistics of reanalysis-based weekly extremes-including occurrence frequency and mean and maximum intensity-together with their climatological means and trend characteristics, and further assess the skill of the ECMWF hindcast.</span> <span class="abstract-toggle" data-id="2609.08241">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.08241v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.08241v2) · [:material-content-copy: BibTeX](../../bibtex/2609.08241.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
     { .paper-tags }
 
 </div>

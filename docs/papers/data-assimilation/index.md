@@ -8,11 +8,21 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">81 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">82 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Analysis increments for model bias diagnosis and correction: Theoretical foundations { #2611.11162 }
+
+    *Eviatar Bach* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.11162">A common method for diagnosing and correcting model bias in weather and climate prediction is based on analysis increments: the difference between the analysis and the forecast at each data...</span><span class="abstract-full" id="full-2611.11162" hidden>A common method for diagnosing and correcting model bias in weather and climate prediction is based on analysis increments: the difference between the analysis and the forecast at each data assimilation cycle. Their time average is used to estimate and correct the bias, and machine learning is increasingly used to map the forecast state to the increments, giving a state-dependent correction. Despite its widespread use, the method lacks theoretical foundations.   We first analyse a Kalman filter whose forecast model has a constant bias. We show what the averaged increment measures, and prove that iterating the correction removes all of the bias seen through the observations; for linear dynamics, no method can identify the rest.   We then extend the analysis to state-dependent biases. For linear dynamics, each increment records the model error over the filter's memory, as seen through the observations. We use this to determine what the increments measure when averaged over a long period, averaged over periods with similar slowly varying conditions, and used without averaging, as in machine-learned corrections.   Numerical experiments confirm the theory for a linear model and suggest that its main conclusions carry over to the nonlinear Lorenz '96 model, including for a correction learned by a neural network.</span> <span class="abstract-toggle" data-id="2611.11162">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11162v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11162v1) · [:material-content-copy: BibTeX](../../bibtex/2611.11162.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### Machine Learning Sensor Fusion for Water Vapor Radiometry based Tropospheric Delay Calibration { #2610.41052 }
 
@@ -372,16 +382,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
     { .paper-tags }
-
--   #### On a system of equations arising in meteorology: Well-posedness and data assimilation { #2602.02328 }
-
-    *Eduard Feireisl, Piotr Gwiazda, Agnieszka Świerczewska-Gwiazda* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.02328">Data assimilation plays a crucial role in modern weather prediction, providing a systematic way to incorporate observational data into complex dynamical models. The paper addresses continuous data...</span><span class="abstract-full" id="full-2602.02328" hidden>Data assimilation plays a crucial role in modern weather prediction, providing a systematic way to incorporate observational data into complex dynamical models. The paper addresses continuous data assimilation for a model arising as a singular limit of the three-dimensional compressible Navier-Stokes-Fourier system with rotation driven by temperature gradient. The limit system preserves the essential physical mechanisms of the original model, while exhibiting a reduced, effectively two-and-a-half-dimensional structure. This simplified framework allows for a rigorous analytical study of the data assimilation process while maintaining a direct physical connection to the full compressible model. We establish well posedness of global-in-time solutions and a compact trajectory attractor, followed by the stability and convergence results for the nudging scheme applied to the limiting system. Finally, we demonstrate how these results can be combined with a relative entropy argument to extend the assimilation framework to the full three-dimensional compressible setting, thereby establishing a rigorous connection between the reduced and physically complete models.</span> <span class="abstract-toggle" data-id="2602.02328">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.02328v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.02328v1) · [:material-content-copy: BibTeX](../../bibtex/2602.02328.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 
