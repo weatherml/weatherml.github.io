@@ -8,11 +8,21 @@ hide:
 
 # Other
 
-<p class="page-meta" markdown="span">222 papers · page 1 of 8 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">223 papers · page 1 of 8 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network { #2611.16322 }
+
+    *Yongxiang Lei* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.16322">Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep...</span><span class="abstract-full" id="full-2611.16322" hidden>Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep DualMamba, a novel deep learning framework for temporal temperature prediction, built upon an enhanced variant of the recently proposed Mamba network. Unlike conventional Transformer-based architectures, which dominate foundation models but suffer from computational inefficiencies on long sequences, Deep DualMamba leverages selective structured state space models (SSMs) to achieve both scalability and performance. We identify a core limitation of prior subquadratic-time models-namely, their inability to perform long-term and robust forecasting and introduce two key innovations. First, we propose an adaptive bidirectional Mamba as encoders to learn complex and efficient features. Second, we develop a hardware-aware, parallel recurrent algorithm to compensate for the loss of convolutional efficiency, ensuring practical viability at scale. Last, the Deep DualMamba's approximation ability and convergence is theoretical analyzed. These design choices culminate in a simplified, attention- and MLP-free neural architecture that exhibits linear complexity with sequence length and significantly improved inference throughput. To demonstrate its applicability in climate informatics, we implement a full forecasting pipeline using historical meteorological data from UK monitoring stations.</span> <span class="abstract-toggle" data-id="2611.16322">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.16322v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.16322v1) · [:material-content-copy: BibTeX](../../bibtex/2611.16322.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities { #2611.03326 }
 
@@ -374,19 +384,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
-    { .paper-tags }
-
--   #### Sparse-Observation Atmospheric Thermal Forecasting with Physics-Informed Neural Networks for Climate-Aware Digital Twins { #2609.27290 }
-
-    *Tannaz Goodarzvand Chegini, Elyas Shivanian, Behzad Karimi, Faraz Dadgostari* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.27290">Short-horizon forecasts of atmospheric temperature are needed to support climate-aware digital-twin systems, but such forecasts must be produced where thermal observations are incomplete. This study...</span><span class="abstract-full" id="full-2609.27290" hidden>Short-horizon forecasts of atmospheric temperature are needed to support climate-aware digital-twin systems, but such forecasts must be produced where thermal observations are incomplete. This study evaluates a physics-informed neural network for potential-temperature forecasting, constrained by a pressure-coordinate thermodynamic advection-source equation and a diabatic-source closure fit from the preceding 12-hour period and frozen before future-time training. Using hourly ERA5 reanalysis at three pressure levels, the model is evaluated as a conditional hindcast at lead times of one, two and three hours against persistence, local-trend, and two matched neural-network baselines, one of which receives the same future meteorological forcing as the PINN, helping distinguish the physical constraint from access to future forcing. In an Oklahoma development case, mean RMSE improvement over the strongest baseline grew from 8.1% at one hour to 23.8% at three hours; under an observation-density sweep down to 5% of candidate locations, this 3-hour advantage remained 14.6--16.9%, with no evidence that lower density improves performance. Under a fixed protocol transferred to an Alabama heat event with three virtual-observation layouts, three-hour improvement ranged 19.7-24.4% with consistent origin-level wins. A parallel Montana stress test, in which fixed pressure levels intersected complex terrain, produced a three-hour degradation of roughly 17.5%, identifying a terrain-related applicability limit of the formulation. Together, these results indicate that the physics constraint's benefit grows with forecast horizon, persists under severe observation sparsity, and transfers across regions, but is bounded by the validity of a fixed vertical-coordinate representation over complex terrain, evidence relevant to physics-constrained components of climate-aware forecasting and digital-twin systems.</span> <span class="abstract-toggle" data-id="2609.27290">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.27290v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.27290v1) · [:material-content-copy: BibTeX](../../bibtex/2609.27290.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
     { .paper-tags }
 
 </div>

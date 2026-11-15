@@ -7,30 +7,115 @@ title: weatherml
 
 A collection of papers on AI for weather forecasting, climate modelling and atmospheric science.
 
-<p class="page-meta" markdown="span">1639 papers · updated 2026-11-11 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
+<p class="page-meta" markdown="span">1646 papers · updated 2026-11-15 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
 
 ## Browse by Topic
 
 <div class="grid cards topics" markdown>
 
--   [Global Models](papers/global-models/index.md) <span class="topic-count">387</span>
+-   [Global Models](papers/global-models/index.md) <span class="topic-count">389</span>
 -   [Regional Models](papers/regional-models/index.md) <span class="topic-count">70</span>
 -   [Nowcasting](papers/nowcasting/index.md) <span class="topic-count">109</span>
--   [Downscaling](papers/downscaling/index.md) <span class="topic-count">109</span>
+-   [Downscaling](papers/downscaling/index.md) <span class="topic-count">110</span>
 -   [Post-processing](papers/post-processing/index.md) <span class="topic-count">27</span>
 -   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">82</span>
--   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">315</span>
+-   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">316</span>
 -   [Hydrology](papers/hydrology/index.md) <span class="topic-count">40</span>
--   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">91</span>
+-   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">92</span>
 -   [Air Quality & Composition](papers/air-quality-composition/index.md) <span class="topic-count">79</span>
--   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">108</span>
--   [Other](papers/other/index.md) <span class="topic-count">222</span>
+-   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">109</span>
+-   [Other](papers/other/index.md) <span class="topic-count">223</span>
 
 </div>
 
 ## Recent Additions
 
 <div class="grid cards" markdown data-search-exclude>
+
+-   #### Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network { #2611.16322 }
+
+    *Yongxiang Lei* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.16322">Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep...</span><span class="abstract-full" id="full-2611.16322" hidden>Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep DualMamba, a novel deep learning framework for temporal temperature prediction, built upon an enhanced variant of the recently proposed Mamba network. Unlike conventional Transformer-based architectures, which dominate foundation models but suffer from computational inefficiencies on long sequences, Deep DualMamba leverages selective structured state space models (SSMs) to achieve both scalability and performance. We identify a core limitation of prior subquadratic-time models-namely, their inability to perform long-term and robust forecasting and introduce two key innovations. First, we propose an adaptive bidirectional Mamba as encoders to learn complex and efficient features. Second, we develop a hardware-aware, parallel recurrent algorithm to compensate for the loss of convolutional efficiency, ensuring practical viability at scale. Last, the Deep DualMamba's approximation ability and convergence is theoretical analyzed. These design choices culminate in a simplified, attention- and MLP-free neural architecture that exhibits linear complexity with sequence length and significantly improved inference throughput. To demonstrate its applicability in climate informatics, we implement a full forecasting pipeline using historical meteorological data from UK monitoring stations.</span> <span class="abstract-toggle" data-id="2611.16322">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.16322v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.16322v1) · [:material-content-copy: BibTeX](bibtex/2611.16322.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### HybridCT: ML Accelerated Tomography for Climate Relevant 3D Cloud Observations { #2611.16255 }
+
+    *Linda Forster, Nicholas J. LaHaye, Marcin J. Kurowski, Anna Jungbluth, Bernhard Mayer et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.16255">Low-level clouds are one of the largest sources of uncertainty in climate predictions, partly because we lack detailed three-dimensional (3D) measurements of their internal structure. Here, we...</span><span class="abstract-full" id="full-2611.16255" hidden>Low-level clouds are one of the largest sources of uncertainty in climate predictions, partly because we lack detailed three-dimensional (3D) measurements of their internal structure. Here, we present HybridCT, a cloud tomographic reconstruction scheme accelerated by machine learning (ML) that recovers 3D cloud extinction directly from passive multi-angle observations. An ML emulator maps radiances from multiple viewing angles to cloud optical thickness (COT), producing path-integrated projections, and a Simultaneous Algebraic Reconstruction Technique (SART) explicitly inverts these projections to retrieve 3D extinction. Training observations are generated from synthetic 3D cloud fields using radiative transfer simulations for nine viewing angles between $\pm$70$^{\circ}$. HybridCT reconstructs extinction with RMSE 13.3 km$^{-1}$ in 3.5 s, compared to 22.7 km$^{-1}$ in approx. 30 min for the state-of-the-art physics-based tomography framework AT3D, a speedup exceeding 500$\times$. HybridCT thus provides a scalable route toward large-scale observations of 3D cloud structure relevant to radiative-budget interpretation and evaluation of high-resolution cloud simulations.</span> <span class="abstract-toggle" data-id="2611.16255">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.16255v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.16255v1) · [:material-content-copy: BibTeX](bibtex/2611.16255.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
+
+-   #### A hybrid machine learning-analog framework for downscaling unprecedented climate extremes { #2611.15284 }
+
+    *Nina Effenberger, Florian E. Roemer, Maybritt Schillinger, Maxim Samarin, Erich Fischer, Reto Knutti* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.15284">Extreme weather events are critical for climate impact assessments. While physical models can simulate unprecedented extremes, for example, through ensemble boosting, this approach is computationally...</span><span class="abstract-full" id="full-2611.15284" hidden>Extreme weather events are critical for climate impact assessments. While physical models can simulate unprecedented extremes, for example, through ensemble boosting, this approach is computationally demanding, often restricting output to coarse spatial resolutions. Probabilistic generative downscaling offers a solution by enabling efficient sampling from the entire climate distribution, including its extreme tails. Here, we first demonstrate that machine learning generated regional climate model heatwaves over Paris are physically realistic. We then leverage an emulated machine learning dataset to perform analog-based downscaling of coarse global climate model ensemble boosting events. Our hybrid framework effectively bridges high-resolution regional detail with rare-event sampling, providing an efficient tool for extreme event downscaling and capturing multi-model uncertainty.</span> <span class="abstract-toggle" data-id="2611.15284">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15284v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15284v1) · [:material-content-copy: BibTeX](bibtex/2611.15284.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
+
+-   #### DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting { #2611.15266 }
+
+    *Runzepu Hou, Feng Zhang, Xin Wu, Xujun Wei, Fenghua Ling, Kan Dai, Gaozhen Nie, Leiming Ma et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.15266">Accurate tropical cyclone intensity forecasts are essential for disaster preparedness, yet persistent intensity underestimation limits the value of artificial intelligence (AI) weather models for...</span><span class="abstract-full" id="full-2611.15266" hidden>Accurate tropical cyclone intensity forecasts are essential for disaster preparedness, yet persistent intensity underestimation limits the value of artificial intelligence (AI) weather models for predicting these destructive storms. Here we present DaYu-TC, a global-regional nested system that links the preservation of strong-wind and low-pressure signals with high-resolution regional prediction. Its global and regional models share an architecture and extreme-aware training objectives. The regional model combines evolving local states with global forecasts valid at each target time, connecting large-scale environmental information with finer-scale cyclone evolution. In an independent evaluation of 16 western North Pacific tropical cyclones in 2023, the global model retains competitive conventional forecast skill while reducing five-day maximum-wind root-mean-square error (RMSE) by 6-22% relative to other evaluated global AI models. Relative to the global model, regional nesting reduces maximum-wind RMSE by 22.0-33.1% and minimum-pressure RMSE by 28.6-39.8% across 12-120 h. The complete system outperforms concurrent operational high-resolution forecasts from the European Centre for Medium-Range Weather Forecasts for minimum pressure at 12-120 h and maximum wind speed at 48-96 h, with respective RMSE reductions of 26% and 12% at 72 h. Without retraining, the same regional model enhances three other global AI models, reducing overall maximum-wind RMSE by 22.6-28.6%. Five-day forecasts take under one minute on a single GPU. These results establish a transferable multiscale approach to reducing cyclone intensity underestimation, extending advances in AI weather forecasting towards more accurate prediction of high-impact weather events.</span> <span class="abstract-toggle" data-id="2611.15266">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15266v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15266v1) · [:material-content-copy: BibTeX](bibtex/2611.15266.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
+
+-   #### Winter wheat improves soil carbon sequestration with reduced gains in warmer climates { #2611.15232 }
+
+    *Georgios Giannarakis, Vasileios Sitokonstantinou, Dimitrios Bormpoudakis, Ilias Tsoumas et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.15232">Sustainable agricultural intensification requires a precise understanding of how land use decisions influence soil organic carbon (SOC) sequestration under varying environmental conditions. We apply...</span><span class="abstract-full" id="full-2611.15232" hidden>Sustainable agricultural intensification requires a precise understanding of how land use decisions influence soil organic carbon (SOC) sequestration under varying environmental conditions. We apply causal machine learning to evaluate the heterogeneous impact of winter wheat-based rotations on SOC at the field-level across Lithuania. Using a nationwide dataset collected over five years (2018-2022), including crop types, management practices, soil properties, and environmental conditions, we estimate how the effects of winter wheat-based rotation vary across space and climate. Our results indicate that winter wheat generally enhances SOC levels, but its effectiveness is modulated by climate. Cooler regions experience higher SOC gains, whereas warmer regions show diminished or even negative effects. Future climate projections suggest that the potential for winter wheat carbon sequestration may decline under high-emission scenarios. These findings highlight the importance of localized agricultural strategies that account for climate variability to maximize SOC sequestration and ensure long-term soil sustainability.</span> <span class="abstract-toggle" data-id="2611.15232">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15232v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15232v1) · [:material-content-copy: BibTeX](bibtex/2611.15232.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation Models { #2611.15053 }
+
+    *Anjan Mahapatra, Nikhil Raj* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.15053">Modern machine learning models for global weather forecasting achieve remarkable predictive accuracy, yet they frequently produce states that violate fundamental physical laws, including conservation...</span><span class="abstract-full" id="full-2611.15053" hidden>Modern machine learning models for global weather forecasting achieve remarkable predictive accuracy, yet they frequently produce states that violate fundamental physical laws, including conservation of mass, hydrostatic balance, or spectral energy scaling. We term these outputs physical hallucinations and propose PhysXAI, a rigorous diagnostic framework that detects, localises, and attributes such inconsistencies. Unlike existing post-hoc metric suites, PhysXAI is a learnable system that explicitly decouples forecast error from physical plausibility. We formalise the problem through a novel joint condition on numerical and physical residuals, and introduce a multi-branch encoder that extracts representations from conservation, dynamical, spectral, cross-variable, and spatiotemporal residuals. A key innovation is a physics-consistency contrastive learning objective, which we theoretically show the latent representation to be approximately isometric to the physical residual space, ensuring that diagnostic decisions remain grounded in physically meaningful deviations. We further derive an adaptive multi-objective loss with gradient-based weighting to balance competing diagnostic objectives. The framework produces spatially resolved hallucination maps, violation-type classifications, and calibrated Bayesian uncertainty, enabling both detection and interpretable attribution of physical inconsistencies. We conduct a comprehensive comparative evaluation of PhysXAI across ERA5, WeatherBench 2, and MERRA-2, using forecasts from GraphCast, Pangu-Weather, and NeuralGCM, with Python-written code and a fully reproducible experimental protocol. Our theoretical analysis and empirical evaluation establish PhysXAI as a principled framework for diagnosing physical hallucinations and advancing trustworthy AI for weather forecasting.</span> <span class="abstract-toggle" data-id="2611.15053">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15053v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15053v1) · [:material-content-copy: BibTeX](bibtex/2611.15053.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
+
+-   #### Data-driven Reconstruction of the Phase Dynamics for the El Niño-Southern Oscillation Reveals Seasonality and Statistical Synchronization with the Annual Cycle { #2611.14868 }
+
+    *Takahiro Arai, Yoji Kawamura* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.14868">In this study, we treat the El Niño-Southern Oscillation (ENSO) as a rhythmic system periodically forced by the annual cycle. We examine ENSO event seasonality and synchronization between the annual...</span><span class="abstract-full" id="full-2611.14868" hidden>In this study, we treat the El Niño-Southern Oscillation (ENSO) as a rhythmic system periodically forced by the annual cycle. We examine ENSO event seasonality and synchronization between the annual and ENSO cycles. We compute phase time series for both cycles from sea surface temperature data using a data-driven Koopman operator approach. We then use Bayesian inference to reconstruct phase equations describing how the phases of the two oscillators evolve. The reconstructed two-variable phase equations show that the annual cycle modulates the instantaneous frequency of the fundamental ENSO mode. Stochastic simulations of these equations incorporating the estimated stationary noise indicate that El Niño and La Niña events tend to last longer when they start in boreal summer and that the variability of their durations is greater when they start in boreal spring. Furthermore, the averaged form of the phase equations indicates statistical $3:1$ phase locking between the annual and ENSO cycles, whereas no statistical phase locking is found for the other $m:n$ ratios.</span> <span class="abstract-toggle" data-id="2611.14868">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.14868v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.14868v1) · [:material-content-copy: BibTeX](bibtex/2611.14868.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
 
 -   #### Discovering Equations for the Thermodynamics of South Asian Monsoon Precipitation { #2611.14401 }
 
@@ -243,82 +328,6 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
 
     <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
     { .paper-tags }
-
--   #### Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add? { #2611.08148 }
-
-    *Ioannis Dravilas, Miruna Stoicescu, Roope Tervo, Carlos Horn, Oriol Hinojo Comellas, Sina Montazeri et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.08148">Weather fronts are transition regions between air masses with contrasting thermodynamic properties and are associated with mid-latitude precipitation and severe weather. We investigate machine...</span><span class="abstract-full" id="full-2611.08148" hidden>Weather fronts are transition regions between air masses with contrasting thermodynamic properties and are associated with mid-latitude precipitation and severe weather. We investigate machine learning (ML) methods for detecting weather fronts and quantify the contribution of reanalysis data to performance. We compare two configurations of the same ML model for pixel-wise frontal classification over the North Atlantic and Europe: (1) using only geostationary infrared satellite observations, and (2) additionally using 28 ERA5 reanalysis fields. The satellite-only model achieves a neighbourhood critical success index at a 150 km tolerance (CSI@150) of $0.402$, which lies within the range of agreement between analyses from different meteorological services. The satellite$+$ERA5 model achieves $0.575$, an improvement of $0.173$. Our analysis shows that low-level winds are the least predictable from the satellite representation ($R^2 = 0.23$, compared with $0.88$ for temperature), while removing winds or moisture causes the largest decreases in detection performance.</span> <span class="abstract-toggle" data-id="2611.08148">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.08148v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.08148v1) · [:material-content-copy: BibTeX](bibtex/2611.08148.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Estimating Vertical Ocean Velocity from Horizontal Currents: Linear and Depth-Conditional Neural-Network Approaches on a High-Resolution Regional Ocean Model { #2611.07969 }
-
-    *Francesco M. Ventrella, Cristóbal López, Emilio Hernandez-Garcia* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.07969">The vertical component of the ocean velocity, w, is several orders of magnitude smaller than the horizontal components u and v, yet it controls vertical tracer transport, upwelling, and mixed-layer...</span><span class="abstract-full" id="full-2611.07969" hidden>The vertical component of the ocean velocity, w, is several orders of magnitude smaller than the horizontal components u and v, yet it controls vertical tracer transport, upwelling, and mixed-layer ventilation. Because w is extremely difficult to measure directly and is normally obtained only diagnostically from the continuity equation, predicting it from the horizontal velocity field is a problem of both practical and physical interest. We address this problem with two data-driven methods, a physically-motivated linear baseline and a convolutional neural network conditioned on depth through Feature-wise Linear Modulation (FiLM). Both methods are applied to a high-resolution regional simulation of the Coastal and Regional Ocean Community model over the Western Mediterranean, using a sub-region of the south-west Mediterranean Sea as a training region and two independent, out-of-sample regions for validation: the Alboran Sea, with a distinct dynamical regime driven by Atlantic inflow through the Strait of Gibraltar, and a transition region between Almería and Cartagena, between the Alboran Sea and the open western Mediterranean. Once the FiLM network is regularized enough to avoid overfitting to a single training domain, we find that its comparison with the physically interpretable linear baseline is domain- and depth-dependent rather than uniform: near the reference depth, essentially all of the achievable out-of-sample performance on both validation domains is already captured by the linear model, but at the deepest levels tested the FiLM network outperforms the linear baseline on the transition domain, whereas on Alboran it does not.</span> <span class="abstract-toggle" data-id="2611.07969">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.07969v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.07969v1) · [:material-content-copy: BibTeX](bibtex/2611.07969.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System { #2611.07296 }
-
-    *Chenchen Kuai, Shixuan Tang, Chaolun Ma, Xiaoqiang Kong, Xiubin Bruce Wang, Yunlong Zhang, Zihao Li* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.07296">When a tropical cyclone (TC) threatens several ports, preparedness planning depends on anticipating which ports are likely to be affected and where disruptions may last longest. Limited historical...</span><span class="abstract-full" id="full-2611.07296" hidden>When a tropical cyclone (TC) threatens several ports, preparedness planning depends on anticipating which ports are likely to be affected and where disruptions may last longest. Limited historical observations at individual ports and uncertainty in landfall location make these relative impacts difficult to estimate. We use a two-stage recommendation framework that first selects candidate ports based on their proximity to the expected landfall location and then ranks them by their estimated number of impact days. Using AIS-derived impact days for 37 ports and 31 TCs in the Gulf of Mexico study region, we compare three ways of representing port--cyclone interactions: pairwise feature interactions, tree-based feature combinations, and explicit feature crosses combined with learned embeddings. In tests on Hurricanes Nicole and Ian, the retrieval stage consistently identifies all observed affected ports under landfall uncertainty. Among the ranking models, Wide & Deep Learning achieves the closest agreement with the observed port rankings. Its mean ranking agreement exceeds that of the distance-based baseline by 85.5% for Nicole and 55.5% for Ian and is less sensitive to uncertainty in the landfall location. These rankings could help port authorities prioritize post-cyclone inspections and allocate recovery resources across ports threatened by the same event.</span> <span class="abstract-toggle" data-id="2611.07296">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.07296v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.07296v1) · [:material-content-copy: BibTeX](bibtex/2611.07296.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
-    { .paper-tags }
-
--   #### A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies { #2611.07094 }
-
-    *Spencer R. Jones, Simon Pfreundschuh, Christian D. Kummerow* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.07094">This paper presents an application of machine learning to the problem of the computational expense of atmospheric radiative transfer calculations from physics-based models. While in recent studies...</span><span class="abstract-full" id="full-2611.07094" hidden>This paper presents an application of machine learning to the problem of the computational expense of atmospheric radiative transfer calculations from physics-based models. While in recent studies individual emulators have been created that emulate certain radiative transfer schemes for different sensors, we show that a general framework can be applied to emulate the radiative transfer method itself. A fully connected deep neural network has been trained to predict top-of-atmosphere microwave radiances in all-sky conditions over various land, ocean and sea ice surfaces at all frequencies from 1 to 300 GHz, and for all incidence angles from 0 to 65 degrees. The reference models against which the emulator has been trained include an Eddington two-stream radiative transfer model for one-dimensional and pseudo-three-dimensional microwave brightness temperature simulations. This neural network architecture has also been separately trained to reproduce the explicit calculations of the Community Radiative Transfer Model (CRTM) for a single microwave imager. In all cases, the model architecture is successfully able predict microwave brightness temperatures by being trained directly on the optical properties of the atmosphere and surface and therefore directly emulating the radiative transfer method. Compared to the explicit schemes used to produce the training data, the GPU-enabled emulator is able to produce brightness temperature simulations more than three orders of magnitude faster and with a root-mean-squared-error less than 0.0348 K, 0.0531 K, and 0.0246 K against the independent test data for the two Eddington models and CRTM, respectively. Additionally, preliminary training using a full 3D Monte Carlo scheme for high-resolution simulations shows promising results for the application of this method to "exact" radiative transfer methods, and these results are discussed in Section IV.</span> <span class="abstract-toggle" data-id="2611.07094">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.07094v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.07094v1) · [:material-content-copy: BibTeX](bibtex/2611.07094.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Evaluating the prediction of subgrid eddy kinetic energy from a machine learning model { #2611.06539 }
-
-    *Thomas Wilder, Ranjini Swaminathan, David Storkey, Till Kuhlbrodt* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.06539">Global climate model resolution is still too coarse to fully resolve mesoscale processes, therefore subgrid closures are required to approximate the feedback of eddies onto the resolved flow. With...</span><span class="abstract-full" id="full-2611.06539" hidden>Global climate model resolution is still too coarse to fully resolve mesoscale processes, therefore subgrid closures are required to approximate the feedback of eddies onto the resolved flow. With high-resolution datasets now readily available, there has been a rapid growth in the use of machine learning to develop new eddy closures that could help reduce model biases and uncertainty. In this work we employ an offline learning approach with a convolutional neural network to predict subgrid eddy kinetic energy ($KE_e$), laying the initial groundwork for a machine-learned scale-aware GEOMETRIC eddy closure for the UK's Earth System Model. We address the question of whether global parameterizations are needed or if regional closures are sufficient by evaluating a number of neural network models through region and feature ablation experiments. ML parameterization models generalize to unseen regions when their training data share similar feature and target distributions with those regions. Models that fail to generalize incur distributional shift, or employ different filtering scales for the true eddy kinetic energy field. When holding out features, there is improvement among the generalizable ML models, with some feature spaces leading to improvements in some regions but degrading performance in others. Generally, power spectral density of $KE_e$ tend to diverge at small scales, though some feature spaces are able to minimize this divergence. Overall, the best performing model trained on all regions achieves time-mean and anomaly R2 scores of R2$\approx 0.95$ and R2$\approx 0.8 - 0.9$, respectively.</span> <span class="abstract-toggle" data-id="2611.06539">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.06539v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.06539v1) · [:material-content-copy: BibTeX](bibtex/2611.06539.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models { #2611.05592 }
-
-    *P. Trent Vonich, Gregory J. Hakim* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.05592">Differentiable weather models allow atmospheric initial conditions to be directly optimized to shadow a known trajectory, which we take from a reanalysis dataset. Here, we extend this optimization to...</span><span class="abstract-full" id="full-2611.05592" hidden>Differentiable weather models allow atmospheric initial conditions to be directly optimized to shadow a known trajectory, which we take from a reanalysis dataset. Here, we extend this optimization to include the forecast model, GraphCast, using low-rank adaptation (LoRA). We compare model optimization with initial-condition (IC) optimization, and then joint optimization, where both are tuned simultaneously. When compared against a control forecast initialized with reanalysis data, LoRA and IC optimization individually produce similar improvements. We find similar results when IC and LoRA are jointly optimized across a spectrum of solutions where a tuning coefficient smoothly shifts the weight of the joint optimization from all-LoRA to all-IC; forecast improvement is not unique to the relative contributions of model and IC corrections. To better discriminate the source of error, we introduce a second model, Pangu-Weather, as a supervisor that gates IC updates during joint optimization. This gated optimization is the same as before, except that IC updates at each epoch are accepted only when they improve the forecasts of both models; otherwise, only the LoRA update is accepted. Results show that this cross-model constraint substantially improves agreement between the two models in their response to the same optimized ICs, narrowing the gap in mean forecast error reduction from 64% to 10%. Moreover, when used together, the LoRA and IC corrections from the gated optimization yield GraphCast forecast improvements similar to those from the ungated optimization. These results imply that model error that is encoded in the ungated ICs is shifted to the LoRA corrections via gating, yielding IC corrections that may provide better analysis estimates.</span> <span class="abstract-toggle" data-id="2611.05592">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.05592v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.05592v2) · [:material-content-copy: BibTeX](bibtex/2611.05592.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### A Multidimensional Evaluation Framework for Artificial Intelligence-Based Ocean State Forecasts { #2611.04892 }
-
-    *Ziqing Zu, Ye Yuan, Tiejun Ling, Zhi Chen, Xiang Li, Zhiqiang Li, Qiang Wang, Jiangjiang Xia et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.04892">Artificial intelligence (AI) based ocean state forecasts now approach or surpass those produced by operational ocean forecasting systems as measured by conventional pointwise metrics. However, these...</span><span class="abstract-full" id="full-2611.04892" hidden>Artificial intelligence (AI) based ocean state forecasts now approach or surpass those produced by operational ocean forecasting systems as measured by conventional pointwise metrics. However, these metrics may favor spatially smoothed forecasts and cannot determine whether forecast variables remain physically coherent. Forecast evaluation should therefore move beyond overall pointwise accuracy toward assessing forecast trustworthiness. We propose a multidimensional framework comprising overall pointwise accuracy, physical consistency, and distributional consistency. Overall pointwise accuracy summarizes forecast and reference agreement over all valid samples; physical consistency evaluates dynamical balances using model outputs alone; and distributional consistency evaluates distribution tails and multiscale spatial structures. Three AI models were deployed as representative testbeds in a unified operational environment. This comprehensive assessment shows that lower overall pointwise errors cannot preclude substantial dynamical imbalances and suppressed fine-scale variance. Conversely, higher pointwise errors may arise from spatial displacement of coherent structures rather than a poor representation of their amplitude. The results demonstrate that the evaluation of AI ocean forecasting models should be based on the multi-dimensional assessment of forecast trustworthiness, rather than solely relying on a single metric. The study provides a preliminary framework for AI model intercomparison, which is also informative for targeted model refinement and operational implementation.</span> <span class="abstract-toggle" data-id="2611.04892">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.04892v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.04892v1) · [:material-content-copy: BibTeX](bibtex/2611.04892.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

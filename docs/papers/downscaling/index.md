@@ -8,11 +8,24 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">109 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">110 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### A hybrid machine learning-analog framework for downscaling unprecedented climate extremes { #2611.15284 }
+
+    *Nina Effenberger, Florian E. Roemer, Maybritt Schillinger, Maxim Samarin, Erich Fischer, Reto Knutti* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.15284">Extreme weather events are critical for climate impact assessments. While physical models can simulate unprecedented extremes, for example, through ensemble boosting, this approach is computationally...</span><span class="abstract-full" id="full-2611.15284" hidden>Extreme weather events are critical for climate impact assessments. While physical models can simulate unprecedented extremes, for example, through ensemble boosting, this approach is computationally demanding, often restricting output to coarse spatial resolutions. Probabilistic generative downscaling offers a solution by enabling efficient sampling from the entire climate distribution, including its extreme tails. Here, we first demonstrate that machine learning generated regional climate model heatwaves over Paris are physically realistic. We then leverage an emulated machine learning dataset to perform analog-based downscaling of coarse global climate model ensemble boosting events. Our hybrid framework effectively bridges high-resolution regional detail with rare-event sampling, providing an efficient tool for extreme event downscaling and capturing multi-model uncertainty.</span> <span class="abstract-toggle" data-id="2611.15284">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15284v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15284v1) · [:material-content-copy: BibTeX](../../bibtex/2611.15284.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
+    { .paper-tags }
 
 -   #### PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling { #2611.11318 }
 
@@ -383,19 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection { #2605.23776 }
-
-    *Cameron Dong, James W. Hurrell, Elizabeth A. Barnes* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.23776">Stratospheric aerosol injection (SAI), a possible climate engineering strategy where reflective particles are injected into the stratosphere, has been explored to mitigate global warming and its...</span><span class="abstract-full" id="full-2605.23776" hidden>Stratospheric aerosol injection (SAI), a possible climate engineering strategy where reflective particles are injected into the stratosphere, has been explored to mitigate global warming and its associated risks, such as the intensification of extreme precipitation events. However, current Earth system models (ESMs) often used to simulate SAI and other climate change scenarios are too coarse to properly assess such risks. Traditional statistical downscaling methods, used to project higher resolution impacts, may be biased and unrealistic. To address this, we train a deep learning diffusion downscaler to generate 0.25° contiguous United States (CONUS) daily precipitation using historical and future climate simulations from the Mesoscale Atmosphere-Ocean Interaction in Seasonal-to-Decadal Climate Prediction (MESACLIP) project, then apply the diffusion downscaler to out-of-distribution CESM2 simulations with and without SAI. The diffusion model generates realistic downscaled precipitation using either MESACLIP or CESM2 inputs. It also faithfully recreates the climate change projections of extreme precipitation in MESACLIP. Diffusion-downscaled projections of the future CESM2 SAI scenarios suggest that SAI could nearly cut in half the CONUS-average increase in yearly max precipitation, compared to the non-SAI scenario. However, there is considerable regional variation and internal variability, with SAI modeled to only slightly reduce increases in extreme precipitation frequency in the Mid Atlantic and the Pacific Northwest, but mitigating most intensification in other regions. Future application of diffusion downscaling to a wider variety of SAI scenarios would provide valuable insight into how proposed SAI strategies may affect precipitation variability on fine spatial scales for regional impact assessments.</span> <span class="abstract-toggle" data-id="2605.23776">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.23776v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.23776v1) · [:material-content-copy: BibTeX](../../bibtex/2605.23776.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
     { .paper-tags }
 
 </div>

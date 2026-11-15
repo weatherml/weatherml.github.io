@@ -8,11 +8,24 @@ hide:
 
 # Ocean & Sea Ice
 
-<p class="page-meta" markdown="span">91 papers · page 1 of 4 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">92 papers · page 1 of 4 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Data-driven Reconstruction of the Phase Dynamics for the El Niño-Southern Oscillation Reveals Seasonality and Statistical Synchronization with the Annual Cycle { #2611.14868 }
+
+    *Takahiro Arai, Yoji Kawamura* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.14868">In this study, we treat the El Niño-Southern Oscillation (ENSO) as a rhythmic system periodically forced by the annual cycle. We examine ENSO event seasonality and synchronization between the annual...</span><span class="abstract-full" id="full-2611.14868" hidden>In this study, we treat the El Niño-Southern Oscillation (ENSO) as a rhythmic system periodically forced by the annual cycle. We examine ENSO event seasonality and synchronization between the annual and ENSO cycles. We compute phase time series for both cycles from sea surface temperature data using a data-driven Koopman operator approach. We then use Bayesian inference to reconstruct phase equations describing how the phases of the two oscillators evolve. The reconstructed two-variable phase equations show that the annual cycle modulates the instantaneous frequency of the fundamental ENSO mode. Stochastic simulations of these equations incorporating the estimated stationary noise indicate that El Niño and La Niña events tend to last longer when they start in boreal summer and that the variability of their durations is greater when they start in boreal spring. Furthermore, the averaged form of the phase equations indicates statistical $3:1$ phase locking between the annual and ENSO cycles, whereas no statistical phase locking is found for the other $m:n$ ratios.</span> <span class="abstract-toggle" data-id="2611.14868">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.14868v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.14868v1) · [:material-content-copy: BibTeX](../../bibtex/2611.14868.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
 
 -   #### A Multidimensional Evaluation Framework for Artificial Intelligence-Based Ocean State Forecasts { #2611.04892 }
 
@@ -372,19 +385,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.12449v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.12449v1) · [:material-content-copy: BibTeX](../../bibtex/2603.12449.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Reduced-Order Surrogates for Forced Flexible Mesh Coastal-Ocean Models { #2602.05416 }
-
-    *Freja Høgholm Petersen, Jesper Sandvig Mariegaard, Rocco Palmitessa, Allan P. Engsig-Karup* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.05416">While proper orthogonal decomposition (POD)-based surrogates are widely explored for hydrodynamic applications, the use of Koopman autoencoders for real-world coastal-ocean modelling remains...</span><span class="abstract-full" id="full-2602.05416" hidden>While proper orthogonal decomposition (POD)-based surrogates are widely explored for hydrodynamic applications, the use of Koopman autoencoders for real-world coastal-ocean modelling remains relatively limited. This paper introduces a flexible Koopman autoencoder formulation that incorporates meteorological forcings and boundary conditions, and systematically compares its performance against POD-based surrogates. The Koopman autoencoder employs a learned linear temporal operator in latent space, enabling eigenvalue regularization to promote temporal stability. This strategy is evaluated alongside temporal unrolling techniques for achieving stable and accurate long-term predictions. The models are assessed on three test cases spanning distinct dynamical regimes, with prediction horizons up to one year at 30-minute temporal resolution. Across all cases, the reduced order surrogates with temporal unrolling achieve high accuracy with relative root-mean-squared-errors of 0.0068-0.14 and $R^2$-values of 0.61-0.995, where prediction errors are largest for current velocities, and smallest for water surface elevations. In two of the three cases, the Koopman Autoencoder have higher accuracy than the POD-based surrogates. Comparing to in-situ observations, the surrogate yields -0.64% to 12% increase in water surface elevation prediction error when compared to prediction errors of the physics-based model. These error levels, corresponding to a few centimeters, are acceptable for many practical applications, while inference speed-ups of 300-1400x enables workflows such as ensemble forecasting and long climate simulations for coastal-ocean modelling.</span> <span class="abstract-toggle" data-id="2602.05416">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.05416v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.05416v2) · [:material-content-copy: BibTeX](../../bibtex/2602.05416.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
 
 </div>
 

@@ -8,11 +8,24 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">108 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">109 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### HybridCT: ML Accelerated Tomography for Climate Relevant 3D Cloud Observations { #2611.16255 }
+
+    *Linda Forster, Nicholas J. LaHaye, Marcin J. Kurowski, Anna Jungbluth, Bernhard Mayer et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.16255">Low-level clouds are one of the largest sources of uncertainty in climate predictions, partly because we lack detailed three-dimensional (3D) measurements of their internal structure. Here, we...</span><span class="abstract-full" id="full-2611.16255" hidden>Low-level clouds are one of the largest sources of uncertainty in climate predictions, partly because we lack detailed three-dimensional (3D) measurements of their internal structure. Here, we present HybridCT, a cloud tomographic reconstruction scheme accelerated by machine learning (ML) that recovers 3D cloud extinction directly from passive multi-angle observations. An ML emulator maps radiances from multiple viewing angles to cloud optical thickness (COT), producing path-integrated projections, and a Simultaneous Algebraic Reconstruction Technique (SART) explicitly inverts these projections to retrieve 3D extinction. Training observations are generated from synthetic 3D cloud fields using radiative transfer simulations for nine viewing angles between $\pm$70$^{\circ}$. HybridCT reconstructs extinction with RMSE 13.3 km$^{-1}$ in 3.5 s, compared to 22.7 km$^{-1}$ in approx. 30 min for the state-of-the-art physics-based tomography framework AT3D, a speedup exceeding 500$\times$. HybridCT thus provides a scalable route toward large-scale observations of 3D cloud structure relevant to radiative-budget interpretation and evaluation of high-resolution cloud simulations.</span> <span class="abstract-toggle" data-id="2611.16255">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.16255v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.16255v1) · [:material-content-copy: BibTeX](../../bibtex/2611.16255.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
 
 -   #### PARDIG: Global Precipitation Estimates Learned from Sparse Satellite Observations { #2611.13941 }
 
@@ -374,19 +387,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
-    { .paper-tags }
-
--   #### Set-Based Transformer for Atmospheric Compensation in Standoff LWIR Hyperspectral Imaging { #2606.08324 }
-
-    *Fabian Perez, Nicolas Quintero, Jeferson Acevedo, Hoover Rueda-Chacon* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.08324">Passive long-wave infrared (LWIR) hyperspectral imaging under a standoff geometry depends on atmospheric absorption and emission, as well as reflected radiance, thus making atmospheric compensation...</span><span class="abstract-full" id="full-2606.08324" hidden>Passive long-wave infrared (LWIR) hyperspectral imaging under a standoff geometry depends on atmospheric absorption and emission, as well as reflected radiance, thus making atmospheric compensation essential to get knowledge of a target of interest. Despite its importance, this compensation has been largely overlooked due to its practical and modeling difficulty. In this paper, we present a lightweight set-based deep learning framework that takes multiple radiance measurements, collected at different standoff ranges, as input and jointly estimates transmittance, atmospheric path radiance, and a shared downwelling spectrum. We analyze the learned representation with a sparse autoencoder and observe that several latent features do activate on geographically coherent subsets of the test data despite the absence of location supervision. Experiments on a MODTRAN generated standoff LWIR dataset demonstrate low spectral distortion across all estimated products. The dataset and code is publicly available at: https://factral.co/SAE-LWIR/</span> <span class="abstract-toggle" data-id="2606.08324">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.08324v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.08324v1) · [:material-content-copy: BibTeX](../../bibtex/2606.08324.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a>
     { .paper-tags }
 
 </div>
