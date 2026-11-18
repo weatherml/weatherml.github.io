@@ -60,13 +60,17 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1646)
+## Papers (1663)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (389)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (393)</summary>
 
+- **Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction** (Nov 2026) - [arXiv:2611.21602](https://arxiv.org/abs/2611.21602v1)
+- **Run it Back: Autoregression vs. Video Diffusion for Final-Conditioned Weather Trajectories** (Nov 2026) - [arXiv:2611.21521](https://arxiv.org/abs/2611.21521v1)
+- **Improving Tropical Cyclone Forecasts through Objective Ensemble Track-Error Reduction** (Nov 2026) - [arXiv:2611.20251](https://arxiv.org/abs/2611.20251v1)
+- **An AI-enabled high-resolution chlorophyll-a forecasting model that outperforms the operational global biogeochemical system** (Nov 2026) - [arXiv:2611.17704](https://arxiv.org/abs/2611.17704v2)
 - **DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting** (Nov 2026) - [arXiv:2611.15266](https://arxiv.org/abs/2611.15266v1)
 - **PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation Models** (Nov 2026) - [arXiv:2611.15053](https://arxiv.org/abs/2611.15053v1)
 - **One2N: Recursive refinement breaks the resolution barrier for Earth-system AI** (Nov 2026) - [arXiv:2611.12249](https://arxiv.org/abs/2611.12249v1)
@@ -536,8 +540,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (109)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (110)</summary>
 
+- **A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs** (Nov 2026) - [arXiv:2611.20114](https://arxiv.org/abs/2611.20114v1)
 - **Discovering Equations for the Thermodynamics of South Asian Monsoon Precipitation** (Nov 2026) - [arXiv:2611.14401](https://arxiv.org/abs/2611.14401v1)
 - **Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation** (Nov 2026) - [arXiv:2611.12999](https://arxiv.org/abs/2611.12999v1)
 - **Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery** (Nov 2026) - [arXiv:2611.08255](https://arxiv.org/abs/2611.08255v1)
@@ -800,8 +805,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (82)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (83)</summary>
 
+- **Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents** (Nov 2026) - [arXiv:2611.17854](https://arxiv.org/abs/2611.17854v1)
 - **Analysis increments for model bias diagnosis and correction: Theoretical foundations** (Nov 2026) - [arXiv:2611.11162](https://arxiv.org/abs/2611.11162v1)
 - **Machine Learning Sensor Fusion for Water Vapor Radiometry based Tropospheric Delay Calibration** (Oct 2026) - [arXiv:2610.41052](https://arxiv.org/abs/2610.41052v1)
 - **Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport** (Oct 2026) - [arXiv:2610.32148](https://arxiv.org/abs/2610.32148v1)
@@ -888,8 +894,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (316)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (317)</summary>
 
+- **SeasonRainBench: Global Seasonal Precipitation** (Nov 2026) - [arXiv:2611.22281](https://arxiv.org/abs/2611.22281v1)
 - **Winter wheat improves soil carbon sequestration with reduced gains in warmer climates** (Nov 2026) - [arXiv:2611.15232](https://arxiv.org/abs/2611.15232v1)
 - **Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data** (Nov 2026) - [arXiv:2611.13359](https://arxiv.org/abs/2611.13359v1)
 - **MarsNet: Learning the Martian Atmosphere from Observations Alone** (Nov 2026) - [arXiv:2611.12787](https://arxiv.org/abs/2611.12787v1)
@@ -1256,8 +1263,10 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (92)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/ocean-sea-ice/">Ocean & Sea Ice</a></b> (94)</summary>
 
+- **Improving Eddy Detection from Wide-Swath Altimetry with Multimodal Data-Driven Models** (Nov 2026) - [arXiv:2611.22601](https://arxiv.org/abs/2611.22601v1)
+- **DARWIN: a Geospatial Foundation Model for Marine Intelligence** (Nov 2026) - [arXiv:2611.22496](https://arxiv.org/abs/2611.22496v1)
 - **Data-driven Reconstruction of the Phase Dynamics for the El Niño-Southern Oscillation Reveals Seasonality and Statistical Synchronization with the Annual Cycle** (Nov 2026) - [arXiv:2611.14868](https://arxiv.org/abs/2611.14868v1)
 - **A Multidimensional Evaluation Framework for Artificial Intelligence-Based Ocean State Forecasts** (Nov 2026) - [arXiv:2611.04892](https://arxiv.org/abs/2611.04892v1)
 - **New Wine in an Old Bottle -- NeuralPOM: A Hybrid Ocean Forecast Model with Differentiable Dynamics and Staged Learning** (Nov 2026) - [arXiv:2611.02460](https://arxiv.org/abs/2611.02460v1)
@@ -1439,8 +1448,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (109)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (112)</summary>
 
+- **GPROF V08: Improving Satellite Precipitation Estimates Across a Heterogeneous Constellation of Passive-Microwave Sensors** (Nov 2026) - [arXiv:2611.19978](https://arxiv.org/abs/2611.19978v1)
+- **Towards GPROF V08: A Machine-Learning Framework for Simulating Passive Microwave Observations of Precipitation** (Nov 2026) - [arXiv:2611.19966](https://arxiv.org/abs/2611.19966v1)
+- **WeatherDreamer: Learning a World Model from Multimodal Earth Observations** (Nov 2026) - [arXiv:2611.18393](https://arxiv.org/abs/2611.18393v1)
 - **HybridCT: ML Accelerated Tomography for Climate Relevant 3D Cloud Observations** (Nov 2026) - [arXiv:2611.16255](https://arxiv.org/abs/2611.16255v1)
 - **PARDIG: Global Precipitation Estimates Learned from Sparse Satellite Observations** (Nov 2026) - [arXiv:2611.13941](https://arxiv.org/abs/2611.13941v1)
 - **RainFlow: Flow Matching for Infrared-Only Quantitative Precipitation Estimation** (Nov 2026) - [arXiv:2611.09663](https://arxiv.org/abs/2611.09663v1)
@@ -1554,8 +1566,13 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (223)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (228)</summary>
 
+- **Learning Calibrated and Samplable Predictive Distributions of Surface-Ocean $Δp$CO$_2$ Using Tabular Diffusion Models** (Nov 2026) - [arXiv:2611.21769](https://arxiv.org/abs/2611.21769v1)
+- **Physics-Spawned Neural Integration of Rotating Shallow-Water Dynamics** (Nov 2026) - [arXiv:2611.20054](https://arxiv.org/abs/2611.20054v1)
+- **Spatiotemporal Reconstruction of Auroral Precipitations with Neural Fields** (Nov 2026) - [arXiv:2611.19757](https://arxiv.org/abs/2611.19757v1)
+- **TyphoonWorld: A Residual Token World Model for Probabilistic Forecasting of Typhoon Imagery** (Nov 2026) - [arXiv:2611.18740](https://arxiv.org/abs/2611.18740v1)
+- **Activation Steering the Nan-Shan in Typhoon** (Nov 2026) - [arXiv:2611.17768](https://arxiv.org/abs/2611.17768v1)
 - **Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network** (Nov 2026) - [arXiv:2611.16322](https://arxiv.org/abs/2611.16322v1)
 - **Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities** (Nov 2026) - [arXiv:2611.03326](https://arxiv.org/abs/2611.03326v1)
 - **Forecasting Visitor Demand from Open AI-Camera Counts and Weather: Lessons from Japan for Saudi Heritage Sites** (Nov 2026) - [arXiv:2611.01033](https://arxiv.org/abs/2611.01033v1)

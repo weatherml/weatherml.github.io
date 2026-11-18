@@ -8,11 +8,50 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">109 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">112 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### GPROF V08: Improving Satellite Precipitation Estimates Across a Heterogeneous Constellation of Passive-Microwave Sensors { #2611.19978 }
+
+    *Simon Pfreundschuh, Paula J. Brown, Christian D. Kummerow* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.19978">Precipitation estimates from the passive microwave observations (PMW) of the Global Precipitation Measurements (GPM) mission serve a wide range of scientific, societal, and economic applications. The...</span><span class="abstract-full" id="full-2611.19978" hidden>Precipitation estimates from the passive microwave observations (PMW) of the Global Precipitation Measurements (GPM) mission serve a wide range of scientific, societal, and economic applications. The Goddard Profiling Algorithm (GPROF) is the operational retrieval used to produce the precipitation estimates for all GPM PMW sensors. This study presents the implementation GPROF V08 -- the most recent version of GPROF and a major update aimed at improving the accuracy of precipitation estimates from the GPM constellation.   GPROF V08 replaces the conventional Bayesian scheme used by earlier GPROF versions by a convolutional neural network (CNN). The first part of this two-part study described a novel ML framework for generating synthetic observations required for training CNN retrievals for all GPM sensors. This second part describes the final, operational implementation, which adds a second finetuning stage to the training.Retrievals from the new GPROF V08 algorithm for all principal GPM sensors are validated against reference precipitation estimates from various sources. Our results show that, while the magnitude of improvements vary by sensor and surface type, they are robust across sensors and metrics and can be as high as 40 % for the linear correlation coefficient for precipitation estimates from SSMIS and ATMS over ocean compared to combined radar and radiometer retrievals from GPM.   While some challenges remain -- such as an increased sensitivity to sensor degradation and the persistence of climatological biases, which remain of the same order as for GPROF V07 -- GPROF V08 constitutes a substantial advancement in spaceborne precipitation monitoring. Since the improvements are robust across all sensor of the constellation, the update is expected to improve the full record of GPM precipitation estimates and thus benefit a wide range of downstream datasets and applications.</span> <span class="abstract-toggle" data-id="2611.19978">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.19978v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.19978v1) · [:material-content-copy: BibTeX](../../bibtex/2611.19978.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### Towards GPROF V08: A Machine-Learning Framework for Simulating Passive Microwave Observations of Precipitation { #2611.19966 }
+
+    *Simon Pfreundschuh, Christian D. Kummerow, Paula J. Brown* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.19966">Spatially resolved precipitation retrievals based on convolutional neural networks (CNNs) can improve precipitation estimates from passive microwave (PMW) observations and will be used to implement...</span><span class="abstract-full" id="full-2611.19966" hidden>Spatially resolved precipitation retrievals based on convolutional neural networks (CNNs) can improve precipitation estimates from passive microwave (PMW) observations and will be used to implement the next operational PMW retrieval algorithm for the Global Precipitation Measurement (GPM) mission. However, the conventional radiative transfer simulations used to extend the retrieval algorithm to the various sensors of the GPM constellation do not provide the spatial coverage required to train CNN-based retrievals.   To address this, we introduce a machine-learning-based simulation framework that enables the training of the CNN-based GPROF-NN 3D retrieval algorithm for the full GPM constellation. At the core of this framework is Satformer, a new neural-network architecture that can translate PMW observations between any pair of GPM sensors. The resulting synthetic observations exhibit lower errors than conventional radiative transfer simulations and lead to more accurate precipitation retrievals when used to train GPROF-NN precipitation retrievals. We further demonstrate the applicability of the framework to new instruments by developing GPROF-NN retrievals for the Microwave Imager aboard the Weather System Follow-on Microwave satellite. While GPROF-NN retrievals based on the new simulation framework achieve lower instantaneous retrieval errors and higher correlations compared to independent reference data than conventional retrievals, residual simulation errors can introduce systematic biases in the resulting retrievals.   The proposed simulation framework provides a key component for extending GPROF-NN to the full GPM constellation as part of the upcoming operational GPROF V08 retrieval algorithm. The results demonstrate the potential of machine-learning-based simulations to support spatially resolved precipitation retrievals across heterogeneous satellite constellations.</span> <span class="abstract-toggle" data-id="2611.19966">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.19966v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.19966v1) · [:material-content-copy: BibTeX](../../bibtex/2611.19966.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### WeatherDreamer: Learning a World Model from Multimodal Earth Observations { #2611.18393 }
+
+    *Kate Duffy, Elise Penn, Tristan Ballard, August Posch, Thomas J. Vandal* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.18393">Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are...</span><span class="abstract-full" id="full-2611.18393" hidden>Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are typically updated every six hours. Observation-to-observation models avoid this dependence, but most omit the recursive filtering cycle that lets DA systems carry a background state through sparse, irregular observations. We introduce WeatherDreamer, a world model that learns this cycle end-to-end from 18 global observing systems, without reanalysis. It infers a latent state from observations, carries it forward hour by hour with learned dynamics, corrects it each hour with new observations, and can predict what any of its observing systems would measure at any location. At held-out stations, its ensembles beat NOAA's Global Ensemble Forecast System (GEFS) for temperature, dew point and wind out to 12 h and are better calibrated than GEFS and the ECMWF ensemble. Precipitation, cloud-top height and solar irradiance, never inputs at inference, are inferred with skill matching or exceeding operational products at short leads. Against the first guess of NOAA's Gridpoint Statistical Interpolation (GSI) DA system, WeatherDreamer's short-range departures are within 10% of GSI's at surface stations and within 25% for moisture-sensitive microwave channels, but up to five times larger for temperature-sounding channels. Never given observation errors, its learned update assumes errors close to known instrument and retrieval errors of microwave sounders and scatterometer winds. WeatherDreamer also separates viewing geometry from atmospheric state, recovering 83-96% of observed limb darkening and producing seamless nadir-view imagery. Producing an hourly global analysis in about 1.5 minutes on one GPU, WeatherDreamer shows that assimilation and forecasting can be learned together directly from observations.</span> <span class="abstract-toggle" data-id="2611.18393">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.18393v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.18393v1) · [:material-content-copy: BibTeX](../../bibtex/2611.18393.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
+    { .paper-tags }
 
 -   #### HybridCT: ML Accelerated Tomography for Climate Relevant 3D Cloud Observations { #2611.16255 }
 
@@ -354,39 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### SIMBA: ABidirectional Retrieval Forward Simulation Framework for Modeling FY-4A GIIRS Hyperspectral Infrared Radiances Toward NWP Applications { #2606.19943 }
-
-    *Jingdong Shen, Fu Wang*, Qifeng Lu, Hao Huang, Chunqiang Wu, Chi Yang, Xiaofang Liu* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.19943">Hyperspectral infrared observations are an important data source for numerical weather prediction (NWP) because they provide rich information on the vertical structure of atmospheric temperature and...</span><span class="abstract-full" id="full-2606.19943" hidden>Hyperspectral infrared observations are an important data source for numerical weather prediction (NWP) because they provide rich information on the vertical structure of atmospheric temperature and humidity. However, most existing deep learning methods mainly focus on one-way retrieval from radiances to atmospheric profiles, while the reverse radiance simulation process and the consistency between atmospheric state space and radiance observation space are insufficiently considered. In this study, we propose SIMBA, a unified bidirectional retrieval-forward simulation framework for FY-4A GIIRS hyperspectral infrared radiance modeling toward NWP applications. The framework jointly performs atmospheric profile retrieval and radiance reconstruction, introduces a cycle-consistency constraint to strengthen the coupling between the two processes, and employs a bidirectional Mamba state-space module to capture long-range dependencies along pressure levels. Using collocated FY-4A GIIRS observations and ERA5 reanalysis data, the proposed method is evaluated for temperature retrieval, specific humidity retrieval, long-wave radiance reconstruction, and medium-wave radiance reconstruction. Experimental results show that SIMBA outperforms several representative deep learning baselines across both retrieval and reconstruction tasks, while ablation experiments confirm the contribution of the bidirectional design and cycle-consistency mechanism. These results demonstrate that the proposed framework is effective for joint atmospheric profile retrieval and hyperspectral infrared radiance modeling, and suggest potential for future Jacobian-related analysis and NWP-oriented extensions.</span> <span class="abstract-toggle" data-id="2606.19943">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.19943v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.19943v1) · [:material-content-copy: BibTeX](../../bibtex/2606.19943.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Urban Heat MiniCubes: An AI-Ready dataset for urban heat research { #2606.11534 }
-
-    *Jonathan Starfeldt, Maria J. Molina, Alexander Kerr, Adam Yang, Thomas R. H. Holmes et al.* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.11534">Urban heat is amplified by impermeable surfaces and heterogeneous built environments, yet street-level variability remains difficult to quantify because multi-sensor observations are rarely available...</span><span class="abstract-full" id="full-2606.11534" hidden>Urban heat is amplified by impermeable surfaces and heterogeneous built environments, yet street-level variability remains difficult to quantify because multi-sensor observations are rarely available in consistent, analysis-ready form at the necessary spatiotemporal scales. We present "Urban Heat MiniCubes," a publicly available, FAIR-oriented dataset designed for machine learning applications in urban heat research. The dataset provides harmonized 90 x 90 km gridded data cubes for 48 cities in the Western Hemisphere spanning 2022-2023, with variables reprojected and collocated to a common grid to reduce preprocessing (e.g., reprojection, resampling, and spatiotemporal alignment). Urban Heat MiniCubes includes two complementary modalities: (i) higher-spatial-resolution, lower-frequency observations from Landsat 8/9 (e.g., surface reflectances) and Sentinel-1 (e.g., synthetic aperture radar backscatter), and (ii) higher-temporal-frequency, coarser observations from GOES-R (e.g., longwave infrared brightness temperatures) and a microwave land surface temperature product. We document variables and metadata and provide technical assessment using inter-variable analyses and autoencoder-based reconstruction-error summaries across pixel classes (e.g., water and cloud). Potential use cases and limitations are also discussed.</span> <span class="abstract-toggle" data-id="2606.11534">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.11534v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.11534v1) · [:material-content-copy: BibTeX](../../bibtex/2606.11534.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Physics-Guided Dual Decoding and Spectral Supervision for Global 3D Hydrometeor Prediction { #2606.08563 }
-
-    *Dandan Chen, Yaqiang Wang* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.08563">While global data-driven models excel at predicting continuous atmospheric variables, three-dimensional hydrometeor forecasting remains challenging due to the zero-inflated, long-tailed distributions...</span><span class="abstract-full" id="full-2606.08563" hidden>While global data-driven models excel at predicting continuous atmospheric variables, three-dimensional hydrometeor forecasting remains challenging due to the zero-inflated, long-tailed distributions of these variables. Standard deep learning optimization often yields overly smooth forecasts, attenuating extreme events and spatial textures. We propose PredHydro-Net, a physics-guided dual-decoding framework that mitigates this smoothing. To resolve multi-variable optimization conflicts, it employs a decoupled architecture where macroscopic thermodynamic and dynamic fields unidirectionally modulate hydrometeor generation. By integrating wavelet-based frequency decoupling, spectral amplitude matching, and adversarial training, the model achieves a favorable trade-off between quantitative accuracy and spatial fidelity. In a 72-h global evaluation, PredHydro-Net outperforms both spatiotemporal deep learning baselines (Earthformer and PredRNNv2) and the operational Global Forecast System (GFS) in extreme-event detection and spectral representation. Furthermore, it demonstrates strong climatological consistency with Global Precipitation Measurement (GPM) satellite retrievals. The model reasonably reproduces the three-dimensional cloud structures in extreme weather events, such as Hurricane Ian. Feature attribution confirms its dependence on physical precursors such as relative humidity and wind convergence, offering a robust, physics-informed approach to long-tailed atmospheric prediction.</span> <span class="abstract-toggle" data-id="2606.08563">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.08563v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.08563v1) · [:material-content-copy: BibTeX](../../bibtex/2606.08563.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
     { .paper-tags }
 
 </div>

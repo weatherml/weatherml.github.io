@@ -7,30 +7,251 @@ title: weatherml
 
 A collection of papers on AI for weather forecasting, climate modelling and atmospheric science.
 
-<p class="page-meta" markdown="span">1646 papers · updated 2026-11-15 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
+<p class="page-meta" markdown="span">1663 papers · updated 2026-11-18 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
 
 ## Browse by Topic
 
 <div class="grid cards topics" markdown>
 
--   [Global Models](papers/global-models/index.md) <span class="topic-count">389</span>
+-   [Global Models](papers/global-models/index.md) <span class="topic-count">393</span>
 -   [Regional Models](papers/regional-models/index.md) <span class="topic-count">70</span>
--   [Nowcasting](papers/nowcasting/index.md) <span class="topic-count">109</span>
+-   [Nowcasting](papers/nowcasting/index.md) <span class="topic-count">110</span>
 -   [Downscaling](papers/downscaling/index.md) <span class="topic-count">110</span>
 -   [Post-processing](papers/post-processing/index.md) <span class="topic-count">27</span>
--   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">82</span>
--   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">316</span>
+-   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">83</span>
+-   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">317</span>
 -   [Hydrology](papers/hydrology/index.md) <span class="topic-count">40</span>
--   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">92</span>
+-   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">94</span>
 -   [Air Quality & Composition](papers/air-quality-composition/index.md) <span class="topic-count">79</span>
--   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">109</span>
--   [Other](papers/other/index.md) <span class="topic-count">223</span>
+-   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">112</span>
+-   [Other](papers/other/index.md) <span class="topic-count">228</span>
 
 </div>
 
 ## Recent Additions
 
 <div class="grid cards" markdown data-search-exclude>
+
+-   #### Improving Eddy Detection from Wide-Swath Altimetry with Multimodal Data-Driven Models { #2611.22601 }
+
+    *Matteo Broccoli, Andrea Cipollone, Antonio Bonaduce, Elisa Carli, Florian Le Guillou* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.22601">Physically-based eddy detection algorithms usually rely on hard-coded thresholds and constraints that make the detected structures sensitive to small variations in the underlying fields. One way to...</span><span class="abstract-full" id="full-2611.22601" hidden>Physically-based eddy detection algorithms usually rely on hard-coded thresholds and constraints that make the detected structures sensitive to small variations in the underlying fields. One way to relax such conditions is the use of machine-learning methodologies that transform the full problem into an optimization process. We present a multimodal, multi-task, data-driven eddy detection framework based on a shallow convolutional U-Net, trained to jointly segment eddy structures and reconstruct the co-located spatial sea surface temperature (SST) anomaly using a dynamically-based reconstruction as target. Two model variants are developed: NADIRnet, trained on conventional nadir altimetry, and SWOTnet, trained through a curriculum that incorporates SWOT-enriched maps. Both models achieve high pixel- and structure-wise detection scores against the ground-truth, with most residual disagreement attributable to boundary placement rather than missed or spurious detections. The coupled SST regression task, enforced through boundary-coupling and gradient-matching loss terms, is shown to sharpen and regularise the detected eddy boundaries. Compared to the dynamically-based reference, both models recover a substantially larger and finer eddy population; notably, SWOTnet's higher-resolution training signal transfers to conventional nadir altimetry thanks to the higher-resolution SST channel, detecting more eddies than a nadir-trained model on the same data. The framework further generalises, even without retraining, to altimetry products and processing levels unseen during training, including SWOT L3 wide-swath retrievals and an independent gridded product. Together with its low computational cost, this framework is thus promising for near-real-time operational deployment and further downstream applications.</span> <span class="abstract-toggle" data-id="2611.22601">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.22601v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.22601v1) · [:fontawesome-brands-github: Code](https://github.com/MatteoBroccoli/WATER-ML-Eddy-Detection) · [:material-content-copy: BibTeX](bibtex/2611.22601.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a>
+    { .paper-tags }
+
+-   #### DARWIN: a Geospatial Foundation Model for Marine Intelligence { #2611.22496 }
+
+    *Coen van den Elsen, Laurens Geffert* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.22496">We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct...</span><span class="abstract-full" id="full-2611.22496" hidden>We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical variables, sparse labels, and dynamics that are transient, multi-scale, and non stationary over time. DARWIN adapts a masked-autoencoder backbone to these properties through missingness-aware encoding, expanded spatial and temporal masking, and Fourier-style positional embeddings, and is pretrained on 26 years of global Copernicus reanalysis together with GEBCO bathymetry.   On predicting chlorophyll-a, the pretrained backbone attains the lowest monthly relative error in every month of 2022, outperforming both no-encoder baselines and an identically architected random-init encoder. At 10% of the supervised training data, DARWIN already surpasses the random-init model trained on 100% of the data. Embedding analysis and qualitative reconstructions show that DARWIN captures coherent oceanographic structure rather than memorising input statistics, providing a scalable backbone for downstream marine applications such as anomaly detection, species distribution modelling, and environmental monitoring.</span> <span class="abstract-toggle" data-id="2611.22496">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.22496v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.22496v1) · [:material-content-copy: BibTeX](bibtex/2611.22496.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
+
+-   #### SeasonRainBench: Global Seasonal Precipitation { #2611.22281 }
+
+    *Qiuyan Sun, Mengxuan Chen, Haoyuan Liang, Guowen Li, Zhen Huang, Jianhao Lin, Juepeng Zheng et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.22281">Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and crop failure months in advance. While data-driven methods have made rapid progress in weather and...</span><span class="abstract-full" id="full-2611.22281" hidden>Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and crop failure months in advance. While data-driven methods have made rapid progress in weather and subseasonal forecasting, operational seasonal precipitation prediction still relies on numerical ensemble systems. These systems are computationally expensive and exhibit biases and drift that increase with lead time, motivating more efficient data-driven alternatives. Yet this transition faces three linked challenges: comparing data-driven forecasts with operational ones requires (1) a global benchmark that does not exist, scoring them requires (2) metrics that capture operational priorities beyond anomaly correlation (ACC) and RMSE, and training them must (3) rely on a single, short observational record. To address the first two challenges, we introduce \BenchName, the first such benchmark, covering monthly precipitation forecasts 1--5 months ahead. It pairs global $1^\circ$ satellite precipitation with oceanic and atmospheric predictors, includes seven operational centers, and provides 310,944 simulated months from 52 climate models for training. Beyond standard scores, we introduce two operationally motivated metrics for anomaly strength and monthly rain-belt position. To address the third challenge, we develop \MODEL, which learns from simulations what the record lacks and transfers it to Earth through three modules: SimForced aligns the climate background, SimMemory transfers a history encoder pretrained on simulations, and SimAnalog supplements Earth labels with simulated analog outcomes. Extensive experiments show that \MODEL{} improves ACC, CRPS, anomaly strength, and rain-belt position by 12.0%, 3.6%, 2.9%, and 0.3% over the strongest operational or data-driven model, opening a path from simulated worlds to Earth system prediction.</span> <span class="abstract-toggle" data-id="2611.22281">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.22281v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.22281v1) · [:material-content-copy: BibTeX](bibtex/2611.22281.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
+
+-   #### Learning Calibrated and Samplable Predictive Distributions of Surface-Ocean $Δp$CO$_2$ Using Tabular Diffusion Models { #2611.21769 }
+
+    *Gabriele Accarino, Mohammad M. Amirian, Thea H. Heimdal, Amanda R. Fay, Galen A. McKinley et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.21769">The ocean absorbs almost 30% of anthropogenic CO$_2$ emissions, but quantifying this sink requires estimating surface-ocean CO$_2$ from observations that are sparse in space and time. Most existing...</span><span class="abstract-full" id="full-2611.21769" hidden>The ocean absorbs almost 30% of anthropogenic CO$_2$ emissions, but quantifying this sink requires estimating surface-ocean CO$_2$ from observations that are sparse in space and time. Most existing machine-learning estimates of this field are deterministic, giving a single value per grid point, with uncertainty approximated post hoc via residuals, ensembles, or prescribed distributions. We instead learn a conditional predictive distribution for each observation: using Treeffuser, a conditional diffusion model with gradient-boosted-tree score functions, we estimate the full predictive distribution of $Δp$CO$_2$ (the sea-air $p$CO$_2$ difference) from 13 environmental, spatial, and temporal predictors. On a held-out SOCAT test set, Treeffuser attains the lowest continuous ranked probability score among the uncertainty-quantification methods evaluated (8.229 $μ$atm) and the coverage closest to the nominal 68% / 95% levels (0.686 / 0.930), while retaining point-prediction skill comparable to a deterministic XGBoost baseline (RMSE 18.4 vs. 17.7 $μ$atm; $R^2$ 0.77 vs. 0.79). These results show that conditional diffusion can provide well-calibrated, observation-level uncertainties while largely preserving point-prediction skill. Because Treeffuser is generative, its samples can support probabilistic analyses of $Δp$CO$_2$; extending this to spatially coherent field reconstruction will require modeling dependence across grid cells and evaluation on spatially held-out data.</span> <span class="abstract-toggle" data-id="2611.21769">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.21769v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.21769v1) · [:material-content-copy: BibTeX](bibtex/2611.21769.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction { #2611.21602 }
+
+    *Ilia Azizi, Frederick Iat-Hin Tam, Marc-Olivier Boldi, Valérie Chavez-Demoulin, Tom Beucler* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.21602">The National Hurricane Center routinely releases Tropical Cyclone Discussions that offer insights into its tropical cyclone forecasts. This study examines the added value of these discussions for...</span><span class="abstract-full" id="full-2611.21602" hidden>The National Hurricane Center routinely releases Tropical Cyclone Discussions that offer insights into its tropical cyclone forecasts. This study examines the added value of these discussions for intensity forecasting beyond a set of numerical predictors. For 637 Atlantic and eastern North Pacific tropical cyclones from the 2002-2023 hurricane seasons, we analyze the discussion text and its combination with 13 hurricane environmental predictors from SHIPS and ERA5 10-meter wind fields, for forecasting intensity changes at lead times of 24 to 120 hours using three modeling methods. In one approach, an end-to-end deep learning framework for the text shows that the discussions alone offer comparable value for 24-hour intensity forecasts to the SHIPS predictors. Adding discussion information to the SHIPS predictors in an ensemble of five such models reduces the mean absolute error of 24-hour maximum sustained wind forecasts for 2022-2023 cyclones from 9.89 to 8.90 kt, with a confidence interval that excludes zero when whole storms are resampled. The ERA5 wind fields have a minor effect on mean absolute error in wind predictions, and model rankings differ across predicted variables, lead times and model types. We provide prediction intervals for these forecasts, whose coverage falls below the 90% target during rapid intensification. Analysis of the text shows that words related to intensity and intensity change (such as intensify, weaken, eyewall and category) are important for the model predictions. This retrospective study shows the added value of the forecasters' discussions and suggests that multi-modal learning can help understand the predictive contribution of expert human judgment. The reanalysis data differ from real-time analyses, and the discussions are issued at least three hours after the valid time of the other inputs, so these results should not be interpreted operationally.</span> <span class="abstract-toggle" data-id="2611.21602">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.21602v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.21602v1) · [:material-content-copy: BibTeX](bibtex/2611.21602.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
+-   #### Run it Back: Autoregression vs. Video Diffusion for Final-Conditioned Weather Trajectories { #2611.21521 }
+
+    *Jerry Lin, Elizabeth A. Barnes* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.21521">Low-likelihood, high-impact extremes are projected to increase in severity and frequency in a warming climate. Sampling the precursors that lead to these events traditionally requires massive...</span><span class="abstract-full" id="full-2611.21521" hidden>Low-likelihood, high-impact extremes are projected to increase in severity and frequency in a warming climate. Sampling the precursors that lead to these events traditionally requires massive ensembles that scale poorly with lead time and rarity, and typical rare-event sampling and ensemble-boosting methods do not show how a single extreme might arise from diverse synoptic precursors. Recently, Lin et al.\ (2026) showed this is possible with final-conditioned 66-hour trajectories (trajectories constrained to end at an observed state) from cBottle-video, a pre-trained, off-the-shelf video diffusion climate emulator not explicitly fine-tuned for this task (Brenowitz et al., 2025). However, its ensembles were underdispersed and geostrophically inconsistent, and it reproduces conditioned frames only approximately, hindering autoregressive rollout. Here, we train Rewind-AR, a backward-in-time probabilistic autoregressive model with a FourCastNet~3 backbone (Bonev et al., 2025), and generate final-conditioned ensembles for the same three cases: the 2021 Pacific Northwest heatwave, Hurricane Ian, and Superstorm Sandy (in the Supplementary Information). The leading modes of Rewind-AR's antecedent 500 hPa geopotential height explain far more of the across-member variance than cBottle-video's for both hurricane position and heatwave surface temperature, and Rewind-AR better reproduces the day-over-day heatwave intensification observed in ERA5. Finally, geostrophic inconsistencies close to the conditioning frame seen in cBottle-video are not reproduced by Rewind-AR. Nevertheless, up to 22% of Rewind-AR members become numerically unstable within 66 hours, so improving rollout physical consistency and stability over long lead times is a natural next step.</span> <span class="abstract-toggle" data-id="2611.21521">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.21521v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.21521v1) · [:material-content-copy: BibTeX](bibtex/2611.21521.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### Improving Tropical Cyclone Forecasts through Objective Ensemble Track-Error Reduction { #2611.20251 }
+
+    *Shuochen Wang, Mark S. Allen, Auroop R. Ganguly* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.20251">Accurate tropical cyclone (TC) track guidance is essential for warnings, evacuation planning, and risk communication, but outlying members and distinct track scenarios can degrade raw ensemble...</span><span class="abstract-full" id="full-2611.20251" hidden>Accurate tropical cyclone (TC) track guidance is essential for warnings, evacuation planning, and risk communication, but outlying members and distinct track scenarios can degrade raw ensemble forecasts. Statistical and machine-learning (ML) methods proposed to improve ensemble guidance are difficult to compare because previous studies often use different forecast systems, basins, periods, and verification methods. Using a common verification framework, this study compares six objective methods (four statistical trimming and two ML methods) with the full ensemble mean for 138 TCs forecast by GEFS, MOGREPS-G, and IFS during 2016-2024. Dynamic trimming (DT) is the most consistent statistical method, reducing mean total track error by 8.0%, 13.4%, and 16.1% at short, medium, and long ranges. Its largest benefits occur in high-spread cases, where it can reach 70% of the low-error bound. Short-lead-error trimming (SLET) provides useful delayed guidance after early observations become available, but its improvement decreases with lead time. Regression-mixture clustering (RC) shows potential in low-spread cases and provides the largest improvement over the control run. The gradient boosted tree (GBT) produces the largest medium-range improvement and exceeds the theoretical trimming bound, suggesting strong potential, particularly when the observed track is poorly represented by the ensemble family. However, its 12.8% short-range degradation and gains concentrated in a small subset of cases indicate overcorrection when the ensemble mean is already accurate, highlighting the need for additional constraints. These results provide a consistent basis for using objective error-reduction methods to strengthen TC track guidance for operational decision-making.</span> <span class="abstract-toggle" data-id="2611.20251">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.20251v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.20251v1) · [:material-content-copy: BibTeX](bibtex/2611.20251.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs { #2611.20114 }
+
+    *Juyeon Kim, Chaeyeon Yi, Yun Am Seo* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.20114">Frost protection requires local warnings where leaf-sensor inputs are unavailable. In the frost literature we surveyed, physics entered machine-learning models through inputs, numerical-model...</span><span class="abstract-full" id="full-2611.20114" hidden>Frost protection requires local warnings where leaf-sensor inputs are unavailable. In the frost literature we surveyed, physics entered machine-learning models through inputs, numerical-model coupling, or losses, rather than model structure. We develop a transformer-compatible module that embeds leaf energy-balance physics in freezing-probability forecasts: an energy-balance temperature reference and a learned residual predict leaf temperature, which drives a multiplicative gate imposing a temperature-dependent probability cap. We mathematically prove conditional monotonicity and an alarm boundary, and test whether placing the same information in the output pathway or in attention yields different benefits. We evaluated 12 hourly leads at 19 Korean stations over five frost seasons, with and without leaf-sensor inputs. In the 2025-2026 hold-out season without these inputs, our time-token transformer (PET-E) achieved a lead-mean critical success index (CSI) of 0.516 versus 0.478 for fixed-configuration, joint-lead LightGBM, with significant gains at all 12 leads, and the fraction of alarms at observed leaf temperatures of at least 2 degrees C fell from 0.087 to 0.051 relative to the unmodified backbone. Across the hold-out and a retrospective 2024-2025 evaluation, the module reduced Brier scores and warm-surface alarm fractions in both the time-token transformer and iTransformer, with no significant CSI decrease at any lead. At held-out stations without static or leaf-sensor inputs, both module-equipped backbones exceeded LightGBM at all 12 leads (CSI 0.468 and 0.467 versus 0.437). In the time-token backbone, the temperature pathway reduced this alarm fraction in all four settings, whereas the attention prior increased CSI in three. These findings link an explicit temperature-dependent probability cap to improved forecasts and distinguish output-side from attention-based embedding.</span> <span class="abstract-toggle" data-id="2611.20114">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.20114v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.20114v1) · [:material-content-copy: BibTeX](bibtex/2611.20114.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
+    { .paper-tags }
+
+-   #### Physics-Spawned Neural Integration of Rotating Shallow-Water Dynamics { #2611.20054 }
+
+    *Kaushal Gianchandani, Luka Todorovic, Sai Ravela* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.20054">Equation-derived neural integration can execute prescribed dynamics without training, while informative ensemble learning can estimate uncertain parameters and identify governing interactions without...</span><span class="abstract-full" id="full-2611.20054" hidden>Equation-derived neural integration can execute prescribed dynamics without training, while informative ensemble learning can estimate uncertain parameters and identify governing interactions without requiring differentiability. Together, these approaches motivate Physics-Spawned Informative Networks ($Φ$SpIN), a framework for prescribed and adaptive hybrid dynamical systems. As a first step toward flood modeling applications, we present $Φ$SpIN-SW, its prescribed-physics realization for the rotating shallow-water equations. Compatible C-grid operators on spherical Voronoi meshes define a computational graph that retains non-polynomial operations and advances the state through recurrent neural integration compiled with JAX. Analytical benchmarks characterize numerical errors, and global and coastal experiments closely reproduce reference solutions generated using the Model Prediction Across Scales (MPAS) model. At approximately 14~km global resolution, A100, H200 and B200 GPUs attain 9-, 19- and 34-fold higher timestep throughput than a 96-core MPAS-SW CPU reference under matched workloads. These results extend training-free neural integration beyond polynomial dynamics to complex geophysical simulation, establishing a computational foundation for subsequent adjoint-free ensemble estimation of physical and neural parameters and informative adaptation of operator structure.</span> <span class="abstract-toggle" data-id="2611.20054">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.20054v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.20054v1) · [:material-content-copy: BibTeX](bibtex/2611.20054.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### GPROF V08: Improving Satellite Precipitation Estimates Across a Heterogeneous Constellation of Passive-Microwave Sensors { #2611.19978 }
+
+    *Simon Pfreundschuh, Paula J. Brown, Christian D. Kummerow* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.19978">Precipitation estimates from the passive microwave observations (PMW) of the Global Precipitation Measurements (GPM) mission serve a wide range of scientific, societal, and economic applications. The...</span><span class="abstract-full" id="full-2611.19978" hidden>Precipitation estimates from the passive microwave observations (PMW) of the Global Precipitation Measurements (GPM) mission serve a wide range of scientific, societal, and economic applications. The Goddard Profiling Algorithm (GPROF) is the operational retrieval used to produce the precipitation estimates for all GPM PMW sensors. This study presents the implementation GPROF V08 -- the most recent version of GPROF and a major update aimed at improving the accuracy of precipitation estimates from the GPM constellation.   GPROF V08 replaces the conventional Bayesian scheme used by earlier GPROF versions by a convolutional neural network (CNN). The first part of this two-part study described a novel ML framework for generating synthetic observations required for training CNN retrievals for all GPM sensors. This second part describes the final, operational implementation, which adds a second finetuning stage to the training.Retrievals from the new GPROF V08 algorithm for all principal GPM sensors are validated against reference precipitation estimates from various sources. Our results show that, while the magnitude of improvements vary by sensor and surface type, they are robust across sensors and metrics and can be as high as 40 % for the linear correlation coefficient for precipitation estimates from SSMIS and ATMS over ocean compared to combined radar and radiometer retrievals from GPM.   While some challenges remain -- such as an increased sensitivity to sensor degradation and the persistence of climatological biases, which remain of the same order as for GPROF V07 -- GPROF V08 constitutes a substantial advancement in spaceborne precipitation monitoring. Since the improvements are robust across all sensor of the constellation, the update is expected to improve the full record of GPM precipitation estimates and thus benefit a wide range of downstream datasets and applications.</span> <span class="abstract-toggle" data-id="2611.19978">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.19978v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.19978v1) · [:material-content-copy: BibTeX](bibtex/2611.19978.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### Towards GPROF V08: A Machine-Learning Framework for Simulating Passive Microwave Observations of Precipitation { #2611.19966 }
+
+    *Simon Pfreundschuh, Christian D. Kummerow, Paula J. Brown* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.19966">Spatially resolved precipitation retrievals based on convolutional neural networks (CNNs) can improve precipitation estimates from passive microwave (PMW) observations and will be used to implement...</span><span class="abstract-full" id="full-2611.19966" hidden>Spatially resolved precipitation retrievals based on convolutional neural networks (CNNs) can improve precipitation estimates from passive microwave (PMW) observations and will be used to implement the next operational PMW retrieval algorithm for the Global Precipitation Measurement (GPM) mission. However, the conventional radiative transfer simulations used to extend the retrieval algorithm to the various sensors of the GPM constellation do not provide the spatial coverage required to train CNN-based retrievals.   To address this, we introduce a machine-learning-based simulation framework that enables the training of the CNN-based GPROF-NN 3D retrieval algorithm for the full GPM constellation. At the core of this framework is Satformer, a new neural-network architecture that can translate PMW observations between any pair of GPM sensors. The resulting synthetic observations exhibit lower errors than conventional radiative transfer simulations and lead to more accurate precipitation retrievals when used to train GPROF-NN precipitation retrievals. We further demonstrate the applicability of the framework to new instruments by developing GPROF-NN retrievals for the Microwave Imager aboard the Weather System Follow-on Microwave satellite. While GPROF-NN retrievals based on the new simulation framework achieve lower instantaneous retrieval errors and higher correlations compared to independent reference data than conventional retrievals, residual simulation errors can introduce systematic biases in the resulting retrievals.   The proposed simulation framework provides a key component for extending GPROF-NN to the full GPM constellation as part of the upcoming operational GPROF V08 retrieval algorithm. The results demonstrate the potential of machine-learning-based simulations to support spatially resolved precipitation retrievals across heterogeneous satellite constellations.</span> <span class="abstract-toggle" data-id="2611.19966">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.19966v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.19966v1) · [:material-content-copy: BibTeX](bibtex/2611.19966.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### Spatiotemporal Reconstruction of Auroral Precipitations with Neural Fields { #2611.19757 }
+
+    *Nazar Misyats, Mizuki Fukizawa, Yoshimasa Tanaka, Satoshi Ikehata* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.19757">Auroras provide remote optical observations of energetic electrons precipitating into the upper atmosphere, and whose energy distribution encodes key information about large scale magnetospheric...</span><span class="abstract-full" id="full-2611.19757" hidden>Auroras provide remote optical observations of energetic electrons precipitating into the upper atmosphere, and whose energy distribution encodes key information about large scale magnetospheric processes. Recovering the underlying electron precipitation field from ground-based camera images of auroras remains a challenging inverse problem. Existing auroral tomography techniques are often limited to simplified static settings, discrete spatial and energy grids, or strong assumptions on the electron energy spectrum. We propose to model the dynamic auroral electron precipitation field via a temporally conditioned neural network. The state of the precipitation field at each frame is represented by a per-frame latent code driven by learned discrete dynamics. A shared decoder maps horizontal positions and latent states to electron energy spectra. The predicted flux is converted to multi-wavelength volume emission rates and rendered into camera images accounting for delayed emissions. We evaluate the method on synthetic dynamic auroral sequences and real multi-view auroral videos, showing that the proposed representation produces temporally coherent precipitation reconstructions and image projections consistent with the observations.</span> <span class="abstract-toggle" data-id="2611.19757">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.19757v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.19757v1) · [:material-content-copy: BibTeX](bibtex/2611.19757.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### TyphoonWorld: A Residual Token World Model for Probabilistic Forecasting of Typhoon Imagery { #2611.18740 }
+
+    *Xiaoyu Chen, Tianyi Li, Xuanyi Zhang* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.18740">A satellite forecast of a typhoon should give a low-error picture of the next two days, together with an ensemble whose members are coherent fields and whose spread responds to the storm at hand. A...</span><span class="abstract-full" id="full-2611.18740" hidden>A satellite forecast of a typhoon should give a low-error picture of the next two days, together with an ensemble whose members are coherent fields and whose spread responds to the storm at hand. A small direct regression network already gives the lowest squared error on held-out storms, so a generative model has to earn its cost through the part of the future that the regression smooths away. We present TyphoonWorld, a discrete-token world model that generates only that part. Conditioned on tokens of the regression forecast, the latest frames and the best-track state at forecast time, it samples residual fields lead by lead, and members add these residuals to the regression center. We compare it under one protocol with per-pixel Gaussian networks, a diffusion model of the same residuals, residuals from other storms and an unconditional token world model, on 276 forecast windows from 46 held-out storms of Digital Typhoon. TyphoonWorld matches the squared error of the regression, lowers the CRPS of the area colder than 220 K, a direct measure of deep convection, by 14 to 39% against every other ensemble, and ties its spread to forecast error as closely as the Gaussian network, with a correlation of 0.78 across windows. It uses 56% of the parameters of the unconditional world model.</span> <span class="abstract-toggle" data-id="2611.18740">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.18740v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.18740v1) · [:material-content-copy: BibTeX](bibtex/2611.18740.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### WeatherDreamer: Learning a World Model from Multimodal Earth Observations { #2611.18393 }
+
+    *Kate Duffy, Elise Penn, Tristan Ballard, August Posch, Thomas J. Vandal* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.18393">Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are...</span><span class="abstract-full" id="full-2611.18393" hidden>Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are typically updated every six hours. Observation-to-observation models avoid this dependence, but most omit the recursive filtering cycle that lets DA systems carry a background state through sparse, irregular observations. We introduce WeatherDreamer, a world model that learns this cycle end-to-end from 18 global observing systems, without reanalysis. It infers a latent state from observations, carries it forward hour by hour with learned dynamics, corrects it each hour with new observations, and can predict what any of its observing systems would measure at any location. At held-out stations, its ensembles beat NOAA's Global Ensemble Forecast System (GEFS) for temperature, dew point and wind out to 12 h and are better calibrated than GEFS and the ECMWF ensemble. Precipitation, cloud-top height and solar irradiance, never inputs at inference, are inferred with skill matching or exceeding operational products at short leads. Against the first guess of NOAA's Gridpoint Statistical Interpolation (GSI) DA system, WeatherDreamer's short-range departures are within 10% of GSI's at surface stations and within 25% for moisture-sensitive microwave channels, but up to five times larger for temperature-sounding channels. Never given observation errors, its learned update assumes errors close to known instrument and retrieval errors of microwave sounders and scatterometer winds. WeatherDreamer also separates viewing geometry from atmospheric state, recovering 83-96% of observed limb darkening and producing seamless nadir-view imagery. Producing an hourly global analysis in about 1.5 minutes on one GPU, WeatherDreamer shows that assimilation and forecasting can be learned together directly from observations.</span> <span class="abstract-toggle" data-id="2611.18393">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.18393v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.18393v1) · [:material-content-copy: BibTeX](bibtex/2611.18393.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=energy" data-tag="energy">Energy</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a>
+    { .paper-tags }
+
+-   #### Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents { #2611.17854 }
+
+    *Bo Qin, Zeyun Yang, Qiaofei Xue, Yanan Ding, Jinyu Wang, Chaopeng Ji, Shijin Yuan, Bin Mu et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.17854">The predictability of the El Niño-Southern Oscillation (ENSO) has historically been linked to large-scale errors in models' initial conditions such as heat content and surface wind stress. Here we...</span><span class="abstract-full" id="full-2611.17854" hidden>The predictability of the El Niño-Southern Oscillation (ENSO) has historically been linked to large-scale errors in models' initial conditions such as heat content and surface wind stress. Here we demonstrate that these slowly evolving errors may ultimately originate from mesoscale errors in initial oceanic states that are common in current models and ocean observation systems. This hidden source of ENSO forecast uncertainty, in terms of mesoscale ocean-current errors, is convincingly exposed by the conditional nonlinear optimal perturbation (CNOP) method applied to a differentiable ocean AI model. The CNOP-identified most influential current errors are strongly event-dependent. For the 1997/98 El Niño, the initial current errors in the eastern Pacific results in the largest forecast error through locally suppressing original subsurface warming. For the 2015/16 event, the dominate error originates from the western Pacific, which reorganizes upper ocean temperature structure and affects the eastern Pacific through the equatorial waveguide. Further analysis reveals that these current errors perturb mesoscale eddy count and eddy kinetic energy triggering large-scale temperature errors that hinder El Niño development. The timing of the maximum growth rate of the obtained CNOP error is well aligned with the spring predictability barrier of ENSO, and the error structures are reflected in simulated analysis errors caused by unresolved mesoscale currents. These findings extend the potential source of ENSO predictability beyond large-scale thermal signals, reveal for the first time an uncharted route of ENSO forecast failure, and provide an important physical basis for targeted ocean observations and data assimilation in the future.</span> <span class="abstract-toggle" data-id="2611.17854">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.17854v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.17854v1) · [:material-content-copy: BibTeX](bibtex/2611.17854.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
+
+-   #### Activation Steering the Nan-Shan in Typhoon { #2611.17768 }
+
+    *Megan Wei, Damon Pham, John Cayley, Ellie Pavlick* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.17768">Typhoon is an audiovisual installation based on Joseph Conrad's novella, in which Captain MacWhirr steers the steamer Nan-Shan directly into and through a catastrophic storm. The novella is a study...</span><span class="abstract-full" id="full-2611.17768" hidden>Typhoon is an audiovisual installation based on Joseph Conrad's novella, in which Captain MacWhirr steers the steamer Nan-Shan directly into and through a catastrophic storm. The novella is a study of what happens when the scale of a phenomenon exceeds the practical and conceptual frameworks available to comprehend it and of the paralysis that sometimes follows a demand for action in such overwhelming circumstances. We chose the text of Typhoon to reflect on human culture's current AI moment. We prompt a large language model, seeded with Conrad's original language, to feed endlessly on its own output, and explore when and how the text becomes increasingly alien and unwieldy as time progresses, including deviations from the narrative, digressions into the model's own instructions and thinking, and long periods of incoherent rumination. We employ methods from activation steering, including a novel adaptive steering method we introduce, to control the rhythm of the narrative and the model's digressions over long stretches of generation. The simultaneous efficacy and unpredictability of this steering showcases the tension between the perceived interpretability of AI, and the reality of a system that remains outside our comprehension and control.</span> <span class="abstract-toggle" data-id="2611.17768">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.17768v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.17768v1) · [:material-content-copy: BibTeX](bibtex/2611.17768.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
+
+-   #### An AI-enabled high-resolution chlorophyll-a forecasting model that outperforms the operational global biogeochemical system { #2611.17704 }
+
+    *Yong Jiang, Zheng Jiang, Gaowei Zhang, Zengzhou Hao, Suixiang Shi, Chi Zhang, Wei Wang* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.17704">Surface chlorophyll-a concentration is a key indicator of marine phytoplankton variability, and short-term forecasts of its distribution provide advance information for marine ecosystem monitoring...</span><span class="abstract-full" id="full-2611.17704" hidden>Surface chlorophyll-a concentration is a key indicator of marine phytoplankton variability, and short-term forecasts of its distribution provide advance information for marine ecosystem monitoring and management. However, interactions between physical transport and biological processes complicate chlorophyll-a forecasting, and simulating these coupled processes with conventional numerical models imposes substantial computational demands. Here we introduce ChlCast, an AI model that generates daily forecasts of surface chlorophyll-a concentration over a 10-day horizon at approximately 4-km resolution between 60$^\circ$S and 60$^\circ$N. ChlCast combines factorized spatiotemporal convolutions with a multiscale architecture to learn from historical chlorophyll-a fields and climatological information. Compared with the operational 0.25$^\circ$ Copernicus global ocean biogeochemical forecasting system, ChlCast reduces mean absolute error and root mean square error by 70.74% and 47.63%, respectively, against satellite-derived Level-4 chlorophyll-a fields, and by 35.03% and 13.07% against independent BGC-Argo in situ observations. Coastal case studies further show that the 4-km forecasts retain coastal gradients and localized concentration maxima that are weakened by coarse-grid averaging. These results demonstrate the potential of observation-driven deep learning for high-resolution forecasting of surface chlorophyll-a variability at the near-global scale.</span> <span class="abstract-toggle" data-id="2611.17704">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.17704v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.17704v2) · [:material-content-copy: BibTeX](bibtex/2611.17704.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
 
 -   #### Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network { #2611.16322 }
 
@@ -115,218 +336,6 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
-    { .paper-tags }
-
--   #### Discovering Equations for the Thermodynamics of South Asian Monsoon Precipitation { #2611.14401 }
-
-    *Savannah L. Ferretti, Jane W. Baldwin, Michael S. Pritchard, Tom Beucler* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.14401">South Asian monsoon precipitation depends on the thermodynamic structure of the lower troposphere, but how its ingredients combine to shape precipitation remains unclear, partly because this...</span><span class="abstract-full" id="full-2611.14401" hidden>South Asian monsoon precipitation depends on the thermodynamic structure of the lower troposphere, but how its ingredients combine to shape precipitation remains unclear, partly because this dependence is nonlocal in the vertical. We use symbolic distillation, which combines neural networks and symbolic regression, to discover interpretable precipitation equations from 21 years of June-August reanalysis data. Neural networks first learn the vertical thermodynamic structure most relevant to precipitation, condensing each variable into a single interpretable feature not tied to a particular vertical grid. Then, symbolic regression derives closed-form equations from these features and the surface state. Our best equation explains 1.5 times as much precipitation variance as a widely used buoyancy-based diagnostic and recovers about 85% of neural network skill while using about a thousand times fewer parameters. Unlike the buoyancy diagnostic, which adds moisture and instability, the equations treat them as competing controls, with the heaviest precipitation occurring when the lower free troposphere is humid. Over ocean, sensible heating is associated with additional precipitation mainly when near-surface air is warm and moist, improving predicted precipitation and its diurnal cycle. Although the learned features were optimized only for precipitation prediction, the equations largely respond to each feature as expected from convective physics, consistent with the reanalysis. These responses reduce the dependence of monsoon precipitation on the entire vertical column to a few simple, testable constraints that could guide data-driven precipitation models to make them more physically consistent.</span> <span class="abstract-toggle" data-id="2611.14401">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.14401v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.14401v1) · [:material-content-copy: BibTeX](bibtex/2611.14401.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### PARDIG: Global Precipitation Estimates Learned from Sparse Satellite Observations { #2611.13941 }
-
-    *Guy Shalev, Stephan Rasp, Boris Babenko, Andrew El-Kadi, Mohammed Alewi Hassen, Samier Merchant et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.13941">Estimating precipitation at the global scale is vital for Earth system science and disaster response, yet observational coverage and measurement precision remain constrained. Existing solutions...</span><span class="abstract-full" id="full-2611.13941" hidden>Estimating precipitation at the global scale is vital for Earth system science and disaster response, yet observational coverage and measurement precision remain constrained. Existing solutions provide options that trade off desirable traits such as skill, latency, geographical coverage, temporal coverage, and spatial and temporal resolution. We present PARDIG, an artificial intelligence framework based on a spherical graph-mesh transformer architecture that produces near-real-time global precipitation estimates. PARDIG is trained on dense multi-modal inputs, including atmospheric state analyses and multi-spectral geostationary satellite imagery, to predict sparse, high-precision precipitation measurements from spaceborne radar. At inference, the trained model is applied densely across the globe at $0.1^\circ$ spatial and 15-minute temporal resolution, producing complete near-real-time precipitation fields from 2016 to the present, alongside a historical variant extending the record back to 1999. Evaluation against three independent radar networks (over the US, Europe, and Japan) and against over 36,000 surface stations worldwide shows that PARDIG consistently outperforms IMERG V07 (Final and Early), MSWEP V3, ERA5, and HRES across precipitation thresholds and regions, with the largest improvements at extreme intensities. Case studies of extreme precipitation events demonstrate that PARDIG successfully captures their spatial structure and timing. The improvements also extend to forecasting: WeatherNext 3, a global weather model, produces more skillful precipitation forecasts when trained to predict PARDIG. Both the historical and near-real-time PARDIG datasets are openly available under a CC BY 4.0 license.</span> <span class="abstract-toggle" data-id="2611.13941">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.13941v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.13941v1) · [:material-content-copy: BibTeX](bibtex/2611.13941.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data { #2611.13359 }
-
-    *Fedor Buzaev, Dmitry Efremenko, Daria Pugacheva, Fedor Ratnikov, Egor Bugaev, Vladimir Gordin et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.13359">Wind profiles in the atmospheric boundary layer (ABL) drive short-range forecasting and wind-energy siting, yet sparse radiosonde coverage forces practitioners to interpolate them from a handful of...</span><span class="abstract-full" id="full-2611.13359" hidden>Wind profiles in the atmospheric boundary layer (ABL) drive short-range forecasting and wind-energy siting, yet sparse radiosonde coverage forces practitioners to interpolate them from a handful of physical predictors. We benchmark modern tabular learners against analytical parameterizations on 158,097 IGRA soundings. CatBoost, TabM, and FT-Transformer reduce RMSE to 1.3-1.6 m/s, against approximately 3 m/s for power-law and Monin-Obukhov fits; once the predictor set is fixed the three architectures differ by less than 0.05 m/s, so accuracy is driven by predictors rather than architecture. A cohort analysis of within-bin profile dispersion places an empirical floor of approximately 1.77 m/s on any point-wise predictor that uses standard radiosonde features, consistent with prior eddy-viscosity inversions. A one-dimensional Fourier Neural Operator applied as a post-hoc corrector to frozen tabular predictions reduces near-surface RMSE on U.S. stations from 1.5 to 1.2 m/s, while leaving upper-layer error unchanged. Further gains should come from new predictors rather than larger models.</span> <span class="abstract-toggle" data-id="2611.13359">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.13359v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.13359v1) · [:material-content-copy: BibTeX](bibtex/2611.13359.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a>
-    { .paper-tags }
-
--   #### Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation { #2611.12999 }
-
-    *Tianyu Xie, Zhaoliang Zeng, Zhehao Liang, Ke Gui, Xutao Zhang, Yaqiang Wang, Dabo Guan, Huizheng Che* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.12999">Surface shortwave radiation (SWR) can change within minutes as clouds evolve, but operational forecasts often trade spatial detail and update frequency for forecast range. We present a...</span><span class="abstract-full" id="full-2611.12999" hidden>Surface shortwave radiation (SWR) can change within minutes as clouds evolve, but operational forecasts often trade spatial detail and update frequency for forecast range. We present a numerical-weather-prediction-independent, observation-to-forecast framework that converts sequences of Himawari-8 Level-1 multispectral imagery and solar geometry directly into 24 gridded SWR fields at 10-min intervals for the next 4 h. A controlled six-model experiment separates the effects of satellite information from those of temporal self-attention. In the 0-1 h window, the full-multispectral attention model achieves a mean absolute error of 37.9 W/m2 and a root mean square error of 63.7 W/m2, reductions of 21.0% and 19.5% relative to a historical-SWR baseline. Improvements extend across nine subregions and include weaker spatial bias and better structural consistency. Temporal attention does not improve forecasts from historical SWR alone, but becomes effective when supplied with multispectral cloud and thermodynamic signals. Direct multispectral observations therefore provide the precursor information required for high-frequency, spatially resolved SWR nowcasting.</span> <span class="abstract-toggle" data-id="2611.12999">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12999v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12999v1) · [:material-content-copy: BibTeX](bibtex/2611.12999.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### MarsNet: Learning the Martian Atmosphere from Observations Alone { #2611.12787 }
-
-    *Sebastian Mengwall, J. Michael Battalio* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.12787">We present MarsNet, a machine-learned model of the Martian atmosphere trained only on observations. Existing reanalyses assimilate spacecraft retrievals into general circulation models (GCMs), so...</span><span class="abstract-full" id="full-2611.12787" hidden>We present MarsNet, a machine-learned model of the Martian atmosphere trained only on observations. Existing reanalyses assimilate spacecraft retrievals into general circulation models (GCMs), so where observations are sparse their fields largely reflect the model. We therefore use extant reanalyses only for evaluation. MarsNet alternates a two-hour forecast with an update that assimilates the observations of each window, and both steps are learned jointly. Because the Martian record is too sparse for an unrestricted network, learning is confined within a fixed physical structure: the state is in physical units, the forecast uses physical tendencies of fixed form and learned strength, and the update is a bounded Kalman update. MarsNet is trained on Mars Years (MY) 24--31 and evaluated on independent observations. On three seasons of MGS radio-occultation temperatures assimilated by no dataset, MarsNet matches or improves on the three reanalyses in the lowest three scale heights, with a near-surface root-mean-square error (RMSE) of 4.2 K against 4.4--5.4 K, but is less accurate aloft. The model's surface pressures are the most accurate of the four products (RMSE 10 Pa against Curiosity in MY32, compared with 20--46 Pa). On withheld Mars Climate Sounder profiles of MY32, its temperatures beat an observed climatology and persistence, including in ten-sol forecasts without new observations, and its stated uncertainty is close to calibrated. Much of the temperature skill is present before training and appears to come from the structure and tables fitted to the observations, while training mainly improves the surface pressures, at some cost to dust. The model cycles stably through nine Mars years, and the influence of each observation can be traced. Its speed makes experiments on the observing record practical, and it offers an independent reference for GCMs and reanalyses.</span> <span class="abstract-toggle" data-id="2611.12787">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12787v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12787v1) · [:material-content-copy: BibTeX](bibtex/2611.12787.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### One2N: Recursive refinement breaks the resolution barrier for Earth-system AI { #2611.12249 }
-
-    *Yanyan Tan, Xiangjun Tian, Can Wang, Hongqin Zhang, Yinhai Luo, Min Zhao, Zhe Jin, Xingchao Yang et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.12249">Earth-system AI models approach kilometre-scale resolution, but halving grid spacing quadruples the grid-point count and end-to-end training cost. We introduce One2N, a recursive incremental...</span><span class="abstract-full" id="full-2611.12249" hidden>Earth-system AI models approach kilometre-scale resolution, but halving grid spacing quadruples the grid-point count and end-to-end training cost. We introduce One2N, a recursive incremental framework extending a coarse model through $N$ levels of cross-resolution residual correction. At each level the parent is frozen and excluded from backpropagation, so its activations and optimizer states are never retained; only a tier-specific module is trained. A single refinement level on the NeuralGCM-0.7$^\circ$ baseline yields the two-level One2N-0.07$^\circ$, trained on one 80 GB GPU. Against HRES-0.07$^\circ$ and ERA5-0.25$^\circ$ analyses it matches its parent's tropospheric skill while reducing upper-stratospheric errors and resolving finer structure. Tropical-cyclone track errors nearly match the parent's and are lower than Pangu-Weather-0.25$^\circ$ at medium range; RMSE is lower than that model's on 93.46% of common targets. One2N thus turns an existing forecasting system, or an inexpensively trained coarse baseline, into a reusable foundation for high-resolution development, breaking the resolution barrier.</span> <span class="abstract-toggle" data-id="2611.12249">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12249v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12249v1) · [:material-content-copy: BibTeX](bibtex/2611.12249.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a>
-    { .paper-tags }
-
--   #### Perils and opportunities of AI for public climate services { #2611.12106 }
-
-    *Francesca Larosa, Sandro Calmanti, Matteo De Felice, Marcello Petitta* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.12106">The rapid integration of artificial intelligence (AI), particularly generative and machine-learning systems, in climate services development and provision is transforming how climate information is...</span><span class="abstract-full" id="full-2611.12106" hidden>The rapid integration of artificial intelligence (AI), particularly generative and machine-learning systems, in climate services development and provision is transforming how climate information is produced, accessed, and interpreted. AI-enabled climate services offer significant opportunities for process automation, optimisation, tailoring, and the translation of complex climate data into actionable knowledge for diverse users. However, the growing reliance on privately controlled algorithms, data infrastructures, and computing facilities raises critical concerns related to governance, transparency, equity and economic sustainability, among others. While the technical architecture of climate services increasingly relies on advanced machine learning and large-scale climate models, their legitimacy as public services may be weakened in the absence of arrangements that prioritise public value and long-lasting societal benefit over profit maximisation. The tension between the public mandate of climate services and the private nature of AI infrastructure challenges traditional notions of openness. Using a consensus-based elicitation method coupled with the PESTLE framework, we analyse the political, economic, social, technological, legal, and environmental risks and opportunities shaping the co-production value chain of AI-enabled climate services. We draw policy-relevant conclusions for data, model and infrastructure supporting the next generation of upstream and downstream climate services as critical applications for society. Our work presents potential and plausible challenges and benefits for a pan-European, decentralised public climate service built on sovereign AI infrastructure and open governance principles.</span> <span class="abstract-toggle" data-id="2611.12106">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.12106v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.12106v1) · [:material-content-copy: BibTeX](bibtex/2611.12106.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Ensemble Covariance Propagation with Machine Learning Weather Prediction Models in a Realistic Data Assimilation System { #2611.11918 }
-
-    *Simon Toedtli, David Ahijevych, Wei Wang, Chris Snyder* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.11918">Integrating machine learning weather prediction (MLWP) models into classical data assimilation (DA) workflows requires that they accurately evolve ensemble covariances. We evaluate this capability in...</span><span class="abstract-full" id="full-2611.11918" hidden>Integrating machine learning weather prediction (MLWP) models into classical data assimilation (DA) workflows requires that they accurately evolve ensemble covariances. We evaluate this capability in a two-way coupled DA system, where an ensemble variational (EnVar) component evolves the mean and an ensemble Kalman filter (EnKF) evolves the covariances. The system is cycled over one month and assimilates a wide range of real-world observations, including microwave radiances. Using the MLWP model GraphCast for the EnKF and the physics-based MPAS model for the EnVar yields ensemble spread and covariances comparable to a reference configuration in which MPAS evolves both components. The resulting EnVar mean achieves consistently lower RMSE against GFS analyses, except near the model top, where spurious correlations degrade performance. These results demonstrate that MLWP models can propagate covariance information in a realistic DA cycling system and provide a proof of concept for their integration into future operational ensemble systems.</span> <span class="abstract-toggle" data-id="2611.11918">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11918v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11918v1) · [:material-content-copy: BibTeX](bibtex/2611.11918.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling { #2611.11318 }
-
-    *Minseo Yoon, Minseong Bae, Sojin Lee, Hyunwoo J. Kim* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.11318">High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but...</span><span class="abstract-full" id="full-2611.11318" hidden>High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but adapting them to produce future high-resolution fields from recent coarse states remains challenging and costly. We formulate this setting as Predictive Spatiotemporal Weather Downscaling (PSWD), a task that jointly refines spatial and temporal resolution while predicting future high-resolution trajectories. To this end, we propose a framework that decomposes prediction into spatial and temporal stages using a shared pretrained backbone, fixed numerical scaffolds, and lightweight residual heads. For backbone adaptation, we introduce PROLA (PRincipal-Orthogonal Low-rank Adaptation), which allocates a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement. PROLA further rescales rank-1 optimizer updates using gradient signals, improving adaptation without increasing trainable rank. Experiments in the PSWD setting show that PROLA outperforms representative low-rank adaptation baselines. Further experiments across diverse datasets and tasks support the broader applicability of PROLA, showing that its benefits extend beyond the primary weather downscaling setting.</span> <span class="abstract-toggle" data-id="2611.11318">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11318v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11318v1) · [:material-content-copy: BibTeX](bibtex/2611.11318.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Analysis increments for model bias diagnosis and correction: Theoretical foundations { #2611.11162 }
-
-    *Eviatar Bach* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.11162">A common method for diagnosing and correcting model bias in weather and climate prediction is based on analysis increments: the difference between the analysis and the forecast at each data...</span><span class="abstract-full" id="full-2611.11162" hidden>A common method for diagnosing and correcting model bias in weather and climate prediction is based on analysis increments: the difference between the analysis and the forecast at each data assimilation cycle. Their time average is used to estimate and correct the bias, and machine learning is increasingly used to map the forecast state to the increments, giving a state-dependent correction. Despite its widespread use, the method lacks theoretical foundations.   We first analyse a Kalman filter whose forecast model has a constant bias. We show what the averaged increment measures, and prove that iterating the correction removes all of the bias seen through the observations; for linear dynamics, no method can identify the rest.   We then extend the analysis to state-dependent biases. For linear dynamics, each increment records the model error over the filter's memory, as seen through the observations. We use this to determine what the increments measure when averaged over a long period, averaged over periods with similar slowly varying conditions, and used without averaging, as in machine-learned corrections.   Numerical experiments confirm the theory for a linear model and suggest that its main conclusions carry over to the nonlinear Lorenz '96 model, including for a correction learned by a neural network.</span> <span class="abstract-toggle" data-id="2611.11162">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11162v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11162v1) · [:material-content-copy: BibTeX](bibtex/2611.11162.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### Rescene-ESM: an Earth system model built around a frozen AI weather model { #2611.11066 }
-
-    *Minjong Cheon, Kaoru Kakinuma* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.11066">Earth system models underpin climate projections, but their cost limits how many scenarios, ensemble members and impact pathways can be explored. Machine-learning weather models forecast as...</span><span class="abstract-full" id="full-2611.11066" hidden>Earth system models underpin climate projections, but their cost limits how many scenarios, ensemble members and impact pathways can be explored. Machine-learning weather models forecast as skillfully as physics-based models at a fraction of the cost, yet coupled to an ocean they have produced weak El Nino variability or have learned it from climate-model output, and none carries the climate through rivers to the people exposed to it. Here we present Rescene-ESM, an Earth system model whose coupler, YAHO, yokes a frozen 20.8-million-parameter AI weather model to physically formulated ocean, sea-ice, land, river, carbon and energy components constrained by observations. Adding the couplings one at a time shows what each contributes: over a climatological ocean the AI atmosphere varies from year to year by a third of the observed amount over the oceans, and an interactive mixed layer, an equatorial wave ocean, the residual of the observed sea surface temperature (SST) equation as stochastic forcing and the land's moisture flux raise this step by step and bring El Nino and its teleconnections, leaving the mean climate almost unchanged. The full model simulates about 1,000 years per day on one graphics processing unit, holds the observed climate for a thousand years without drift, reproduces the observed 1979-2022 global warming, carries forced change with a physically based structure around the frozen network (transient climate response 1.60 K), routes runoff to 212 river gauges with a median seasonal-cycle correlation of 0.79 and, driven by emissions, separates the heatwave exposure of an SSP1 and an SSP3 world by a factor of 4.7 in 2081-2100, three-quarters of it through the warmer climate.</span> <span class="abstract-toggle" data-id="2611.11066">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.11066v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.11066v1) · [:material-content-copy: BibTeX](bibtex/2611.11066.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
-    { .paper-tags }
-
--   #### Guiding future global temperature distributions with simulations and observations { #2611.10882 }
-
-    *Francesco Immorlano, Elijah Tavares, Felix Draxler, Juan Nathaniel, Violette Launeau et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.10882">Assessing climate risks requires projections of daily temperature distributions, including rare and spatially widespread extremes. Climate simulations are costly and biased, while correcting them...</span><span class="abstract-full" id="full-2611.10882" hidden>Assessing climate risks requires projections of daily temperature distributions, including rare and spatially widespread extremes. Climate simulations are costly and biased, while correcting them toward observations risks suppressing inter-model differences. We train a single machine-learning emulator, a conditional diffusion model, on seventeen CMIP6 models and ERA5 reanalysis to generate spatially coherent daily temperature fields conditioned on model identity, date, and CO2-equivalent concentration. At sampling time, diffusion guidance reduces model biases by steering each emulated climate-model distribution toward observations, with its strength selected through perfect-model experiments using withheld simulated futures. Observational influence decreases with projection horizon and forcing. Across seventeen synthetic targets, guidance more than halves median biases in the 1st and 99th percentiles of daily temperature, improves probabilistic scores and reliability, and reduces median annual global-mean temperature RMSE by 32-57% across three emission scenarios. In a detailed benchmark, guidance also outperforms established bias corrections on daily-field probabilistic scores. Efficient sampling generates large ensembles without further climate simulations. For example, our framework corrects CMIP6's roughly threefold historical overestimate of extreme-heat coverage, yet projects that concurrent extremes will affect nearly half of global land on a typical day in the 2080s under SSP3-7.0.</span> <span class="abstract-toggle" data-id="2611.10882">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.10882v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.10882v1) · [:material-content-copy: BibTeX](bibtex/2611.10882.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### SWXAI: A Unified Multimodal Explainability Library for Space Weather Forecasting and Heliophysics { #2611.10861 }
-
-    *Benedict Antonio Mervyn, Anli Ji, Manolis K. Georgoulis, Berkay Aydin* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.10861">Space weather forecasting and heliophysics increasingly rely on machine learning models that process heterogeneous inputs such as multi-viewpoint multi-wavelength solar images and rasters,...</span><span class="abstract-full" id="full-2611.10861" hidden>Space weather forecasting and heliophysics increasingly rely on machine learning models that process heterogeneous inputs such as multi-viewpoint multi-wavelength solar images and rasters, multivariate time series, spatial annotations, and tabular event-level data. However, explainability workflows remain fragmented across libraries, model interfaces, and output formats, limiting reuse and reproducibility. We present SWXAI, an open-source library that unifies explainable AI (XAI) workflows for image, time-series, and tabular data in space weather forecasting and heliophysics. SWXAI provides a common, extensible interface across commonly used vision, time-series, and tabular learning models, with validation, adaptation, and persistent explanation objects. It also includes domain-grounded examples, reproducible notebooks, tests, and documentation, enabling users to inspect outputs, swap models or explainers, and extend workflows to new heliophysics datasets. SWXAI reduces modality-specific engineering overhead and supports comparable, reusable explanations across heterogeneous scientific machine learning pipelines. A benchmark against direct backend implementations shows that SWXAI substantially reduces the code users write to produce an explanation, with no practical runtime cost.</span> <span class="abstract-toggle" data-id="2611.10861">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.10861v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.10861v1) · [:material-content-copy: BibTeX](bibtex/2611.10861.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### RainFlow: Flow Matching for Infrared-Only Quantitative Precipitation Estimation { #2611.09663 }
-
-    *Matthieu Meignin, Cécile Mallet, Nicolas Viltard* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.09663">Geostationary infrared imagers observe precipitating systems every 10 to 15 minutes over large areas, but they sense cloud tops rather than the rain beneath. Their brightness temperatures constrain...</span><span class="abstract-full" id="full-2611.09663" hidden>Geostationary infrared imagers observe precipitating systems every 10 to 15 minutes over large areas, but they sense cloud tops rather than the rain beneath. Their brightness temperatures constrain surface rain only weakly, so retrievals trained by regression return a smooth estimate that misses heavy rain and carries no measure of uncertainty. We treat infrared-only retrieval as conditional generation and introduce RainFlow, a flow-matching model that generates ensembles of rain fields from MSG/SEVIRI infrared observations, in a direct and a residual variant. Evaluated against radar over metropolitan France for a full year, the generated members are realistic rain fields, with the observed dry areas, heavy rain and spatial structure, and the ensemble mean is as accurate as a deterministic baseline. Used as probabilities, the ensembles locate heavy rain at scales where the baseline has no skill, and their spread captures most of the retrieval error, with only slight underdispersion. Trained with a time-sampling density that favours the noise end of the generative trajectory, the two variants reach similar skill. The direct variant depends strongly on this choice of density, whereas the residual variant is nearly insensitive to it. Evaluating the generated rain as a function of brightness temperature shows that the ensembles reproduce how rain depends on it over most of the range. It also isolates the remaining gap, an underestimate of both the amount and the variability of rain under the coldest cloud tops, which scores computed over all pixels do not reveal.</span> <span class="abstract-toggle" data-id="2611.09663">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.09663v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.09663v1) · [:material-content-copy: BibTeX](bibtex/2611.09663.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost { #2611.09573 }
-
-    *Stefan Siegert* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.09573">AI weather prediction models are released with 32-bit (fp32) weights and run in fp32 by default, although current GPUs compute much faster in 16-bit formats. We run five publicly available models --...</span><span class="abstract-full" id="full-2611.09573" hidden>AI weather prediction models are released with 32-bit (fp32) weights and run in fp32 by default, although current GPUs compute much faster in 16-bit formats. We run five publicly available models -- Aurora, Pangu-Weather, FourCastNet, SFNO and FastNet -- on a single 16 GB GPU from 52 initial dates in 2024, in fp32 and with their networks in half precision (fp16), and verify the forecasts against ERA5. The physical state must stay in fp32: converting the whole model rounds it in physical units, which in fp16 overflows and in bf16 discards meaningful information. With the state, its normalisation and denormalisation in fp32, running the network in fp16 changes the global RMSE by at most 1.4%, and by about 0.5% or less for four of the five models, equivalent to less than one hour of lead time up to day 8 and at most two hours at day 10. The differences show no systematic pattern by region, scale or for tropical and extratropical storms, apart from a small tropical penalty in FourCastNet, and fp16 leaves the CRPS, spread and calibration of Aurora's ensemble almost unchanged. No value overflowed fp16's numeric range (+/-65,504); the largest stay 38 to 544 times below it. A 10-day forecast in fp16 is 1.3-3.5 times faster than in fp32 and uses 1.4-3.7 times less energy. Sensitivity experiments show that rules of thumb from other applications of reduced precision carry over only partly: the first and last layers dominate for some models but not for others, and no type of layer is sensitive on its own. For running AI weather models on a single GPU, fp16 with the state in fp32 is practically lossless at a fraction of the cost. bf16, often preferred for its wider range, is as fast but less accurate than fp16 for every model, and simple 8-bit quantisation costs far more skill.</span> <span class="abstract-toggle" data-id="2611.09573">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.09573v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.09573v1) · [:fontawesome-brands-github: Code](https://github.com/sieste/ai-nwp-fp16) · [:material-content-copy: BibTeX](bibtex/2611.09573.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=neural-operators" data-tag="neural-operators">Neural operators</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=efficiency" data-tag="efficiency">Efficiency</a>
-    { .paper-tags }
-
--   #### Evaluation of a Multi-Link Machine Learning Approach for Rainfall Detection Using Satellite Microwave Links { #2611.09156 }
-
-    *Mostafa Ftouni, Margherita Spalla, Matteo Colli, Andrea Randazzo, Christian Gianoglio* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.09156">The impacts of climate change have increased the need for reliable real-time rainfall monitoring systems. This study investigates rainfall detection using a network of opportunistic sensors based on...</span><span class="abstract-full" id="full-2611.09156" hidden>The impacts of climate change have increased the need for reliable real-time rainfall monitoring systems. This study investigates rainfall detection using a network of opportunistic sensors based on satellite microwave links (SMLs) combined with machine learning (ML) classifiers. Two models, a random forest (RF) and a convolutional neural network (CNN), were trained on aggregated SML data, including information from neighboring links. The results demonstrate that leveraging information from multiple links substantially enhances the detection of both wet and dry periods compared to single-link approaches. Moreover, the RF model consistently provides a more stable and reliable trade-off than CNN, improving rainfall detection and reducing misclassifications overall, with particularly strong performance during harsh weather conditions. The study spanned up to 32 rainy days between 2021 and 2024.</span> <span class="abstract-toggle" data-id="2611.09156">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.09156v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.09156v1) · [:material-content-copy: BibTeX](bibtex/2611.09156.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery { #2611.08255 }
-
-    *Simon Donike, Pritthijit Nath, Cristina Radin, Arthur Avenas, Ruben Cartuyvels, Emiliano Diaz et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.08255">High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally...</span><span class="abstract-full" id="full-2611.08255" hidden>High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. Geostationary satellites capture cloud tops continuously in space and time, but do not directly resolve surface winds. Here, we present simple neural networks to predict 2D wind fields and storm-scale intensity metrics from geostationary imagery. Through a series of ablation studies, we find that joint prediction of 2D fields and scalar metrics from the model latent space improves the retrieval of the (radius of) maximum wind, especially for rapid intensification events.</span> <span class="abstract-toggle" data-id="2611.08255">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.08255v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.08255v1) · [:material-content-copy: BibTeX](bibtex/2611.08255.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
     { .paper-tags }
 
 </div>

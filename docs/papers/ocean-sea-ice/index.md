@@ -8,11 +8,37 @@ hide:
 
 # Ocean & Sea Ice
 
-<p class="page-meta" markdown="span">92 papers · page 1 of 4 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">94 papers · page 1 of 4 · <a href="../../bib/ocean-sea-ice.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Improving Eddy Detection from Wide-Swath Altimetry with Multimodal Data-Driven Models { #2611.22601 }
+
+    *Matteo Broccoli, Andrea Cipollone, Antonio Bonaduce, Elisa Carli, Florian Le Guillou* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.22601">Physically-based eddy detection algorithms usually rely on hard-coded thresholds and constraints that make the detected structures sensitive to small variations in the underlying fields. One way to...</span><span class="abstract-full" id="full-2611.22601" hidden>Physically-based eddy detection algorithms usually rely on hard-coded thresholds and constraints that make the detected structures sensitive to small variations in the underlying fields. One way to relax such conditions is the use of machine-learning methodologies that transform the full problem into an optimization process. We present a multimodal, multi-task, data-driven eddy detection framework based on a shallow convolutional U-Net, trained to jointly segment eddy structures and reconstruct the co-located spatial sea surface temperature (SST) anomaly using a dynamically-based reconstruction as target. Two model variants are developed: NADIRnet, trained on conventional nadir altimetry, and SWOTnet, trained through a curriculum that incorporates SWOT-enriched maps. Both models achieve high pixel- and structure-wise detection scores against the ground-truth, with most residual disagreement attributable to boundary placement rather than missed or spurious detections. The coupled SST regression task, enforced through boundary-coupling and gradient-matching loss terms, is shown to sharpen and regularise the detected eddy boundaries. Compared to the dynamically-based reference, both models recover a substantially larger and finer eddy population; notably, SWOTnet's higher-resolution training signal transfers to conventional nadir altimetry thanks to the higher-resolution SST channel, detecting more eddies than a nadir-trained model on the same data. The framework further generalises, even without retraining, to altimetry products and processing levels unseen during training, including SWOT L3 wide-swath retrievals and an independent gridded product. Together with its low computational cost, this framework is thus promising for near-real-time operational deployment and further downstream applications.</span> <span class="abstract-toggle" data-id="2611.22601">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.22601v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.22601v1) · [:fontawesome-brands-github: Code](https://github.com/MatteoBroccoli/WATER-ML-Eddy-Detection) · [:material-content-copy: BibTeX](../../bibtex/2611.22601.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a>
+    { .paper-tags }
+
+-   #### DARWIN: a Geospatial Foundation Model for Marine Intelligence { #2611.22496 }
+
+    *Coen van den Elsen, Laurens Geffert* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.22496">We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct...</span><span class="abstract-full" id="full-2611.22496" hidden>We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical variables, sparse labels, and dynamics that are transient, multi-scale, and non stationary over time. DARWIN adapts a masked-autoencoder backbone to these properties through missingness-aware encoding, expanded spatial and temporal masking, and Fourier-style positional embeddings, and is pretrained on 26 years of global Copernicus reanalysis together with GEBCO bathymetry.   On predicting chlorophyll-a, the pretrained backbone attains the lowest monthly relative error in every month of 2022, outperforming both no-encoder baselines and an identically architected random-init encoder. At 10% of the supervised training data, DARWIN already surpasses the random-init model trained on 100% of the data. Embedding analysis and qualitative reconstructions show that DARWIN captures coherent oceanographic structure rather than memorising input statistics, providing a scalable backbone for downstream marine applications such as anomaly detection, species distribution modelling, and environmental monitoring.</span> <span class="abstract-toggle" data-id="2611.22496">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.22496v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.22496v1) · [:material-content-copy: BibTeX](../../bibtex/2611.22496.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
+    { .paper-tags }
 
 -   #### Data-driven Reconstruction of the Phase Dynamics for the El Niño-Southern Oscillation Reveals Seasonality and Statistical Synchronization with the Annual Cycle { #2611.14868 }
 
@@ -362,29 +388,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
     { .paper-tags }
-
--   #### Probabilistic reconstruction of global sea surface temperature using generative diffusion models { #2603.16272 }
-
-    *Haijie Li, Ya Wang, Kai Yang, Gang Huang, Xiangao Xia, Ziming Chen, Weichen Tao, Chenglin Lyu et al.* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.16272">Accurate reconstruction of global Sea surface temperature (SST), which dominates the air-sea coupling and global climate variability, underpins climate monitoring and prediction. Existing SST...</span><span class="abstract-full" id="full-2603.16272" hidden>Accurate reconstruction of global Sea surface temperature (SST), which dominates the air-sea coupling and global climate variability, underpins climate monitoring and prediction. Existing SST reconstruction products primarily provide one deterministic field derived from heterogeneous satellite data and in situ observations, limiting their ability to represent observation uncertainty and to support probabilistic forecasting. Here, we introduce Satellite and in situ Adaptive Guided Estimation (SAGE), a diffusion-based uncertainty-aware generative framework for probabilistic SST reconstruction. SAGE learns a physically consistent prior from historical SST data and performs observation-conditioned posterior sampling without requiring satellite or in situ data during training, enabling flexible state inference from heterogeneous observations. Through a progressive data-fusion strategy, observations from two FengYun-3D polar-orbiting satellites constrain basin-scale structures, while sparse in situ measurements serve to refine local anomalies and extremes. The resulting ensemble SST fields well capture observational uncertainty and scale-dependent variability. Validation against independent in situ observations shows that SAGE substantially reduces reconstruction errors compared with widely used operational products. When used to initialize forecasting systems, SAGE-generated SST fields substantially reduce 10-day SST forecast errors relative to current operational analyses. At the climate scale, SAGE-driven forecasts of the 2023-2024 El Nino event show added value in capturing its onset and intensity evolution compared to conventional approaches. Our results demonstrate that SAGE represents a step toward a new paradigm for ocean state estimation and climate prediction.</span> <span class="abstract-toggle" data-id="2603.16272">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.16272v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.16272v2) · [:material-content-copy: BibTeX](../../bibtex/2603.16272.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=station-point" data-tag="station-point">Station / point</a>
-    { .paper-tags }
-
--   #### FloeNet: A mass-conserving global sea ice emulator that generalizes across climates { #2603.12449 }
-
-    *William Gregory, Mitchell Bushuk, James Duncan, Elynn Wu, Adam Subel, Spencer K. Clark, Bill Hurlin et al.* · Mar 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2603.12449">We introduce FloeNet, a machine-learning emulator trained on the Geophysical Fluid Dynamics Laboratory global sea ice model, SIS2. FloeNet is a mass-conserving model, emulating 6-hour mass and area...</span><span class="abstract-full" id="full-2603.12449" hidden>We introduce FloeNet, a machine-learning emulator trained on the Geophysical Fluid Dynamics Laboratory global sea ice model, SIS2. FloeNet is a mass-conserving model, emulating 6-hour mass and area budget tendencies related to sea ice and snow-on-sea-ice growth, melt, and advection. We train FloeNet using simulated data from a reanalysis-forced ice-ocean simulation and test its ability to generalize to pre-industrial control and 1% CO2 climates. FloeNet outperforms a non-conservative model at reproducing sea ice and snow-on-sea-ice mean state, trends, and inter-annual variability, with volume anomaly correlations above 0.96 in the Antarctic and 0.76 in the Arctic, across all forcings. FloeNet also produces the correct thermodynamic vs dynamic response to forcing, enabling physical interpretability of emulator output. Finally, we show that FloeNet outputs high-fidelity coupling-related variables, including ice-surface skin temperature, ice-to-ocean salt flux, and melting energy fluxes. We hypothesize that FloeNet will improve polar climate processes within existing atmosphere and ocean emulators.</span> <span class="abstract-toggle" data-id="2603.12449">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2603.12449v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2603.12449v1) · [:material-content-copy: BibTeX](../../bibtex/2603.12449.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

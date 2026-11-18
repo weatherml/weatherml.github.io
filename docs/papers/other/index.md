@@ -8,11 +8,76 @@ hide:
 
 # Other
 
-<p class="page-meta" markdown="span">223 papers · page 1 of 8 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">228 papers · page 1 of 8 · <a href="../../bib/other.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Learning Calibrated and Samplable Predictive Distributions of Surface-Ocean $Δp$CO$_2$ Using Tabular Diffusion Models { #2611.21769 }
+
+    *Gabriele Accarino, Mohammad M. Amirian, Thea H. Heimdal, Amanda R. Fay, Galen A. McKinley et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.21769">The ocean absorbs almost 30% of anthropogenic CO$_2$ emissions, but quantifying this sink requires estimating surface-ocean CO$_2$ from observations that are sparse in space and time. Most existing...</span><span class="abstract-full" id="full-2611.21769" hidden>The ocean absorbs almost 30% of anthropogenic CO$_2$ emissions, but quantifying this sink requires estimating surface-ocean CO$_2$ from observations that are sparse in space and time. Most existing machine-learning estimates of this field are deterministic, giving a single value per grid point, with uncertainty approximated post hoc via residuals, ensembles, or prescribed distributions. We instead learn a conditional predictive distribution for each observation: using Treeffuser, a conditional diffusion model with gradient-boosted-tree score functions, we estimate the full predictive distribution of $Δp$CO$_2$ (the sea-air $p$CO$_2$ difference) from 13 environmental, spatial, and temporal predictors. On a held-out SOCAT test set, Treeffuser attains the lowest continuous ranked probability score among the uncertainty-quantification methods evaluated (8.229 $μ$atm) and the coverage closest to the nominal 68% / 95% levels (0.686 / 0.930), while retaining point-prediction skill comparable to a deterministic XGBoost baseline (RMSE 18.4 vs. 17.7 $μ$atm; $R^2$ 0.77 vs. 0.79). These results show that conditional diffusion can provide well-calibrated, observation-level uncertainties while largely preserving point-prediction skill. Because Treeffuser is generative, its samples can support probabilistic analyses of $Δp$CO$_2$; extending this to spatially coherent field reconstruction will require modeling dependence across grid cells and evaluation on spatially held-out data.</span> <span class="abstract-toggle" data-id="2611.21769">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.21769v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.21769v1) · [:material-content-copy: BibTeX](../../bibtex/2611.21769.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### Physics-Spawned Neural Integration of Rotating Shallow-Water Dynamics { #2611.20054 }
+
+    *Kaushal Gianchandani, Luka Todorovic, Sai Ravela* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.20054">Equation-derived neural integration can execute prescribed dynamics without training, while informative ensemble learning can estimate uncertain parameters and identify governing interactions without...</span><span class="abstract-full" id="full-2611.20054" hidden>Equation-derived neural integration can execute prescribed dynamics without training, while informative ensemble learning can estimate uncertain parameters and identify governing interactions without requiring differentiability. Together, these approaches motivate Physics-Spawned Informative Networks ($Φ$SpIN), a framework for prescribed and adaptive hybrid dynamical systems. As a first step toward flood modeling applications, we present $Φ$SpIN-SW, its prescribed-physics realization for the rotating shallow-water equations. Compatible C-grid operators on spherical Voronoi meshes define a computational graph that retains non-polynomial operations and advances the state through recurrent neural integration compiled with JAX. Analytical benchmarks characterize numerical errors, and global and coastal experiments closely reproduce reference solutions generated using the Model Prediction Across Scales (MPAS) model. At approximately 14~km global resolution, A100, H200 and B200 GPUs attain 9-, 19- and 34-fold higher timestep throughput than a 96-core MPAS-SW CPU reference under matched workloads. These results extend training-free neural integration beyond polynomial dynamics to complex geophysical simulation, establishing a computational foundation for subsequent adjoint-free ensemble estimation of physical and neural parameters and informative adaptation of operator structure.</span> <span class="abstract-toggle" data-id="2611.20054">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.20054v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.20054v1) · [:material-content-copy: BibTeX](../../bibtex/2611.20054.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### Spatiotemporal Reconstruction of Auroral Precipitations with Neural Fields { #2611.19757 }
+
+    *Nazar Misyats, Mizuki Fukizawa, Yoshimasa Tanaka, Satoshi Ikehata* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.19757">Auroras provide remote optical observations of energetic electrons precipitating into the upper atmosphere, and whose energy distribution encodes key information about large scale magnetospheric...</span><span class="abstract-full" id="full-2611.19757" hidden>Auroras provide remote optical observations of energetic electrons precipitating into the upper atmosphere, and whose energy distribution encodes key information about large scale magnetospheric processes. Recovering the underlying electron precipitation field from ground-based camera images of auroras remains a challenging inverse problem. Existing auroral tomography techniques are often limited to simplified static settings, discrete spatial and energy grids, or strong assumptions on the electron energy spectrum. We propose to model the dynamic auroral electron precipitation field via a temporally conditioned neural network. The state of the precipitation field at each frame is represented by a per-frame latent code driven by learned discrete dynamics. A shared decoder maps horizontal positions and latent states to electron energy spectra. The predicted flux is converted to multi-wavelength volume emission rates and rendered into camera images accounting for delayed emissions. We evaluate the method on synthetic dynamic auroral sequences and real multi-view auroral videos, showing that the proposed representation produces temporally coherent precipitation reconstructions and image projections consistent with the observations.</span> <span class="abstract-toggle" data-id="2611.19757">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.19757v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.19757v1) · [:material-content-copy: BibTeX](../../bibtex/2611.19757.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
+    { .paper-tags }
+
+-   #### TyphoonWorld: A Residual Token World Model for Probabilistic Forecasting of Typhoon Imagery { #2611.18740 }
+
+    *Xiaoyu Chen, Tianyi Li, Xuanyi Zhang* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.18740">A satellite forecast of a typhoon should give a low-error picture of the next two days, together with an ensemble whose members are coherent fields and whose spread responds to the storm at hand. A...</span><span class="abstract-full" id="full-2611.18740" hidden>A satellite forecast of a typhoon should give a low-error picture of the next two days, together with an ensemble whose members are coherent fields and whose spread responds to the storm at hand. A small direct regression network already gives the lowest squared error on held-out storms, so a generative model has to earn its cost through the part of the future that the regression smooths away. We present TyphoonWorld, a discrete-token world model that generates only that part. Conditioned on tokens of the regression forecast, the latest frames and the best-track state at forecast time, it samples residual fields lead by lead, and members add these residuals to the regression center. We compare it under one protocol with per-pixel Gaussian networks, a diffusion model of the same residuals, residuals from other storms and an unconditional token world model, on 276 forecast windows from 46 held-out storms of Digital Typhoon. TyphoonWorld matches the squared error of the regression, lowers the CRPS of the area colder than 220 K, a direct measure of deep convection, by 14 to 39% against every other ensemble, and ties its spread to forecast error as closely as the Gaussian network, with a correlation of 0.78 across windows. It uses 56% of the parameters of the unconditional world model.</span> <span class="abstract-toggle" data-id="2611.18740">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.18740v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.18740v1) · [:material-content-copy: BibTeX](../../bibtex/2611.18740.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### Activation Steering the Nan-Shan in Typhoon { #2611.17768 }
+
+    *Megan Wei, Damon Pham, John Cayley, Ellie Pavlick* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.17768">Typhoon is an audiovisual installation based on Joseph Conrad's novella, in which Captain MacWhirr steers the steamer Nan-Shan directly into and through a catastrophic storm. The novella is a study...</span><span class="abstract-full" id="full-2611.17768" hidden>Typhoon is an audiovisual installation based on Joseph Conrad's novella, in which Captain MacWhirr steers the steamer Nan-Shan directly into and through a catastrophic storm. The novella is a study of what happens when the scale of a phenomenon exceeds the practical and conceptual frameworks available to comprehend it and of the paralysis that sometimes follows a demand for action in such overwhelming circumstances. We chose the text of Typhoon to reflect on human culture's current AI moment. We prompt a large language model, seeded with Conrad's original language, to feed endlessly on its own output, and explore when and how the text becomes increasingly alien and unwieldy as time progresses, including deviations from the narrative, digressions into the model's own instructions and thinking, and long periods of incoherent rumination. We employ methods from activation steering, including a novel adaptive steering method we introduce, to control the rhythm of the narrative and the model's digressions over long stretches of generation. The simultaneous efficacy and unpredictability of this steering showcases the tension between the perceived interpretability of AI, and the reality of a system that remains outside our comprehension and control.</span> <span class="abstract-toggle" data-id="2611.17768">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.17768v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.17768v1) · [:material-content-copy: BibTeX](../../bibtex/2611.17768.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
+    { .paper-tags }
 
 -   #### Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network { #2611.16322 }
 
@@ -320,71 +385,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.39737v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.39737v1) · [:material-content-copy: BibTeX](../../bibtex/2609.39737.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Methodological Changes to the Attention ResUNet Hourly Precipitation Postprocessor { #2609.38609 }
-
-    *Thomas M. Hamill* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.38609">This note is a technical companion to a previously published preprint describing an Attention Residual U-Net that postprocesses deterministic forecasts from The Weather Company's Global and Regional...</span><span class="abstract-full" id="full-2609.38609" hidden>This note is a technical companion to a previously published preprint describing an Attention Residual U-Net that postprocesses deterministic forecasts from The Weather Company's Global and Regional Atmospheric Forecast (GRAF) model into probabilistic hourly precipitation forecasts. It documents what has changed in that method since publication. Feature-wise Linear Modulation conditioning on calendar season and forecast lead time is used to produce a single trained model for each season, replacing 192 separately trained per-month, per-lead checkpoints. Lead time is extended from 48 to 72 h. Two new input channels are used, per-pixel local solar hour and a static, monthly-varying precipitation climatology. During verification, the climatological reference against which the Brier Skill Score is computed now has an added diurnal dimension, on top of the monthly resolution it already had. Brier Skill Score and reliability are compared between the new vs. the previous training. Forecasts generated with the new training show a modest, consistent improvement of the current training over the original.</span> <span class="abstract-toggle" data-id="2609.38609">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.38609v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.38609v1) · [:material-content-copy: BibTeX](../../bibtex/2609.38609.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
-    { .paper-tags }
-
--   #### Predicting Delayed Train Trajectories on the Dutch Railway Network: Explainable AI Evaluation of Topological, Operational and Weather Features with Tree Based Ensemble Methods { #2609.34692 }
-
-    *Jia Long Bao, Ali Mohammed Mansoor Alsahag, Seyed Sahand Mohammadi Ziabari* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.34692">The reliable prediction of passenger train delays is a critical component of railway management. While contemporary research frequently attempts to maximize absolute accuracy by deploying opaque deep...</span><span class="abstract-full" id="full-2609.34692" hidden>The reliable prediction of passenger train delays is a critical component of railway management. While contemporary research frequently attempts to maximize absolute accuracy by deploying opaque deep learning architectures, the underlying data mechanics driving longitudinal predictive decay remain underexplored. Consequently, this study provides an explainable temporal robustness analysis of network-wide railway delay prediction. Focusing on the Dutch railway network, this research utilizes interpretable tree-based ensembles to integrate granular topological, environmental, and operational features. The overarching finding establishes that while feature-rich tree-based models improve simultaneous (within-month) prediction, predictive performance systematically degrades when evaluated across non-simultaneous (future) months. Furthermore, multi-horizon SHAP and dispersion analyses explicitly link this degradation to environmental feature volatility and instability within the statistical target definition. Ultimately, this thesis demonstrates that richer feature sets alone are insufficient to resolve long-term forecasting constraints, underscoring the necessity to transition toward dynamic, season-aware architectures anchored by absolute operational boundaries.</span> <span class="abstract-toggle" data-id="2609.34692">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.34692v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.34692v1) · [:material-content-copy: BibTeX](../../bibtex/2609.34692.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
-    { .paper-tags }
-
--   #### StatD2GAN: When Calibration Masks Generator Quality in Held-Out Evaluation of Synthetic Weather Sequences { #2609.33761 }
-
-    *Mustafa Ozaytac, Ozge Karadag Atas* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.33761">Generative models for multivariate weather series are routinely evaluated with pooled distributional metrics computed after marginal calibration. We show this practice can invalidate architectural...</span><span class="abstract-full" id="full-2609.33761" hidden>Generative models for multivariate weather series are routinely evaluated with pooled distributional metrics computed after marginal calibration. We show this practice can invalidate architectural conclusions, and rebuild the evaluation of StatD2GAN, a three-discriminator GAN with evolutionary weight adaptation, around a held-out protocol: the final two calendar years of each dataset are held out behind a 168 hour embargo, calibration is fitted on the training block only, and all metrics are computed on the held-out block. Evidence comes from 25 matched (location, seed) pairs across five Koppen-Geiger climates, tested with Wilcoxon signed-rank tests under Holm correction. Four results follow. First, isotonic calibration drives the Kolmogorov-Smirnov distance to within 2% of a per-location noise-and-shift floor for every architecture tested, including a deliberately weak RCGAN baseline, so calibrated marginal metrics cannot discriminate between architectures. Second, the sorted-representation discriminator is the only component whose removal significantly degrades cross-variable dependence (Kendall tau MAE +0.080, Holm p = 0.009), with a regime-dependent effect: near zero in Ankara, above 115% in Dubai and Yakutsk. A rank-transformed variant isolates the mechanism as quantile supervision of the marginals rather than copula matching. Third, physical constraint violations are injected by calibration, not the generator; projection removes them at negligible cost (deltaKS <= 0.003). Fourth, pooled metrics conceal a collapse of between-sequence weekly-mean variability, a proxy for seasonal and regime diversity, in TimeGAN that only sequence-level statistics expose. We recommend floor-referenced marginal evaluation, matched-pair testing, and sequence-level variance decomposition as minimum requirements for calibrated generative pipelines.</span> <span class="abstract-toggle" data-id="2609.33761">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.33761v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.33761v1) · [:material-content-copy: BibTeX](../../bibtex/2609.33761.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=gans" data-tag="gans">GANs</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Mechanism-Aware Ensemble Conditioning for Data-Limited Emulation of Extreme Events { #2609.30746 }
-
-    *Isabella S. Thiel, Juan Bello-Rivas, Yannis G. Kevrekidis, Themistoklis P. Sapsis* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.30746">Extreme events in chaotic systems are difficult to learn from short trajectories because they are controlled by transient finite-time instability rather than by frequently observed bulk dynamics. We...</span><span class="abstract-full" id="full-2609.30746" hidden>Extreme events in chaotic systems are difficult to learn from short trajectories because they are controlled by transient finite-time instability rather than by frequently observed bulk dynamics. We propose a mechanism-aware conditioning plug-in framework that turns a nudged coarse ensemble into a non-intrusive sensor of local instability geometry. In the small-noise regime, the ensemble covariance aggregates the same finite-time deformation kernels that govern local instability, providing a Jacobian-free proxy for the local amplification structure around a synchronized coarse trajectory. A small FiLM module injects statistics of this ensemble geometry into an otherwise unchanged backbone while leaving the coarse simulator unchanged. We demonstrate this interface in two distinct pipelines: a Transformer-style residual-attention corrector for a controlled low-dimensional chaotic system and a probabilistic recurrent STORN corrector for topographic two-layer quasi-geostrophic (QG) flow. In the low-dimensional benchmark, ensemble covariance directions co-activate with OTD modes and FiLM conditioning improves 99th-percentile exceedance-frequency errors over an identical no-context Transformer baseline. In QG, a fixed ensemble-conditioned FiLM-STORN model trained on only \(50\) time units substantially improves long-horizon rare-event statistics in the data-limited regime, including density-tail errors, exceedance frequencies, and spatial exceedance-area distributions relative to an unconditioned STORN trained on the same data; on averaged high-threshold exceedance diagnostics, it also outperforms the baseline STORN trained with $20$ times more high-resolution data. These results show that local instability geometry is not merely interpretable post hoc, but an actionable conditioning signal for data-efficient rare-event emulation.</span> <span class="abstract-toggle" data-id="2609.30746">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.30746v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.30746v1) · [:material-content-copy: BibTeX](../../bibtex/2609.30746.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### PISCES: Physics-Informed Solar-wind Convolutional autoEncoder for Space-weather Anomaly Detection and Early Warning { #2609.28022 }
-
-    *Kevin Lee, Alison J. March* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.28022">Space weather early warning depends on detecting solar wind transients in in-situ measurements at the first Sun-Earth Lagrange point (L1), before they reach Earth. Fixed thresholds can miss combined...</span><span class="abstract-full" id="full-2609.28022" hidden>Space weather early warning depends on detecting solar wind transients in in-situ measurements at the first Sun-Earth Lagrange point (L1), before they reach Earth. Fixed thresholds can miss combined magnetic and plasma structure, and many learning methods provide a single anomaly score. We present the Physics-Informed Solar-wind Convolutional autoEncoder for Space-weather (PISCES), a convolutional autoencoder trained without catalog labels on OMNI solar wind measurements under physics constraints. Its loss includes magnetic field consistency, an empirical relation between temperature and velocity, the Parker spiral angle, and penalties on changes between consecutive one-minute samples in derived quantities calculated from the reconstruction. At inference, PISCES separates the anomaly score into magnetic and plasma reconstruction errors, physics relations, and residual corrections, and reports the magnitude of each contribution. Attenuation of the skip connections, selected on validation data, improves average precision for the trained models, while the untrained scores remain nearly the same. The trained models also give a more consistent ordering of these physical contributions. After smoothing with a trailing median, the alarms can precede independently observed sudden commencements, including positive sudden impulses.</span> <span class="abstract-toggle" data-id="2609.28022">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.28022v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.28022v1) · [:fontawesome-brands-github: Code](https://github.com/magnaprog/PISCES) · [:material-content-copy: BibTeX](../../bibtex/2609.28022.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a>
-    { .paper-tags }
 
 </div>
 

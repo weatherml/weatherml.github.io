@@ -8,11 +8,24 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">82 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">83 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents { #2611.17854 }
+
+    *Bo Qin, Zeyun Yang, Qiaofei Xue, Yanan Ding, Jinyu Wang, Chaopeng Ji, Shijin Yuan, Bin Mu et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.17854">The predictability of the El Niño-Southern Oscillation (ENSO) has historically been linked to large-scale errors in models' initial conditions such as heat content and surface wind stress. Here we...</span><span class="abstract-full" id="full-2611.17854" hidden>The predictability of the El Niño-Southern Oscillation (ENSO) has historically been linked to large-scale errors in models' initial conditions such as heat content and surface wind stress. Here we demonstrate that these slowly evolving errors may ultimately originate from mesoscale errors in initial oceanic states that are common in current models and ocean observation systems. This hidden source of ENSO forecast uncertainty, in terms of mesoscale ocean-current errors, is convincingly exposed by the conditional nonlinear optimal perturbation (CNOP) method applied to a differentiable ocean AI model. The CNOP-identified most influential current errors are strongly event-dependent. For the 1997/98 El Niño, the initial current errors in the eastern Pacific results in the largest forecast error through locally suppressing original subsurface warming. For the 2015/16 event, the dominate error originates from the western Pacific, which reorganizes upper ocean temperature structure and affects the eastern Pacific through the equatorial waveguide. Further analysis reveals that these current errors perturb mesoscale eddy count and eddy kinetic energy triggering large-scale temperature errors that hinder El Niño development. The timing of the maximum growth rate of the obtained CNOP error is well aligned with the spring predictability barrier of ENSO, and the error structures are reflected in simulated analysis errors caused by unresolved mesoscale currents. These findings extend the potential source of ENSO predictability beyond large-scale thermal signals, reveal for the first time an uncharted route of ENSO forecast failure, and provide an important physical basis for targeted ocean observations and data assimilation in the future.</span> <span class="abstract-toggle" data-id="2611.17854">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.17854v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.17854v1) · [:material-content-copy: BibTeX](../../bibtex/2611.17854.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
+    { .paper-tags }
 
 -   #### Analysis increments for model bias diagnosis and correction: Theoretical foundations { #2611.11162 }
 
@@ -369,19 +382,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.14016v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.14016v1) · [:material-content-copy: BibTeX](../../bibtex/2602.14016.bib){ .bibtex-link }
     { .paper-links }
-
--   #### FlowDA: Accurate, Low-Latency Weather Data Assimilation via Flow Matching { #2602.06800 }
-
-    *Ran Cheng, Lailai Zhu* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.06800">Data assimilation (DA) is a fundamental component of modern weather prediction, yet it remains a major computational bottleneck in machine learning (ML)-based forecasting pipelines due to reliance on...</span><span class="abstract-full" id="full-2602.06800" hidden>Data assimilation (DA) is a fundamental component of modern weather prediction, yet it remains a major computational bottleneck in machine learning (ML)-based forecasting pipelines due to reliance on traditional variational methods. Recent generative ML-based DA methods offer a promising alternative but typically require many sampling steps and suffer from error accumulation under long-horizon auto-regressive rollouts with cycling assimilation. We propose FlowDA, a low-latency weather-scale generative DA framework based on flow matching. FlowDA conditions on observations through a SetConv-based embedding and fine-tunes the Aurora foundation model to deliver accurate, efficient, and robust analyses. Experiments across observation rates decreasing from $3.9\%$ to $0.1\%$ demonstrate superior performance of FlowDA over strong baselines with similar tunable-parameter size. FlowDA further shows robustness to observational noise and stable performance in long-horizon auto-regressive cycling DA. Overall, FlowDA points to an efficient and scalable direction for data-driven DA.</span> <span class="abstract-toggle" data-id="2602.06800">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.06800v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.06800v1) · [:material-content-copy: BibTeX](../../bibtex/2602.06800.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
-    { .paper-tags }
 
 </div>
 
