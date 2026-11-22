@@ -8,11 +8,24 @@ hide:
 
 # Hydrology
 
-<p class="page-meta" markdown="span">40 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">41 papers · page 1 of 2 · <a href="../../bib/hydrology.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh { #2611.25075 }
+
+    *Mahir Ahnaf, Showmitra Kumar Sarkar* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.25075">Bangladesh, home to nearly 178 million people, is highly vulnerable to recurring droughts that threaten food security and rural livelihoods. Machine-learning and deep-learning models are increasingly...</span><span class="abstract-full" id="full-2611.25075" hidden>Bangladesh, home to nearly 178 million people, is highly vulnerable to recurring droughts that threaten food security and rural livelihoods. Machine-learning and deep-learning models are increasingly used to forecast drought indices such as the Standardized Precipitation Evapotranspiration Index (SPEI). Most studies report accuracy without a persistence reference, although accumulated indices are strongly autocorrelated, and seldom test drought detection, longer leads or variation between training runs. This study forecast SPEI at 3-, 6- and 12-month timescales one to three months ahead for the eight divisions of Bangladesh, using ERA5 reanalysis checked against 35 Bangladesh Meteorological Department stations. Five models, XGBoost, CNN, Bi-LSTM, CNN-BiLSTM and CEEMDAN-BiLSTM, were trained with five seeds each, scored on accuracy, skill against persistence and drought detection, and interpreted with Shapley values. At a one-month lead, the CNN-BiLSTM and Bi-LSTM beat persistence clearly at SPEI-3 and SPEI-6 (skill 0.408 and 0.350), while at SPEI-12 a Nash-Sutcliffe efficiency of 0.872 barely exceeded persistence (0.850). Skill and detection could disagree: at SPEI-3 and a three-month lead, XGBoost had the highest skill (0.439) yet detected none of the 119 drought months. Only at SPEI-6 did the forecasts beat persistence significantly and match its detection at all three leads, with fewer false alarms. At SPEI-12, gains were small or absent and varied between seeds. The forecasts kept 76-80% of their correlation against station-derived SPEI and relied mainly on precipitation and lagged SPEI. Forecasts should therefore be judged on skill against persistence and detection across several seeds, not on accuracy alone. In Bangladesh, SPEI-6 forecasts can support early warning up to three months ahead and SPEI-3 forecasts one month ahead, while SPEI-12 is better suited to monitoring.</span> <span class="abstract-toggle" data-id="2611.25075">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.25075v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.25075v1) · [:fontawesome-brands-github: Code](https://github.com/mahirahnaf1727/bangladesh-spei-drought-forecasting) · [:material-content-copy: BibTeX](../../bibtex/2611.25075.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a>
+    { .paper-tags }
 
 -   #### Generated storm lifecycles fill the rare-event tail of short rainfall records { #2610.41365 }
 
@@ -389,19 +402,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### AI-Driven Reinvention of Hydrological Modeling for Accurate Predictions and Interpretation to Transform Earth System Modeling { #2501.04733 }
-
-    *Cuihui Xia, Lei Yue, Deliang Chen, Yuyang Li, Hongqiang Yang, Ancheng Xue, Zhiqiang Li, Qing He et al.* · Jan 2025
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2501.04733">Traditional equation-driven hydrological models often struggle to accurately predict streamflow in challenging regional Earth systems like the Tibetan Plateau, while hybrid and existing...</span><span class="abstract-full" id="full-2501.04733" hidden>Traditional equation-driven hydrological models often struggle to accurately predict streamflow in challenging regional Earth systems like the Tibetan Plateau, while hybrid and existing algorithm-driven models face difficulties in interpreting hydrological behaviors. This work introduces HydroTrace, an algorithm-driven, data-agnostic model that substantially outperforms these approaches, achieving a Nash-Sutcliffe Efficiency of 98% and demonstrating strong generalization on unseen data. Moreover, HydroTrace leverages advanced attention mechanisms to capture spatial-temporal variations and feature-specific impacts, enabling the quantification and spatial resolution of streamflow partitioning as well as the interpretation of hydrological behaviors such as glacier-snow-streamflow interactions and monsoon dynamics. Additionally, a large language model (LLM)-based application allows users to easily understand and apply HydroTrace's insights for practical purposes. These advancements position HydroTrace as a transformative tool in hydrological and broader Earth system modeling, offering enhanced prediction accuracy and interpretability.</span> <span class="abstract-toggle" data-id="2501.04733">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2501.04733v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2501.04733v1) · [:material-content-copy: BibTeX](../../bibtex/2501.04733.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
     { .paper-tags }
 
 </div>

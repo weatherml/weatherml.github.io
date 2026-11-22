@@ -8,11 +8,24 @@ hide:
 
 # Data Assimilation
 
-<p class="page-meta" markdown="span">83 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">84 papers · page 1 of 3 · <a href="../../bib/data-assimilation.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Enabling joint chemical and meteorological data assimilation with an atmospheric foundation model { #2611.24020 }
+
+    *Eliot J. Kim, Eric J. Mei, Peter D. Ivatt, Lee T. Murray, Alexander J. Turner* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.24020">The hydroxyl radical (OH) is the main oxidant in the troposphere and accounts for 88% of the methane sink, yet its abundance and trends remain poorly constrained. Satellites observe many of the...</span><span class="abstract-full" id="full-2611.24020" hidden>The hydroxyl radical (OH) is the main oxidant in the troposphere and accounts for 88% of the methane sink, yet its abundance and trends remain poorly constrained. Satellites observe many of the chemical and meteorological drivers of OH, but assimilating both requires a model that represents chemistry and meteorology together. Existing chemistry-climate models are too expensive for joint data assimilation. Here, we present AuroraChem, a fine-tuned version of the Aurora atmospheric foundation model that jointly simulates meteorology and the GEOS-Chem chemical fields needed to constrain OH. A one-year AuroraChem rollout takes 12 minutes on one GPU. Free rollouts remain stable for one year but do not fully capture seasonal cycles. Using idealized data assimilation, we find that chemical observations can constrain the meteorological state and meteorological observations can constrain the chemical state. Inserting only the chemical fields raises the annual mean spatial correlation of 500 hPa temperature from 0.89 to 0.92 and recovers the moisture and circulation pattern of the Indian summer monsoon. Inserting only the meteorological fields raises the 500 hPa OH correlation from 0.89 to 0.93, close to the 0.94 from inserting the chemical fields themselves, and recovers the OH seasonal cycle. Inserting only NO2 columns sampled at TROPOMI pixels gives an OH correlation of 0.93. These relationships likely reflect learned covariances rather than physical coupling, and covariances are what data assimilation uses to let an observation of one variable update the others. AuroraChem therefore provides a new pathway to joint chemical and meteorological data assimilation.</span> <span class="abstract-toggle" data-id="2611.24020">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.24020v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.24020v1) · [:material-content-copy: BibTeX](../../bibtex/2611.24020.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
 
 -   #### Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents { #2611.17854 }
 
@@ -372,16 +385,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
     { .paper-tags }
-
--   #### Preconditioned Adjoint Data Assimilation for Two-Dimensional Decaying Isotropic Turbulence { #2602.14016 }
-
-    *Hongyi Ke, Zejian You, Qi Wang* · Feb 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2602.14016">Adjoint-based data assimilation for turbulent Navier-Stokes flows is fundamentally limited by the behavior of the adjoint dynamics: in backward time, adjoint fields exhibit exponential growth and...</span><span class="abstract-full" id="full-2602.14016" hidden>Adjoint-based data assimilation for turbulent Navier-Stokes flows is fundamentally limited by the behavior of the adjoint dynamics: in backward time, adjoint fields exhibit exponential growth and become increasingly dominated by small-scale structures, severely degrading reconstruction of the initial condition from sparse measurements. We demonstrate that the relative weighting of spectral components in the adjoint formulation can be systematically controlled by redefining the inner product under which the adjoint operator is defined. The inverse problem is formulated as a constrained minimization in which a cost functional measures the mismatch between model predictions and observations, and the adjoint equations provide the gradient with respect to the initial velocity field. Redefining the forward-adjoint duality through a Fourier-space weighting kernel preconditions the optimization and is mathematically equivalent to changing the representation of the control variable or, alternatively, introducing a smoothing operation on the governing dynamics. Specific kernel choices correspond to fractional integration or diffusion operators applied to the initial condition. Among these, exponential kernels provide effective regularization by suppressing high-wavenumber contributions while preserving large-scale coherence, leading to improved reconstruction across scales. A statistical analysis of an ensemble of adjoint fields from different turbulent realizations reveals scale-dependent backward growth rates, explaining the instability of the standard formulation and clarifying the mechanism by which the proposed preconditioning attenuates incoherent small-scale amplification.</span> <span class="abstract-toggle" data-id="2602.14016">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2602.14016v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2602.14016v1) · [:material-content-copy: BibTeX](../../bibtex/2602.14016.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

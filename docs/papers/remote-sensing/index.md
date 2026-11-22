@@ -8,11 +8,24 @@ hide:
 
 # Remote Sensing
 
-<p class="page-meta" markdown="span">112 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">113 papers · page 1 of 4 · <a href="../../bib/remote-sensing.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem { #2611.26398 }
+
+    *Oriol Alàs, Ian Palacín, Iván Cester, Edgar Rubión* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.26398">EU-funded projects produce extensive evidence in the form of deliverables, reports, and case studies. However, this knowledge is typically scattered across projects and document structures, making it...</span><span class="abstract-full" id="full-2611.26398" hidden>EU-funded projects produce extensive evidence in the form of deliverables, reports, and case studies. However, this knowledge is typically scattered across projects and document structures, making it difficult to locate relevant, contextual information when making decisions. This paper introduces an Agentic AI Ecosystem that consolidates heterogeneous project documentation into a domain-aware knowledge base and provides adaptive access through an agentic Retrieval-Augmented Generation pipeline. Documents from three EU-funded projects (IMPETUS, NATALIE, and InnWater) are reconstructed into hierarchical section trees and indexed with structured metadata. Retrieval is supported by two domain-specific embedding models fine-tuned on domain data (water and climate). On top of this knowledge base, a ReAct-style controller iteratively orchestrates retrieval actions by allocating retrieval budget across domain collections and accumulating evidence until a stopping criterion is met. In a retrieval benchmark over the corpus, the proposed approach improves Mean Reciprocal Rank by 26.7% (relative) compared to a single-domain embedding baseline, indicating more consistent retrieval of relevant evidence to support cross-project knowledge synthesis and climate-resilient decision-making.</span> <span class="abstract-toggle" data-id="2611.26398">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.26398v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.26398v1) · [:material-content-copy: BibTeX](../../bibtex/2611.26398.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
+    { .paper-tags }
 
 -   #### GPROF V08: Improving Satellite Precipitation Estimates Across a Heterogeneous Constellation of Passive-Microwave Sensors { #2611.19978 }
 
@@ -380,19 +393,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a>
-    { .paper-tags }
-
--   #### MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative modeling, in an application to tropical cyclones { #2606.24263 }
-
-    *Clément Dauvilliers, Claire Monteleoni* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.24263">Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution...</span><span class="abstract-full" id="full-2606.24263" hidden>Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution phases. While this raises the need for an interpolation method, it is made challenging by the high level of heterogeneity of microwave data coming from different instruments. In this work, we introduce the first generative model that can be applied to multiple geospatial sources that change across samples, occur at irregular time intervals, are misaligned geographically, and come from instruments with varying characteristics. We apply this model to the case of spatio-temporal interpolation of tropical cyclone microwave images from other microwave and infrared instruments. We train using a self-supervised task in which a random source is masked and reconstructed, and show that it leads to a significant decrease in Continuous Ranked Probability Score over supervised training. We show a further improvement by combining infrared and microwave data compared to microwave only. Using these improvements, the generative model produces an ensemble mean on par with that of a deterministic model, while generating a power spectrum significantly closer to that of true observations. To the best of our knowledge, this is the first generative model that interpolates microwave images of cyclones by combining multiple microwave instruments and infrared observations at irregular time intervals.</span> <span class="abstract-toggle" data-id="2606.24263">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.24263v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.24263v1) · [:material-content-copy: BibTeX](../../bibtex/2606.24263.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
     { .paper-tags }
 
 </div>

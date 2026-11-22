@@ -7,23 +7,23 @@ title: weatherml
 
 A collection of papers on AI for weather forecasting, climate modelling and atmospheric science.
 
-<p class="page-meta" markdown="span">1663 papers · updated 2026-11-18 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
+<p class="page-meta" markdown="span">1671 papers · updated 2026-11-22 · <a href="feed.xml">:material-rss: RSS</a> · <a href="all_papers.bib" download>:material-download: BibTeX</a> · <a href="https://github.com/weatherml/weatherml.github.io/issues/new?template=suggest-paper.yml">:material-plus: Suggest a paper</a></p>
 
 ## Browse by Topic
 
 <div class="grid cards topics" markdown>
 
--   [Global Models](papers/global-models/index.md) <span class="topic-count">393</span>
+-   [Global Models](papers/global-models/index.md) <span class="topic-count">398</span>
 -   [Regional Models](papers/regional-models/index.md) <span class="topic-count">70</span>
 -   [Nowcasting](papers/nowcasting/index.md) <span class="topic-count">110</span>
 -   [Downscaling](papers/downscaling/index.md) <span class="topic-count">110</span>
 -   [Post-processing](papers/post-processing/index.md) <span class="topic-count">27</span>
--   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">83</span>
+-   [Data Assimilation](papers/data-assimilation/index.md) <span class="topic-count">84</span>
 -   [Climate Modeling](papers/climate-modeling/index.md) <span class="topic-count">317</span>
--   [Hydrology](papers/hydrology/index.md) <span class="topic-count">40</span>
+-   [Hydrology](papers/hydrology/index.md) <span class="topic-count">41</span>
 -   [Ocean & Sea Ice](papers/ocean-sea-ice/index.md) <span class="topic-count">94</span>
 -   [Air Quality & Composition](papers/air-quality-composition/index.md) <span class="topic-count">79</span>
--   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">112</span>
+-   [Remote Sensing](papers/remote-sensing/index.md) <span class="topic-count">113</span>
 -   [Other](papers/other/index.md) <span class="topic-count">228</span>
 
 </div>
@@ -31,6 +31,107 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
 ## Recent Additions
 
 <div class="grid cards" markdown data-search-exclude>
+
+-   #### Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem { #2611.26398 }
+
+    *Oriol Alàs, Ian Palacín, Iván Cester, Edgar Rubión* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.26398">EU-funded projects produce extensive evidence in the form of deliverables, reports, and case studies. However, this knowledge is typically scattered across projects and document structures, making it...</span><span class="abstract-full" id="full-2611.26398" hidden>EU-funded projects produce extensive evidence in the form of deliverables, reports, and case studies. However, this knowledge is typically scattered across projects and document structures, making it difficult to locate relevant, contextual information when making decisions. This paper introduces an Agentic AI Ecosystem that consolidates heterogeneous project documentation into a domain-aware knowledge base and provides adaptive access through an agentic Retrieval-Augmented Generation pipeline. Documents from three EU-funded projects (IMPETUS, NATALIE, and InnWater) are reconstructed into hierarchical section trees and indexed with structured metadata. Retrieval is supported by two domain-specific embedding models fine-tuned on domain data (water and climate). On top of this knowledge base, a ReAct-style controller iteratively orchestrates retrieval actions by allocating retrieval budget across domain collections and accumulating evidence until a stopping criterion is met. In a retrieval benchmark over the corpus, the proposed approach improves Mean Reciprocal Rank by 26.7% (relative) compared to a single-domain embedding baseline, indicating more consistent retrieval of relevant evidence to support cross-project knowledge synthesis and climate-resilient decision-making.</span> <span class="abstract-toggle" data-id="2611.26398">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.26398v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.26398v1) · [:material-content-copy: BibTeX](bibtex/2611.26398.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a>
+    { .paper-tags }
+
+-   #### Interpretable Prototype-Conditioned Adaptation for Weather Forecasting { #2611.25848 }
+
+    *Zhixuan Li, Hao Jiang, Chen Hui, Kai Geng, Weisi Lin* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.25848">Data-driven weather forecasting requires distinguishing local states and their temporal evolution. However, learned patterns remain implicit in neural forecasters, making their influence difficult to...</span><span class="abstract-full" id="full-2611.25848" hidden>Data-driven weather forecasting requires distinguishing local states and their temporal evolution. However, learned patterns remain implicit in neural forecasters, making their influence difficult to interpret. Failing to distinguish local evolution can lead to similar forecasts for locations that develop differently, increasing prediction error. This motivates explicit references for distinguishing and interpreting local patterns. Prototypes provide explicit pattern references, but sample- or task-level conditioning leaves open how to adapt to distinct locations and variable groups. To deal with this problem, we design ProtoCast, which uses group-specific prototype banks to adapt local features while accounting for cross-variable dependencies. Specifically, (1) we combine each group's historical features and temporal change with forecast context from cross-variable attention for evolution-aware prototype matching. (2) Sparse mixtures of prototype-specific low-rank operators tailor corrections to each group and location. A gated attention block then exchanges the corrected features across groups before prediction. Each group's correction decomposes into explicit prototype contributions before this fusion. (3) We jointly train the forecasting network and operators from scratch and refit each group's prototypes before every training epoch. Slot tracking preserves prototype-operator associations, making each prototype's contribution to local corrections more interpretable. Experiments on GlobalForecast and TyphoonTracking show improved forecasting accuracy, while prototype deletion links local feature contributions to changes in prediction error. This work advances the development of more accurate and interpretable data-driven weather forecasting models. Project page: https://zhixuanli.github.io/projects/li2026protocast</span> <span class="abstract-toggle" data-id="2611.25848">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.25848v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.25848v1) · [:material-content-copy: BibTeX](bibtex/2611.25848.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
+    { .paper-tags }
+
+-   #### Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens { #2611.25570 }
+
+    *Jinhan Li, Zhisheng Chen, Yuxuan Li, Yuan Gao, Fan Xu, Hao Wu, Jinlong Du, Kun Wang* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.25570">Global medium-range weather forecasting must not only generate ensembles efficiently to characterize uncertainty in future states, but also serve downstream applications such as extreme-event...</span><span class="abstract-full" id="full-2611.25570" hidden>Global medium-range weather forecasting must not only generate ensembles efficiently to characterize uncertainty in future states, but also serve downstream applications such as extreme-event warnings and cross-sphere coupled simulations. We introduce WeatherCraft, a framework that unifies probabilistic generation and reinforcement learning alignment through discrete weather tokens, bringing the GPT-style pretraining--post-training paradigm to global medium-range weather forecasting. A multiscale tokenizer represents atmospheric states as a coarse-to-fine token hierarchy, while a Transformer models causal dependencies across time and scale and predicts tokens within each scale in parallel. Direct sampling generates diverse ensembles, and exact token log-probabilities enable Group Relative Policy Optimization (GRPO) to maximize downstream task rewards without differentiating through evaluators or coupled models. On the ERA5 benchmark, WeatherCraft's eight-member ensemble mean reduces day-15 normalized RMSE by 17.6% relative to the strongest evaluated deterministic baseline and, with KV caching, achieves an approximately $18\times$ inference speedup over GenCast. Direct fair-CRPS adaptation improves ensemble probabilistic skill, while reward-based post-training improves forecasts of persistent land temperature extremes and coupled ocean heat extremes. This work establishes discrete autoregressive modeling as a general foundation for scalable, task-alignable Earth system foundation models.</span> <span class="abstract-toggle" data-id="2611.25570">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.25570v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.25570v1) · [:fontawesome-brands-github: Code](https://github.com/Jinhan-Li/WeatherCraft) · [:material-content-copy: BibTeX](bibtex/2611.25570.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=transformers" data-tag="transformers">Transformers</a> <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=reinforcement-learning" data-tag="reinforcement-learning">Reinforcement learning</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
+    { .paper-tags }
+
+-   #### Auditing Learned Dynamics in Weather Models { #2611.25119 }
+
+    *Skylar Gu, Christina Last* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.25119">Learned weather models are experimentally accessible computational systems whose internal representations can be inspected and manipulated. Using sparse autoencoder features from GraphCast,...</span><span class="abstract-full" id="full-2611.25119" hidden>Learned weather models are experimentally accessible computational systems whose internal representations can be inspected and manipulated. Using sparse autoencoder features from GraphCast, DeepMind's autoregressive weather forecasting model, we test whether causal relevance requires physical semantics, a question that matters for auditing whether AI forecasters used in high-assurance settings rely on reliable mechanisms. We also look at whether physically associated latent directions can be steered to improve extreme-event forecasts, where interventions are applied to the model's internal activations during the rollout. We find that ablating a feature locked to GraphCast's computational mesh increases global geopotential height error despite lacking conventional physical semantics. Second, suppressing convection- and low-level-vorticity-associated features weakens predicted tropical-cyclone deepening (the fall in central pressure during intensification), while amplifying them reduces intensity error, with amplification of convection features through feature scaling achieving a median of 51% error reduction over seven storms. Together, these results separate interpretable, physical association from causal utility and establish sparse features as experimental coordinates for auditing and intervening on learned weather dynamics.</span> <span class="abstract-toggle" data-id="2611.25119">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.25119v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.25119v1) · [:material-content-copy: BibTeX](bibtex/2611.25119.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh { #2611.25075 }
+
+    *Mahir Ahnaf, Showmitra Kumar Sarkar* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.25075">Bangladesh, home to nearly 178 million people, is highly vulnerable to recurring droughts that threaten food security and rural livelihoods. Machine-learning and deep-learning models are increasingly...</span><span class="abstract-full" id="full-2611.25075" hidden>Bangladesh, home to nearly 178 million people, is highly vulnerable to recurring droughts that threaten food security and rural livelihoods. Machine-learning and deep-learning models are increasingly used to forecast drought indices such as the Standardized Precipitation Evapotranspiration Index (SPEI). Most studies report accuracy without a persistence reference, although accumulated indices are strongly autocorrelated, and seldom test drought detection, longer leads or variation between training runs. This study forecast SPEI at 3-, 6- and 12-month timescales one to three months ahead for the eight divisions of Bangladesh, using ERA5 reanalysis checked against 35 Bangladesh Meteorological Department stations. Five models, XGBoost, CNN, Bi-LSTM, CNN-BiLSTM and CEEMDAN-BiLSTM, were trained with five seeds each, scored on accuracy, skill against persistence and drought detection, and interpreted with Shapley values. At a one-month lead, the CNN-BiLSTM and Bi-LSTM beat persistence clearly at SPEI-3 and SPEI-6 (skill 0.408 and 0.350), while at SPEI-12 a Nash-Sutcliffe efficiency of 0.872 barely exceeded persistence (0.850). Skill and detection could disagree: at SPEI-3 and a three-month lead, XGBoost had the highest skill (0.439) yet detected none of the 119 drought months. Only at SPEI-6 did the forecasts beat persistence significantly and match its detection at all three leads, with fewer false alarms. At SPEI-12, gains were small or absent and varied between seeds. The forecasts kept 76-80% of their correlation against station-derived SPEI and relied mainly on precipitation and lagged SPEI. Forecasts should therefore be judged on skill against persistence and detection across several seeds, not on accuracy alone. In Bangladesh, SPEI-6 forecasts can support early warning up to three months ahead and SPEI-3 forecasts one month ahead, while SPEI-12 is better suited to monitoring.</span> <span class="abstract-toggle" data-id="2611.25075">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.25075v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.25075v1) · [:fontawesome-brands-github: Code](https://github.com/mahirahnaf1727/bangladesh-spei-drought-forecasting) · [:material-content-copy: BibTeX](bibtex/2611.25075.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=recurrent-networks" data-tag="recurrent-networks">Recurrent networks</a> <a class="md-tag" href="/explore/?t=classical-ml" data-tag="classical-ml">Classical ML</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a>
+    { .paper-tags }
+
+-   #### Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence { #2611.24329 }
+
+    * Mariya* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.24329">Conformal prediction gives finite-sample, distribution-free marginal coverage and has begun to be applied to gridded weather forecasts. Marginal coverage concerns the long-run fraction of covered...</span><span class="abstract-full" id="full-2611.24329" hidden>Conformal prediction gives finite-sample, distribution-free marginal coverage and has begun to be applied to gridded weather forecasts. Marginal coverage concerns the long-run fraction of covered points at a location, not how coverage behaves jointly across space and time on a given day. I benchmark eight interval-construction procedures (Gaussian, pooled and per-cell split conformal, per-season, adaptive conformal inference and rolling windows) for gridded 2 m temperature forecasts at eight lead times from 6 hours to 10 days, using ERA5 at 5.625 degree resolution, a deliberately modest convolutional forecaster and ECMWF's operational HRES, with calibration in 2017-2018 and testing in 2019-2021. Alongside coverage, width and interval score, I report dependence diagnostics: a spatial overdispersion index, quantiles of daily spatial coverage and miss persistence relative to a shuffled-days null. Per-cell methods reach near-nominal marginal coverage, yet the day-to-day variance of the fraction of cells covered is roughly 3 to 10 times what independent cells would give, and misses cluster in time; both effects grow with lead time for the CNN, also appear for HRES, and are shared by all methods. An oracle that divides each day's normalised errors by that day's mean removes 81 to 92 percent of the excess dispersion for the CNN and 93 to 98 percent for HRES, so days of large errors across much of the grid account for most of it. A day-scale predicted from seasonal terms and already-verified errors lowers the overdispersion index without widening intervals but improves interval score by at most 0.6 percent; on HRES from 12 hours to 3 days it has the lowest overdispersion index while ACI or season-conditional calibration has the best interval score, so no method is best on both. The study covers one variable, one coarse grid, a reanalysis target and two forecasters.</span> <span class="abstract-toggle" data-id="2611.24329">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.24329v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.24329v1) · [:fontawesome-brands-github: Code](https://github.com/Mariyaaleem/conformal-wx) · [:material-content-copy: BibTeX](bibtex/2611.24329.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=coarse" data-tag="coarse">Coarse (≥1°)</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
+
+-   #### Enabling joint chemical and meteorological data assimilation with an atmospheric foundation model { #2611.24020 }
+
+    *Eliot J. Kim, Eric J. Mei, Peter D. Ivatt, Lee T. Murray, Alexander J. Turner* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.24020">The hydroxyl radical (OH) is the main oxidant in the troposphere and accounts for 88% of the methane sink, yet its abundance and trends remain poorly constrained. Satellites observe many of the...</span><span class="abstract-full" id="full-2611.24020" hidden>The hydroxyl radical (OH) is the main oxidant in the troposphere and accounts for 88% of the methane sink, yet its abundance and trends remain poorly constrained. Satellites observe many of the chemical and meteorological drivers of OH, but assimilating both requires a model that represents chemistry and meteorology together. Existing chemistry-climate models are too expensive for joint data assimilation. Here, we present AuroraChem, a fine-tuned version of the Aurora atmospheric foundation model that jointly simulates meteorology and the GEOS-Chem chemical fields needed to constrain OH. A one-year AuroraChem rollout takes 12 minutes on one GPU. Free rollouts remain stable for one year but do not fully capture seasonal cycles. Using idealized data assimilation, we find that chemical observations can constrain the meteorological state and meteorological observations can constrain the chemical state. Inserting only the chemical fields raises the annual mean spatial correlation of 500 hPa temperature from 0.89 to 0.92 and recovers the moisture and circulation pattern of the Indian summer monsoon. Inserting only the meteorological fields raises the 500 hPa OH correlation from 0.89 to 0.93, close to the 0.94 from inserting the chemical fields themselves, and recovers the OH seasonal cycle. Inserting only NO2 columns sampled at TROPOMI pixels gives an OH correlation of 0.93. These relationships likely reflect learned covariances rather than physical coupling, and covariances are what data assimilation uses to let an observation of one variable update the others. AuroraChem therefore provides a new pathway to joint chemical and meteorological data assimilation.</span> <span class="abstract-toggle" data-id="2611.24020">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.24020v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.24020v1) · [:material-content-copy: BibTeX](bibtex/2611.24020.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
+    { .paper-tags }
+
+-   #### Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review { #2611.23863 }
+
+    *Gabriele Messori, Hiu-Wang Lau, Chenyu Dong, Gianmarco Mengaldo, Leonardo Olivetti* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.23863">Data-driven weather forecasting models, chiefly trained on reanalysis data, now match or beat physics-based numerical weather prediction (NWP) models on most headline scores, but whether this...</span><span class="abstract-full" id="full-2611.23863" hidden>Data-driven weather forecasting models, chiefly trained on reanalysis data, now match or beat physics-based numerical weather prediction (NWP) models on most headline scores, but whether this advantage extends to extreme weather is contested. We review peer-reviewed studies that directly compare data-driven forecasts with NWP for extremes, from nowcasting to subseasonal lead times. We discuss grey literature in the outlook but do not include it in the formal review. There is good agreement on the fact that data-driven models mostly outperform NWP on temperature extremes, tropical cyclone tracks and the location of synoptic features across time scales. The evidence is mixed for extreme precipitation and feature-based extreme event detection such as extremes related to atmospheric rivers, while it leans toward better NWP performance for estimating event intensity. For record-breaking events that lie outside the training distribution, the evidence is narrower. Nonetheless, both a systematic global evaluation and several case studies find that physics-based models retain the advantage, with data-driven models underestimating both the frequency and the magnitude of records. Hybrid systems that post-process NWP with machine-learning (ML), or couple data-driven forecasts with physics-based models, deliver some of the largest and most consistent gains. We argue that headline scores, verification choices and case selection explain much of the apparent disagreement in the literature, and provide recommendations for a more trustworthy and interpretable evaluation of data-driven models for extreme and record-breaking weather.</span> <span class="abstract-toggle" data-id="2611.23863">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.23863v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.23863v1) · [:material-content-copy: BibTeX](bibtex/2611.23863.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a>
+    { .paper-tags }
 
 -   #### Improving Eddy Detection from Wide-Swath Altimetry with Multimodal Data-Driven Models { #2611.22601 }
 
@@ -238,104 +339,6 @@ A collection of papers on AI for weather forecasting, climate modelling and atmo
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=llms-agents" data-tag="llms-agents">LLMs & agents</a> <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
-    { .paper-tags }
-
--   #### An AI-enabled high-resolution chlorophyll-a forecasting model that outperforms the operational global biogeochemical system { #2611.17704 }
-
-    *Yong Jiang, Zheng Jiang, Gaowei Zhang, Zengzhou Hao, Suixiang Shi, Chi Zhang, Wei Wang* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.17704">Surface chlorophyll-a concentration is a key indicator of marine phytoplankton variability, and short-term forecasts of its distribution provide advance information for marine ecosystem monitoring...</span><span class="abstract-full" id="full-2611.17704" hidden>Surface chlorophyll-a concentration is a key indicator of marine phytoplankton variability, and short-term forecasts of its distribution provide advance information for marine ecosystem monitoring and management. However, interactions between physical transport and biological processes complicate chlorophyll-a forecasting, and simulating these coupled processes with conventional numerical models imposes substantial computational demands. Here we introduce ChlCast, an AI model that generates daily forecasts of surface chlorophyll-a concentration over a 10-day horizon at approximately 4-km resolution between 60$^\circ$S and 60$^\circ$N. ChlCast combines factorized spatiotemporal convolutions with a multiscale architecture to learn from historical chlorophyll-a fields and climatological information. Compared with the operational 0.25$^\circ$ Copernicus global ocean biogeochemical forecasting system, ChlCast reduces mean absolute error and root mean square error by 70.74% and 47.63%, respectively, against satellite-derived Level-4 chlorophyll-a fields, and by 35.03% and 13.07% against independent BGC-Argo in situ observations. Coastal case studies further show that the 4-km forecasts retain coastal gradients and localized concentration maxima that are weakened by coarse-grid averaging. These results demonstrate the potential of observation-driven deep learning for high-resolution forecasting of surface chlorophyll-a variability at the near-global scale.</span> <span class="abstract-toggle" data-id="2611.17704">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.17704v2) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.17704v2) · [:material-content-copy: BibTeX](bibtex/2611.17704.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=km-scale" data-tag="km-scale">Km-scale</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
-    { .paper-tags }
-
--   #### Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network { #2611.16322 }
-
-    *Yongxiang Lei* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.16322">Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep...</span><span class="abstract-full" id="full-2611.16322" hidden>Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep DualMamba, a novel deep learning framework for temporal temperature prediction, built upon an enhanced variant of the recently proposed Mamba network. Unlike conventional Transformer-based architectures, which dominate foundation models but suffer from computational inefficiencies on long sequences, Deep DualMamba leverages selective structured state space models (SSMs) to achieve both scalability and performance. We identify a core limitation of prior subquadratic-time models-namely, their inability to perform long-term and robust forecasting and introduce two key innovations. First, we propose an adaptive bidirectional Mamba as encoders to learn complex and efficient features. Second, we develop a hardware-aware, parallel recurrent algorithm to compensate for the loss of convolutional efficiency, ensuring practical viability at scale. Last, the Deep DualMamba's approximation ability and convergence is theoretical analyzed. These design choices culminate in a simplified, attention- and MLP-free neural architecture that exhibits linear complexity with sequence length and significantly improved inference throughput. To demonstrate its applicability in climate informatics, we implement a full forecasting pipeline using historical meteorological data from UK monitoring stations.</span> <span class="abstract-toggle" data-id="2611.16322">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.16322v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.16322v1) · [:material-content-copy: BibTeX](bibtex/2611.16322.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### HybridCT: ML Accelerated Tomography for Climate Relevant 3D Cloud Observations { #2611.16255 }
-
-    *Linda Forster, Nicholas J. LaHaye, Marcin J. Kurowski, Anna Jungbluth, Bernhard Mayer et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.16255">Low-level clouds are one of the largest sources of uncertainty in climate predictions, partly because we lack detailed three-dimensional (3D) measurements of their internal structure. Here, we...</span><span class="abstract-full" id="full-2611.16255" hidden>Low-level clouds are one of the largest sources of uncertainty in climate predictions, partly because we lack detailed three-dimensional (3D) measurements of their internal structure. Here, we present HybridCT, a cloud tomographic reconstruction scheme accelerated by machine learning (ML) that recovers 3D cloud extinction directly from passive multi-angle observations. An ML emulator maps radiances from multiple viewing angles to cloud optical thickness (COT), producing path-integrated projections, and a Simultaneous Algebraic Reconstruction Technique (SART) explicitly inverts these projections to retrieve 3D extinction. Training observations are generated from synthetic 3D cloud fields using radiative transfer simulations for nine viewing angles between $\pm$70$^{\circ}$. HybridCT reconstructs extinction with RMSE 13.3 km$^{-1}$ in 3.5 s, compared to 22.7 km$^{-1}$ in approx. 30 min for the state-of-the-art physics-based tomography framework AT3D, a speedup exceeding 500$\times$. HybridCT thus provides a scalable route toward large-scale observations of 3D cloud structure relevant to radiative-budget interpretation and evaluation of high-resolution cloud simulations.</span> <span class="abstract-toggle" data-id="2611.16255">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.16255v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.16255v1) · [:material-content-copy: BibTeX](bibtex/2611.16255.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=sub-hourly" data-tag="sub-hourly">Sub-hourly</a>
-    { .paper-tags }
-
--   #### A hybrid machine learning-analog framework for downscaling unprecedented climate extremes { #2611.15284 }
-
-    *Nina Effenberger, Florian E. Roemer, Maybritt Schillinger, Maxim Samarin, Erich Fischer, Reto Knutti* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.15284">Extreme weather events are critical for climate impact assessments. While physical models can simulate unprecedented extremes, for example, through ensemble boosting, this approach is computationally...</span><span class="abstract-full" id="full-2611.15284" hidden>Extreme weather events are critical for climate impact assessments. While physical models can simulate unprecedented extremes, for example, through ensemble boosting, this approach is computationally demanding, often restricting output to coarse spatial resolutions. Probabilistic generative downscaling offers a solution by enabling efficient sampling from the entire climate distribution, including its extreme tails. Here, we first demonstrate that machine learning generated regional climate model heatwaves over Paris are physically realistic. We then leverage an emulated machine learning dataset to perform analog-based downscaling of coarse global climate model ensemble boosting events. Our hybrid framework effectively bridges high-resolution regional detail with rare-event sampling, providing an efficient tool for extreme event downscaling and capturing multi-model uncertainty.</span> <span class="abstract-toggle" data-id="2611.15284">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15284v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15284v1) · [:material-content-copy: BibTeX](bibtex/2611.15284.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=extremes" data-tag="extremes">Extremes</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting { #2611.15266 }
-
-    *Runzepu Hou, Feng Zhang, Xin Wu, Xujun Wei, Fenghua Ling, Kan Dai, Gaozhen Nie, Leiming Ma et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.15266">Accurate tropical cyclone intensity forecasts are essential for disaster preparedness, yet persistent intensity underestimation limits the value of artificial intelligence (AI) weather models for...</span><span class="abstract-full" id="full-2611.15266" hidden>Accurate tropical cyclone intensity forecasts are essential for disaster preparedness, yet persistent intensity underestimation limits the value of artificial intelligence (AI) weather models for predicting these destructive storms. Here we present DaYu-TC, a global-regional nested system that links the preservation of strong-wind and low-pressure signals with high-resolution regional prediction. Its global and regional models share an architecture and extreme-aware training objectives. The regional model combines evolving local states with global forecasts valid at each target time, connecting large-scale environmental information with finer-scale cyclone evolution. In an independent evaluation of 16 western North Pacific tropical cyclones in 2023, the global model retains competitive conventional forecast skill while reducing five-day maximum-wind root-mean-square error (RMSE) by 6-22% relative to other evaluated global AI models. Relative to the global model, regional nesting reduces maximum-wind RMSE by 22.0-33.1% and minimum-pressure RMSE by 28.6-39.8% across 12-120 h. The complete system outperforms concurrent operational high-resolution forecasts from the European Centre for Medium-Range Weather Forecasts for minimum pressure at 12-120 h and maximum wind speed at 48-96 h, with respective RMSE reductions of 26% and 12% at 72 h. Without retraining, the same regional model enhances three other global AI models, reducing overall maximum-wind RMSE by 22.6-28.6%. Five-day forecasts take under one minute on a single GPU. These results establish a transferable multiscale approach to reducing cyclone intensity underestimation, extending advances in AI weather forecasting towards more accurate prediction of high-impact weather events.</span> <span class="abstract-toggle" data-id="2611.15266">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15266v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15266v1) · [:material-content-copy: BibTeX](bibtex/2611.15266.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Winter wheat improves soil carbon sequestration with reduced gains in warmer climates { #2611.15232 }
-
-    *Georgios Giannarakis, Vasileios Sitokonstantinou, Dimitrios Bormpoudakis, Ilias Tsoumas et al.* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.15232">Sustainable agricultural intensification requires a precise understanding of how land use decisions influence soil organic carbon (SOC) sequestration under varying environmental conditions. We apply...</span><span class="abstract-full" id="full-2611.15232" hidden>Sustainable agricultural intensification requires a precise understanding of how land use decisions influence soil organic carbon (SOC) sequestration under varying environmental conditions. We apply causal machine learning to evaluate the heterogeneous impact of winter wheat-based rotations on SOC at the field-level across Lithuania. Using a nationwide dataset collected over five years (2018-2022), including crop types, management practices, soil properties, and environmental conditions, we estimate how the effects of winter wheat-based rotation vary across space and climate. Our results indicate that winter wheat generally enhances SOC levels, but its effectiveness is modulated by climate. Cooler regions experience higher SOC gains, whereas warmer regions show diminished or even negative effects. Future climate projections suggest that the potential for winter wheat carbon sequestration may decline under high-emission scenarios. These findings highlight the importance of localized agricultural strategies that account for climate variability to maximize SOC sequestration and ensure long-term soil sustainability.</span> <span class="abstract-toggle" data-id="2611.15232">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15232v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15232v1) · [:material-content-copy: BibTeX](bibtex/2611.15232.bib){ .bibtex-link }
-    { .paper-links }
-
--   #### PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation Models { #2611.15053 }
-
-    *Anjan Mahapatra, Nikhil Raj* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.15053">Modern machine learning models for global weather forecasting achieve remarkable predictive accuracy, yet they frequently produce states that violate fundamental physical laws, including conservation...</span><span class="abstract-full" id="full-2611.15053" hidden>Modern machine learning models for global weather forecasting achieve remarkable predictive accuracy, yet they frequently produce states that violate fundamental physical laws, including conservation of mass, hydrostatic balance, or spectral energy scaling. We term these outputs physical hallucinations and propose PhysXAI, a rigorous diagnostic framework that detects, localises, and attributes such inconsistencies. Unlike existing post-hoc metric suites, PhysXAI is a learnable system that explicitly decouples forecast error from physical plausibility. We formalise the problem through a novel joint condition on numerical and physical residuals, and introduce a multi-branch encoder that extracts representations from conservation, dynamical, spectral, cross-variable, and spatiotemporal residuals. A key innovation is a physics-consistency contrastive learning objective, which we theoretically show the latent representation to be approximately isometric to the physical residual space, ensuring that diagnostic decisions remain grounded in physically meaningful deviations. We further derive an adaptive multi-objective loss with gradient-based weighting to balance competing diagnostic objectives. The framework produces spatially resolved hallucination maps, violation-type classifications, and calibrated Bayesian uncertainty, enabling both detection and interpretable attribution of physical inconsistencies. We conduct a comprehensive comparative evaluation of PhysXAI across ERA5, WeatherBench 2, and MERRA-2, using forecasts from GraphCast, Pangu-Weather, and NeuralGCM, with Python-written code and a fully reproducible experimental protocol. Our theoretical analysis and empirical evaluation establish PhysXAI as a principled framework for diagnosing physical hallucinations and advancing trustworthy AI for weather forecasting.</span> <span class="abstract-toggle" data-id="2611.15053">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.15053v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.15053v1) · [:material-content-copy: BibTeX](bibtex/2611.15053.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a> <a class="md-tag" href="/explore/?t=physics-ml-hybrid" data-tag="physics-ml-hybrid">Physics–ML hybrid</a> <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Data-driven Reconstruction of the Phase Dynamics for the El Niño-Southern Oscillation Reveals Seasonality and Statistical Synchronization with the Annual Cycle { #2611.14868 }
-
-    *Takahiro Arai, Yoji Kawamura* · Nov 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2611.14868">In this study, we treat the El Niño-Southern Oscillation (ENSO) as a rhythmic system periodically forced by the annual cycle. We examine ENSO event seasonality and synchronization between the annual...</span><span class="abstract-full" id="full-2611.14868" hidden>In this study, we treat the El Niño-Southern Oscillation (ENSO) as a rhythmic system periodically forced by the annual cycle. We examine ENSO event seasonality and synchronization between the annual and ENSO cycles. We compute phase time series for both cycles from sea surface temperature data using a data-driven Koopman operator approach. We then use Bayesian inference to reconstruct phase equations describing how the phases of the two oscillators evolve. The reconstructed two-variable phase equations show that the annual cycle modulates the instantaneous frequency of the fundamental ENSO mode. Stochastic simulations of these equations incorporating the estimated stationary noise indicate that El Niño and La Niña events tend to last longer when they start in boreal summer and that the variability of their durations is greater when they start in boreal spring. Furthermore, the averaged form of the phase equations indicates statistical $3:1$ phase locking between the annual and ENSO cycles, whereas no statistical phase locking is found for the other $m:n$ ratios.</span> <span class="abstract-toggle" data-id="2611.14868">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.14868v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.14868v1) · [:material-content-copy: BibTeX](bibtex/2611.14868.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=subseasonal-to-seasonal" data-tag="subseasonal-to-seasonal">Subseasonal to seasonal</a>
     { .paper-tags }
 
 </div>

@@ -60,13 +60,18 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1663)
+## Papers (1671)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (393)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (398)</summary>
 
+- **Interpretable Prototype-Conditioned Adaptation for Weather Forecasting** (Nov 2026) - [arXiv:2611.25848](https://arxiv.org/abs/2611.25848v1)
+- **Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens** (Nov 2026) - [arXiv:2611.25570](https://arxiv.org/abs/2611.25570v1)
+- **Auditing Learned Dynamics in Weather Models** (Nov 2026) - [arXiv:2611.25119](https://arxiv.org/abs/2611.25119v1)
+- **Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence** (Nov 2026) - [arXiv:2611.24329](https://arxiv.org/abs/2611.24329v1)
+- **Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review** (Nov 2026) - [arXiv:2611.23863](https://arxiv.org/abs/2611.23863v1)
 - **Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction** (Nov 2026) - [arXiv:2611.21602](https://arxiv.org/abs/2611.21602v1)
 - **Run it Back: Autoregression vs. Video Diffusion for Final-Conditioned Weather Trajectories** (Nov 2026) - [arXiv:2611.21521](https://arxiv.org/abs/2611.21521v1)
 - **Improving Tropical Cyclone Forecasts through Objective Ensemble Track-Error Reduction** (Nov 2026) - [arXiv:2611.20251](https://arxiv.org/abs/2611.20251v1)
@@ -805,8 +810,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (83)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/data-assimilation/">Data Assimilation</a></b> (84)</summary>
 
+- **Enabling joint chemical and meteorological data assimilation with an atmospheric foundation model** (Nov 2026) - [arXiv:2611.24020](https://arxiv.org/abs/2611.24020v1)
 - **Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents** (Nov 2026) - [arXiv:2611.17854](https://arxiv.org/abs/2611.17854v1)
 - **Analysis increments for model bias diagnosis and correction: Theoretical foundations** (Nov 2026) - [arXiv:2611.11162](https://arxiv.org/abs/2611.11162v1)
 - **Machine Learning Sensor Fusion for Water Vapor Radiometry based Tropospheric Delay Calibration** (Oct 2026) - [arXiv:2610.41052](https://arxiv.org/abs/2610.41052v1)
@@ -1217,8 +1223,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/hydrology/">Hydrology</a></b> (40)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/hydrology/">Hydrology</a></b> (41)</summary>
 
+- **Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh** (Nov 2026) - [arXiv:2611.25075](https://arxiv.org/abs/2611.25075v1)
 - **Generated storm lifecycles fill the rare-event tail of short rainfall records** (Oct 2026) - [arXiv:2610.41365](https://arxiv.org/abs/2610.41365v2)
 - **PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data** (Oct 2026) - [arXiv:2610.19994](https://arxiv.org/abs/2610.19994v1)
 - **A Gated Catchment Hydrology Model (GCHM) for Physically-Interpretable Rainfall-Evapotranspiration-Runoff Simulation Across Diverse Hydroclimatic Regimes** (Oct 2026) - [arXiv:2610.14493](https://arxiv.org/abs/2610.14493v1)
@@ -1448,8 +1455,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (112)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/remote-sensing/">Remote Sensing</a></b> (113)</summary>
 
+- **Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem** (Nov 2026) - [arXiv:2611.26398](https://arxiv.org/abs/2611.26398v1)
 - **GPROF V08: Improving Satellite Precipitation Estimates Across a Heterogeneous Constellation of Passive-Microwave Sensors** (Nov 2026) - [arXiv:2611.19978](https://arxiv.org/abs/2611.19978v1)
 - **Towards GPROF V08: A Machine-Learning Framework for Simulating Passive Microwave Observations of Precipitation** (Nov 2026) - [arXiv:2611.19966](https://arxiv.org/abs/2611.19966v1)
 - **WeatherDreamer: Learning a World Model from Multimodal Earth Observations** (Nov 2026) - [arXiv:2611.18393](https://arxiv.org/abs/2611.18393v1)
