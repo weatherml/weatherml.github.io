@@ -8,11 +8,24 @@ hide:
 
 # Downscaling
 
-<p class="page-meta" markdown="span">110 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">111 papers · page 1 of 4 · <a href="../../bib/downscaling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Beyond Resolution: Inference-Time Parameterized Temporal Consistency in Generative Regional Climate Downscaling { #2611.27641 }
+
+    *Luca Glawion, Julius Polz, Harald Kunstmann, Benjamin Fersch, Patrick Ludwig et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.27641">GCM-to-RCM downscaling emulation is dominated by generative diffusion models, but most existing work evaluates skill only per timestep, treating each field as an independent snapshot. This leaves...</span><span class="abstract-full" id="full-2611.27641" hidden>GCM-to-RCM downscaling emulation is dominated by generative diffusion models, but most existing work evaluates skill only per timestep, treating each field as an independent snapshot. This leaves open whether generated sequences are temporally coherent or merely independently plausible, a gap that matters increasingly for sub-daily resolutions since downstream impacts depend on accumulation and persistence, not just on isolated states. This study asks whether autoregressive conditioning can deliver coherent rollouts without error accumulation and ensemble-spread collapse, and whether a single model can expose the resulting coherence-diversity trade-off as a controllable inference choice rather than a fixed design commitment. We introduce a noise-conditioned teacher-forcing training scheme conditioning a diffusion U-Net downscaling model on a noised previous high-resolution state, so the trained model interpolates continuously between autoregressive (AR) and per-timestep independent (PTI) sampling via one noise parameter. We apply the scheme to an hourly, European-domain historical simulation downscaling AWI-CM1 (1$^\circ$) with ICON (0.11$^\circ$, regridded to 0.25$^\circ$) for precipitation and 2-meter temperature. The noise parameter traces a smooth interpolation between ICON's autocorrelation and PTI generation. AR rollouts of up to six months show no progressive degradation, with ensemble spread contracting only slightly within the first 24 hours. In contrast, the same architecture trained on noise-free previous states diverges. For precipitation PTI underestimates maxima by up to 2x in daily aggregations, while AR tracks ICON's maxima closely. For temperature, differences between modes are negligible. These results show that in diffusion downscaling temporal consistency can be achieved architecture-agnostically and offered as a controllable, not fixed, inference choice.</span> <span class="abstract-toggle" data-id="2611.27641">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.27641v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.27641v1) · [:material-content-copy: BibTeX](../../bibtex/2611.27641.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a> <a class="md-tag" href="/explore/?t=hourly" data-tag="hourly">Hourly</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
 
 -   #### A hybrid machine learning-analog framework for downscaling unprecedented climate extremes { #2611.15284 }
 
@@ -383,19 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=regional" data-tag="regional">Regional</a>
-    { .paper-tags }
-
--   #### Flow Matching for Convective-Scale Precipitation Downscaling { #2606.00281 }
-
-    *Tom Wetherell* · Jun 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2606.00281">Generative machine learning is an increasingly important complement to dynamical downscaling for producing high-resolution precipitation projections, with diffusion models currently the leading...</span><span class="abstract-full" id="full-2606.00281" hidden>Generative machine learning is an increasingly important complement to dynamical downscaling for producing high-resolution precipitation projections, with diffusion models currently the leading approach. Flow matching is a related generative framework that has recently achieved strong results across image, video and other domains, and shown early promise for downscaling. We train a flow matching model to map daily precipitation from 8 km to 2 km over a convective-scale domain centred on Singapore, and benchmark it against CPMGEM, a score-based diffusion model. Flow matching achieves consistently better spatial skill: higher fractions skill score at every precipitation threshold and neighbourhood scale tested, and tighter structure and amplitude components of the SAL score with comparable location skill. However, flow matching underestimates the upper tail of the precipitation distribution, resulting in a dry bias in the climatological mean. These results suggest that flow matching is a competitive generative framework for convective-scale precipitation downscaling, particularly well suited to capturing spatial structure.</span> <span class="abstract-toggle" data-id="2606.00281">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2606.00281v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2606.00281v1) · [:material-content-copy: BibTeX](../../bibtex/2606.00281.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
     { .paper-tags }
 
 </div>

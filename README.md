@@ -60,13 +60,16 @@ uv run python src/build_pages.py
 
 <!-- PAPERS_START -->
 
-## Papers (1671)
+## Papers (1682)
 
 Newest first.
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (398)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/global-models/">Global Models</a></b> (401)</summary>
 
+- **Evaluation of Machine-Learning Weather Models in Reproducing Mesoscale Tornado-Favorable Convective Environments** (Nov 2026) - [arXiv:2611.31564](https://arxiv.org/abs/2611.31564v1)
+- **Stochastic climate emulation at reduced cost with ACE2.5-ERA5** (Nov 2026) - [arXiv:2611.28315](https://arxiv.org/abs/2611.28315v1)
+- **Adapting AI Weather Foundation Models to a Changing Climate** (Nov 2026) - [arXiv:2611.27605](https://arxiv.org/abs/2611.27605v1)
 - **Interpretable Prototype-Conditioned Adaptation for Weather Forecasting** (Nov 2026) - [arXiv:2611.25848](https://arxiv.org/abs/2611.25848v1)
 - **Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens** (Nov 2026) - [arXiv:2611.25570](https://arxiv.org/abs/2611.25570v1)
 - **Auditing Learned Dynamics in Weather Models** (Nov 2026) - [arXiv:2611.25119](https://arxiv.org/abs/2611.25119v1)
@@ -545,8 +548,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (110)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/nowcasting/">Nowcasting</a></b> (111)</summary>
 
+- **AlignPre: Skill-Aligned Post-Training for Latent-Free Generative Precipitation Nowcasting** (Nov 2026) - [arXiv:2611.34101](https://arxiv.org/abs/2611.34101v1)
 - **A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs** (Nov 2026) - [arXiv:2611.20114](https://arxiv.org/abs/2611.20114v1)
 - **Discovering Equations for the Thermodynamics of South Asian Monsoon Precipitation** (Nov 2026) - [arXiv:2611.14401](https://arxiv.org/abs/2611.14401v1)
 - **Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation** (Nov 2026) - [arXiv:2611.12999](https://arxiv.org/abs/2611.12999v1)
@@ -661,8 +665,9 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (110)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/downscaling/">Downscaling</a></b> (111)</summary>
 
+- **Beyond Resolution: Inference-Time Parameterized Temporal Consistency in Generative Regional Climate Downscaling** (Nov 2026) - [arXiv:2611.27641](https://arxiv.org/abs/2611.27641v1)
 - **A hybrid machine learning-analog framework for downscaling unprecedented climate extremes** (Nov 2026) - [arXiv:2611.15284](https://arxiv.org/abs/2611.15284v1)
 - **PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling** (Nov 2026) - [arXiv:2611.11318](https://arxiv.org/abs/2611.11318v1)
 - **Operator-Aware Posterior Sampling for Multivariate Weather Downscaling** (Oct 2026) - [arXiv:2610.39592](https://arxiv.org/abs/2610.39592v1)
@@ -900,8 +905,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (317)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/climate-modeling/">Climate Modeling</a></b> (320)</summary>
 
+- **A Comparison of Uncertainty in AI and Dynamical Climate Ensembles** (Nov 2026) - [arXiv:2611.31064](https://arxiv.org/abs/2611.31064v1)
+- **An exact and differentiable rewrite of a coupled weather and fire model** (Nov 2026) - [arXiv:2611.30866](https://arxiv.org/abs/2611.30866v1)
+- **ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code** (Nov 2026) - [arXiv:2611.28477](https://arxiv.org/abs/2611.28477v1)
 - **SeasonRainBench: Global Seasonal Precipitation** (Nov 2026) - [arXiv:2611.22281](https://arxiv.org/abs/2611.22281v1)
 - **Winter wheat improves soil carbon sequestration with reduced gains in warmer climates** (Nov 2026) - [arXiv:2611.15232](https://arxiv.org/abs/2611.15232v1)
 - **Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data** (Nov 2026) - [arXiv:2611.13359](https://arxiv.org/abs/2611.13359v1)
@@ -1574,8 +1582,11 @@ Newest first.
 </details>
 
 <details>
-<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (228)</summary>
+<summary><b><a href="https://weatherml.github.io/papers/other/">Other</a></b> (231)</summary>
 
+- **Investigating the efficacy of vortex beam speckle patterns for the recognition of atmospheric turbulence and fractional topological charge with a deep learning model** (Nov 2026) - [arXiv:2611.34573](https://arxiv.org/abs/2611.34573v1)
+- **LatENSO v1.0: a learned latent state of the tropical Pacific for seasonal ENSO operators and forecasting** (Nov 2026) - [arXiv:2611.34296](https://arxiv.org/abs/2611.34296v1)
+- **Geospatial foundation models and deep learning for climate resilience: a review of transfer, uncertainty and decision readiness** (Nov 2026) - [arXiv:2611.30198](https://arxiv.org/abs/2611.30198v1)
 - **Learning Calibrated and Samplable Predictive Distributions of Surface-Ocean $Δp$CO$_2$ Using Tabular Diffusion Models** (Nov 2026) - [arXiv:2611.21769](https://arxiv.org/abs/2611.21769v1)
 - **Physics-Spawned Neural Integration of Rotating Shallow-Water Dynamics** (Nov 2026) - [arXiv:2611.20054](https://arxiv.org/abs/2611.20054v1)
 - **Spatiotemporal Reconstruction of Auroral Precipitations with Neural Fields** (Nov 2026) - [arXiv:2611.19757](https://arxiv.org/abs/2611.19757v1)

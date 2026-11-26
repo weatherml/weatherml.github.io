@@ -8,11 +8,24 @@ hide:
 
 # Nowcasting
 
-<p class="page-meta" markdown="span">110 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">111 papers · page 1 of 4 · <a href="../../bib/nowcasting.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### AlignPre: Skill-Aligned Post-Training for Latent-Free Generative Precipitation Nowcasting { #2611.34101 }
+
+    *Demin Yu, Kenghong Lin, Xutao Li* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.34101">Precipitation nowcasting requires accurate short-term predictions under rapidly evolving spatiotemporal dynamics. Generative diffusion models can produce detailed and competitive radar forecasts by...</span><span class="abstract-full" id="full-2611.34101" hidden>Precipitation nowcasting requires accurate short-term predictions under rapidly evolving spatiotemporal dynamics. Generative diffusion models can produce detailed and competitive radar forecasts by modeling conditional distributions. However, most existing approaches rely on separately trained components, such as deterministic branches or latent compression modules. More fundamentally, distribution matching alone fails to explicitly optimize operational forecast skill. We propose AlignPre, a streamlined pixel-space nowcasting framework that bridges this gap via skill-aligned post-training (SAPT). AlignPre employs an end-to-end flow-matching forecaster with a hierarchical spatiotemporal architecture for distribution matching and direct radar-field synthesis, without latent compression. During post-training, SAPT exploits the analytic structure of forecast verification scores to construct a differentiable objective. By backpropagating gradients of this objective from radar fields to the generator, SAPT turns forecast verification into direct training feedback. Across three real-world benchmarks spanning different forecast horizons, AlignPre consistently surpasses state-of-the-art deterministic and generative baselines in forecast skill, demonstrating that aligning generative modeling with domain-specific verification provides an effective paradigm for meteorological forecasting.</span> <span class="abstract-toggle" data-id="2611.34101">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.34101v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.34101v1) · [:material-content-copy: BibTeX](../../bibtex/2611.34101.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=diffusion-flow-matching" data-tag="diffusion-flow-matching">Diffusion & flow matching</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a> <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a>
+    { .paper-tags }
 
 -   #### A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs { #2611.20114 }
 
@@ -383,19 +396,6 @@ hide:
     { .paper-links }
 
     <a class="md-tag" href="/explore/?t=cnn-u-net" data-tag="cnn-u-net">CNN / U-Net</a> <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
-
--   #### Visibility nowcasting in South Korea: a machine learning approach to class imbalance and distribution shift { #2605.21507 }
-
-    *Bong Gyun Shin, Chan Sik Lee, Hyesun Suh* · May 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2605.21507">Atmospheric visibility is a critical variable for transportation safety and air quality management, however, accurate prediction remains challenging due to the complex interactions between...</span><span class="abstract-full" id="full-2605.21507" hidden>Atmospheric visibility is a critical variable for transportation safety and air quality management, however, accurate prediction remains challenging due to the complex interactions between meteorological conditions and air pollutants, as well as the rarity of low-visibility events. This study introduces a machine learning framework to nowcast visibility in six major South Korean cities. To handle the imbalance in the 2018-2020 training data, we applied the Synthetic Minority Over-sampling Technique with Nominal and Continuous (SMOTENC) and Conditional Tabular Generative Adversarial Network (CTGAN). An ensemble approach combining machine learning and deep learning models was then used and evaluated on a 2021 test dataset. The results revealed a marked decline in predictive performance in the test set compared to the cross-validation phase. This degradation was attributed to a distributional shift between training and testing periods, which was quantitatively confirmed by measuring the Wasserstein distance of the most influential feature identified by SHAP analysis. In general, this study presents a methodology that aims to simultaneously address the dual challenges of data imbalance and temporal distributional shifts, and emphasizes the necessity of accounting for evolving external environmental factors when implementing nowcasting models on time-series data.</span> <span class="abstract-toggle" data-id="2605.21507">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2605.21507v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2605.21507v1) · [:material-content-copy: BibTeX](../../bibtex/2605.21507.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=gans" data-tag="gans">GANs</a>
     { .paper-tags }
 
 </div>

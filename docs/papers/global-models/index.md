@@ -8,11 +8,50 @@ hide:
 
 # Global Models
 
-<p class="page-meta" markdown="span">398 papers · page 1 of 14 · <a href="../../bib/global-models.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">401 papers · page 1 of 14 · <a href="../../bib/global-models.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### Evaluation of Machine-Learning Weather Models in Reproducing Mesoscale Tornado-Favorable Convective Environments { #2611.31564 }
+
+    *Yiding Luo, Rui Yuan, Shetian Xia, Royce Lee, Alexandra Anderson-Frey* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.31564">Machine-learning (ML)-based weather prediction models have developed rapidly in recent years and are already being used in operational weather forecasting. These ML-based models' performance has...</span><span class="abstract-full" id="full-2611.31564" hidden>Machine-learning (ML)-based weather prediction models have developed rapidly in recent years and are already being used in operational weather forecasting. These ML-based models' performance has exceeded that of traditional numerical weather prediction (NWP) methods in certain implementations, with substantially lower computational cost. However, most ML-based models were trained on global data at a horizontal grid spacing of 0.25 degrees, which may be too coarse to capture tornado-favorable parameters. The ability of these ML-based models to predict the parameters relevant for tornado-favorable convection remains unclear. Here, we compare the performance of three ML-based models, Pangu-Weather, FengWu (versions 1 and 2), and FuXi Weather, in forecasting ten distinct convective events associated with strong tornadoes that occurred in Oklahoma, USA. The proposed methodology incorporates five lead times, ranging from 24 to 168 h, for each event and uses reanalysis data as both model input and ground truth. We evaluate the models by forecasting eight tornado-relevant parameters and by conducting spatial and value-consistency checks between model outputs and ground truth. Performance varies across parameters, models, and events. Pangu-Weather performs well for positive storm-relative helicity, while FuXi Weather performs well for several thermodynamic parameters, albeit with some overprediction of magnitude. Increasing lead time is associated with loss of extreme-value and spatial-structure fidelity. In the Global Forecast System (GFS) case study, ML-based models retain convective signals at longer lead times but poorly represent fine-scale structures such as cold pool-like features. These findings indicate that model-specific biases and spatial extremes should be assessed alongside domain-wide forecast scores.</span> <span class="abstract-toggle" data-id="2611.31564">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.31564v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.31564v1) · [:material-content-copy: BibTeX](../../bibtex/2611.31564.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=evaluation" data-tag="evaluation">Evaluation</a> <a class="md-tag" href="/explore/?t=quarter-degree" data-tag="quarter-degree">0.25°</a>
+    { .paper-tags }
+
+-   #### Stochastic climate emulation at reduced cost with ACE2.5-ERA5 { #2611.28315 }
+
+    *Jeremy McGibbon, Troy Arcomano, Spencer K. Clark, James P. C. Duncan, Brian Henn, Oliver Watt-Meyer* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.28315">We introduce ACE2.5-ERA5 (Ai2 Climate Emulator of ERA5, version 2.5), a stochastic autoregressive weather-climate AI model that produces calibrated weather ensembles with realistic small-scale...</span><span class="abstract-full" id="full-2611.28315" hidden>We introduce ACE2.5-ERA5 (Ai2 Climate Emulator of ERA5, version 2.5), a stochastic autoregressive weather-climate AI model that produces calibrated weather ensembles with realistic small-scale structure on timescales from days to centuries. Its deterministic predecessor, ACE2-ERA5, retains 36% of its ERA5 target's precipitation spectral power at total wavenumbers 100--179; ACE2.5-ERA5 retains 86%. In weather forecasts its ensemble spread matches its error to within 4% from day 3. Time-mean climate is on par with or better than ACE2-ERA5, the precipitation response to ENSO is improved, and the model is stable over 1000 years. Interannual variability of global mean surface temperature is shown not to be calibrated in either ACE2.5-ERA5 or its predecessor. ACE2.5-ERA5 differs from ACE2-ERA5 in three ways. Noise-conditioned layer normalization, trained with a combined CRPS and spectral energy score loss in place of mean squared error, makes it stochastic. Spectral bottlenecking with grouped convolutions cuts the Spherical Fourier Neural Operator's spectral filter parameters by more than two orders of magnitude and leaves a model a tenth the size of ACE2-ERA5. Its time step is daily rather than 6-hourly. ACE2.5-ERA5 has 3.2 times the inference throughput of ACE2-ERA5. A 6-hourly variant has weather prediction skill similar to ACE2-ERA5. A 4-degree variant reaches comparable climate skill at an order of magnitude lower training cost, enabling rapid iteration during development. We release 1-degree daily, 4-degree daily and 1-degree 6-hourly checkpoints.</span> <span class="abstract-toggle" data-id="2611.28315">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.28315v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.28315v1) · [:material-content-copy: BibTeX](../../bibtex/2611.28315.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=6-hourly" data-tag="6-hourly">6-hourly</a> <a class="md-tag" href="/explore/?t=daily" data-tag="daily">Daily</a>
+    { .paper-tags }
+
+-   #### Adapting AI Weather Foundation Models to a Changing Climate { #2611.27605 }
+
+    *Xinlei Xiong, Wenbo Hu, Shuxun Zhou, Lingxi Xie, Richang Hong, Qi Tian* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.27605">AI weather foundation models learn from historical archives, while the climate distribution encountered during deployment continues to evolve. This growing model--climate mismatch motivates continual...</span><span class="abstract-full" id="full-2611.27605" hidden>AI weather foundation models learn from historical archives, while the climate distribution encountered during deployment continues to evolve. This growing model--climate mismatch motivates continual adaptation without repeated full-model retraining, but the structure of weather forecast errors determines how such adaptation should be performed. We develop an online adaptation framework that exploits two complementary error structures: geographically persistent biases and flow-dependent errors that vary with the atmospheric state. Analysis of Aurora-1.3B reveals strongly concentrated forecast-loss sensitivity in its decoder, motivating flow-dependent corrections within fixed low-dimensional sensitivity subspaces. A residual memory tracks persistent errors remaining after this correction, while a variable-wise online gate controls the contribution of the persistent component. We evaluate Aurora-1.3B using ERA5 from 1959--1968 for offline initialization and a strictly chronological 1969--2022 stream for online evaluation, with updates restricted to previously available verification targets. For 2-metre temperature, distributional departure from the historical reference, measured directly from ERA5, is associated with larger frozen-model errors and greater adaptation gains, while the adapted model maintains more stable skill across evaluation periods. Across 69 output fields and five lead times from 6 to 72 hours, our method reduces MSE and MAE by 6.90% and 6.45%, respectively, relative to $δ$-Adapter, the strongest of six online adaptation baselines.</span> <span class="abstract-toggle" data-id="2611.27605">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.27605v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.27605v1) · [:material-content-copy: BibTeX](../../bibtex/2611.27605.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=foundation-models" data-tag="foundation-models">Foundation models</a>
+    { .paper-tags }
 
 -   #### Interpretable Prototype-Conditioned Adaptation for Weather Forecasting { #2611.25848 }
 
@@ -358,42 +397,6 @@ hide:
 
     <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a>
     { .paper-tags }
-
--   #### Can AI Forecast the Extremes? Evaluating Probabilistic Weather Models on Tropical Cyclones { #2610.22077 }
-
-    *Nathan Chalumeau, Xavier Renard, Remi Meynadier, Hugo Rakotoarimanga, Marcin Detyniecki et al.* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.22077">Weather prediction is undergoing an important shift, with data-driven AI models outperforming leading numerical weather prediction systems on average at a fraction of the computational cost. Yet,...</span><span class="abstract-full" id="full-2610.22077" hidden>Weather prediction is undergoing an important shift, with data-driven AI models outperforming leading numerical weather prediction systems on average at a fraction of the computational cost. Yet, whether this success extends to extreme events remains contested. Earlier evaluations have exposed important shortcomings, but have largely focused on deterministic models and metrics, leaving the capabilities of the latest probabilistic models less understood. We conduct an extensive benchmark of tropical cyclone forecasting, comparing GenCast, FourCastNet 3, and FGN with ECMWF's operational physics-based ensemble, IFS-ENS. We develop a suite of probabilistic metrics and diagnostic analyses to assess cyclone tracking, intensity biases, uncertainty, and the wind-pressure relationship that characterizes storm structure. We find that, despite remaining limitations in intensity and ensemble spread, leading AI models substantially outperform IFS-ENS in cyclone tracking: FGN achieves better probabilistic location scores for 90% of evaluated storms in 2025. Further analyses reveal model-specific failure modes and suggest a lingering influence of pretraining data, pointing to opportunities for targeted improvement. Nonetheless, these results suggest that AI models are capable of capturing physical relationships that remain predictive well beyond typical weather conditions, motivating further investigation into how these capabilities emerge and how to strengthen them.</span> <span class="abstract-toggle" data-id="2610.22077">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.22077v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.22077v1) · [:material-content-copy: BibTeX](../../bibtex/2610.22077.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a> <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
-    { .paper-tags }
-
--   #### Forecast lead time and the timing of crew deployment for weather-driven power outages using AI weather models { #2610.20918 }
-
-    *Mohammad Kian Golkar, Luciano Alves de Oliveira, Mohamad Alipour* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.20918">Utilities request mutual aid crews to restore power after severe storms, and requesting early secures more crews but relies on less accurate forecasts. We examined how forecast lead time affects the...</span><span class="abstract-full" id="full-2610.20918" hidden>Utilities request mutual aid crews to restore power after severe storms, and requesting early secures more crews but relies on less accurate forecasts. We examined how forecast lead time affects the value of outage predictions for crew deployment, using operational forecasts from two AI weather models, GraphCast and FourCastNet, to predict outage occurrence for counties across the contiguous United States 24 to 120 hours ahead. Forecasts were evaluated by the share of outage burden captured by the counties where crews would be staged. Captured burden declined with lead time: the loss between three and five days was significant in all analyses, whereas the loss within three days was significant only for outages that had not yet started. Early deployment with all requested crews outperformed late deployment with fewer, and we report the availability ratio at which the two break even. Antecedent land surface predictors computed at forecast valid time include weather from the forecast period, which inflates their skill by 42 to 53% and reverses their apparent advantage over forecast meteorology at long lead times. Computed correctly, they improved occurrence skill by 17.5% at 24 hours but did not significantly change captured burden, a gap that attribution analysis linked to their static component. Prediction intervals covered only 0.476 of tropical cyclone events against a nominal 0.90. Calibration by hazard class corrected most of this shortfall at an 11% cost in interval width, as a diagnostic only, because hazard class is known only after the event.</span> <span class="abstract-toggle" data-id="2610.20918">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.20918v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.20918v1) · [:material-content-copy: BibTeX](../../bibtex/2610.20918.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=tropical-cyclones" data-tag="tropical-cyclones">Tropical cyclones</a>
-    { .paper-tags }
-
--   #### Establishing baseline model performances for optical turbulence forecasting { #2610.18702 }
-
-    *M. De Sepibus, E. Masciadri, C. Weinberger, A. Otarola, S. Miesske, C. Veillet, S. Ragland* · Oct 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2610.18702">Accurate forecasting of optical turbulence (OT) is useful to optimise telescope scheduling and maximising observing efficiency, as the performance of adaptive optics systems strongly depends on...</span><span class="abstract-full" id="full-2610.18702" hidden>Accurate forecasting of optical turbulence (OT) is useful to optimise telescope scheduling and maximising observing efficiency, as the performance of adaptive optics systems strongly depends on turbulence conditions. While various numerical weather prediction and machine learning models are developed to predict these complex turbulence properties, properly evaluating their added value requires well-defined baseline reference models. This study establishes baseline performance thresholds for key astroclimatic parameters using two distinct models: one forecasting the parameter average over a specific timescale, and the other forecasting the temporal evolution over the same specific timescale. We apply these frameworks to extensive, multi-year datasets from the sites of the Very Large Telescope (VLT) and the Large Binocular Telescope (LBT) and discuss the possibility of extrapolating reference values of forecast performances for other sites based on their optical turbulence statistical characteristics. Our results show that baseline predictive accuracy varies according to the observing site, the specific parameter, the chosen timescale, and the forecasting approach. Therefore, an OT forecasting model's accuracy cannot be quantified in absolute terms, but relatively to the baseline.</span> <span class="abstract-toggle" data-id="2610.18702">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2610.18702v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2610.18702v1) · [:material-content-copy: BibTeX](../../bibtex/2610.18702.bib){ .bibtex-link }
-    { .paper-links }
 
 </div>
 

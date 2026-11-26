@@ -8,11 +8,44 @@ hide:
 
 # Climate Modeling
 
-<p class="page-meta" markdown="span">317 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
+<p class="page-meta" markdown="span">320 papers · page 1 of 11 · <a href="../../bib/climate-modeling.bib" download>:material-download: BibTeX for this topic</a></p>
 
 </div>
 
 <div class="grid cards" markdown>
+
+-   #### A Comparison of Uncertainty in AI and Dynamical Climate Ensembles { #2611.31064 }
+
+    *Jacob B. Landsberg, Devin M. McAfee, M. A. Fernandez, Elizabeth A. Barnes* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.31064">Climate model ensembles and their uncertainty estimates are essential for evaluating risk and designing climate policy. Yet, in the assessment of newly developed AI climate models, evaluating...</span><span class="abstract-full" id="full-2611.31064" hidden>Climate model ensembles and their uncertainty estimates are essential for evaluating risk and designing climate policy. Yet, in the assessment of newly developed AI climate models, evaluating uncertainty is often secondary to diagnosing mean-state climate biases and trends. In this work, we conduct the first systematic comparison of uncertainty representation in ensembles of state-of-the-art AI and dynamical atmospheric climate models. Examining 2-meter temperature, 500 hPa geopotential height, and precipitable water, we find that the AI ensemble exhibits reduced internal variability and model uncertainty across variables relative to the dynamical ensemble. We show that this dampened variability causes the AI ensemble to produce more limited climate extremes and yields underdispersion relative to ERA5. Under a uniform warming scenario, the AI ensemble shows increased model uncertainty. Dynamical models grapple with their own challenges, exhibiting stronger miscalibration (overdispersion) relative to ERA5 and larger climate biases than the AI models. As AI and dynamical climate models are mutually integrated into operational climate prediction, careful consideration of their differences in uncertainty representations is crucial for grounded assessment of climate risk.</span> <span class="abstract-toggle" data-id="2611.31064">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.31064v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.31064v1) · [:material-content-copy: BibTeX](../../bibtex/2611.31064.bib){ .bibtex-link }
+    { .paper-links }
+
+    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a>
+    { .paper-tags }
+
+-   #### An exact and differentiable rewrite of a coupled weather and fire model { #2611.30866 }
+
+    *John S. Schreck, John Dennis, Iris Linck, Maria Frediani, Pedro A. Jimenez Munoz, Matthew Rehme et al.* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.30866">AI is changing weather and climate prediction by replacing physical models with learned ones. Here we show a different path, in which AI coding agents rebuild the physical model itself in a...</span><span class="abstract-full" id="full-2611.30866" hidden>AI is changing weather and climate prediction by replacing physical models with learned ones. Here we show a different path, in which AI coding agents rebuild the physical model itself in a machine-learning framework and reproduce its forecast bit for bit. We reconstruct selected configurations of the Weather Research and Forecasting model and its coupled fire physics in PyTorch, treating every difference from the corrected Fortran code as a bug. Across twelve hours of a Marshall Fire simulation, the two independently advancing codes agree bit for bit at all 365 checkpoints, in the atmosphere, fire and firebrand particles. This agreement holds when the code runs one operation at a time, with the Fortran code's mathematical library. On a separate fast route, the reconstructed model runs about five times faster on one GPU than the double-precision Fortran code on a 128-core CPU node. One backward pass maps the fire's sensitivity to the wind at every grid point. In synthetic tests, its derivatives show how to change wind and fuel moisture to correct a misplaced fire front. Neural networks replace the radiation and fire-spread calculations in 24-hour coupled forecasts, and we measure their effect against the physical calculation. An established model thus becomes fast, differentiable and open to learned components, with its tested calculation intact.</span> <span class="abstract-toggle" data-id="2611.30866">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.30866v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.30866v1) · [:material-content-copy: BibTeX](../../bibtex/2611.30866.bib){ .bibtex-link }
+    { .paper-links }
+
+-   #### ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code { #2611.28477 }
+
+    *Koutian Wu, Yuxuan Cao, Gengchen Mai, Zeping Liu* · Nov 2026
+    { .paper-meta }
+
+    <span class="abstract-snippet" id="snip-2611.28477">AI coding agents that modify Earth System Model (ESM) code must preserve both software interfaces and the physical assumptions encoded in them. We introduce ESM-Bench, a benchmark of 60...</span><span class="abstract-full" id="full-2611.28477" hidden>AI coding agents that modify Earth System Model (ESM) code must preserve both software interfaces and the physical assumptions encoded in them. We introduce ESM-Bench, a benchmark of 60 developer-commit tasks from 6 repositories: Noah-MP, CLM5, SUMMA, ParFlow, MOM6, and VIC. The v5 corpus contains 17 physics-based bug fixes, 16 process-representation modifications, 13 parameterization-scheme selections, and 14 parameter-optimization tasks. Each task includes a scientific objective, parent-commit source files, a reference diff, and three stored prompt variants. An artifact audit confirms that all 60 reference diffs apply to their supplied starting files. We define an eight-item patch-review rubric and audit five archived patch fixtures against the implemented local checkers. None of the five fixture diffs applies to its supplied starting files, yet three text-pattern checkers return a pass. A ParFlow expression replay disagrees with the reference slopes, and a MOM6 pattern check detects an omitted update. Inspection also identifies a retained VIC reference assignment that overwrites the intended vegetation-specific albedo. These findings expose limits of reference patches and local proxies as correctness evidence. The release provides a reproducible corpus and diagnostic tools; complete expert validation, comparative agent performance, and full-model execution remain unmeasured on v5.</span> <span class="abstract-toggle" data-id="2611.28477">more</span>
+
+    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2611.28477v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2611.28477v1) · [:material-content-copy: BibTeX](../../bibtex/2611.28477.bib){ .bibtex-link }
+    { .paper-links }
 
 -   #### SeasonRainBench: Global Seasonal Precipitation { #2611.22281 }
 
@@ -340,45 +373,6 @@ hide:
 
     [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.30995v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.30995v1) · [:material-content-copy: BibTeX](../../bibtex/2609.30995.bib){ .bibtex-link }
     { .paper-links }
-
--   #### Understanding Perturbed Parameter Ensemble Sensitivities Using A Contrastive Learning Approach { #2609.30420 }
-
-    *Da Fan, David John Gagne, Gregory S Elsaesser, Brian Medeiros, Addisu G Semie, Qingyuan Yang et al.* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.30420">Perturbed parameter ensembles (PPEs) reveal how physics parameters affect climate simulations, but interpreting parameter sensitivities across multivariate, spatially structured outputs remains...</span><span class="abstract-full" id="full-2609.30420" hidden>Perturbed parameter ensembles (PPEs) reveal how physics parameters affect climate simulations, but interpreting parameter sensitivities across multivariate, spatially structured outputs remains challenging, particularly when calibrating models against observations. We develop an explainable contrastive learning model that maps 5 monthly cloud and radiation fields into a shared representation space. We train the model on the fields of two 100-member Community Atmosphere Model version 6 (CAM6) PPEs, spanning 34 parameters, that only differ in the warm rain microphysics scheme: KK2000, the default bulk microphysics scheme, and TAU-ML, a neural network emulator of a bin microphysics scheme. The learned representations separates two PPEs with over 94% linear classification accuracy while preserving the seasonal variability and ensemble spread due to parameter perturbations. In the shared representation space, the representations of satellite observations occupy the same low-dimensional manifold as the PPEs but are displaced from them most strongly during boreal spring and autumn. TAU-ML PPE has a lower distance to observations compared to KK2000 in the representation space. Integrated Gradients attributions highlights the contributions in subtropical low-cloud regions, Northern and Southern Hemisphere storm track regions, and tropical convection regions to differences between PPEs and observations. Regional attributions correlate most strongly with parameters associated with cloud microphysics, boundary layer turbulence, and deep convection. These results demonstrate that explainable representations of climate fields can attribute model differences to specific variables, regions, seasons, and physical parameters.</span> <span class="abstract-toggle" data-id="2609.30420">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.30420v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.30420v1) · [:material-content-copy: BibTeX](../../bibtex/2609.30420.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=uncertainty-ensembles" data-tag="uncertainty-ensembles">Uncertainty & ensembles</a> <a class="md-tag" href="/explore/?t=interpretability" data-tag="interpretability">Interpretability</a> <a class="md-tag" href="/explore/?t=monthly" data-tag="monthly">Monthly</a>
-    { .paper-tags }
-
--   #### Analysis of trade-offs in urban heat mitigation using a Bayesian Optimization framework for an urban canopy layer model { #2609.25953 }
-
-    *Rebekka Walter, Johanna Gelhaus, David Anton, Henning Wessles, Stephan Weber* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.25953">To mitigate the challenges of climate change and intensifying heat stress in urban areas, local adaptation strategies are discussed and introduced in cities worldwide. To understand processes and...</span><span class="abstract-full" id="full-2609.25953" hidden>To mitigate the challenges of climate change and intensifying heat stress in urban areas, local adaptation strategies are discussed and introduced in cities worldwide. To understand processes and potential trade-offs of these strategies a Bayesian optimization and surrogate modeling framework was employed to investigate urban parameter ranges of heat mitigation strategies with focus on three thermal metrics: daytime air temperature, Universal Thermal Climate Index (UTCI), and nighttime air temperature. Based on an urban street canyon configuration, it was shown that heat mitigation measures that reduce daytime air temperature and UTCI are often associated with higher nighttime temperatures. This results in a curved Pareto front that reflects the trade-off between daytime and nighttime thermal comfort. Under identical forcing conditions, different urban configurations, varying in geometry, vegetation, and surface characteristics, are shown to alter peak canyon air temperature by up to 5.2~$^\circ$C during the day and 2.6~$^\circ$C at night, while UTCI varies by up to 7.9~$^\circ$C, demonstrating that favorable urban configurations can substantially mitigate microclimatic heat stress. These findings suggest that combining multi-objective Bayesian optimization and surrogate modeling can help bridge the gap between computationally intensive climate simulations and practical decision-making in urban planning. An interactive visualization tool was developed to explore these trade-offs, making the often opposing relationships between urban parameters and the three thermal metrics directly accessible to planners.</span> <span class="abstract-toggle" data-id="2609.25953">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.25953v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.25953v1) · [:material-content-copy: BibTeX](../../bibtex/2609.25953.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=global" data-tag="global">Global</a>
-    { .paper-tags }
-
--   #### Learning Prognostic Variables for AI Convective Parameterizations via Symbolic Distillation { #2609.24882 }
-
-    *Jurij Schönfeld, Tom Beucler, Julien Savre, Steven Sherwood, Veronika Eyring* · Sep 2026
-    { .paper-meta }
-
-    <span class="abstract-snippet" id="snip-2609.24882">Hybrid AI-physics climate modeling aims to improve coarse (~100km-resolution) Earth system models by learning to parameterize subgrid processes from high-fidelity data. However, this so far mostly...</span><span class="abstract-full" id="full-2609.24882" hidden>Hybrid AI-physics climate modeling aims to improve coarse (~100km-resolution) Earth system models by learning to parameterize subgrid processes from high-fidelity data. However, this so far mostly involves local-in-time, diagnostic parameterizations, in which the subgrid state depends only on the current coarse state with no memory of previous states, which is unrealistic for processes such as convection that have intrinsic persistence. To address this, we enhance local-in-time parameterizations by learning prognostic variables that compactly carry important, additional past information where no explicit sub-grid information is available. First we compress past information into a low-dimensional latent space using an autoencoder, which then informs a neural network trained to parameterize targeted subgrid-scale processes. We then replace the autoencoder with symbolic equations that govern the time evolution of the latent variables, yielding additional prognostic memory variables that can be integrated alongside the resolved atmospheric state. We evaluate this approach on two systems: the Lorenz-96 model (online) and surface precipitation from high-resolution atmospheric simulations (offline). A forced multivariate linear ordinary differential equation recovers most of the added value achieved by the autoencoder-based approach in both experiments. Benchmarked against diagnostic parameterizations without memory, our memory-informed approach improves climate statistics and temporal structure, including a realistic diurnal cycle of tropical land precipitation.</span> <span class="abstract-toggle" data-id="2609.24882">more</span>
-
-    [:material-file-document-outline: arXiv](https://arxiv.org/abs/2609.24882v1) · [:material-file-pdf-box: PDF](https://arxiv.org/pdf/2609.24882v1) · [:material-content-copy: BibTeX](../../bibtex/2609.24882.bib){ .bibtex-link }
-    { .paper-links }
-
-    <a class="md-tag" href="/explore/?t=precipitation" data-tag="precipitation">Precipitation</a>
-    { .paper-tags }
 
 </div>
 

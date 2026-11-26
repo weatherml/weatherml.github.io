@@ -45173,3 +45173,327 @@
   arxiv_categories:
   - cs.LG
   github: https://github.com/Mariyaaleem/conformal-wx
+- category: Other
+  title: 'LatENSO v1.0: a learned latent state of the tropical Pacific for seasonal
+    ENSO operators and forecasting'
+  authors: Milad Panahi, Annalisa Bracco
+  year: 2026
+  arxiv: 2611.34296v1
+  abstract: 'Here we present LatENSO v1.0, a machine-learning forecast system for
+    the El Niño-Southern Oscillation (ENSO) built around a learned, 32-dimensional
+    state of the tropical Pacific. A Swin-transformer autoencoder compresses thirteen
+    monthly-averaged ocean and atmosphere fields into 32 numbers, trained to reconstruct
+    the fields, with no forecast target. The 32 numbers rebuild the fields as well
+    as O(100) empirical orthogonal functions. Two seasonal operators use this state.
+    The first is the extended nonlinear recharge oscillator (XRO) with two directions
+    of the learned state among its variables; we call it XRO-lat. The second is a
+    Floquet modal operator (FMO) of three damped oscillators, which forecasts a correction
+    added to a least-squares base forecast made from four observed predictors. We
+    evaluate both against the recharge oscillator, XRO and a deep echo-state network
+    (DESN), all refitted on identical data, cross-validation folds and verification
+    windows (1981-2024). Over lead times of 1-18 months, XRO-lat reaches an anomaly
+    correlation coefficient (ACC) of 0.673, the highest of all tropical-Pacific-only
+    (in-domain) systems and statistically indistinguishable from XRO and DESN with
+    their eight remote-basin indices (0.685 and 0.667). From lead 15 to lead 24 it
+    is the most skillful of all systems. Over leads 1-18, the FMO forecast (0.619)
+    is statistically indistinguishable from every in-domain reference model (0.631-0.654).
+    What the FMO adds to its base forecast, 0.054 in ACC, is carried by its Floquet
+    propagation, whose generator consistently holds a prominent quasi-biennial oscillator.
+    At leads 3-9 the FMO trails XRO, DESN and the in-domain XRO, a deficit partly
+    attributable to its base. LatENSO combines competitive skill with trustworthiness:
+    a compact state whose physical content can be inspected, and fully open access
+    to code, weights and data.'
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.LG
+  - physics.geo-ph
+- category: Global Models
+  title: Evaluation of Machine-Learning Weather Models in Reproducing Mesoscale Tornado-Favorable
+    Convective Environments
+  authors: Yiding Luo, Rui Yuan, Shetian Xia, Royce Lee, Alexandra Anderson-Frey
+  year: 2026
+  arxiv: 2611.31564v1
+  abstract: Machine-learning (ML)-based weather prediction models have developed rapidly
+    in recent years and are already being used in operational weather forecasting.
+    These ML-based models' performance has exceeded that of traditional numerical
+    weather prediction (NWP) methods in certain implementations, with substantially
+    lower computational cost. However, most ML-based models were trained on global
+    data at a horizontal grid spacing of 0.25 degrees, which may be too coarse to
+    capture tornado-favorable parameters. The ability of these ML-based models to
+    predict the parameters relevant for tornado-favorable convection remains unclear.
+    Here, we compare the performance of three ML-based models, Pangu-Weather, FengWu
+    (versions 1 and 2), and FuXi Weather, in forecasting ten distinct convective events
+    associated with strong tornadoes that occurred in Oklahoma, USA. The proposed
+    methodology incorporates five lead times, ranging from 24 to 168 h, for each event
+    and uses reanalysis data as both model input and ground truth. We evaluate the
+    models by forecasting eight tornado-relevant parameters and by conducting spatial
+    and value-consistency checks between model outputs and ground truth. Performance
+    varies across parameters, models, and events. Pangu-Weather performs well for
+    positive storm-relative helicity, while FuXi Weather performs well for several
+    thermodynamic parameters, albeit with some overprediction of magnitude. Increasing
+    lead time is associated with loss of extreme-value and spatial-structure fidelity.
+    In the Global Forecast System (GFS) case study, ML-based models retain convective
+    signals at longer lead times but poorly represent fine-scale structures such as
+    cold pool-like features. These findings indicate that model-specific biases and
+    spatial extremes should be assessed alongside domain-wide forecast scores.
+  arxiv_categories:
+  - physics.ao-ph
+- category: Climate Modeling
+  title: A Comparison of Uncertainty in AI and Dynamical Climate Ensembles
+  authors: Jacob B. Landsberg, Devin M. McAfee, M. A. Fernandez, Elizabeth A. Barnes
+  year: 2026
+  arxiv: 2611.31064v1
+  abstract: Climate model ensembles and their uncertainty estimates are essential
+    for evaluating risk and designing climate policy. Yet, in the assessment of newly
+    developed AI climate models, evaluating uncertainty is often secondary to diagnosing
+    mean-state climate biases and trends. In this work, we conduct the first systematic
+    comparison of uncertainty representation in ensembles of state-of-the-art AI and
+    dynamical atmospheric climate models. Examining 2-meter temperature, 500 hPa geopotential
+    height, and precipitable water, we find that the AI ensemble exhibits reduced
+    internal variability and model uncertainty across variables relative to the dynamical
+    ensemble. We show that this dampened variability causes the AI ensemble to produce
+    more limited climate extremes and yields underdispersion relative to ERA5. Under
+    a uniform warming scenario, the AI ensemble shows increased model uncertainty.
+    Dynamical models grapple with their own challenges, exhibiting stronger miscalibration
+    (overdispersion) relative to ERA5 and larger climate biases than the AI models.
+    As AI and dynamical climate models are mutually integrated into operational climate
+    prediction, careful consideration of their differences in uncertainty representations
+    is crucial for grounded assessment of climate risk.
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.AI
+  - cs.LG
+- category: Climate Modeling
+  title: An exact and differentiable rewrite of a coupled weather and fire model
+  authors: John S. Schreck, John Dennis, Iris Linck, Maria Frediani, Pedro A. Jimenez
+    Munoz, Matthew Rehme, Nihanth Cherukuru, David John Gagne
+  year: 2026
+  arxiv: 2611.30866v1
+  abstract: AI is changing weather and climate prediction by replacing physical models
+    with learned ones. Here we show a different path, in which AI coding agents rebuild
+    the physical model itself in a machine-learning framework and reproduce its forecast
+    bit for bit. We reconstruct selected configurations of the Weather Research and
+    Forecasting model and its coupled fire physics in PyTorch, treating every difference
+    from the corrected Fortran code as a bug. Across twelve hours of a Marshall Fire
+    simulation, the two independently advancing codes agree bit for bit at all 365
+    checkpoints, in the atmosphere, fire and firebrand particles. This agreement holds
+    when the code runs one operation at a time, with the Fortran code's mathematical
+    library. On a separate fast route, the reconstructed model runs about five times
+    faster on one GPU than the double-precision Fortran code on a 128-core CPU node.
+    One backward pass maps the fire's sensitivity to the wind at every grid point.
+    In synthetic tests, its derivatives show how to change wind and fuel moisture
+    to correct a misplaced fire front. Neural networks replace the radiation and fire-spread
+    calculations in 24-hour coupled forecasts, and we measure their effect against
+    the physical calculation. An established model thus becomes fast, differentiable
+    and open to learned components, with its tested calculation intact.
+  arxiv_categories:
+  - physics.ao-ph
+- category: Other
+  title: 'Geospatial foundation models and deep learning for climate resilience: a
+    review of transfer, uncertainty and decision readiness'
+  authors: Parastoo Farajpoor, Mohammadreza Narimani
+  year: 2026
+  arxiv: 2611.30198v1
+  abstract: 'Geospatial foundation models can reuse information learned from large
+    Earth-observation archives, but their value for climate resilience depends on
+    whether that information transfers to unfamiliar events, regions and observing
+    conditions. This review connects advances in deep learning with the evidence needed
+    for hazard monitoring and early warning. A descriptive audit of 137 full-text
+    hazard-application studies is interpreted alongside a separate corpus of 37 model
+    and benchmark records. Ninety-eight application studies reported an out-of-distribution
+    experiment, whereas headline evaluations included held-out events in 31 studies,
+    regions in 25 and sensors in only two. None of the ten studies coded for geospatial
+    foundation-model fine-tuning used sensor holdout as a headline test. Uncertainty-related
+    methods were recorded in 16 studies, including two with explicitly calibrated
+    probabilistic output. These overlapping counts describe evaluation practice within
+    the coded corpus, not a ranking of model families. We distinguish Earth-observation
+    representation learning from atmospheric forecasting and examine how labels, observability,
+    forecast lead time and decision requirements constrain their contribution across
+    flood, wildfire, drought, heat, cryosphere and cascading-hazard applications.
+    We then develop a decision-backward evaluation framework: define the action and
+    information available when it must be taken, reproduce the relevant shift, retain
+    a matched task-specific baseline, and report misses, false alarms, reliability
+    and end-to-end latency. The framework turns transferability from a broad model
+    claim into a testable requirement for climate adaptation and risk management.'
+  arxiv_categories:
+  - eess.IV
+  - cs.LG
+  - physics.ao-ph
+  - physics.geo-ph
+  - stat.AP
+- category: Climate Modeling
+  title: 'ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth
+    System Model Physics and Code'
+  authors: Koutian Wu, Yuxuan Cao, Gengchen Mai, Zeping Liu
+  year: 2026
+  arxiv: 2611.28477v1
+  abstract: 'AI coding agents that modify Earth System Model (ESM) code must preserve
+    both software interfaces and the physical assumptions encoded in them. We introduce
+    ESM-Bench, a benchmark of 60 developer-commit tasks from 6 repositories: Noah-MP,
+    CLM5, SUMMA, ParFlow, MOM6, and VIC. The v5 corpus contains 17 physics-based bug
+    fixes, 16 process-representation modifications, 13 parameterization-scheme selections,
+    and 14 parameter-optimization tasks. Each task includes a scientific objective,
+    parent-commit source files, a reference diff, and three stored prompt variants.
+    An artifact audit confirms that all 60 reference diffs apply to their supplied
+    starting files. We define an eight-item patch-review rubric and audit five archived
+    patch fixtures against the implemented local checkers. None of the five fixture
+    diffs applies to its supplied starting files, yet three text-pattern checkers
+    return a pass. A ParFlow expression replay disagrees with the reference slopes,
+    and a MOM6 pattern check detects an omitted update. Inspection also identifies
+    a retained VIC reference assignment that overwrites the intended vegetation-specific
+    albedo. These findings expose limits of reference patches and local proxies as
+    correctness evidence. The release provides a reproducible corpus and diagnostic
+    tools; complete expert validation, comparative agent performance, and full-model
+    execution remain unmeasured on v5.'
+  arxiv_categories:
+  - cs.AI
+  - cs.LG
+  - physics.ao-ph
+  - physics.geo-ph
+- category: Global Models
+  title: Stochastic climate emulation at reduced cost with ACE2.5-ERA5
+  authors: Jeremy McGibbon, Troy Arcomano, Spencer K. Clark, James P. C. Duncan, Brian
+    Henn, Oliver Watt-Meyer
+  year: 2026
+  arxiv: 2611.28315v1
+  abstract: We introduce ACE2.5-ERA5 (Ai2 Climate Emulator of ERA5, version 2.5),
+    a stochastic autoregressive weather-climate AI model that produces calibrated
+    weather ensembles with realistic small-scale structure on timescales from days
+    to centuries. Its deterministic predecessor, ACE2-ERA5, retains 36% of its ERA5
+    target's precipitation spectral power at total wavenumbers 100--179; ACE2.5-ERA5
+    retains 86%. In weather forecasts its ensemble spread matches its error to within
+    4% from day 3. Time-mean climate is on par with or better than ACE2-ERA5, the
+    precipitation response to ENSO is improved, and the model is stable over 1000
+    years. Interannual variability of global mean surface temperature is shown not
+    to be calibrated in either ACE2.5-ERA5 or its predecessor. ACE2.5-ERA5 differs
+    from ACE2-ERA5 in three ways. Noise-conditioned layer normalization, trained with
+    a combined CRPS and spectral energy score loss in place of mean squared error,
+    makes it stochastic. Spectral bottlenecking with grouped convolutions cuts the
+    Spherical Fourier Neural Operator's spectral filter parameters by more than two
+    orders of magnitude and leaves a model a tenth the size of ACE2-ERA5. Its time
+    step is daily rather than 6-hourly. ACE2.5-ERA5 has 3.2 times the inference throughput
+    of ACE2-ERA5. A 6-hourly variant has weather prediction skill similar to ACE2-ERA5.
+    A 4-degree variant reaches comparable climate skill at an order of magnitude lower
+    training cost, enabling rapid iteration during development. We release 1-degree
+    daily, 4-degree daily and 1-degree 6-hourly checkpoints.
+  arxiv_categories:
+  - physics.ao-ph
+- category: Downscaling
+  title: 'Beyond Resolution: Inference-Time Parameterized Temporal Consistency in
+    Generative Regional Climate Downscaling'
+  authors: Luca Glawion, Julius Polz, Harald Kunstmann, Benjamin Fersch, Patrick Ludwig,
+    Antonio Sánchez-Benítez, Christian Chwala
+  year: 2026
+  arxiv: 2611.27641v1
+  abstract: GCM-to-RCM downscaling emulation is dominated by generative diffusion
+    models, but most existing work evaluates skill only per timestep, treating each
+    field as an independent snapshot. This leaves open whether generated sequences
+    are temporally coherent or merely independently plausible, a gap that matters
+    increasingly for sub-daily resolutions since downstream impacts depend on accumulation
+    and persistence, not just on isolated states. This study asks whether autoregressive
+    conditioning can deliver coherent rollouts without error accumulation and ensemble-spread
+    collapse, and whether a single model can expose the resulting coherence-diversity
+    trade-off as a controllable inference choice rather than a fixed design commitment.
+    We introduce a noise-conditioned teacher-forcing training scheme conditioning
+    a diffusion U-Net downscaling model on a noised previous high-resolution state,
+    so the trained model interpolates continuously between autoregressive (AR) and
+    per-timestep independent (PTI) sampling via one noise parameter. We apply the
+    scheme to an hourly, European-domain historical simulation downscaling AWI-CM1
+    (1$^\circ$) with ICON (0.11$^\circ$, regridded to 0.25$^\circ$) for precipitation
+    and 2-meter temperature. The noise parameter traces a smooth interpolation between
+    ICON's autocorrelation and PTI generation. AR rollouts of up to six months show
+    no progressive degradation, with ensemble spread contracting only slightly within
+    the first 24 hours. In contrast, the same architecture trained on noise-free previous
+    states diverges. For precipitation PTI underestimates maxima by up to 2x in daily
+    aggregations, while AR tracks ICON's maxima closely. For temperature, differences
+    between modes are negligible. These results show that in diffusion downscaling
+    temporal consistency can be achieved architecture-agnostically and offered as
+    a controllable, not fixed, inference choice.
+  arxiv_categories:
+  - physics.ao-ph
+  - cs.CV
+  - cs.LG
+- category: Other
+  title: Investigating the efficacy of vortex beam speckle patterns for the recognition
+    of atmospheric turbulence and fractional topological charge with a deep learning
+    model
+  authors: Ratikanta Swain, Allarakha Shikder, Naseem Babu, Niladri Sarkar, Aryan
+    Raj, Raghavan K. Easwaran
+  year: 2026
+  arxiv: 2611.34573v1
+  abstract: Fractional topological charge (TC) enlarges the usable mode set of orbital
+    angular momentum (OAM) links, but reading it reliably after atmospheric turbulence
+    remains difficult. Interferometric and diffractive methods need an undistorted
+    beam and a careful alignment, while most learned approaches treat integer or coarsely
+    spaced charges and do not include turbulence. Here we ask whether the charge of
+    a scalar vortex beam can be regressed directly from a single speckle image, and
+    at which turbulence strength this stops working. We propagate vortex beams over
+    1500~m through 150 von Kármán phase screens, scatter them with a fixed random
+    diffuser, and record $256\times256$, 16-bit speckle images for TC from 0 to 10
+    in steps of 0.01 and turbulence strengths $D/r_0$ from 0 to 50; the results reported
+    here use a subset of 20\,000 images, and a data set of $10^{6}$ images is in preparation.
+    A convolutional neural network estimates the TC and, through an auxiliary head,
+    the turbulence category. On charges withheld from training, the mean absolute
+    error is 0.031 without turbulence (with a common intensity scale) and rises to
+    0.78 at $D/r_0=10$ and 1.85 at $D/r_0=50$, against 2.5 for a constant prediction,
+    and the turbulence category is identified correctly in 78\% of the images. The
+    results show that, at the present training size, the charge is read accurately
+    only without turbulence, and that the charge and the turbulence oth act on the
+    speckle grain size, which may limit the readout. Experimental validation and the
+    extension to vector vortex beams are left for future work.
+  arxiv_categories:
+  - cs.LG
+- category: Nowcasting
+  title: 'AlignPre: Skill-Aligned Post-Training for Latent-Free Generative Precipitation
+    Nowcasting'
+  authors: Demin Yu, Kenghong Lin, Xutao Li
+  year: 2026
+  arxiv: 2611.34101v1
+  abstract: Precipitation nowcasting requires accurate short-term predictions under
+    rapidly evolving spatiotemporal dynamics. Generative diffusion models can produce
+    detailed and competitive radar forecasts by modeling conditional distributions.
+    However, most existing approaches rely on separately trained components, such
+    as deterministic branches or latent compression modules. More fundamentally, distribution
+    matching alone fails to explicitly optimize operational forecast skill. We propose
+    AlignPre, a streamlined pixel-space nowcasting framework that bridges this gap
+    via skill-aligned post-training (SAPT). AlignPre employs an end-to-end flow-matching
+    forecaster with a hierarchical spatiotemporal architecture for distribution matching
+    and direct radar-field synthesis, without latent compression. During post-training,
+    SAPT exploits the analytic structure of forecast verification scores to construct
+    a differentiable objective. By backpropagating gradients of this objective from
+    radar fields to the generator, SAPT turns forecast verification into direct training
+    feedback. Across three real-world benchmarks spanning different forecast horizons,
+    AlignPre consistently surpasses state-of-the-art deterministic and generative
+    baselines in forecast skill, demonstrating that aligning generative modeling with
+    domain-specific verification provides an effective paradigm for meteorological
+    forecasting.
+  arxiv_categories:
+  - cs.LG
+  - cs.AI
+- category: Global Models
+  title: Adapting AI Weather Foundation Models to a Changing Climate
+  authors: Xinlei Xiong, Wenbo Hu, Shuxun Zhou, Lingxi Xie, Richang Hong, Qi Tian
+  year: 2026
+  arxiv: 2611.27605v1
+  abstract: 'AI weather foundation models learn from historical archives, while the
+    climate distribution encountered during deployment continues to evolve. This growing
+    model--climate mismatch motivates continual adaptation without repeated full-model
+    retraining, but the structure of weather forecast errors determines how such adaptation
+    should be performed. We develop an online adaptation framework that exploits two
+    complementary error structures: geographically persistent biases and flow-dependent
+    errors that vary with the atmospheric state. Analysis of Aurora-1.3B reveals strongly
+    concentrated forecast-loss sensitivity in its decoder, motivating flow-dependent
+    corrections within fixed low-dimensional sensitivity subspaces. A residual memory
+    tracks persistent errors remaining after this correction, while a variable-wise
+    online gate controls the contribution of the persistent component. We evaluate
+    Aurora-1.3B using ERA5 from 1959--1968 for offline initialization and a strictly
+    chronological 1969--2022 stream for online evaluation, with updates restricted
+    to previously available verification targets. For 2-metre temperature, distributional
+    departure from the historical reference, measured directly from ERA5, is associated
+    with larger frozen-model errors and greater adaptation gains, while the adapted
+    model maintains more stable skill across evaluation periods. Across 69 output
+    fields and five lead times from 6 to 72 hours, our method reduces MSE and MAE
+    by 6.90\% and 6.45\%, respectively, relative to $δ$-Adapter, the strongest of
+    six online adaptation baselines.'
+  arxiv_categories:
+  - cs.LG
